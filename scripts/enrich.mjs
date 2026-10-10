@@ -37,23 +37,39 @@ Reply with a single JSON object:
   "foundersAr": {"<English founder name from the record>": "<Arabic spelling as Egyptians write it>"}
 }`;
 
-async function ask(user) {
+// GitHub Models endpoints: current one first, the original Azure-hosted one as fallback.
+const ENDPOINTS = [
+  { url: 'https://models.github.ai/inference/chat/completions', model: MODEL },
+  { url: 'https://models.inference.ai.azure.com/chat/completions', model: MODEL.replace(/^openai\//, '') },
+];
+let working = null; // remembered after the first endpoint that answers properly
+
+async function call(ep, user) {
   for (let attempt = 0; attempt < 4; attempt++) {
-    const res = await fetch('https://models.github.ai/inference/chat/completions', {
+    const res = await fetch(ep.url, {
       method: 'POST',
-      headers: { authorization: `Bearer ${process.env.GITHUB_TOKEN}`, 'content-type': 'application/json', accept: 'application/vnd.github+json', 'x-github-api-version': '2022-11-28' },
-      body: JSON.stringify({ model: MODEL, temperature: 0.2, response_format: { type: 'json_object' },
+      headers: { authorization: `Bearer ${process.env.GITHUB_TOKEN}`, 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify({ model: ep.model, temperature: 0.2, response_format: { type: 'json_object' },
         messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: user }] }),
     });
     if (res.status === 429) { await new Promise((r) => setTimeout(r, (+(res.headers.get('retry-after') ?? 60)) * 1000)); continue; }
     const raw = await res.text();
-    if (!res.ok) throw new Error(`models HTTP ${res.status}: ${raw.slice(0, 200)}`);
+    if (!res.ok) throw new Error(`${ep.url} HTTP ${res.status}: ${raw.slice(0, 200)}`);
     let content;
-    try { content = JSON.parse(raw).choices[0].message.content; } catch { throw new Error(`unexpected models reply: ${raw.slice(0, 200)}`); }
+    try { content = JSON.parse(raw).choices[0].message.content; } catch { throw new Error(`${ep.url} unexpected reply (${res.headers.get('content-type')}): ${raw.slice(0, 120)}`); }
     // Some models wrap JSON in a code fence.
     try { return JSON.parse(content.replace(/^```(?:json)?\s*|\s*```$/g, '')); } catch { throw new Error(`model content not JSON: ${content.slice(0, 200)}`); }
   }
   throw new Error('rate limited');
+}
+
+async function ask(user) {
+  if (working) return call(working, user);
+  const errors = [];
+  for (const ep of ENDPOINTS) {
+    try { const r = await call(ep, user); working = ep; console.log('  using', ep.url, ep.model); return r; } catch (e) { errors.push(e.message); }
+  }
+  throw new Error(errors.join(' | '));
 }
 
 const startups = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
