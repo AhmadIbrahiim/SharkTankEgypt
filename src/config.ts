@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs';
 import startups from './data/startups.json';
 import seasons from './data/seasons.json';
 
@@ -14,6 +15,9 @@ export const giscus = {
   category: 'Startups',
   categoryId: '',
 };
+
+// Google Search Console → HTML tag verification → paste the content="…" value here.
+export const googleVerification = '';
 
 export const t = {
   ar: {
@@ -75,3 +79,6 @@ export const money = (n: number | null | undefined, lang: Lang) =>
 
 export const terms = (amount?: number | null, pct?: number | null, lang: Lang = 'en') =>
   amount == null && pct == null ? '—' : `${money(amount, lang)} / ${pct ?? '—'}%`;
+
+/** Path (relative to base) of a startup's captured screenshot, or null. */
+export const screenshot = (id: string) => (existsSync(`public/screenshots/${id}.jpg`) ? `/screenshots/${id}.jpg` : null);

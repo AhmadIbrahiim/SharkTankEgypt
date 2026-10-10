@@ -19,6 +19,16 @@ A bilingual (Arabic / English) directory of every startup that pitched on Shark 
 4. Go to https://giscus.app, enter `AhmadIbrahiim/SharkTankEgypt` and the `Startups` category, then copy `data-repo-id` and `data-category-id` into `giscus` in `src/config.ts`. Comments stay hidden until both are set.
 5. **Actions → Refresh screenshots → Run workflow** to capture the first batch.
 
+## SEO (Google, Arabic + English)
+
+Built in: separate `/ar/` and `/en/` URLs per startup with `hreflang` + canonical tags, page titles that contain both the Arabic and English names, Open Graph tags (the screenshot is the share image), schema.org JSON-LD (`Organization` per startup, `ItemList` on the directory), and `sitemap.xml` with language alternates.
+
+To get indexed:
+1. Open [Google Search Console](https://search.google.com/search-console) and add a **URL-prefix** property for `https://ahmadibrahiim.github.io/SharkTankEgypt/`.
+2. Choose **HTML tag** verification and paste the `content` value into `googleVerification` in `src/config.ts`, then push and verify.
+3. Under **Sitemaps**, submit `sitemap.xml`.
+4. Optional but recommended: a custom domain (e.g. `sharktankegypt.directory`). It ranks better than a `github.io` subpath, and `robots.txt` only counts at a domain root. If you add one, set `site` and `base` in `astro.config.mjs` and the URL in `public/robots.txt`.
+
 ## Contributing data
 
 Edit `src/data/startups.json` (there's a link in the site footer) and open a PR. Each entry looks like this:

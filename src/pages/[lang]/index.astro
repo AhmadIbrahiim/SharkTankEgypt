@@ -9,8 +9,15 @@ const s = t[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categories = [...new Set(startups.map((x) => x.category).filter(Boolean))].sort();
 const num = (n: number) => n.toLocaleString(lang === 'ar' ? 'ar-EG' : 'en-US');
+const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: s.title,
+  itemListElement: startups.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name[lang], url: `${site}${lang}/${x.id}/` })),
+};
 ---
-<Base lang={lang} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
+<Base lang={lang} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
   <h1>{s.title}</h1>
   <p class="muted">{s.tagline}</p>
 

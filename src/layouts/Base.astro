@@ -1,18 +1,40 @@
 ---
-import { t, type Lang } from '../config';
-interface Props { lang: Lang; title?: string; description?: string; altPath: string }
-const { lang, title, description, altPath } = Astro.props;
+import { t, googleVerification, type Lang } from '../config';
+interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object }
+const { lang, title, description, altPath, image, jsonld } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const s = t[lang];
+const other: Lang = lang === 'ar' ? 'en' : 'ar';
+const abs = (path: string) => new URL(`${base}${path}`, Astro.site).href;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const altUrl = abs(altPath);
+const [arUrl, enUrl] = lang === 'ar' ? [url, altUrl] : [altUrl, url];
+const fullTitle = title ? `${title} | ${s.title}` : `${s.title} | ${t[other].title}`;
+const desc = description ?? s.tagline;
 ---
 <!doctype html>
 <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title ? `${title} · ${s.title}` : s.title}</title>
-    <meta name="description" content={description ?? s.tagline} />
-    <link rel="alternate" hreflang={lang === 'ar' ? 'en' : 'ar'} href={`${base}${altPath}`} />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={url} />
+    <link rel="alternate" hreflang="ar" href={arUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={arUrl} />
+    <link rel="sitemap" href={`${base}/sitemap.xml`} />
+    {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
+    <meta property="og:type" content={title ? 'article' : 'website'} />
+    <meta property="og:site_name" content={s.title} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={url} />
+    <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
+    <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
+    {image && <meta property="og:image" content={abs(image)} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦈</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet" />
