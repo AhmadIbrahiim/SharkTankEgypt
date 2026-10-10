@@ -32,7 +32,12 @@
       "https://www.startupresearcher.com/news/robert-herjavec-joins-shark-tank-egypt-as-guest",
       "https://thestartupscene.me/INVESTMENTS/Robert-Herjavec-to-Appear-as-Guest-Shark-on-Shark-Tank-Egyp",
       "https://cairoscene.com/Business/When-Sharks-Collide-Robert-Herjavec-Meets-Abdallah-Sallam"
-    ]
+    ],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/RobertHerjavec2023.jpg/330px-RobertHerjavec2023.jpg",
+      "credit": "Wikimedia Commons",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:RobertHerjavec2023.jpg"
+    }
   },
   {
     "id": "ahmed-el-sewedy",
@@ -315,7 +320,12 @@
       "https://en.wikipedia.org/wiki/Hend_Sabry",
       "https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF_%D8%B5%D8%A8%D8%B1%D9%8A",
       "https://scoopempire.com/hend-sabry-dives-back-into-shark-tank-egypt-in-season-4/"
-    ]
+    ],
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Couv-Tunivisions_Juin_2011.jpg/330px-Couv-Tunivisions_Juin_2011.jpg",
+      "credit": "Wikimedia Commons",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Couv-Tunivisions_Juin_2011.jpg"
+    }
   },
   {
     "id": "yassin-mansour",
