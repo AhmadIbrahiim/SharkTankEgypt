@@ -1,0 +1,22 @@
+name: Harvest source pages
+# Opens each startup's pitch video, website and Instagram and saves what they say to the
+# `harvest` branch (not main, so it doesn't redeploy). Data is reviewed before it's merged.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/harvest.mjs --test
+      - run: node scripts/harvest.mjs /tmp/harvest.json
+      - name: Publish to harvest branch
+        run: |
+          mkdir /tmp/out && cd /tmp/out && cp /tmp/harvest.json .
+          git init -q -b harvest && git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Harvest ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" harvest
