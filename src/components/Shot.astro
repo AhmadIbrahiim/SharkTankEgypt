@@ -1,12 +1,23 @@
 ---
-import { screenshot, hue } from '../config';
-interface Props { id: string; name: string; eager?: boolean }
-const { id, name, eager } = Astro.props;
+import { screenshot, thumb, hue } from '../config';
+interface Props { id: string; name: string; video?: string | null; eager?: boolean }
+const { id, name, video, eager } = Astro.props;
 const src = screenshot(id);
+const loading = eager ? 'eager' : 'lazy';
 ---
-<div class="frame">
-  <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-  {src
-    ? <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={eager ? 'eager' : 'lazy'} decoding="async" />
-    : <div class="shot ph" style={`--h:${hue(id)}`} aria-hidden="true"><span>{name}</span></div>}
-</div>
+{src ? (
+  <div class="frame">
+    <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+    <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={loading} decoding="async" />
+  </div>
+) : video ? (
+  <div class="frame video">
+    <img class="shot" src={thumb(video)} alt={name} width="480" height="360" loading={loading} decoding="async" />
+    <span class="play" aria-hidden="true"></span>
+  </div>
+) : (
+  <div class="frame">
+    <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="shot ph" style={`--h:${hue(id)}`} aria-hidden="true"><span>{name}</span></div>
+  </div>
+)}

@@ -35,7 +35,7 @@ const logo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circl
     <meta property="og:url" content={url} />
     <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
     <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
-    {image && <meta property="og:image" content={abs(image)} />}
+    {image && <meta property="og:image" content={image.startsWith('http') ? image : abs(image)} />}
     <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
     <link rel="icon" href={`data:image/svg+xml,${encodeURIComponent(logo)}`} />
@@ -143,7 +143,12 @@ const logo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circl
   .frame-bar { display: flex; gap: 5px; padding: 8px 10px; direction: ltr; }
   .frame-bar i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
   .frame-bar i:first-child { background: #f2a38a; } .frame-bar i:nth-child(2) { background: #f3cf86; } .frame-bar i:nth-child(3) { background: #9fd5b4; }
-  .shot { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; background: var(--surface); }
+  .shot { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; background: var(--surface); }
+  .frame.video { position: relative; background: #000; }
+  .frame.video .shot { object-position: center; }
+  .play { position: absolute; inset: 0; margin: auto; width: 56px; height: 56px; border-radius: 50%; background: color-mix(in srgb, var(--sun) 92%, transparent); box-shadow: 0 6px 20px rgb(0 0 0 / .35); transition: transform .2s; }
+  .play::after { content: ''; position: absolute; inset: 0; margin: auto; translate: 3px 0; width: 0; height: 0; border-block: 10px solid transparent; border-left: 16px solid #fff; }
+  a:hover .play, button:hover .play { transform: scale(1.08); }
   .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.4rem, 3.2vw, 2rem); font-weight: 650; line-height: 1.2;
     color: hsl(var(--h) 55% 38%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 80% 92%), hsl(var(--h) 60% 84%)); }
   @media (prefers-color-scheme: dark) { .ph { color: hsl(var(--h) 70% 78%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 35% 26%), hsl(var(--h) 30% 18%)); } }
