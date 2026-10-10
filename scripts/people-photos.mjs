@@ -6,7 +6,7 @@ import { get, meta } from './harvest.mjs';
 
 const out = process.argv[2] ?? 'photos';
 mkdirSync(out, { recursive: true });
-const people = JSON.parse(readFileSync('src/data/people.json', 'utf8')).filter((p) => p.kind === 'shark' && !p.photo?.url?.startsWith('/'));
+const people = JSON.parse(readFileSync('src/data/people.json', 'utf8')).filter((p) => (p.kind === 'shark' || p.kind === 'founder') && !p.photo?.url?.startsWith('/'));
 const index = {};
 for (const p of people) {
   const pages = [...new Set([...Object.values(p.links ?? {}), ...(p.sources ?? [])])];
