@@ -70,7 +70,12 @@
       "https://en.wikipedia.org/wiki/Elsewedy_Electric",
       "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed",
       "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
-    ]
+    ],
+    "photo": {
+      "url": "/people/ahmed-el-sewedy.jpg",
+      "credit": "forbesmiddleeast.com",
+      "creditUrl": "https://www.forbesmiddleeast.com/lists/egypts-top-50-listed-companies-2025/elsewedy-electric/"
+    }
   },
   {
     "id": "mohamed-farouk",
@@ -97,7 +102,9 @@
       "https://www.cairo360.com/?p=1721566",
       "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed",
       "https://enterpriseam.com/egypt/2023/01/09/shark-tank-egypt-gets-off-to-an-exciting-start/",
-      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month",
+      "https://misrconnect.com/en/profiles/967",
+      "https://endeavoreg.org/mohamed-farouk-joins-endeavor-egypt-board/"
     ]
   },
   {
@@ -126,7 +133,12 @@
       "https://misrconnect.com/en/profiles/1414",
       "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/",
       "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed"
-    ]
+    ],
+    "photo": {
+      "url": "/people/hilda-louca.jpg",
+      "credit": "startuplist.africa",
+      "creditUrl": "https://www.startuplist.africa/people/hilda-louca"
+    }
   },
   {
     "id": "mohamed-mansour",
@@ -162,7 +174,12 @@
       "https://theafricadebate.com/mohamed-mansour",
       "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed",
       "https://cairoscene.com/Business/Second-Season-of-Shark-Tank-Egypt-Premieres-October-25th"
-    ]
+    ],
+    "photo": {
+      "url": "/people/mohamed-mansour.jpg",
+      "credit": "forbesmiddleeast.com",
+      "creditUrl": "https://www.forbesmiddleeast.com/lists/the-middle-easts-sustainability-leaders-2025/mohamed-ismail-mansour/"
+    }
   },
   {
     "id": "abdallah-sallam",
@@ -196,7 +213,12 @@
       "https://enterpriseam.com/egypt/2024/07/18/abdallah-sallam-ceo-of-madinet-masr/",
       "https://www.almentor.net/en/mentors/AbdallahSallam",
       "https://cairoscene.com/Business/When-Sharks-Collide-Robert-Herjavec-Meets-Abdallah-Sallam"
-    ]
+    ],
+    "photo": {
+      "url": "/people/abdallah-sallam.jpg",
+      "credit": "almentor.net",
+      "creditUrl": "https://www.almentor.net/en/mentors/AbdallahSallam"
+    }
   },
   {
     "id": "ayman-abbas",
@@ -231,7 +253,8 @@
       "https://www.marketscreener.com/insider/AYMAN-ABBAS-A26S6R/",
       "https://enterprise.press/wp-content/uploads/2022/12/Shark-Tank-EN-PRL.docx.pdf",
       "https://enterpriseam.com/egypt/2023/01/09/shark-tank-egypt-gets-off-to-an-exciting-start/",
-      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month",
+      "https://misrconnect.com/en/profiles/749"
     ]
   },
   {
@@ -263,7 +286,12 @@
       "https://misrconnect.com/en/profiles/968",
       "https://nu.edu.eg/news/day-inspiration-dina-ghabbour",
       "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
-    ]
+    ],
+    "photo": {
+      "url": "/people/dina-ghabbour.jpg",
+      "credit": "misrconnect.com",
+      "creditUrl": "https://misrconnect.com/en/profiles/968"
+    }
   },
   {
     "id": "ahmed-tarek-khalil",
@@ -295,7 +323,12 @@
       "https://www.zawya.com/en/wealth/alternative-investments/shark-tank-star-ahmed-tarek-invests-100mln-in-healthcare-expansion-uhri3k4h",
       "https://www.billionaires.africa/2026/09/01/egyptian-shipping-tycoon-ahmed-tarek-khalil-sells-his-entire-ajwa-stake-for-6-million/",
       "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
-    ]
+    ],
+    "photo": {
+      "url": "/people/ahmed-tarek-khalil.jpg",
+      "credit": "misrconnect.com",
+      "creditUrl": "https://misrconnect.com/en/profiles/1006"
+    }
   },
   {
     "id": "hend-sabry",
@@ -356,7 +389,12 @@
       "https://cairoscene.com/Business/Yasseen-Mansour-Joins-Shark-Tank-Egypt-as-Guest-Shark",
       "https://invest-gate.me/news/yasseen-mansour-joins-shark-tank-egypt-as-newest-guest-shark/",
       "https://en.wikipedia.org/wiki/List_of_Egyptians_by_net_worth"
-    ]
+    ],
+    "photo": {
+      "url": "/people/yassin-mansour.jpg",
+      "credit": "cairoscene.com",
+      "creditUrl": "https://cairoscene.com/Business/Yasseen-Mansour-Joins-Shark-Tank-Egypt-as-Guest-Shark"
+    }
   },
   {
     "id": "mona-ataya",
@@ -384,7 +422,12 @@
       "https://misrconnect.com/en/profiles/2117",
       "https://www.forbesmiddleeast.com/lists/top-100-most-powerful-businesswomen-2023/mona-ataya/",
       "https://events.semafor.com/dbfusa/speaker/1941374/mrs.-mona-ataya"
-    ]
+    ],
+    "photo": {
+      "url": "/people/mona-ataya.jpg",
+      "credit": "misrconnect.com",
+      "creditUrl": "https://misrconnect.com/en/profiles/2117"
+    }
   },
   {
     "id": "bishoy-azmy",
@@ -411,7 +454,12 @@
       "https://misrconnect.com/en/profiles/4012",
       "https://www.aucegypt.edu/news/new-trustee-elected-bishoy-azmy-02",
       "https://misrconnect.com/en/tags/34"
-    ]
+    ],
+    "photo": {
+      "url": "/people/bishoy-azmy.jpg",
+      "credit": "aucegypt.edu",
+      "creditUrl": "https://www.aucegypt.edu/news/new-trustee-elected-bishoy-azmy-02"
+    }
   },
   {
     "id": "hala-el-kasem",
@@ -437,7 +485,12 @@
     "sources": [
       "https://misrconnect.com/en/profiles/4018",
       "https://misrconnect.com/en/tags/34"
-    ]
+    ],
+    "photo": {
+      "url": "/people/hala-el-kasem.jpg",
+      "credit": "misrconnect.com",
+      "creditUrl": "https://misrconnect.com/en/profiles/4018"
+    }
   },
   {
     "id": "nour-swid",
@@ -464,7 +517,12 @@
       "https://fastcompanyme.com/most-creative-people/noor-sweid/",
       "https://www.forbesmiddleeast.com/lists/the-middle-easts-top-venture-capitalists-2024/noor-sweid/",
       "https://www.forbesmiddleeast.com/lists/100-most-powerful-businesswomen-2025/noor-sweid/"
-    ]
+    ],
+    "photo": {
+      "url": "/people/nour-swid.jpg",
+      "credit": "forbesmiddleeast.com",
+      "creditUrl": "https://www.forbesmiddleeast.com/lists/the-middle-easts-top-venture-capitalists-2024/noor-sweid/"
+    }
   },
   {
     "id": "ahmed-mahmoud",

@@ -24,7 +24,7 @@ const other = [wikipedia && { name: 'Wikipedia', url: wikipedia }, wikipediaAr &
 const { website, ...social } = links;
 const jsonld = {
   '@context': 'https://schema.org', '@type': 'Person', name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'],
-  ...(p.title && { jobTitle: p.title[lang] }), ...(p.bio && { description: p.bio[lang] }), ...(p.photo && { image: p.photo.url }),
+  ...(p.title && { jobTitle: p.title[lang] }), ...(p.bio && { description: p.bio[lang] }), ...(p.photo && { image: p.photo.url.startsWith('/') ? new URL(`${base}${p.photo.url}`, Astro.site).href : p.photo.url }),
   sameAs: Object.values(p.links ?? {}),
 };
 ---
