@@ -134,4 +134,5 @@ const jsonld = {
   .partners a:hover span { color: var(--sun-ink); }
   .partners b { margin-inline-start: auto; color: var(--ink-2); font-weight: 500; }
   .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+  @media (max-width: 560px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
 </style>

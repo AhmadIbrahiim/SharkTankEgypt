@@ -24,7 +24,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'TVSeason', '@id': I
   ...(episodes.some(([k]) => k === n) && { numberOfEpisodes: episodes.filter(([k]) => k === n).length }) };
 ---
 <Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, seasonLabel(n, lang))} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/season/${n}/`}>
-  <Listing lang={lang} title={title} intro={intro} items={items} />
+  <Listing lang={lang} title={title} intro={intro} items={items} byEpisode />
   <div class="container">
     <Chips title={lang === 'ar' ? `حلقات ${label}` : `${label} episodes`} links={episodes.filter(([k]) => k === n).map(([, e]) => ({ href: `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${lang}/season/${n}/episode/${e}/`, label: lang === 'ar' ? `الحلقة ${num(e, lang)}` : `Episode ${e}` }))} />
     <Chips title={lang === 'ar' ? `قطاعات ${label}` : `${label} by sector`} links={sectorSeasons.filter((x) => x.n === n).map((x) => ({ href: `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${lang}/category/${catSlug(x.c)}/season/${n}/`, label: category(x.c, lang) }))} />
