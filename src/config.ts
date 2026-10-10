@@ -54,6 +54,7 @@ export const t = {
     reset: 'مسح الفلاتر',
     website: 'الموقع',
     visit: 'زيارة الموقع',
+    watch: 'شاهد العرض في البرنامج',
     ask: 'طلب المؤسسين',
     finalDeal: 'الصفقة النهائية',
     valuation: 'تقييم',
@@ -107,6 +108,7 @@ export const t = {
     reset: 'Clear filters',
     website: 'Website',
     visit: 'Visit website',
+    watch: 'Watch the pitch',
     ask: 'The ask',
     finalDeal: 'The deal',
     valuation: 'valuation',
@@ -141,6 +143,9 @@ export const money = (n: number | null | undefined, lang: Lang) =>
 export const pct = (n: number, lang: Lang) => new Intl.NumberFormat(locale(lang), { style: 'percent', maximumFractionDigits: 1 }).format(n / 100);
 export const valuation = (amount?: number | null, pct?: number | null) =>
   amount && pct ? Math.round(amount / (pct / 100)) : null;
+
+/** YouTube thumbnail; hqdefault is 4:3 with letterbox bars, which a 16:9 object-fit crop removes. */
+export const thumb = (video: string) => `https://i.ytimg.com/vi/${video}/hqdefault.jpg`;
 
 /** Path (relative to base) of a startup's captured screenshot, or null. */
 export const screenshot = (id: string) => (existsSync(`public/screenshots/${id}.jpg`) ? `/screenshots/${id}.jpg` : null);
