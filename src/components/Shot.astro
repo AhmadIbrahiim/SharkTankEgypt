@@ -4,15 +4,19 @@ interface Props { id: string; name: string; lang: string; video?: string | null;
 const { id, name, lang, video, eager } = Astro.props;
 const src = screenshot(id);
 const loading = eager ? 'eager' : 'lazy';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// A dead screenshot or a removed video falls back to the page's share card.
+const fallback = `this.onerror=null;this.src='${base}/og/${lang}/${id}.jpg'`;
 ---
 {src ? (
   <div class="frame">
     <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-    <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={loading} decoding="async" />
+    <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={loading} decoding="async" onerror={fallback} />
   </div>
 ) : video ? (
   <div class="frame video">
-    <img class="shot" src={thumb(video)} alt={name} width="480" height="360" loading={loading} decoding="async" />
+    <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+    <img class="shot" src={thumb(video)} alt={name} width="480" height="360" loading={loading} decoding="async" onerror={fallback} onload="if(this.naturalWidth<=120)this.onerror()" />
     <span class="play" aria-hidden="true"></span>
   </div>
 ) : (

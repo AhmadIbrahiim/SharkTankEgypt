@@ -234,7 +234,7 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
   .frame-bar { display: flex; gap: 5px; padding: 8px 10px; direction: ltr; }
   .frame-bar i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
   .frame-bar i:first-child { background: #f2a38a; } .frame-bar i:nth-child(2) { background: #f3cf86; } .frame-bar i:nth-child(3) { background: #9fd5b4; }
-  .shot { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; background: var(--surface); }
+  .shot { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; background: var(--surface); }
   .frame.video { position: relative; background: #000; }
   .frame.video .shot { object-position: center; }
   .play { position: absolute; inset: 0; margin: auto; width: 56px; height: 56px; border-radius: 50%; background: color-mix(in srgb, var(--sun) 92%, transparent); box-shadow: 0 6px 20px rgb(0 0 0 / .35); transition: transform .2s; }
