@@ -11,7 +11,7 @@ const altUrl = abs(altPath);
 const [arUrl, enUrl] = lang === 'ar' ? [url, altUrl] : [altUrl, url];
 const fullTitle = title ? `${title} | ${s.title}` : `${s.title} | ${t[other].title}`;
 const desc = description ?? s.tagline;
-const section = /\/(sharks|founders)\//.exec(Astro.url.pathname)?.[1] ?? 'startups';
+const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'startups';
 ---
 <!doctype html>
 <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
@@ -60,6 +60,7 @@ const section = /\/(sharks|founders)\//.exec(Astro.url.pathname)?.[1] ?? 'startu
           <a href={`${base}/${lang}/`} aria-current={section === 'startups' ? 'page' : undefined}>{s.navStartups}</a>
           <a href={`${base}/${lang}/sharks/`} aria-current={section === 'sharks' ? 'page' : undefined}>{s.navSharks}</a>
           <a href={`${base}/${lang}/founders/`} aria-current={section === 'founders' ? 'page' : undefined}>{s.navFounders}</a>
+          <a href={`${base}/${lang}/faq/`} aria-current={section === 'faq' ? 'page' : undefined}>{s.navFaq}</a>
         </nav>
         <a class="lang" href={`${base}${altPath}`} hreflang={other} lang={other}>
           <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-9 9h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
@@ -96,6 +97,7 @@ const section = /\/(sharks|founders)\//.exec(Astro.url.pathname)?.[1] ?? 'startu
             <a href={`${base}/${lang}/`}>{s.navStartups}</a>
             <a href={`${base}/${lang}/sharks/`}>{s.navSharks}</a>
             <a href={`${base}/${lang}/founders/`}>{s.navFounders}</a>
+            <a href={`${base}/${lang}/faq/`}>{s.navFaq}</a>
             <a href={`${base}${altPath}`} hreflang={other}>{s.switchLang}</a>
           </nav>
           <nav aria-label={s.browseSeasons}>
@@ -165,10 +167,10 @@ const section = /\/(sharks|founders)\//.exec(Astro.url.pathname)?.[1] ?? 'startu
   .brand.big .word small { font-size: .85rem; }
   .brand:hover .mark { transform: rotate(-8deg) scale(1.05); }
   .nav { display: flex; gap: 2px; margin-inline: auto 12px; padding: 4px; border-radius: 999px; background: var(--surface-2); }
-  .nav a { padding: 6px 14px; border-radius: 999px; color: var(--ink-2); text-decoration: none; font-size: .92rem; }
+  .nav a { padding: 6px 14px; border-radius: 999px; color: var(--ink-2); text-decoration: none; font-size: .92rem; white-space: nowrap; }
   .nav a:hover { color: var(--ink); }
   .nav a[aria-current='page'] { background: var(--surface); color: var(--ink); font-weight: 500; box-shadow: 0 1px 3px rgb(60 35 15 / .12); }
-  @media (max-width: 640px) { .bar { flex-wrap: wrap; height: auto; padding-block: 10px; gap: 8px; } .nav { order: 3; width: 100%; justify-content: center; margin: 0; } .site-header .word small { display: none; } .site-header .word b { font-size: .98rem; } }
+  @media (max-width: 640px) { .bar { flex-wrap: wrap; height: auto; padding-block: 10px; gap: 8px; } .nav { order: 3; width: 100%; justify-content: safe center; margin: 0; overflow-x: auto; } .nav a { padding: 6px 8px; font-size: .85rem; } .site-header .word small { display: none; } .site-header .word b { font-size: .98rem; } }
   .lang { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .9rem; transition: border-color .2s; }
   .lang:hover { border-color: var(--sun); }
 

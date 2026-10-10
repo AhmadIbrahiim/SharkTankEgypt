@@ -3,6 +3,8 @@ import Base from '../../../layouts/Base.astro';
 import Avatar from '../../../components/Avatar.astro';
 import Links from '../../../components/Links.astro';
 import MiniCard from '../../../components/MiniCard.astro';
+import Faq from '../../../components/Faq.astro';
+import { sharkFaq } from '../../../faq';
 import { langs, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, suggestUrl, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => sharks.map((p) => ({ params: { lang, id: p.id }, props: { p } })));
@@ -85,6 +87,8 @@ const jsonld = {
       <h2 class="h2">{s.portfolio}</h2>
       {p.deals.length ? <ul class="grid">{p.deals.map((x) => <li><MiniCard x={x} lang={lang} /></li>)}</ul> : <p class="muted">{s.noDeals}</p>}
     </section>
+
+    <Faq lang={lang} items={sharkFaq(p, lang)} />
   </div>
 </Base>
 <style>

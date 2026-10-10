@@ -4,6 +4,8 @@ import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
+import Faq from '../../components/Faq.astro';
+import { startupFaq } from '../../faq';
 import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
@@ -129,6 +131,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       <a href="#pitch">{s.secPitch}</a>
       {team.length > 0 && <a href="#team">{s.secTeam}</a>}
       {hasLinks && <a href="#online">{s.secOnline}</a>}
+      <a href="#faq">{s.navFaq}</a>
     </nav>
 
     <section id="overview" class="sec">
@@ -199,6 +202,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         <Links website={x.website} links={x.links} lang={lang} label={s.secOnline} />
       </section>
     )}
+
+    <Faq lang={lang} items={startupFaq(x, lang)} />
 
     <aside class="help">
       <div>

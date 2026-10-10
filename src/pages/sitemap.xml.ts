@@ -4,7 +4,7 @@ import { startups, sharks, founders, categories, catSlug, seasons } from '../con
 // Each URL lists its Arabic/English twin so Google serves the right language.
 export function GET({ site }: APIContext) {
   const root = new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), site).href;
-  const paths = ['', ...startups.map((x) => `${x.id}/`), 'sharks/', ...sharks.map((p) => `sharks/${p.id}/`), 'founders/', ...founders.map((p) => `founders/${p.id}/`), ...categories.map((c) => `category/${catSlug(c)}/`), ...seasons.map((x) => `season/${x.season}/`)];
+  const paths = ['', ...startups.map((x) => `${x.id}/`), 'sharks/', ...sharks.map((p) => `sharks/${p.id}/`), 'founders/', 'faq/', ...founders.map((p) => `founders/${p.id}/`), ...categories.map((c) => `category/${catSlug(c)}/`), ...seasons.map((x) => `season/${x.season}/`)];
   const urls = paths.flatMap((p) => ['ar', 'en'].map((lang) => `
   <url>
     <loc>${root}${lang}/${p}</loc>

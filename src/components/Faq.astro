@@ -1,0 +1,34 @@
+---
+// FAQ accordion + its FAQPage structured data. `ld={false}` when the page emits one combined FAQPage itself.
+import { t, type Lang } from '../config';
+import type { QA } from '../faq';
+interface Props { lang: Lang; items: QA[]; title?: string; id?: string; ld?: boolean }
+const { lang, items, title = t[lang].faqTitle, id = 'faq', ld = true } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang,
+  mainEntity: items.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
+---
+{items.length > 0 && (
+  <section class="faq" id={id}>
+    {title && <h2>{title}</h2>}
+    {items.map((x, i) => (
+      <details open={i < 2}>
+        <summary><h3>{x.q}</h3></summary>
+        <p>{x.a}{x.href != null && <> <a href={`${base}/${lang}/${x.href}`}>{t[lang].faqMore}</a></>}</p>
+      </details>
+    ))}
+    {ld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+  </section>
+)}
+<style>
+  .faq { margin-top: 36px; }
+  .faq h2 { font-size: 1.25rem; margin-bottom: 12px; }
+  details { background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); margin-bottom: 10px; }
+  summary { cursor: pointer; list-style: none; padding: 14px 18px; display: flex; gap: 12px; align-items: center; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; margin-inline-start: auto; font-size: 1.3rem; line-height: 1; color: var(--sun-ink); transition: transform .2s; }
+  details[open] summary::after { transform: rotate(45deg); }
+  summary h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+  details p { margin: 0; padding: 0 18px 16px; color: var(--ink-2); line-height: 1.7; }
+  details a { color: var(--sun-ink); font-weight: 500; white-space: nowrap; }
+</style>

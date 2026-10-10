@@ -1,6 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Listing from '../../../components/Listing.astro';
+import Faq from '../../../components/Faq.astro';
+import { categoryFaq } from '../../../faq';
 import { langs, startups, categories, catSlug, category, stats, t, num, money, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => categories.map((c) => ({ params: { lang, slug: catSlug(c) }, props: { c } })));
@@ -18,4 +20,5 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'CollectionPage', na
 ---
 <Base lang={lang} title={title} description={intro} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/category/${catSlug(c)}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} />
+  <div class="container"><Faq lang={lang} items={categoryFaq(c, lang)} /></div>
 </Base>
