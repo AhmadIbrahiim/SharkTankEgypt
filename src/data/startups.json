@@ -5955,6 +5955,52 @@
           "تقييم 4.4 من 5 على منصة كابتيرا"
         ]
       }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Clinic management app",
+          "desc": "Dentists run their practice from a mobile app: patient records, schedules and day-to-day operations."
+        },
+        {
+          "name": "Online appointment booking",
+          "desc": "Patients book their dental appointments directly, cutting phone calls and no-shows."
+        },
+        {
+          "name": "Automated patient reminders",
+          "desc": "Patients get automatic reminders before visits to keep the schedule full."
+        },
+        {
+          "name": "Performance analytics",
+          "desc": "Dashboards show clinic income, patient flow and performance over time."
+        },
+        {
+          "name": "Customisable billing",
+          "desc": "Invoices and payment plans tailored to each clinic’s treatments and pricing."
+        }
+      ],
+      "ar": [
+        {
+          "name": "تطبيق إدارة العيادة",
+          "desc": "يدير طبيب الأسنان عيادته من تطبيق على الهاتف: ملفات المرضى والمواعيد والعمل اليومي."
+        },
+        {
+          "name": "حجز المواعيد أونلاين",
+          "desc": "يحجز المرضى مواعيدهم مباشرة، فتقل المكالمات والمواعيد الفائتة."
+        },
+        {
+          "name": "تذكيرات تلقائية للمرضى",
+          "desc": "يصل للمرضى تذكير تلقائي قبل الزيارة للحفاظ على جدول ممتلئ."
+        },
+        {
+          "name": "تحليلات الأداء",
+          "desc": "لوحات تعرض دخل العيادة وحركة المرضى والأداء بمرور الوقت."
+        },
+        {
+          "name": "فواتير قابلة للتخصيص",
+          "desc": "فواتير وخطط دفع تناسب علاجات كل عيادة وأسعارها."
+        }
+      ]
     }
   },
   {
