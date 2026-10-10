@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
-import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, seasonLabel, type Lang, type Startup } from '../../config';
+import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, seasonLabel, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -87,7 +87,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
           <a class="btn btn-ghost" href="#comments">💬 {s.comments}</a>
         </div>
         {x.founders?.length > 0 && (
-          <p class="founders"><span>{s.founders}</span> {x.founders.join(lang === 'ar' ? '، ' : ', ')}</p>
+          <p class="founders"><span>{s.founders}</span> {x.founders.map((n, i) => <>{i > 0 && (lang === 'ar' ? '، ' : ', ')}<a href={`${base}/${lang}/founders/${founderId(n)}/`}>{n}</a></>)}</p>
         )}
         <Links website={x.website} links={x.links} lang={lang} label={s.online} />
       </div>
