@@ -32,7 +32,7 @@ jobs:
           git add public/screenshots
           git diff --cached --quiet && exit 0
           git commit -m "chore: refresh website screenshots"
-          git push
+          git pull -q --rebase origin main && git push origin HEAD:main
           # Pushes made with GITHUB_TOKEN don't trigger workflows, so redeploy explicitly.
           gh workflow run deploy.yml --ref "${{ github.ref_name }}"
         env:
