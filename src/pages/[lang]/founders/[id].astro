@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import { ID, photo, startupRef } from '../../../schema';
 import Avatar from '../../../components/Avatar.astro';
 import Links from '../../../components/Links.astro';
 import MiniCard from '../../../components/MiniCard.astro';
@@ -17,9 +18,9 @@ const byId = new Map(founders.map((f) => [f.id, f]));
 const { website, ...links } = (p.links ?? {}) as Record<string, string>;
 const title = p.title?.[lang] ?? p.startups.map((x) => x.name[lang]).join(lang === 'ar' ? '، ' : ', ');
 const jsonld = {
-  '@context': 'https://schema.org', '@type': 'Person', name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'], ...(p.title && { jobTitle: p.title.en }),
+  '@context': 'https://schema.org', '@type': 'Person', '@id': ID.founder(p.id), url: new URL(`${base}/${lang}/founders/${p.id}/`, Astro.site).href, name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'], ...(p.title && { jobTitle: p.title.en }),
   ...(p.bio && { description: p.bio[lang] }), sameAs: Object.values(p.links ?? {}),
-  worksFor: p.startups.map((x) => ({ '@type': 'Organization', name: x.name.en })),
+  worksFor: p.startups.map(startupRef), ...(p.photo && { image: photo(p.photo) }),
 };
 ---
 <Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']}) – ${title}`} description={p.bio?.[lang] ?? `${p.name[lang]} · ${title}`} jsonld={jsonld}
