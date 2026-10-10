@@ -1,14 +1,19 @@
 ---
-import { hue, initials, shark, type Lang } from '../config';
+import { hue, initials, shark, sharkByKey, type Lang } from '../config';
 interface Props { names: string[]; lang: Lang; labels?: boolean }
 const { names, lang, labels } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Chips link to profiles only in label mode; compact mode sits inside a card link already.
+const Tag = labels ? 'a' : 'span';
 ---
 <span class:list={['sharks', { labels }]}>
   {names.map((n) => (
-    <span class="shark" title={shark(n, lang)}>
-      <span class="avatar" style={`--h:${hue(n)}`} aria-hidden="true">{initials(n)}</span>
+    <Tag class="shark" title={shark(n, lang)} href={labels && sharkByKey.get(n) ? `${base}/${lang}/sharks/${sharkByKey.get(n)!.id}/` : undefined}>
+      {sharkByKey.get(n)?.photo
+        ? <img class="avatar" src={sharkByKey.get(n)!.photo!.url} alt="" width="28" height="28" loading="lazy" />
+        : <span class="avatar" style={`--h:${hue(n)}`} aria-hidden="true">{initials(n)}</span>}
       {labels ? <span>{shark(n, lang)}</span> : <span class="sr">{shark(n, lang)}</span>}
-    </span>
+    </Tag>
   ))}
 </span>
 <style>
@@ -16,5 +21,8 @@ const { names, lang, labels } = Astro.props;
   .sharks:not(.labels) .shark + .shark { margin-inline-start: -8px; }
   .sharks.labels { flex-wrap: wrap; gap: 8px; }
   .labels .shark { display: inline-flex; align-items: center; gap: 8px; padding-block: 4px; padding-inline: 4px 12px; border-radius: 999px; background: var(--surface-2); font-size: .9rem; }
+  a.shark { color: var(--ink); text-decoration: none; transition: background .2s; }
+  a.shark:hover { background: var(--sun-soft); }
+  img.avatar { object-fit: cover; padding: 0; }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 </style>

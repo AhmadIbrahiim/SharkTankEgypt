@@ -1,10 +1,10 @@
 import type { APIContext } from 'astro';
-import { startups } from '../config';
+import { startups, sharks, founders } from '../config';
 
 // Each URL lists its Arabic/English twin so Google serves the right language.
 export function GET({ site }: APIContext) {
   const root = new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), site).href;
-  const paths = ['', ...startups.map((x) => `${x.id}/`)];
+  const paths = ['', ...startups.map((x) => `${x.id}/`), 'sharks/', ...sharks.map((p) => `sharks/${p.id}/`), 'founders/', ...founders.map((p) => `founders/${p.id}/`)];
   const urls = paths.flatMap((p) => ['ar', 'en'].map((lang) => `
   <url>
     <loc>${root}${lang}/${p}</loc>

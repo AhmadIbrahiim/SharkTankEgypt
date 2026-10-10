@@ -1,6 +1,7 @@
 import { existsSync } from 'node:fs';
 import data from './data/startups.json';
 import seasons from './data/seasons.json';
+import peopleData from './data/people.json';
 
 export type Lang = 'ar' | 'en';
 export const langs: Lang[] = ['ar', 'en'];
@@ -57,6 +58,27 @@ export const t = {
     watch: 'شاهد العرض في البرنامج',
     online: 'تابعهم على الإنترنت',
     glance: 'لمحة سريعة',
+    navStartups: 'الشركات',
+    navSharks: 'المستثمرون',
+    navFounders: 'المؤسسون',
+    sharksTitle: 'مستثمرو شارك تانك مصر',
+    sharksIntro: 'تعرّف على القروش عبر كل المواسم: من هم، وفي أي الشركات استثمروا، ومع من يستثمرون عادةً.',
+    foundersTitle: 'مؤسسو شركات شارك تانك مصر',
+    foundersIntro: 'رواد الأعمال الذين وقفوا أمام القروش، وشركاتهم وقصصهم المهنية.',
+    dealsCount: 'صفقة',
+    invested: 'استثمارات معلنة',
+    avgEquity: 'متوسط الحصة',
+    appearedIn: 'المواسم',
+    portfolio: 'محفظة الاستثمارات في البرنامج',
+    noDeals: 'لا توجد صفقات مسجلة بعد في الدليل.',
+    coInvestors: 'يستثمر كثيرًا مع',
+    sectors: 'المجالات',
+    theirStartups: 'شركاته في البرنامج',
+    coFounders: 'شركاؤه في التأسيس',
+    profileThin: 'لم نجمع نبذة عن هذا الشخص بعد. هل تعرفه؟',
+    photoBy: 'الصورة:',
+    guest: 'ضيف',
+    searchPeople: 'ابحث بالاسم أو الشركة…',
     founded: 'تأسست',
     basedIn: 'المقر',
     ask: 'طلب المؤسسين',
@@ -120,6 +142,27 @@ export const t = {
     watch: 'Watch the pitch',
     online: 'Find them online',
     glance: 'At a glance',
+    navStartups: 'Startups',
+    navSharks: 'Sharks',
+    navFounders: 'Founders',
+    sharksTitle: 'The Sharks of Shark Tank Egypt',
+    sharksIntro: 'Meet the investors across every season: who they are, what they backed, and who they like to invest with.',
+    foundersTitle: 'Founders who faced the Sharks',
+    foundersIntro: 'The entrepreneurs who pitched on Shark Tank Egypt, their companies and professional stories.',
+    dealsCount: 'deals',
+    invested: 'announced investment',
+    avgEquity: 'average equity',
+    appearedIn: 'Seasons',
+    portfolio: 'Portfolio on the show',
+    noDeals: 'No deals recorded in the directory yet.',
+    coInvestors: 'Often invests with',
+    sectors: 'Sectors',
+    theirStartups: 'Startups on the show',
+    coFounders: 'Co-founders',
+    profileThin: 'We haven’t gathered a bio for this person yet. Know them?',
+    photoBy: 'Photo:',
+    guest: 'Guest',
+    searchPeople: 'Search by name or startup…',
     founded: 'Founded',
     basedIn: 'Based in',
     ask: 'The ask',
@@ -192,3 +235,44 @@ const sharkAr: Record<string, string> = {
   'Mona Ataya': 'منى عطايا', 'Bishoy Azmy': 'بيشوي عزمي', 'Robert Herjavec': 'روبرت هيرجافيك',
 };
 export const shark = (n: string, lang: Lang) => (lang === 'ar' ? sharkAr[n] ?? n : n);
+
+/** URL slug for a person's name. */
+export const slug = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+type Bi = { en: string; ar: string };
+export type Person = {
+  id: string; kind: 'shark' | 'founder'; name: Bi; title?: Bi; bio?: Bi;
+  photo?: { url: string; credit?: string; creditUrl?: string };
+  companies?: { name: string; role?: string; url?: string }[];
+  links?: Record<string, string>; seasons?: number[]; sources?: string[];
+};
+const profiles = new Map((peopleData as Person[]).map((p) => [`${p.kind}:${p.id}`, p]));
+
+/** Every shark: from season line-ups and deals, enriched by people.json, with their deals. */
+export const sharks = (() => {
+  const names = new Map<string, Set<number>>();
+  for (const s of seasons) for (const n of s.sharks) (names.get(n) ?? names.set(n, new Set()).get(n)!).add(s.season);
+  for (const x of startups) for (const n of x.deal?.sharks ?? []) (names.get(n) ?? names.set(n, new Set()).get(n)!).add(x.season);
+  return [...names].map(([n, ss]) => {
+    const id = slug(n), p = profiles.get(`shark:${id}`);
+    const deals = startups.filter((x) => x.deal?.made && x.deal.sharks?.includes(n));
+    return { ...p, id, kind: 'shark' as const, key: n, name: p?.name ?? { en: n, ar: sharkAr[n] ?? n }, seasons: [...(p?.seasons ?? ss)].sort(), deals };
+  }).sort((a, b) => b.deals.length - a.deals.length || a.name.en.localeCompare(b.name.en));
+})();
+
+/** Every founder named in the data, enriched by people.json, with their startups. */
+export const founders = (() => {
+  const by = new Map<string, { key: string; startups: Startup[] }>();
+  for (const x of startups) for (const n of x.founders ?? []) {
+    const id = slug(n);
+    if (!id) continue;
+    (by.get(id) ?? by.set(id, { key: n, startups: [] }).get(id)!).startups.push(x);
+  }
+  return [...by].map(([id, f]) => {
+    const p = profiles.get(`founder:${id}`);
+    return { ...p, id, kind: 'founder' as const, key: f.key, name: p?.name ?? { en: f.key, ar: f.key }, startups: f.startups };
+  }).sort((a, b) => a.name.en.localeCompare(b.name.en));
+})();
+
+export const sharkByKey = new Map(sharks.map((s) => [s.key, s]));
+export const founderId = (name: string) => slug(name);
