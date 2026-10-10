@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, startups, seasons, t, num, money, pct, category, seasonLabel, shark, type Lang } from '../../config';
+import { langs, startups, seasons, t, num, money, pct, category, seasonLabel, shark, suggestUrl, type Lang } from '../../config';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -101,8 +101,17 @@ const jsonld = {
       <div class="empty-fin" aria-hidden="true">🫧</div>
       <h2>{s.emptyTitle}</h2>
       <p>{s.emptyText}</p>
-      <button type="button" class="btn btn-ghost" id="reset">{s.reset}</button>
+      <div class="empty-actions">
+        <button type="button" class="btn btn-ghost" id="reset">{s.reset}</button>
+        <a class="btn btn-primary" href={suggestUrl}>＋ {s.suggest}</a>
+      </div>
     </div>
+
+    <aside class="missing" id="missing">
+      <span class="missing-icon" aria-hidden="true">🔎</span>
+      <div><h2>{s.missingTitle}</h2><p>{s.missingText}</p></div>
+      <a class="btn btn-primary" href={suggestUrl}>＋ {s.suggest}</a>
+    </aside>
   </section>
 </Base>
 
@@ -138,6 +147,7 @@ const jsonld = {
     grid.append(...[...items].sort(by));
     document.getElementById('count')!.textContent = fmt.format(n);
     document.getElementById('empty')!.hidden = n > 0;
+    document.getElementById('missing')!.hidden = n === 0;
 
     const url = new URL(location.href);
     url.search = new URLSearchParams(Object.entries(state).filter(([, v]) => v)).toString();
@@ -218,4 +228,11 @@ const jsonld = {
   .empty { text-align: center; padding: 48px 20px; }
   .empty-fin { font-size: 2.6rem; }
   .empty p { color: var(--ink-2); }
+  .empty-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .missing { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: 40px; padding: 22px 26px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--sun) 45%, var(--line)); background: color-mix(in srgb, var(--sun-soft) 55%, transparent); }
+  .missing[hidden] { display: none; }
+  .missing-icon { font-size: 2rem; }
+  .missing div { flex: 1 1 260px; }
+  .missing h2 { font-size: 1.15rem; }
+  .missing p { margin: 4px 0 0; color: var(--ink-2); }
 </style>
