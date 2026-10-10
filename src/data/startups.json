@@ -4203,7 +4203,14 @@
       "amountEGP": 4000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6839770",
       "https://www.youtube.com/watch?v=hOdv_KVv8Pw",
@@ -4508,7 +4515,15 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6873168",
       "https://sharktank-egypt.com/en/deals/fashion",
