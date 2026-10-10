@@ -35,3 +35,14 @@ for (const p of people) {
   }
 }
 writeFileSync(`${out}/index.json`, JSON.stringify(index, null, 1));
+
+// Founders' portrait = the frame CBC published for their pitch (YouTube mqdefault, 16:9, no letterbox).
+const videos = [...new Set(JSON.parse(readFileSync('src/data/startups.json', 'utf8')).map((s) => s.video).filter(Boolean))];
+mkdirSync(`${out}/frames`, { recursive: true });
+for (const v of videos) {
+  try {
+    const res = await fetch(`https://i.ytimg.com/vi/${v}/mqdefault.jpg`, { signal: AbortSignal.timeout(15000) });
+    if (res.ok) writeFileSync(`${out}/frames/${v}.jpg`, Buffer.from(await res.arrayBuffer()));
+  } catch (e) { console.log('✗ frame', v, e.message); }
+}
+console.log('frames', videos.length);
