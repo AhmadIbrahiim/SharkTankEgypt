@@ -1,1 +1,1148 @@
-[]
+[
+  {
+    "id": "robert-herjavec",
+    "kind": "shark",
+    "name": {
+      "en": "Robert Herjavec",
+      "ar": "روبرت هيرجافيك"
+    },
+    "title": {
+      "en": "Founder of Herjavec Group; Shark on ABC's Shark Tank",
+      "ar": "مؤسس مجموعة هيرجافيك ومستثمر في برنامج شارك تانك الأمريكي"
+    },
+    "bio": {
+      "en": "Robert Herjavec is a Croatian-Canadian entrepreneur and television personality, born in 1962 in Varaždin and raised in Canada after his family emigrated. He built his fortune in technology, founding BRAK Systems and later The Herjavec Group, a cybersecurity firm. He became widely known as an investor on Canada's Dragons' Den and as one of the long-running sharks on the American Shark Tank, and he has written several business books. He joined Shark Tank Egypt as a guest shark, bringing a global investor's perspective to Egyptian founders, and also sat down in Cairo with fellow shark Abdallah Sallam to discuss the region's startup ecosystem.",
+      "ar": "روبرت هيرجافيك رائد أعمال وشخصية تلفزيونية كرواتي-كندي، وُلد عام 1962 في مدينة فارازدين ونشأ في كندا بعد هجرة أسرته. بنى ثروته في قطاع التكنولوجيا، فأسس شركة BRAK Systems ثم مجموعة هيرجافيك المتخصصة في الأمن السيبراني. اشتهر مستثمرًا في برنامج Dragons' Den الكندي وأحد أقدم المستثمرين في النسخة الأمريكية من شارك تانك، وألّف عددًا من الكتب في ريادة الأعمال. انضم إلى شارك تانك مصر مستثمرًا ضيفًا حاملًا خبرة عالمية لرواد الأعمال المصريين، كما أجرى حوارًا في القاهرة مع زميله عبد الله سلام حول منظومة الشركات الناشئة في المنطقة."
+    },
+    "companies": [
+      {
+        "name": "Herjavec Group",
+        "role": "Founder"
+      },
+      {
+        "name": "BRAK Systems",
+        "role": "Founder"
+      }
+    ],
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Robert_Herjavec"
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Robert_Herjavec",
+      "https://www.startupresearcher.com/news/robert-herjavec-joins-shark-tank-egypt-as-guest",
+      "https://thestartupscene.me/INVESTMENTS/Robert-Herjavec-to-Appear-as-Guest-Shark-on-Shark-Tank-Egyp",
+      "https://cairoscene.com/Business/When-Sharks-Collide-Robert-Herjavec-Meets-Abdallah-Sallam"
+    ]
+  },
+  {
+    "id": "ahmed-el-sewedy",
+    "kind": "shark",
+    "name": {
+      "en": "Ahmed El Sewedy",
+      "ar": "أحمد السويدي"
+    },
+    "title": {
+      "en": "President & CEO of Elsewedy Electric",
+      "ar": "الرئيس والرئيس التنفيذي لمجموعة السويدي إليكتريك"
+    },
+    "bio": {
+      "en": "Ahmed Sadek El Sewedy is the President, CEO and Managing Director of Elsewedy Electric, the family-founded Egyptian group that began as a small Cairo trading business in 1938. An electrical engineering graduate of Cairo University, he joined the board in 2005 and led the group's transformation into a multinational provider of cables, electrical products, energy and infrastructure projects. Under his leadership the company grew to dozens of production facilities, operations in around 50 countries and some 22,000 employees, with major expansions across Africa and the Gulf. A founding shark on Shark Tank Egypt, he brings deep industrial and export experience to the panel.",
+      "ar": "أحمد صادق السويدي هو الرئيس والرئيس التنفيذي والعضو المنتدب لمجموعة السويدي إليكتريك، الشركة العائلية المصرية التي بدأت نشاطًا تجاريًا صغيرًا في القاهرة عام 1938. تخرج في كلية الهندسة الكهربائية بجامعة القاهرة، وانضم إلى مجلس الإدارة عام 2005، وقاد تحوّل المجموعة إلى شركة متعددة الجنسيات في مجالات الكابلات والمنتجات الكهربائية ومشروعات الطاقة والبنية التحتية. وفي عهده توسعت الشركة لتضم عشرات المصانع وتعمل في نحو 50 دولة ويعمل بها قرابة 22 ألف موظف، مع توسعات كبرى في أفريقيا والخليج. وهو من المستثمرين المؤسسين في شارك تانك مصر، ويضيف إلى اللجنة خبرة صناعية وتصديرية واسعة."
+    },
+    "companies": [
+      {
+        "name": "Elsewedy Electric",
+        "role": "President, CEO & Managing Director"
+      }
+    ],
+    "links": {
+      "wikipediaAr": "https://ar.wikipedia.org/wiki/%D8%A3%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF%D9%8A"
+    },
+    "sources": [
+      "https://ar.wikipedia.org/wiki/%D8%A3%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF%D9%8A",
+      "https://www.forbesmiddleeast.com/lists/egypts-top-50-listed-companies-2025/elsewedy-electric/",
+      "https://www.theafricaceoforum.com/forum-2026/en/intervenant/ahmed-el-sewedy/",
+      "https://en.wikipedia.org/wiki/Elsewedy_Electric",
+      "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed",
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+    ]
+  },
+  {
+    "id": "mohamed-farouk",
+    "kind": "shark",
+    "name": {
+      "en": "Mohamed Farouk",
+      "ar": "محمد فاروق"
+    },
+    "title": {
+      "en": "Chairman & CEO of Mobica",
+      "ar": "رئيس مجلس الإدارة والرئيس التنفيذي لشركة موبيكا"
+    },
+    "bio": {
+      "en": "Mohamed Farouk is the Chairman and CEO of Mobica Designs, one of Egypt's best-known furniture manufacturers. Founded in 1979, Mobica helped transform the Egyptian furniture industry, specialising in office and contract furniture for corporate and public-sector clients. Farouk has led the company's growth in design, manufacturing and regional exports. A founding shark on Shark Tank Egypt, he is known on the show for founder-friendly gestures, such as offering to manufacture a young contestant's product stands for free without taking any equity.",
+      "ar": "محمد فاروق هو رئيس مجلس الإدارة والرئيس التنفيذي لشركة موبيكا للتصميمات، إحدى أشهر شركات تصنيع الأثاث في مصر. أسهمت موبيكا منذ تأسيسها عام 1979 في تطوير صناعة الأثاث المصرية، وتتخصص في الأثاث المكتبي ومشروعات التجهيز للشركات والجهات الحكومية. قاد فاروق نمو الشركة في مجالات التصميم والتصنيع والتصدير إلى المنطقة. وهو من المستثمرين المؤسسين في شارك تانك مصر، ويُعرف في البرنامج بمواقفه الداعمة لرواد الأعمال، ومنها عرضه تصنيع حوامل منتجات لمتسابق شاب مجانًا ودون الحصول على أي حصة."
+    },
+    "companies": [
+      {
+        "name": "Mobica Designs",
+        "role": "Chairman & CEO"
+      }
+    ],
+    "sources": [
+      "https://www.cairo360.com/?p=1721566",
+      "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed",
+      "https://enterpriseam.com/egypt/2023/01/09/shark-tank-egypt-gets-off-to-an-exciting-start/",
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+    ]
+  },
+  {
+    "id": "hilda-louca",
+    "kind": "shark",
+    "name": {
+      "en": "Hilda Louca",
+      "ar": "هيلدا لوقا"
+    },
+    "title": {
+      "en": "Founder & CEO of MITCHA",
+      "ar": "مؤسسة والرئيسة التنفيذية لمنصة ميتشا"
+    },
+    "bio": {
+      "en": "Hilda Louca is an Egyptian entrepreneur and the founder and CEO of MITCHA, a fashion e-commerce platform that connects shoppers with local and regional brands. She built MITCHA in the late 2010s into one of Egypt's recognised online fashion destinations. Forbes Middle East has named her among the region's most powerful businesswomen. She was one of the six original sharks on Shark Tank Egypt when it premiered in January 2023, bringing a digital-commerce and consumer-brand perspective to the panel, and later returned in season four.",
+      "ar": "هيلدا لوقا رائدة أعمال مصرية، ومؤسسة منصة ميتشا للتجارة الإلكترونية في مجال الأزياء ورئيستها التنفيذية، وهي منصة تربط المتسوقين بالعلامات المحلية والإقليمية. نجحت في بناء ميتشا خلال أواخر العقد الثاني من الألفية لتصبح من أبرز وجهات الأزياء الإلكترونية في مصر. اختارتها فوربس الشرق الأوسط ضمن أقوى سيدات الأعمال في المنطقة. وكانت من المستثمرين الستة الأوائل في شارك تانك مصر عند انطلاقه في يناير 2023، مقدّمةً خبرتها في التجارة الرقمية والعلامات الاستهلاكية، ثم عادت في الموسم الرابع."
+    },
+    "companies": [
+      {
+        "name": "MITCHA",
+        "role": "Founder & CEO"
+      }
+    ],
+    "sources": [
+      "https://www.startuplist.africa/people/hilda-louca",
+      "https://misrconnect.com/en/profiles/1414",
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/",
+      "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed"
+    ]
+  },
+  {
+    "id": "mohamed-mansour",
+    "kind": "shark",
+    "name": {
+      "en": "Mohamed Ismail Mansour",
+      "ar": "محمد إسماعيل منصور"
+    },
+    "title": {
+      "en": "Co-founder & Chairman of Infinity Group and Infinity Power",
+      "ar": "الشريك المؤسس ورئيس مجلس إدارة مجموعة إنفينيتي وإنفينيتي باور"
+    },
+    "bio": {
+      "en": "Mohamed Ismail Mansour is an Egyptian renewable-energy investor who co-founded Infinity Group in 2014 and chairs Infinity Power, its joint venture with Abu Dhabi's Masdar. Infinity Power develops solar, wind and battery-storage projects and operates about 1.3 GW across Egypt, South Africa and Senegal, targeting 10 GW in Africa by 2030. He led its 2023 acquisition of Lekela Power, described as Africa's biggest renewable-energy deal, and is deputy chairman of Palm Hills Developments. Forbes Middle East lists him among the region's sustainability leaders. He was a founding shark on Shark Tank Egypt.",
+      "ar": "محمد إسماعيل منصور مستثمر مصري في الطاقة المتجددة، شارك في تأسيس مجموعة إنفينيتي عام 2014 ويرأس مجلس إدارة إنفينيتي باور، المشروع المشترك مع شركة مصدر الإماراتية. تطوّر إنفينيتي باور مشروعات للطاقة الشمسية وطاقة الرياح وتخزين البطاريات، وتشغّل نحو 1.3 جيجاوات في مصر وجنوب أفريقيا والسنغال، وتستهدف 10 جيجاوات في أفريقيا بحلول 2030. قاد صفقة الاستحواذ على ليكيلا باور عام 2023، التي وُصفت بأنها أكبر صفقة للطاقة المتجددة في أفريقيا، ويشغل منصب نائب رئيس مجلس إدارة بالم هيلز للتعمير. وهو من المستثمرين المؤسسين في شارك تانك مصر."
+    },
+    "companies": [
+      {
+        "name": "Infinity Group",
+        "role": "Co-founder & Chairman"
+      },
+      {
+        "name": "Infinity Power",
+        "role": "Chairman"
+      },
+      {
+        "name": "Palm Hills Developments",
+        "role": "Deputy Chairman"
+      }
+    ],
+    "sources": [
+      "https://www.forbesmiddleeast.com/lists/the-middle-easts-sustainability-leaders-2025/mohamed-ismail-mansour/",
+      "https://theafricadebate.com/mohamed-mansour",
+      "https://cairoscene.com/buzz/shark-tank-is-coming-to-egypt-and-the-sharks-have-been-revealed",
+      "https://cairoscene.com/Business/Second-Season-of-Shark-Tank-Egypt-Premieres-October-25th"
+    ]
+  },
+  {
+    "id": "abdallah-sallam",
+    "kind": "shark",
+    "name": {
+      "en": "Abdallah Sallam",
+      "ar": "عبد الله سلام"
+    },
+    "title": {
+      "en": "President & CEO of Madinet Masr",
+      "ar": "الرئيس والرئيس التنفيذي لشركة مدينة مصر"
+    },
+    "bio": {
+      "en": "Abdallah Sallam is an Egyptian real-estate executive and the President and CEO of Madinet Masr, one of Egypt's oldest developers, founded in 1959. He previously founded the development firm Minka, which Madinet Masr acquired in October 2021, when he was appointed to lead the combined company. Under his leadership Madinet Masr has expanded rapidly, reporting contracted sales of about $810 million in 2024, and Forbes Middle East lists him among the region's most impactful real-estate leaders. A founding shark on Shark Tank Egypt and one of the show's best-known faces, he also mentors founders through platforms such as Almentor.",
+      "ar": "عبد الله سلام مسؤول تنفيذي مصري في قطاع التطوير العقاري، ويشغل منصب الرئيس والرئيس التنفيذي لشركة مدينة مصر، إحدى أعرق شركات التطوير في مصر والتي تأسست عام 1959. أسس سابقًا شركة مينكا للتطوير العقاري التي استحوذت عليها مدينة مصر في أكتوبر 2021، ليتولى قيادة الشركة. وتحت قيادته توسعت مدينة مصر بسرعة وحققت مبيعات تعاقدية بنحو 810 ملايين دولار في 2024، وتدرجه فوربس الشرق الأوسط ضمن أكثر قادة العقارات تأثيرًا في المنطقة. وهو من المستثمرين المؤسسين في شارك تانك مصر وأحد أبرز وجوهه، كما يقدّم الإرشاد لرواد الأعمال عبر منصات مثل المنتور."
+    },
+    "companies": [
+      {
+        "name": "Madinet Masr",
+        "role": "President & CEO",
+        "url": "https://ir.madinetmasr.com/en/leadership"
+      },
+      {
+        "name": "Minka",
+        "role": "Founder"
+      }
+    ],
+    "sources": [
+      "https://ir.madinetmasr.com/en/leadership",
+      "https://www.forbesmiddleeast.com/lists/most-impactful-real-estate-leaders-2025/abdallah-sallam/",
+      "https://enterpriseam.com/egypt/2024/07/18/abdallah-sallam-ceo-of-madinet-masr/",
+      "https://www.almentor.net/en/mentors/AbdallahSallam",
+      "https://cairoscene.com/Business/When-Sharks-Collide-Robert-Herjavec-Meets-Abdallah-Sallam"
+    ]
+  },
+  {
+    "id": "ayman-abbas",
+    "kind": "shark",
+    "name": {
+      "en": "Ayman Abbas",
+      "ar": "أيمن عباس"
+    },
+    "title": {
+      "en": "Founder of Egyptian Chinese Drilling Company; Chairman of ADES",
+      "ar": "مؤسس الشركة المصرية الصينية للحفر ورئيس مجلس إدارة أديس"
+    },
+    "bio": {
+      "en": "Ayman Abbas is an Egyptian businessman whose career is rooted in the oil and gas drilling sector. He founded the Egyptian Chinese Drilling Company in 1998 and chairs ADES International Holding, a contract drilling group operating across the Middle East and Africa. He heads several enterprises and has served as non-executive chairman of Rameda, a listed Egyptian pharmaceutical company. A founding shark on Shark Tank Egypt and a member of the panel in every season, he is known for backing young founders, including co-investing with Abdallah Sallam in a teenage contestant's checkout startup.",
+      "ar": "أيمن عباس رجل أعمال مصري تتركز مسيرته في قطاع حفر آبار النفط والغاز. أسس الشركة المصرية الصينية للحفر عام 1998، ويرأس مجلس إدارة أديس القابضة الدولية، وهي مجموعة للحفر التعاقدي تعمل في الشرق الأوسط وأفريقيا. يقود عددًا من الشركات، وشغل منصب رئيس مجلس الإدارة غير التنفيذي لشركة راميدا للأدوية المدرجة في البورصة المصرية. وهو من المستثمرين المؤسسين في شارك تانك مصر وعضو في اللجنة في جميع المواسم، ويُعرف بدعمه لرواد الأعمال الشباب، ومن ذلك استثماره مع عبد الله سلام في مشروع لمتسابق مراهق في مجال الدفع."
+    },
+    "companies": [
+      {
+        "name": "Egyptian Chinese Drilling Company",
+        "role": "Founder"
+      },
+      {
+        "name": "ADES International Holding",
+        "role": "Chairman"
+      },
+      {
+        "name": "Rameda Pharmaceuticals",
+        "role": "Non-executive Chairman"
+      }
+    ],
+    "sources": [
+      "https://www.marketscreener.com/insider/AYMAN-ABBAS-A26S6R/",
+      "https://enterprise.press/wp-content/uploads/2022/12/Shark-Tank-EN-PRL.docx.pdf",
+      "https://enterpriseam.com/egypt/2023/01/09/shark-tank-egypt-gets-off-to-an-exciting-start/",
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+    ]
+  },
+  {
+    "id": "dina-ghabbour",
+    "kind": "shark",
+    "name": {
+      "en": "Dina Ghabbour",
+      "ar": "دينا غبور"
+    },
+    "title": {
+      "en": "CEO of the Ghabbour Foundation for Development",
+      "ar": "الرئيسة التنفيذية لمؤسسة غبور للتنمية"
+    },
+    "bio": {
+      "en": "Dina Ghabbour is an Egyptian businesswoman and philanthropist, the daughter of the late industrialist Raouf Ghabbour, founder of GB Auto. She is CEO of the Ghabbour Foundation for Development, which supports vocational and technical education in Egypt to improve employment opportunities. She also sits on the board of Halan, a fintech company focused on financial inclusion. She joined Shark Tank Egypt as a shark from season two, investing in founders with scalable ideas and regularly speaking to student entrepreneurs at Egyptian universities.",
+      "ar": "دينا غبور سيدة أعمال ومهتمة بالعمل التنموي من مصر، وهي ابنة رجل الصناعة الراحل رؤوف غبور مؤسس جي بي أوتو. تشغل منصب الرئيسة التنفيذية لمؤسسة غبور للتنمية التي تدعم التعليم الفني والمهني في مصر لتحسين فرص التوظيف. كما تشغل عضوية مجلس إدارة شركة حالا للتكنولوجيا المالية المعنية بالشمول المالي. انضمت إلى لجنة شارك تانك مصر بدءًا من الموسم الثاني، وتستثمر في رواد الأعمال أصحاب الأفكار القابلة للنمو، وتتحدث بانتظام إلى الطلاب رواد الأعمال في الجامعات المصرية."
+    },
+    "companies": [
+      {
+        "name": "Ghabbour Foundation for Development",
+        "role": "CEO"
+      },
+      {
+        "name": "Halan",
+        "role": "Board Member"
+      }
+    ],
+    "sources": [
+      "https://misrconnect.com/en/profiles/968",
+      "https://nu.edu.eg/news/day-inspiration-dina-ghabbour",
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+    ]
+  },
+  {
+    "id": "ahmed-tarek-khalil",
+    "kind": "shark",
+    "name": {
+      "en": "Ahmed Tarek Khalil",
+      "ar": "أحمد طارق خليل"
+    },
+    "title": {
+      "en": "Founder of Allianz Marine Services; co-founder of NextEra Education",
+      "ar": "مؤسس شركة أليانز للخدمات البحرية والشريك المؤسس لنكست إيرا للتعليم"
+    },
+    "bio": {
+      "en": "Ahmed Tarek Khalil is an Egyptian shipping entrepreneur and investor who founded Allianz Marine Services in 2012. He has since diversified into education, co-founding NextEra Education, which acquires and expands private schools in Egypt, and has announced plans to invest around $100 million in healthcare. He also holds stakes in listed companies and has been active in public-market investing. He joined Shark Tank Egypt as a shark and has become one of the show's prominent investors in recent seasons.",
+      "ar": "أحمد طارق خليل رائد أعمال ومستثمر مصري في قطاع الشحن البحري، أسس شركة أليانز للخدمات البحرية عام 2012. ثم توسع في قطاع التعليم بالمشاركة في تأسيس نكست إيرا للتعليم التي تستحوذ على مدارس خاصة في مصر وتطورها، وأعلن خططًا لاستثمار نحو 100 مليون دولار في قطاع الرعاية الصحية. كما يمتلك حصصًا في شركات مدرجة ويستثمر في أسواق المال. انضم إلى شارك تانك مصر مستثمرًا في اللجنة، وأصبح من أبرز مستثمري البرنامج في المواسم الأخيرة."
+    },
+    "companies": [
+      {
+        "name": "Allianz Marine Services",
+        "role": "Founder"
+      },
+      {
+        "name": "NextEra Education",
+        "role": "Co-founder"
+      }
+    ],
+    "sources": [
+      "https://misrconnect.com/en/profiles/1006",
+      "https://www.zawya.com/en/wealth/alternative-investments/shark-tank-star-ahmed-tarek-invests-100mln-in-healthcare-expansion-uhri3k4h",
+      "https://www.billionaires.africa/2026/09/01/egyptian-shipping-tycoon-ahmed-tarek-khalil-sells-his-entire-ajwa-stake-for-6-million/",
+      "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month"
+    ]
+  },
+  {
+    "id": "hend-sabry",
+    "kind": "shark",
+    "name": {
+      "en": "Hend Sabry",
+      "ar": "هند صبري"
+    },
+    "title": {
+      "en": "Tunisian-Egyptian actress and producer",
+      "ar": "ممثلة ومنتجة تونسية مصرية"
+    },
+    "bio": {
+      "en": "Hend Sabry is a Tunisian-Egyptian actress and producer, born in 1979, who made her screen debut in The Silences of the Palace in 1994 and went on to become one of the leading stars of Egyptian cinema and television, with films such as The Yacoubian Building and Al Gezira. She also holds a law degree and a master's in intellectual property law, and has been registered with the Tunisian bar. Beyond acting she has produced work and engaged in humanitarian advocacy. She appeared as a guest shark on Shark Tank Egypt in season two, when guest sharks were first introduced, and returned as a guest in season four.",
+      "ar": "هند صبري ممثلة ومنتجة تونسية مصرية وُلدت عام 1979، بدأت مشوارها الفني بفيلم «صمت القصور» عام 1994، ثم أصبحت من أبرز نجمات السينما والدراما المصرية بأعمال مثل «عمارة يعقوبيان» و«الجزيرة». تحمل شهادة في القانون وماجستير في قانون الملكية الفكرية، وهي مقيدة في هيئة المحامين التونسية. وإلى جانب التمثيل خاضت مجال الإنتاج وشاركت في العمل الإنساني. ظهرت مستثمرةً ضيفة في شارك تانك مصر خلال الموسم الثاني، حين قُدّم نظام المستثمرين الضيوف لأول مرة، ثم عادت ضيفةً في الموسم الرابع."
+    },
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Hend_Sabry",
+      "wikipediaAr": "https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF_%D8%B5%D8%A8%D8%B1%D9%8A"
+    },
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hend_Sabry",
+      "https://ar.wikipedia.org/wiki/%D9%87%D9%86%D8%AF_%D8%B5%D8%A8%D8%B1%D9%8A",
+      "https://scoopempire.com/hend-sabry-dives-back-into-shark-tank-egypt-in-season-4/"
+    ]
+  },
+  {
+    "id": "yassin-mansour",
+    "kind": "shark",
+    "name": {
+      "en": "Yasseen Mansour",
+      "ar": "ياسين منصور"
+    },
+    "title": {
+      "en": "Chairman & Group CEO of Palm Hills Developments",
+      "ar": "رئيس مجلس الإدارة والرئيس التنفيذي لمجموعة بالم هيلز للتعمير"
+    },
+    "bio": {
+      "en": "Yasseen Mansour is an Egyptian billionaire businessman and the founder, chairman and group CEO of Palm Hills Developments, which he established in 1997. Under his leadership Palm Hills grew from a single project into one of Egypt's leading real-estate developers, with a land bank of about 38 million square metres across Egypt and the UAE. He is also a board member of the Mansour Group, with a career spanning real estate, automotive, construction and food and beverage. He joined Shark Tank Egypt as a guest shark in season three.",
+      "ar": "ياسين منصور رجل أعمال ملياردير مصري، ومؤسس شركة بالم هيلز للتعمير ورئيس مجلس إدارتها ورئيسها التنفيذي، وقد أسسها عام 1997. وتحت قيادته تحولت بالم هيلز من مشروع واحد إلى إحدى كبرى شركات التطوير العقاري في مصر، بمحفظة أراضٍ تبلغ نحو 38 مليون متر مربع في مصر والإمارات. كما يشغل عضوية مجلس إدارة مجموعة منصور، وتمتد خبرته إلى قطاعات العقارات والسيارات والمقاولات والأغذية والمشروبات. انضم إلى شارك تانك مصر مستثمرًا ضيفًا في الموسم الثالث."
+    },
+    "companies": [
+      {
+        "name": "Palm Hills Developments",
+        "role": "Founder, Chairman & Group CEO"
+      },
+      {
+        "name": "Mansour Group",
+        "role": "Board Member"
+      }
+    ],
+    "sources": [
+      "https://cairoscene.com/Business/Yasseen-Mansour-Joins-Shark-Tank-Egypt-as-Guest-Shark",
+      "https://invest-gate.me/news/yasseen-mansour-joins-shark-tank-egypt-as-newest-guest-shark/",
+      "https://en.wikipedia.org/wiki/List_of_Egyptians_by_net_worth"
+    ]
+  },
+  {
+    "id": "mona-ataya",
+    "kind": "shark",
+    "name": {
+      "en": "Mona Ataya",
+      "ar": "منى عطايا"
+    },
+    "title": {
+      "en": "Founder & CEO of Mumzworld",
+      "ar": "مؤسسة والرئيسة التنفيذية لممزورلد"
+    },
+    "bio": {
+      "en": "Mona Ataya is a Middle East e-commerce pioneer who founded Mumzworld in 2011 and led it as CEO, building it into the region's largest online platform for mothers' and children's products. Saudi Arabia's Tamer Group acquired Mumzworld in June 2021. She is a board member of the Dubai Chamber of Digital Economy and Young Arab Leaders, a UN advocate, and an active mentor and investor across the region's startup ecosystem. Forbes Middle East has repeatedly named her among the region's most powerful businesswomen. She joined Shark Tank Egypt as a guest shark in season three.",
+      "ar": "منى عطايا رائدة في التجارة الإلكترونية في الشرق الأوسط، أسست ممزورلد عام 2011 وقادتها رئيسةً تنفيذية حتى أصبحت أكبر منصة إلكترونية في المنطقة لمنتجات الأم والطفل. استحوذت مجموعة تمر السعودية على ممزورلد في يونيو 2021. وهي عضو في مجلس إدارة غرفة دبي للاقتصاد الرقمي وجمعية القادة العرب الشباب، ومناصرة لدى الأمم المتحدة، ومرشدة ومستثمرة نشطة في منظومة الشركات الناشئة بالمنطقة. اختارتها فوربس الشرق الأوسط مرارًا ضمن أقوى سيدات الأعمال. انضمت إلى شارك تانك مصر مستثمرةً ضيفة في الموسم الثالث."
+    },
+    "companies": [
+      {
+        "name": "Mumzworld",
+        "role": "Founder & CEO"
+      }
+    ],
+    "sources": [
+      "https://www.elwatannews.com/news/details/7802099",
+      "https://misrconnect.com/en/profiles/2117",
+      "https://www.forbesmiddleeast.com/lists/top-100-most-powerful-businesswomen-2023/mona-ataya/",
+      "https://events.semafor.com/dbfusa/speaker/1941374/mrs.-mona-ataya"
+    ]
+  },
+  {
+    "id": "bishoy-azmy",
+    "kind": "shark",
+    "name": {
+      "en": "Bishoy Azmy",
+      "ar": "بيشوي عزمي"
+    },
+    "title": {
+      "en": "CEO of ASGC",
+      "ar": "الرئيس التنفيذي لمجموعة ASGC"
+    },
+    "bio": {
+      "en": "Bishoy Azmy is an Egyptian construction executive and the CEO of ASGC, a Dubai-based construction and infrastructure group. He joined ASGC as a site engineer and rose through the ranks to become CEO in 2008, overseeing the group's growth into a major contractor across the Gulf and Egypt. An alumnus of the American University in Cairo, he became the youngest member of AUC's Board of Trustees in December 2020. He joined the Shark Tank Egypt panel in season four as an investor supporting Egyptian entrepreneurs.",
+      "ar": "بيشوي عزمي مسؤول تنفيذي مصري في قطاع المقاولات، ويشغل منصب الرئيس التنفيذي لمجموعة ASGC للمقاولات والبنية التحتية ومقرها دبي. بدأ مسيرته في المجموعة مهندس موقع وتدرج في المناصب حتى أصبح رئيسها التنفيذي عام 2008، وقاد نموها لتصبح من كبرى شركات المقاولات في الخليج ومصر. وهو من خريجي الجامعة الأمريكية بالقاهرة، وأصبح في ديسمبر 2020 أصغر أعضاء مجلس أمنائها. انضم إلى لجنة شارك تانك مصر في الموسم الرابع مستثمرًا داعمًا لرواد الأعمال المصريين."
+    },
+    "companies": [
+      {
+        "name": "ASGC",
+        "role": "CEO"
+      }
+    ],
+    "sources": [
+      "https://misrconnect.com/en/profiles/4012",
+      "https://www.aucegypt.edu/news/new-trustee-elected-bishoy-azmy-02",
+      "https://misrconnect.com/en/tags/34"
+    ]
+  },
+  {
+    "id": "hala-el-kasem",
+    "kind": "shark",
+    "name": {
+      "en": "Hala El-Kasem",
+      "ar": "هالة خالد القاسم"
+    },
+    "title": {
+      "en": "Chairwoman of Carina Wear Group",
+      "ar": "رئيسة مجلس إدارة مجموعة كارينا وير"
+    },
+    "bio": {
+      "en": "Hala Khaled El-Kasem is an Egyptian businesswoman and the chairwoman of Carina Wear Group of Companies and Factories, one of the largest fashion and apparel manufacturing brands in the Middle East. She has led the group's retail and manufacturing operations, bringing experience in investment, brand building and industrial management. She joined Shark Tank Egypt as a guest shark in season four, looking for founders with strategic thinking and real execution ability.",
+      "ar": "هالة خالد القاسم سيدة أعمال مصرية ورئيسة مجلس إدارة مجموعة شركات ومصانع كارينا وير، إحدى أكبر العلامات في مجال تصنيع الملابس والأزياء في الشرق الأوسط. قادت عمليات المجموعة في التجزئة والتصنيع، وتمتلك خبرة في الاستثمار وبناء العلامات التجارية والإدارة الصناعية. انضمت إلى شارك تانك مصر مستثمرةً ضيفة في الموسم الرابع، باحثةً عن رواد أعمال يتمتعون بالتفكير الاستراتيجي والقدرة الحقيقية على التنفيذ."
+    },
+    "companies": [
+      {
+        "name": "Carina Wear Group",
+        "role": "Chairwoman"
+      }
+    ],
+    "sources": [
+      "https://misrconnect.com/en/profiles/4018",
+      "https://misrconnect.com/en/tags/34"
+    ]
+  },
+  {
+    "id": "nour-swid",
+    "kind": "shark",
+    "name": {
+      "en": "Noor Sweid",
+      "ar": "نور سويد"
+    },
+    "title": {
+      "en": "Founder & Managing Partner of Global Ventures",
+      "ar": "مؤسسة والشريكة الإدارية لشركة جلوبال فنتشرز"
+    },
+    "bio": {
+      "en": "Noor Sweid is a venture capitalist and the founder and managing partner of Global Ventures, a UAE-based firm founded in 2018 that backs Series A startups across the Middle East and Africa, with a presence in Egypt, Saudi Arabia and Nigeria. She was previously chief investment officer of the Dubai Future Foundation. Forbes Middle East lists her among the region's top venture capitalists and most powerful businesswomen. She has been an investor on Shark Tank Dubai and appeared on the Shark Tank Egypt panel in season four.",
+      "ar": "نور سويد مستثمرة في رأس المال الجريء، ومؤسسة شركة جلوبال فنتشرز والشريكة الإدارية فيها، وهي شركة مقرها الإمارات تأسست عام 2018 وتستثمر في الشركات الناشئة في مرحلة الجولة الأولى (Series A) في الشرق الأوسط وأفريقيا، ولها حضور في مصر والسعودية ونيجيريا. شغلت سابقًا منصب رئيسة الاستثمار في مؤسسة دبي للمستقبل. وتدرجها فوربس الشرق الأوسط ضمن أبرز المستثمرين في رأس المال الجريء وأقوى سيدات الأعمال في المنطقة. شاركت مستثمرةً في شارك تانك دبي، وظهرت ضمن لجنة شارك تانك مصر في الموسم الرابع."
+    },
+    "companies": [
+      {
+        "name": "Global Ventures",
+        "role": "Founder & Managing Partner"
+      }
+    ],
+    "sources": [
+      "https://fastcompanyme.com/most-creative-people/noor-sweid/",
+      "https://www.forbesmiddleeast.com/lists/the-middle-easts-top-venture-capitalists-2024/noor-sweid/",
+      "https://www.forbesmiddleeast.com/lists/100-most-powerful-businesswomen-2025/noor-sweid/"
+    ]
+  },
+  {
+    "id": "ahmed-mahmoud",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Mahmoud",
+      "ar": "أحمد محمود"
+    },
+    "title": {
+      "en": "Co-founder & CEO, DXwand",
+      "ar": "المؤسس المشارك والرئيس التنفيذي، دي إكس واند"
+    },
+    "bio": {
+      "en": "Ahmed Mahmoud worked at Microsoft before co-founding DXwand in 2018 with Mahmoud Gomaa, leaving Microsoft after the startup signed its first client in 2019. DXwand builds conversational AI for businesses, operating from Cairo and Dubai. He led the company through a $1M pre-Series A in 2022 and a $4M Series A in 2024, and an expansion into Saudi Arabia.",
+      "ar": "عمل أحمد محمود في مايكروسوفت قبل أن يشارك محمود جمعة تأسيس دي إكس واند عام 2018، ثم ترك مايكروسوفت بعد توقيع الشركة أول عميل لها عام 2019. تطوّر الشركة حلول الذكاء الاصطناعي التحادثي للمؤسسات وتعمل من القاهرة ودبي. قاد الشركة في جولة تمويل ما قبل الفئة A بقيمة مليون دولار عام 2022، وجولة الفئة A بقيمة 4 ملايين دولار عام 2024، وتوسعها في السعودية."
+    },
+    "links": {
+      "website": "https://dxwand.com/"
+    },
+    "sources": [
+      "https://techpoint.africa/2024/01/25/egypt-dxwand-secures-seriesa/",
+      "https://www.wamda.com/index.php/2024/01/dxwand-secures-4-million-series-fuel-regional-expansion",
+      "https://dfdf.vc/insights/from-niche-tech-to-global-trend-lessons-about-ai-from-dxwand/",
+      "https://www.setupinsaudi.com/news/saudi-expansion-announcements/conversational-ai-company-dxwand-expands-to-saudi-arabia-with-astrolabs"
+    ]
+  },
+  {
+    "id": "omar-khalifa",
+    "kind": "founder",
+    "name": {
+      "en": "Omar Khalifa",
+      "ar": "عمر خليفة"
+    },
+    "title": {
+      "en": "Founder & CEO, Shaghalni",
+      "ar": "المؤسس والرئيس التنفيذي، شغلني"
+    },
+    "bio": {
+      "en": "An AUC graduate, Omar Khalifa worked at the World Bank and founded the media company Omedia in 2009 before launching Shaghalni around 2015–2016. The platform connects job seekers, largely blue-collar workers, with employers and attracted investment from Naguib Sawiris. Shaghalni opened a physical hiring center in Sohag, and on Shark Tank Egypt it secured an offer from all five sharks.",
+      "ar": "تخرّج عمر خليفة في الجامعة الأمريكية بالقاهرة، وعمل في البنك الدولي، وأسس شركة الإعلام «أوميديا» عام 2009، قبل أن يطلق «شغلني» نحو عامي 2015 و2016. تربط المنصة الباحثين عن عمل، ومعظمهم من العمالة الحرفية، بأصحاب العمل، وقد استثمر فيها نجيب ساويرس. افتتحت «شغلني» مركز توظيف في سوهاج، وحصلت في برنامج شارك تانك مصر على عرض من القروش الخمسة."
+    },
+    "links": {
+      "website": "https://shaghalni.com/"
+    },
+    "sources": [
+      "https://waya.media/how-one-tweet-made-shaghalni/",
+      "https://enterpriseam.com/egypt/2023/01/12/my-morning-routine-omar-khalifa-founder-and-ceo-of-shaghalni/"
+    ]
+  },
+  {
+    "id": "shorouk-alaa",
+    "kind": "founder",
+    "name": {
+      "en": "Shorouk Alaa",
+      "ar": "شروق علاء"
+    },
+    "title": {
+      "en": "Co-founder & CEO, Career 180",
+      "ar": "المؤسسة المشاركة والرئيسة التنفيذية، كارير 180"
+    },
+    "bio": {
+      "en": "Shorouk (Shrouk) Alaa is co-founder and CEO of Career 180, an Egyptian career-development platform with more than 200 recorded courses that connects candidates with over 2,000 hiring partners. She also founded Freelance Yard and the Egypt Career Summit. Her recognitions include IFC and the Netherlands Embassy's Top 100 Female Entrepreneurs in the Middle East and Africa.",
+      "ar": "شروق علاء هي المؤسسة المشاركة والرئيسة التنفيذية لـ«كارير 180»، وهي منصة مصرية للتطوير المهني تضم أكثر من 200 دورة مسجلة وتربط المتدربين بأكثر من 2000 شريك توظيف. أسست أيضًا «فريلانس يارد» و«قمة مصر للتوظيف». ومن بين التكريمات التي نالتها اختيارها ضمن أفضل 100 رائدة أعمال في الشرق الأوسط وأفريقيا من مؤسسة التمويل الدولية وسفارة هولندا."
+    },
+    "links": {
+      "website": "https://career-180.com/"
+    },
+    "sources": [
+      "https://career-180.com/en/qualifying/experts/shrouk-alaa-2",
+      "https://depi.career-180.com/en/coaches/shrouk-alaa-eldin-1742133873"
+    ]
+  },
+  {
+    "id": "alia-osman",
+    "kind": "founder",
+    "name": {
+      "en": "Alia Osman",
+      "ar": "علياء عثمان"
+    },
+    "title": {
+      "en": "Co-founder, Curlit",
+      "ar": "المؤسسة المشاركة، كيرليت"
+    },
+    "bio": {
+      "en": "Alia Osman holds a diploma in beauty-product manufacturing and co-founded Curlit with Mohamed Attya. Curlit is an Egyptian hair-care brand made for curly hair. Her pitch for the brand drew the sharks' attention on Shark Tank Egypt.",
+      "ar": "تحمل علياء عثمان دبلومًا في تصنيع مستحضرات التجميل، وشاركت محمد عطية تأسيس «كيرليت»، وهي علامة مصرية للعناية بالشعر المجعد. ولفت عرضها للعلامة انتباه المستثمرين في برنامج شارك تانك مصر."
+    },
+    "links": {
+      "website": "https://curlit.shop/",
+      "instagram": "https://www.instagram.com/curlithq/"
+    },
+    "sources": [
+      "https://cairo360.com/?p=1772872"
+    ]
+  },
+  {
+    "id": "dalia-salem",
+    "kind": "founder",
+    "name": {
+      "en": "Dalia Salem",
+      "ar": "داليا سالم"
+    },
+    "title": {
+      "en": "Founder, Peacock Designs",
+      "ar": "المؤسسة، بيكوك ديزاينز"
+    },
+    "bio": {
+      "en": "Dalia (Dahlia) Salem studied business in France, where the rise of sustainable products and green fashion inspired her. She founded Peacock Designs, an EU-funded venture that works with Egyptian artisans to upcycle discarded palm reeds into furniture and home products. She learned palm-reed craftsmanship in Fayoum and promotes using harvest leftovers that are otherwise burned.",
+      "ar": "درست داليا سالم إدارة الأعمال في فرنسا، حيث ألهمها انتشار المنتجات المستدامة والأزياء الصديقة للبيئة. أسست «بيكوك ديزاينز»، وهو مشروع ممول من الاتحاد الأوروبي يعمل مع حرفيين مصريين لإعادة تدوير جريد النخيل وتحويله إلى أثاث ومنتجات منزلية. تعلمت حرفة الجريد في الفيوم، وتدعو إلى استغلال مخلفات الحصاد التي تُحرق عادة."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/dahlia-salem-2772534/"
+    },
+    "sources": [
+      "https://scenehome.com/Projects/Peacock-Designs-Turns-Palm-Leaves-Into-Eco-friendly-Products"
+    ]
+  },
+  {
+    "id": "mohamed-mardini",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Mardini",
+      "ar": "محمد مارديني"
+    },
+    "title": {
+      "en": "Founder & Designer, Naseej",
+      "ar": "المؤسس والمصمم، نسيج"
+    },
+    "bio": {
+      "en": "Mohamed Mardini is a textile designer who leads Naseej, a Giza-based weaving company founded in 2016 that offers modern takes on Egyptian home textiles. He comes from the Mardini line of textile weavers, active since the 1940s. Naseej sells fabrics and finished goods such as cushions to homeowners and hospitality clients, and has exported to Croatia, Oman, Saudi Arabia and Jordan.",
+      "ar": "محمد مارديني مصمم منسوجات يقود «نسيج»، وهي شركة نسيج تأسست عام 2016 في الجيزة وتقدم رؤية عصرية للمنسوجات المنزلية المصرية. ينتمي إلى عائلة مارديني العاملة في النسيج منذ أربعينيات القرن الماضي. تبيع «نسيج» الأقمشة ومنتجات جاهزة كالوسائد للمنازل والفنادق، وقد صدّرت إلى كرواتيا وعُمان والسعودية والأردن."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/mohamed-mardini-886a7664/",
+      "instagram": "https://www.instagram.com/naseejfabrics/"
+    },
+    "sources": [
+      "https://app.dealroom.co/companies/naseej",
+      "https://cairoscene.com/lifestyle/naseej-textiles"
+    ]
+  },
+  {
+    "id": "ahmed-shaaban",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Shaaban",
+      "ar": "أحمد شعبان"
+    },
+    "title": {
+      "en": "Founder & Chairman, Simplex",
+      "ar": "المؤسس ورئيس مجلس الإدارة، سيمبلكس"
+    },
+    "bio": {
+      "en": "An engineer, Ahmed Shaaban turned a Minya University graduation project on CNC technology into Simplex, which he co-founded with Mohamed Mansour in 2013. Simplex manufactures CNC machines in Egypt and raised $13M in 2025. In 2026 it opened a $50M, 40,000 m² factory in 10th of Ramadan City, and he was named a top-10 finalist of Africa's Business Heroes.",
+      "ar": "حوّل المهندس أحمد شعبان مشروع تخرجه في جامعة المنيا حول تقنية التحكم الرقمي (CNC) إلى شركة «سيمبلكس»، التي أسسها مع محمد منصور عام 2013. تصنّع الشركة ماكينات CNC في مصر، وجمعت تمويلًا بقيمة 13 مليون دولار عام 2025. وفي عام 2026 افتتحت مصنعًا بمساحة 40 ألف متر مربع في مدينة العاشر من رمضان باستثمارات 50 مليون دولار، واختير ضمن العشرة المتأهلين لنهائيات «أبطال الأعمال في أفريقيا»."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/company/simplex-cnc"
+    },
+    "sources": [
+      "https://egyptinnovate.com/en/news/an-egyptian-industrial-success-story-simplex-advances-to-the-africas-business-heroes-grand-finale",
+      "https://www.wamda.com/2026/07/simplex-inaugurates-second-factory-50-million-investment",
+      "https://allafrica.com/stories/202607290663.html"
+    ]
+  },
+  {
+    "id": "abdelrahman-el-shafiey",
+    "kind": "founder",
+    "name": {
+      "en": "Abdelrahman El Shafiey",
+      "ar": "عبد الرحمن الشافعي"
+    },
+    "title": {
+      "en": "Co-founder, Dentolize",
+      "ar": "المؤسس المشارك، دنتولايز"
+    },
+    "bio": {
+      "en": "Dr. Abdelrahman El Shafiey is a dentist whose frustration with juggling patient records across sticky notes and disjointed software led to Dentolize in 2018. He co-founded the dental-practice management platform with engineer Mostafa Dawoud and Marwan Doghem. Dentolize is reported to power more than 1,350 clinics.",
+      "ar": "الدكتور عبد الرحمن الشافعي طبيب أسنان، دفعته معاناته في إدارة سجلات المرضى بين الأوراق اللاصقة وبرامج متفرقة إلى إطلاق فكرة «دنتولايز» عام 2018. شارك في تأسيس منصة إدارة عيادات الأسنان مع المهندس مصطفى داود ومروان دغيم. وتشير التقارير إلى أن أكثر من 1350 عيادة تعمل بالمنصة."
+    },
+    "links": {
+      "website": "https://dentolize.com/"
+    },
+    "sources": [
+      "https://thestartupscene.me/In-Depth/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+      "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide"
+    ]
+  },
+  {
+    "id": "hosny-ahmed",
+    "kind": "founder",
+    "name": {
+      "en": "Hosny Ahmed",
+      "ar": "حسني أحمد"
+    },
+    "title": {
+      "en": "Co-founder & CEO, Schoolz",
+      "ar": "المؤسس المشارك والرئيس التنفيذي، سكولز"
+    },
+    "bio": {
+      "en": "Hosny (Hosni) Ahmed co-founded Schoolz in 2020 with Abdel Monsef Ismail and Ayman Hamza and serves as CEO. Schoolz is a Cairo-based app that lets parents schedule school transport and follow trips through live cameras and notifications. It closed a six-figure pre-seed round from Egyptian and Saudi angels in 2021, targeting the two million private and international school students in Cairo and Giza.",
+      "ar": "شارك حسني أحمد في تأسيس «سكولز» عام 2020 مع عبد المنصف إسماعيل وأيمن حمزة، ويشغل منصب الرئيس التنفيذي. «سكولز» تطبيق من القاهرة يتيح لأولياء الأمور حجز نقل أبنائهم إلى المدارس ومتابعة الرحلات عبر كاميرات مباشرة وإشعارات. أغلقت الشركة عام 2021 جولة تمويل أولية بمبلغ من ست خانات من مستثمرين أفراد في مصر والسعودية، مستهدفة نحو مليوني طالب في المدارس الخاصة والدولية بالقاهرة والجيزة."
+    },
+    "links": {
+      "website": "https://schoolz.io/"
+    },
+    "sources": [
+      "https://www.wamda.com/en/2021/08/schoolz-raises-figure-pre-seed-funding",
+      "https://thestartupscene.me/INVESTMENTS/Egyptian-Transport-App-Schoolz-Raises-Six-Figure-Fund-Ahead-of-Launch"
+    ]
+  },
+  {
+    "id": "mina-mandaloun",
+    "kind": "founder",
+    "name": {
+      "en": "Mina Mandaloun",
+      "ar": "مينا مندلون"
+    },
+    "title": {
+      "en": "Co-founder & Designer, PAVO",
+      "ar": "المؤسس المشارك والمصمم، بافو"
+    },
+    "bio": {
+      "en": "Mina Mandaloun is a communications engineer who co-founded By Pavo with Khaled El Boraay, a colleague he met while both worked at Orange. He designs the brand's bags. The Egyptian brand was born from the lack of affordable, locally made luggage and makes minimalist bags, backpacks and footwear.",
+      "ar": "مينا مندلون مهندس اتصالات شارك في تأسيس «باي بافو» مع خالد البرعي، الذي تعرّف عليه أثناء عملهما في أورنج، ويتولى تصميم حقائب العلامة. وُلدت فكرة العلامة المصرية من غياب حقائب سفر محلية بأسعار مناسبة، وهي تقدم حقائب وحقائب ظهر وأحذية بتصميم بسيط."
+    },
+    "links": {
+      "website": "https://bypavo.com/",
+      "instagram": "https://www.instagram.com/bypavo/"
+    },
+    "sources": [
+      "https://cairoscene.com/Styled/We-re-Totes-in-Love-with-This-Egyptian-Bag-Bran",
+      "https://cairo360.com/?p=1792367"
+    ]
+  },
+  {
+    "id": "ahmed-abdel-rasoul",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Abdel Rasoul",
+      "ar": "أحمد عبد الرسول"
+    },
+    "title": {
+      "en": "Co-founder, Sadu Designs",
+      "ar": "المؤسس المشارك، سدو ديزاينز"
+    },
+    "bio": {
+      "en": "Ahmed Abdel Rasoul co-founded Sadu Designs with Fatma Wagdy. The Egyptian company combines handicrafts and heritage trades with local materials to make décor, furniture, lighting and bags, working with more than 20 workshops, factories and women's associations. On Shark Tank Egypt the founders agreed to a deal of EGP 2 million for 35% of the company.",
+      "ar": "شارك أحمد عبد الرسول في تأسيس «سدو ديزاينز» مع فاطمة وجدي. تمزج الشركة المصرية الحرف اليدوية والمهن التراثية بالخامات المحلية لصناعة الديكور والأثاث والإضاءة والحقائب، وتتعاون مع أكثر من 20 ورشة ومصنعًا وجمعية نسائية. وفي برنامج شارك تانك مصر وافق المؤسسان على صفقة بقيمة مليوني جنيه مقابل 35% من الشركة."
+    },
+    "links": {
+      "website": "https://sadudesigns.com/"
+    },
+    "sources": [
+      "https://www.soutalomma.com/Article/1142218/صاحبا-مشروع-Sadu-Designs-ندمج-الحرف-اليدوية-والمهن-التراثية-لصناعة"
+    ]
+  },
+  {
+    "id": "youssef-el-rayan",
+    "kind": "founder",
+    "name": {
+      "en": "Youssef El Rayan",
+      "ar": "يوسف الريان"
+    },
+    "title": {
+      "en": "Co-founder, Grif",
+      "ar": "المؤسس المشارك، جريف"
+    },
+    "bio": {
+      "en": "Youssef El Rayan (also spelled Al Ryan) is a cooking enthusiast who co-founded Grif with Linda El Sayyad and Heidi El Abd after finding only expensive imported cast-iron skillets in Egypt. Grif makes cast-iron cookware in Egypt, and its name refers to Horus depicted as a gryphon. The brand appeared on Shark Tank Egypt in January 2023.",
+      "ar": "يوسف الريان من محبي الطهي، شارك في تأسيس «جريف» مع ليندا الصياد وهايدي العبد بعد أن وجد أن مقالي الحديد الزهر المتاحة في مصر مستوردة وباهظة الثمن. تصنع «جريف» أواني الحديد الزهر في مصر، ويشير اسمها إلى حورس في صورة الجريفين. ظهرت العلامة في برنامج شارك تانك مصر في يناير 2023."
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/grifcookware/"
+    },
+    "sources": [
+      "https://cairoscene.com/lifestyle/set-in-stone-grif-cookware-s-legacy-of-sustainability-style"
+    ]
+  },
+  {
+    "id": "somaia-aboelezz",
+    "kind": "founder",
+    "name": {
+      "en": "Somaia Aboelezz",
+      "ar": "سمية أبو العز"
+    },
+    "title": {
+      "en": "Fashion Designer & Founder, Somaia Aboelezz",
+      "ar": "مصممة أزياء ومؤسسة علامة سمية أبو العز"
+    },
+    "bio": {
+      "en": "Somaia Aboelezz (also Abolezz) is a fashion designer whose social enterprise makes wearable art and puts part of its revenue toward community initiatives. She began in late 2018 with fabric-painting workshops that taught women to decorate and recycle their clothes. She released her first collection in early 2019, made with eco-friendly fabric to support local artisans.",
+      "ar": "سمية أبو العز مصممة أزياء تدير مؤسسة اجتماعية تنتج «فنًا يُرتدى»، وتخصص جزءًا من عائداتها لمبادرات مجتمعية. بدأت أواخر 2018 بورش للرسم على القماش علّمت فيها النساء تزيين ملابسهن وإعادة تدويرها. وأطلقت أولى مجموعاتها مطلع 2019 من أقمشة صديقة للبيئة دعمًا للحرفيين المحليين."
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/somaiabolezz/"
+    },
+    "sources": [
+      "https://nahdetelmahrousa.org/?p=91767"
+    ]
+  },
+  {
+    "id": "israa-saleh",
+    "kind": "founder",
+    "name": {
+      "en": "Israa Saleh",
+      "ar": "إسراء صالح"
+    },
+    "title": {
+      "en": "Founder, Super Abla",
+      "ar": "مؤسسة سوبر أبلة"
+    },
+    "bio": {
+      "en": "Israa Saleh is an Egyptian Arabic-language teacher known as \"Super Abla\". She looks for unconventional ways to bring Arabic closer to children, using songs and stories to simplify classical Arabic. She has also run reading challenges that aim to build a reading habit in 21 days.",
+      "ar": "إسراء صالح معلمة لغة عربية مصرية تُعرف باسم «سوبر أبلة». تبحث عن طرق غير تقليدية لتقريب العربية من الأطفال، مستخدمة الأغاني والقصص لتبسيط الفصحى. كما تقود تحديات قراءة تهدف إلى ترسيخ عادة القراءة لدى الأطفال خلال 21 يومًا."
+    },
+    "sources": [
+      "https://www.aljazeera.net/family/2026/8/5/21-يوما-لترسيخ-عادة-القراءة-سوبر-أبلة"
+    ]
+  },
+  {
+    "id": "mohamed-hesham",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Hesham",
+      "ar": "محمد هشام"
+    },
+    "title": {
+      "en": "Founder & CEO, Dajin",
+      "ar": "المؤسس والرئيس التنفيذي، داجن"
+    },
+    "bio": {
+      "en": "Mohamed Hesham (also spelled Hisham) is the founder and CEO of Dajin, an agtech-fintech platform for the poultry industry offering marketplaces, an academy, and credit scoring and financing for farmers. He brings about 18 years of experience in lending, SME and corporate banking, trade finance and investments, including heading the medium-enterprises segment at Alexbank and serving as CBDO of Alkan. He also ran the venture studio Wealth-Grid.",
+      "ar": "محمد هشام هو مؤسس منصة داجن ورئيسها التنفيذي، وهي منصة تجمع بين التكنولوجيا الزراعية والتكنولوجيا المالية لقطاع الدواجن، وتوفر أسواقًا متخصصة وأكاديمية وخدمات تقييم ائتماني وتمويل للمربين. يمتلك نحو 18 عامًا من الخبرة في الإقراض وتمويل الشركات الصغيرة والمتوسطة والخدمات المصرفية للشركات وتمويل التجارة والاستثمار، إذ ترأس قطاع الشركات المتوسطة في بنك الإسكندرية وشغل منصب مدير تطوير الأعمال في شركة ألكان. كما أدار استوديو المشروعات Wealth-Grid."
+    },
+    "sources": [
+      "https://mentors.vc4a.com/profiles/mohamed-hisham",
+      "https://vc4a.com/ventures/dajin-platform-3/team",
+      "https://cairo360.com/?p=1725815"
+    ]
+  },
+  {
+    "id": "mostafa-dawoud",
+    "kind": "founder",
+    "name": {
+      "en": "Mostafa Dawoud",
+      "ar": "مصطفى داود"
+    },
+    "title": {
+      "en": "Co-founder & CEO, Dentolize",
+      "ar": "الشريك المؤسس والرئيس التنفيذي، دنتولايز"
+    },
+    "bio": {
+      "en": "Mostafa Dawoud is the co-founder and CEO of Dentolize, a Cairo-based dental practice management SaaS. An engineer by background, he was working at British Airways when a dentist friend brought him the clinic-management problem that led to the company in 2018, and he wrote its original codebase. He won Founders Live Cairo.",
+      "ar": "مصطفى داود هو الشريك المؤسس والرئيس التنفيذي لدنتولايز، وهي منصة برمجية سحابية لإدارة عيادات الأسنان مقرها القاهرة. مهندس بخلفيته، وكان يعمل لدى الخطوط الجوية البريطانية حين عرض عليه صديق طبيب أسنان مشكلة إدارة العيادات، فأسّسا الشركة عام 2018، وكتب بنفسه الشيفرة الأولى للمنصة. فاز في مسابقة Founders Live القاهرة."
+    },
+    "sources": [
+      "https://founderslivepodcast.buzzsprout.com/653182/13889887",
+      "https://thestartupscene.me/In-Depth/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide"
+    ]
+  },
+  {
+    "id": "mohab-abou-eita",
+    "kind": "founder",
+    "name": {
+      "en": "Mohab Abou Eita",
+      "ar": "مهاب أبو عيطة"
+    },
+    "title": {
+      "en": "Co-founder & CEO, Amanleek",
+      "ar": "الشريك المؤسس والرئيس التنفيذي، أمانليك"
+    },
+    "bio": {
+      "en": "Mohab Abou Eita (Aboueita) co-founded Amanleek, an Egyptian digital insurance platform focused on health and motor insurance for individuals and companies, launched in 2019 with Mohamed Mansour and Ihab El Sokary. Before Amanleek he worked as a sales supervisor at Deraya Insurance Brokerage from 2017 to 2019.",
+      "ar": "شارك مهاب أبو عيطة في تأسيس أمانليك، وهي منصة تأمين رقمية مصرية تركّز على التأمين الصحي وتأمين السيارات للأفراد والشركات، وانطلقت عام 2019 مع محمد منصور وإيهاب السكري. قبل أمانليك عمل مشرفًا للمبيعات في شركة دراية لوساطة التأمين بين عامي 2017 و2019."
+    },
+    "sources": [
+      "https://www.wearetech.africa/fr/fils/tech-stars/mohab-aboueita-democratise-l-assurance-numerique-en-egypte",
+      "https://www.startuplist.africa/startups/amanleek"
+    ]
+  },
+  {
+    "id": "ahmed-attallah",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Attallah",
+      "ar": "أحمد عطا الله"
+    },
+    "title": {
+      "en": "Co-founder & CEO, Raseedi",
+      "ar": "الشريك المؤسس والرئيس التنفيذي، رصيدي"
+    },
+    "bio": {
+      "en": "Ahmed Attallah (Atalla) is the co-founder and CEO of Raseedi, an Egyptian telecom-optimization and fintech app he founded in 2018 with Samuel Abd El Malak. He holds a bachelor's degree in architectural engineering from the American University in Cairo, and previously worked as marketing manager at elmenus and as a marketing team leader at Vodafone Egypt.",
+      "ar": "أحمد عطا الله هو الشريك المؤسس والرئيس التنفيذي لتطبيق رصيدي، وهو تطبيق مصري للتكنولوجيا المالية وترشيد استهلاك خدمات الاتصالات، أسّسه عام 2018 مع صموئيل عبد الملاك. حاصل على بكالوريوس الهندسة المعمارية من الجامعة الأمريكية بالقاهرة، وعمل سابقًا مديرًا للتسويق في elmenus وقائدًا لفريق التسويق في فودافون مصر."
+    },
+    "sources": [
+      "https://www.startuplist.africa/people/ahmed-atalla"
+    ]
+  },
+  {
+    "id": "hazem-el-tawab",
+    "kind": "founder",
+    "name": {
+      "en": "Hazem El Tawab",
+      "ar": "حازم التواب"
+    },
+    "title": {
+      "en": "Founder & CEO, ReNile",
+      "ar": "المؤسس والرئيس التنفيذي، رينايل"
+    },
+    "bio": {
+      "en": "Hazem El Tawab is the founder and CEO of ReNile, an Egyptian agritech company founded in 2017 that builds IoT monitoring systems for agriculture and aquaponics. He was named to the Forbes Middle East 30 Under 30 list in 2023, and previously worked as a business consultant for an electronics factory and taught at Zewail City of Science and Technology. In 2025 ReNile raised $450,000 led by Keheilan Fund and announced expansion into Saudi Arabia.",
+      "ar": "حازم التواب هو مؤسس رينايل ورئيسها التنفيذي، وهي شركة مصرية للتكنولوجيا الزراعية تأسست عام 2017 وتطوّر أنظمة مراقبة قائمة على إنترنت الأشياء للزراعة والاستزراع المائي النباتي. اختير ضمن قائمة فوربس الشرق الأوسط «30 تحت 30» لعام 2023، وعمل سابقًا مستشار أعمال لمصنع إلكترونيات ومحاضرًا في مدينة زويل للعلوم والتكنولوجيا. في عام 2025 جمعت رينايل 450 ألف دولار بقيادة صندوق كحيلان وأعلنت التوسع في السعودية."
+    },
+    "sources": [
+      "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2023/hazem-eltawab-ibrahim-elzayat-2/",
+      "https://www.wamda.com/2025/01/egypt-renile-secures-450000-investment",
+      "https://aficta.africa/Download/2025Awards/Mr%20Hazem%20Eltawab.pdf"
+    ]
+  },
+  {
+    "id": "mostafa-elewa",
+    "kind": "founder",
+    "name": {
+      "en": "Mostafa Elewa",
+      "ar": "مصطفى عليوة"
+    },
+    "title": {
+      "en": "Co-founder, Labtronic",
+      "ar": "الشريك المؤسس، لابترونيك"
+    },
+    "bio": {
+      "en": "Mostafa Elewa (Mustafa Eliwa) co-founded Labtronic with Ahmed Nassar in 2020 to manufacture lab and training equipment for engineering colleges and vocational schools. The company started in a 25-square-metre room on the Zewail City campus and grew into a 1,500-square-metre factory with about 30 staff. Its founders were named to the Forbes Middle East 30 Under 30 list in 2024.",
+      "ar": "شارك مصطفى عليوة في تأسيس لابترونيك مع أحمد نصار عام 2020 لتصنيع معدات المعامل والتدريب لكليات الهندسة والمدارس الفنية. بدأت الشركة في غرفة مساحتها 25 مترًا مربعًا داخل حرم مدينة زويل، ثم نمت لتدير مصنعًا بمساحة 1500 متر مربع ونحو 30 موظفًا. اختير مؤسسوها ضمن قائمة فوربس الشرق الأوسط «30 تحت 30» لعام 2024."
+    },
+    "sources": [
+      "https://www.forbesmiddleeast.com/lists/30-under-30-2024/ahmed-nassar/"
+    ]
+  },
+  {
+    "id": "mina-ashraf",
+    "kind": "founder",
+    "name": {
+      "en": "Mina Ashraf",
+      "ar": "مينا أشرف"
+    },
+    "title": {
+      "en": "CEO, Cosmos Bionics",
+      "ar": "الرئيس التنفيذي، كوزموس بايونيكس"
+    },
+    "bio": {
+      "en": "Mina Ashraf Sadek is a neuro-rehabilitation specialist and the CEO of Cosmos Bionics, an Alexandria-based startup founded in 2022 that builds the Cosmos Exoskeleton, a powered lower-limb orthosis that helps people with mobility impairments stand and walk. On Shark Tank Egypt the company closed a deal with Ayman Abbas for EGP 3 million for 10%, aimed at research and ISO 13485 and CE certification.",
+      "ar": "مينا أشرف صادق متخصص في التأهيل العصبي والرئيس التنفيذي لكوزموس بايونيكس، وهي شركة ناشئة مقرها الإسكندرية تأسست عام 2022 وتطوّر هيكلًا خارجيًا آليًا للأطراف السفلية يساعد ذوي الإعاقات الحركية على الوقوف والمشي. حصلت الشركة في شارك تانك مصر على استثمار من أيمن عباس بقيمة 3 ملايين جنيه مقابل 10%، لتمويل البحث والحصول على شهادتي ISO 13485 وCE."
+    },
+    "sources": [
+      "https://exoskeletonreport.com/2023/03/exoskeleton-startup-cosmos-bionics-strikes-a-deal-on-shark-tank-egypt/",
+      "https://www.timeslive.co.za/news/sci-tech/2023-07-19-watch-egyptian-company-creates-lightweight-exoskeleton",
+      "https://exoskeletonreport.com/brand/cosmos-bionics/"
+    ]
+  },
+  {
+    "id": "hany-el-tamamy",
+    "kind": "founder",
+    "name": {
+      "en": "Hany El-Tamamy",
+      "ar": "هاني التمامي"
+    },
+    "title": {
+      "en": "Founder, Life Snacks (Scrunch)",
+      "ar": "المؤسس، لايف سناكس (سكرانش)"
+    },
+    "bio": {
+      "en": "Hany El-Tamamy is the founder of Scrunch, the Egyptian snack brand behind Life Snacks, which launched with nut clusters and Belgian dark-chocolate barks. He built the brand around a home-made recipe to fill the gap between imported and local premium snack bars.",
+      "ar": "هاني التمامي هو مؤسس سكرانش، العلامة المصرية للوجبات الخفيفة التي تقف وراء لايف سناكس، وانطلقت بعناقيد المكسرات وألواح الشوكولاتة البلجيكية الداكنة. بنى العلامة على وصفة منزلية لسدّ الفجوة بين ألواح الوجبات الخفيفة المستوردة والمحلية الفاخرة."
+    },
+    "sources": [
+      "https://sceneeats.com/Fresh/Scrunch-Is-the-New-Local-Brand-Providing-High-End-Chocolate-Barks-and-Nut-Clusters"
+    ]
+  },
+  {
+    "id": "fatma-wagdy",
+    "kind": "founder",
+    "name": {
+      "en": "Fatma Wagdy",
+      "ar": "فاطمة وجدي"
+    },
+    "title": {
+      "en": "Co-founder, Sadu Designs",
+      "ar": "الشريكة المؤسسة، سدو ديزاينز"
+    },
+    "bio": {
+      "en": "Fatma Wagdy co-founded Sadu Designs with Ahmed Abdel Rasoul, a home-goods brand that blends traditional handicrafts and heritage trades with local materials to make decor, accessories, lighting, furniture and bags. The brand has worked with more than 20 workshops, factories and women's associations, and closed a deal on Shark Tank Egypt of EGP 2 million for 35%.",
+      "ar": "شاركت فاطمة وجدي في تأسيس سدو ديزاينز مع أحمد عبد الرسول، وهي علامة منتجات منزلية تدمج الحرف اليدوية والمهن التراثية مع الخامات المحلية لصناعة الديكور والإكسسوارات والإضاءة والأثاث والحقائب. تعاونت العلامة مع أكثر من 20 ورشة ومصنعًا وجمعية نسائية، وحصلت في شارك تانك مصر على استثمار بقيمة مليوني جنيه مقابل 35%."
+    },
+    "links": {
+      "website": "https://sadudesigns.com/"
+    },
+    "sources": [
+      "https://www.soutalomma.com/Article/1142218/صاحبا-مشروع-Sadu-Designs-ندمج-الحرف-اليدوية-والمهن-التراثية-لصناعة"
+    ]
+  },
+  {
+    "id": "mostafa-hanafy",
+    "kind": "founder",
+    "name": {
+      "en": "Mostafa Hanafy",
+      "ar": "مصطفى حنفي"
+    },
+    "title": {
+      "en": "Founder, Hoods",
+      "ar": "المؤسس، هودز"
+    },
+    "bio": {
+      "en": "Mostafa Hanafy (Hanafi) founded Hoods in Egypt at the end of 2020 with co-founder Waleed Ghalwash, billing it as the first live entertainment shopping platform in the Middle East. A graduate of the AUC Venture Lab, he led the company through a $350,000 pre-seed round in 2022 that included angel investors.",
+      "ar": "أسّس مصطفى حنفي منصة هودز في مصر أواخر عام 2020 مع شريكه وليد غلوش، وقدّمها بوصفها أول منصة للتسوق الترفيهي المباشر في الشرق الأوسط. وهو من خريجي حاضنة AUC Venture Lab التابعة للجامعة الأمريكية بالقاهرة، وقاد الشركة في جولة تمويل أولية بقيمة 350 ألف دولار عام 2022 شارك فيها مستثمرون ملائكيون."
+    },
+    "sources": [
+      "https://dailynewsegypt.com/2022/08/02/hoods-the-first-live-entertainment-shopping-platform-in-the-middle-east/"
+    ]
+  },
+  {
+    "id": "nehal-osama",
+    "kind": "founder",
+    "name": {
+      "en": "Nehal Osama",
+      "ar": "نهال أسامة"
+    },
+    "title": {
+      "en": "Co-founder, NNO Home",
+      "ar": "الشريكة المؤسسة، إن إن أو هوم"
+    },
+    "bio": {
+      "en": "Nehal Osama is an architect and interior designer who co-founded NNO Home with Nouran Osama; the brand name comes from their initials. NNO makes home decor around eco-friendly materials and women's entrepreneurship. The founders also run INNOVEST, an interior design studio, and cite about ten years of interior-styling experience.",
+      "ar": "نهال أسامة مهندسة معمارية ومصممة داخلية، شاركت في تأسيس إن إن أو هوم مع نوران أسامة، ويأتي اسم العلامة من الأحرف الأولى لاسميهما. تقدّم العلامة منتجات ديكور منزلي تقوم على الخامات الصديقة للبيئة ودعم ريادة الأعمال النسائية. تدير المؤسستان أيضًا استوديو التصميم الداخلي INNOVEST، ولديهما نحو عشر سنوات من الخبرة في التنسيق الداخلي."
+    },
+    "links": {
+      "website": "https://nno-home.daftra.com/"
+    },
+    "sources": [
+      "https://nno-home.daftra.com"
+    ]
+  },
+  {
+    "id": "fady-osama",
+    "kind": "founder",
+    "name": {
+      "en": "Fady Osama",
+      "ar": "فادي أسامة"
+    },
+    "title": {
+      "en": "Founder, Skoolix",
+      "ar": "مؤسس سكوليكس"
+    },
+    "bio": {
+      "en": "Fady Osama (also spelled Fadi Ossama) is an Egyptian software engineer behind Skoolix, an e-learning platform that helps schools run distance learning through virtual classrooms, digital file sharing, and interactive quizzes and assignments. He pitched Skoolix on Shark Tank Egypt Season 1.",
+      "ar": "فادي أسامة مهندس برمجيات مصري يقف وراء سكوليكس، وهي منصة للتعليم الإلكتروني تساعد المدارس على تطبيق التعلم عن بُعد عبر الفصول الافتراضية ومشاركة الملفات الرقمية والاختبارات والواجبات التفاعلية. عرض سكوليكس في الموسم الأول من شارك تانك مصر."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/fadi-ossama"
+    },
+    "sources": [
+      "https://eg.linkedin.com/in/fadi-ossama"
+    ]
+  },
+  {
+    "id": "marwan-doghem",
+    "kind": "founder",
+    "name": {
+      "en": "Marwan Doghem",
+      "ar": "مروان دغيم"
+    },
+    "title": {
+      "en": "Co-founder & Chief Business Officer, Dentolize",
+      "ar": "شريك مؤسس ورئيس قطاع الأعمال، دنتولايز"
+    },
+    "bio": {
+      "en": "Marwan Doghem is co-founder and Chief Business Officer of Dentolize, a Cairo-based dental practice management software company. An MBA graduate, he leads the business side alongside co-founders Mostafa Dawoud and Dr. Abdelrahman El Shafiey. Dentolize reports serving around 1,350 clinics and pitched on Shark Tank Egypt Season 3.",
+      "ar": "مروان دغيم شريك مؤسس ورئيس قطاع الأعمال في دنتولايز، وهي شركة برمجيات لإدارة عيادات الأسنان مقرها القاهرة. حاصل على ماجستير إدارة الأعمال، ويتولى الجانب التجاري إلى جانب الشريكين المؤسسين مصطفى داود ود. عبد الرحمن الشافعي. تقول الشركة إن منصتها تخدم نحو 1350 عيادة، وقد عرضت مشروعها في الموسم الثالث من شارك تانك مصر."
+    },
+    "sources": [
+      "https://thestartupscene.me/In-Depth/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+      "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide"
+    ]
+  },
+  {
+    "id": "mohamed-akmal",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Akmal",
+      "ar": "محمد أكمل"
+    },
+    "title": {
+      "en": "Co-founder, Career 180",
+      "ar": "شريك مؤسس، كارير 180"
+    },
+    "bio": {
+      "en": "Mohamed Akmal co-founded Career 180 with Shrouk Alaa El Din around 2016–2017 to help young people in Egypt find their career path through training and career guidance. The Cairo-based company later expanded into Saudi Arabia in 2025 with fresh funding and a VMS partnership. He pitched Career 180 on Shark Tank Egypt Season 1.",
+      "ar": "شارك محمد أكمل في تأسيس كارير 180 مع شروق علاء الدين نحو عامي 2016 و2017 بهدف مساعدة الشباب في مصر على اكتشاف مسارهم المهني عبر التدريب والإرشاد المهني. توسعت الشركة التي تتخذ من القاهرة مقرًا لها إلى السعودية في 2025 بتمويل جديد وشراكة مع VMS. عرض كارير 180 في الموسم الأول من شارك تانك مصر."
+    },
+    "sources": [
+      "https://egyptinnovate.com/en/node/9882",
+      "https://www.wamda.com/2025/05/career-180-launches-saudi-operations-backed-vms-partnership-fresh-funding"
+    ]
+  },
+  {
+    "id": "mohamed-ragab",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Ragab",
+      "ar": "محمد رجب"
+    },
+    "title": {
+      "en": "Founder, Mystery Bag",
+      "ar": "مؤسس ميستري باج"
+    },
+    "bio": {
+      "en": "Mohamed Ragab leads Mystery Bag, a Cairo-based app founded in 2024 that lets restaurants, bakeries and grocery stores sell surplus food at a discount as surprise bags, tackling Egypt's food waste problem. The project was submitted to MIT Solve's 2025 Global Climate Challenge and received incubator support. He pitched it on Shark Tank Egypt Season 4.",
+      "ar": "يقود محمد رجب تطبيق ميستري باج، الذي تأسس في القاهرة عام 2024 ويتيح للمطاعم والمخابز ومتاجر البقالة بيع فائض الطعام بخصم في شكل حقائب مفاجئة، للحد من هدر الطعام في مصر. شارك المشروع في تحدي المناخ العالمي 2025 من MIT Solve وحصل على دعم من حاضنة أعمال. عرضه في الموسم الرابع من شارك تانك مصر."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/ragaboli"
+    },
+    "sources": [
+      "https://solve.mit.edu/solutions/95387",
+      "https://apps.apple.com/app/id6740414751",
+      "https://www.briter.co/companies/mystery-bag"
+    ]
+  },
+  {
+    "id": "diaa-youssef",
+    "kind": "founder",
+    "name": {
+      "en": "Diaa Youssef",
+      "ar": "ضياء يوسف"
+    },
+    "title": {
+      "en": "Co-founder & CEO, AgriCash",
+      "ar": "شريك مؤسس والرئيس التنفيذي، أجري كاش"
+    },
+    "bio": {
+      "en": "Dr. Diaa Youssef is co-founder and CEO of AgriCash, an Egyptian agri-fintech startup founded in 2024 with Dr. Mostafa El-Sehli. AgriCash offers Sharia-compliant 'Plant Now Pay Later' financing for farm inputs, AI-based agronomic guidance and crop insurance. It closed a seed round led by Alex Angels in 2025, and he has held talks with the Arab Authority for Agricultural Investment and Development.",
+      "ar": "د. ضياء يوسف شريك مؤسس والرئيس التنفيذي لأجري كاش، وهي شركة مصرية ناشئة في التكنولوجيا المالية الزراعية تأسست عام 2024 مع د. مصطفى السحلي. تقدم الشركة تمويلًا متوافقًا مع الشريعة بنظام «ازرع الآن وادفع لاحقًا» لمستلزمات الزراعة، إلى جانب إرشاد زراعي بالذكاء الاصطناعي وتأمين على المحاصيل. أغلقت جولة تمويل أولية بقيادة Alex Angels عام 2025، وأجرى محادثات مع الهيئة العربية للاستثمار والإنماء الزراعي."
+    },
+    "sources": [
+      "https://www.wamda.com/2025/06/agricash-raises-seed-round-drive-inclusive-agri-fintech-innovation-egypt",
+      "https://bridgemena.com/news/egypts-agricash-secures-pre-seed-funding-to-scale-digital-financial-inclusion-in-agriculture",
+      "https://www.aaaid.org/en/news/aaaid-and-agri-cash-explore-opportunities-in-digital-agricultural-finance-and-support-for-smallholder-farmers/"
+    ]
+  },
+  {
+    "id": "ahmed-nassar",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Nassar",
+      "ar": "أحمد نصار"
+    },
+    "title": {
+      "en": "Co-founder & CTO, Labtronic",
+      "ar": "شريك مؤسس ورئيس قطاع التكنولوجيا، لابترونيك"
+    },
+    "bio": {
+      "en": "Ahmed Nassar co-founded Labtronic with Mustafa Eliwa in 2020 to manufacture lab equipment for engineering colleges and vocational schools. Starting from a 25 m² room on the Zewail City campus, it grew into a 1,500 m² factory with 30 staff, equipping labs at universities including Zewail City, Ain Shams and Mansoura. He was named to Forbes Middle East's 30 Under 30 (2024) and also founded AQMAAR, a space-technology startup.",
+      "ar": "شارك أحمد نصار في تأسيس لابترونيك مع مصطفى عليوة عام 2020 لتصنيع معدات المعامل لكليات الهندسة والمدارس الفنية. بدأت الشركة في غرفة مساحتها 25 مترًا مربعًا داخل حرم مدينة زويل، ثم أصبحت مصنعًا بمساحة 1500 متر مربع يعمل به 30 موظفًا، وجهّزت معامل في جامعات منها مدينة زويل وعين شمس والمنصورة. اختير ضمن قائمة فوربس الشرق الأوسط «30 تحت 30» لعام 2024، كما أسس شركة أقمار الناشئة في تكنولوجيا الفضاء."
+    },
+    "sources": [
+      "https://www.forbesmiddleeast.com/lists/30-under-30-2024/ahmed-nassar/",
+      "https://aboutmsr.com/لابترونيك-شركة-مصرية-تكنولوجية-تُلهم/"
+    ]
+  },
+  {
+    "id": "khaled-baraey",
+    "kind": "founder",
+    "name": {
+      "en": "Khaled Baraey",
+      "ar": "خالد البرعي"
+    },
+    "title": {
+      "en": "Co-founder, PAVO",
+      "ar": "شريك مؤسس، بافو"
+    },
+    "bio": {
+      "en": "Khaled Baraey (also spelled El Boraay) is a communications engineer who co-founded PAVO, an Egyptian bag and accessories brand, with Mina Manadalon after the two met while working at Orange. The idea came from his frustration at the lack of affordable local luggage before a business trip. PAVO sells totes, travel bags, backpacks, belt bags and footwear through bypavo.com.",
+      "ar": "خالد البرعي مهندس اتصالات شارك في تأسيس بافو، العلامة المصرية للحقائب والإكسسوارات، مع مينا منادالون بعد أن تعارفا أثناء عملهما في أورانج. جاءت الفكرة من إحباطه لغياب حقائب سفر محلية بأسعار مناسبة قبل رحلة عمل. تبيع بافو حقائب اليد وحقائب السفر وحقائب الظهر والخصر والأحذية عبر موقعها bypavo.com."
+    },
+    "sources": [
+      "https://cairoscene.com/Styled/We-re-Totes-in-Love-with-This-Egyptian-Bag-Bran",
+      "https://cairo360.com/?p=1693704"
+    ]
+  }
+]
