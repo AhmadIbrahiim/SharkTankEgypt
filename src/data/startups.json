@@ -4253,8 +4253,8 @@
       "ar": "أجري كاش"
     },
     "description": {
-      "en": "AgriCash is an Egyptian agri-fintech platform that gives farmers interest-free, buy-now-pay-later credit for farm and livestock inputs, with limits of up to EGP 3 million and repayment over up to 12 months. It also offers AI-based agronomic advice and crop insurance, and partnered with Alkheir Microfinance on a 0% seasonal financing product for small farmers. Founded in 2024 by Diaa Youssef and Mostafa El-Sehli, it had more than 1,500 active farmers, 60 suppliers and 750+ products by mid-2025, and raised a round led by Alex Angels. On the show, Diaa drew praise from the sharks, though Ahmed Tarek questioned its supply process and its high valuation.",
-      "ar": "أجري كاش منصة مصرية للتكنولوجيا المالية الزراعية تمنح المزارعين ائتماناً بدون فوائد بنظام اشترِ الآن وادفع لاحقاً لشراء مستلزمات الزراعة والثروة الحيوانية، بحد يصل إلى 3 ملايين جنيه وفترة سداد تصل إلى 12 شهراً. كما تقدم إرشاداً زراعياً بالذكاء الاصطناعي وتأميناً على المحاصيل، وتعاونت مع شركة الخير للتمويل متناهي الصغر في منتج تمويل موسمي بفائدة صفرية لصغار المزارعين. أسسها ضياء يوسف ومصطفى السهلي عام 2024، وضمت بحلول منتصف 2025 أكثر من 1500 مزارع نشط و60 مورداً وما يزيد على 750 منتجاً، وجمعت جولة تمويل بقيادة Alex Angels. وفي البرنامج نال ضياء إشادة المستثمرين، لكن أحمد طارق شكّك في آلية التوريد والتقييم المرتفع."
+      "en": "AgriCash is an Egyptian agri-fintech platform that gives farmers interest-free, buy-now-pay-later credit for farm and livestock inputs, with limits of up to EGP 3 million and repayment over up to 12 months. It also offers AI-based agronomic advice and crop insurance, and partnered with Alkheir Microfinance on a 0% seasonal financing product for small farmers. Founded in 2024 by Diaa Youssef and Mostafa El-Sehli, it had more than 1,500 active farmers, 60 suppliers and 750+ products by mid-2025, and raised a round led by Alex Angels. On the show, Diaa drew praise from the sharks, though Ahmed Tarek questioned its supply process and its high valuation. Mohamed Farouk and Ahmed Tarek offered EGP 15 million for 40%, and agreed to Diaa's condition that their stake drop to 30%.",
+      "ar": "أجري كاش منصة مصرية للتكنولوجيا المالية الزراعية تمنح المزارعين ائتماناً بدون فوائد بنظام اشترِ الآن وادفع لاحقاً لشراء مستلزمات الزراعة والثروة الحيوانية، بحد يصل إلى 3 ملايين جنيه وفترة سداد تصل إلى 12 شهراً. كما تقدم إرشاداً زراعياً بالذكاء الاصطناعي وتأميناً على المحاصيل، وتعاونت مع شركة الخير للتمويل متناهي الصغر في منتج تمويل موسمي بفائدة صفرية لصغار المزارعين. أسسها ضياء يوسف ومصطفى السهلي عام 2024، وضمت بحلول منتصف 2025 أكثر من 1500 مزارع نشط و60 مورداً وما يزيد على 750 منتجاً، وجمعت جولة تمويل بقيادة Alex Angels. وفي البرنامج نال ضياء إشادة المستثمرين، لكن أحمد طارق شكّك في آلية التوريد والتقييم المرتفع. وقدّم محمد فاروق وأحمد طارق عرضاً بـ15 مليون جنيه مقابل 40%، ووافقا على شرط ضياء بأن تنخفض حصتهما إلى 30%."
     },
     "category": "Fintech",
     "founders": [
@@ -4266,14 +4266,23 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 15000000,
+      "equityPct": 40
+    },
     "sources": [
       "https://www.dostor.org/4579540",
       "https://www.youtube.com/watch?v=YOg83PFa2l0",
       "https://www.youtube.com/watch?v=alx8w9dSXCg",
       "https://dabafinance.com/en/news/egypt-agrifintech-agricash-raises-seed-round",
       "https://egyptinnovate.com/en/news/agricash-continues-its-journey-to-digitize-agricultural-financing",
-      "https://www.wamda.com/index.php/2025/06/agricash-raises-seed-round-drive-inclusive-agri-fintech-innovation-egypt"
+      "https://www.wamda.com/index.php/2025/06/agricash-raises-seed-round-drive-inclusive-agri-fintech-innovation-egypt",
+      "https://www.youm7.com/story/2023/12/13/%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%81%D8%A7%D8%B1%D9%88%D9%82-%D9%88%D8%B7%D8%A7%D8%B1%D9%82-%D9%8A%D9%82%D8%AF%D9%85%D8%A7%D9%86-%D8%B9%D8%B1%D8%B6%D8%A7-%D8%A8%D9%8015-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%82%D8%A7%D8%A8%D9%84/6412984"
     ],
     "video": "YOg83PFa2l0",
     "links": {
