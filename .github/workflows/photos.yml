@@ -1,0 +1,18 @@
+name: Collect people photos
+# Candidate portraits (og:image of each cited page) to the `photos` branch for review.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/people-photos.mjs /tmp/photos
+      - name: Publish to photos branch
+        run: |
+          cd /tmp/photos && git init -q -b photos && git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Photos ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" photos
