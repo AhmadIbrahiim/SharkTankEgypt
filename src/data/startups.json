@@ -5907,7 +5907,12 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6830874",
       "https://www.youtube.com/watch?v=Zozntdgiv5A",
@@ -5915,7 +5920,8 @@
       "https://www.youtube.com/@Dentolize",
       "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
       "https://vc4a.com/ventures/dentolize/team",
-      "https://www.capterra.co.za/software/1045474/dentolize"
+      "https://www.capterra.co.za/software/1045474/dentolize",
+      "https://www.youtube.com/watch?v=pScwobM9jYk"
     ],
     "video": "Zozntdgiv5A",
     "links": {
