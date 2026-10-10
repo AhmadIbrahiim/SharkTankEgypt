@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import Shot from '../../components/Shot.astro';
+import { langs, startups, seasons, t, type Lang } from '../../config';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const s = t[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const categories = [...new Set(startups.map((x) => x.category).filter(Boolean))].sort();
+const num = (n: number) => n.toLocaleString(lang === 'ar' ? 'ar-EG' : 'en-US');
+---
+<Base lang={lang} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
+  <h1>{s.title}</h1>
+  <p class="muted">{s.tagline}</p>
+
+  <form class="filters" onsubmit="return false">
+    <input id="q" type="search" placeholder={s.search} aria-label={s.search} />
+    <select id="season" aria-label={s.season}>
+      <option value="">{s.allSeasons}</option>
+      {seasons.map((x) => <option value={x.season}>{s.season} {num(x.season)} ({x.year})</option>)}
+    </select>
+    <select id="deal" aria-label={s.finalDeal}>
+      <option value="">{s.allDeals}</option>
+      <option value="1">{s.deal}</option>
+      <option value="0">{s.noDeal}</option>
+    </select>
+    <select id="cat" aria-label={s.allCategories}>
+      <option value="">{s.allCategories}</option>
+      {categories.map((c) => <option>{c}</option>)}
+    </select>
+  </form>
+  <p class="muted"><span id="count">{num(startups.length)}</span> {s.results}</p>
+
+  <ul class="grid">
+    {startups.map((x) => (
+      <li
+        data-season={x.season}
+        data-deal={x.deal?.made == null ? '' : x.deal.made ? '1' : '0'}
+        data-cat={x.category}
+        data-text={[x.name.en, x.name.ar, x.category, ...(x.founders ?? []), x.description[lang]].join(' ').toLowerCase()}
+      >
+        <a href={`${base}/${lang}/${x.id}/`}>
+          <Shot id={x.id} name={x.name[lang]} />
+          <div class="body">
+            <h2>{x.name[lang]}</h2>
+            <p class="meta">
+              {s.season} {num(x.season)}{x.episode != null && ` · ${s.episode} ${num(x.episode)}`}
+              {x.deal?.made != null && <span class={`badge ${x.deal.made ? 'ok' : 'no'}`}>{x.deal.made ? s.deal : s.noDeal}</span>}
+            </p>
+            <p class="desc">{x.description[lang]}</p>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<script>
+  const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+  const items = [...document.querySelectorAll<HTMLElement>('.grid li')];
+  const fmt = new Intl.NumberFormat(document.documentElement.lang === 'ar' ? 'ar-EG' : 'en-US');
+  function apply() {
+    const q = $('q').value.trim().toLowerCase(), season = $('season').value, deal = $('deal').value, cat = $('cat').value;
+    let n = 0;
+    for (const li of items) {
+      const d = li.dataset;
+      const show = (!q || d.text!.includes(q)) && (!season || d.season === season) && (!deal || d.deal === deal) && (!cat || d.cat === cat);
+      li.hidden = !show;
+      if (show) n++;
+    }
+    $('count').textContent = fmt.format(n);
+  }
+  for (const id of ['q', 'season', 'deal', 'cat']) $(id).addEventListener('input', apply);
+</script>
+
+<style>
+  h1 { margin: .2em 0 0; }
+  .muted { color: var(--muted); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+  .filters input { flex: 1 1 260px; }
+  .filters input, .filters select { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--text); }
+  .grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .grid li > a { display: block; height: 100%; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; color: inherit; text-decoration: none; transition: transform .15s; }
+  .grid li > a:hover { transform: translateY(-3px); }
+  .body { padding: 12px 14px; }
+  h2 { font-size: 1.1rem; margin: 0; }
+  .meta { color: var(--muted); font-size: .85rem; margin: 4px 0; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .desc { margin: 0; font-size: .92rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+</style>

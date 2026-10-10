@@ -1,0 +1,10 @@
+---
+import { existsSync } from 'node:fs';
+interface Props { id: string; name: string }
+const { id, name } = Astro.props;
+const file = `screenshots/${id}.jpg`;
+const has = existsSync(`public/${file}`);
+---
+{has
+  ? <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/${file}`} alt={name} loading="lazy" />
+  : <div class="shot" aria-hidden="true">{name.slice(0, 2)}</div>}
