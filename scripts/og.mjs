@@ -21,7 +21,7 @@ const badge = (b) => b ? `<p class="badge ${b.tone}">${esc(b.text)}</p>` : '';
 const body = (c) => {
   switch (c.kind) {
     case 'startup': return `<div class="split"><div class="text">${head(c)}${c.sub ? `<p class="sub">${esc(c.sub)}</p>` : ''}${badge(c.badge)}</div>
-      ${c.shot ? `<div class="device"><div class="dots"><i></i><i></i><i></i></div><img src="${esc(c.shot)}">${c.play ? '<span class="play">▶</span>' : ''}</div>` : `<div class="monogram">${esc(initials(c.title))}</div>`}</div>`;
+      ${c.shot ? `<div class="device"><div class="dots"><i></i><i></i><i></i></div><img src="${esc(c.shot)}">${c.play ? '<span class="play">▶</span>' : ''}</div>` : ''}<div class="monogram"${c.shot ? ' hidden' : ''}>${logo}</div></div>`;
     case 'person': return `<div class="split person"><div class="ring">${face(c.photo, c.title)}<span class="fin">${logo}</span></div>
       <div class="text">${head(c)}${c.sub ? `<p class="sub">${esc(c.sub)}</p>` : ''}${badge(c.badge)}${stats(c.stats)}</div></div>`;
     case 'vs': return `${c.eyebrow ? `<p class="eyebrow center">${esc(c.eyebrow)}</p>` : ''}<div class="vs">${c.vs.map((p, i) => `${i ? '<div class="vsb">VS</div>' : ''}
@@ -61,7 +61,7 @@ h1.long{font-size:54px;-webkit-line-clamp:3}[dir=rtl] h1{letter-spacing:0;line-h
 .dots{position:absolute;top:14px;inset-inline-start:18px;display:flex;gap:7px}.dots i{width:12px;height:12px;border-radius:50%;background:#e9dfd3}.dots i:first-child{background:#E0562F}
 .play{position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;background:#E0562F;color:#fff;font-size:34px;display:grid;place-items:center;padding-left:6px;box-shadow:0 10px 30px rgba(224,86,47,.5)}
 .monogram{width:300px;height:300px;flex:none;border-radius:60px;background:linear-gradient(135deg,#E0562F,#f29a5c);color:#fff;font-size:120px;font-weight:700;display:grid;place-items:center;transform:rotate(-4deg);box-shadow:0 30px 60px rgba(224,86,47,.35)}
-.monogram svg{width:200px;height:200px}
+.monogram svg{width:200px;height:200px}[hidden]{display:none!important}
 .ring{position:relative;flex:none;padding:10px;border-radius:50%;background:conic-gradient(from 200deg,#E0562F,#f6b38c,#2a8f86,#E0562F)}
 .face{width:330px;height:330px;border-radius:50%;object-fit:cover;object-position:center 30%;display:block;border:8px solid #FBF6EE;background:#efe6da}
 .face.init{display:grid;place-items:center;font-size:110px;font-weight:700;color:#fff;background:linear-gradient(135deg,#2a8f86,#E0562F)}
@@ -99,10 +99,6 @@ walk(DIST);
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined, args: ['--no-proxy-server'] });
 const tab = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 let done = 0, defaults = 0;
-// The default site image, re-encoded as JPEG so every /og/*.jpg really is a JPEG.
-current = `<body style="margin:0"><img src="/og.png" width="1200" height="630">`;
-await tab.goto(`${origin}/__card`, { waitUntil: 'load' });
-const fallback = await tab.screenshot({ type: 'jpeg', quality: 80 });
 for (const file of pages) {
   const rel = dirname(file).slice(DIST.length).replace(/^\//, '') || 'index';
   if (only && !rel.startsWith(only)) continue;
@@ -111,19 +107,18 @@ for (const file of pages) {
   const lang = rel.startsWith('ar') ? 'ar' : 'en', card = JSON.parse(m[1]);
   const out = join(DIST, 'og', `${rel}.jpg`);
   mkdirSync(dirname(out), { recursive: true });
-  // A business with no picture gets the default site image rather than an empty frame.
-  if (card.kind === 'startup' && !card.shot) { writeFileSync(out, fallback); defaults++; done++; continue; }
   current = page(card, lang);
   await tab.goto(`${origin}/__card`);
   // Images that fail (offline remote thumbnails) are hidden rather than left as broken icons.
   await tab.evaluate(() => Promise.all([document.fonts.ready, ...[...document.images].map((i) => i.complete ? 0
     : Promise.race([new Promise((r) => { i.onload = r; i.onerror = r; }), new Promise((r) => setTimeout(r, 4000))]))]));
-  // Images that failed (offline thumbnails) are hidden; if that leaves a startup card without its picture, use the default.
-  const broken = await tab.evaluate(() => [...document.images].filter((i) => !i.naturalWidth).map((i) => (i.style.visibility = 'hidden')).length);
-  if (card.kind === 'startup' && broken) { writeFileSync(out, fallback); defaults++; done++; continue; }
+  // Images that failed (offline thumbnails) are hidden; a startup whose picture failed shows the brand logo tile instead.
+  const broken = await tab.evaluate(() => { const b = [...document.images].filter((i) => !i.naturalWidth); b.forEach((i) => (i.style.visibility = 'hidden'));
+    const d = document.querySelector('.device'); if (d && b.some((i) => d.contains(i))) { d.remove(); document.querySelector('.monogram').hidden = false; } return b.length; });
+  if (card.kind === 'startup' && (!card.shot || broken)) defaults++;
   writeFileSync(out, await tab.screenshot({ type: 'jpeg', quality: 72 }));
   done++;
 }
 await browser.close(); server.close();
 if (!done) throw new Error('no share images rendered: run after `astro build`');
-console.log(`share images: ${done} (${defaults} startups without a picture use the default)`);
+console.log(`share images: ${done} (${defaults} startups without a picture show the logo tile)`);
