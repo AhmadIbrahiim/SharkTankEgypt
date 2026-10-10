@@ -1,0 +1,39 @@
+name: Refresh screenshots
+on:
+  schedule:
+    - cron: '17 3 * * 1' # weekly, Monday 03:17 UTC
+  workflow_dispatch:
+    inputs:
+      missing_only:
+        description: Only capture startups without a screenshot
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: [src/data/startups.json]
+permissions:
+  contents: write
+  actions: write # to trigger the deploy workflow
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      # New data → capture just the new ones; schedule/manual → refresh all unless asked otherwise.
+      - run: npm run screenshots -- ${{ (github.event_name == 'push' || inputs.missing_only) && '--missing' || '' }}
+      - name: Commit screenshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add public/screenshots
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh website screenshots"
+          git push
+          # Pushes made with GITHUB_TOKEN don't trigger workflows, so redeploy explicitly.
+          gh workflow run deploy.yml --ref "${{ github.ref_name }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
