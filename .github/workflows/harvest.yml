@@ -1,6 +1,6 @@
 name: Harvest source pages
-# Opens each startup's pitch video, website and Instagram and saves what they say to the
-# `harvest` branch (not main, so it doesn't redeploy). Data is reviewed before it's merged.
+# Opens each startup's pitch video, website and Instagram and saves what they say to
+# `automation/harvest/` on main. The site never reads it; data is reviewed before it reaches src/data.
 on:
   workflow_dispatch:
 permissions:
@@ -14,9 +14,13 @@ jobs:
         with: { node-version: 22 }
       - run: node scripts/harvest.mjs --test
       - run: node scripts/harvest.mjs /tmp/harvest.json
-      - name: Publish to harvest branch
+      - name: Commit to main
+        # Raw output for review under automation/; the site never reads it, so no redeploy.
         run: |
-          mkdir /tmp/out && cd /tmp/out && cp /tmp/harvest.json .
-          git init -q -b harvest && git add -A
-          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Harvest ${GITHUB_SHA}"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" harvest
+          rm -rf automation/harvest && mkdir -p automation/harvest && cp -r /tmp/harvest.json automation/harvest/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add automation/harvest
+          git diff --cached --quiet && exit 0
+          git commit -qm "chore: harvest output"
+          git pull -q --rebase origin main && git push origin HEAD:main

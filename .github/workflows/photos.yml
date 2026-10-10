@@ -1,5 +1,5 @@
 name: Collect people photos
-# Candidate portraits (og:image of each cited page) to the `photos` branch for review.
+# Candidate portraits (og:image of each cited page) to `automation/photos/` on main for review.
 on: workflow_dispatch
 permissions:
   contents: write
@@ -11,8 +11,13 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: node scripts/people-photos.mjs /tmp/photos
-      - name: Publish to photos branch
+      - name: Commit to main
+        # Raw output for review under automation/; the site never reads it, so no redeploy.
         run: |
-          cd /tmp/photos && git init -q -b photos && git add -A
-          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Photos ${GITHUB_SHA}"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" photos
+          rm -rf automation/photos && mkdir -p automation/photos && cp -r /tmp/photos/. automation/photos/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add automation/photos
+          git diff --cached --quiet && exit 0
+          git commit -qm "chore: photos output"
+          git pull -q --rebase origin main && git push origin HEAD:main
