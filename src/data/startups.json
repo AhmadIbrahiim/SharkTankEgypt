@@ -7174,8 +7174,8 @@
       "ar": "ميني ميلتس"
     },
     "description": {
-      "en": "Minimelts Egypt holds the exclusive licence to produce Mini Melts, the tiny frozen beads of ice cream, in Egypt and Africa. In Cairo it sells from spots including City Stars, Masaken Al Mohandesin and Nasr City. In summer its trucks and kiosks serve North Coast destinations such as La Vista Bay, Amwaj, Mountain View, Hacienda Bay and Telal.",
-      "ar": "تمتلك ميني ميلتس مصر الحق الحصري لتصنيع آيس كريم ميني ميلتس، المكون من حبيبات آيس كريم صغيرة مجمدة، في مصر وأفريقيا. وتبيع منتجاتها في القاهرة من منافذ منها سيتي ستارز ومساكن المهندسين ومدينة نصر. وفي الصيف تنتشر عرباتها وأكشاكها في الساحل الشمالي بمواقع مثل لافيستا باي وأمواج وماونتن فيو وهاسيندا باي وتلال."
+      "en": "Minimelts Egypt holds the exclusive licence to produce Mini Melts, the tiny frozen beads of ice cream, in Egypt and Africa. In Cairo it sells from spots including City Stars, Masaken Al Mohandesin and Nasr City. In summer its trucks and kiosks serve North Coast destinations such as La Vista Bay, Amwaj, Mountain View, Hacienda Bay and Telal. On Shark Tank, Mohamed Farouk and Ahmed Tarek backed the idea and invested; the terms were not reported.",
+      "ar": "تمتلك ميني ميلتس مصر الحق الحصري لتصنيع آيس كريم ميني ميلتس، المكون من حبيبات آيس كريم صغيرة مجمدة، في مصر وأفريقيا. وتبيع منتجاتها في القاهرة من منافذ منها سيتي ستارز ومساكن المهندسين ومدينة نصر. وفي الصيف تنتشر عرباتها وأكشاكها في الساحل الشمالي بمواقع مثل لافيستا باي وأمواج وماونتن فيو وهاسيندا باي وتلال. وفي شارك تانك استثمر فيها محمد فاروق وأحمد طارق، دون الإعلان عن شروط الصفقة."
     },
     "category": "Food",
     "founders": [],
@@ -7184,11 +7184,20 @@
       "amountEGP": 30000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4863356",
       "https://enterpriseam.com/egypt/?p=590056",
-      "https://egyptianstreets.com/2023/07/08/heres-the-scoop-5-ice-cream-places-to-beat-the-egyptian-heat/"
+      "https://egyptianstreets.com/2023/07/08/heres-the-scoop-5-ice-cream-places-to-beat-the-egyptian-heat/",
+      "https://thestartupscene.me/MenaEcosystems/StartupScene-Madinet-Masr-Present-Tank-Tales-Episode-1-Minimelts"
     ],
     "links": {
       "facebook": "https://www.facebook.com/minimelts.eg/"
