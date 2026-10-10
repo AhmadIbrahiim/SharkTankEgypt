@@ -8,27 +8,27 @@ Deals that a source contradicted, or that named a shark who was not on that seas
 |---|---|---|
 | Mawared | EGP 2.5M for 15% → EGP 2.5M for 50% | unchanged |
 | Grif | EGP 0.9M for 10% → EGP 0.9M | deal with Ayman Abbas, EGP 0.9M for 10% → **unknown** |
-| Masroufi | EGP 16M for 10% → — | unchanged |
+| Masroufi | EGP 16M for 10% → not recorded | unchanged |
 | Mandoobak Smart | unchanged | deal, EGP 7M for 35% → **deal with Mohamed Farouk, EGP 7M for 35%** |
 | Jojo's Ranch | unchanged | deal, EGP 17.6M for 50% → **deal with Ayman Abbas for 50%** |
-| Calmy | EGP 0M → EGP 2M for 15% | unchanged |
+| Calmy | not recorded → EGP 2M for 15% | unchanged |
 | Tam Leather | unchanged | deal, EGP 0.5M → **unknown** |
 | Sporty Pro | unchanged | deal with Ahmed El Sewedy & Mohamed Farouk, EGP 3.5M → **deal with Ahmed El Sewedy & Mohamed Farouk, EGP 3.5M for 45%** |
 | Kids Kit | unchanged | deal, EGP 5M → **deal** |
 | Tomatiki | EGP 2M for 5% → EGP 2M | deal with Ahmed El Sewedy, EGP 2M → **deal with Ahmed El Sewedy, EGP 2M for 50%** |
-| Portal | EGP 0.01M for 10% → — | deal → **unknown** |
+| Portal | EGP 0.01M for 10% → not recorded | deal → **unknown** |
 | Asfoura | unchanged | deal, EGP 2.5M for 30% → **deal, EGP 2.5M** |
 | Blooms Egypt | unchanged | deal → **deal with Ahmed El Sewedy** |
-| Simple | EGP 0M → EGP 15M for 2% | unchanged |
-| Lelu | EGP 0M → EGP 1.5M for 10% | unchanged |
+| Simple | not recorded → EGP 15M for 2% | unchanged |
+| Lelu | not recorded → EGP 1.5M for 10% | unchanged |
 | POV | unchanged | deal → **deal with Ahmed Tarek Khalil** |
 | Bar & Jar | unchanged | deal → **unknown** |
-| Rawmart | EGP 15M for 10% → — | deal with Ayman Abbas, EGP 15M for 25% → **unknown** |
+| Rawmart | EGP 15M for 10% → not recorded | deal with Ayman Abbas, EGP 15M for 25% → **unknown** |
 | The Potcast Productions | unchanged | deal with Dina Ghabbour → **deal with Dina Ghabbour, EGP 6M for 20%** |
 | Super Fanni | EGP 5M → EGP 5M for 5% | unchanged |
 | Masafa | unchanged | deal, EGP 5M for 50% → **unknown** |
 | Curlit | unchanged | deal with Dina Ghabbour & Mohamed Farouk, EGP 5M for 50% → **unknown** |
-| Fit & Fresh | EGP 0M → EGP 10M for 10% | unchanged |
+| Fit & Fresh | not recorded → EGP 10M for 10% | unchanged |
 | METADOC | unchanged | deal → **unknown** |
 | Tekton | unchanged | unknown → **no deal** |
 | Irnova | EGP 15M → EGP 15M for 10% | unchanged |
