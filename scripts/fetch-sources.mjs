@@ -9,6 +9,8 @@ const startups = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
 const SOCIAL = /youtube|youtu\.be|instagram|facebook|tiktok|linkedin|twitter|x\.com/;
 const open = startups.filter((x) => !x.deal || x.deal.made == null);
 const jobs = open.flatMap((x) => x.sources.filter((u) => !SOCIAL.test(u)).map((url) => ({ id: x.id, url })));
+// leads.json: extra articles found by search, read in full here because snippets cut off
+try { jobs.push(...JSON.parse(readFileSync('automation/sources/leads.json', 'utf8'))); } catch {}
 for (const u of ['https://sharktank-egypt.com/en/deals', 'https://sharktank-egypt.com/ar/deals', 'https://sharktank-egypt.com/en']) jobs.push({ id: '_show', url: u });
 
 const out = [];
