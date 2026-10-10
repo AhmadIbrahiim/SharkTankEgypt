@@ -5,9 +5,7 @@ on:
   pull_request:
   workflow_dispatch:
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
@@ -21,15 +19,13 @@ jobs:
       - run: npm ci
       - run: npm run check-data
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: dist }
-  deploy:
-    if: github.event_name != 'pull_request'
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      # Publish to the gh-pages branch (Settings → Pages → Deploy from branch: gh-pages).
+      # .nojekyll stops GitHub's Jekyll step from dropping Astro's _astro/ folder.
+      - if: github.event_name != 'pull_request'
+        working-directory: dist
+        run: |
+          touch .nojekyll
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Deploy ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages
