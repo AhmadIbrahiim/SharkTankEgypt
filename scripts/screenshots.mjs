@@ -5,8 +5,6 @@ import { existsSync, readFileSync } from 'node:fs';
 
 const startups = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
 const onlyMissing = process.argv.includes('--missing');
-// Social pages show login walls instead of the product, so the card placeholder is better.
-const social = /(^|\.)(facebook|fb|instagram|tiktok|linkedin|twitter|x)\.com$/;
 
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined });
 // A regular desktop UA: some hosts block "HeadlessChrome".
@@ -15,7 +13,7 @@ const context = { viewport: { width: 1280, height: 800 }, locale: 'ar-EG',
 let ok = 0, failed = [];
 for (const s of startups) {
   const out = `public/screenshots/${s.id}.jpg`;
-  if (!s.website || social.test(new URL(s.website).hostname) || (onlyMissing && existsSync(out))) continue;
+  if (!s.website || (onlyMissing && existsSync(out))) continue; // website is own-domain only (social pages live in links)
   // Fresh page per site so one failed navigation can't interrupt the next.
   const page = await browser.newPage(context);
   try {

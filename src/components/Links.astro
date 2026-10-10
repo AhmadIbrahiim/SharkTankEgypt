@@ -1,0 +1,57 @@
+---
+import * as si from 'simple-icons';
+import { platforms } from '../platforms.mjs';
+import type { Lang } from '../config';
+
+interface Props { website?: string | null; links?: Record<string, any>; lang: Lang; label: string }
+const { website, links = {}, lang, label } = Astro.props;
+
+// LinkedIn isn't in simple-icons (brand-guideline removal), so its mark is inlined.
+const linkedin = { path: 'M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z', hex: '0A66C2' };
+const icon: Record<string, { path: string; hex: string } | undefined> = {
+  instagram: si.siInstagram, facebook: si.siFacebook, tiktok: si.siTiktok, x: si.siX, linkedin, youtube: si.siYoutube,
+  snapchat: si.siSnapchat, threads: si.siThreads, telegram: si.siTelegram, pinterest: si.siPinterest, behance: si.siBehance,
+  linktree: si.siLinktree, whatsapp: si.siWhatsapp, appStore: si.siAppstore, googlePlay: si.siGoogleplay,
+};
+// Near-black and pale brand colours vanish on one of the themes, so those use the text colour.
+const tint = (hex?: string) => (!hex || ['000000', '414141', 'FFFC00'].includes(hex) ? 'var(--ink)' : `#${hex}`);
+const host = (u: string) => new URL(u).hostname.replace(/^www\./, '');
+
+const items = [
+  ...(website ? [{ key: 'website', label: host(website), url: website }] : []),
+  ...Object.keys(platforms).filter((k) => links[k]).map((k) => ({ key: k, label: platforms[k][lang], url: links[k] as string })),
+  ...((links.other ?? []) as { name: string; url: string }[]).map((o) => ({ key: 'other', label: o.name, url: o.url })),
+];
+---
+{items.length > 0 && (
+  <section class="online" aria-label={label}>
+    <h2>{label}</h2>
+    <ul>
+      {items.map((i) => (
+        <li>
+          <a href={i.url} target="_blank" rel="noopener nofollow" style={`--brand:${tint(icon[i.key]?.hex)}`}>
+            {icon[i.key]
+              ? <svg viewBox="0 0 24 24" aria-hidden="true"><path d={icon[i.key]!.path} /></svg>
+              : <svg viewBox="0 0 24 24" aria-hidden="true" class="line">
+                  {i.key === 'website'
+                    ? <path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-9 9h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" />
+                    : <path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" />}
+                </svg>}
+            <span dir="auto">{i.label}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+
+<style>
+  .online { margin-top: 28px; }
+  h2 { font-size: .9rem; font-weight: 500; color: var(--ink-2); margin-bottom: 10px; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .9rem; transition: border-color .2s, background .2s, transform .15s; }
+  a:hover { border-color: var(--brand); background: color-mix(in srgb, var(--brand) 8%, var(--surface)); }
+  a:active { transform: scale(.97); }
+  svg { width: 18px; height: 18px; flex: none; fill: var(--brand); }
+  svg.line { fill: none; stroke: var(--sun); stroke-width: 1.8; stroke-linecap: round; }
+</style>

@@ -66,7 +66,7 @@
     },
     "category": "Beauty",
     "founders": [],
-    "website": "https://www.instagram.com/mothernakedskin/",
+    "website": null,
     "ask": {
       "amountEGP": 7500000,
       "equityPct": 10
@@ -74,7 +74,10 @@
     "deal": null,
     "sources": [
       "https://www.dostor.org/5142244"
-    ]
+    ],
+    "links": {
+      "instagram": "https://www.instagram.com/mothernakedskin/"
+    }
   },
   {
     "id": "y-studio",
@@ -1577,7 +1580,7 @@
     },
     "category": "Food",
     "founders": [],
-    "website": "https://www.instagram.com/crazytunaegypt/",
+    "website": null,
     "ask": {
       "amountEGP": 2500000,
       "equityPct": 20
@@ -1595,7 +1598,10 @@
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
       "https://www.youtube.com/watch?v=kOKBAskFe5I"
     ],
-    "video": "kOKBAskFe5I"
+    "video": "kOKBAskFe5I",
+    "links": {
+      "instagram": "https://www.instagram.com/crazytunaegypt/"
+    }
   },
   {
     "id": "simple",
@@ -1681,7 +1687,7 @@
       "Amir Abboud",
       "Germine Abboud"
     ],
-    "website": "https://www.instagram.com/notfoodseg/",
+    "website": null,
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -1691,7 +1697,10 @@
       "https://www.youm7.com/6360429",
       "https://www.youm7.com/6360475",
       "https://sharktank-egypt.com/en/deals/food-and-beverage"
-    ]
+    ],
+    "links": {
+      "instagram": "https://www.instagram.com/notfoodseg/"
+    }
   },
   {
     "id": "supply-list",
@@ -1951,7 +1960,7 @@
     },
     "category": "Food",
     "founders": [],
-    "website": "https://www.instagram.com/dr_joy_egy/",
+    "website": null,
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -1963,7 +1972,10 @@
       "https://www.youtube.com/watch?v=T-vKEMB29qY",
       "https://www.youtube.com/watch?v=Tf2sIRBltb8"
     ],
-    "video": "T-vKEMB29qY"
+    "video": "T-vKEMB29qY",
+    "links": {
+      "instagram": "https://www.instagram.com/dr_joy_egy/"
+    }
   },
   {
     "id": "pov",
@@ -3238,7 +3250,7 @@
     },
     "category": "Home",
     "founders": [],
-    "website": "https://www.instagram.com/carpetivity/",
+    "website": null,
     "ask": {
       "amountEGP": 2000000,
       "equityPct": 20
@@ -3250,7 +3262,10 @@
       "https://www.soutalomma.com/Article/1135497",
       "https://www.youtube.com/watch?v=p6O51EIhBKA"
     ],
-    "video": "p6O51EIhBKA"
+    "video": "p6O51EIhBKA",
+    "links": {
+      "instagram": "https://www.instagram.com/carpetivity/"
+    }
   },
   {
     "id": "egike",
@@ -3596,7 +3611,7 @@
     },
     "category": "Beauty",
     "founders": [],
-    "website": "https://www.instagram.com/nuitfragrances/",
+    "website": null,
     "ask": {
       "amountEGP": 5000000,
       "equityPct": 10
@@ -3609,7 +3624,10 @@
       "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q",
       "https://www.youtube.com/watch?v=8roJhnnLl6g"
     ],
-    "video": "8roJhnnLl6g"
+    "video": "8roJhnnLl6g",
+    "links": {
+      "instagram": "https://www.instagram.com/nuitfragrances/"
+    }
   },
   {
     "id": "tekton",
@@ -3960,7 +3978,7 @@
     "founders": [
       "Nada Amin"
     ],
-    "website": "https://www.instagram.com/euphoriadenims/",
+    "website": null,
     "ask": {
       "amountEGP": 3000000,
       "equityPct": 20
@@ -3978,7 +3996,10 @@
       "https://www.youm7.com/6816735",
       "https://www.youtube.com/watch?v=SAfTr28V19g"
     ],
-    "video": "SAfTr28V19g"
+    "video": "SAfTr28V19g",
+    "links": {
+      "instagram": "https://www.instagram.com/euphoriadenims/"
+    }
   },
   {
     "id": "the-baby-garage",
@@ -5009,7 +5030,7 @@
     "founders": [
       "Mohamed Ragab"
     ],
-    "website": "https://www.facebook.com/MysteryBagEgypt/",
+    "website": null,
     "ask": {
       "amountEGP": 1000000,
       "equityPct": 10
@@ -5020,7 +5041,10 @@
       "https://www.youtube.com/watch?v=EyHI7-x-_Ok",
       "https://www.youtube.com/watch?v=7Q-4N9t15eQ"
     ],
-    "video": "EyHI7-x-_Ok"
+    "video": "EyHI7-x-_Ok",
+    "links": {
+      "facebook": "https://www.facebook.com/MysteryBagEgypt/"
+    }
   },
   {
     "id": "bayt-el-saad",
@@ -5420,7 +5444,7 @@
     },
     "category": "Food",
     "founders": [],
-    "website": "https://www.instagram.com/ketoliciousegypt/",
+    "website": null,
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -5430,7 +5454,10 @@
       "https://www.youm7.com/7202688",
       "https://www.youtube.com/channel/UC1KWEteQGtKzN66Q6lBp_YA",
       "https://www.youtube.com/watch?v=5GdcZh3oldQ"
-    ]
+    ],
+    "links": {
+      "instagram": "https://www.instagram.com/ketoliciousegypt/"
+    }
   },
   {
     "id": "somaia-aboelezz",
@@ -5761,7 +5788,7 @@
       "Nehal Osama",
       "Nouran Osama"
     ],
-    "website": "https://www.instagram.com/nno.homedecor/",
+    "website": null,
     "ask": {
       "amountEGP": 2000000,
       "equityPct": null
@@ -5772,7 +5799,10 @@
       "https://www.youm7.com/story/2025/12/24/%D8%B4%D9%82%D9%8A%D9%82%D8%AA%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D9%86-2-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%87%D9%85/7246003",
       "https://www.youtube.com/watch?v=RLq3zPsgENs"
     ],
-    "video": "RLq3zPsgENs"
+    "video": "RLq3zPsgENs",
+    "links": {
+      "instagram": "https://www.instagram.com/nno.homedecor/"
+    }
   },
   {
     "id": "re-blocks",
@@ -6071,7 +6101,7 @@
     },
     "category": "Food",
     "founders": [],
-    "website": "https://www.facebook.com/dido.s.snacks/",
+    "website": null,
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -6082,7 +6112,10 @@
       "https://sharktankarabi.com/3698/",
       "https://www.facebook.com/dido.s.snacks/"
     ],
-    "video": "e1huH9yeMyo"
+    "video": "e1huH9yeMyo",
+    "links": {
+      "facebook": "https://www.facebook.com/dido.s.snacks/"
+    }
   },
   {
     "id": "frupops",
@@ -6098,7 +6131,7 @@
     },
     "category": "Food",
     "founders": [],
-    "website": "https://www.instagram.com/frupops.eg/",
+    "website": null,
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -6117,7 +6150,10 @@
       "https://sharktankarabi.com/3862/",
       "https://www.youtube.com/watch?v=NX5b0YnauvY"
     ],
-    "video": "NX5b0YnauvY"
+    "video": "NX5b0YnauvY",
+    "links": {
+      "instagram": "https://www.instagram.com/frupops.eg/"
+    }
   },
   {
     "id": "sphinx-safety",
