@@ -1,5 +1,5 @@
 // Validates src/data/*.json so a bad PR fails CI instead of breaking the site.
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import assert from 'node:assert/strict';
 import { platforms, platformOf } from '../src/platforms.mjs';
 
@@ -56,7 +56,7 @@ for (const p of people) {
     assert.equal(new URL(u).protocol, 'https:', `${where}: links.${k} must be https`);
     if (k in platforms) assert.equal(platformOf(u), k, `${where}: links.${k} points to another site`);
   }
-  if (p.photo) assert.equal(new URL(p.photo.url).protocol, 'https:', `${where}: photo must be https`);
+  if (p.photo) assert.ok(p.photo.url.startsWith('/people/') ? existsSync(`public${p.photo.url}`) : new URL(p.photo.url).protocol === 'https:', `${where}: photo must be https or an existing /people/ file`);
 }
 // Every person shown on the site needs an Arabic name (bilingual search).
 const namesAr = JSON.parse(readFileSync('src/data/names.json', 'utf8'));

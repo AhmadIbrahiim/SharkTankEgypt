@@ -10,7 +10,7 @@ const Tag = labels ? 'a' : 'span';
   {names.map((n) => (
     <Tag class="shark" title={shark(n, lang)} href={labels && sharkByKey.get(n) ? `${base}/${lang}/sharks/${sharkByKey.get(n)!.id}/` : undefined}>
       {sharkByKey.get(n)?.photo
-        ? <img class="avatar" src={sharkByKey.get(n)!.photo!.url} alt="" width="28" height="28" loading="lazy" />
+        ? <img class="avatar" src={((u) => u.startsWith('/') ? `${base}${u}` : u)(sharkByKey.get(n)!.photo!.url)} alt="" width="28" height="28" loading="lazy" />
         : <span class="avatar" style={`--h:${hue(n)}`} aria-hidden="true">{initials(n)}</span>}
       {labels ? <span>{shark(n, lang)}</span> : <span class="sr">{shark(n, lang)}</span>}
     </Tag>
