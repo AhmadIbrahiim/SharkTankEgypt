@@ -76,8 +76,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2500000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -151,13 +151,19 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1500000,
+      "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 1500000,
+      "equityPct": 15
+    },
     "sources": [
       "https://www.dostor.org/5142244",
-      "https://sharktank-egypt.com/en/deals/fashion"
+      "https://sharktank-egypt.com/en/deals/fashion",
+      "https://www.youm7.com/7057703"
     ]
   },
   {
@@ -312,9 +318,14 @@
     "website": "https://stepinside.me",
     "ask": {
       "amountEGP": 3000000,
+      "equityPct": 20
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
       "https://www.youm7.com/6038927",
       "https://www.youm7.com/6038985",
@@ -324,7 +335,8 @@
       "https://www.cbinsights.com/company/stepinside-virtual-commerce/",
       "https://www.cbinsights.com/company/stepinside-virtual-commerce/people",
       "https://cednc.dealroom.co/companies/stepinside_virtual_commerce",
-      "https://enterpriseam.com/egypt-ar/2023/01/09/شاهدوا-أولى-حلقات-النسخة-المصرية-من-شا/"
+      "https://enterpriseam.com/egypt-ar/2023/01/09/شاهدوا-أولى-حلقات-النسخة-المصرية-من-شا/",
+      "https://www.dostor.org/4277077"
     ],
     "about": {
       "founded": 2021,
@@ -601,17 +613,23 @@
     "founders": [],
     "website": null,
     "ask": {
+      "amountEGP": 2500000,
+      "equityPct": 15
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
       "https://www.youm7.com/6048990",
       "https://sharktank-egypt.com/en/deals/technology-",
       "https://www.youtube.com/watch?v=CXB-v_8FIgs",
       "https://egyptinnovate.com/entities/profile/akoub-agritech-services",
       "https://services.asu.edu.eg/6486/news/the-winners-of-the-startups-track-in-the-ain-shams-innovate-competition-2023",
-      "https://pitchbook.com/profiles/company/600902-20"
+      "https://pitchbook.com/profiles/company/600902-20",
+      "https://www.dostor.org/4283141"
     ],
     "video": "CXB-v_8FIgs",
     "links": {
@@ -738,8 +756,8 @@
       "ar": "جريف"
     },
     "description": {
-      "en": "Grif is an Egyptian cast-iron cookware brand that makes its pans and Dutch ovens locally, offering durable pieces at lower prices that are designed to last a lifetime. Its founders started it after struggling to find affordable cast-iron skillets in Egypt, and its Dutch ovens feature enamelled lids with brass knobs. Founder Youssef El Rayan asked the sharks for EGP 900,000; press reports describe an offer of EGP 2 million for 50% from Abdallah Sallam and Mohamed Mansour, but the final outcome is not confirmed.",
-      "ar": "جريف علامة مصرية لأواني الطهي من الحديد الزهر تُصنع محلياً، وتقدّم مقالي وأواني طهي عميقة متينة بأسعار أقل ومصممة لتدوم مدى الحياة. بدأ مؤسسوها المشروع بعد أن عجزوا عن إيجاد مقالي حديد زهر بأسعار معقولة في مصر، وتأتي أوانيها العميقة بأغطية مطلية بالمينا ومقابض من النحاس. طلب مؤسسها يوسف الريان 900 ألف جنيه، وتذكر التقارير الصحفية عرضًا بمليوني جنيه مقابل 50% من عبد الله سلام ومحمد منصور، لكن النتيجة النهائية غير مؤكدة."
+      "en": "Grif is an Egyptian cast-iron cookware brand that makes its pans and Dutch ovens locally, offering durable pieces at lower prices that are designed to last a lifetime. Its founders started it after struggling to find affordable cast-iron skillets in Egypt, and its Dutch ovens feature enamelled lids with brass knobs. Founder Youssef El Rayan asked for EGP 900,000 for 10% and, after weighing bigger offers from Mohamed Mansour and Abdallah Sallam, accepted Ayman Abbas's offer on exactly those terms.",
+      "ar": "جريف علامة مصرية لأواني الطهي من الحديد الزهر تُصنع محلياً، وتقدّم مقالي وأواني طهي عميقة متينة بأسعار أقل ومصممة لتدوم مدى الحياة. بدأ مؤسسوها المشروع بعد أن عجزوا عن إيجاد مقالي حديد زهر بأسعار معقولة في مصر، وتأتي أوانيها العميقة بأغطية مطلية بالمينا ومقابض من النحاس. طلب مؤسسها يوسف الريان 900 ألف جنيه مقابل 10%، وبعد عروض أكبر من محمد منصور وعبد الله سلام قبل عرض أيمن عباس بالشروط نفسها."
     },
     "category": "Home",
     "founders": [
@@ -748,9 +766,16 @@
     "website": null,
     "ask": {
       "amountEGP": 900000,
-      "equityPct": null
+      "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 900000,
+      "equityPct": 10
+    },
     "sources": [
       "https://www.youm7.com/6056669",
       "https://www.youm7.com/6056721",
@@ -775,12 +800,14 @@
         "en": [
           "Cast-iron skillets and Dutch ovens made in Egypt",
           "Dutch ovens with enamelled lids and brass knobs",
-          "Featured by CairoScene for sustainable design"
+          "Featured by CairoScene for sustainable design",
+          "Deal with Ayman Abbas: EGP 900K for 10%"
         ],
         "ar": [
           "مقالٍ وأوانٍ عميقة من الحديد الزهر مصنوعة في مصر",
           "أوانٍ عميقة بأغطية مطلية بالمينا ومقابض نحاسية",
-          "تناولتها كايروسين كعلامة مستدامة التصميم"
+          "تناولتها كايروسين كعلامة مستدامة التصميم",
+          "صفقة مع أيمن عباس: 900 ألف جنيه مقابل 10%"
         ]
       }
     }
@@ -1598,14 +1625,15 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 8000000,
+      "equityPct": 5
     },
     "deal": null,
     "sources": [
       "https://www.elwatannews.com/news/details/6437030",
       "https://sharktank-egypt.com/en/deals/technology-",
-      "https://www.youtube.com/watch?v=N8z4_2Nu3HQ"
+      "https://www.youtube.com/watch?v=N8z4_2Nu3HQ",
+      "https://www.dostor.org/4309691"
     ],
     "video": "N8z4_2Nu3HQ",
     "services": {
@@ -1778,13 +1806,22 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 300000,
+      "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Hilda Louca",
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 500000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6088578",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%83%D8%A7%D9%84%D9%85%D9%8A-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%83%D8%A7%D9%84%D9%85%D9%8A-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/",
+      "https://www.elwatannews.com/news/details/6445514"
     ]
   },
   {
@@ -1805,12 +1842,18 @@
     ],
     "website": null,
     "ask": {
+      "amountEGP": 900000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
-      "https://www.youm7.com/6088578"
+      "https://www.youm7.com/6088578",
+      "https://www.dostor.org/4316979"
     ],
     "services": {
       "en": [
@@ -1858,14 +1901,20 @@
       "amountEGP": 15000000,
       "equityPct": 5
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6088564",
       "https://www.elwatannews.com/news/details/6445548",
       "https://sharktankarabi.com/91/",
       "https://www.youtube.com/watch?v=2JVjk5YRkoU",
       "https://scenehome.com/Furniture-Accessories/Famed-TV-Chef-May-Yacoubi-Launches-Kitchenware-Collection",
-      "https://www.foodnetwork.com/fnk/profiles/may-yacoubi"
+      "https://www.foodnetwork.com/fnk/profiles/may-yacoubi",
+      "https://www.dostor.org/4316181"
     ],
     "video": "2JVjk5YRkoU",
     "services": {
@@ -1981,10 +2030,15 @@
     ],
     "website": "https://efika.company/",
     "ask": {
+      "amountEGP": 4500000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
       "https://www.youm7.com/6096409",
       "https://www.youm7.com/6096443",
@@ -1993,7 +2047,8 @@
       "https://vc4a.com/ventures/efika-for-manufacturing",
       "https://egyptinnovate.com/entities/profile/efika-for-manufacturing",
       "https://www.terrapinn.com/exhibition/future-energy-mena/exhibitor-efika.stm",
-      "https://www.cbinsights.com/company/efika"
+      "https://www.cbinsights.com/company/efika",
+      "https://www.dostor.org/4322429"
     ],
     "video": "edYwmPAdMjU",
     "services": {
@@ -2644,12 +2699,21 @@
       "Ahmed Mahfouz"
     ],
     "website": null,
-    "ask": null,
-    "deal": null,
+    "ask": {
+      "amountEGP": 10000,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 10000,
+      "equityPct": null
+    },
     "sources": [
       "https://www.elwatannews.com/news/details/6471194",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%A9-tomatiki-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/",
-      "https://www.youtube.com/watch?v=QvRzN1rN_68"
+      "https://www.youtube.com/watch?v=QvRzN1rN_68",
+      "https://www.dostor.org/4335251"
     ],
     "video": "QvRzN1rN_68",
     "links": {
@@ -3643,8 +3707,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1500000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
@@ -3694,7 +3758,12 @@
       "amountEGP": 50000000,
       "equityPct": 6
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 50000000,
+      "equityPct": 27.5
+    },
     "sources": [
       "https://www.youm7.com/6385100",
       "https://www.youm7.com/6385166",
@@ -4004,13 +4073,22 @@
     "founders": [],
     "website": null,
     "ask": null,
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
       "https://www.dostor.org/4571301",
       "https://www.youtube.com/watch?v=LGZAws63gH4",
       "https://www.terrapinn.com/exhibition/seamless-middle-east/exhibitor-rawmart.stm",
-      "https://cincinnati.dealroom.co/companies/rawmart"
+      "https://cincinnati.dealroom.co/companies/rawmart",
+      "https://www.youm7.com/6592574",
+      "https://www.youm7.com/6402543"
     ],
     "video": "LGZAws63gH4",
     "links": {
@@ -4318,12 +4396,13 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 25
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6421887"
+      "https://www.youm7.com/6421887",
+      "https://www.dostor.org/4586373"
     ],
     "pitch": {
       "en": "Myco Pex appeared in Season 2, Episode 9 to present its solution for water leaks in homes. The size of its ask and the outcome of the pitch are not recorded in available sources.",
@@ -5072,7 +5151,17 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Mansour",
+        "Mohamed Farouk",
+        "Ahmed El Sewedy",
+        "Abdallah Sallam"
+      ],
+      "amountEGP": 6000000,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6450706",
       "https://vc4a.com/ventures/sal7lyy-%d8%b5%d9%84%d8%ad%d9%84%d9%8a",
@@ -5642,7 +5731,14 @@
       "amountEGP": 25000000,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 25000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youm7.com/6486350",
       "https://www.youm7.com/6487646",
@@ -5800,7 +5896,12 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6495137",
       "https://www.cbinsights.com/company/masafa"
@@ -6391,12 +6492,20 @@
       "amountEGP": 2000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Dina Ghabbour"
+      ],
+      "amountEGP": 2000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.dostor.org/4843743",
       "https://www.elwatannews.com/news/details/7632333",
       "https://www.soutalomma.com/Article/1135497",
-      "https://www.youtube.com/watch?v=p6O51EIhBKA"
+      "https://www.youtube.com/watch?v=p6O51EIhBKA",
+      "https://www.youm7.com/6752344"
     ],
     "video": "p6O51EIhBKA",
     "links": {
@@ -6472,8 +6581,8 @@
     "founders": [],
     "website": "https://egike.com",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -6750,7 +6859,7 @@
     "website": null,
     "ask": {
       "amountEGP": 15000000,
-      "equityPct": null
+      "equityPct": 30
     },
     "deal": null,
     "sources": [
@@ -7016,8 +7125,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 30000000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
@@ -7484,15 +7593,21 @@
     ],
     "website": "https://zinkprint.co/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6791539",
       "https://www.youtube.com/watch?v=NgSVuVR98jU",
       "https://www.youtube.com/watch?v=6OMqHHvSgn8",
-      "https://magica.com/youtube-summarizer/zinc-print-a-game-changer-for-startups-in-egypt-7op-_1xPWg0"
+      "https://magica.com/youtube-summarizer/zinc-print-a-game-changer-for-startups-in-egypt-7op-_1xPWg0",
+      "https://www.youm7.com/6792652"
     ],
     "video": "NgSVuVR98jU",
     "links": {
@@ -8015,8 +8130,8 @@
     ],
     "website": "https://thebabygarage.com",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 9000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -8027,7 +8142,8 @@
       "https://egyptinnovate.com/en/news/the-baby-garage-platform-won-the-al-forsa-program-competition-broadcast-on-on-tv-satellite",
       "https://vc4a.com/ventures/the-baby-garage",
       "https://www.startuplist.africa/startups/the-baby-garage",
-      "https://misrconnect.com/en/news/egypt-news/the-baby-garage-egyptian-platform-redefines-baby-essentials-exchange"
+      "https://misrconnect.com/en/news/egypt-news/the-baby-garage-egyptian-platform-redefines-baby-essentials-exchange",
+      "https://www.youm7.com/6824383"
     ],
     "links": {
       "linkedin": "https://www.linkedin.com/company/the-baby-garage",
@@ -8549,8 +8665,8 @@
     "founders": [],
     "website": "https://sparemart.online/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 7000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -8891,8 +9007,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 35000000,
+      "equityPct": 30
     },
     "deal": null,
     "sources": [
@@ -9429,8 +9545,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 16000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -9585,8 +9701,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 15000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -9748,8 +9864,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 12000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -10247,7 +10363,7 @@
     "website": null,
     "ask": {
       "amountEGP": 3000000,
-      "equityPct": null
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -10501,7 +10617,8 @@
       "https://www.youm7.com/story/2025/10/22/%D9%85%D9%8A-%D8%A7%D9%84%D8%BA%D9%86%D8%AF%D9%88%D8%B1-%D8%AA%D8%B7%D9%84%D8%A8-6-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%84%D8%A5%D8%AD%D9%8A%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A-%D9%81%D9%89/7168215",
       "https://www.youtube.com/watch?v=5r2c_UTeS-E",
       "https://www.youtube.com/watch?v=Hud3oFFJW38",
-      "https://scenehome.com/Furniture-Accessories/May-Elghandour-s-Love-Story-With-Light-Colour-Glass"
+      "https://scenehome.com/Furniture-Accessories/May-Elghandour-s-Love-Story-With-Light-Colour-Glass",
+      "https://www.youm7.com/7168215"
     ],
     "video": "5r2c_UTeS-E",
     "services": {
@@ -11336,7 +11453,7 @@
     "website": null,
     "ask": {
       "amountEGP": 5000000,
-      "equityPct": null
+      "equityPct": 12.5
     },
     "deal": null,
     "sources": [
@@ -11620,7 +11737,7 @@
     "website": null,
     "ask": {
       "amountEGP": 3000000,
-      "equityPct": null
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
@@ -11813,11 +11930,20 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Mansour",
+        "Dina Ghabbour"
+      ],
+      "amountEGP": 2000000,
+      "equityPct": 30
+    },
     "sources": [
       "https://www.youm7.com/story/2025/12/3/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B9%D8%AF%D9%84%D9%8A-%D9%8A%D8%AE%D8%B7%D9%81-%D9%82%D9%84%D9%88%D8%A8-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%83%D8%B3-%D8%A8%D9%82%D8%B5%D8%A9-%D8%B9%D9%85%D8%B1-%D9%88%D9%8A%D9%82%D8%AA%D9%86%D8%B5-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8B%D8%A7-%D9%85%D9%86/7221327",
       "https://www.youtube.com/watch?v=dkh90lT6zII",
-      "https://edtechimpact.com/products/online-chess-training-for-kids,-to-develop-their-characters/"
+      "https://edtechimpact.com/products/online-chess-training-for-kids,-to-develop-their-characters/",
+      "https://www.youm7.com/7221327"
     ],
     "video": "dkh90lT6zII",
     "about": {
@@ -11827,13 +11953,15 @@
           "Live online chess classes for children and teens",
           "Structured 13-level curriculum in Arabic and English",
           "Students from Egypt, the UAE, Pakistan, the UK and the US",
-          "Plans start at about $11 a month"
+          "Plans start at about $11 a month",
+          "Deal with Mohamed Mansour and Dina Ghabbour: EGP 2M for 30%"
         ],
         "ar": [
           "حصص شطرنج مباشرة عبر الإنترنت للأطفال والمراهقين",
           "منهج منظم من 13 مستوى بالعربية والإنجليزية",
           "طلاب من مصر والإمارات وباكستان والمملكة المتحدة والولايات المتحدة",
-          "تبدأ الاشتراكات من نحو 11 دولارًا شهريًا"
+          "تبدأ الاشتراكات من نحو 11 دولارًا شهريًا",
+          "صفقة مع محمد منصور ودينا غبور: مليونا جنيه مقابل 30%"
         ]
       }
     },
@@ -11876,8 +12004,8 @@
       ]
     },
     "pitch": {
-      "en": "Ahmed El-Adly pitched ThinkTree on Season 4 of Shark Tank Egypt. He presented chess as a way to build children's thinking skills and character, and showed the platform's live online classes and its students from several countries.",
-      "ar": "قدّم أحمد العدلي مشروع ثينك تري في الموسم الرابع من برنامج شارك تانك مصر. وعرض الشطرنج وسيلةً لتنمية مهارات التفكير لدى الأطفال وبناء شخصياتهم، واستعرض الحصص المباشرة عبر الإنترنت وطلاب المنصة من عدة دول."
+      "en": "Ahmed El-Adly pitched ThinkTree on Season 4 of Shark Tank Egypt. He presented chess as a way to build children's thinking skills and character, and showed the platform's live online classes and its students from several countries. He closed a deal with Mohamed Mansour and Dina Ghabbour for EGP 2 million in exchange for 30% of the company.",
+      "ar": "قدّم أحمد العدلي مشروع ثينك تري في الموسم الرابع من برنامج شارك تانك مصر. وعرض الشطرنج وسيلةً لتنمية مهارات التفكير لدى الأطفال وبناء شخصياتهم، واستعرض الحصص المباشرة عبر الإنترنت وطلاب المنصة من عدة دول. وأغلق صفقة مع محمد منصور ودينا غبور بقيمة مليوني جنيه مقابل 30% من الشركة."
     }
   },
   {
@@ -12094,7 +12222,8 @@
       "https://www.youm7.com/story/2025/12/10/3-%D9%82%D8%B5%D8%B5-%D9%86%D8%AC%D8%A7%D8%AD-%D8%AA%D8%AA%D9%86%D8%A7%D9%81%D8%B3-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%81%D9%8A-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1-%D8%B9%D9%84%D9%89/7228288",
       "https://www.facebook.com/themathomes/",
       "https://www.youtube.com/watch?v=k5g5c4wkBCU",
-      "https://www.youtube.com/watch?v=QhbD14WX--c"
+      "https://www.youtube.com/watch?v=QhbD14WX--c",
+      "https://www.youm7.com/7229888"
     ],
     "video": "k5g5c4wkBCU",
     "links": {
@@ -12281,7 +12410,7 @@
     "website": null,
     "ask": {
       "amountEGP": 2000000,
-      "equityPct": null
+      "equityPct": 25
     },
     "deal": null,
     "sources": [
