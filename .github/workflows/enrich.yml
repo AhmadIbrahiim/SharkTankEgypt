@@ -21,22 +21,6 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: node scripts/enrich.mjs --test
-      # Probe: one tiny request, raw response printed, so endpoint problems are visible in the log.
-      - name: Probe GitHub Models
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          curl -sS -i https://models.github.ai/inference/chat/completions \
-            -H "Authorization: Bearer $GH_TOKEN" -H "Content-Type: application/json" -H "Accept: application/vnd.github+json" \
-            -d '{"model":"openai/gpt-4.1-mini","messages":[{"role":"user","content":"Reply with the single word pong"}]}' | head -c 1500; echo
-      - name: Probe via official action
-        id: probe
-        continue-on-error: true
-        uses: actions/ai-inference@v1
-        with:
-          prompt: Reply with the single word pong
-          model: openai/gpt-4.1-mini
-      - run: echo "official action says -> ${{ steps.probe.outputs.response }}"
       - run: node scripts/enrich.mjs /tmp/enrich.json
         env:
           GITHUB_TOKEN: ${{ github.token }}
