@@ -6469,8 +6469,8 @@
       "ar": "كيرليت"
     },
     "description": {
-      "en": "Curlit is an Egyptian hair-care brand made for curly and wavy hair, started by Alia Osman after she struggled to find products for her own curls. Osman, who holds a diploma in beauty-product manufacturing, launched it with Mohamed Attya, and its curl creams, shampoos, conditioners, gels and leave-ins are formulated in-house for all curl patterns and all genders. Egyptian Streets praised its minimalist formulas and affordable prices as a local alternative to imported products. In the tank she asked for EGP 2 million for 20%.",
-      "ar": "كيرليت علامة مصرية للعناية بالشعر المجعد والمموج، أطلقتها عالية عثمان بعدما عانت في العثور على منتجات تناسب شعرها. وأسستها عالية، الحاصلة على دبلومة في تصنيع مستحضرات التجميل، مع محمد عطية، وتُطوَّر تركيبات منتجاتها داخلياً من كريمات التموج والشامبو والبلسم والجل والليف إن لتناسب كل أنواع التموجات والجنسين. وأشاد موقع Egyptian Streets بتركيباتها البسيطة وأسعارها المناسبة كبديل محلي للمنتجات المستوردة. وداخل التانك طلبت مليوني جنيه مقابل 20%."
+      "en": "Curlit is an Egyptian hair-care brand made for curly and wavy hair, started by Alia Osman after she struggled to find products for her own curls. Osman, who holds a diploma in beauty-product manufacturing, launched it with Mohamed Attya, and its curl creams, shampoos, conditioners, gels and leave-ins are formulated in-house for all curl patterns and all genders. Egyptian Streets praised its minimalist formulas and affordable prices as a local alternative to imported products. In the tank she asked for EGP 2 million for 20% and accepted EGP 5 million for 50% from Dina Ghabbour and Mohamed Farouk, dropping to 30% once the capital is recouped.",
+      "ar": "كيرليت علامة مصرية للعناية بالشعر المجعد والمموج، أطلقتها عالية عثمان بعدما عانت في العثور على منتجات تناسب شعرها. وأسستها عالية، الحاصلة على دبلومة في تصنيع مستحضرات التجميل، مع محمد عطية، وتُطوَّر تركيبات منتجاتها داخلياً من كريمات التموج والشامبو والبلسم والجل والليف إن لتناسب كل أنواع التموجات والجنسين. وأشاد موقع Egyptian Streets بتركيباتها البسيطة وأسعارها المناسبة كبديل محلي للمنتجات المستوردة. وداخل التانك طلبت مليوني جنيه مقابل 20%، وقبلت عرض دينا غبور ومحمد فاروق بخمسة ملايين جنيه مقابل 50% تنخفض إلى 30% بعد استرداد رأس المال."
     },
     "category": "Beauty",
     "founders": [
@@ -6482,7 +6482,15 @@
       "amountEGP": 2000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Dina Ghabbour",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
     "sources": [
       "https://arabfounders.net/en/shark-tank-egypt-investments-2024/",
       "https://www.soutalomma.com/Article/1134004",

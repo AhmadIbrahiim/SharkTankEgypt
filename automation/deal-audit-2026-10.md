@@ -79,3 +79,11 @@ Actions downloaded 357 articles about the 117 startups whose outcome was unknown
 Still unknown, because the article names offers but not the accepted one: Nutrifits (Farouk 15M/30% vs Ahmed Tarek 40M/40%), Re-Blocks (three Farouk offers), Stunning (5M/25% from all sharks or one), Tern Icecream (offer at the ask, acceptance not stated), Bar & Jar (article cut off after Mansour's 1.7M/30% offer), Tayar (valuation "an obstacle", no explicit outcome).
 
 Totals after pass 3: 71 deals, 29 no-deal, 115 unknown, 145 asks known.
+
+## Fourth pass: targeted outcome searches
+
+Five subagents searched the web for the remaining 115 unknowns (about 190 searches). Search results are summaries, so every lead is read in full from an Actions download before anything changes.
+
+| Startup | Change | Source |
+|---|---|---|
+| Curlit | Deal: Dina Ghabbour + Mohamed Farouk, EGP 5M for 50% (drops to 30% once capital is recouped, plus 5% of profits as fees). "Alya accepted this offer." | arabfounders.net |
