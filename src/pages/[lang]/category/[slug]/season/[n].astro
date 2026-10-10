@@ -1,0 +1,25 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import Listing from '../../../../../components/Listing.astro';
+import Faq from '../../../../../components/Faq.astro';
+import Chips from '../../../../../components/Chips.astro';
+import { langs, category, catSlug, seasonLabel, num, type Lang } from '../../../../../config';
+import { sectorSeasons, sectorSeasonFaq } from '../../../../../faq';
+
+export const getStaticPaths = () => langs.flatMap((lang) => sectorSeasons.map((x) => ({ params: { lang, slug: catSlug(x.c), n: String(x.n) }, props: x })));
+const lang = Astro.params.lang as Lang;
+const { c, n, items } = Astro.props as (typeof sectorSeasons)[number];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const cat = category(c, lang), label = seasonLabel(n, lang);
+const title = lang === 'ar' ? `شركات ${cat} في شارك تانك مصر ${label}` : `${cat} startups in Shark Tank Egypt ${label}`;
+const intro = lang === 'ar' ? `${num(items.length, lang)} شركة من قطاع ${cat} عُرضت في ${label} من شارك تانك مصر، مع الطلبات والصفقات والمستثمرين.` : `${items.length} ${cat.toLowerCase()} startups pitched in Shark Tank Egypt ${label}, with their asks, deals and sharks.`;
+const links = [{ href: `${base}/${lang}/category/${catSlug(c)}/`, label: lang === 'ar' ? `كل شركات ${cat}` : `All ${cat} startups` },
+  ...sectorSeasons.filter((x) => x.c === c && x.n !== n).map((x) => ({ href: `${base}/${lang}/category/${catSlug(c)}/season/${x.n}/`, label: seasonLabel(x.n, lang) }))];
+---
+<Base lang={lang} title={title} description={intro} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/category/${catSlug(c)}/season/${n}/`}>
+  <Listing lang={lang} title={title} intro={intro} items={items} />
+  <div class="container">
+    <Faq lang={lang} items={sectorSeasonFaq(c, n, lang)} />
+    <Chips title={lang === 'ar' ? `${cat} في مواسم أخرى` : `${cat} in other seasons`} links={links} />
+  </div>
+</Base>

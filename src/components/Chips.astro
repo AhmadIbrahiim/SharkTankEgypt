@@ -1,0 +1,18 @@
+---
+// A titled row of pill links, used to cross-link the long-tail pages.
+interface Props { title: string; links: { href: string; label: string }[] }
+const { title, links } = Astro.props;
+---
+{links.length > 0 && (
+  <nav class="chips" aria-label={title}>
+    <h2>{title}</h2>
+    <p>{links.map((l) => <a href={l.href}>{l.label}</a>)}</p>
+  </nav>
+)}
+<style>
+  .chips { margin-top: 28px; }
+  .chips h2 { font-size: 1.05rem; margin-bottom: 10px; }
+  .chips p { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+  .chips a { padding: 6px 14px; border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); color: var(--ink); text-decoration: none; font-size: .9rem; }
+  .chips a:hover { color: var(--sun-ink); }
+</style>
