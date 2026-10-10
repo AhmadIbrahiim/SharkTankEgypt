@@ -121,3 +121,8 @@ FollowICT's "بعد انتهاء الموسم الأول.. قائمة الشرك
 | Asfoura | Ask filled: 2.5M for 20% |
 
 A partial name list supplied by the maintainer (93 companies, unverified, no terms) was matched against the directory: all but four names are already here. HealthTag, Naydin Care, Ami's Bakery and Zaher are being checked before anything is added.
+
+Of the four names not in the directory:
+- **Health Tag**: added (Season 3, episode 16, ask EGP 20M for 15%, outcome unknown). Youm7 6864968 (29 Jan 2025): "قدم اندرو سعد صاحب مشروع Health Tag فكرة مشروعه خلال المشاركة ببرنامج شارك تانك ... طلب من الشاركس 20 مليون جنيه مقابل 15%". Same-day Youm7 coverage as Cleo Foods and Hoods (episode 16).
+- **Ami's Bakery** and **Naydin** (not "Naydin Care"): only sharktankarabi.com clip pages so far; queued for a full download before adding.
+- **Zaher**: clip headings mention offers from Farouk and Sallam, but nothing says what it is, its season or its ask. Not added.

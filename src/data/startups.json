@@ -9433,6 +9433,32 @@
     }
   },
   {
+    "id": "health-tag",
+    "season": 3,
+    "episode": 16,
+    "name": {
+      "en": "Health Tag",
+      "ar": "هيلث تاج"
+    },
+    "description": {
+      "en": "Health Tag is an Egyptian app that works as a marketplace for discounted healthcare services, with more than 3,500 providers and over 520,000 users. Founder Andrew Saad asked the sharks for EGP 20 million for 15% of the company.",
+      "ar": "هيلث تاج تطبيق مصري يعمل كسوق لخدمات الرعاية الصحية بأسعار مخفضة، ويضم أكثر من 3500 مقدم خدمة وما يزيد على 520 ألف مستخدم. وطلب مؤسسه أندرو سعد من الشاركس 20 مليون جنيه مقابل 15% من الشركة."
+    },
+    "category": "Health",
+    "founders": [
+      "Andrew Saad"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 20000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/story/2025/1/29/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-Health-Tag-%D9%84%D8%AF%D9%8A%D9%86%D8%A7-520-%D8%A3%D9%84%D9%81-%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85-%D9%88%D9%86%D8%B3%D8%AA%D9%87%D8%AF%D9%81-60/6864968"
+    ]
+  },
+  {
     "id": "cognify",
     "season": 3,
     "episode": 17,
