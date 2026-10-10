@@ -4,8 +4,9 @@ import Avatar from '../../../components/Avatar.astro';
 import Links from '../../../components/Links.astro';
 import MiniCard from '../../../components/MiniCard.astro';
 import Faq from '../../../components/Faq.astro';
-import { sharkFaq } from '../../../faq';
-import { langs, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, suggestUrl, type Lang } from '../../../config';
+import { sharkFaq, sharkSeasons, sharkPairs, sharkSectors } from '../../../faq';
+import Chips from '../../../components/Chips.astro';
+import { langs, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, catSlug, suggestUrl, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => sharks.map((p) => ({ params: { lang, id: p.id }, props: { p } })));
 const lang = Astro.params.lang as Lang;
@@ -88,6 +89,12 @@ const jsonld = {
       {p.deals.length ? <ul class="grid">{p.deals.map((x) => <li><MiniCard x={x} lang={lang} /></li>)}</ul> : <p class="muted">{s.noDeals}</p>}
     </section>
 
+    <Chips title={lang === 'ar' ? `صفقات ${p.name[lang]} حسب الموسم` : `${p.name[lang]}'s deals by season`}
+      links={sharkSeasons.filter((x) => x.p.id === p.id).map((x) => ({ href: `${base}/${lang}/sharks/${p.id}/season/${x.n}/`, label: seasonLabel(x.n, lang) }))} />
+    <Chips title={lang === 'ar' ? `استثمارات ${p.name[lang]} حسب القطاع` : `${p.name[lang]}'s investments by sector`}
+      links={sharkSectors.filter((x) => x.p.id === p.id).map((x) => ({ href: `${base}/${lang}/sharks/${p.id}/sector/${catSlug(x.c)}/`, label: category(x.c, lang) }))} />
+    <Chips title={lang === 'ar' ? `قارن ${p.name[lang]} مع` : `Compare ${p.name[lang]} with`}
+      links={sharkPairs.filter((x) => x.a.id === p.id || x.b.id === p.id).map((x) => ({ href: `${base}/${lang}/sharks/vs/${x.id}/`, label: (x.a.id === p.id ? x.b : x.a).name[lang] }))} />
     <Faq lang={lang} items={sharkFaq(p, lang)} />
   </div>
 </Base>

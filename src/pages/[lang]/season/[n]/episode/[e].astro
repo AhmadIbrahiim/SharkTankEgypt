@@ -1,0 +1,28 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import Listing from '../../../../../components/Listing.astro';
+import Faq from '../../../../../components/Faq.astro';
+import Chips from '../../../../../components/Chips.astro';
+import { langs, seasonLabel, num, type Lang } from '../../../../../config';
+import { episodes, episodeItems, episodeFaq, list } from '../../../../../faq';
+
+export const getStaticPaths = () => langs.flatMap((lang) => episodes.map(([n, e]) => ({ params: { lang, n: String(n), e: String(e) } })));
+const lang = Astro.params.lang as Lang;
+const n = Number(Astro.params.n), e = Number(Astro.params.e);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const items = episodeItems(n, e);
+const ep = lang === 'ar' ? `${seasonLabel(n, lang)}، الحلقة ${num(e, lang)}` : `${seasonLabel(n, lang)}, Episode ${e}`;
+const title = lang === 'ar' ? `شارك تانك مصر ${ep}: الشركات والصفقات` : `Shark Tank Egypt ${ep}: startups and deals`;
+const names = list(items.map((x) => x.name[lang]), lang);
+const intro = lang === 'ar' ? `كل الشركات التي عُرضت في ${ep} من شارك تانك مصر: ${names}، مع الطلبات والصفقات والمستثمرين.` : `Every startup that pitched in Shark Tank Egypt ${ep}: ${names}, with their asks, deals and sharks.`;
+const jsonld = { '@context': 'https://schema.org', '@type': 'TVEpisode', name: title, episodeNumber: e, description: intro,
+  partOfSeason: { '@type': 'TVSeason', seasonNumber: n }, partOfSeries: { '@type': 'TVSeries', name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر' } };
+const other = episodes.filter(([k]) => k === n).map(([, x]) => ({ href: `${base}/${lang}/season/${n}/episode/${x}/`, label: lang === 'ar' ? `الحلقة ${num(x, lang)}` : `Episode ${x}` })).filter((l) => !l.href.endsWith(`/episode/${e}/`));
+---
+<Base lang={lang} title={title} description={intro} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/season/${n}/episode/${e}/`}>
+  <Listing lang={lang} title={title} intro={intro} items={items} />
+  <div class="container">
+    <Faq lang={lang} items={episodeFaq(n, e, lang)} />
+    <Chips title={lang === 'ar' ? `حلقات أخرى من ${seasonLabel(n, lang)}` : `More ${seasonLabel(n, lang)} episodes`} links={other} />
+  </div>
+</Base>

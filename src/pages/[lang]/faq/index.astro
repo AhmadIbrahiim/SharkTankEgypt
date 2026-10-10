@@ -2,8 +2,9 @@
 import Base from '../../../layouts/Base.astro';
 import Faq from '../../../components/Faq.astro';
 import Avatar from '../../../components/Avatar.astro';
-import { langs, t, category, catSlug, seasonLabel, type Lang } from '../../../config';
-import { programFaq } from '../../../faq';
+import { langs, t, category, catSlug, seasonLabel, num, type Lang } from '../../../config';
+import { programFaq, rankings, sharkPairs, episodes } from '../../../faq';
+import Chips from '../../../components/Chips.astro';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -21,9 +22,11 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
       <h1>❓ {s.faqHubTitle}</h1>
       <p>{s.faqHubIntro}</p>
       <nav class="jump">
-        <a href="#general">{s.faqGeneral}</a><a href="#sharks">{s.navSharks}</a><a href="#seasons">{s.faqBySeason}</a><a href="#sectors">{s.faqBySector}</a>
+        <a href="#rankings">{lang === 'ar' ? 'القوائم' : 'Rankings'}</a><a href="#general">{s.faqGeneral}</a><a href="#sharks">{s.navSharks}</a><a href="#seasons">{s.faqBySeason}</a><a href="#sectors">{s.faqBySector}</a>
       </nav>
     </header>
+
+    <div id="rankings"><Chips title={lang === 'ar' ? 'القوائم والترتيب' : 'Rankings'} links={rankings.map((r) => ({ href: `${base}/${lang}/top/${r.id}/`, label: r.title[lang] }))} /></div>
 
     <Faq lang={lang} items={f.general} title={s.faqGeneral} id="general" ld={false} />
 
@@ -35,7 +38,10 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
       </div>
     ))}
 
+    <Chips title={lang === 'ar' ? 'مقارنات بين المستثمرين' : 'Shark vs shark'} links={sharkPairs.map((x) => ({ href: `${base}/${lang}/sharks/vs/${x.id}/`, label: `${x.a.name[lang]} ${lang === 'ar' ? 'أم' : 'vs'} ${x.b.name[lang]}` }))} />
+
     <h2 class="group" id="seasons">{s.faqBySeason}</h2>
+    <Chips title={lang === 'ar' ? 'كل الحلقات' : 'Every episode'} links={episodes.map(([n, e]) => ({ href: `${base}/${lang}/season/${n}/episode/${e}/`, label: lang === 'ar' ? `${seasonLabel(n, lang, true)} · ح${num(e, lang)}` : `${seasonLabel(n, lang, true)} · E${e}` }))} />
     {f.seasons.map(({ n, qa }) => (
       <div class="block">
         <a class="who" href={`${base}/${lang}/season/${n}/`}><span>{seasonLabel(n, lang)}</span></a>
