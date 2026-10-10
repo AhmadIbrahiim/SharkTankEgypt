@@ -186,7 +186,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         <ul class="team">
           {team.map((f) => (
             <li><a href={`${base}/${lang}/founders/${f.id}/`}>
-              <Avatar name={f.name.en} seed={f.id} size={56} />
+              <Avatar name={f.name.en} seed={f.id} photo={f.photo} size={56} />
               <span><strong>{f.name[lang]}</strong>{f.title && <small>{f.title[lang]}</small>}</span>
             </a></li>
           ))}

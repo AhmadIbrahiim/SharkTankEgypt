@@ -20,7 +20,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       {founders.map((p) => (
         <li data-text={[p.name.en, p.name.ar, ...p.startups.flatMap((x) => [x.name.en, x.name.ar])].join(' ').toLowerCase()}>
           <a href={`${base}/${lang}/founders/${p.id}/`}>
-            <Avatar name={p.name.en} seed={p.id} size={52} />
+            <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={52} />
             <span>
               <strong>{p.name[lang]}</strong>
               <small>{p.title?.[lang] ?? p.startups.map((x) => x.name[lang]).join(lang === 'ar' ? '، ' : ', ')}</small>

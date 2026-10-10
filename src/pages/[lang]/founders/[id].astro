@@ -25,7 +25,7 @@ const jsonld = {
   <div class="container">
     <nav class="crumbs"><a href={`${base}/${lang}/founders/`}>{s.navFounders}</a> <span>/</span> <span aria-current="page">{p.name[lang]}</span></nav>
     <article class="hero">
-      <Avatar name={p.name.en} seed={p.id} size={128} />
+      <figure class="pic"><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={128} />{p.photo?.credit && <figcaption><a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a></figcaption>}</figure>
       <div>
         <h1>{p.name[lang]}</h1>
         {p.name.ar !== p.name.en && <p class="alt">{p.name[lang === 'ar' ? 'en' : 'ar']}</p>}
@@ -48,6 +48,9 @@ const jsonld = {
   .crumbs a { color: var(--ink-2); text-decoration: none; }
   .hero { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: start; padding: 28px 0 8px; }
   @media (max-width: 720px) { .hero { grid-template-columns: 1fr; justify-items: center; text-align: center; } .hero :global(.online ul) { justify-content: center; } }
+  .pic { margin: 0; text-align: center; }
+  .pic figcaption { margin-top: 6px; font-size: .72rem; }
+  .pic figcaption a { color: var(--ink-2); }
   h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
   .alt { margin: 2px 0 0; color: var(--ink-2); }
   .title { margin: 10px 0 0; font-weight: 500; color: var(--sun-ink); }

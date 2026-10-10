@@ -7,7 +7,7 @@ const { name, seed, photo, size = 96 } = Astro.props;
   ? <img class="person-avatar" src={photo.url} alt={name} width={size} height={size} loading="lazy" style={`--s:${size}px`} />
   : <span class="person-avatar ph-av" style={`--s:${size}px;--h:${hue(seed)}`} aria-hidden="true">{initials(name)}</span>}
 <style>
-  .person-avatar { width: var(--s); height: var(--s); border-radius: 50%; object-fit: cover; object-position: top; flex: none; background: var(--surface-2); border: 3px solid var(--surface); box-shadow: var(--shadow); }
+  .person-avatar { width: var(--s); height: var(--s); border-radius: 50%; object-fit: cover; object-position: center 30%; flex: none; background: var(--surface-2); border: 3px solid var(--surface); box-shadow: var(--shadow); }
   .ph-av { display: inline-grid; place-items: center; font-weight: 650; font-size: calc(var(--s) * .36); color: hsl(var(--h) 55% 32%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 80% 92%), hsl(var(--h) 60% 82%)); }
   @media (prefers-color-scheme: dark) { .ph-av { color: hsl(var(--h) 70% 82%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 35% 28%), hsl(var(--h) 30% 18%)); } }
 </style>
