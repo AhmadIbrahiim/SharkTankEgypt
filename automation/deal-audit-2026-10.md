@@ -36,3 +36,24 @@ Deals that a source contradicted, or that named a shark who was not on that seas
 | BASQ | unchanged | deal, EGP 3M → **unknown** |
 | Think Tree | unchanged | deal with Mohamed Mansour & Dina Ghabbour, EGP 2M for 30% → **unknown** |
 | Re-Blocks | unchanged | deal with Abdallah Sallam → **unknown** |
+
+## Second pass: unknown outcomes
+
+Research agents checked all 142 startups with an unknown outcome. Each result below rests on a cited article (Youm7, Dostor, Elwatan, Cairo24), and the source was added to the startup's record.
+
+- **Re-checked from the first pass:**
+  - **Grif:** Dostor confirms Ayman Abbas's 900K for 10% was accepted, so the original record was right and the deal is restored.
+  - **Think Tree:** Youm7 confirms the deal with Mohamed Mansour and Dina Ghabbour (2M for 30%). Mohamed Mansour was added to the Season 4 panel.
+  - **Rawmart:** Youm7 reports Ayman Abbas signed a partnership with it. The terms are unknown.
+- **New deals:**
+  - The Maker: El Sewedy, 25M for 35%
+  - Simplex: 50M for 27.5%
+  - Salhly: Mansour, Farouk, El Sewedy and Sallam, 6M
+  - Zink: 5M for 50%
+  - Masafa: 5M for 50%
+  - Tam Leather: Hilda Louca and El Sewedy, 500K for 50%
+  - Carpetivity: Dina Ghabbour, 2M for 35%
+  - Y Studio: 1.5M for 15%
+  - Portal: EGP 10,000. Its tiny ask was real.
+- **No deal:** Akoub, Evica (took the golden ticket instead), StepInside, Chef Me and Creative Art.
+- **Asks filled in:** about 60 startups. Only missing figures were added; no recorded figure was overwritten.

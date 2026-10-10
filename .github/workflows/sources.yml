@@ -1,0 +1,23 @@
+name: Fetch source articles
+# Saves the text of the articles cited for startups with an unknown pitch outcome to
+# `automation/sources/` on main, for review. The site never reads it.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/fetch-sources.mjs /tmp/sources.json
+      - name: Commit to main
+        run: |
+          mkdir -p automation/sources && cp /tmp/sources.json automation/sources/sources.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add automation/sources
+          git diff --cached --quiet && exit 0
+          git commit -qm "chore: source articles for unknown outcomes"
+          git pull -q --rebase origin main && git push origin HEAD:main
