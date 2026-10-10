@@ -19,6 +19,13 @@ for (const s of startups) {
     assert.equal(new URL(s.website).protocol, 'https:', `${where}: website must be https`);
     assert.ok(!platformOf(s.website), `${where}: social URL belongs in links, not website`);
   }
+  if (s.about) {
+    const { founded, city, highlights, ...rest } = s.about;
+    assert.deepEqual(Object.keys(rest), [], `${where}: unknown about fields`);
+    if (founded != null) assert.ok(Number.isInteger(founded) && founded >= 1900 && founded <= new Date().getFullYear(), `${where}: bad founded year`);
+    if (city) assert.ok(city.en?.trim() && city.ar?.trim(), `${where}: city needs en and ar`);
+    if (highlights) assert.ok(highlights.en?.length && highlights.en.length === highlights.ar?.length, `${where}: highlights need equal en/ar lists`);
+  }
   for (const [key, url] of Object.entries(s.links ?? {})) {
     if (key === 'other') {
       for (const o of url) assert.ok(o.name?.trim() && new URL(o.url).protocol === 'https:', `${where}: bad links.other entry`);

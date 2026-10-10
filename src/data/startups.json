@@ -36,6 +36,12 @@
           "url": "https://www.facebook.com/ScrunchEgypt/"
         }
       ]
+    },
+    "about": {
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      }
     }
   },
   {
@@ -90,7 +96,8 @@
     ],
     "links": {
       "instagram": "https://www.instagram.com/mothernakedskin/",
-      "facebook": "https://www.facebook.com/mothernakedskin/"
+      "facebook": "https://www.facebook.com/mothernakedskin/",
+      "tiktok": "https://www.tiktok.com/@mothernakedskin/"
     }
   },
   {
@@ -295,6 +302,12 @@
     "links": {
       "linkedin": "https://www.linkedin.com/company/dajin/",
       "facebook": "https://www.facebook.com/Dajin.Platform/"
+    },
+    "about": {
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      }
     }
   },
   {
@@ -349,7 +362,7 @@
     "website": null,
     "ask": {
       "amountEGP": 2500000,
-      "equityPct": null
+      "equityPct": 15
     },
     "deal": {
       "made": true,
@@ -370,6 +383,12 @@
     "links": {
       "instagram": "https://www.instagram.com/maward0/",
       "facebook": "https://www.facebook.com/maward0/"
+    },
+    "about": {
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      }
     }
   },
   {
@@ -481,6 +500,12 @@
     "links": {
       "facebook": "https://www.facebook.com/Grifcastiron/",
       "instagram": "https://www.instagram.com/grifcookware/"
+    },
+    "about": {
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      }
     }
   },
   {
@@ -523,7 +548,9 @@
     "video": "Vt5rVNHxQJM",
     "links": {
       "facebook": "https://www.facebook.com/Tilestic/",
-      "linkedin": "https://www.linkedin.com/in/mohamed-aboklela-107072352/"
+      "linkedin": "https://www.linkedin.com/in/mohamed-aboklela-107072352/",
+      "whatsapp": "https://api.whatsapp.com/send/",
+      "instagram": "https://www.instagram.com/tilestic/"
     }
   },
   {
@@ -691,14 +718,15 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 10000000,
+      "equityPct": 5
     },
     "deal": null,
     "sources": [
       "https://www.youm7.com/6064105",
       "https://www.youm7.com/6064143",
-      "https://www.youtube.com/watch?v=oz8-LkpoWcA"
+      "https://www.youtube.com/watch?v=oz8-LkpoWcA",
+      "https://www.youtube.com/watch?v=Tgdn8ylkd7M"
     ],
     "video": "oz8-LkpoWcA"
   },
@@ -880,7 +908,8 @@
     ],
     "video": "9QOujur9ey8",
     "links": {
-      "facebook": "https://www.facebook.com/jojosranch/"
+      "facebook": "https://www.facebook.com/jojosranch/",
+      "instagram": "https://www.instagram.com/jojosranch/"
     }
   },
   {
@@ -1011,7 +1040,9 @@
       "https://www.youm7.com/story/2023/2/18/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-Shark-Tank-%D8%B4%D9%8A%D8%A7%D9%84%D8%A9-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D9%85%D8%B1%D9%8A%D8%AD%D8%A9-%D9%84%D9%84%D8%A3%D9%85-%D9%81%D9%89-%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9/6088578"
     ],
     "links": {
-      "facebook": "https://www.facebook.com/CalmyBaby/"
+      "facebook": "https://www.facebook.com/CalmyBaby/",
+      "instagram": "https://www.instagram.com/calmybaby/",
+      "youtube": "https://www.youtube.com/@calmy5797"
     }
   },
   {
@@ -1137,7 +1168,11 @@
     ],
     "links": {
       "linkedin": "https://eg.linkedin.com/company/sporty-pro",
-      "facebook": "https://www.facebook.com/SportyPro/"
+      "facebook": "https://www.facebook.com/SportyPro/",
+      "instagram": "https://www.instagram.com/sportyprostore/",
+      "tiktok": "https://www.tiktok.com/@sportyprostore/",
+      "youtube": "https://www.youtube.com/@SportyPro",
+      "x": "https://twitter.com/sporty_prostore/"
     }
   },
   {
@@ -1358,7 +1393,9 @@
     "video": "GDk-jVAZdRg",
     "links": {
       "linkedin": "https://www.linkedin.com/company/skoolix/",
-      "facebook": "https://www.facebook.com/Skoolix/"
+      "facebook": "https://www.facebook.com/Skoolix/",
+      "instagram": "https://www.instagram.com/skoolixlms/",
+      "youtube": "https://www.youtube.com/channel/UCY2hr4ZMikFv_MRrePYXZEQ/featured"
     }
   },
   {
@@ -1477,8 +1514,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 10000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -1595,7 +1632,9 @@
     "links": {
       "facebook": "https://www.facebook.com/schoolz.io/",
       "linkedin": "https://www.linkedin.com/company/schoolzio",
-      "x": "https://x.com/schoolzio"
+      "x": "https://x.com/schoolzio",
+      "appStore": "https://apps.apple.com/us/app/schoolz-parent/id1530728254",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.schoolz.io"
     }
   },
   {
@@ -1699,8 +1738,11 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
+      "sharks": [
+        "Ahmed El Sewedy",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 2500000,
       "equityPct": null
     },
     "sources": [
@@ -1708,7 +1750,8 @@
       "https://www.youm7.com/6352547",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-blooms-%D9%88%D9%83%D8%B1%D9%8A%D8%B2%D9%8A-%D8%AA/",
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
-      "https://www.youtube.com/watch?v=kOKBAskFe5I"
+      "https://www.youtube.com/watch?v=kOKBAskFe5I",
+      "https://emccutoday.masscomm.cu.edu.eg/details.php?nwid=576"
     ],
     "video": "kOKBAskFe5I",
     "links": {
@@ -1785,7 +1828,8 @@
     "links": {
       "linkedin": "https://www.linkedin.com/company/shaghalni-com/",
       "x": "https://x.com/shaghalni",
-      "facebook": "https://www.facebook.com/ShaghalniOfficial/"
+      "facebook": "https://www.facebook.com/ShaghalniOfficial/",
+      "instagram": "https://www.instagram.com/shaghalniofficial/"
     }
   },
   {
@@ -2044,7 +2088,7 @@
     "website": null,
     "ask": {
       "amountEGP": 50000000,
-      "equityPct": null
+      "equityPct": 6
     },
     "deal": null,
     "sources": [
@@ -2147,11 +2191,17 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
       "https://www.dostor.org/4564943",
-      "https://www.youtube.com/watch?v=y7mVARfCwJ0"
+      "https://www.youtube.com/watch?v=y7mVARfCwJ0",
+      "https://www.youtube.com/watch?v=lyvJqfjUatk"
     ],
     "video": "y7mVARfCwJ0"
   },
@@ -2202,7 +2252,12 @@
       "amountEGP": 1700000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
       "https://www.dostor.org/4564943",
@@ -2354,7 +2409,13 @@
     ],
     "video": "YOg83PFa2l0",
     "links": {
-      "facebook": "https://www.facebook.com/AgriCashApp/"
+      "facebook": "https://www.facebook.com/AgriCashApp/",
+      "instagram": "https://www.instagram.com/agricashapp/",
+      "tiktok": "https://www.tiktok.com/@agricashapp/",
+      "youtube": "https://www.youtube.com/channel/UCPz1qCiEIE9VvzSpB95Ngxw",
+      "linkedin": "https://eg.linkedin.com/company/agricashapp",
+      "whatsapp": "https://wa.me/201097887005/",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.pureSoft.shahbander_eltogaar"
     }
   },
   {
@@ -2376,7 +2437,12 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4579540",
       "https://www.youtube.com/watch?v=otvTd_pS0GU"
@@ -2462,11 +2528,21 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Dina Ghabbour"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6428980",
       "https://www.youtube.com/watch?v=5exI8kMJvEo",
-      "https://www.youtube.com/watch?v=0dOX_Lh7C2k"
+      "https://www.youtube.com/watch?v=0dOX_Lh7C2k",
+      "https://enterpriseam.com/egypt/2024/04/18/the-potcast-productions-company-secures-financing-round/",
+      "https://wamda.com/2024/04/egypts-potcast-raises-funding-round-shark-tank",
+      "https://cairoscene.com/Business/The-Potcast-Productions-Company-Secures-Shark-Tank-Investment"
     ],
     "video": "5exI8kMJvEo",
     "links": {
@@ -2531,7 +2607,11 @@
       "https://gate.ahram.org.eg/News/4662165.aspx"
     ],
     "links": {
-      "facebook": "https://www.facebook.com/lorientalmoments/"
+      "facebook": "https://www.facebook.com/lorientalmoments/",
+      "whatsapp": "https://wa.me/201101620916/",
+      "linkedin": "https://www.linkedin.com/company/lorientalmoments",
+      "youtube": "https://www.youtube.com/@lorientalmoments",
+      "instagram": "https://instagram.com/lorientalmoments/"
     }
   },
   {
@@ -2550,8 +2630,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 15000000,
+      "equityPct": 15
     },
     "deal": null,
     "sources": [
@@ -2631,8 +2711,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -2660,20 +2740,27 @@
     ],
     "website": "https://weddngo.com/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 12000000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
       "https://www.youm7.com/6441786",
       "https://www.youtube.com/watch?v=dj17yYZHoXA",
       "https://www.youtube.com/watch?v=Fp2G7VhS7K0",
-      "https://www.youtube.com/watch?v=_eeYnA7BoRg"
+      "https://www.youtube.com/watch?v=_eeYnA7BoRg",
+      "https://www.youtube.com/watch?v=gQ8zqzxkX2Y"
     ],
     "video": "dj17yYZHoXA",
     "links": {
       "facebook": "https://www.facebook.com/WeddngoEgypt/",
-      "youtube": "https://www.youtube.com/@WEDDnGO"
+      "youtube": "https://www.youtube.com/@WEDDnGO",
+      "appStore": "https://apps.apple.com/lb/app/weddngo/id1597117560",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.weddngo.client",
+      "instagram": "https://www.instagram.com/weddngo/",
+      "linkedin": "https://www.linkedin.com/company/weddngo/",
+      "tiktok": "https://www.tiktok.com/@weddngo/",
+      "x": "https://x.com/weddngo/"
     }
   },
   {
@@ -2821,8 +2908,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -2933,7 +3020,10 @@
     "video": "VHU0DGTjGd8",
     "links": {
       "linkedin": "https://www.linkedin.com/company/abs-courier/",
-      "x": "https://x.com/abscourier"
+      "x": "https://x.com/abscourier",
+      "facebook": "https://www.facebook.com/abscourieregy/",
+      "instagram": "https://www.instagram.com/abs.courier/",
+      "youtube": "https://www.youtube.com/channel/UCw66V2umLmuROaBDAxiNzMA"
     }
   },
   {
@@ -3031,12 +3121,22 @@
       "amountEGP": 4000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6480371",
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
       "https://www.youtube.com/watch?v=GEs2mAWUxSQ",
-      "https://www.youtube.com/watch?v=v29urrjjCFE"
+      "https://www.youtube.com/watch?v=v29urrjjCFE",
+      "https://www.youtube.com/watch?v=oxn2lvCyvwc",
+      "https://www.youtube.com/watch?v=s-qOTWwq9Fs"
     ],
     "video": "GEs2mAWUxSQ"
   },
@@ -3238,10 +3338,18 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1000000,
+      "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Mohamed Mansour"
+      ],
+      "amountEGP": 1000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youm7.com/6495136",
       "https://www.youtube.com/watch?v=1AuayqlKHQ0",
@@ -3268,8 +3376,8 @@
     ],
     "website": "https://horraofficial.com/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 500000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -3281,7 +3389,8 @@
     "video": "pcm9UoYzkI4",
     "links": {
       "facebook": "https://www.facebook.com/p/Horra-100071051085845/",
-      "instagram": "https://www.instagram.com/horraofficial/"
+      "instagram": "https://www.instagram.com/horraofficial/",
+      "linktree": "https://linktr.ee/techsolutionists/"
     }
   },
   {
@@ -3407,7 +3516,8 @@
     "links": {
       "facebook": "https://www.facebook.com/AlAhramCookware/",
       "instagram": "https://www.instagram.com/alahramcookware/",
-      "youtube": "https://www.youtube.com/@alahramcookware-9344"
+      "youtube": "https://www.youtube.com/@alahramcookware-9344",
+      "whatsapp": "https://www.whatsapp.com/send/"
     }
   },
   {
@@ -3487,7 +3597,9 @@
     ],
     "video": "8h-lcDd97jw",
     "links": {
-      "instagram": "https://www.instagram.com/curlithq/"
+      "instagram": "https://www.instagram.com/curlithq/",
+      "facebook": "https://facebook.com/curlithq/",
+      "tiktok": "https://tiktok.com/@curlithq/"
     }
   },
   {
@@ -3705,11 +3817,17 @@
       "amountEGP": 15000000,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6768595",
       "https://www.youm7.com/6767092",
-      "https://www.youtube.com/watch?v=pScwobM9jYk"
+      "https://www.youtube.com/watch?v=pScwobM9jYk",
+      "https://www.youtube.com/watch?v=WxKKflnNxCE"
     ],
     "video": "pScwobM9jYk",
     "links": {
@@ -3944,7 +4062,9 @@
     ],
     "video": "5RKT24LgTBI",
     "links": {
-      "facebook": "https://www.facebook.com/Tekton.Egypt/"
+      "facebook": "https://www.facebook.com/Tekton.Egypt/",
+      "instagram": "https://www.instagram.com/tekton.egypt/",
+      "youtube": "https://www.youtube.com/channel/UCyqraeL7bQ7HZKtexdYWl0Q"
     }
   },
   {
@@ -4023,7 +4143,9 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Mohamed Farouk"
+      ],
       "amountEGP": null,
       "equityPct": null
     },
@@ -4033,7 +4155,8 @@
       "https://www.youtube.com/watch?v=C8ss--SBfpw",
       "https://www.facebook.com/Designs.Sadu/",
       "https://www.youtube.com/watch?v=GCDWoe2w1uY",
-      "https://www.youtube.com/watch?v=Gl87kU0gFOQ"
+      "https://www.youtube.com/watch?v=Gl87kU0gFOQ",
+      "https://www.youtube.com/shorts/GCDWoe2w1uY"
     ],
     "video": "GCDWoe2w1uY",
     "links": {
@@ -4068,7 +4191,8 @@
     "video": "NgSVuVR98jU",
     "links": {
       "facebook": "https://www.facebook.com/Zinkprint.eg/",
-      "instagram": "https://www.instagram.com/zinkprint.eg/"
+      "instagram": "https://www.instagram.com/zinkprint.eg/",
+      "whatsapp": "https://wa.me/201021537750/"
     }
   },
   {
@@ -4143,7 +4267,9 @@
     "links": {
       "linkedin": "https://www.linkedin.com/company/dxwand/",
       "x": "https://x.com/dxwandapp",
-      "facebook": "https://www.facebook.com/dxwandapp/"
+      "facebook": "https://www.facebook.com/dxwandapp/",
+      "instagram": "https://www.instagram.com/dxwand_ai/",
+      "youtube": "https://www.youtube.com/@dxwand"
     }
   },
   {
@@ -4218,7 +4344,10 @@
     ],
     "video": "1IjuqZUJu2E",
     "links": {
-      "facebook": "https://www.facebook.com/Bypavo/"
+      "facebook": "https://www.facebook.com/Bypavo/",
+      "instagram": "https://www.instagram.com/bypavo/",
+      "youtube": "https://www.youtube.com/channel/UCs7YyvRfnY-xK8plmd6LHeg",
+      "tiktok": "https://www.tiktok.com/@bypavoofficial/"
     }
   },
   {
@@ -4441,7 +4570,8 @@
     "links": {
       "instagram": "https://www.instagram.com/gabriswear/",
       "facebook": "https://www.facebook.com/p/Gabris-Wear-61560579770841/",
-      "tiktok": "https://www.tiktok.com/@gabris.wear"
+      "tiktok": "https://www.tiktok.com/@gabris.wear",
+      "linkedin": "https://www.linkedin.com/company/gabriswear/"
     }
   },
   {
@@ -4457,7 +4587,11 @@
       "ar": "نظام لإدارة عيادات الأسنان يتيح للأطباء إدارة عياداتهم عبر تطبيق، ويمكّن المرضى من حجز المواعيد، بهدف زيادة دخل العيادة وخفض تكاليفها. وكان من ثلاثة مشاريع للتكنولوجيا الصحية استثمر فيها الشاركس في الموسم الثالث."
     },
     "category": "Health",
-    "founders": [],
+    "founders": [
+      "Abdelrahman El Shafiey",
+      "Mostafa Dawoud",
+      "Marwan Doghem"
+    ],
     "website": "https://dentolize.com/",
     "ask": {
       "amountEGP": null,
@@ -4468,14 +4602,20 @@
       "https://www.youm7.com/6830874",
       "https://www.youtube.com/watch?v=Zozntdgiv5A",
       "https://www.youtube.com/watch?v=WxKKflnNxCE",
-      "https://www.youtube.com/@Dentolize"
+      "https://www.youtube.com/@Dentolize",
+      "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide"
     ],
     "video": "Zozntdgiv5A",
     "links": {
       "x": "https://x.com/dentolize",
       "facebook": "https://www.facebook.com/dentolize/",
       "linkedin": "https://www.linkedin.com/company/dentolize/",
-      "youtube": "https://www.youtube.com/@dentolize"
+      "youtube": "https://www.youtube.com/@dentolize",
+      "instagram": "https://www.instagram.com/dentolize/",
+      "tiktok": "https://www.tiktok.com/@dentolize/",
+      "whatsapp": "https://wa.me/201014471777/",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.dentolize.dentolize",
+      "appStore": "https://apps.apple.com/eg/app/dentolize/id1612892336"
     }
   },
   {
@@ -4571,7 +4711,10 @@
       "https://www.youtube.com/watch?v=YXs6JRhoQbg"
     ],
     "links": {
-      "facebook": "https://www.facebook.com/themonsterstable/"
+      "facebook": "https://www.facebook.com/themonsterstable/",
+      "instagram": "https://instagram.com/themonsterstable/",
+      "tiktok": "https://www.tiktok.com/@themonsterstable/",
+      "whatsapp": "https://wa.me/201501087918/"
     }
   },
   {
@@ -4765,7 +4908,8 @@
     "links": {
       "linkedin": "https://eg.linkedin.com/company/srvspaces",
       "facebook": "https://www.facebook.com/SRVspaces/",
-      "instagram": "https://www.instagram.com/srvspaces/"
+      "instagram": "https://www.instagram.com/srvspaces/",
+      "whatsapp": "https://wa.me/message/"
     }
   },
   {
@@ -4868,7 +5012,8 @@
     ],
     "video": "WmWszP6V7UA",
     "links": {
-      "facebook": "https://www.facebook.com/CleoRiceCakes/"
+      "facebook": "https://www.facebook.com/CleoRiceCakes/",
+      "whatsapp": "https://wa.me/1010751515/"
     }
   },
   {
@@ -5226,7 +5371,11 @@
     "links": {
       "linkedin": "https://www.linkedin.com/company/amanleek/",
       "facebook": "https://www.facebook.com/amanleek.insurance/",
-      "x": "https://x.com/amanleek"
+      "x": "https://x.com/amanleek",
+      "appStore": "https://apps.apple.com/eg/app/amanleek/id1598027861",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.Amanleek.Amanleek",
+      "instagram": "https://www.instagram.com/amanleek/",
+      "youtube": "https://www.youtube.com/@amanleek"
     }
   },
   {
@@ -5286,12 +5435,18 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 3000000,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4979257",
       "https://www.youm7.com/6898849",
       "https://www.youtube.com/watch?v=302xv8mAydM",
-      "https://www.youtube.com/watch?v=9BT9e9ztpAc"
+      "https://www.youtube.com/watch?v=9BT9e9ztpAc",
+      "https://www.youtube.com/watch?v=Lwa5215_H24"
     ],
     "video": "302xv8mAydM",
     "links": {
@@ -5329,7 +5484,9 @@
     ],
     "video": "Go1mlggwwBg",
     "links": {
-      "facebook": "https://www.facebook.com/p/Waymoure-100082315834212/"
+      "facebook": "https://www.facebook.com/p/Waymoure-100082315834212/",
+      "instagram": "https://www.instagram.com/waymoure/",
+      "tiktok": "https://www.tiktok.com/@waymoure.eg1/"
     }
   },
   {
@@ -5598,7 +5755,12 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/5285046",
       "https://www.youtube.com/watch?v=b0iYErmsBmY",
@@ -5700,7 +5862,12 @@
       "amountEGP": 3000000,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7185089",
       "https://www.aldawlanews.com/1307017",
@@ -5768,7 +5935,10 @@
       "https://www.aldawlanews.com/1309673"
     ],
     "links": {
-      "facebook": "https://www.facebook.com/BabyStarEgypt"
+      "facebook": "https://www.facebook.com/BabyStarEgypt",
+      "instagram": "https://www.instagram.com/babystaregypt/",
+      "whatsapp": "https://wa.me/201104295017/",
+      "tiktok": "https://www.tiktok.com/@babystaregypt/"
     }
   },
   {
@@ -5985,14 +6155,23 @@
       "amountEGP": 1000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7212970",
       "https://www.facebook.com/nilenaturalseg/",
       "https://www.youtube.com/watch?v=MTBclNRzQEY"
     ],
     "links": {
-      "facebook": "https://www.facebook.com/nilenaturalseg/"
+      "facebook": "https://www.facebook.com/nilenaturalseg/",
+      "instagram": "https://www.instagram.com/nilenaturalseg/",
+      "tiktok": "https://www.tiktok.com/@nilenaturalseg/"
     }
   },
   {
@@ -6128,7 +6307,12 @@
       "amountEGP": 40000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7229893",
       "https://www.youm7.com/7228288",
@@ -6176,7 +6360,8 @@
     ],
     "video": "k5g5c4wkBCU",
     "links": {
-      "facebook": "https://www.facebook.com/themathomes/"
+      "facebook": "https://www.facebook.com/themathomes/",
+      "instagram": "https://www.instagram.com/the_mat_homes/"
     }
   },
   {
@@ -6198,10 +6383,18 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7228288",
-      "https://www.youtube.com/watch?v=BVq4HkY0kTQ"
+      "https://www.youtube.com/watch?v=BVq4HkY0kTQ",
+      "https://www.youtube.com/watch?v=StXT_l6WaEM"
     ],
     "video": "BVq4HkY0kTQ",
     "links": {
@@ -6305,12 +6498,20 @@
       "amountEGP": 1000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/story/2025/12/24/%D8%B4%D8%B1%D9%83%D8%A9-Re-Blocks-%D8%AA%D8%AE%D8%B7%D9%81-%D8%A3%D9%86%D8%B8%D8%A7%D8%B1-%D9%84%D8%AC%D9%86%D8%A9-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A8%D8%A3%D8%AD%D8%AC%D8%A7%D8%B1-%D9%84%D9%8A%D8%AC%D9%88/7246018",
       "https://www.aldawlanews.com/1324210",
       "https://sharktankarabi.com/3552/",
-      "https://www.youtube.com/watch?v=oLTvakD4Fwg"
+      "https://www.youtube.com/watch?v=oLTvakD4Fwg",
+      "https://www.youtube.com/watch?v=StXT_l6WaEM"
     ],
     "video": "oLTvakD4Fwg",
     "links": {
@@ -6318,6 +6519,40 @@
       "linkedin": "https://www.linkedin.com/company/reblox/",
       "instagram": "https://www.instagram.com/reblox_lp/"
     }
+  },
+  {
+    "id": "pencilight",
+    "season": 4,
+    "episode": 16,
+    "name": {
+      "en": "Pencilight",
+      "ar": "بنسلايت"
+    },
+    "description": {
+      "en": "Pencilight is a Cairo-based decorative lighting brand whose fixtures have an unconventional design and are made 100% in Egypt. It pitches itself as combining European quality with Chinese prices, and its lighting won the Cairo Design Award in the lighting category. In the tank, Pencilight and OG Bees got the sharks competing with each other for the deal.",
+      "ar": "بنسلايت علامة مصرية للإضاءة الديكورية مقرها القاهرة، تقدم وحدات إضاءة بتصميمات غير تقليدية مصنوعة في مصر بالكامل. وتقدم نفسها على أنها تجمع بين جودة المنتج الأوروبي وسعر المنتج الصيني، وفازت إحدى قطعها بجائزة القاهرة للتصميم في فئة الإضاءة. وداخل التانك جعلت بنسلايت ومعها OG Bees الشاركس يتنافسون على الصفقة."
+    },
+    "category": "Home",
+    "founders": [
+      "Mohamed Mabrouk"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=8NwyGw7R1ao",
+      "https://www.youtube.com/watch?v=F1NkHp237TY",
+      "https://www.tiktok.com/discover/ahmed-tarek-shark-tank?lang=en",
+      "https://eg.linkedin.com/in/mohamed-mabrouk-10535032"
+    ],
+    "links": {
+      "facebook": "https://www.facebook.com/pencilighteg/",
+      "instagram": "https://www.instagram.com/pencilight_egypt/"
+    },
+    "video": "8NwyGw7R1ao"
   },
   {
     "id": "chug-up",
@@ -6338,7 +6573,14 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://almalnews.com/2097274/",
       "https://www.elwatannews.com/news/details/8219208",
@@ -6774,7 +7016,9 @@
     "links": {
       "instagram": "https://www.instagram.com/havanasocks.eg/",
       "facebook": "https://www.facebook.com/havanasocks.eg/",
-      "tiktok": "https://www.tiktok.com/@havanasocks"
+      "tiktok": "https://www.tiktok.com/@havanasocks",
+      "linkedin": "https://www.linkedin.com/company/havanasocks/",
+      "whatsapp": "https://api.whatsapp.com/send/"
     }
   },
   {
@@ -6831,6 +7075,128 @@
     "sources": [
       "https://www.youtube.com/watch?v=GTX8Ces3VTs"
     ]
+  },
+  {
+    "id": "og-bees",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "OG Bees",
+      "ar": "أو جي بيز"
+    },
+    "description": {
+      "en": "OG Bees is a platform for producing and managing user-generated content (UGC). It turns ordinary social-media users into paid content creators for brands. Mohamed Farouk made the founder an offer, but Ahmed Tarek urged him not to take it, and the sharks competed for the deal.",
+      "ar": "أو جي بيز منصة لإنتاج وإدارة المحتوى الذي يصنعه المستخدمون (UGC)، وتحوّل مستخدمي السوشيال ميديا العاديين إلى صناع محتوى بأجر لصالح العلامات التجارية. قدّم محمد فاروق عرضًا للمؤسس، لكن أحمد طارق نصحه بألا يقبله، وتنافس الشاركس على الصفقة."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=F1NkHp237TY",
+      "https://www.youtube.com/watch?v=JyEpncMRFAo",
+      "https://www.youtube.com/watch?v=MTBclNRzQEY",
+      "https://www.youtube.com/watch?v=1PAHQcDbZd8"
+    ]
+  },
+  {
+    "id": "iron-mist",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Iron Mist",
+      "ar": "أيرون ميست"
+    },
+    "description": {
+      "en": "Iron Mist (Ironmist) is an Egyptian spray that removes wrinkles from clothes in seconds without an iron and is safe on all fabrics. It targets people in a hurry who want neat clothes without ironing. The sharks tried the product themselves in the tank.",
+      "ar": "أيرون ميست بخاخ مصري يزيل كرمشة الملابس في ثوانٍ دون الحاجة إلى مكواة، وهو آمن على جميع أنواع الأقمشة. ويستهدف من هم دائمًا على عجلة ويريدون ملابس مرتبة دون كيّ. وجرّب الشاركس المنتج بأنفسهم داخل التانك."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=OyAcwe7uYW8",
+      "https://www.youtube.com/watch?v=1GBIF-sBS2s",
+      "https://www.youtube.com/watch?v=JyEpncMRFAo"
+    ],
+    "links": {
+      "facebook": "https://www.facebook.com/ironmist.eg/",
+      "instagram": "https://www.instagram.com/ironmist.eg/"
+    },
+    "video": "OyAcwe7uYW8"
+  },
+  {
+    "id": "bohome",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Bohome",
+      "ar": "بوهوم"
+    },
+    "description": {
+      "en": "Bohome is an Egyptian brand of unconventional home furnishings, furniture and decor. Its founders asked for EGP 1 million for 5% of the company. The sharks liked the products but withdrew after a long discussion of the deal.",
+      "ar": "بوهوم علامة مصرية للمفروشات المنزلية والأثاث والديكور بتصميمات غير تقليدية. طلب مؤسسوها مليون جنيه مقابل 5% من الشركة. أعجبت المنتجات الشاركس، لكنهم انسحبوا بعد نقاش طويل حول الصفقة."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 5
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=jdDiZBDdz-E",
+      "https://www.youtube.com/watch?v=wkpm4pznGEw"
+    ],
+    "links": {
+      "facebook": "https://www.facebook.com/Bohomeeg/"
+    },
+    "video": "jdDiZBDdz-E"
+  },
+  {
+    "id": "drip-yourself",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Drip",
+      "ar": "دريب"
+    },
+    "description": {
+      "en": "Drip (Drip Yourself) is an Egyptian specialty-coffee brand that sells drip bags and coffee pouches for a consistent, easy cup at home or anywhere. Its founders said they made about EGP 500,000 in online sales in six months. Ayman Abbas surprised them by asking why he should invest.",
+      "ar": "دريب علامة مصرية للقهوة المختصة تبيع أكياس القهوة المقطّرة (Drip bags) وعبوات القهوة، لتقديم فنجان بجودة ثابتة وتحضير سهل في البيت أو في أي مكان. وذكر مؤسسوها أنهم حققوا مبيعات أونلاين بنحو نصف مليون جنيه خلال ستة أشهر. وفاجأهم أيمن عباس بسؤاله عن سبب استثماره في المشروع."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=o3dtI3l9Nks",
+      "https://www.youtube.com/watch?v=C2FLmV4e-T0",
+      "https://www.youtube.com/watch?v=LesNvf9bM7c"
+    ],
+    "links": {
+      "instagram": "https://www.instagram.com/drip.yourself/"
+    },
+    "video": "o3dtI3l9Nks"
   },
   {
     "id": "aftah-topic",

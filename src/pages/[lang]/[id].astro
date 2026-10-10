@@ -32,6 +32,7 @@ const missing = Object.entries({
 }).filter(([, m]) => m).map(([k]) => s.missingLabels[k as keyof typeof s.missingLabels]);
 // GitHub issue forms prefill fields from query params named after their ids.
 const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}`)}&name_en=${encodeURIComponent(x.name.en)}&name_ar=${encodeURIComponent(x.name.ar)}${x.episode != null ? `&episode=${x.episode}` : ''}`;
+const about = (x as any).about as { founded?: number; city?: { en: string; ar: string }; highlights?: { en: string[]; ar: string[] } } | undefined;
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -40,6 +41,8 @@ const jsonld = {
   description: x.description[lang],
   ...(x.website && { url: x.website }),
   ...(sameAs.length && { sameAs }),
+  ...(about?.founded && { foundingDate: String(about.founded) }),
+  ...(about?.city && { address: { '@type': 'PostalAddress', addressLocality: about.city.en, addressCountry: 'EG' } }),
   ...(image && { image: image.startsWith('http') ? image : new URL(image.slice(1), site).href }),
   ...(x.founders?.length && { founder: x.founders.map((name) => ({ '@type': 'Person', name })) }),
   subjectOf: { '@type': 'TVEpisode', partOfSeries: { '@type': 'TVSeries', name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر' },
@@ -67,6 +70,12 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         </div>
         <h1>{x.name[lang]}</h1>
         {otherName !== x.name[lang] && <p class="alt" lang={lang === 'ar' ? 'en' : 'ar'}>{otherName}</p>}
+        {(about?.founded || about?.city) && (
+          <p class="facts">
+            {about.city && <span>📍 {s.basedIn}: {about.city[lang]}</span>}
+            {about.founded && <span>🗓️ {s.founded} {num(about.founded, lang).replace(/[٬,]/g, '')}</span>}
+          </p>
+        )}
         <p class="lead">{x.description[lang]}</p>
         <div class="actions">
           {x.website && (
@@ -96,6 +105,13 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         {x.video ? <p class="cap">▶ {s.watch}</p> : host && <p class="host">{host}</p>}
       </div>
     </article>
+
+    {about?.highlights?.[lang]?.length > 0 && (
+      <section class="glance">
+        <h2>✨ {s.glance}</h2>
+        <ul>{about.highlights[lang].map((h) => <li>{h}</li>)}</ul>
+      </section>
+    )}
 
     {terms.length > 0 && (
       <section class="terms">
@@ -186,6 +202,12 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   h1 { font-size: clamp(2rem, 4.5vw, 3rem); margin-top: 14px; letter-spacing: -.02em; }
   :global([dir='rtl']) h1 { letter-spacing: 0; }
   .alt { margin: 4px 0 0; color: var(--ink-2); font-size: 1.1rem; }
+  .facts { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 12px 0 0; color: var(--ink-2); font-size: .95rem; }
+  .glance { margin-bottom: 16px; padding: 22px 26px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+  .glance h2 { font-size: 1.1rem; margin-bottom: 12px; }
+  .glance ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 28px; }
+  .glance li { position: relative; padding-inline-start: 28px; }
+  .glance li::before { content: '✓'; position: absolute; inset-inline-start: 0; top: 1px; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: .75rem; font-weight: 700; color: var(--ok); background: var(--ok-soft); }
   .lead { font-size: 1.12rem; margin: 18px 0 24px; }
   .actions { display: flex; flex-wrap: wrap; gap: 10px; }
   :global([dir='rtl']) .ext { transform: scaleX(-1); }
