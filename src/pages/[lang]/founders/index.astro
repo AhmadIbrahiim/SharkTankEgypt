@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Avatar from '../../../components/Avatar.astro';
-import { langs, founders, t, num, type Lang } from '../../../config';
+import { langs, founders, seasons, seasonLabel, t, num, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -14,11 +14,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       <h1>🚀 {s.foundersTitle}</h1>
       <p>{s.foundersIntro}</p>
       <input id="fq" type="search" placeholder={s.searchPeople} aria-label={s.searchPeople} />
+      <div class="filters">
+        <select id="fs" aria-label={s.season}><option value="">{lang === 'ar' ? 'كل المواسم' : 'All seasons'}</option>
+          {[...seasons].sort((a, b) => (a.season || 99) - (b.season || 99)).map((x) => <option value={x.season}>{seasonLabel(x.season, lang)}</option>)}</select>
+        <select id="fd" aria-label={s.finalDeal}><option value="">{s.all}</option><option value="1">🤝 {s.deal}</option><option value="0">{s.noDeal}</option></select>
+      </div>
       <p class="count"><b id="fc">{num(founders.length, lang)}</b></p>
     </header>
     <ul class="people" id="fl">
       {founders.map((p) => (
-        <li data-text={[p.name.en, p.name.ar, ...p.startups.flatMap((x) => [x.name.en, x.name.ar])].join(' ').toLowerCase()}>
+        <li data-s={` ${[...new Set(p.startups.map((x) => x.season))].join(' ')} `} data-d={p.startups.some((x) => x.deal?.made) ? '1' : p.startups.some((x) => x.deal?.made === false) ? '0' : ''} data-text={[p.name.en, p.name.ar, ...p.startups.flatMap((x) => [x.name.en, x.name.ar])].join(' ').toLowerCase()}>
           <a href={`${base}/${lang}/founders/${p.id}/`}>
             <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={52} />
             <span>
@@ -36,12 +41,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const q = document.getElementById('fq') as HTMLInputElement;
   const items = [...document.querySelectorAll<HTMLElement>('#fl li')];
   const fmt = new Intl.NumberFormat(document.documentElement.lang === 'ar' ? 'ar-EG' : 'en-US');
-  q.addEventListener('input', () => {
+  const fs = document.getElementById('fs') as HTMLSelectElement, fd = document.getElementById('fd') as HTMLSelectElement;
+  const apply = () => {
     const v = q.value.trim().toLowerCase();
     let n = 0;
-    for (const li of items) { li.hidden = !!v && !li.dataset.text!.includes(v); if (!li.hidden) n++; }
+    for (const li of items) {
+      const d = li.dataset;
+      li.hidden = (!!v && !d.text!.includes(v)) || (!!fs.value && !d.s!.includes(` ${fs.value} `)) || (!!fd.value && d.d !== fd.value);
+      if (!li.hidden) n++;
+    }
     document.getElementById('fc')!.textContent = fmt.format(n);
-  });
+  };
+  q.addEventListener('input', apply);
+  fs.addEventListener('change', apply);
+  fd.addEventListener('change', apply);
 </script>
 <style>
   .intro { padding: 40px 0 8px; text-align: center; }
@@ -50,6 +63,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   input { width: min(100%, 520px); margin-top: 20px; font: inherit; padding: 12px 20px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
   input:focus { outline: none; border-color: var(--sun); }
   .count { font-size: .9rem; }
+  .filters { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+  select { font: inherit; font-size: .9rem; padding: 8px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); }
+  #fl li[hidden] { display: none; }
   .people { list-style: none; padding: 0; margin: 20px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 12px; }
   .people a { display: flex; align-items: center; gap: 14px; height: 100%; padding: 12px 16px; border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); color: inherit; text-decoration: none; transition: transform .2s; }
   .people a:hover { transform: translateY(-2px); }
