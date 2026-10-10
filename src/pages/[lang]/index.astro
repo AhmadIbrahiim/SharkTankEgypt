@@ -78,7 +78,7 @@ const jsonld = {
           data-text={[x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'), ...(x.founders ?? []), ...(x.deal?.sharks ?? []).flatMap((n) => [n, shark(n, 'ar')]), x.description.en, x.description.ar].join(' ').toLowerCase()}
         >
           <a class="card" href={`${base}/${lang}/${x.id}/`}>
-            <Shot id={x.id} name={x.name[lang]} video={x.video} eager={i < 6} />
+            <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager={i < 6} />
             <div class="body">
               <div class="row">
                 <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>

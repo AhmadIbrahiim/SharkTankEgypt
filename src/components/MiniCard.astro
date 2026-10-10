@@ -7,7 +7,7 @@ const s = t[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <a class="mini" href={`${base}/${lang}/${x.id}/`}>
-  <Shot id={x.id} name={x.name[lang]} video={x.video} />
+  <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} />
   <span class="mb">
     <strong>{x.name[lang]}</strong>
     <small>{seasonLabel(x.season, lang)}{x.category && ` · ${category(x.category, lang)}`}</small>

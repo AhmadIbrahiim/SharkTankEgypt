@@ -124,8 +124,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
             </button>
           </div>
         ) : x.website ? (
-          <a href={x.website} target="_blank" rel="noopener" aria-label={`${s.visit}: ${host}`}><Shot id={x.id} name={x.name[lang]} eager /></a>
-        ) : <Shot id={x.id} name={x.name[lang]} eager />}
+          <a href={x.website} target="_blank" rel="noopener" aria-label={`${s.visit}: ${host}`}><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager /></a>
+        ) : <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager />}
         {x.video ? <p class="cap">▶ {s.watch}</p> : host && <p class="host">{host}</p>}
       </div>
     </article>
