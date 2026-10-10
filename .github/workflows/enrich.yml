@@ -1,7 +1,7 @@
 name: Draft profiles with GitHub Models
 # Free LLM drafting for public repos: reads each startup's own pages and drafts services, overview,
-# pitch summary, highlights and Arabic founder names, grounded only in that text. Results land on
-# the `enrich` branch for review — nothing reaches the site without being merged.
+# pitch summary, highlights and Arabic founder names, grounded only in that text. Results land in
+# `automation/enrich/` on main for review — the site only uses what is copied into src/data.
 on:
   workflow_dispatch:
     inputs:
@@ -25,9 +25,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           LIMIT: ${{ inputs.limit || '140' }}
-      - name: Publish to enrich branch
+      - name: Commit to main
+        # Raw output for review under automation/; the site never reads it, so no redeploy.
         run: |
-          mkdir /tmp/out && cd /tmp/out && cp /tmp/enrich.json .
-          git init -q -b enrich && git add -A
-          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Enrich ${GITHUB_SHA}"
-          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" enrich
+          rm -rf automation/enrich && mkdir -p automation/enrich && cp -r /tmp/enrich.json automation/enrich/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add automation/enrich
+          git diff --cached --quiet && exit 0
+          git commit -qm "chore: enrich output"
+          git pull -q --rebase origin main && git push origin HEAD:main
