@@ -30,19 +30,32 @@ export const socialLinks = (html, base) => {
   return out;
 };
 
-async function get(url) {
-  const res = await fetch(url, { headers: { 'user-agent': UA, 'accept-language': 'ar,en;q=0.8' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
+// Link-preview crawler UA: YouTube/Instagram/Facebook serve their og: tags to it instead of a bot or login wall.
+const PREVIEW = 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)';
+async function get(url, ua = UA) {
+  const res = await fetch(url, { headers: { 'user-agent': ua, 'accept-language': 'ar,en;q=0.8', cookie: 'CONSENT=YES+1; SOCS=CAI' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return { html: await res.text(), url: res.url };
 }
 
+const pageTitle = (html) => decode(html.match(/<title[^>]*>([^<]*)/i)?.[1]);
+
 async function youtube(id) {
   const { html } = await get(`https://www.youtube.com/watch?v=${id}&hl=ar`);
   const json = html.match(/ytInitialPlayerResponse\s*=\s*(\{.+?\});(?:var|<\/script>)/s)?.[1];
-  const p = json ? JSON.parse(json) : {};
-  const v = p.videoDetails ?? {};
-  return { title: v.title ?? meta(html, 'og:title'), description: v.shortDescription ?? meta(html, 'og:description'), channel: v.author,
+  let v = {}, p = {};
+  try { p = json ? JSON.parse(json) : {}; v = p.videoDetails ?? {}; } catch {}
+  const r = { title: v.title, description: v.shortDescription, channel: v.author,
     views: v.viewCount ? +v.viewCount : undefined, published: p.microformat?.playerMicroformatRenderer?.publishDate };
+  if (!r.description) {
+    const pv = (await get(`https://www.youtube.com/watch?v=${id}`, PREVIEW)).html;
+    r.title ??= meta(pv, 'og:title'); r.description = meta(pv, 'og:description'); r.debug = pageTitle(html);
+  }
+  if (!r.title) {
+    const o = await (await fetch(`https://www.youtube.com/oembed?format=json&url=https://www.youtube.com/watch?v=${id}`, { signal: AbortSignal.timeout(15000) })).json();
+    r.title = o.title; r.channel ??= o.author_name;
+  }
+  return r;
 }
 
 async function site(url) {
@@ -51,10 +64,12 @@ async function site(url) {
     image: meta(html, 'og:image'), links: socialLinks(html, final) };
 }
 
-async function instagram(url) {
-  const { html } = await get(url);
-  // og:description reads like "1,234 Followers, 56 Following, 78 Posts - See Instagram photos and videos from Name (@handle)"
-  return { title: meta(html, 'og:title'), description: meta(html, 'og:description'), image: meta(html, 'og:image') };
+// Instagram og:description reads like "1,234 Followers, 56 Following, 78 Posts - See Instagram photos and videos from Name (@handle)".
+async function social(url) {
+  const { html } = await get(url, PREVIEW);
+  const r = { title: meta(html, 'og:title'), description: meta(html, 'og:description'), image: meta(html, 'og:image') };
+  if (!r.title && !r.description) r.debug = pageTitle(html);
+  return r;
 }
 
 if (process.argv.includes('--test')) {
@@ -81,7 +96,8 @@ await Promise.all(Array.from({ length: 6 }, async () => {
     const r = {};
     if (s.video) r.youtube = await tryGet('youtube', () => youtube(s.video));
     if (s.website) r.site = await tryGet('site', () => site(s.website));
-    if (s.links?.instagram) r.instagram = await tryGet('instagram', () => instagram(s.links.instagram));
+    if (s.links?.instagram) r.instagram = await tryGet('instagram', () => social(s.links.instagram));
+    if (s.links?.facebook) r.facebook = await tryGet('facebook', () => social(s.links.facebook));
     if (Object.keys(r).length) out[s.id] = r;
     console.log(s.id, Object.entries(r).map(([k, v]) => (v.error ? `✗${k}` : `✓${k}`)).join(' '));
   }
