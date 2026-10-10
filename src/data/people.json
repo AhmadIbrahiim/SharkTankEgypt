@@ -580,7 +580,12 @@
     "sources": [
       "https://waya.media/how-one-tweet-made-shaghalni/",
       "https://enterpriseam.com/egypt/2023/01/12/my-morning-routine-omar-khalifa-founder-and-ceo-of-shaghalni/"
-    ]
+    ],
+    "photo": {
+      "url": "/people/omar-khalifa.jpg",
+      "credit": "waya.media",
+      "creditUrl": "https://waya.media/how-one-tweet-made-shaghalni/"
+    }
   },
   {
     "id": "shorouk-alaa",
@@ -851,7 +856,12 @@
     },
     "sources": [
       "https://www.aljazeera.net/family/2026/8/5/21-يوما-لترسيخ-عادة-القراءة-سوبر-أبلة"
-    ]
+    ],
+    "photo": {
+      "url": "/people/israa-saleh.jpg",
+      "credit": "aljazeera.net",
+      "creditUrl": "https://www.aljazeera.net/family/2026/8/5/21-يوما-لترسيخ-عادة-القراءة-سوبر-أبلة"
+    }
   },
   {
     "id": "mohamed-hesham",
@@ -912,7 +922,12 @@
     "sources": [
       "https://www.wearetech.africa/fr/fils/tech-stars/mohab-aboueita-democratise-l-assurance-numerique-en-egypte",
       "https://www.startuplist.africa/startups/amanleek"
-    ]
+    ],
+    "photo": {
+      "url": "/people/mohab-abou-eita.jpg",
+      "credit": "wearetech.africa",
+      "creditUrl": "https://www.wearetech.africa/fr/fils/tech-stars/mohab-aboueita-democratise-l-assurance-numerique-en-egypte"
+    }
   },
   {
     "id": "ahmed-attallah",
@@ -1033,7 +1048,12 @@
     },
     "sources": [
       "https://www.soutalomma.com/Article/1142218/صاحبا-مشروع-Sadu-Designs-ندمج-الحرف-اليدوية-والمهن-التراثية-لصناعة"
-    ]
+    ],
+    "photo": {
+      "url": "/people/fatma-wagdy.jpg",
+      "credit": "soutalomma.com",
+      "creditUrl": "https://www.soutalomma.com/Article/1142218/صاحبا-مشروع-Sadu-Designs-ندمج-الحرف-اليدوية-والمهن-التراثية-لصناعة"
+    }
   },
   {
     "id": "mostafa-hanafy",
@@ -1096,7 +1116,12 @@
     },
     "sources": [
       "https://eg.linkedin.com/in/fadi-ossama"
-    ]
+    ],
+    "photo": {
+      "url": "/people/fady-osama.jpg",
+      "credit": "linkedin.com",
+      "creditUrl": "https://www.linkedin.com/in/fadi-ossama"
+    }
   },
   {
     "id": "marwan-doghem",
@@ -1201,7 +1226,12 @@
     "sources": [
       "https://www.forbesmiddleeast.com/lists/30-under-30-2024/ahmed-nassar/",
       "https://aboutmsr.com/لابترونيك-شركة-مصرية-تكنولوجية-تُلهم/"
-    ]
+    ],
+    "photo": {
+      "url": "/people/ahmed-nassar.jpg",
+      "credit": "forbesmiddleeast.com",
+      "creditUrl": "https://www.forbesmiddleeast.com/lists/30-under-30-2024/ahmed-nassar/"
+    }
   },
   {
     "id": "khaled-baraey",
