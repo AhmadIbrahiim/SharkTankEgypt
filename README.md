@@ -54,6 +54,10 @@ npm run check-data   # validate src/data
 npm run build && node scripts/og.mjs   # full build with share images
 ```
 
+## License
+
+Code: [MIT](LICENSE). Data in `src/data/`: [CC BY 4.0](src/data/LICENSE.md). Please credit the directory if you reuse it. Photos and screenshots belong to their owners.
+
 ## Disclaimer
 
 This is an independent fan and community project. It is not affiliated with Shark Tank, Sony Pictures Television, CBC or WATCH IT. Facts come from public sources, which are listed on each startup page. Founders who would like their information changed or removed can [open an issue](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new).
