@@ -5,7 +5,7 @@ import Links from '../../../components/Links.astro';
 import MiniCard from '../../../components/MiniCard.astro';
 import Faq from '../../../components/Faq.astro';
 import { founderFaq } from '../../../faq';
-import { langs, founders, t, founderId, suggestUrl, type Lang } from '../../../config';
+import { langs, founders, t, founderId, suggestUrl, seasonLabel, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => founders.map((p) => ({ params: { lang, id: p.id }, props: { p } })));
 const lang = Astro.params.lang as Lang;
@@ -23,6 +23,9 @@ const jsonld = {
 };
 ---
 <Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']}) – ${title}`} description={p.bio?.[lang] ?? `${p.name[lang]} · ${title}`} jsonld={jsonld}
+  card={{ kind: 'person', title: p.name[lang], alt: p.name.ar !== p.name.en ? p.name[lang === 'ar' ? 'en' : 'ar'] : undefined, photo: p.photo?.url, sub: title,
+    eyebrow: `${lang === 'ar' ? 'مؤسس في شارك تانك مصر' : 'Founder on Shark Tank Egypt'} · ${seasonLabel(p.startups[0].season, lang)}`,
+    badge: p.startups.some((x) => x.deal?.made) ? { tone: 'ok', text: lang === 'ar' ? 'حصل على صفقة' : 'Got a deal' } : p.startups.every((x) => x.deal?.made === false) ? { tone: 'no', text: lang === 'ar' ? 'بدون صفقة' : 'No deal' } : undefined }}
   altPath={`/${lang === 'ar' ? 'en' : 'ar'}/founders/${p.id}/`}>
   <div class="container">
     <nav class="crumbs"><a href={`${base}/${lang}/founders/`}>{s.navFounders}</a> <span>/</span> <span aria-current="page">{p.name[lang]}</span></nav>

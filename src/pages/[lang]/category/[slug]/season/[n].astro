@@ -3,7 +3,7 @@ import Base from '../../../../../layouts/Base.astro';
 import Listing from '../../../../../components/Listing.astro';
 import Faq from '../../../../../components/Faq.astro';
 import Chips from '../../../../../components/Chips.astro';
-import { langs, category, catSlug, seasonLabel, num, type Lang } from '../../../../../config';
+import { langs, listCard, category, catSlug, seasonLabel, num, type Lang } from '../../../../../config';
 import { sectorSeasons, sectorSeasonFaq } from '../../../../../faq';
 
 export const getStaticPaths = () => langs.flatMap((lang) => sectorSeasons.map((x) => ({ params: { lang, slug: catSlug(x.c), n: String(x.n) }, props: x })));
@@ -16,7 +16,7 @@ const intro = lang === 'ar' ? `${num(items.length, lang)} شركة من قطاع
 const links = [{ href: `${base}/${lang}/category/${catSlug(c)}/`, label: lang === 'ar' ? `كل شركات ${cat}` : `All ${cat} startups` },
   ...sectorSeasons.filter((x) => x.c === c && x.n !== n).map((x) => ({ href: `${base}/${lang}/category/${catSlug(c)}/season/${x.n}/`, label: seasonLabel(x.n, lang) }))];
 ---
-<Base lang={lang} title={title} description={intro} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/category/${catSlug(c)}/season/${n}/`}>
+<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, label)} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/category/${catSlug(c)}/season/${n}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} />
   <div class="container">
     <Faq lang={lang} items={sectorSeasonFaq(c, n, lang)} />

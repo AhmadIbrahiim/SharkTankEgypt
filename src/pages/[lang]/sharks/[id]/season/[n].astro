@@ -3,7 +3,7 @@ import Base from '../../../../../layouts/Base.astro';
 import Listing from '../../../../../components/Listing.astro';
 import Faq from '../../../../../components/Faq.astro';
 import Chips from '../../../../../components/Chips.astro';
-import { langs, seasonLabel, type Lang } from '../../../../../config';
+import { langs, listCard, seasonLabel, type Lang } from '../../../../../config';
 import { sharkSeasons, sharkSeasonFaq } from '../../../../../faq';
 
 export const getStaticPaths = () => langs.flatMap((lang) => sharkSeasons.map(({ p, n, items }) => ({ params: { lang, id: p.id, n: String(n) }, props: { p, n, items } })));
@@ -15,7 +15,7 @@ const title = lang === 'ar' ? `صفقات ${nm} في شارك تانك مصر ${
 const intro = lang === 'ar' ? `كل الشركات التي استثمر فيها ${nm} (${p.name.en}) في ${label} من شارك تانك مصر، مع قيمة كل صفقة والحصة.` : `Every startup ${nm} (${p.name.ar}) invested in during Shark Tank Egypt ${label}, with the amount and equity of each deal.`;
 const others = sharkSeasons.filter((x) => x.p.id === p.id && x.n !== n).map((x) => ({ href: `${base}/${lang}/sharks/${p.id}/season/${x.n}/`, label: seasonLabel(x.n, lang) }));
 ---
-<Base lang={lang} title={title} description={intro} image={p.photo?.url} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/${p.id}/season/${n}/`}>
+<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, label)} image={p.photo?.url} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/${p.id}/season/${n}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} />
   <div class="container">
     <Faq lang={lang} items={sharkSeasonFaq(p, n, lang)} />

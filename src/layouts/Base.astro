@@ -1,7 +1,7 @@
 ---
-import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, type Lang } from '../config';
-interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object }
-const { lang, title, description, altPath, image, jsonld } = Astro.props;
+import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, type Lang, type Card } from '../config';
+interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card }
+const { lang, title, description, altPath, image, jsonld, card } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const s = t[lang];
 const other: Lang = lang === 'ar' ? 'en' : 'ar';
@@ -11,6 +11,9 @@ const altUrl = abs(altPath);
 const [arUrl, enUrl] = lang === 'ar' ? [url, altUrl] : [altUrl, url];
 const fullTitle = title ? `${title} | ${s.title}` : `${s.title} | ${t[other].title}`;
 const desc = description ?? s.tagline;
+// Every page gets its own share image at /og/<path>.jpg, rendered from `og` after the build (scripts/og.mjs).
+const og = card ?? { kind: 'page', title: title ?? s.title, sub: description ?? s.tagline, photo: image };
+const ogPath = `/og/${Astro.url.pathname.slice(base.length).replace(/^\/|\/$/g, '') || 'index'}.jpg`;
 const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'startups';
 ---
 <!doctype html>
@@ -36,9 +39,13 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
     <meta property="og:url" content={url} />
     <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
     <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
-    <meta property="og:image" content={image ? (image.startsWith('http') ? image : abs(image)) : abs('/og.png')} />
-    {!image && <><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /></>}
+    <meta property="og:image" content={abs(ogPath)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={fullTitle} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={abs(ogPath)} />
+    <script type="application/json" id="og-card" set:html={JSON.stringify(og)} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="icon" href={`${base}/favicon-32.png`} sizes="32x32" type="image/png" />

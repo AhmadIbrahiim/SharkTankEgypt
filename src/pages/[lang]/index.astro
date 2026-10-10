@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, startups, seasons, t, num, money, pct, category, seasonLabel, shark, suggestUrl, type Lang } from '../../config';
+import { langs, listCard, startups, seasons, t, num, money, pct, category, seasonLabel, shark, suggestUrl, type Lang } from '../../config';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -20,7 +20,7 @@ const jsonld = {
   itemListElement: startups.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name[lang], url: `${site}${lang}/${x.id}/` })),
 };
 ---
-<Base lang={lang} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
+<Base lang={lang} jsonld={jsonld} card={listCard(s.title, s.tagline, startups.filter((x) => x.deal?.made), lang, lang === 'ar' ? 'كل المواسم والحلقات' : 'Every season and episode')} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
   <section class="hero">
     <div class="container">
       <p class="kicker">🦈 {s.heroKicker}</p>
