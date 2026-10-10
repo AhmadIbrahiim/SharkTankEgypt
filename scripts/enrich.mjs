@@ -41,13 +41,17 @@ async function ask(user) {
   for (let attempt = 0; attempt < 4; attempt++) {
     const res = await fetch('https://models.github.ai/inference/chat/completions', {
       method: 'POST',
-      headers: { authorization: `Bearer ${process.env.GITHUB_TOKEN}`, 'content-type': 'application/json' },
+      headers: { authorization: `Bearer ${process.env.GITHUB_TOKEN}`, 'content-type': 'application/json', accept: 'application/vnd.github+json', 'x-github-api-version': '2022-11-28' },
       body: JSON.stringify({ model: MODEL, temperature: 0.2, response_format: { type: 'json_object' },
         messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: user }] }),
     });
     if (res.status === 429) { await new Promise((r) => setTimeout(r, (+(res.headers.get('retry-after') ?? 60)) * 1000)); continue; }
-    if (!res.ok) throw new Error(`models HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
-    return JSON.parse((await res.json()).choices[0].message.content);
+    const raw = await res.text();
+    if (!res.ok) throw new Error(`models HTTP ${res.status}: ${raw.slice(0, 200)}`);
+    let content;
+    try { content = JSON.parse(raw).choices[0].message.content; } catch { throw new Error(`unexpected models reply: ${raw.slice(0, 200)}`); }
+    // Some models wrap JSON in a code fence.
+    try { return JSON.parse(content.replace(/^```(?:json)?\s*|\s*```$/g, '')); } catch { throw new Error(`model content not JSON: ${content.slice(0, 200)}`); }
   }
   throw new Error('rate limited');
 }
@@ -59,7 +63,7 @@ const queue = [...startups].sort((a, b) => score(a) - score(b)).slice(0, LIMIT);
 const out = {};
 for (const s of queue) {
   const sources = [];
-  const safe = async (label, fn) => { try { const t = await fn(); if (t) sources.push(`[${label}]\n${t}`); } catch {} };
+  const safe = async (label, fn) => { try { const t = await fn(); if (t) sources.push(`[${label}]\n${t}`); } catch (e) { console.log('  ', s.id, label, 'failed:', e.message); } };
   if (s.website) await safe('website', async () => textOf((await get(s.website)).html));
   if (s.video) await safe('pitch video', async () => { const v = await youtube(s.video); return [v.title, v.description].filter(Boolean).join('\n'); });
   if (s.links?.facebook) await safe('facebook', async () => { const f = await social(s.links.facebook); return [f.title, f.description].filter(Boolean).join('\n'); });
