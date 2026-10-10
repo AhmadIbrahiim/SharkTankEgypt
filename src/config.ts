@@ -137,3 +137,12 @@ export const screenshot = (id: string) => (existsSync(`public/screenshots/${id}.
 /** Stable warm hue per startup for placeholders and avatars. */
 export const hue = (s: string) => [14, 28, 38, 172, 190, 350, 262][[...s].reduce((a, c) => a + c.charCodeAt(0), 0) % 7];
 export const initials = (name: string) => name.split(/\s+/).slice(0, 2).map((w) => w[0]).join('');
+
+const categoryAr: Record<string, string> = {
+  Food: 'أطعمة ومشروبات', Tech: 'تكنولوجيا', Fashion: 'أزياء', Health: 'صحة', Education: 'تعليم', Services: 'خدمات',
+  Retail: 'تجزئة', Other: 'أخرى', Beauty: 'تجميل', Fintech: 'تكنولوجيا مالية', Agriculture: 'زراعة', Logistics: 'لوجستيات',
+  Entertainment: 'ترفيه', Sports: 'رياضة', Home: 'المنزل', Kids: 'أطفال', Manufacturing: 'تصنيع', Travel: 'سفر وسياحة',
+  Automotive: 'سيارات', 'Real Estate': 'عقارات', Pets: 'حيوانات أليفة', Environment: 'بيئة', Media: 'إعلام', Gaming: 'ألعاب',
+};
+/** Category values are stored in English; show Arabic labels where known. */
+export const category = (c: string, lang: Lang) => (lang === 'ar' ? categoryAr[c] ?? c : c);
