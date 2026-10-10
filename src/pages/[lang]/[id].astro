@@ -118,7 +118,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
               <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" class="ext"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           )}
-          <a class="btn btn-ghost" href="#comments">💬 {s.comments}</a>
+          {commentsOn && <a class="btn btn-ghost" href="#comments">💬 {s.comments}</a>}
         </div>
       </div>
       <div class="visual">
@@ -225,10 +225,10 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       <a class="btn btn-primary" href={helpUrl} target="_blank" rel="noopener">＋ {s.helpBtn}</a>
     </aside>
 
+    {commentsOn && (
     <section id="comments" class="comments">
       <h2>💬 {s.comments}</h2>
-      {commentsOn ? (
-        <>
+      <>
           <p class="hint">{s.rateHint}</p>
           {/* One discussion per startup, shared by both languages. */}
           <script src="https://giscus.app/client.js" data-repo={giscus.repo} data-repo-id={giscus.repoId}
@@ -236,9 +236,9 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
             data-mapping="specific" data-term={x.id} data-strict="1" data-reactions-enabled="1"
             data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme"
             data-lang={lang} data-loading="lazy" crossorigin="anonymous" async></script>
-        </>
-      ) : <p class="hint">{s.commentsOff}</p>}
+      </>
     </section>
+    )}
 
     <nav class="pager" aria-label={`${s.prev} / ${s.next}`}>
       {prev ? <a class="pg" href={`${base}/${lang}/${prev.id}/`}><small>{arrow('back')} {s.prev}</small><span>{prev.name[lang]}</span></a> : <span />}

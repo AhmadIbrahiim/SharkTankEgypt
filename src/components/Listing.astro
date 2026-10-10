@@ -1,13 +1,19 @@
 ---
-// Landing page body shared by sector and season pages.
+// Landing page body shared by sector, season, ranking, episode and shark-vs-shark pages.
+// ranked: numbered list (rankings). byEpisode: grouped under episode headings (season pages).
+// hideTop: skip "most active sharks" (shark-vs-shark has its own comparison). A default slot renders above the grid.
 import MiniCard from './MiniCard.astro';
 import Avatar from './Avatar.astro';
 import { t, num, money, stats, sharkByKey, shark, type Lang, type Startup } from '../config';
-interface Props { lang: Lang; title: string; intro: string; items: Startup[] }
-const { lang, title, intro, items } = Astro.props;
+interface Props { lang: Lang; title: string; intro: string; items: Startup[]; ranked?: boolean; byEpisode?: boolean; hideTop?: boolean }
+const { lang, title, intro, items, ranked, byEpisode, hideTop } = Astro.props;
 const s = t[lang];
 const st = stats(items);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const groups = byEpisode
+  ? [...Map.groupBy([...items].sort((a, b) => (a.episode ?? 999) - (b.episode ?? 999)), (x) => x.episode ?? null)]
+  : [[null, items] as const];
+const PAGE = 24;
 ---
 <div class="container">
   <header class="intro">
@@ -19,7 +25,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <div><b>{num(st.deals, lang)}</b><span>{s.statDeals}</span></div>
     {st.invested > 0 && <div><b>{money(st.invested, lang)}</b><span>{s.statInvested}</span></div>}
   </section>
-  {st.topSharks.length > 0 && (
+  {!hideTop && st.topSharks.length > 0 && (
     <section class="top">
       <h2>{s.topSharks}</h2>
       <ul>
@@ -29,8 +35,26 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       </ul>
     </section>
   )}
-  <ul class="grid">{items.map((x) => <li><MiniCard x={x} lang={lang} /></li>)}</ul>
+  <slot />
+  {groups.map(([e, xs]) => (
+    <section class="group">
+      {byEpisode && <h2 class="ep">{e == null ? s.episode : <a href={`${base}/${lang}/season/${xs[0].season}/episode/${e}/`}>{s.episode} {num(e, lang)}</a>}</h2>}
+      {ranked
+        ? <ol class="grid ranked">{xs.map((x, i) => <li data-n={num(i + 1, lang)} hidden={i >= PAGE}><MiniCard x={x} lang={lang} /></li>)}</ol>
+        : <ul class="grid">{xs.map((x, i) => <li hidden={!byEpisode && i >= PAGE}><MiniCard x={x} lang={lang} /></li>)}</ul>}
+      {!byEpisode && xs.length > PAGE && <p class="more"><button type="button" class="btn btn-ghost">{s.showMore}</button></p>}
+    </section>
+  ))}
 </div>
+<script>
+  // Cards past the first page are in the HTML (for search engines) but hidden until "Show more".
+  for (const b of document.querySelectorAll<HTMLButtonElement>('.group .more button'))
+    b.addEventListener('click', () => {
+      const hidden = [...b.closest('.group')!.querySelectorAll<HTMLElement>('.grid > li[hidden]')];
+      hidden.slice(0, 48).forEach((li) => (li.hidden = false));
+      if (hidden.length <= 48) b.parentElement!.remove();
+    });
+</script>
 <style>
   .intro { padding: 40px 0 8px; text-align: center; }
   .intro h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); }
@@ -45,4 +69,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   .top a { display: inline-flex; align-items: center; gap: 8px; padding: 4px 14px 4px 4px; padding-inline: 4px 14px; border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); color: var(--ink); text-decoration: none; }
   .top b { color: var(--ok); }
   .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+  .grid > li[hidden] { display: none; }
+  .ranked > li { position: relative; }
+  .ranked > li::before { content: '#' attr(data-n); position: absolute; z-index: 1; inset-block-start: 14px; inset-inline-start: 14px; padding: 2px 10px; border-radius: 999px; background: var(--ink); color: var(--surface); font-weight: 700; font-size: .85rem; }
+  .group + .group { margin-top: 28px; }
+  .ep { font-size: 1.1rem; margin-bottom: 12px; }
+  .ep a { color: inherit; }
+  .more { display: flex; justify-content: center; margin-top: 24px; }
+  @media (max-width: 560px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .kpis { flex-wrap: nowrap; gap: 8px; }
+    .kpis div { min-width: 0; flex: 1; padding: 10px 6px; }
+    .kpis b { font-size: 1.1rem; }
+    .top ul { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; scrollbar-width: none; padding: 4px 2px 8px; }
+    .top li { flex: none; }
+  }
 </style>

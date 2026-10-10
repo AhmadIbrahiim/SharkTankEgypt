@@ -16,7 +16,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'ItemList', name: r.
   itemListElement: r.items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name[lang], url: `${ROOT}${lang}/${x.id}/`, item: { '@id': ID.startup(x.id) } })) };
 ---
 <Base lang={lang} title={r.title[lang]} description={r.intro[lang]} card={listCard(r.title[lang], r.intro[lang], r.items, lang, lang === 'ar' ? 'قوائم شارك تانك مصر' : 'Shark Tank Egypt rankings')} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/top/${r.id}/`}>
-  <Listing lang={lang} title={r.title[lang]} intro={r.intro[lang]} items={r.items} />
+  <Listing lang={lang} title={r.title[lang]} intro={r.intro[lang]} items={r.items} ranked />
   <div class="container">
     <Faq lang={lang} items={r.faq(lang)} />
     <Chips title={lang === 'ar' ? 'قوائم أخرى' : 'More rankings'} links={rankings.filter((x) => x !== r).map((x) => ({ href: `${base}/${lang}/top/${x.id}/`, label: x.title[lang] }))} />
