@@ -542,7 +542,7 @@
     "website": null,
     "ask": {
       "amountEGP": 2500000,
-      "equityPct": 50
+      "equityPct": 15
     },
     "deal": {
       "made": true,
@@ -558,7 +558,8 @@
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
       "https://www.dostor.org/4283132",
       "https://www.youtube.com/watch?v=IPa2ZhTKgt4",
-      "https://www.dostor.org/4284024"
+      "https://www.dostor.org/4284024",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "video": "IPa2ZhTKgt4",
     "links": {
@@ -598,8 +599,8 @@
       ]
     },
     "pitch": {
-      "en": "Hossam El Maraghy pitched Mawared's weekly skincare kits in Season 1, Episode 2, pointing to four years in business and about 20,000 customers. He asked for EGP 2.5 million for 50% of the company. Ayman Abbas offered the full EGP 2.5 million for a controlling 51% stake, and Hossam accepted.",
-      "ar": "قدّم حسام المراغي أطقم ماورد الأسبوعية للعناية بالبشرة في الحلقة الثانية من الموسم الأول، مستندًا إلى أربع سنوات من العمل ونحو 20 ألف عميل. وطلب 2.5 مليون جنيه مقابل 50% من الشركة. فعرض أيمن عباس المبلغ كاملًا مقابل حصة أغلبية بنسبة 51%، ووافق حسام على الصفقة."
+      "en": "Hossam El Maraghy pitched Mawared's weekly skincare kits in Season 1, Episode 2, pointing to four years in business and about 20,000 customers. He asked for EGP 2.5 million for 15% of the company. Ayman Abbas offered the full EGP 2.5 million for a controlling 51% stake, and Hossam accepted.",
+      "ar": "قدّم حسام المراغي أطقم ماورد الأسبوعية للعناية بالبشرة في الحلقة الثانية من الموسم الأول، مستندًا إلى أربع سنوات من العمل ونحو 20 ألف عميل. وطلب 2.5 مليون جنيه مقابل 15% من الشركة. فعرض أيمن عباس المبلغ كاملًا مقابل حصة أغلبية بنسبة 51%، ووافق حسام على الصفقة."
     }
   },
   {
@@ -1256,8 +1257,8 @@
       "ar": "مندوبك سمارت"
     },
     "description": {
-      "en": "Mandoobak Smart is an app that lets grocers and supermarket owners order everything their shops need from one page, at company prices and with free delivery, saving them time and effort. It started in Aswan in January 2022 and drew on its founders' 12 years of experience selling food to grocery stores; by the pitch it had reached EGP 7 million in sales. The founders also described a smart shelf that detects low stock and reorders through the app. They asked for EGP 7 million for 15%, were the first to haggle with Mohamed Farouk until he told them “take it or leave it”, and closed at EGP 7 million for 35%.",
-      "ar": "مندوبك سمارت تطبيق يتيح لأصحاب محلات البقالة والسوبر ماركت طلب كل ما تحتاجه محلاتهم من صفحة واحدة بأسعار الشركات ومع توصيل مجاني، بما يوفر وقتهم وجهدهم. انطلق في أسوان في يناير 2022 مستنداً إلى خبرة مؤسسيه الممتدة 12 عاماً في توزيع المواد الغذائية على البقالين، وبلغت مبيعاته 7 ملايين جنيه وقت العرض. كما قدّم المؤسسان فكرة رف ذكي يرصد نقص البضاعة ويعيد الطلب تلقائياً عبر التطبيق. طلبا 7 ملايين جنيه مقابل 15%، وكانا أول من فاوض محمد فاروق حتى قال لهما «خذها أو اتركها»، وانتهى الأمر بصفقة قيمتها 7 ملايين جنيه مقابل 35%."
+      "en": "Mandoobak Smart is an app that lets grocers and supermarket owners order everything their shops need from one page, at company prices and with free delivery, saving them time and effort. It started in Aswan in January 2022 and drew on its founders' 12 years of experience selling food to grocery stores; by the pitch it had reached EGP 7 million in sales. The founders also described a smart shelf that detects low stock and reorders through the app. They asked for EGP 7 million for 15%, were the first to haggle with Mohamed Farouk until he told them “take it or leave it”, and closed at EGP 7 million for 35% with Mohamed Farouk and Ahmed El Sewedy.",
+      "ar": "مندوبك سمارت تطبيق يتيح لأصحاب محلات البقالة والسوبر ماركت طلب كل ما تحتاجه محلاتهم من صفحة واحدة بأسعار الشركات ومع توصيل مجاني، بما يوفر وقتهم وجهدهم. انطلق في أسوان في يناير 2022 مستنداً إلى خبرة مؤسسيه الممتدة 12 عاماً في توزيع المواد الغذائية على البقالين، وبلغت مبيعاته 7 ملايين جنيه وقت العرض. كما قدّم المؤسسان فكرة رف ذكي يرصد نقص البضاعة ويعيد الطلب تلقائياً عبر التطبيق. طلبا 7 ملايين جنيه مقابل 15%، وكانا أول من فاوض محمد فاروق حتى قال لهما «خذها أو اتركها»، وانتهى الأمر بصفقة مع محمد فاروق وأحمد السويدي قيمتها 7 ملايين جنيه مقابل 35%."
     },
     "category": "Tech",
     "founders": [
@@ -1272,7 +1273,8 @@
     "deal": {
       "made": true,
       "sharks": [
-        "Mohamed Farouk"
+        "Mohamed Farouk",
+        "Ahmed El Sewedy"
       ],
       "amountEGP": 7000000,
       "equityPct": 35
@@ -1285,7 +1287,8 @@
       "https://www.youtube.com/watch?v=gpnL5NmRn-k",
       "https://www.youtube.com/watch?v=5h94quV5MAs",
       "https://www.youtube.com/watch?v=yayAPkwAvWI",
-      "https://www.youm7.com/story/2023/2/4/صاحبا-مشروع-مندوبك-سمارت-لـ-Shark-Tank-تطبيق-يوفر-وقتا/6072803"
+      "https://www.youm7.com/story/2023/2/4/صاحبا-مشروع-مندوبك-سمارت-لـ-Shark-Tank-تطبيق-يوفر-وقتا/6072803",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "video": "gpnL5NmRn-k",
     "links": {
@@ -1560,8 +1563,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": 600000,
-      "equityPct": 25
+      "amountEGP": 500000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -1573,7 +1576,8 @@
     },
     "sources": [
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%AC%D9%88%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%D9%86%D8%B4-%D8%AA%D8%AD%D8%B5/",
-      "https://www.youtube.com/watch?v=0aKRrX-cITc"
+      "https://www.youtube.com/watch?v=0aKRrX-cITc",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "video": "0aKRrX-cITc",
     "services": {
@@ -1985,14 +1989,15 @@
         "Mohamed Farouk"
       ],
       "amountEGP": 3500000,
-      "equityPct": 45
+      "equityPct": 40
     },
     "sources": [
       "https://www.youm7.com/6096443",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/",
       "https://www.dostor.org/4322411",
       "https://www.elwatannews.com/news/details/6453822",
-      "https://vc4a.com/ventures/sporty-pro-for-e-commerce"
+      "https://vc4a.com/ventures/sporty-pro-for-e-commerce",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "links": {
       "linkedin": "https://eg.linkedin.com/company/sporty-pro",
@@ -2661,7 +2666,7 @@
     "website": "https://tomatiki.com",
     "ask": {
       "amountEGP": 2000000,
-      "equityPct": null
+      "equityPct": 5
     },
     "deal": {
       "made": true,
@@ -2679,7 +2684,8 @@
       "https://www.youtube.com/watch?v=5Wo_v_wkhZ4",
       "https://egyptinnovate.com/entities/profile/tomatiki-smart-solutions",
       "https://www.cbinsights.com/compare/brioagro-vs-tomatiki-1",
-      "https://www.dostor.org/4335196"
+      "https://www.dostor.org/4335196",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "video": "8gm3ni4RlzY",
     "links": {
@@ -2726,7 +2732,7 @@
     "website": null,
     "ask": {
       "amountEGP": 10000,
-      "equityPct": null
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -2738,7 +2744,8 @@
       "https://www.elwatannews.com/news/details/6471194",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%A9-tomatiki-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/",
       "https://www.youtube.com/watch?v=QvRzN1rN_68",
-      "https://www.dostor.org/4335251"
+      "https://www.dostor.org/4335251",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "video": "QvRzN1rN_68",
     "links": {
@@ -3023,8 +3030,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2500000,
+      "equityPct": 20
     },
     "deal": {
       "made": true,
@@ -3042,7 +3049,8 @@
       "https://www.youm7.com/story/2023/3/19/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A9-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D8%B5%D9%81%D9%88%D8%B1%D8%A9-%D9%84%D9%80Shark-Tank-%D8%AA%D8%A3%D9%84%D9%8A%D9%81-%D9%88%D8%A8%D9%8A%D8%B9-%D9%83%D8%AA%D8%A8-%D9%88%D9%82%D8%B5%D8%B5-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84/6120280",
       "https://www.youtube.com/watch?v=vZrF0yBaJAk",
       "https://sceneeats.com/Spots/Asfoura-Brings-the-Stories-Behind-Children-s-Favourite-Dishes-to-Life",
-      "https://aeroleads.com/c/asfourabooks"
+      "https://aeroleads.com/c/asfourabooks",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
     ],
     "video": "vZrF0yBaJAk",
     "links": {
