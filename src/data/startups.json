@@ -14099,6 +14099,58 @@
     }
   },
   {
+    "id": "amis-bakery",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Ami's Bakery",
+      "ar": "إيميز بيكري"
+    },
+    "description": {
+      "en": "Ami's Bakery is a Cairo bakery that bills itself as Egypt's first cookie-cake brand. Sisters Amira and Soha Abaza started it in their home kitchen and pitched it to the sharks in Season 4.",
+      "ar": "إيميز بيكري مخبز في القاهرة يقدّم نفسه كأول علامة لكعكة الكوكيز في مصر. بدأته الأختان أميرة وسها أباظة من مطبخ البيت، وعرضتاه على الشاركس في الموسم الرابع."
+    },
+    "category": "Food",
+    "founders": [
+      "Amira Abaza",
+      "Soha Abaza"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://sharktankarabi.com/3632/"
+    ]
+  },
+  {
+    "id": "naydin",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Naydin",
+      "ar": "نايدين"
+    },
+    "description": {
+      "en": "Naydin makes toothpaste that it bills as the first in Egypt free of artificial colours, with natural fruit flavours and gentle, safe ingredients. It pitched to the sharks in Season 4.",
+      "ar": "نايدين تصنع معجون أسنان تقدّمه كأول معجون في مصر خالٍ من الألوان الصناعية، بنكهات فواكه طبيعية ومكونات لطيفة وآمنة. وعرضت مشروعها على الشاركس في الموسم الرابع."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://sharktankarabi.com/3612/",
+      "https://sharktankarabi.com/3634/"
+    ]
+  },
+  {
     "id": "aftah-topic",
     "season": 5,
     "episode": 1,
