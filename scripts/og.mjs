@@ -98,23 +98,32 @@ walk(DIST);
 
 const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined, args: ['--no-proxy-server'] });
 const tab = await browser.newPage({ viewport: { width: 1200, height: 630 } });
-let done = 0;
+let done = 0, defaults = 0;
+// The default site image, re-encoded as JPEG so every /og/*.jpg really is a JPEG.
+current = `<body style="margin:0"><img src="/og.png" width="1200" height="630">`;
+await tab.goto(`${origin}/__card`, { waitUntil: 'load' });
+const fallback = await tab.screenshot({ type: 'jpeg', quality: 80 });
 for (const file of pages) {
   const rel = dirname(file).slice(DIST.length).replace(/^\//, '') || 'index';
   if (only && !rel.startsWith(only)) continue;
   const m = readFileSync(file, 'utf8').match(/<script type="application\/json" id="og-card">(.*?)<\/script>/s);
   if (!m) continue; // redirects and pages outside Base
-  const lang = rel.startsWith('ar') ? 'ar' : 'en';
-  current = page(JSON.parse(m[1]), lang);
+  const lang = rel.startsWith('ar') ? 'ar' : 'en', card = JSON.parse(m[1]);
+  const out = join(DIST, 'og', `${rel}.jpg`);
+  mkdirSync(dirname(out), { recursive: true });
+  // A business with no picture gets the default site image rather than an empty frame.
+  if (card.kind === 'startup' && !card.shot) { writeFileSync(out, fallback); defaults++; done++; continue; }
+  current = page(card, lang);
   await tab.goto(`${origin}/__card`);
   // Images that fail (offline remote thumbnails) are hidden rather than left as broken icons.
   await tab.evaluate(() => Promise.all([document.fonts.ready, ...[...document.images].map((i) => i.complete ? 0
-    : Promise.race([new Promise((r) => { i.onload = r; i.onerror = () => { i.style.visibility = 'hidden'; r(); }; }), new Promise((r) => setTimeout(r, 4000))]))]));
-  const out = join(DIST, 'og', `${rel}.jpg`);
-  mkdirSync(dirname(out), { recursive: true });
+    : Promise.race([new Promise((r) => { i.onload = r; i.onerror = r; }), new Promise((r) => setTimeout(r, 4000))]))]));
+  // Images that failed (offline thumbnails) are hidden; if that leaves a startup card without its picture, use the default.
+  const broken = await tab.evaluate(() => [...document.images].filter((i) => !i.naturalWidth).map((i) => (i.style.visibility = 'hidden')).length);
+  if (card.kind === 'startup' && broken) { writeFileSync(out, fallback); defaults++; done++; continue; }
   writeFileSync(out, await tab.screenshot({ type: 'jpeg', quality: 72 }));
   done++;
 }
 await browser.close(); server.close();
 if (!done) throw new Error('no share images rendered: run after `astro build`');
-console.log(`share images: ${done}`);
+console.log(`share images: ${done} (${defaults} startups without a picture use the default)`);
