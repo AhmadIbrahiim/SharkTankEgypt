@@ -1,0 +1,4532 @@
+[
+  {
+    "id": "life-snacks",
+    "season": 0,
+    "episode": 1,
+    "name": {
+      "en": "Life Snacks",
+      "ar": "لايف سناكس"
+    },
+    "description": {
+      "en": "Egyptian healthy-snack company founded in 2020 behind brands such as Scrunch.",
+      "ar": "شركة مصرية للوجبات الخفيفة الصحية تأسست عام 2020، ومن علاماتها Scrunch."
+    },
+    "category": "Food",
+    "founders": [
+      "Marwan Naeem",
+      "Hany El-Tamamy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 30000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7050255",
+      "https://www.youm7.com/7048853"
+    ]
+  },
+  {
+    "id": "tern-icecream",
+    "season": 0,
+    "episode": 2,
+    "name": {
+      "en": "Tern Icecream",
+      "ar": "تيرن آيس كريم"
+    },
+    "description": {
+      "en": "Easy at-home method for making high-quality ice cream.",
+      "ar": "طريقة سهلة لصنع آيس كريم عالي الجودة في المنزل."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7057688"
+    ]
+  },
+  {
+    "id": "mothernaked",
+    "season": 0,
+    "episode": null,
+    "name": {
+      "en": "Mothernaked",
+      "ar": "مذرنيكد"
+    },
+    "description": {
+      "en": "Egyptian cosmetics brand.",
+      "ar": "علامة مصرية لمستحضرات التجميل."
+    },
+    "category": "Beauty",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 7500000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/5142244"
+    ]
+  },
+  {
+    "id": "y-studio",
+    "season": 0,
+    "episode": null,
+    "name": {
+      "en": "Y Studio",
+      "ar": "واي ستوديو"
+    },
+    "description": {
+      "en": "Egyptian fashion brand.",
+      "ar": "علامة أزياء مصرية."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/5142244",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "yumby",
+    "season": 0,
+    "episode": null,
+    "name": {
+      "en": "Yumby",
+      "ar": "يمبي"
+    },
+    "description": {
+      "en": "App for discovering restaurants; asked for USD 350,000.",
+      "ar": "تطبيق لاكتشاف المطاعم، وطلب 350 ألف دولار."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/5142244"
+    ]
+  },
+  {
+    "id": "countrys",
+    "season": 1,
+    "episode": 1,
+    "name": {
+      "en": "Country's",
+      "ar": "كانتريز"
+    },
+    "description": {
+      "en": "Healthy organic food brand that sweetens with honey instead of processed sugar.",
+      "ar": "علامة أغذية صحية عضوية تستخدم العسل بدلاً من السكر المصنّع."
+    },
+    "category": "Food",
+    "founders": [
+      "Hend El-Yamani"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 500000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 700000,
+      "equityPct": 50
+    },
+    "sources": [
+      "https://www.youm7.com/6038985",
+      "https://www.youm7.com/6038888",
+      "https://www.dostor.org/4277750",
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+    ]
+  },
+  {
+    "id": "habu-arts",
+    "season": 1,
+    "episode": 1,
+    "name": {
+      "en": "Habu Arts",
+      "ar": "هابو آرتس"
+    },
+    "description": {
+      "en": "Home-decor and handicraft brand making alabaster pieces that blend ancient Egyptian art with modern design; products sold at the Grand Egyptian Museum.",
+      "ar": "علامة ديكور وحرف يدوية تصنع قطعاً من المرمر تمزج الفن المصري القديم بالتصميم الحديث، ومنتجاتها موجودة في المتحف المصري الكبير."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6038985",
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+    ]
+  },
+  {
+    "id": "stepinside",
+    "season": 1,
+    "episode": 1,
+    "name": {
+      "en": "StepInside",
+      "ar": "ستيب إنسايد"
+    },
+    "description": {
+      "en": "Virtual-commerce platform that lets shoppers walk through stores using VR and AR; the founder asked for a EGP 3M loan at 20% interest.",
+      "ar": "منصة تجارة افتراضية تتيح للمتسوقين التجول داخل المتاجر بتقنيات الواقع الافتراضي والمعزز، وطلب مؤسسها قرضاً بقيمة 3 ملايين جنيه بفائدة 20%."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6038927",
+      "https://www.youm7.com/6038985",
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+    ]
+  },
+  {
+    "id": "dajin",
+    "season": 1,
+    "episode": 1,
+    "name": {
+      "en": "Dajin",
+      "ar": "داجن"
+    },
+    "description": {
+      "en": "Agritech platform and app that helps small poultry farmers get feed and veterinary medicine, using AI for financial services.",
+      "ar": "منصة وتطبيق في التكنولوجيا الزراعية يساعد صغار مربي الدواجن في الحصول على الأعلاف والأدوية البيطرية، مع خدمات مالية مدعومة بالذكاء الاصطناعي."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6038985",
+      "https://www.dostor.org/4277750",
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+    ]
+  },
+  {
+    "id": "cut-x",
+    "season": 1,
+    "episode": 2,
+    "name": {
+      "en": "Cut X",
+      "ar": "كات إكس"
+    },
+    "description": {
+      "en": "Egyptian brand of protective and comfort products whose founders aim to register their products globally.",
+      "ar": "علامة مصرية لمنتجات الحماية والراحة يسعى مؤسسوها لتسجيل منتجاتهم عالمياً."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Ahmed Ashraf",
+      "Ali Abdallah"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6048990",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "mawared",
+    "season": 1,
+    "episode": 2,
+    "name": {
+      "en": "Mawared",
+      "ar": "ماورد"
+    },
+    "description": {
+      "en": "Weekly skincare-kit brand with about 20,000 customers after four years of operation.",
+      "ar": "علامة لمجموعات العناية الأسبوعية بالبشرة لديها نحو 20 ألف عميل بعد أربع سنوات من العمل."
+    },
+    "category": "Beauty",
+    "founders": [
+      "Hossam El-Maraghy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 2500000,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6048958",
+      "https://www.elwatannews.com/news/details/6405270",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/"
+    ]
+  },
+  {
+    "id": "akoub",
+    "season": 1,
+    "episode": 2,
+    "name": {
+      "en": "Akoub",
+      "ar": "عكوب"
+    },
+    "description": {
+      "en": "Agritech company offering fast mechanised date-palm pollination (about two minutes per tree) for Egypt's ~15 million palms.",
+      "ar": "شركة تكنولوجيا زراعية تقدم خدمة تلقيح النخيل آلياً خلال دقيقتين تقريباً للنخلة، مستهدفة نحو 15 مليون نخلة في مصر."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6048990",
+      "https://sharktank-egypt.com/en/deals/technology-"
+    ]
+  },
+  {
+    "id": "serket",
+    "season": 1,
+    "episode": 2,
+    "name": {
+      "en": "Serket",
+      "ar": "سيركت"
+    },
+    "description": {
+      "en": "Qena-based farm that extracts scorpion venom for use in pharmaceuticals and cosmetics.",
+      "ar": "مزرعة في محافظة قنا تستخلص سم العقارب لاستخدامه في الصناعات الدوائية ومستحضرات التجميل."
+    },
+    "category": "Health",
+    "founders": [
+      "Shaimaa Mohamed"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 30
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": 1000000,
+      "equityPct": 30
+    },
+    "sources": [
+      "https://www.youm7.com/6048986",
+      "https://www.elwatannews.com/news/details/6405240",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/"
+    ]
+  },
+  {
+    "id": "grif",
+    "season": 1,
+    "episode": 3,
+    "name": {
+      "en": "Grif",
+      "ar": "جريف"
+    },
+    "description": {
+      "en": "Cast-iron cookware brand selling durable, lower-priced pans meant to last a lifetime.",
+      "ar": "علامة لأواني الطهي من الحديد الزهر بأسعار أقل وعمر استخدام طويل."
+    },
+    "category": "Home",
+    "founders": [
+      "Youssef El-Rayan"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 900000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6056669",
+      "https://www.youm7.com/6056721",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/"
+    ]
+  },
+  {
+    "id": "tilestic",
+    "season": 1,
+    "episode": 3,
+    "name": {
+      "en": "Tilestic",
+      "ar": "تايلستك"
+    },
+    "description": {
+      "en": "Eco-friendly interlock tiles manufactured from 100% recycled plastic.",
+      "ar": "بلاط إنترلوك صديق للبيئة مصنوع من البلاستيك المعاد تدويره بنسبة 100%."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Mohamed Abu Kalila"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6056701",
+      "https://www.youm7.com/6056721",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/"
+    ]
+  },
+  {
+    "id": "masroufi",
+    "season": 1,
+    "episode": 3,
+    "name": {
+      "en": "Masroufi",
+      "ar": "مصروفي"
+    },
+    "description": {
+      "en": "App that teaches children to spend money and use e-payments responsibly.",
+      "ar": "تطبيق يعلّم الأطفال إنفاق المال واستخدام الدفع الإلكتروني بمسؤولية."
+    },
+    "category": "Fintech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 16000000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6056713",
+      "https://www.elwatannews.com/news/details/6412500"
+    ]
+  },
+  {
+    "id": "agrcology",
+    "season": 1,
+    "episode": 4,
+    "name": {
+      "en": "Agrcology",
+      "ar": "أجركولوجي"
+    },
+    "description": {
+      "en": "Smart cow collar that remotely monitors livestock movement, temperature and health to protect dairy output.",
+      "ar": "طوق ذكي للأبقار يراقب حركتها ودرجة حرارتها وحالتها الصحية عن بعد للحفاظ على إنتاج الألبان."
+    },
+    "category": "Agriculture",
+    "founders": [
+      "Hisham El-Banna"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 25
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
+    "sources": [
+      "https://www.youm7.com/6064143",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%A3%D8%AC%D8%B1%D9%83%D9%88%D9%84%D9%88%D8%AC%D9%8A-%D9%88%D9%81%D9%8A/",
+      "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/",
+      "https://sharktank-egypt.com/en/deals/technology-"
+    ]
+  },
+  {
+    "id": "fairclo",
+    "season": 1,
+    "episode": 4,
+    "name": {
+      "en": "Fairclo",
+      "ar": "فيركلو"
+    },
+    "description": {
+      "en": "Online marketplace (e-commerce platform).",
+      "ar": "سوق إلكتروني للتجارة عبر الإنترنت."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6064143",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%A3%D8%AC%D8%B1%D9%83%D9%88%D9%84%D9%88%D8%AC%D9%8A-%D9%88%D9%81%D9%8A/"
+    ]
+  },
+  {
+    "id": "scoopy-scooters",
+    "season": 1,
+    "episode": 4,
+    "name": {
+      "en": "Scoopy Scooters",
+      "ar": "سكوبي سكوترز"
+    },
+    "description": {
+      "en": "Remotely controlled electric scooters for easy urban transport; the founder left without investment.",
+      "ar": "سكوترات كهربائية يمكن التحكم فيها عن بعد لتسهيل التنقل داخل المدن، ولم يحصل صاحبها على استثمار."
+    },
+    "category": "Tech",
+    "founders": [
+      "Bimen Wagdy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6064101",
+      "https://www.youm7.com/6064143"
+    ]
+  },
+  {
+    "id": "amwal",
+    "season": 1,
+    "episode": 4,
+    "name": {
+      "en": "Amwal",
+      "ar": "أموال"
+    },
+    "description": {
+      "en": "Software that eases digital transformation for financing institutions.",
+      "ar": "حلول برمجية تسهّل التحول الرقمي لمؤسسات التمويل."
+    },
+    "category": "Fintech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6064105",
+      "https://www.youm7.com/6064143"
+    ]
+  },
+  {
+    "id": "mandoobak-smart",
+    "season": 1,
+    "episode": 5,
+    "name": {
+      "en": "Mandoobak Smart",
+      "ar": "مندوبك سمارت"
+    },
+    "description": {
+      "en": "App that saves grocers time and effort by letting them order food products for their shops.",
+      "ar": "تطبيق يوفر وقت وجهد البقالين عبر طلب المنتجات الغذائية لمحلاتهم."
+    },
+    "category": "Tech",
+    "founders": [
+      "Mostafa Wassify",
+      "Mohamed El-Hafez"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 7000000,
+      "equityPct": 15
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 7000000,
+      "equityPct": 35
+    },
+    "sources": [
+      "https://www.youm7.com/6072803",
+      "https://www.youm7.com/6072840",
+      "https://www.elwatannews.com/news/details/6428536",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%83-%D8%B3%D9%85%D8%A7%D8%B1%D8%AA-%D8%AA/"
+    ]
+  },
+  {
+    "id": "tutoro",
+    "season": 1,
+    "episode": 5,
+    "name": {
+      "en": "Tutoro",
+      "ar": "توتورو"
+    },
+    "description": {
+      "en": "Platform providing services for university students.",
+      "ar": "منصة تقدم خدمات لطلاب الجامعات."
+    },
+    "category": "Education",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6072840"
+    ]
+  },
+  {
+    "id": "plus-gear",
+    "season": 1,
+    "episode": 5,
+    "name": {
+      "en": "Plus Gear",
+      "ar": "بلس جير"
+    },
+    "description": {
+      "en": "Wearable fitness vest designed to improve physical fitness.",
+      "ar": "فيست رياضي يُرتدى لتحسين اللياقة البدنية."
+    },
+    "category": "Sports",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1200000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6072838",
+      "https://www.youm7.com/6072840"
+    ]
+  },
+  {
+    "id": "tap-tag",
+    "season": 1,
+    "episode": 5,
+    "name": {
+      "en": "Tap Tag",
+      "ar": "تاب تاج"
+    },
+    "description": {
+      "en": "App that tells shoppers where a product is sold and shows its size and quality.",
+      "ar": "تطبيق يعرّف المستخدم بأماكن بيع المنتج ومقاسه وجودته."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6072839",
+      "https://www.youm7.com/6072840",
+      "https://sharktank-egypt.com/en/deals/technology-"
+    ]
+  },
+  {
+    "id": "jojos-ranch",
+    "season": 1,
+    "episode": 6,
+    "name": {
+      "en": "Jojo's Ranch",
+      "ar": "جوجوز رانش"
+    },
+    "description": {
+      "en": "Livestock and meat producer selling meat of imported quality at lower prices; the season's largest deal.",
+      "ar": "مشروع إنتاج حيواني يبيع لحوماً بجودة المستورد وبسعر أقل، وحقق أكبر صفقة في الموسم."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 19000000,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6080737",
+      "https://www.elwatannews.com/news/details/6437054",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%AC%D9%88%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%D9%86%D8%B4-%D8%AA%D8%AD%D8%B5/"
+    ]
+  },
+  {
+    "id": "relaxant",
+    "season": 1,
+    "episode": 6,
+    "name": {
+      "en": "Relaxant",
+      "ar": "ريلاكسنت"
+    },
+    "description": {
+      "en": "Candle maker using natural ingredients at affordable prices.",
+      "ar": "مشروع لصناعة الشموع بخامات طبيعية وأسعار غير مرتفعة."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 600000,
+      "equityPct": 25
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": 600000,
+      "equityPct": 25
+    },
+    "sources": [
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%AC%D9%88%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%D9%86%D8%B4-%D8%AA%D8%AD%D8%B5/"
+    ]
+  },
+  {
+    "id": "choroida",
+    "season": 1,
+    "episode": 6,
+    "name": {
+      "en": "Choroida",
+      "ar": "كورويدا"
+    },
+    "description": {
+      "en": "Medical device for scanning and imaging the retina.",
+      "ar": "جهاز طبي لفحص وتصوير شبكية العين."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.elwatannews.com/news/details/6437030",
+      "https://sharktank-egypt.com/en/deals/technology-"
+    ]
+  },
+  {
+    "id": "bikado",
+    "season": 1,
+    "episode": 6,
+    "name": {
+      "en": "Bikado",
+      "ar": "بيكادو"
+    },
+    "description": {
+      "en": "Children's language-learning school that teaches through practice using a European method.",
+      "ar": "مشروع لتعليم الأطفال اللغات عبر الممارسة بطريقة أوروبية."
+    },
+    "category": "Education",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 3500000,
+      "equityPct": 8
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6080709",
+      "https://www.elwatannews.com/news/details/6437004"
+    ]
+  },
+  {
+    "id": "calmy",
+    "season": 1,
+    "episode": 7,
+    "name": {
+      "en": "Calmy",
+      "ar": "كالمي"
+    },
+    "description": {
+      "en": "Ergonomic baby carriers that are comfortable for mothers and safe for babies; over 4,000 units sold online.",
+      "ar": "شيالات أطفال مريحة للأم وآمنة للطفل، وباعت أكثر من 4 آلاف قطعة أونلاين."
+    },
+    "category": "Retail",
+    "founders": [
+      "Heba Mohamed"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 2000000,
+      "equityPct": 25
+    },
+    "sources": [
+      "https://www.youm7.com/6088535",
+      "https://www.youm7.com/6088578",
+      "https://www.elwatannews.com/news/details/6445478",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%83%D8%A7%D9%84%D9%85%D9%8A-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
+    ]
+  },
+  {
+    "id": "tam-leather",
+    "season": 1,
+    "episode": 7,
+    "name": {
+      "en": "Tam Leather",
+      "ar": "تام ليذر"
+    },
+    "description": {
+      "en": "Maker of bags from natural leather.",
+      "ar": "علامة تصنع الحقائب من الجلد الطبيعي."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 500000,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6088578",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%83%D8%A7%D9%84%D9%85%D9%8A-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
+    ]
+  },
+  {
+    "id": "creative-art",
+    "season": 1,
+    "episode": 7,
+    "name": {
+      "en": "Creative Art",
+      "ar": "كرييتف آرت"
+    },
+    "description": {
+      "en": "Designer furniture brand known for water-resistant tables.",
+      "ar": "مشروع أثاث فني يقدم ترابيزات مقاومة للمياه."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6088578"
+    ]
+  },
+  {
+    "id": "chef-me",
+    "season": 1,
+    "episode": 7,
+    "name": {
+      "en": "Chef Me.com",
+      "ar": "شيف مي دوت كوم"
+    },
+    "description": {
+      "en": "Designs and manufactures distinctive kitchen and tableware tools.",
+      "ar": "تصميم وتصنيع أدوات مطبخ وسفرة مميزة."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6088564",
+      "https://www.elwatannews.com/news/details/6445548"
+    ]
+  },
+  {
+    "id": "sporty-pro",
+    "season": 1,
+    "episode": 8,
+    "name": {
+      "en": "Sporty Pro",
+      "ar": "سبورتي برو"
+    },
+    "description": {
+      "en": "AI-driven app selling sportswear and sports shoes.",
+      "ar": "تطبيق لبيع الملابس والأحذية الرياضية مدعوم بالذكاء الاصطناعي."
+    },
+    "category": "Retail",
+    "founders": [
+      "Sherif Zahran",
+      "Tamer Shalaby"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3500000,
+      "equityPct": 45
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6096443",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/"
+    ]
+  },
+  {
+    "id": "evica",
+    "season": 1,
+    "episode": 8,
+    "name": {
+      "en": "Evica",
+      "ar": "إفيكا"
+    },
+    "description": {
+      "en": "Robot that cleans solar panels faster and more safely.",
+      "ar": "روبوت ينظف الألواح الشمسية بشكل أسرع وأكثر أماناً."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6096409",
+      "https://www.youm7.com/6096443"
+    ]
+  },
+  {
+    "id": "cosmos-bionics",
+    "season": 1,
+    "episode": 8,
+    "name": {
+      "en": "Cosmos Bionics",
+      "ar": "كوزموس بايونيكس"
+    },
+    "description": {
+      "en": "Lightweight robotic exoskeleton suit that helps people who lost mobility to stand and walk.",
+      "ar": "بدلة آلية خفيفة الوزن تساعد فاقدي القدرة على الحركة على الوقوف والمشي."
+    },
+    "category": "Health",
+    "founders": [
+      "Mina Ashraf",
+      "Gehan Abdallah"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "sources": [
+      "https://www.youm7.com/6096442",
+      "https://www.youm7.com/6096443",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/"
+    ]
+  },
+  {
+    "id": "peacock-designs",
+    "season": 1,
+    "episode": 9,
+    "name": {
+      "en": "Peacock Designs",
+      "ar": "بيكوك ديزاينز"
+    },
+    "description": {
+      "en": "Turns palm fronds into furniture with higher efficiency; spent EGP 2M on R&D.",
+      "ar": "تحويل جريد النخيل إلى أثاث بكفاءة أعلى، وأنفقت الشركة 2 مليون جنيه على البحث والتطوير."
+    },
+    "category": "Home",
+    "founders": [
+      "Dalia Salem",
+      "Mostafa El-Sayed"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6103943"
+    ]
+  },
+  {
+    "id": "career-180",
+    "season": 1,
+    "episode": 9,
+    "name": {
+      "en": "Career 180",
+      "ar": "كارير 180"
+    },
+    "description": {
+      "en": "Career-development and hiring platform for talent across the Arab world with 1,500+ jobs and 250,000 users; the founders turned down a larger offer.",
+      "ar": "منصة لتأهيل وتوظيف الكوادر في الوطن العربي بأكثر من 1500 وظيفة وربع مليون مستخدم، ورفض مؤسساها عرضاً أكبر."
+    },
+    "category": "Services",
+    "founders": [
+      "Mohamed Akmal",
+      "Shorouk Alaa"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6103941",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%85%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%B4%D9%8A-%D8%AA/"
+    ]
+  },
+  {
+    "id": "kids-kit",
+    "season": 1,
+    "episode": 9,
+    "name": {
+      "en": "Kids Kit",
+      "ar": "كيدز كيت"
+    },
+    "description": {
+      "en": "Rents out used baby and children's gear at lower prices.",
+      "ar": "تأجير مستلزمات الأطفال المستعملة بسعر أرخص."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6103992"
+    ]
+  },
+  {
+    "id": "chefs-house",
+    "season": 1,
+    "episode": 10,
+    "name": {
+      "en": "Chef's House",
+      "ar": "شيفس هاوس"
+    },
+    "description": {
+      "en": "Central/cloud kitchen that operates and supplies several restaurant brands at once.",
+      "ar": "مطبخ مركزي يشغّل ويدير عدة مطاعم ويزودها بالوجبات في الوقت نفسه."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 10000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6111712",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "can-bank",
+    "season": 1,
+    "episode": 10,
+    "name": {
+      "en": "Can Bank",
+      "ar": "كان بنك"
+    },
+    "description": {
+      "en": "Reverse-vending machine that collects empty bottles and cans in exchange for mobile credit and discounts.",
+      "ar": "ماكينة لتجميع الزجاجات والعبوات الفارغة مقابل رصيد موبايل وخصومات."
+    },
+    "category": "Other",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1500000,
+      "equityPct": 5
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6111712",
+      "https://www.elwatannews.com/news/details/6471130"
+    ]
+  },
+  {
+    "id": "i-ape",
+    "season": 1,
+    "episode": 11,
+    "name": {
+      "en": "I Ape",
+      "ar": "آي أيب"
+    },
+    "description": {
+      "en": "Service that delivers cars built to the customer's order; the sharks found its EGP 30M valuation too high.",
+      "ar": "خدمة لتسليم السيارات حسب طلب العميل، واعتبر المستثمرون تقييمها البالغ 30 مليون جنيه مرتفعاً."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6120282",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/"
+    ]
+  },
+  {
+    "id": "labtronic",
+    "season": 1,
+    "episode": 11,
+    "name": {
+      "en": "Labtronic",
+      "ar": "لابترونيك"
+    },
+    "description": {
+      "en": "Designs and builds educational lab equipment for engineering faculties and technical schools, with export contracts to Saudi Arabia.",
+      "ar": "تصميم وتطوير المعامل التعليمية لكليات الهندسة والمدارس الفنية، ولها عقود تصدير للسعودية."
+    },
+    "category": "Education",
+    "founders": [
+      "Mostafa Elewa",
+      "Ahmed Nassar"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 35
+    },
+    "sources": [
+      "https://www.youm7.com/6120238",
+      "https://www.youm7.com/6120282",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/"
+    ]
+  },
+  {
+    "id": "schoolz",
+    "season": 1,
+    "episode": 11,
+    "name": {
+      "en": "Schoolz",
+      "ar": "سكولز"
+    },
+    "description": {
+      "en": "Platform for safe, affordable student transport to school.",
+      "ar": "منصة لتوصيل الطلاب بأمان وبتكلفة اقتصادية مناسبة."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6120282"
+    ]
+  },
+  {
+    "id": "asfoura",
+    "season": 1,
+    "episode": 11,
+    "name": {
+      "en": "Asfoura",
+      "ar": "عصفورة"
+    },
+    "description": {
+      "en": "First Egyptian publisher of children's books written in Egyptian colloquial Arabic; sold about 3,200 books in its last year.",
+      "ar": "أول دار نشر مصرية متخصصة في كتب وقصص الأطفال بالعامية المصرية، وباعت نحو 3200 كتاب في عامها الأخير."
+    },
+    "category": "Education",
+    "founders": [
+      "Miram Khamis"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 2500000,
+      "equityPct": 30
+    },
+    "sources": [
+      "https://www.youm7.com/6120280",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/"
+    ]
+  },
+  {
+    "id": "blooms-egypt",
+    "season": 2,
+    "episode": 1,
+    "name": {
+      "en": "Blooms Egypt",
+      "ar": "بلومز إيجيبت"
+    },
+    "description": {
+      "en": "13-year-old company that develops children's personality, culture and skills.",
+      "ar": "شركة تعمل منذ 13 عاماً في تنمية شخصية وثقافة ومهارات الأطفال."
+    },
+    "category": "Education",
+    "founders": [
+      "Seif Ramadan"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6352489",
+      "https://www.youm7.com/6352547",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-blooms-%D9%88%D9%83%D8%B1%D9%8A%D8%B2%D9%8A-%D8%AA/"
+    ]
+  },
+  {
+    "id": "crazy-tuna",
+    "season": 2,
+    "episode": 1,
+    "name": {
+      "en": "Crazy Tuna",
+      "ar": "كريزي تونة"
+    },
+    "description": {
+      "en": "Egyptian tuna brand aiming to put Egypt on the world tuna map.",
+      "ar": "علامة تونة مصرية تسعى لوضع مصر على خريطة التونة العالمية."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6352514",
+      "https://www.youm7.com/6352547",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-blooms-%D9%88%D9%83%D8%B1%D9%8A%D8%B2%D9%8A-%D8%AA/",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "simple",
+    "season": 2,
+    "episode": 1,
+    "name": {
+      "en": "Simple",
+      "ar": "سيمبل"
+    },
+    "description": {
+      "en": "Buy-now-pay-later platform.",
+      "ar": "منصة اشترِ الآن وادفع لاحقاً."
+    },
+    "category": "Fintech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6352516",
+      "https://www.youm7.com/6352547"
+    ]
+  },
+  {
+    "id": "shaghalny",
+    "season": 2,
+    "episode": 2,
+    "name": {
+      "en": "Shaghalny",
+      "ar": "شغلني"
+    },
+    "description": {
+      "en": "Jobs platform connecting candidates with intermediate qualifications to companies.",
+      "ar": "منصة توفر وظائف لأصحاب المؤهلات المتوسطة في الشركات."
+    },
+    "category": "Services",
+    "founders": [
+      "Omar Khalifa"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6360416",
+      "https://www.youm7.com/6360475"
+    ]
+  },
+  {
+    "id": "not-foods",
+    "season": 2,
+    "episode": 2,
+    "name": {
+      "en": "Not Foods",
+      "ar": "نوت فودز"
+    },
+    "description": {
+      "en": "100% plant-based healthy food brand.",
+      "ar": "علامة أغذية نباتية وصحية 100%."
+    },
+    "category": "Food",
+    "founders": [
+      "Amir Abboud",
+      "Germine Abboud"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6360429",
+      "https://www.youm7.com/6360475",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "supply-list",
+    "season": 2,
+    "episode": 2,
+    "name": {
+      "en": "Supply List",
+      "ar": "سبلاي ليست"
+    },
+    "description": {
+      "en": "Lets parents order school supplies in about 20 seconds.",
+      "ar": "تطبيق يساعد ولي الأمر على طلب الأدوات المدرسية في 20 ثانية."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6360475"
+    ]
+  },
+  {
+    "id": "mobikya",
+    "season": 2,
+    "episode": 3,
+    "name": {
+      "en": "Mobikya",
+      "ar": "موبيكيا"
+    },
+    "description": {
+      "en": "Recycles solid waste into eco-friendly furniture; the founders accepted an offer.",
+      "ar": "تعيد تدوير المخلفات الصلبة وتصنّع أثاثاً صديقاً للبيئة، وقبل المؤسسان عرضاً استثمارياً."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Ibrahim Abu Gendy",
+      "Ahmed Abu Gendy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6368392"
+    ]
+  },
+  {
+    "id": "super-abla",
+    "season": 2,
+    "episode": 4,
+    "name": {
+      "en": "Super Abla",
+      "ar": "سوبر أبلة"
+    },
+    "description": {
+      "en": "Arabic-language learning system for children aged 3 to 6.",
+      "ar": "منظومة لتعليم اللغة العربية للأطفال من سن 3 إلى 6 سنوات."
+    },
+    "category": "Education",
+    "founders": [
+      "Israa Saleh"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6376278",
+      "https://www.youm7.com/6376335",
+      "https://www.dostor.org/4551879"
+    ]
+  },
+  {
+    "id": "lelu",
+    "season": 2,
+    "episode": 4,
+    "name": {
+      "en": "Lelu",
+      "ar": "ليلو"
+    },
+    "description": {
+      "en": "Unconventional fashion and clothing store.",
+      "ar": "متجر ملابس وأزياء غير تقليدية."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Mina Fayez"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6376335",
+      "https://www.dostor.org/4551879",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "country-house",
+    "season": 2,
+    "episode": 4,
+    "name": {
+      "en": "Country House",
+      "ar": "كونتري هاوس"
+    },
+    "description": {
+      "en": "Maker of chalk-finish paints rivalling imports; EGP 614K sales in its last year.",
+      "ar": "مصنع دهانات تشطيب طباشيرية تنافس المستورد، وحقق مبيعات 614 ألف جنيه في آخر عام."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Sara Helal"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6376335",
+      "https://www.dostor.org/4551879"
+    ]
+  },
+  {
+    "id": "simplex",
+    "season": 2,
+    "episode": 5,
+    "name": {
+      "en": "Simplex",
+      "ar": "سيمبلكس"
+    },
+    "description": {
+      "en": "Manufactures computer-controlled (CNC) machines; asked for a then-record EGP 50M.",
+      "ar": "تصنيع ماكينات يتم التحكم فيها رقمياً بالكمبيوتر (CNC)، وطلبت تمويلاً قياسياً بقيمة 50 مليون جنيه."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Ahmed Shaaban"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 50000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6385100",
+      "https://www.youm7.com/6385166",
+      "https://www.youm7.com/6383592"
+    ]
+  },
+  {
+    "id": "shelter",
+    "season": 2,
+    "episode": 5,
+    "name": {
+      "en": "Shelter",
+      "ar": "شيلتر"
+    },
+    "description": {
+      "en": "Smart, space-saving furniture that cuts cost and furnishing time.",
+      "ar": "أثاث ذكي يوفر المال والمساحة ووقت الفرش."
+    },
+    "category": "Home",
+    "founders": [
+      "Ammar Mamdouh"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6385123",
+      "https://www.youm7.com/6385166"
+    ]
+  },
+  {
+    "id": "dr-joy",
+    "season": 2,
+    "episode": 5,
+    "name": {
+      "en": "Dr. Joy",
+      "ar": "دكتور جوي"
+    },
+    "description": {
+      "en": "Sugar-free dried-fruit snacks designed to fight tooth decay.",
+      "ar": "منتجات من الفاكهة المجففة بدون سكر لمحاربة تسوس الأسنان."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6385166",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "pov",
+    "season": 2,
+    "episode": 6,
+    "name": {
+      "en": "POV",
+      "ar": "بي أو في"
+    },
+    "description": {
+      "en": "Phone-camera and personal-filming accessories brand.",
+      "ar": "علامة لإكسسوارات كاميرا الموبايل وأدوات التصوير الشخصي."
+    },
+    "category": "Tech",
+    "founders": [
+      "Omar Abdelsalam"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
+      "https://www.dostor.org/4564943"
+    ]
+  },
+  {
+    "id": "engine",
+    "season": 2,
+    "episode": 6,
+    "name": {
+      "en": "Engine",
+      "ar": "إنجين"
+    },
+    "description": {
+      "en": "DNA-analysis service.",
+      "ar": "خدمة لتحليل الحمض النووي."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4564943"
+    ]
+  },
+  {
+    "id": "bar-and-jar",
+    "season": 2,
+    "episode": 6,
+    "name": {
+      "en": "Bar & Jar",
+      "ar": "بار أند جار"
+    },
+    "description": {
+      "en": "Healthy fast food served in jars.",
+      "ar": "وجبات صحية سريعة تُقدَّم في برطمانات."
+    },
+    "category": "Food",
+    "founders": [
+      "Norhan Abaza"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 1700000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
+      "https://www.dostor.org/4564943",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "rawmart",
+    "season": 2,
+    "episode": 7,
+    "name": {
+      "en": "Rawmart",
+      "ar": "رومارت"
+    },
+    "description": {
+      "en": "B2B marketplace for finishing materials and construction supplies.",
+      "ar": "منصة لتوريد خامات التشطيب ومواد البناء للشركات."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 15000000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 15000000,
+      "equityPct": 25
+    },
+    "sources": [
+      "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
+      "https://www.dostor.org/4571301"
+    ]
+  },
+  {
+    "id": "soccer-hub",
+    "season": 2,
+    "episode": 7,
+    "name": {
+      "en": "Soccer Hub",
+      "ar": "سوكر هب"
+    },
+    "description": {
+      "en": "Entertainment game that simulates football; no shark made an offer.",
+      "ar": "لعبة ترفيهية تحاكي كرة القدم، ولم يقدم المستثمرون أي عرض."
+    },
+    "category": "Entertainment",
+    "founders": [
+      "Mohamed Said"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 2000000,
+      "equityPct": 20
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
+      "https://www.dostor.org/4571301"
+    ]
+  },
+  {
+    "id": "rnkl",
+    "season": 2,
+    "episode": 7,
+    "name": {
+      "en": "Rnkl",
+      "ar": "رنكل"
+    },
+    "description": {
+      "en": "Turns recycled paper into furniture.",
+      "ar": "تحويل الورق المعاد تدويره إلى أثاث."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1200000,
+      "equityPct": 25
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed El Sewedy",
+        "Ayman Abbas"
+      ],
+      "amountEGP": 1200000,
+      "equityPct": 40
+    },
+    "sources": [
+      "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/"
+    ]
+  },
+  {
+    "id": "agricash",
+    "season": 2,
+    "episode": 8,
+    "name": {
+      "en": "Agri Cash",
+      "ar": "أجري كاش"
+    },
+    "description": {
+      "en": "Financing solutions for farmers.",
+      "ar": "حلول تمويل للمزارعين."
+    },
+    "category": "Fintech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4579540"
+    ]
+  },
+  {
+    "id": "creative-wrap",
+    "season": 2,
+    "episode": 8,
+    "name": {
+      "en": "Creative Wrap",
+      "ar": "كريتيف راب"
+    },
+    "description": {
+      "en": "Wrapping and interior-refresh solutions for spaces.",
+      "ar": "حلول تغليف وتجديد للمساحات الداخلية."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4579540"
+    ]
+  },
+  {
+    "id": "the-lean-jerky",
+    "season": 2,
+    "episode": 8,
+    "name": {
+      "en": "The Lean Jerky",
+      "ar": "ذا لين جيركي"
+    },
+    "description": {
+      "en": "Dried-meat (jerky) snacks.",
+      "ar": "وجبات خفيفة من اللحوم المجففة."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4579540",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "myco-pex",
+    "season": 2,
+    "episode": 9,
+    "name": {
+      "en": "Myco Pex",
+      "ar": "مايكو بيكس"
+    },
+    "description": {
+      "en": "Solves water-leak problems in residential units.",
+      "ar": "حلول لمشكلة تسريب المياه في الوحدات السكنية."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6421887"
+    ]
+  },
+  {
+    "id": "the-potcast",
+    "season": 2,
+    "episode": 10,
+    "name": {
+      "en": "The Potcast Productions",
+      "ar": "ذا بوتكاست"
+    },
+    "description": {
+      "en": "Produces original, high-quality audio/podcast content across genres.",
+      "ar": "تنتج محتوى صوتياً أصلياً عالي الجودة بتصنيفات متنوعة."
+    },
+    "category": "Entertainment",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6428980"
+    ]
+  },
+  {
+    "id": "gammbaz",
+    "season": 2,
+    "episode": 10,
+    "name": {
+      "en": "Gammbaz",
+      "ar": "جامباز"
+    },
+    "description": {
+      "en": "Candles made with burn-safe oils in 50+ scents that double as moisturisers.",
+      "ar": "شموع بزيوت لا تسبب حروقاً وبأكثر من 50 رائحة، ويمكن استخدامها كمرطب."
+    },
+    "category": "Home",
+    "founders": [
+      "Alia"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6429004",
+      "https://entarabi.com/en/2024/01/the-success-story-of-gammbaz-company-in-an-exclusive-interview-with-enta-arabi/"
+    ]
+  },
+  {
+    "id": "interact",
+    "season": 2,
+    "episode": 11,
+    "name": {
+      "en": "Interact",
+      "ar": "إنتراكت"
+    },
+    "description": {
+      "en": "Device that turns ordinary display screens into interactive touch screens.",
+      "ar": "جهاز يحوّل شاشات العرض العادية إلى شاشات تفاعلية."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.elwatannews.com/news/details/7055299"
+    ]
+  },
+  {
+    "id": "zat",
+    "season": 2,
+    "episode": 11,
+    "name": {
+      "en": "ZAT",
+      "ar": "ذات"
+    },
+    "description": {
+      "en": "Egyptian brand of natural products for women.",
+      "ar": "علامة مصرية لمنتجات طبيعية للمرأة."
+    },
+    "category": "Beauty",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.elwatannews.com/news/details/7055299"
+    ]
+  },
+  {
+    "id": "weddngo",
+    "season": 2,
+    "episode": 12,
+    "name": {
+      "en": "Weddngo",
+      "ar": "ويدنجو"
+    },
+    "description": {
+      "en": "Online marketplace for booking wedding services with 16+ payment options including instalments.",
+      "ar": "سوق إلكتروني لحجز خدمات الأفراح مع أكثر من 16 طريقة للدفع منها التقسيط."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6441786"
+    ]
+  },
+  {
+    "id": "abgad",
+    "season": 2,
+    "episode": 12,
+    "name": {
+      "en": "Abgad",
+      "ar": "أبجد"
+    },
+    "description": {
+      "en": "App launched in 2022 that eases education costs through student and family loans and scholarships.",
+      "ar": "تطبيق بدأ عام 2022 يبسّط تكلفة التعليم عبر قروض ومنح للطلاب والأسر."
+    },
+    "category": "Fintech",
+    "founders": [
+      "Yasmin Mowafy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6443094",
+      "https://www.youm7.com/6441786"
+    ]
+  },
+  {
+    "id": "dark-solution",
+    "season": 2,
+    "episode": 12,
+    "name": {
+      "en": "Dark Solution",
+      "ar": "دارك سليوشن"
+    },
+    "description": {
+      "en": "Egyptian specialty-coffee company with its own roastery.",
+      "ar": "شركة مصرية للقهوة المختصة لديها مصنع خاص لتحميص البن."
+    },
+    "category": "Food",
+    "founders": [
+      "Mounir Abdel Shahid"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6443112",
+      "https://www.youm7.com/6441786"
+    ]
+  },
+  {
+    "id": "salhly",
+    "season": 2,
+    "episode": 13,
+    "name": {
+      "en": "Salhly",
+      "ar": "صلحلي"
+    },
+    "description": {
+      "en": "First home-maintenance company in Upper Egypt, matching customers with ~100 technicians via an app.",
+      "ar": "أول شركة صيانة منزلية في صعيد مصر، تربط العملاء بنحو 100 فني عبر تطبيق."
+    },
+    "category": "Services",
+    "founders": [
+      "Refaie Mohamed"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6450706"
+    ]
+  },
+  {
+    "id": "flouxo",
+    "season": 2,
+    "episode": 14,
+    "name": {
+      "en": "Flouxo",
+      "ar": "فلوكسو"
+    },
+    "description": {
+      "en": "Manufactures compressors for cement trucks, claiming to be the first such maker in Egypt and the Middle East.",
+      "ar": "تصنيع الكومبريسور لعربات نقل الأسمنت، وتقول إنها الأولى في مصر والشرق الأوسط."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Hisham Hany"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 6000000,
+      "equityPct": 30
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6458158"
+    ]
+  },
+  {
+    "id": "agrikemet",
+    "season": 2,
+    "episode": 14,
+    "name": {
+      "en": "AgriKemet",
+      "ar": "أجري كيميت"
+    },
+    "description": {
+      "en": "Turns agricultural waste into alternatives to chemical fertilisers.",
+      "ar": "تحويل المخلفات الزراعية إلى بدائل للأسمدة الكيماوية."
+    },
+    "category": "Agriculture",
+    "founders": [
+      "Nourhan Massoud"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6458160"
+    ]
+  },
+  {
+    "id": "piccup",
+    "season": 2,
+    "episode": 16,
+    "name": {
+      "en": "Piccup",
+      "ar": "بيكأب"
+    },
+    "description": {
+      "en": "Safe student-transport app on monthly subscriptions, 30%+ cheaper than school buses.",
+      "ar": "تطبيق لنقل الطلاب بأمان باشتراكات شهرية توفر أكثر من 30% مقارنة بأتوبيس المدرسة."
+    },
+    "category": "Services",
+    "founders": [
+      "Khaled Bakr"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6473181"
+    ]
+  },
+  {
+    "id": "super-fanni",
+    "season": 2,
+    "episode": 17,
+    "name": {
+      "en": "Super Fanni",
+      "ar": "سوبر فني"
+    },
+    "description": {
+      "en": "Home-services technician platform; the founder rejected a EGP 5M offer for 25%.",
+      "ar": "منصة لخدمات الفنيين المنزلية، ورفض مؤسسها عرضاً بقيمة 5 ملايين جنيه مقابل 25%."
+    },
+    "category": "Services",
+    "founders": [
+      "Ahmed Anwar"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": null
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6480371"
+    ]
+  },
+  {
+    "id": "cover-spore",
+    "season": 2,
+    "episode": 17,
+    "name": {
+      "en": "Cover Spore",
+      "ar": "كوفر سبور"
+    },
+    "description": {
+      "en": "Startup pitched by its founder seeking EGP 7M for 25%.",
+      "ar": "شركة ناشئة طلب مؤسسها 7 ملايين جنيه مقابل 25% من حصتها."
+    },
+    "category": "Other",
+    "founders": [
+      "Sherif Abdallah"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 7000000,
+      "equityPct": 25
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6480371"
+    ]
+  },
+  {
+    "id": "zero-sugar",
+    "season": 2,
+    "episode": 17,
+    "name": {
+      "en": "Zero Sugar",
+      "ar": "زيرو شوجر"
+    },
+    "description": {
+      "en": "Sugar-free ice cream and desserts.",
+      "ar": "آيس كريم وحلويات خالية من السكر."
+    },
+    "category": "Food",
+    "founders": [
+      "Norhan Salah",
+      "Mohamed Essam"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 4000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6480371",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "masafa",
+    "season": 2,
+    "episode": 19,
+    "name": {
+      "en": "Masafa",
+      "ar": "مسافة"
+    },
+    "description": {
+      "en": "Online broker for scrap and building materials.",
+      "ar": "منصة إلكترونية للوساطة في بيع الخردة ومواد البناء."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6495137"
+    ]
+  },
+  {
+    "id": "horra",
+    "season": 2,
+    "episode": 20,
+    "name": {
+      "en": "Horra",
+      "ar": "حرة"
+    },
+    "description": {
+      "en": "Women's handbag brand that creates jobs for women and targets export.",
+      "ar": "علامة لتصميم الحقائب النسائية توفر فرص عمل للنساء وتستهدف التصدير."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Laila Hazem"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6502483",
+      "https://www.youm7.com/6502200",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "pharmabill",
+    "season": 2,
+    "episode": 20,
+    "name": {
+      "en": "Pharmabill",
+      "ar": "فارمابيل"
+    },
+    "description": {
+      "en": "Founded in 2023, a website linking drug warehouses with pharmacies.",
+      "ar": "شركة تأسست عام 2023 وتربط مخازن الأدوية بالصيدليات عبر موقع إلكتروني."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6502200"
+    ]
+  },
+  {
+    "id": "bzour",
+    "season": 2,
+    "episode": 20,
+    "name": {
+      "en": "Bzour",
+      "ar": "بذور"
+    },
+    "description": {
+      "en": "Natural seeds and nuts in different flavours, launched May 2023.",
+      "ar": "منتجات بذور ومكسرات طبيعية بنكهات مختلفة، بدأت في مايو 2023."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6502200"
+    ]
+  },
+  {
+    "id": "yaya",
+    "season": 2,
+    "episode": 20,
+    "name": {
+      "en": "YAYA",
+      "ar": "يايا"
+    },
+    "description": {
+      "en": "Milkshake brand started in London about ten years earlier and moved to Egypt in June 2023.",
+      "ar": "علامة ميلك شيك بدأت في لندن قبل نحو عشر سنوات وانتقلت إلى مصر في يونيو 2023."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6502200"
+    ]
+  },
+  {
+    "id": "al-ahram-cookware",
+    "season": 3,
+    "episode": 1,
+    "name": {
+      "en": "Al Ahram (Cookito)",
+      "ar": "الأهرام لأواني الطهي"
+    },
+    "description": {
+      "en": "Alexandria cookware maker founded in 1963 (stainless, aluminium, non-stick) pitching its multi-purpose Cookito set.",
+      "ar": "شركة إسكندرانية لصناعة أواني الطهي تأسست عام 1963 وعرضت طقم \"كوكيتو\" متعدد الاستخدامات."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Mohamed El-Ashmawy",
+      "Mostafa El-Ashmawy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 80000000,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6744130",
+      "https://www.youm7.com/6742879",
+      "https://arabfounders.net/en/shark-tank-egypt-investments-2024/"
+    ]
+  },
+  {
+    "id": "duaya",
+    "season": 3,
+    "episode": 1,
+    "name": {
+      "en": "Duaya",
+      "ar": "دواية"
+    },
+    "description": {
+      "en": "B2B health-tech marketplace connecting medical suppliers with pharmacies, clinics and labs.",
+      "ar": "منصة تكنولوجيا صحية تربط موردي المستلزمات الطبية بالصيدليات والعيادات والمعامل."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 12500000,
+      "equityPct": 15
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6744133",
+      "https://arabfounders.net/en/shark-tank-egypt-investments-2024/",
+      "https://www.wamda.com/en/2025/09/duaya-acquires-exmgo-figure-deal-relaunches-duaya"
+    ]
+  },
+  {
+    "id": "curlit",
+    "season": 3,
+    "episode": 1,
+    "name": {
+      "en": "Curlit",
+      "ar": "كيرليت"
+    },
+    "description": {
+      "en": "Hair-care brand for curly hair.",
+      "ar": "علامة لمنتجات العناية بالشعر المجعد."
+    },
+    "category": "Beauty",
+    "founders": [
+      "Alya Osman"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 2000000,
+      "equityPct": 20
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Dina Ghabbour",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
+    "sources": [
+      "https://arabfounders.net/en/shark-tank-egypt-investments-2024/"
+    ]
+  },
+  {
+    "id": "carpetivity",
+    "season": 3,
+    "episode": 2,
+    "name": {
+      "en": "Carpetivity",
+      "ar": "كاربيتيفيتي"
+    },
+    "description": {
+      "en": "Designs and sells rugs made from recycled cotton and wool.",
+      "ar": "تصميم وتصنيع وبيع السجاد من القطن والصوف المعاد تدويرهما."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4843743",
+      "https://www.elwatannews.com/news/details/7632333"
+    ]
+  },
+  {
+    "id": "egike",
+    "season": 3,
+    "episode": 2,
+    "name": {
+      "en": "EGIKE",
+      "ar": "إيجايك"
+    },
+    "description": {
+      "en": "Electric-bike and green-mobility startup.",
+      "ar": "شركة ناشئة في الدراجات الكهربائية والتنقل الأخضر."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4843743",
+      "https://www.elwatannews.com/news/details/7632333"
+    ]
+  },
+  {
+    "id": "el-motaheda",
+    "season": 3,
+    "episode": 2,
+    "name": {
+      "en": "El Motaheda",
+      "ar": "المتحدة"
+    },
+    "description": {
+      "en": "Manufactures motorcycle brake pads entirely in Egypt.",
+      "ar": "تصنيع تيل فرامل الموتوسيكلات بالكامل في مصر."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4843743",
+      "https://www.elwatannews.com/news/details/7632333"
+    ]
+  },
+  {
+    "id": "fit-and-fresh",
+    "season": 3,
+    "episode": 3,
+    "name": {
+      "en": "Fit & Fresh",
+      "ar": "فيت آند فريش"
+    },
+    "description": {
+      "en": "Healthy-food restaurant chain in Mansoura with 150+ dishes.",
+      "ar": "سلسلة مطاعم أكل صحي في المنصورة بقائمة تضم أكثر من 150 صنفاً."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6759051"
+    ]
+  },
+  {
+    "id": "abdelaziz-elmasry",
+    "season": 3,
+    "episode": 3,
+    "name": {
+      "en": "AbdelAziz Elmasry",
+      "ar": "عبد العزيز المصري"
+    },
+    "description": {
+      "en": "Manufacturer founded in 1936 as the region's first prosthetics maker, also producing wheelchairs and rehab equipment.",
+      "ar": "شركة تصنيع تأسست عام 1936 كأول مصنع للأطراف الصناعية في الشرق الأوسط، وتنتج الكراسي المتحركة ومعدات التأهيل."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6759051"
+    ]
+  },
+  {
+    "id": "el-fares",
+    "season": 3,
+    "episode": 3,
+    "name": {
+      "en": "El Fares",
+      "ar": "الفارس"
+    },
+    "description": {
+      "en": "Produces disease-free plant seedlings at scale via tissue-culture propagation.",
+      "ar": "إنتاج شتلات نباتية خالية من الأمراض بكميات كبيرة بتقنية زراعة الأنسجة."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6759051"
+    ]
+  },
+  {
+    "id": "metadoc",
+    "season": 3,
+    "episode": 4,
+    "name": {
+      "en": "METADOC",
+      "ar": "ميتادوك"
+    },
+    "description": {
+      "en": "Telemedicine and home-doctor primary-care app operating in the US, Qatar, Saudi Arabia and Egypt.",
+      "ar": "تطبيق للرعاية الصحية الأولية والطب الاتصالي والطبيب المنزلي يعمل في أمريكا وقطر والسعودية ومصر."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 15000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6768595",
+      "https://www.youm7.com/6767092"
+    ]
+  },
+  {
+    "id": "outdated",
+    "season": 3,
+    "episode": 4,
+    "name": {
+      "en": "Outdated",
+      "ar": "أوت ديتد"
+    },
+    "description": {
+      "en": "Egyptian fashion brand.",
+      "ar": "علامة أزياء مصرية."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://almalnews.com/1888207/",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "right-home",
+    "season": 3,
+    "episode": 4,
+    "name": {
+      "en": "Right Home",
+      "ar": "رايت هوم"
+    },
+    "description": {
+      "en": "Giza factory (est. 1998) localising rattan manufacturing for outdoor furniture for hotels and resorts.",
+      "ar": "مصنع بالجيزة تأسس عام 1998 لتوطين صناعة الرتان للأثاث الخارجي للفنادق والشواطئ."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 10000000,
+      "equityPct": 50
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6768645",
+      "https://www.youm7.com/6767092"
+    ]
+  },
+  {
+    "id": "on-board",
+    "season": 3,
+    "episode": 4,
+    "name": {
+      "en": "On Board",
+      "ar": "أون بورد"
+    },
+    "description": {
+      "en": "Egyptian catering company with a Dubai branch offering curated food boards for events.",
+      "ar": "شركة مصرية لها فرع في دبي تقدم ألواح ومأكولات منسقة للمناسبات."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://almalnews.com/1888207/"
+    ]
+  },
+  {
+    "id": "ostrich-land",
+    "season": 3,
+    "episode": 5,
+    "name": {
+      "en": "Ostrich Land",
+      "ar": "أوستريتش لاند"
+    },
+    "description": {
+      "en": "Egyptian ostrich farm selling premium organic ostrich meat.",
+      "ar": "مزرعة نعام مصرية تقدم لحم نعام متميز بأعلاف عضوية."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6775318",
+      "https://www.dostor.org/4863356"
+    ]
+  },
+  {
+    "id": "minimelts",
+    "season": 3,
+    "episode": 5,
+    "name": {
+      "en": "Minimelts",
+      "ar": "ميني ميلتس"
+    },
+    "description": {
+      "en": "Holds the exclusive licence to produce Mini Melts ice cream in Egypt and Africa.",
+      "ar": "تمتلك الحق الحصري لتصنيع آيس كريم ميني ميلتس في مصر وأفريقيا."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4863356"
+    ]
+  },
+  {
+    "id": "nuit-fragrances",
+    "season": 3,
+    "episode": 6,
+    "name": {
+      "en": "Nuit Fragrances",
+      "ar": "نوي فراجرانسز"
+    },
+    "description": {
+      "en": "Inspired-by (dupe) perfume brand.",
+      "ar": "علامة عطور محاكاة للعطور العالمية."
+    },
+    "category": "Beauty",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6783395"
+    ]
+  },
+  {
+    "id": "tekton",
+    "season": 3,
+    "episode": 6,
+    "name": {
+      "en": "Tekton",
+      "ar": "تكتون"
+    },
+    "description": {
+      "en": "Interior design and solid-wood furniture company.",
+      "ar": "شركة تصميم داخلي وأثاث خشبي."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6783395"
+    ]
+  },
+  {
+    "id": "damj",
+    "season": 3,
+    "episode": 7,
+    "name": {
+      "en": "Damj",
+      "ar": "دامج"
+    },
+    "description": {
+      "en": "Digital tool that makes websites accessible to people with disabilities.",
+      "ar": "أداة رقمية تجعل المواقع الإلكترونية متاحة لذوي الإعاقة."
+    },
+    "category": "Tech",
+    "founders": [
+      "Hazem Salem"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 6000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6792620",
+      "https://www.youm7.com/6791539"
+    ]
+  },
+  {
+    "id": "sadu-designs",
+    "season": 3,
+    "episode": 7,
+    "name": {
+      "en": "Sadu Designs",
+      "ar": "سدو ديزاينز"
+    },
+    "description": {
+      "en": "Combines handicrafts and heritage trades to make home décor and handmade furniture.",
+      "ar": "تدمج الحرف اليدوية والمهن التراثية لصناعة ديكورات وأثاث منزلي."
+    },
+    "category": "Home",
+    "founders": [
+      "Ahmed Abdel Rasoul",
+      "Fatma Wagdy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6792604",
+      "https://www.youm7.com/6791539"
+    ]
+  },
+  {
+    "id": "zink",
+    "season": 3,
+    "episode": 7,
+    "name": {
+      "en": "ZINK",
+      "ar": "زينك"
+    },
+    "description": {
+      "en": "Print-on-demand platform.",
+      "ar": "منصة للطباعة حسب الطلب."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6791539"
+    ]
+  },
+  {
+    "id": "cippo",
+    "season": 3,
+    "episode": 8,
+    "name": {
+      "en": "CIPPO",
+      "ar": "سيبو"
+    },
+    "description": {
+      "en": "Academic and psychological support sessions for children at schools, homes and clubs.",
+      "ar": "جلسات أكاديمية ونفسية للأطفال في المدارس والمنازل والنوادي."
+    },
+    "category": "Education",
+    "founders": [
+      "Tamer El-Kharrat"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 4000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6800514",
+      "https://www.youm7.com/6799417"
+    ]
+  },
+  {
+    "id": "dxwand",
+    "season": 3,
+    "episode": 8,
+    "name": {
+      "en": "DXwand",
+      "ar": "دي إكس واند"
+    },
+    "description": {
+      "en": "AI company helping enterprises boost productivity and profits with Arabic conversational AI and data analytics.",
+      "ar": "شركة ذكاء اصطناعي تساعد الشركات على زيادة الأرباح والإنتاجية عبر المحادثة الآلية بالعربية وتحليل البيانات."
+    },
+    "category": "Tech",
+    "founders": [
+      "Ahmed Mahmoud"
+    ],
+    "website": "https://dxwand.com/",
+    "ask": {
+      "amountEGP": 150000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6800540",
+      "https://www.youm7.com/6799417",
+      "https://craft.co/dxwand"
+    ]
+  },
+  {
+    "id": "renile",
+    "season": 3,
+    "episode": 8,
+    "name": {
+      "en": "ReNile",
+      "ar": "رينايل"
+    },
+    "description": {
+      "en": "Agritech firm offering end-to-end smart-farming systems (monitoring, alerts, control, analytics).",
+      "ar": "شركة تكنولوجيا زراعية تقدم حلول زراعة ذكية متكاملة للمراقبة والتنبيه والتحكم والتحليل."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6799417",
+      "https://www.wamda.com/2025/01/egypt-renile-secures-450000-investment",
+      "https://entarabi.com/en/2025/01/renile-egypt-secures-eight-figure-funding-in-first-investment-round-led-by-keheilan/"
+    ]
+  },
+  {
+    "id": "pavo",
+    "season": 3,
+    "episode": 9,
+    "name": {
+      "en": "PAVO",
+      "ar": "بافو"
+    },
+    "description": {
+      "en": "Egyptian fashion brand focused on sustainability; ~20,000 orders a year worth EGP 25M.",
+      "ar": "علامة أزياء مصرية تركز على الاستدامة، وتصدر نحو 20 ألف طلب سنوياً بقيمة 25 مليون جنيه."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Khaled Borai",
+      "Mina Mandalon"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6808721",
+      "https://www.youm7.com/6807489",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "whip-up",
+    "season": 3,
+    "episode": 9,
+    "name": {
+      "en": "Whip Up",
+      "ar": "ويب أب"
+    },
+    "description": {
+      "en": "Factory that separates egg whites from yolks and reprocesses eggs.",
+      "ar": "مصنع لفصل بياض البيض عن الصفار وإعادة تصنيع البيض."
+    },
+    "category": "Food",
+    "founders": [
+      "Tarek Amir"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 25000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6808749",
+      "https://www.youm7.com/6807489"
+    ]
+  },
+  {
+    "id": "the-baby-garage",
+    "season": 3,
+    "episode": 11,
+    "name": {
+      "en": "The Baby Garage",
+      "ar": "ذا بيبي جراچ"
+    },
+    "description": {
+      "en": "Marketplace for new and used children's gear.",
+      "ar": "منصة لتداول مستلزمات الأطفال الجديدة والمستعملة."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6823046"
+    ]
+  },
+  {
+    "id": "irnova",
+    "season": 3,
+    "episode": 11,
+    "name": {
+      "en": "Irnova",
+      "ar": "إيرنوفا"
+    },
+    "description": {
+      "en": "Web app that produces educational videos using AI.",
+      "ar": "تطبيق ويب لإنتاج الفيديوهات التعليمية باستخدام الذكاء الاصطناعي."
+    },
+    "category": "Education",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6823046"
+    ]
+  },
+  {
+    "id": "ooaps",
+    "season": 3,
+    "episode": 11,
+    "name": {
+      "en": "OOAPS",
+      "ar": "أوبس"
+    },
+    "description": {
+      "en": "Platform that simplifies import and export procedures into 7 steps.",
+      "ar": "منصة تسهّل إجراءات الاستيراد والتصدير في 7 خطوات."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6824424",
+      "https://www.youm7.com/6823046"
+    ]
+  },
+  {
+    "id": "gabris-wear",
+    "season": 3,
+    "episode": 12,
+    "name": {
+      "en": "Gabri's Wear",
+      "ar": "جابريز وير"
+    },
+    "description": {
+      "en": "Women's formalwear brand addressing the shortage of formal clothing for women.",
+      "ar": "علامة ملابس رسمية للسيدات تعالج نقص الخيارات المتاحة."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Lilian Ghobrial"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6832074",
+      "https://www.youm7.com/6830874",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "dentolize",
+    "season": 3,
+    "episode": 12,
+    "name": {
+      "en": "Dentolize",
+      "ar": "دنتولايز"
+    },
+    "description": {
+      "en": "Dental-clinic management software.",
+      "ar": "نظام لإدارة عيادات الأسنان."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6830874"
+    ]
+  },
+  {
+    "id": "hawy",
+    "season": 3,
+    "episode": 12,
+    "name": {
+      "en": "Hawy",
+      "ar": "هاوي"
+    },
+    "description": {
+      "en": "100% Egyptian T-shirt brand.",
+      "ar": "علامة تيشيرتات مصرية 100%."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6832114",
+      "https://www.youm7.com/6830874",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "sparemart",
+    "season": 3,
+    "episode": 12,
+    "name": {
+      "en": "Sparemart",
+      "ar": "سبير مارت"
+    },
+    "description": {
+      "en": "Startup that pitched in the four-company episode alongside Gabri's Wear, Dentolize and Hawy.",
+      "ar": "شركة ناشئة شاركت في حلقة الشركات الأربع إلى جانب جابريز وير ودنتولايز وهاوي."
+    },
+    "category": "Other",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6830874"
+    ]
+  },
+  {
+    "id": "monsters-table",
+    "season": 3,
+    "episode": 13,
+    "name": {
+      "en": "Monster's Table",
+      "ar": "مونسترز تيبل"
+    },
+    "description": {
+      "en": "Frozen healthy, vegetable-rich meals for children.",
+      "ar": "وجبات صحية مجمدة للأطفال غنية بالخضروات."
+    },
+    "category": "Food",
+    "founders": [
+      "Farida",
+      "Farah"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6839755",
+      "https://www.youm7.com/6839509"
+    ]
+  },
+  {
+    "id": "right-temp",
+    "season": 3,
+    "episode": 13,
+    "name": {
+      "en": "Right Temp",
+      "ar": "رايت تمب"
+    },
+    "description": {
+      "en": "Cooling-solutions company.",
+      "ar": "شركة متخصصة في حلول التبريد."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6839509"
+    ]
+  },
+  {
+    "id": "robo-desk",
+    "season": 3,
+    "episode": 14,
+    "name": {
+      "en": "Robo Desk",
+      "ar": "روبو ديسك"
+    },
+    "description": {
+      "en": "Egyptian software company for customer-communication systems.",
+      "ar": "شركة مصرية تقدم برمجيات لنظم التواصل مع العملاء."
+    },
+    "category": "Tech",
+    "founders": [
+      "Amir Ali"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 43000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6847903",
+      "https://www.youm7.com/6846397"
+    ]
+  },
+  {
+    "id": "anf",
+    "season": 3,
+    "episode": 14,
+    "name": {
+      "en": "ANF",
+      "ar": "إيه إن إف"
+    },
+    "description": {
+      "en": "Produces non-woven fabric used in tissues and medical and personal-care products.",
+      "ar": "إنتاج قماش غير منسوج يُستخدم في المناديل والمنتجات الطبية والشخصية."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6847891",
+      "https://www.youm7.com/6846397"
+    ]
+  },
+  {
+    "id": "srv",
+    "season": 3,
+    "episode": 15,
+    "name": {
+      "en": "SRV",
+      "ar": "إس آر في"
+    },
+    "description": {
+      "en": "Digital procurement platform supplying companies with cleaning supplies, office tools, electronics and coffee.",
+      "ar": "منصة رقمية متكاملة توفر مشتريات الشركات من مواد النظافة وأدوات المكاتب والإلكترونيات والقهوة."
+    },
+    "category": "Services",
+    "founders": [
+      "Mohamed Ayman"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 10000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6856392",
+      "https://www.dostor.org/4935430"
+    ]
+  },
+  {
+    "id": "roufys",
+    "season": 3,
+    "episode": 15,
+    "name": {
+      "en": "Roufy's",
+      "ar": "روفيز"
+    },
+    "description": {
+      "en": "Premium fast-food restaurant serving American dishes.",
+      "ar": "مطعم وجبات سريعة راقية يقدم أطباقاً أمريكية."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6856439",
+      "https://www.dostor.org/4935430"
+    ]
+  },
+  {
+    "id": "hoods",
+    "season": 3,
+    "episode": 16,
+    "name": {
+      "en": "Hoods",
+      "ar": "هودز"
+    },
+    "description": {
+      "en": "Live-shopping app blending social media and e-commerce, operating in Egypt and Saudi Arabia.",
+      "ar": "تطبيق تسوق مباشر يجمع بين التواصل الاجتماعي والتجارة الإلكترونية ويعمل في مصر والسعودية."
+    },
+    "category": "Tech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6864691"
+    ]
+  },
+  {
+    "id": "cleo-foods",
+    "season": 3,
+    "episode": 16,
+    "name": {
+      "en": "Cleo Foods",
+      "ar": "كليو فودز"
+    },
+    "description": {
+      "en": "Healthy rice-cake snacks; 36 products and EGP 15M sales in 2024.",
+      "ar": "وجبات خفيفة صحية من كعك الأرز، ولديها 36 منتجاً وحققت 15 مليون جنيه في 2024."
+    },
+    "category": "Food",
+    "founders": [
+      "Ahmed Ismail"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6864960",
+      "https://www.youm7.com/6864691",
+      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+    ]
+  },
+  {
+    "id": "cognify",
+    "season": 3,
+    "episode": 17,
+    "name": {
+      "en": "Cognify",
+      "ar": "كوجنيفاي"
+    },
+    "description": {
+      "en": "Inclusive-education platform supporting children with autism and learning difficulties (shadow teachers, support staff, nutrition).",
+      "ar": "منصة تعليم دامج لدعم الأطفال ذوي التوحد وصعوبات التعلم عبر معلمي الظل والمدرسين الداعمين وبرامج التغذية."
+    },
+    "category": "Education",
+    "founders": [],
+    "website": "https://cognifyedu.com",
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6873168",
+      "https://egyptinnovate.com/en/entities/profile/cognify-education",
+      "https://sharktank-egypt.com/en/deals/technology-"
+    ]
+  },
+  {
+    "id": "mandisa",
+    "season": 3,
+    "episode": 17,
+    "name": {
+      "en": "Mandisa",
+      "ar": "مانديسا"
+    },
+    "description": {
+      "en": "Natural home products such as loofahs, towels, soap and Egyptian honey.",
+      "ar": "منتجات منزلية طبيعية مثل اللوف والفوط والصابون والعسل المصري."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4952899"
+    ]
+  },
+  {
+    "id": "estealamy",
+    "season": 3,
+    "episode": 17,
+    "name": {
+      "en": "Estealamy",
+      "ar": "استعلامي"
+    },
+    "description": {
+      "en": "Uses AI to verify the data of loan applicants.",
+      "ar": "التحقق من بيانات المتقدمين للقروض باستخدام الذكاء الاصطناعي."
+    },
+    "category": "Fintech",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4952899"
+    ]
+  },
+  {
+    "id": "snugglez",
+    "season": 3,
+    "episode": 17,
+    "name": {
+      "en": "Snugglez",
+      "ar": "سناجلز"
+    },
+    "description": {
+      "en": "Wearable sleeping bags for babies.",
+      "ar": "أكياس نوم للأطفال الرضع."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6873168",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "upfuse",
+    "season": 3,
+    "episode": 19,
+    "name": {
+      "en": "UP FUSE",
+      "ar": "أب فيوز"
+    },
+    "description": {
+      "en": "Brand that upcycles waste into fashion pieces.",
+      "ar": "علامة تعيد تدوير المخلفات إلى قطع أزياء."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6888715",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "bubble-store",
+    "season": 3,
+    "episode": 19,
+    "name": {
+      "en": "Bubble Store",
+      "ar": "بابل ستور"
+    },
+    "description": {
+      "en": "Refill-based cleaning products and household tools that save money and cut waste.",
+      "ar": "منظفات وأدوات منزلية بنظام إعادة التعبئة توفر المال وتقلل النفايات."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6890385",
+      "https://www.youm7.com/6888715"
+    ]
+  },
+  {
+    "id": "raseedi",
+    "season": 3,
+    "episode": 19,
+    "name": {
+      "en": "Raseedi",
+      "ar": "رصيدي"
+    },
+    "description": {
+      "en": "App offering instant financing to craftspeople and small businesses.",
+      "ar": "تطبيق يقدم تمويلاً فورياً لأصحاب الحرف والمشروعات الصغيرة."
+    },
+    "category": "Fintech",
+    "founders": [
+      "Ahmed Attallah"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 50000000,
+      "equityPct": 5
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6890325",
+      "https://www.youm7.com/6888715"
+    ]
+  },
+  {
+    "id": "loop",
+    "season": 3,
+    "episode": 19,
+    "name": {
+      "en": "Loop",
+      "ar": "لوب"
+    },
+    "description": {
+      "en": "Platform for launching light-mobility services and e-scooter rentals.",
+      "ar": "منصة لإطلاق خدمات النقل الخفيف واستئجار السكوتر."
+    },
+    "category": "Tech",
+    "founders": [
+      "Moataz El-Wasimy",
+      "Mohamed El-Sheikh"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 6000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6890343",
+      "https://www.youm7.com/6888715"
+    ]
+  },
+  {
+    "id": "amanleek",
+    "season": 3,
+    "episode": 20,
+    "name": {
+      "en": "Amanleek",
+      "ar": "أمانليك"
+    },
+    "description": {
+      "en": "Online insurance broker offering medical and car insurance quotes in three steps; 30,000+ clients and EGP 185M in sales.",
+      "ar": "وسيط تأمين إلكتروني يقدم عروض التأمين الطبي وتأمين السيارات في 3 خطوات، ولديه أكثر من 30 ألف عميل ومبيعات 185 مليون جنيه."
+    },
+    "category": "Fintech",
+    "founders": [
+      "Mohab Abu Eita"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 40000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6898829",
+      "https://www.youm7.com/6897404"
+    ]
+  },
+  {
+    "id": "breathe",
+    "season": 3,
+    "episode": null,
+    "name": {
+      "en": "Breathe",
+      "ar": "بريذ"
+    },
+    "description": {
+      "en": "Hijab-friendly clothing brand with a bamboo bandana head cover.",
+      "ar": "علامة ملابس للمحجبات تقدم غطاء شعر \"بندانة\" من البامبو."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4979257",
+      "https://sharktank-egypt.com/en/deals/fashion"
+    ]
+  },
+  {
+    "id": "basq",
+    "season": 3,
+    "episode": null,
+    "name": {
+      "en": "BASQ",
+      "ar": "باسك"
+    },
+    "description": {
+      "en": "Dessert-making brand.",
+      "ar": "علامة متخصصة في صناعة الحلويات."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/4979257"
+    ]
+  },
+  {
+    "id": "waymoure",
+    "season": 4,
+    "episode": 1,
+    "name": {
+      "en": "Waymoure",
+      "ar": "وايمور"
+    },
+    "description": {
+      "en": "Break-resistant luggage with warranty and after-sales service; EGP 13M sales from 7,000 bags in five months.",
+      "ar": "شنط سفر مقاومة للكسر بضمان وخدمة ما بعد البيع، وحققت مبيعات 13 مليون جنيه من 7 آلاف شنطة خلال 5 أشهر."
+    },
+    "category": "Retail",
+    "founders": [
+      "Omar El-Gabaly"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 8000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7149952"
+    ]
+  },
+  {
+    "id": "khayai",
+    "season": 4,
+    "episode": 1,
+    "name": {
+      "en": "Khayai",
+      "ar": "خيّاي"
+    },
+    "description": {
+      "en": "App for horse-riding training, booking, and buying and selling horses.",
+      "ar": "تطبيق لتدريب وحجز وشراء وبيع الخيول."
+    },
+    "category": "Sports",
+    "founders": [
+      "Mohamed Zahran",
+      "Nadine Samy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 22.5
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7149977"
+    ]
+  },
+  {
+    "id": "tronsta",
+    "season": 4,
+    "episode": 2,
+    "name": {
+      "en": "Tronsta",
+      "ar": "ترونستا"
+    },
+    "description": {
+      "en": "Manufactures nutritional supplements for children.",
+      "ar": "تصنيع مكملات غذائية للأطفال."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7158606"
+    ]
+  },
+  {
+    "id": "mystery-bag",
+    "season": 4,
+    "episode": 3,
+    "name": {
+      "en": "Mystery Bag",
+      "ar": "ميستري باج"
+    },
+    "description": {
+      "en": "Egypt's first platform for reducing food waste by selling surplus food in mystery bags.",
+      "ar": "أول منصة في مصر لتقليل هدر الطعام."
+    },
+    "category": "Food",
+    "founders": [
+      "Mohamed Ragab"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7168263"
+    ]
+  },
+  {
+    "id": "bayt-el-saad",
+    "season": 4,
+    "episode": 3,
+    "name": {
+      "en": "Bayt El Saad",
+      "ar": "بيت السعد"
+    },
+    "description": {
+      "en": "Handmade lighting units.",
+      "ar": "وحدات إضاءة مصنوعة يدوياً."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7168263"
+    ]
+  },
+  {
+    "id": "tayar",
+    "season": 4,
+    "episode": 4,
+    "name": {
+      "en": "Tayar",
+      "ar": "طيار"
+    },
+    "description": {
+      "en": "Delivery service using electric bikes; the EGP 180M valuation was the main obstacle to a deal.",
+      "ar": "خدمة توصيل بالدراجات الكهربائية، وكان التقييم البالغ 180 مليون جنيه العائق الرئيسي أمام الصفقة."
+    },
+    "category": "Services",
+    "founders": [
+      "Abanoub Ramzy"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 15000000,
+      "equityPct": 8
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7177610"
+    ]
+  },
+  {
+    "id": "game-guru",
+    "season": 4,
+    "episode": 4,
+    "name": {
+      "en": "Game Guru",
+      "ar": "جيم جورو"
+    },
+    "description": {
+      "en": "Revives classic games with acrylic board games.",
+      "ar": "ألعاب طاولة من الأكريليك لإحياء الألعاب الكلاسيكية."
+    },
+    "category": "Entertainment",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7177646"
+    ]
+  },
+  {
+    "id": "good-steel-chute",
+    "season": 4,
+    "episode": 4,
+    "name": {
+      "en": "Good Steel Chute Systems",
+      "ar": "جود ستيل"
+    },
+    "description": {
+      "en": "Waste-chute disposal systems for buildings.",
+      "ar": "أنظمة للتخلص من النفايات في المباني."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/5285046"
+    ]
+  },
+  {
+    "id": "kaynuna",
+    "season": 4,
+    "episode": 5,
+    "name": {
+      "en": "Kaynuna",
+      "ar": "كينونة"
+    },
+    "description": {
+      "en": "Online platform helping users pick and buy the right indoor plants.",
+      "ar": "منصة ذكية تساعد المستخدمين في اختيار نباتات الزينة الداخلية وشرائها أونلاين."
+    },
+    "category": "Retail",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7186643",
+      "https://www.youm7.com/7185089"
+    ]
+  },
+  {
+    "id": "pure-butters",
+    "season": 4,
+    "episode": 5,
+    "name": {
+      "en": "Pure Butters",
+      "ar": "بيور بترز"
+    },
+    "description": {
+      "en": "Peanut-butter and tahini powders made by two Sudanese founders; secured funding on the show.",
+      "ar": "بودرة زبدة الفول السوداني والطحينة لمؤسسين سودانيين، وحصلا على تمويل في البرنامج."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1500000,
+      "equityPct": 20
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/7186669",
+      "https://www.youm7.com/7185089"
+    ]
+  },
+  {
+    "id": "goldabikia",
+    "season": 4,
+    "episode": 5,
+    "name": {
+      "en": "Goldabikia",
+      "ar": "جولدابيكيا"
+    },
+    "description": {
+      "en": "Lithium battery company.",
+      "ar": "شركة بطاريات ليثيوم."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7185089"
+    ]
+  },
+  {
+    "id": "mavericks",
+    "season": 4,
+    "episode": 6,
+    "name": {
+      "en": "Mavericks",
+      "ar": "مافريكس"
+    },
+    "description": {
+      "en": "Art studio upcycling waste into lighting units, furniture and corporate gifts.",
+      "ar": "استوديو فني يعيد تدوير المخلفات إلى وحدات إضاءة وأثاث وهدايا للشركات."
+    },
+    "category": "Home",
+    "founders": [
+      "Maged Yehia"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7195538"
+    ]
+  },
+  {
+    "id": "baby-star",
+    "season": 4,
+    "episode": 6,
+    "name": {
+      "en": "Baby Star",
+      "ar": "بيبي ستار"
+    },
+    "description": {
+      "en": "Baby-care products free of fragrances and dyes.",
+      "ar": "منتجات رعاية أطفال خالية من الروائح والعطور والألوان."
+    },
+    "category": "Beauty",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7195516"
+    ]
+  },
+  {
+    "id": "haxel",
+    "season": 4,
+    "episode": 6,
+    "name": {
+      "en": "Haxel",
+      "ar": "هاكسل"
+    },
+    "description": {
+      "en": "First Egyptian-made running shoe competing with global brands.",
+      "ar": "أول حذاء جري مصري الصنع ينافس الماركات العالمية."
+    },
+    "category": "Sports",
+    "founders": [
+      "Hussein",
+      "Hamouda"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 4000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7195500"
+    ]
+  },
+  {
+    "id": "yalla-hagz",
+    "season": 4,
+    "episode": 7,
+    "name": {
+      "en": "Yalla Hagz",
+      "ar": "يلا حاجز"
+    },
+    "description": {
+      "en": "App for booking football pitches, built by five founders aged 17-22.",
+      "ar": "تطبيق لحجز الملاعب الرياضية أسسه خمسة شباب بين 17 و22 عاماً."
+    },
+    "category": "Sports",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7203897",
+      "https://www.youm7.com/7202688"
+    ]
+  },
+  {
+    "id": "fino",
+    "season": 4,
+    "episode": 7,
+    "name": {
+      "en": "Fino",
+      "ar": "فينو"
+    },
+    "description": {
+      "en": "Fast-food concept reviving the authentic Egyptian sandwich.",
+      "ar": "مشروع وجبات سريعة لإحياء الساندويتش المصري الأصيل."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 12.5
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7203942",
+      "https://www.youm7.com/7202688"
+    ]
+  },
+  {
+    "id": "ketolicious",
+    "season": 4,
+    "episode": 7,
+    "name": {
+      "en": "Ketolicious",
+      "ar": "كيتوليشس"
+    },
+    "description": {
+      "en": "Keto food products.",
+      "ar": "منتجات غذائية للكيتو."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7202688"
+    ]
+  },
+  {
+    "id": "somaia-aboelezz",
+    "season": 4,
+    "episode": 7,
+    "name": {
+      "en": "Somaia Aboelezz",
+      "ar": "سمية أبو العز"
+    },
+    "description": {
+      "en": "Fashion design label.",
+      "ar": "علامة لتصميم الأزياء."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Somaia Aboelezz"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7202688"
+    ]
+  },
+  {
+    "id": "churreto",
+    "season": 4,
+    "episode": 8,
+    "name": {
+      "en": "Churreto",
+      "ar": "تشوريتو"
+    },
+    "description": {
+      "en": "Spanish churros dessert brand seeking to expand.",
+      "ar": "علامة حلويات إسبانية (تشوروز) تسعى للتوسع."
+    },
+    "category": "Food",
+    "founders": [
+      "Nourhan Hany"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7212970"
+    ]
+  },
+  {
+    "id": "nile-naturals",
+    "season": 4,
+    "episode": 8,
+    "name": {
+      "en": "Nile Naturals",
+      "ar": "نايل ناتشورالز"
+    },
+    "description": {
+      "en": "Family-run soap and skincare brand praised for its packaging.",
+      "ar": "علامة عائلية للصابون ومنتجات العناية بالبشرة نالت الإشادة بتغليفها."
+    },
+    "category": "Beauty",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7212970"
+    ]
+  },
+  {
+    "id": "eisac-automation",
+    "season": 4,
+    "episode": 10,
+    "name": {
+      "en": "EISAC Automation",
+      "ar": "إيزاك أوتوميشن"
+    },
+    "description": {
+      "en": "Industrial automation (PLC, HMI, SCADA) and maintenance firm founded in 2019.",
+      "ar": "شركة تأسست عام 2019 تقدم أنظمة الأتمتة الصناعية (PLC وHMI وSCADA) وخدمات الصيانة."
+    },
+    "category": "Tech",
+    "founders": [
+      "Raymond Kamal"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 40000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7229893",
+      "https://www.youm7.com/7228288"
+    ]
+  },
+  {
+    "id": "the-mat-homes",
+    "season": 4,
+    "episode": 10,
+    "name": {
+      "en": "The Mat Homes",
+      "ar": "ذا مات هومز"
+    },
+    "description": {
+      "en": "Home-furnishing brand.",
+      "ar": "علامة لمفروشات المنزل."
+    },
+    "category": "Home",
+    "founders": [
+      "Mohamed Nowair",
+      "Farah Alaa"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 2500000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7228288"
+    ]
+  },
+  {
+    "id": "camli-beauty",
+    "season": 4,
+    "episode": 10,
+    "name": {
+      "en": "Camli Beauty",
+      "ar": "كاملي بيوتي"
+    },
+    "description": {
+      "en": "Beauty and cosmetics brand.",
+      "ar": "علامة للتجميل ومستحضرات العناية."
+    },
+    "category": "Beauty",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7228288"
+    ]
+  },
+  {
+    "id": "nutrifits",
+    "season": 4,
+    "episode": 12,
+    "name": {
+      "en": "Nutrifits",
+      "ar": "نيوتري فيتس"
+    },
+    "description": {
+      "en": "Factory for healthy and functional foods aiming to localise the industry.",
+      "ar": "مصنع للأغذية الصحية والوظيفية يسعى لتوطين الصناعة في مصر."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 15000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7246022",
+      "https://www.dostor.org/5353826"
+    ]
+  },
+  {
+    "id": "nno-home",
+    "season": 4,
+    "episode": 12,
+    "name": {
+      "en": "NNO Home",
+      "ar": "إن إن أو هوم"
+    },
+    "description": {
+      "en": "Home-décor brand founded by two sisters.",
+      "ar": "علامة ديكور منزلي أسستها شقيقتان."
+    },
+    "category": "Home",
+    "founders": [
+      "Nehal Osama",
+      "Nouran Osama"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 2000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.dostor.org/5353826"
+    ]
+  },
+  {
+    "id": "chug-up",
+    "season": 4,
+    "episode": 17,
+    "name": {
+      "en": "Chug Up",
+      "ar": "تشاج أب"
+    },
+    "description": {
+      "en": "Air-infusion water bottles with flavour pods that encourage drinking water.",
+      "ar": "زجاجات مياه بتقنية Air-Infusion وكبسولات نكهات لتشجيع شرب المياه."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://almalnews.com/2097274/",
+      "https://www.elwatannews.com/news/details/8219208"
+    ]
+  },
+  {
+    "id": "plume",
+    "season": 4,
+    "episode": 17,
+    "name": {
+      "en": "Plume",
+      "ar": "بلوم"
+    },
+    "description": {
+      "en": "Mattresses and sleep products bringing the five-star-hotel experience home.",
+      "ar": "مراتب ومنتجات نوم تنقل تجربة فنادق الخمس نجوم إلى المنازل."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.elwatannews.com/news/details/8219208",
+      "https://www.dostor.org/5407960"
+    ]
+  },
+  {
+    "id": "lil-kitchen",
+    "season": 4,
+    "episode": 17,
+    "name": {
+      "en": "Lil Kitchen",
+      "ar": "ليل كيتشن"
+    },
+    "description": {
+      "en": "Fried-chicken restaurant that began as a cloud kitchen in Fayoum.",
+      "ar": "مطعم فرايد تشيكن بدأ كمطبخ سحابي في الفيوم."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.elwatannews.com/news/details/8219208",
+      "https://www.dostor.org/5407960"
+    ]
+  },
+  {
+    "id": "carvizita",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "CarVizita",
+      "ar": "كار فيزيتا"
+    },
+    "description": {
+      "en": "Mobile car-maintenance service booked through an app.",
+      "ar": "خدمة صيانة سيارات متنقلة تُطلب عبر تطبيق."
+    },
+    "category": "Services",
+    "founders": [
+      "Gamal Badr"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7237946"
+    ]
+  },
+  {
+    "id": "aftah-topic",
+    "season": 5,
+    "episode": 1,
+    "name": {
+      "en": "Aftah Topic",
+      "ar": "افتح توبك"
+    },
+    "description": {
+      "en": "Egyptian party/board-game maker that grew from one game to six.",
+      "ar": "شركة ألعاب مصرية توسعت من لعبة واحدة إلى 6 ألعاب."
+    },
+    "category": "Entertainment",
+    "founders": [
+      "Ali Ayman",
+      "Hassan Ayman"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 2000000,
+      "equityPct": 15
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7571670",
+      "https://www.youm7.com/7571713"
+    ]
+  },
+  {
+    "id": "connecto",
+    "season": 5,
+    "episode": 1,
+    "name": {
+      "en": "Connecto",
+      "ar": "كونكتو"
+    },
+    "description": {
+      "en": "Startup whose founder asked for EGP 5M for 10%.",
+      "ar": "شركة ناشئة طلب مؤسسها 5 ملايين جنيه مقابل 10%."
+    },
+    "category": "Other",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://arabic.pressbee.net/show11036386.html"
+    ]
+  },
+  {
+    "id": "olympic-sports",
+    "season": 5,
+    "episode": 1,
+    "name": {
+      "en": "Olympic Sports",
+      "ar": "أوليمبيك سبورتس"
+    },
+    "description": {
+      "en": "Sports-academy operator that has served more than 250,000 children.",
+      "ar": "مشغل أكاديميات رياضية خدم أكثر من 250 ألف طفل."
+    },
+    "category": "Sports",
+    "founders": [
+      "Ziad El-Bessiouny"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7571708",
+      "https://www.mobtada.com/culture/1657155"
+    ]
+  }
+]

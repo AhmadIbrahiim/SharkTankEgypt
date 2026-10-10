@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, startups, seasons, t, num, money, pct, category, type Lang } from '../../config';
+import { langs, startups, seasons, t, num, money, pct, category, seasonLabel, shark, type Lang } from '../../config';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -45,7 +45,7 @@ const jsonld = {
     <div class="toolbar">
       <div class="chips" role="group" aria-label={s.season} data-key="s">
         <button type="button" class="chip" data-v="" aria-pressed="true">{s.all}</button>
-        {seasons.map((x) => <button type="button" class="chip" data-v={x.season} aria-pressed="false">{s.season} {num(x.season, lang)}</button>)}
+        {[...seasons].sort((a, b) => (a.season || 99) - (b.season || 99)).map((x) => <button type="button" class="chip" data-v={x.season} aria-pressed="false">{seasonLabel(x.season, lang)}</button>)}
       </div>
       <div class="chips" role="group" aria-label={s.finalDeal} data-key="d">
         <button type="button" class="chip" data-v="" aria-pressed="true">{s.all}</button>
@@ -75,20 +75,20 @@ const jsonld = {
           data-c={x.category ?? ''}
           data-name={x.name[lang]}
           data-amount={x.deal?.made ? x.deal.amountEGP ?? 0 : -1}
-          data-text={[x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'), ...(x.founders ?? []), ...(x.deal?.sharks ?? []), x.description.en, x.description.ar].join(' ').toLowerCase()}
+          data-text={[x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'), ...(x.founders ?? []), ...(x.deal?.sharks ?? []).flatMap((n) => [n, shark(n, 'ar')]), x.description.en, x.description.ar].join(' ').toLowerCase()}
         >
           <a class="card" href={`${base}/${lang}/${x.id}/`}>
             <Shot id={x.id} name={x.name[lang]} eager={i < 6} />
             <div class="body">
               <div class="row">
-                <span class="badge">{s.seasonShort}{num(x.season, lang)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
+                <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
                 {x.deal?.made === true && <span class="badge ok">🤝 {s.deal}</span>}
               </div>
               <h2>{x.name[lang]}</h2>
               <p class="desc">{x.description[lang]}</p>
               <div class="foot">
                 {x.deal?.made && x.deal.sharks?.length
-                  ? <><Sharks names={x.deal.sharks} />{x.deal.amountEGP != null && <span class="amount">{money(x.deal.amountEGP, lang)}{x.deal.equityPct != null && ` · ${pct(x.deal.equityPct, lang)}`}</span>}</>
+                  ? <><Sharks names={x.deal.sharks} lang={lang} />{x.deal.amountEGP != null && <span class="amount">{money(x.deal.amountEGP, lang)}{x.deal.equityPct != null && ` · ${pct(x.deal.equityPct, lang)}`}</span>}</>
                   : x.category && <span class="badge nile">{category(x.category, lang)}</span>}
               </div>
             </div>
