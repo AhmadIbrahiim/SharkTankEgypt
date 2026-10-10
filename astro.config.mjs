@@ -4,5 +4,4 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://ahmadibrahiim.github.io',
   base: '/SharkTankEgypt',
-  redirects: { '/': '/SharkTankEgypt/ar/' },
 });
