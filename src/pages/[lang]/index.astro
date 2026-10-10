@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, startups, seasons, t, num, money, pct, type Lang } from '../../config';
+import { langs, startups, seasons, t, num, money, pct, category, type Lang } from '../../config';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -55,7 +55,7 @@ const jsonld = {
       <div class="selects">
         <select id="c" aria-label={s.category}>
           <option value="">{s.allCategories}</option>
-          {categories.map((c) => <option>{c}</option>)}
+          {categories.map((c) => <option value={c}>{category(c, lang)}</option>)}
         </select>
         <select id="sort" aria-label={s.sort}>
           <option value="">{s.sortEpisode}</option>
@@ -75,7 +75,7 @@ const jsonld = {
           data-c={x.category ?? ''}
           data-name={x.name[lang]}
           data-amount={x.deal?.made ? x.deal.amountEGP ?? 0 : -1}
-          data-text={[x.name.en, x.name.ar, x.category, ...(x.founders ?? []), ...(x.deal?.sharks ?? []), x.description.en, x.description.ar].join(' ').toLowerCase()}
+          data-text={[x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'), ...(x.founders ?? []), ...(x.deal?.sharks ?? []), x.description.en, x.description.ar].join(' ').toLowerCase()}
         >
           <a class="card" href={`${base}/${lang}/${x.id}/`}>
             <Shot id={x.id} name={x.name[lang]} eager={i < 6} />
@@ -89,7 +89,7 @@ const jsonld = {
               <div class="foot">
                 {x.deal?.made && x.deal.sharks?.length
                   ? <><Sharks names={x.deal.sharks} />{x.deal.amountEGP != null && <span class="amount">{money(x.deal.amountEGP, lang)}{x.deal.equityPct != null && ` · ${pct(x.deal.equityPct, lang)}`}</span>}</>
-                  : x.category && <span class="badge nile">{x.category}</span>}
+                  : x.category && <span class="badge nile">{category(x.category, lang)}</span>}
               </div>
             </div>
           </a>

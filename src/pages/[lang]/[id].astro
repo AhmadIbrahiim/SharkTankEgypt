@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, type Lang, type Startup } from '../../config';
+import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, category, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -51,7 +51,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       <div class="info">
         <div class="row">
           <span class="badge">{s.season} {num(x.season, lang)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
-          {x.category && <a class="badge nile" href={`${base}/${lang}/?c=${encodeURIComponent(x.category)}`}>{x.category}</a>}
+          {x.category && <a class="badge nile" href={`${base}/${lang}/?c=${encodeURIComponent(x.category)}`}>{category(x.category, lang)}</a>}
           {x.deal?.made === true && <span class="badge ok">🤝 {s.deal}</span>}
           {x.deal?.made === false && <span class="badge">{s.noDeal}</span>}
         </div>
