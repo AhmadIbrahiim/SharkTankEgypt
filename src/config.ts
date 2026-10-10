@@ -22,6 +22,8 @@ export const giscus = {
 // Google Search Console → HTML tag verification → paste the content="…" value here.
 export const googleVerification = '';
 
+export const suggestUrl = 'https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml';
+
 export const t = {
   ar: {
     title: 'دليل شركات شارك تانك مصر',
@@ -70,6 +72,9 @@ export const t = {
     contributeTitle: 'عندك معلومة ناقصة؟',
     contributeText: 'الدليل مفتوح المصدر على GitHub. صحّح بيانات أو أضف شركة في دقيقتين.',
     edit: 'ساهم في الدليل',
+    suggest: 'اقترح شركة ناقصة',
+    missingTitle: 'شركة ناقصة؟',
+    missingText: 'الدليل لسه بيكبر. لو تعرف شركة ظهرت في البرنامج ومش موجودة هنا، قولنا عليها.',
     switchLang: 'English',
     madeWith: 'دليل مجتمعي غير رسمي، غير تابع للبرنامج.',
   },
@@ -119,7 +124,10 @@ export const t = {
     egp: 'EGP',
     contributeTitle: 'Know something we missed?',
     contributeText: 'This directory is open source on GitHub. Fix a detail or add a startup in two minutes.',
-    edit: 'Contribute',
+    edit: 'Edit the data',
+    suggest: 'Suggest a startup',
+    missingTitle: 'Missing a startup?',
+    missingText: 'The directory is still growing. If you know a startup from the show that isn’t here, tell us.',
     switchLang: 'العربية',
     madeWith: 'An unofficial community directory, not affiliated with the show.',
   },
