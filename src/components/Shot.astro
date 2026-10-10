@@ -1,7 +1,7 @@
 ---
 import { screenshot, thumb, hue } from '../config';
-interface Props { id: string; name: string; video?: string | null; eager?: boolean }
-const { id, name, video, eager } = Astro.props;
+interface Props { id: string; name: string; lang: string; video?: string | null; eager?: boolean }
+const { id, name, lang, video, eager } = Astro.props;
 const src = screenshot(id);
 const loading = eager ? 'eager' : 'lazy';
 ---
@@ -18,6 +18,8 @@ const loading = eager ? 'eager' : 'lazy';
 ) : (
   <div class="frame">
     <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-    <div class="shot ph" style={`--h:${hue(id)}`} aria-hidden="true"><span>{name}</span></div>
+    {/* No screenshot or video: show the page's share card (rendered after the build); the name tile stays behind it as a fallback. */}
+    <div class="shot ph" style={`--h:${hue(id)}`}><span>{name}</span>
+      <img class="og" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/og/${lang}/${id}.jpg`} alt={name} width="1200" height="630" loading={loading} decoding="async" onerror="this.remove()" /></div>
   </div>
 )}

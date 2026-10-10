@@ -206,6 +206,8 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
   a:hover .play, button:hover .play { transform: scale(1.08); }
   .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.4rem, 3.2vw, 2rem); font-weight: 650; line-height: 1.2;
     color: hsl(var(--h) 55% 38%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 80% 92%), hsl(var(--h) 60% 84%)); }
+  .ph { position: relative; }
+  .ph .og { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   @media (prefers-color-scheme: dark) { .ph { color: hsl(var(--h) 70% 78%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 35% 26%), hsl(var(--h) 30% 18%)); } }
 
   .avatar { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; font-size: .72rem; font-weight: 600; color: hsl(var(--h) 55% 30%); background: hsl(var(--h) 75% 88%); border: 2px solid var(--surface); }
