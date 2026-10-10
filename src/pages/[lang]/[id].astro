@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
-import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, seasonLabel, type Lang, type Startup } from '../../config';
+import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, seasonLabel, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -26,6 +26,12 @@ const terms = [
 ].filter((d) => d.amount != null || d.equity != null);
 // Every known profile, so search engines can tie them to this startup.
 const sameAs = [x.website, ...Object.entries(x.links ?? {}).flatMap(([k, v]) => (k === 'other' ? (v as { url: string }[]).map((o) => o.url) : [v as string]))].filter(Boolean);
+const missing = Object.entries({
+  founders: !x.founders?.length, ask: x.ask?.amountEGP == null, deal: x.deal?.made == null,
+  links: !x.website && !Object.keys(x.links ?? {}).length, video: !x.video,
+}).filter(([, m]) => m).map(([k]) => s.missingLabels[k as keyof typeof s.missingLabels]);
+// GitHub issue forms prefill fields from query params named after their ids.
+const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}`)}&name_en=${encodeURIComponent(x.name.en)}&name_ar=${encodeURIComponent(x.name.ar)}${x.episode != null ? `&episode=${x.episode}` : ''}`;
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -115,6 +121,15 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       </section>
     )}
 
+    <aside class="help">
+      <div>
+        <h2>{s.helpTitle}</h2>
+        <p>{s.helpText}</p>
+        {missing.length > 0 && <p class="miss"><strong>{s.helpMissing}</strong> {missing.join(lang === 'ar' ? '، ' : ', ')}</p>}
+      </div>
+      <a class="btn btn-primary" href={helpUrl} target="_blank" rel="noopener">＋ {s.helpBtn}</a>
+    </aside>
+
     <section id="comments" class="comments">
       <h2>💬 {s.comments}</h2>
       {commentsOn ? (
@@ -197,6 +212,11 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .small strong { color: var(--ink); font-weight: 600; }
   .sharks h2 { margin-bottom: 12px; }
 
+  .help { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: 28px; padding: 20px 24px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--sun) 45%, var(--line)); background: color-mix(in srgb, var(--sun-soft) 55%, transparent); }
+  .help div { flex: 1 1 280px; }
+  .help h2 { font-size: 1.1rem; }
+  .help p { margin: 4px 0 0; color: var(--ink-2); }
+  .help .miss strong { color: var(--sun-ink); font-weight: 600; }
   .comments { margin-top: 40px; padding: 28px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 80px; }
   .comments h2 { font-size: 1.35rem; }
   .hint { color: var(--ink-2); margin: 8px 0 20px; }
