@@ -4,7 +4,7 @@ import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
-import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, type Lang, type Startup } from '../../config';
+import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -36,6 +36,22 @@ const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}
 const services = (x as any).services as { en: { name: string; desc: string }[]; ar: { name: string; desc: string }[] } | undefined;
 const pitchText = (x as any).pitch as { en: string; ar: string } | undefined;
 const team = (x.founders ?? []).map((n) => allFounders.find((f) => f.id === founderId(n)) ?? { id: founderId(n), name: { en: n, ar: n } } as any);
+// Pitch summary: the written one, else a factual line built from the structured data (never an empty section).
+const list = (xs: string[]) => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(lang === 'ar' ? '، ' : ', ')}${lang === 'ar' ? ' و' : ' and '}${xs.at(-1)}`;
+const sharkNames = list((x.deal?.sharks ?? []).map((n) => shark(n, lang)));
+const askV = valuation(x.ask?.amountEGP, x.ask?.equityPct);
+const where = `${seasonLabel(x.season, lang)}${x.episode != null ? (lang === 'ar' ? `، الحلقة ${num(x.episode, lang)}` : `, episode ${x.episode}`) : ''}`;
+const autoPitch = lang === 'ar'
+  ? [`عرض فريق ${x.name.ar} مشروعه في ${where}.`,
+     x.ask?.amountEGP != null && `طلب المؤسسون ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` مقابل ${pct(x.ask.equityPct, lang)}` : ''}${askV ? `، أي بتقييم ${money(askV, lang)}` : ''}.`,
+     x.deal?.made === true && `انتهى العرض بصفقة${sharkNames ? ` مع ${sharkNames}` : ''}${x.deal.amountEGP != null ? ` بقيمة ${money(x.deal.amountEGP, lang)}` : ''}${x.deal.equityPct != null ? ` مقابل ${pct(x.deal.equityPct, lang)}` : ''}.`,
+     x.deal?.made === false && 'غادر الفريق دون صفقة.',
+     x.deal?.made == null && 'لم نسجّل نتيجة العرض بعد.'].filter(Boolean).join(' ')
+  : [`${x.name.en} pitched in ${where}.`,
+     x.ask?.amountEGP != null && `The founders asked for ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` for ${pct(x.ask.equityPct, lang)}` : ''}${askV ? `, valuing the company at ${money(askV, lang)}` : ''}.`,
+     x.deal?.made === true && `They walked away with a deal${sharkNames ? ` with ${sharkNames}` : ''}${x.deal.amountEGP != null ? `: ${money(x.deal.amountEGP, lang)}` : ''}${x.deal.equityPct != null ? ` for ${pct(x.deal.equityPct, lang)}` : ''}.`,
+     x.deal?.made === false && 'They left without a deal.',
+     x.deal?.made == null && 'The outcome hasn’t been recorded yet.'].filter(Boolean).join(' ');
 const hasLinks = !!x.website || Object.keys(x.links ?? {}).length > 0;
 const about = (x as any).about as { founded?: number; city?: { en: string; ar: string }; highlights?: { en: string[]; ar: string[] } } | undefined;
 const jsonld = {
@@ -137,7 +153,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 
     <section id="pitch" class="sec">
       <h2>{s.secPitch}</h2>
-      {pitchText && <p class="pitchtext">{pitchText[lang]}</p>}
+      <p class="pitchtext">{pitchText?.[lang] ?? autoPitch}</p>
       {terms.length > 0 && (
       <section class="terms">
         {terms.map((d) => {
@@ -254,6 +270,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .secnav a { flex: none; padding: 7px 16px; border-radius: 999px; color: var(--ink-2); text-decoration: none; font-size: .92rem; }
   .secnav a:hover { background: var(--surface-2); color: var(--ink); }
   .sec { margin-top: 36px; scroll-margin-top: 130px; }
+  #online :global(.online h2) { font-size: 1.4rem; font-weight: 650; color: var(--ink); margin-bottom: 14px; }
+  #online :global(.online) { margin-top: 0; }
   .sec > h2 { font-size: 1.4rem; margin-bottom: 14px; }
   .overview { font-size: 1.08rem; max-width: 75ch; margin: 0 0 18px; }
   .pitchtext { font-size: 1.05rem; max-width: 75ch; margin: 0 0 18px; padding-inline-start: 16px; border-inline-start: 4px solid var(--sun); }
