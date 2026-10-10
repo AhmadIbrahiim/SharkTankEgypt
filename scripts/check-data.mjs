@@ -36,4 +36,21 @@ for (const s of startups) {
     assert.equal(platformOf(url), key, `${where}: links.${key} points to another site (${url})`);
   }
 }
-console.log(`OK: ${startups.length} startups`);
+// People: profiles for sharks and founders.
+const people = JSON.parse(readFileSync('src/data/people.json', 'utf8'));
+const pids = new Set();
+for (const p of people) {
+  const where = `person "${p.kind}:${p.id}"`;
+  assert.ok(['shark', 'founder'].includes(p.kind), `${where}: kind must be shark or founder`);
+  assert.match(p.id ?? '', /^[a-z0-9]+(-[a-z0-9]+)*$/, `${where}: id must be kebab-case`);
+  assert.ok(!pids.has(`${p.kind}:${p.id}`), `${where}: duplicate`);
+  pids.add(`${p.kind}:${p.id}`);
+  for (const f of ['name', 'title', 'bio']) if (p[f]) for (const l of ['en', 'ar']) assert.ok(p[f][l]?.trim(), `${where}: ${f}.${l} is empty`);
+  assert.ok(p.name, `${where}: name required`);
+  for (const [k, u] of Object.entries(p.links ?? {})) {
+    assert.equal(new URL(u).protocol, 'https:', `${where}: links.${k} must be https`);
+    if (k in platforms) assert.equal(platformOf(u), k, `${where}: links.${k} points to another site`);
+  }
+  if (p.photo) assert.equal(new URL(p.photo.url).protocol, 'https:', `${where}: photo must be https`);
+}
+console.log(`OK: ${startups.length} startups, ${people.length} people`);

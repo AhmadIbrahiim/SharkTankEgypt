@@ -102,5 +102,22 @@ await Promise.all(Array.from({ length: 6 }, async () => {
     console.log(s.id, Object.entries(r).map(([k, v]) => (v.error ? `✗${k}` : `✓${k}`)).join(' '));
   }
 }));
+// People with a Wikipedia page: lead photo (freely licensed, Wikimedia Commons) and summary.
+const people = JSON.parse(readFileSync('src/data/people.json', 'utf8'));
+out.__people = {};
+for (const p of people) {
+  for (const key of ['wikipedia', 'wikipediaAr']) {
+    const page = p.links?.[key];
+    if (!page) continue;
+    const u = new URL(page);
+    const r = await tryGet('wikipedia', async () => {
+      const res = await fetch(`${u.origin}/api/rest_v1/page/summary/${u.pathname.split('/wiki/')[1]}`, { headers: { 'user-agent': 'SharkTankEgyptDirectory/1.0 (github.com/AhmadIbrahiim/SharkTankEgypt)' }, signal: AbortSignal.timeout(15000) });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const j = await res.json();
+      return { page, thumb: j.thumbnail?.source, original: j.originalimage?.source, extract: j.extract };
+    });
+    (out.__people[p.id] ??= {})[key] = r;
+  }
+}
 writeFileSync(process.argv[2] ?? 'harvest.json', JSON.stringify(out, null, 1));
 console.log(`done: ${ok} fetched, ${failed} failed`);
