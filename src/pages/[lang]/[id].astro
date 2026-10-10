@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
+import Links from '../../components/Links.astro';
 import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, seasonLabel, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
@@ -23,6 +24,8 @@ const terms = [
   { label: s.ask, amount: x.ask?.amountEGP, equity: x.ask?.equityPct, tone: '' },
   ...(x.deal?.made ? [{ label: s.finalDeal, amount: x.deal.amountEGP, equity: x.deal.equityPct, tone: 'ok' }] : []),
 ].filter((d) => d.amount != null || d.equity != null);
+// Every known profile, so search engines can tie them to this startup.
+const sameAs = [x.website, ...Object.entries(x.links ?? {}).flatMap(([k, v]) => (k === 'other' ? (v as { url: string }[]).map((o) => o.url) : [v as string]))].filter(Boolean);
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -30,6 +33,7 @@ const jsonld = {
   alternateName: otherName,
   description: x.description[lang],
   ...(x.website && { url: x.website }),
+  ...(sameAs.length && { sameAs }),
   ...(image && { image: image.startsWith('http') ? image : new URL(image.slice(1), site).href }),
   ...(x.founders?.length && { founder: x.founders.map((name) => ({ '@type': 'Person', name })) }),
   subjectOf: { '@type': 'TVEpisode', partOfSeries: { '@type': 'TVSeries', name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر' },
@@ -70,6 +74,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         {x.founders?.length > 0 && (
           <p class="founders"><span>{s.founders}</span> {x.founders.join(lang === 'ar' ? '، ' : ', ')}</p>
         )}
+        <Links website={x.website} links={x.links} lang={lang} label={s.online} />
       </div>
       <div class="visual">
         {x.video ? (
