@@ -12,7 +12,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
   <section class="faq" id={id}>
     {title && <h2>{title}</h2>}
     {items.map((x, i) => (
-      <details open={i < 2}>
+      <details>
         <summary><h3>{x.q}</h3></summary>
         <p>{x.a}{x.href != null && <> <a href={`${base}/${lang}/${x.href}`}>{t[lang].faqMore}</a></>}</p>
       </details>
@@ -30,5 +30,6 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
   details[open] summary::after { transform: rotate(45deg); }
   summary h3 { font-size: 1rem; font-weight: 600; margin: 0; }
   details p { margin: 0; padding: 0 18px 16px; color: var(--ink-2); line-height: 1.7; }
+  details p a { display: inline-block; padding-block: 4px; }
   details a { color: var(--sun-ink); font-weight: 500; white-space: nowrap; }
 </style>

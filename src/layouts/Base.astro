@@ -111,6 +111,12 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
         </a>
       </div>
     </header>
+    <script>
+      // Phones: the two-row header slides away while scrolling down and comes back on scroll up.
+      const h = document.querySelector('.site-header')!;
+      let last = scrollY;
+      addEventListener('scroll', () => { const y = scrollY; h.classList.toggle('away', y > last && y > 120); last = y; }, { passive: true });
+    </script>
 
     <main id="main"><slot /></main>
 
@@ -213,6 +219,8 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
   .nav a { padding: 6px 14px; border-radius: 999px; color: var(--ink-2); text-decoration: none; font-size: .92rem; white-space: nowrap; }
   .nav a:hover { color: var(--ink); }
   .nav a[aria-current='page'] { background: var(--surface); color: var(--ink); font-weight: 500; box-shadow: 0 1px 3px rgb(60 35 15 / .12); }
+  .site-header { transition: transform .25s ease; }
+  @media (max-width: 640px) { .site-header.away { transform: translateY(-100%); } }
   @media (max-width: 640px) { .bar { flex-wrap: wrap; height: auto; padding-block: 10px; gap: 8px; } .nav { order: 3; width: 100%; justify-content: safe center; margin: 0; overflow-x: auto; } .nav a { padding: 6px 8px; font-size: .85rem; } .site-header .word small { display: none; } .site-header .word b { font-size: .98rem; } }
   .lang { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .9rem; transition: border-color .2s; }
   .lang:hover { border-color: var(--sun); }

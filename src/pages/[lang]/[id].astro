@@ -77,6 +77,7 @@ const jsonld = {
   subjectOf: x.episode != null ? { '@type': 'TVEpisode', '@id': ID.episode(x.season, x.episode), episodeNumber: x.episode, partOfSeason: seasonRef(x.season), partOfSeries: { '@id': ID.series } }
     : seasonRef(x.season),
 };
+const rest = x.description[lang].split(/(?<=[.!?؟])\s+/).slice(1).join(' ');
 const card: Card = { kind: 'startup', title: x.name[lang], alt: otherName, sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
   eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '), shot: image, play: !screenshot(x.id) && !!x.video,
   badge: x.deal?.made === true ? { tone: 'ok', text: [lang === 'ar' ? 'صفقة' : 'Deal', [x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · '), sharkNames && `${lang === 'ar' ? 'مع' : 'with'} ${sharkNames}`].filter(Boolean).join(' ') }
@@ -147,7 +148,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 
     <section id="overview" class="sec">
       <h2>{s.secOverview}</h2>
-      <p class="overview">{x.description[lang]}</p>
+      {/* The hero already shows the first sentence. */}
+      {rest && <p class="overview">{rest}</p>}
       {about?.highlights?.[lang]?.length > 0 && (
         <div class="glance">
           <h3>✨ {s.glance}</h3>
