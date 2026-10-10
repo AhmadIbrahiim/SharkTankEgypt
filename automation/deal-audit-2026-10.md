@@ -126,3 +126,13 @@ Of the four names not in the directory:
 - **Health Tag**: added (Season 3, episode 16, ask EGP 20M for 15%, outcome unknown). Youm7 6864968 (29 Jan 2025): "قدم اندرو سعد صاحب مشروع Health Tag فكرة مشروعه خلال المشاركة ببرنامج شارك تانك ... طلب من الشاركس 20 مليون جنيه مقابل 15%". Same-day Youm7 coverage as Cleo Foods and Hoods (episode 16).
 - **Ami's Bakery** and **Naydin** (not "Naydin Care"): only sharktankarabi.com clip pages so far; queued for a full download before adding.
 - **Zaher**: clip headings mention offers from Farouk and Sallam, but nothing says what it is, its season or its ask. Not added.
+
+## Seventh pass: pitch-video titles
+
+Actions fetched the titles of 167 of the 173 YouTube videos linked from open startups (oEmbed; YouTube refused the full pages). Only one title states an outcome outright:
+
+| Startup | Change | Title (official Shark Tank Egypt channel) |
+|---|---|---|
+| Flouxo | Deal: 50% to two sharks (sharks and amount not named) | "هشام يدخل فى ديل ب٥٠٪ من شركته مع ٢ شاركس!" (founder Hisham Hany) |
+
+Titles that hint but don't state an outcome, so nothing changed: The Lean Jerky ("وقعوا في ايد احمد طارق"), YAYA ("محمد منصور هيساعد يحيى"), Hawy ("كل الشاركس في Deal واحد"; panel not listed), El Fares (compilation of pitches where all five sharks joined one investment), OG Bees and Re-Blocks (compilations of Ayman Abbas's and Abdallah Sallam's Season 4 investments, each linked from several startups), Nutrifits ("أعلى أوفر من أحمد طارق": an offer), Super Abla and AgriKemet (offers from every shark).

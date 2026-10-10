@@ -5332,8 +5332,8 @@
       "ar": "فلوكسو"
     },
     "description": {
-      "en": "Flouxo is an Egyptian manufacturer of compressors that unload bulk cement from transport trucks. It describes itself as the first maker of this kind of compressor in Egypt and the Middle East, giving truck operators a local option instead of imported equipment. Its design is meant to spare truck owners the cost of frequent compressor overhauls, which keeps their fleets running for less. Founder Hisham Hany brought the business to Shark Tank Egypt in Season 2.",
-      "ar": "فلوكسو شركة مصرية تصنّع الكمبروسرات المستخدمة في تفريغ الأسمنت السائب من شاحنات النقل. وتقدّم نفسها على أنها أول مصنّع لهذا النوع من الكمبروسرات في مصر والشرق الأوسط، لتمنح أصحاب الشاحنات بديلاً محلياً عن المعدات المستوردة. وصُمّم منتجها بحيث يوفّر على أصحاب الشاحنات تكاليف عَمرات الكمبروسر المتكررة، فتعمل أساطيلهم بتكلفة أقل. وقد عرض المؤسس هشام هاني المشروع في الموسم الثاني من برنامج شارك تانك مصر."
+      "en": "Flouxo is an Egyptian manufacturer of compressors that unload bulk cement from transport trucks. It describes itself as the first maker of this kind of compressor in Egypt and the Middle East, giving truck operators a local option instead of imported equipment. Its design is meant to spare truck owners the cost of frequent compressor overhauls, which keeps their fleets running for less. Founder Hisham Hany brought the business to Shark Tank Egypt in Season 2. On the show, founder Hisham Hany closed a deal with two sharks for 50% of the company.",
+      "ar": "فلوكسو شركة مصرية تصنّع الكمبروسرات المستخدمة في تفريغ الأسمنت السائب من شاحنات النقل. وتقدّم نفسها على أنها أول مصنّع لهذا النوع من الكمبروسرات في مصر والشرق الأوسط، لتمنح أصحاب الشاحنات بديلاً محلياً عن المعدات المستوردة. وصُمّم منتجها بحيث يوفّر على أصحاب الشاحنات تكاليف عَمرات الكمبروسر المتكررة، فتعمل أساطيلهم بتكلفة أقل. وقد عرض المؤسس هشام هاني المشروع في الموسم الثاني من برنامج شارك تانك مصر. وفي البرنامج أبرم المؤسس هشام هاني صفقة مع اثنين من المستثمرين مقابل 50% من الشركة."
     },
     "category": "Manufacturing",
     "founders": [
@@ -5344,7 +5344,12 @@
       "amountEGP": 6000000,
       "equityPct": 30
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6458158",
       "https://www.youtube.com/watch?v=AgmsMUwYGDk",
