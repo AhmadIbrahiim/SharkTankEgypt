@@ -305,7 +305,10 @@ export const founders = (() => {
   }
   return [...by].map(([id, f]) => {
     const p = profiles.get(`founder:${id}`);
-    return { ...p, id, kind: 'founder' as const, key: f.key, name: p?.name ?? { en: f.key, ar: (namesAr as Record<string, string>)[f.key] ?? f.key }, startups: f.startups };
+    // No published portrait for most founders: use the frame CBC published from their pitch on the show.
+    const v = f.startups.find((x) => x.video)?.video;
+    const photo = p?.photo ?? (v ? { url: `https://i.ytimg.com/vi/${v}/mqdefault.jpg`, credit: 'Shark Tank Egypt · CBC', creditUrl: `https://www.youtube.com/watch?v=${v}` } : undefined);
+    return { ...p, id, kind: 'founder' as const, key: f.key, name: p?.name ?? { en: f.key, ar: (namesAr as Record<string, string>)[f.key] ?? f.key }, photo, startups: f.startups };
   }).sort((a, b) => a.name.en.localeCompare(b.name.en));
 })();
 
