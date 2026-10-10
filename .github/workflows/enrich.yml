@@ -1,0 +1,33 @@
+name: Draft profiles with GitHub Models
+# Free LLM drafting for public repos: reads each startup's own pages and drafts services, overview,
+# pitch summary, highlights and Arabic founder names, grounded only in that text. Results land on
+# the `enrich` branch for review — nothing reaches the site without being merged.
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Max startups this run (free tier ≈150 requests/day)
+        default: '140'
+  schedule:
+    - cron: '23 4 * * 3' # weekly, Wednesday after the episode airs
+permissions:
+  contents: write
+  models: read
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/enrich.mjs --test
+      - run: node scripts/enrich.mjs /tmp/enrich.json
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LIMIT: ${{ inputs.limit || '140' }}
+      - name: Publish to enrich branch
+        run: |
+          mkdir /tmp/out && cd /tmp/out && cp /tmp/enrich.json .
+          git init -q -b enrich && git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Enrich ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" enrich

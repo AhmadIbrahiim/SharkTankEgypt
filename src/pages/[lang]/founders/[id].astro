@@ -15,12 +15,12 @@ const byId = new Map(founders.map((f) => [f.id, f]));
 const { website, ...links } = (p.links ?? {}) as Record<string, string>;
 const title = p.title?.[lang] ?? p.startups.map((x) => x.name[lang]).join(lang === 'ar' ? '، ' : ', ');
 const jsonld = {
-  '@context': 'https://schema.org', '@type': 'Person', name: p.name.en, ...(p.title && { jobTitle: p.title.en }),
+  '@context': 'https://schema.org', '@type': 'Person', name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'], ...(p.title && { jobTitle: p.title.en }),
   ...(p.bio && { description: p.bio[lang] }), sameAs: Object.values(p.links ?? {}),
   worksFor: p.startups.map((x) => ({ '@type': 'Organization', name: x.name.en })),
 };
 ---
-<Base lang={lang} title={`${p.name[lang]} – ${title}`} description={p.bio?.[lang] ?? `${p.name[lang]} · ${title}`} jsonld={jsonld}
+<Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']}) – ${title}`} description={p.bio?.[lang] ?? `${p.name[lang]} · ${title}`} jsonld={jsonld}
   altPath={`/${lang === 'ar' ? 'en' : 'ar'}/founders/${p.id}/`}>
   <div class="container">
     <nav class="crumbs"><a href={`${base}/${lang}/founders/`}>{s.navFounders}</a> <span>/</span> <span aria-current="page">{p.name[lang]}</span></nav>

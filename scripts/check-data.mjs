@@ -58,4 +58,11 @@ for (const p of people) {
   }
   if (p.photo) assert.equal(new URL(p.photo.url).protocol, 'https:', `${where}: photo must be https`);
 }
+// Every person shown on the site needs an Arabic name (bilingual search).
+const namesAr = JSON.parse(readFileSync('src/data/names.json', 'utf8'));
+const arByEn = new Map(people.map((p) => [p.name.en, p.name.ar]));
+for (const s of startups) for (const n of s.founders ?? []) {
+  const ar = namesAr[n] ?? arByEn.get(n);
+  assert.ok(ar && /[\u0600-\u06FF]/.test(ar), `founder "${n}" (${s.id}) needs an Arabic name in src/data/names.json`);
+}
 console.log(`OK: ${startups.length} startups, ${people.length} people`);

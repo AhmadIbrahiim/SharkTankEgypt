@@ -1,0 +1,48 @@
+---
+// Landing page body shared by sector and season pages.
+import MiniCard from './MiniCard.astro';
+import Avatar from './Avatar.astro';
+import { t, num, money, stats, sharkByKey, shark, type Lang, type Startup } from '../config';
+interface Props { lang: Lang; title: string; intro: string; items: Startup[] }
+const { lang, title, intro, items } = Astro.props;
+const s = t[lang];
+const st = stats(items);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<div class="container">
+  <header class="intro">
+    <h1>{title}</h1>
+    <p>{intro}</p>
+  </header>
+  <section class="kpis">
+    <div><b>{num(st.count, lang)}</b><span>{s.statStartups}</span></div>
+    <div><b>{num(st.deals, lang)}</b><span>{s.statDeals}</span></div>
+    {st.invested > 0 && <div><b>{money(st.invested, lang)}</b><span>{s.statInvested}</span></div>}
+  </section>
+  {st.topSharks.length > 0 && (
+    <section class="top">
+      <h2>{s.topSharks}</h2>
+      <ul>
+        {st.topSharks.map(([n, c]) => { const q = sharkByKey.get(n); return (
+          <li><a href={q ? `${base}/${lang}/sharks/${q.id}/` : undefined}><Avatar name={n} seed={q?.id ?? n} photo={q?.photo} size={44} /><span>{shark(n, lang)}</span><b>{num(c, lang)}</b></a></li>
+        ); })}
+      </ul>
+    </section>
+  )}
+  <ul class="grid">{items.map((x) => <li><MiniCard x={x} lang={lang} /></li>)}</ul>
+</div>
+<style>
+  .intro { padding: 40px 0 8px; text-align: center; }
+  .intro h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); }
+  .intro p { color: var(--ink-2); max-width: 70ch; margin: 12px auto 0; font-size: 1.05rem; }
+  .kpis { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 22px 0; }
+  .kpis div { min-width: 150px; padding: 14px 20px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; text-align: center; }
+  .kpis b { font-size: 1.5rem; font-weight: 650; }
+  .kpis span { color: var(--ink-2); font-size: .85rem; }
+  .top { margin-bottom: 24px; text-align: center; }
+  .top h2 { font-size: 1rem; color: var(--ink-2); font-weight: 500; margin-bottom: 10px; }
+  .top ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+  .top a { display: inline-flex; align-items: center; gap: 8px; padding: 4px 14px 4px 4px; padding-inline: 4px 14px; border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); color: var(--ink); text-decoration: none; }
+  .top b { color: var(--ok); }
+  .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+</style>

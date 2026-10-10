@@ -2,6 +2,7 @@
 // so the data can be enriched from primary sources. Runs in GitHub Actions (open internet).
 // Usage: node scripts/harvest.mjs [out.json]   ·   node scripts/harvest.mjs --test
 import { readFileSync, writeFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 import assert from 'node:assert/strict';
 import { platforms, platformOf } from '../src/platforms.mjs';
 
@@ -31,8 +32,8 @@ export const socialLinks = (html, base) => {
 };
 
 // Link-preview crawler UA: YouTube/Instagram/Facebook serve their og: tags to it instead of a bot or login wall.
-const PREVIEW = 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)';
-async function get(url, ua = UA) {
+export const PREVIEW = 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)';
+export async function get(url, ua = UA) {
   const res = await fetch(url, { headers: { 'user-agent': ua, 'accept-language': 'ar,en;q=0.8', cookie: 'CONSENT=YES+1; SOCS=CAI' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return { html: await res.text(), url: res.url };
@@ -40,7 +41,7 @@ async function get(url, ua = UA) {
 
 const pageTitle = (html) => decode(html.match(/<title[^>]*>([^<]*)/i)?.[1]);
 
-async function youtube(id) {
+export async function youtube(id) {
   const { html } = await get(`https://www.youtube.com/watch?v=${id}&hl=ar`);
   const json = html.match(/ytInitialPlayerResponse\s*=\s*(\{.+?\});(?:var|<\/script>)/s)?.[1];
   let v = {}, p = {};
@@ -58,20 +59,22 @@ async function youtube(id) {
   return r;
 }
 
-async function site(url) {
+export async function site(url) {
   const { html, url: final } = await get(url);
   return { finalUrl: final, title: decode(html.match(/<title[^>]*>([^<]*)/i)?.[1]), description: meta(html, 'description') ?? meta(html, 'og:description'),
     image: meta(html, 'og:image'), links: socialLinks(html, final) };
 }
 
 // Instagram og:description reads like "1,234 Followers, 56 Following, 78 Posts - See Instagram photos and videos from Name (@handle)".
-async function social(url) {
+export async function social(url) {
   const { html } = await get(url, PREVIEW);
   const r = { title: meta(html, 'og:title'), description: meta(html, 'og:description'), image: meta(html, 'og:image') };
   if (!r.title && !r.description) r.debug = pageTitle(html);
   return r;
 }
 
+// Only run when executed directly (enrich.mjs imports the helpers above).
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
 if (process.argv.includes('--test')) {
   const html = `<meta content="About us" name="description"><meta property="og:image" content="https://a.com/i.png">
     <a href="https://www.instagram.com/brand/?hl=en">ig</a><a href="https://facebook.com/sharer/sharer.php?u=x">share</a>
@@ -121,3 +124,4 @@ for (const p of people) {
 }
 writeFileSync(process.argv[2] ?? 'harvest.json', JSON.stringify(out, null, 1));
 console.log(`done: ${ok} fetched, ${failed} failed`);
+}

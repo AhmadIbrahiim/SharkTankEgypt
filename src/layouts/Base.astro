@@ -1,5 +1,5 @@
 ---
-import { t, googleVerification, type Lang } from '../config';
+import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, type Lang } from '../config';
 interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object }
 const { lang, title, description, altPath, image, jsonld } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -78,6 +78,10 @@ const logo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circl
             {s.edit}
           </a>
         </div>
+        <nav class="browse" aria-label={s.browseSectors}>
+          <div><h3>{s.browseSectors}</h3><p>{categories.map((c) => <a href={`${base}/${lang}/category/${catSlug(c)}/`}>{category(c, lang)}</a>)}</p></div>
+          <div><h3>{s.browseSeasons}</h3><p>{[...seasons].sort((a, b) => (a.season || 3.5) - (b.season || 3.5)).map((x) => <a href={`${base}/${lang}/season/${x.season}/`}>{seasonLabel(x.season, lang)}</a>)}</p></div>
+        </nav>
         <p class="fine">🦈 {s.title} · {s.madeWith}</p>
       </div>
     </footer>
@@ -171,6 +175,11 @@ const logo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circl
   .contribute { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 28px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
   .contribute h2 { font-size: 1.25rem; }
   .contribute p { margin: 6px 0 0; color: var(--ink-2); }
+  .browse { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 28px; }
+  .browse h3 { font-size: .95rem; margin-bottom: 8px; }
+  .browse p { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .browse a { padding: 4px 12px; border-radius: 999px; background: var(--surface); color: var(--ink-2); text-decoration: none; font-size: .85rem; }
+  .browse a:hover { color: var(--sun-ink); }
   .fine { color: var(--ink-2); font-size: .85rem; text-align: center; margin: 24px 0 0; }
 
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }

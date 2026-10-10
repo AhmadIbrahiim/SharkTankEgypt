@@ -2,6 +2,7 @@ import { existsSync } from 'node:fs';
 import data from './data/startups.json';
 import seasons from './data/seasons.json';
 import peopleData from './data/people.json';
+import namesAr from './data/names.json';
 
 export type Lang = 'ar' | 'en';
 export const langs: Lang[] = ['ar', 'en'];
@@ -58,6 +59,13 @@ export const t = {
     watch: 'شاهد العرض في البرنامج',
     online: 'تابعهم على الإنترنت',
     glance: 'لمحة سريعة',
+    browseSectors: 'تصفح حسب المجال',
+    browseSeasons: 'تصفح حسب الموسم',
+    catTitle: (c: string) => `شركات ${c} في شارك تانك مصر`,
+    catIntro: (c: string, n: string, d: string, m: string | null) => `${n} شركة ناشئة في مجال ${c} عرضت مشروعها أمام المستثمرين في شارك تانك مصر، وحصلت ${d} منها على صفقة${m ? ` باستثمارات معلنة تبلغ ${m}` : ''}. تعرّف على كل شركة وخدماتها ومؤسسيها ونتيجة عرضها.`,
+    seasonTitle: (n: string) => `شارك تانك مصر ${n}: كل الشركات والصفقات`,
+    seasonIntro: (n: string, c: string, d: string, m: string | null) => `كل الشركات الناشئة التي ظهرت في ${n} من شارك تانك مصر: ${c} شركة، منها ${d} حصلت على صفقة${m ? ` بإجمالي استثمارات معلنة ${m}` : ''}، مع تفاصيل العروض والمستثمرين.`,
+    topSharks: 'أكثر المستثمرين نشاطًا هنا',
     secOverview: 'نظرة عامة',
     secServices: 'الخدمات والمنتجات',
     secPitch: 'العرض في البرنامج',
@@ -147,6 +155,13 @@ export const t = {
     watch: 'Watch the pitch',
     online: 'Find them online',
     glance: 'At a glance',
+    browseSectors: 'Browse by sector',
+    browseSeasons: 'Browse by season',
+    catTitle: (c: string) => `${c} startups on Shark Tank Egypt`,
+    catIntro: (c: string, n: string, d: string, m: string | null) => `${n} ${c.toLowerCase()} startups pitched to the sharks on Shark Tank Egypt, and ${d} walked away with a deal${m ? `, with ${m} in announced investment` : ''}. Explore each company, its services, founders and how the pitch went.`,
+    seasonTitle: (n: string) => `Shark Tank Egypt ${n}: every startup and deal`,
+    seasonIntro: (n: string, c: string, d: string, m: string | null) => `Every startup that pitched in Shark Tank Egypt ${n}: ${c} companies, ${d} of them closed a deal${m ? ` totalling ${m} in announced investment` : ''} — with pitch details and the sharks who invested.`,
+    topSharks: 'Most active sharks here',
     secOverview: 'Overview',
     secServices: 'Services & products',
     secPitch: 'The pitch',
@@ -280,9 +295,20 @@ export const founders = (() => {
   }
   return [...by].map(([id, f]) => {
     const p = profiles.get(`founder:${id}`);
-    return { ...p, id, kind: 'founder' as const, key: f.key, name: p?.name ?? { en: f.key, ar: f.key }, startups: f.startups };
+    return { ...p, id, kind: 'founder' as const, key: f.key, name: p?.name ?? { en: f.key, ar: (namesAr as Record<string, string>)[f.key] ?? f.key }, startups: f.startups };
   }).sort((a, b) => a.name.en.localeCompare(b.name.en));
 })();
 
 export const sharkByKey = new Map(sharks.map((s) => [s.key, s]));
 export const founderId = (name: string) => slug(name);
+
+export const catSlug = (c: string) => c.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+export const categories = [...new Set(startups.map((x) => x.category).filter(Boolean) as string[])].sort();
+/** Summary numbers for a set of startups. */
+export const stats = (xs: Startup[]) => {
+  const deals = xs.filter((x) => x.deal?.made);
+  const invested = deals.reduce((a, x) => a + (x.deal?.amountEGP ?? 0), 0);
+  const by = new Map<string, number>();
+  for (const x of deals) for (const n of x.deal?.sharks ?? []) by.set(n, (by.get(n) ?? 0) + 1);
+  return { count: xs.length, deals: deals.length, invested, topSharks: [...by].sort((a, b) => b[1] - a[1]).slice(0, 5) };
+};
