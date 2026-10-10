@@ -1,0 +1,20 @@
+---
+import { hue, initials } from '../config';
+interface Props { names: string[]; labels?: boolean }
+const { names, labels } = Astro.props;
+---
+<span class:list={['sharks', { labels }]}>
+  {names.map((n) => (
+    <span class="shark" title={n}>
+      <span class="avatar" style={`--h:${hue(n)}`} aria-hidden="true">{initials(n)}</span>
+      {labels ? <span>{n}</span> : <span class="sr">{n}</span>}
+    </span>
+  ))}
+</span>
+<style>
+  .sharks { display: inline-flex; align-items: center; }
+  .sharks:not(.labels) .shark + .shark { margin-inline-start: -8px; }
+  .sharks.labels { flex-wrap: wrap; gap: 8px; }
+  .labels .shark { display: inline-flex; align-items: center; gap: 8px; padding-block: 4px; padding-inline: 4px 12px; border-radius: 999px; background: var(--surface-2); font-size: .9rem; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+</style>

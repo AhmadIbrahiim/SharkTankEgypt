@@ -1,9 +1,12 @@
 ---
-import { screenshot } from '../config';
-interface Props { id: string; name: string }
-const { id, name } = Astro.props;
+import { screenshot, hue } from '../config';
+interface Props { id: string; name: string; eager?: boolean }
+const { id, name, eager } = Astro.props;
 const src = screenshot(id);
 ---
-{src
-  ? <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} loading="lazy" />
-  : <div class="shot" aria-hidden="true">{name.slice(0, 2)}</div>}
+<div class="frame">
+  <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+  {src
+    ? <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+    : <div class="shot ph" style={`--h:${hue(id)}`} aria-hidden="true"><span>{name}</span></div>}
+</div>

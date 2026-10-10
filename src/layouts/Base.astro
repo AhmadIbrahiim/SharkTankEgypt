@@ -11,12 +11,15 @@ const altUrl = abs(altPath);
 const [arUrl, enUrl] = lang === 'ar' ? [url, altUrl] : [altUrl, url];
 const fullTitle = title ? `${title} | ${s.title}` : `${s.title} | ${t[other].title}`;
 const desc = description ?? s.tagline;
+const logo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#E0562F"/><path d="M8.5 21.5C13 20 16 14.5 16.5 7c2.2 5.5 4.6 10.6 8 14.5z" fill="#FFF4E6"/><path d="M5 24.5q2.75-2.5 5.5 0t5.5 0 5.5 0 5.5 0" fill="none" stroke="#FFF4E6" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 ---
 <!doctype html>
 <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#17120F" media="(prefers-color-scheme: dark)" />
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
     <link rel="canonical" href={url} />
@@ -35,41 +38,124 @@ const desc = description ?? s.tagline;
     {image && <meta property="og:image" content={abs(image)} />}
     <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦈</text></svg>" />
+    <link rel="icon" href={`data:image/svg+xml,${encodeURIComponent(logo)}`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300..700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <a class="brand" href={`${base}/${lang}/`}>🦈 {s.title}</a>
-      <a class="lang" href={`${base}${altPath}`}>{s.switchLang}</a>
+    <a class="skip" href="#main">{lang === 'ar' ? 'تخطَّ إلى المحتوى' : 'Skip to content'}</a>
+    <header class="site-header">
+      <div class="container bar">
+        <a class="brand" href={`${base}/${lang}/`}>
+          <span class="mark" set:html={logo} />
+          <span>{s.short}</span>
+        </a>
+        <a class="lang" href={`${base}${altPath}`} hreflang={other} lang={other}>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-9 9h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg>
+          {s.switchLang}
+        </a>
+      </div>
     </header>
-    <main><slot /></main>
-    <footer>
-      <a href="https://github.com/AhmadIbrahiim/SharkTankEgypt">GitHub</a> ·
-      <a href="https://github.com/AhmadIbrahiim/SharkTankEgypt/edit/main/src/data/startups.json">{s.edit}</a>
+
+    <main id="main"><slot /></main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="contribute">
+          <div>
+            <h2>{s.contributeTitle}</h2>
+            <p>{s.contributeText}</p>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/AhmadIbrahiim/SharkTankEgypt/edit/main/src/data/startups.json">
+            <svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.35c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 0Z"/></svg>
+            {s.edit}
+          </a>
+        </div>
+        <p class="fine">🦈 {s.title} · {s.madeWith}</p>
+      </div>
     </footer>
   </body>
 </html>
+
 <style is:global>
   :root {
-    --bg: #f6f8fb; --card: #fff; --text: #14202e; --muted: #5b6b7c; --accent: #0a6cbd;
-    --line: #dfe5ec; --ok: #12805c; --no: #a33a3a;
+    --bg: #fbf6ee; --surface: #ffffff; --surface-2: #f5ecdf; --line: #eadfcf;
+    --ink: #2b211a; --ink-2: #6e5f52;
+    --sun: #e0562f; --sun-ink: #b5401c; --sun-soft: #fce6dc;
+    --nile: #0f7a72; --nile-soft: #dcf1ee;
+    --ok: #1f7a4d; --ok-soft: #e1f3e8;
+    --shadow: 0 1px 2px rgb(60 35 15 / .06), 0 10px 30px -12px rgb(60 35 15 / .18);
+    --shadow-lift: 0 2px 4px rgb(60 35 15 / .06), 0 22px 44px -16px rgb(60 35 15 / .28);
+    --radius: 20px;
     color-scheme: light dark;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #0d1520; --card: #16212e; --text: #e6edf5; --muted: #95a5b6; --accent: #5aaeff; --line: #26354a; --ok: #4cc79a; --no: #ef8a8a; }
+    :root {
+      --bg: #17120f; --surface: #221b16; --surface-2: #2b231d; --line: #3a2f27;
+      --ink: #f6ede3; --ink-2: #bcaa99;
+      --sun: #ff8a5c; --sun-ink: #ff9c74; --sun-soft: #3d2219;
+      --nile: #4fc3b6; --nile-soft: #173b37;
+      --ok: #6fd39c; --ok-soft: #1b3527;
+      --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 10px 30px -12px rgb(0 0 0 / .5);
+      --shadow-lift: 0 2px 4px rgb(0 0 0 / .3), 0 22px 44px -16px rgb(0 0 0 / .6);
+    }
   }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: Cairo, system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-  a { color: var(--accent); }
-  header, main, footer { max-width: 1200px; margin: 0 auto; padding: 16px; }
-  header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .brand { font-weight: 800; font-size: 1.2rem; text-decoration: none; color: var(--text); }
-  .lang { border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px; text-decoration: none; }
-  footer { color: var(--muted); text-align: center; }
-  .badge { display: inline-block; font-size: .8rem; padding: 1px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-  .badge.ok { color: var(--ok); border-color: var(--ok); }
-  .badge.no { color: var(--no); border-color: var(--no); }
-  .shot { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: top; background: var(--line); display: grid; place-items: center; font-size: 2.5rem; font-weight: 800; color: var(--muted); }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    font-family: 'Readex Pro', system-ui, sans-serif; font-weight: 350; line-height: 1.65;
+    background: var(--bg); color: var(--ink);
+  }
+  main { flex: 1; }
+  h1, h2, h3 { line-height: 1.25; font-weight: 650; margin: 0; text-wrap: balance; }
+  p { text-wrap: pretty; }
+  a { color: var(--sun-ink); text-underline-offset: 3px; }
+  img { max-width: 100%; display: block; }
+  :focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; border-radius: 8px; }
+  .container { width: 100%; max-width: 1180px; margin-inline: auto; padding-inline: 20px; }
+  .skip { position: absolute; inset-inline-start: 12px; top: -60px; background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 10px; z-index: 50; }
+  .skip:focus { top: 12px; }
+
+  .site-header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 82%, transparent); backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent); }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 650; font-size: 1.05rem; }
+  .mark { width: 34px; height: 34px; display: block; transition: transform .3s; }
+  .brand:hover .mark { transform: rotate(-8deg) scale(1.05); }
+  .lang { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .9rem; transition: border-color .2s; }
+  .lang:hover { border-color: var(--sun); }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 20px; border-radius: 999px; font: inherit; font-weight: 500; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s, background .2s, box-shadow .2s; white-space: nowrap; }
+  .btn:active { transform: scale(.97); }
+  .btn-primary { background: var(--sun); color: #fff; box-shadow: 0 6px 18px -6px color-mix(in srgb, var(--sun) 70%, transparent); }
+  @media (prefers-color-scheme: dark) { .btn-primary { color: #1b0f09; } }
+  .btn-primary:hover { background: color-mix(in srgb, var(--sun) 88%, #000); }
+  .btn-ghost { background: var(--surface); color: var(--ink); border-color: var(--line); }
+  .btn-ghost:hover { border-color: var(--sun); }
+
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: .78rem; font-weight: 500; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); white-space: nowrap; }
+  .badge.ok { background: var(--ok-soft); color: var(--ok); }
+  .badge.nile { background: var(--nile-soft); color: var(--nile); }
+
+  /* Website screenshot in a little browser window */
+  .frame { background: var(--surface-2); border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+  .frame-bar { display: flex; gap: 5px; padding: 8px 10px; direction: ltr; }
+  .frame-bar i { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+  .frame-bar i:first-child { background: #f2a38a; } .frame-bar i:nth-child(2) { background: #f3cf86; } .frame-bar i:nth-child(3) { background: #9fd5b4; }
+  .shot { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; background: var(--surface); }
+  .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.4rem, 3.2vw, 2rem); font-weight: 650; line-height: 1.2;
+    color: hsl(var(--h) 55% 38%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 80% 92%), hsl(var(--h) 60% 84%)); }
+  @media (prefers-color-scheme: dark) { .ph { color: hsl(var(--h) 70% 78%); background: radial-gradient(circle at 30% 20%, hsl(var(--h) 35% 26%), hsl(var(--h) 30% 18%)); } }
+
+  .avatar { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; font-size: .72rem; font-weight: 600; color: hsl(var(--h) 55% 30%); background: hsl(var(--h) 75% 88%); border: 2px solid var(--surface); }
+  @media (prefers-color-scheme: dark) { .avatar { color: hsl(var(--h) 70% 85%); background: hsl(var(--h) 35% 30%); } }
+
+  .site-footer { margin-top: 72px; padding-block: 40px 28px; background: var(--surface-2); }
+  .contribute { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding: 28px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+  .contribute h2 { font-size: 1.25rem; }
+  .contribute p { margin: 6px 0 0; color: var(--ink-2); }
+  .fine { color: var(--ink-2); font-size: .85rem; text-align: center; margin: 24px 0 0; }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
 </style>
