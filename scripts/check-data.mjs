@@ -19,6 +19,11 @@ for (const s of startups) {
     assert.equal(new URL(s.website).protocol, 'https:', `${where}: website must be https`);
     assert.ok(!platformOf(s.website), `${where}: social URL belongs in links, not website`);
   }
+  if (s.pitch) for (const l of ['en', 'ar']) assert.ok(s.pitch[l]?.trim(), `${where}: pitch.${l} is empty`);
+  if (s.services) {
+    assert.ok(s.services.en?.length && s.services.en.length === s.services.ar?.length, `${where}: services need equal en/ar lists`);
+    for (const it of [...s.services.en, ...s.services.ar]) assert.ok(it.name?.trim() && it.desc?.trim(), `${where}: service needs name and desc`);
+  }
   if (s.about) {
     const { founded, city, highlights, ...rest } = s.about;
     assert.deepEqual(Object.keys(rest), [], `${where}: unknown about fields`);

@@ -3,7 +3,8 @@ import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
-import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, seasonLabel, type Lang, type Startup } from '../../config';
+import Avatar from '../../components/Avatar.astro';
+import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, seasonLabel, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -32,6 +33,10 @@ const missing = Object.entries({
 }).filter(([, m]) => m).map(([k]) => s.missingLabels[k as keyof typeof s.missingLabels]);
 // GitHub issue forms prefill fields from query params named after their ids.
 const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}`)}&name_en=${encodeURIComponent(x.name.en)}&name_ar=${encodeURIComponent(x.name.ar)}${x.episode != null ? `&episode=${x.episode}` : ''}`;
+const services = (x as any).services as { en: { name: string; desc: string }[]; ar: { name: string; desc: string }[] } | undefined;
+const pitchText = (x as any).pitch as { en: string; ar: string } | undefined;
+const team = (x.founders ?? []).map((n) => allFounders.find((f) => f.id === founderId(n)) ?? { id: founderId(n), name: { en: n, ar: n } } as any);
+const hasLinks = !!x.website || Object.keys(x.links ?? {}).length > 0;
 const about = (x as any).about as { founded?: number; city?: { en: string; ar: string }; highlights?: { en: string[]; ar: string[] } } | undefined;
 const jsonld = {
   '@context': 'https://schema.org',
@@ -76,7 +81,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
             {about.founded && <span>🗓️ {s.founded} {num(about.founded, lang).replace(/[٬,]/g, '')}</span>}
           </p>
         )}
-        <p class="lead">{x.description[lang]}</p>
+        <p class="lead">{x.description[lang].split(/(?<=[.!?؟])\s+/)[0]}</p>
         <div class="actions">
           {x.website && (
             <a class="btn btn-primary" href={x.website} target="_blank" rel="noopener">
@@ -86,10 +91,6 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
           )}
           <a class="btn btn-ghost" href="#comments">💬 {s.comments}</a>
         </div>
-        {x.founders?.length > 0 && (
-          <p class="founders"><span>{s.founders}</span> {x.founders.map((n, i) => <>{i > 0 && (lang === 'ar' ? '، ' : ', ')}<a href={`${base}/${lang}/founders/${founderId(n)}/`}>{n}</a></>)}</p>
-        )}
-        <Links website={x.website} links={x.links} lang={lang} label={s.online} />
       </div>
       <div class="visual">
         {x.video ? (
@@ -106,14 +107,38 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       </div>
     </article>
 
-    {about?.highlights?.[lang]?.length > 0 && (
-      <section class="glance">
-        <h2>✨ {s.glance}</h2>
-        <ul>{about.highlights[lang].map((h) => <li>{h}</li>)}</ul>
+    <nav class="secnav" aria-label={x.name[lang]}>
+      <a href="#overview">{s.secOverview}</a>
+      {services?.[lang]?.length > 0 && <a href="#services">{s.secServices}</a>}
+      <a href="#pitch">{s.secPitch}</a>
+      {team.length > 0 && <a href="#team">{s.secTeam}</a>}
+      {hasLinks && <a href="#online">{s.secOnline}</a>}
+    </nav>
+
+    <section id="overview" class="sec">
+      <h2>{s.secOverview}</h2>
+      <p class="overview">{x.description[lang]}</p>
+      {about?.highlights?.[lang]?.length > 0 && (
+        <div class="glance">
+          <h3>✨ {s.glance}</h3>
+          <ul>{about.highlights[lang].map((h) => <li>{h}</li>)}</ul>
+        </div>
+      )}
+    </section>
+
+    {services?.[lang]?.length > 0 && (
+      <section id="services" class="sec">
+        <h2>{s.secServices}</h2>
+        <ul class="services">
+          {services[lang].map((it, i) => <li><span class="num">{num(i + 1, lang)}</span><h3>{it.name}</h3><p>{it.desc}</p></li>)}
+        </ul>
       </section>
     )}
 
-    {terms.length > 0 && (
+    <section id="pitch" class="sec">
+      <h2>{s.secPitch}</h2>
+      {pitchText && <p class="pitchtext">{pitchText[lang]}</p>}
+      {terms.length > 0 && (
       <section class="terms">
         {terms.map((d) => {
           const v = valuation(d.amount, d.equity);
@@ -134,6 +159,28 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
             <Sharks names={x.deal.sharks} lang={lang} labels />
           </div>
         )}
+      </section>
+    )}
+
+    </section>
+
+    {team.length > 0 && (
+      <section id="team" class="sec">
+        <h2>{s.secTeam}</h2>
+        <ul class="team">
+          {team.map((f) => (
+            <li><a href={`${base}/${lang}/founders/${f.id}/`}>
+              <Avatar name={f.name.en} seed={f.id} size={56} />
+              <span><strong>{f.name[lang]}</strong>{f.title && <small>{f.title[lang]}</small>}</span>
+            </a></li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {hasLinks && (
+      <section id="online" class="sec">
+        <Links website={x.website} links={x.links} lang={lang} label={s.secOnline} />
       </section>
     )}
 
@@ -203,6 +250,24 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   :global([dir='rtl']) h1 { letter-spacing: 0; }
   .alt { margin: 4px 0 0; color: var(--ink-2); font-size: 1.1rem; }
   .facts { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 12px 0 0; color: var(--ink-2); font-size: .95rem; }
+  .secnav { position: sticky; top: 64px; z-index: 5; display: flex; gap: 4px; overflow-x: auto; margin: 8px 0 4px; padding: 6px; border-radius: 999px; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(10px); box-shadow: var(--shadow); scrollbar-width: none; }
+  .secnav a { flex: none; padding: 7px 16px; border-radius: 999px; color: var(--ink-2); text-decoration: none; font-size: .92rem; }
+  .secnav a:hover { background: var(--surface-2); color: var(--ink); }
+  .sec { margin-top: 36px; scroll-margin-top: 130px; }
+  .sec > h2 { font-size: 1.4rem; margin-bottom: 14px; }
+  .overview { font-size: 1.08rem; max-width: 75ch; margin: 0 0 18px; }
+  .pitchtext { font-size: 1.05rem; max-width: 75ch; margin: 0 0 18px; padding-inline-start: 16px; border-inline-start: 4px solid var(--sun); }
+  .services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px; }
+  .services li { position: relative; padding: 20px 20px 18px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+  .services .num { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 10px; background: var(--sun-soft); color: var(--sun-ink); font-weight: 650; font-size: .9rem; }
+  .services h3 { font-size: 1.02rem; margin: 12px 0 4px; }
+  .services p { margin: 0; color: var(--ink-2); font-size: .93rem; }
+  .team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+  .team a { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); color: inherit; text-decoration: none; transition: transform .2s; }
+  .team a:hover { transform: translateY(-2px); }
+  .team span { display: flex; flex-direction: column; }
+  .team small { color: var(--ink-2); font-size: .85rem; }
+  .glance h3 { font-size: 1.05rem; margin-bottom: 12px; }
   .glance { margin-bottom: 16px; padding: 22px 26px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
   .glance h2 { font-size: 1.1rem; margin-bottom: 12px; }
   .glance ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 28px; }
