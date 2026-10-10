@@ -91,3 +91,17 @@ Five subagents searched the web for the remaining 115 unknowns (about 190 search
 
 Read in full and still open: Bikado (Dostor 4310500 covers the episode but gives no Bikado result), Schoolz, Ketolicious, Fino, Plume, the two Season 2 episode recaps (pitch descriptions only), KAK Squad (only Farouk's own refusal), Nutrifits (two offers, no acceptance). The sharktank-egypt.com deal pages render with JavaScript, so their text can't be read.
 | Minimelts | Deal: Mohamed Farouk + Ahmed Tarek Khalil, terms not reported. StartupScene's "Tank Tales" covers startups "who successfully secured investment after their appearances": "sharks, particularly Hamada Farouk and Ahmed Tarek, who quickly bought into the bold idea". | thestartupscene.me (Tank Tales Ep. 1) |
+
+## Fifth pass: naming the sharks on deals recorded without one
+
+19 deals had no shark. Subagents searched for each; every lead was then read in full from an Actions download.
+
+| Startup | Shark(s) added | Source quote |
+|---|---|---|
+| Asfoura | Abdallah Sallam, Ahmed El Sewedy, Mohamed Farouk (2.5M for 30%) | "وقدم سلام عرضا آخر مع السويدي وفاروق بقيمة 2.5 مليون جنيه مقابل 30%، ووافقت ميرام" (followict, season 1 finale) |
+| Kids Kit | Ayman Abbas (5M for 40%, paid over 3 years) | "وقبلت مريم الشبكشى عرض أيمن عباس وهو 5 مليون جنيه مقابل 40%" (youm7 6103992; dostor 4328934) |
+| Simplex | Ahmed Tarek Khalil, Mohamed Farouk, Ahmed El Sewedy (50M for 27.5%) | "عرض الثلاثة مستثمرين ... في النهاية تم الاتفاق على 50 مليون جنيه مقابل 27.5%" (followict). Enterprise (28 Oct 2024): later talks with El Sewedy were not completed. |
+| Masafa | Ayman Abbas | youm7 6495137: founders accepted 5M for 50% + 10% of profits. Founder Ahmed Mamdouh is COO of Mrkoon (same scrap-marketplace business); CairoScene "Tank Tales Ep. 3: Mrkoon": "Ayman Abbas recognised [the potential] when they presented their project on 'Shark Tank' ... he committed to joining the project". |
+| Gammbaz | Terms only: EGP 500K for 25% | ELLE Egypt: "she settled on their investment proposal of 500,000 Egyptian Pounds for a 25% stake". Her father: "three of the five sharks", not named. |
+
+Still without a named shark (15): Y Studio, Portal (followict: every shark on the panel put in EGP 2,000; the panel for that episode isn't listed), Shaghalny (Ayman Abbas is a later partner; the founder says all five sharks invested), Mobikya, Lelu, Dr. Joy, Gammbaz, Fit & Fresh, El Fares, ZINK, Dentolize, Hawy (all sharks joined; Ayman Abbas named "first among them"), Khayai, Pure Butters, Somaia Aboelezz.
