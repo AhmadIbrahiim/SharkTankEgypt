@@ -138,7 +138,7 @@
     },
     "category": "Food",
     "founders": [
-      "Hend El-Yamani"
+      "Hind El Yamany"
     ],
     "website": null,
     "ask": {
@@ -158,7 +158,8 @@
       "https://www.youm7.com/6038985",
       "https://www.youm7.com/6038888",
       "https://www.dostor.org/4277750",
-      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/",
+      "https://www.youm7.com/story/2023/1/8/%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%84%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D9%85%D9%86-Shark-Tank-%D8%A8%D9%82%D9%8A%D9%85%D8%A9/6038985"
     ]
   },
   {
@@ -174,16 +175,24 @@
       "ar": "علامة ديكور وحرف يدوية تصنع قطعاً من المرمر تمزج الفن المصري القديم بالتصميم الحديث، ومنتجاتها موجودة في المتحف المصري الكبير."
     },
     "category": "Home",
-    "founders": [],
+    "founders": [
+      "Alaa Abdel Moghny"
+    ],
     "website": null,
     "ask": {
       "amountEGP": 5000000,
+      "equityPct": 7
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
       "https://www.youm7.com/6038985",
-      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/",
+      "https://www.mobtada.com/talk-show/1252987/"
     ]
   },
   {
@@ -225,17 +234,30 @@
       "ar": "منصة وتطبيق في التكنولوجيا الزراعية يساعد صغار مربي الدواجن في الحصول على الأعلاف والأدوية البيطرية، مع خدمات مالية مدعومة بالذكاء الاصطناعي."
     },
     "category": "Agriculture",
-    "founders": [],
+    "founders": [
+      "Mohamed Hesham"
+    ],
     "website": null,
     "ask": {
       "amountEGP": 5000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6038985",
       "https://www.dostor.org/4277750",
-      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/"
+      "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/",
+      "https://www.fintechgate.net/24029",
+      "https://www.dostor.org/4277080",
+      "https://www.youm7.com/story/2023/1/8/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%AF%D8%A7%D8%AC%D9%86-%D9%84%D9%80-Shark-Tank-%D8%AD%D8%AC%D9%85-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%A7%D8%AC%D9%86-%D9%81%D9%89/6038950"
     ]
   },
   {
@@ -281,23 +303,26 @@
     },
     "category": "Beauty",
     "founders": [
-      "Hossam El-Maraghy"
+      "Hossam El Maraghy"
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
+      "amountEGP": 2500000,
       "equityPct": null
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ayman Abbas"
+      ],
       "amountEGP": 2500000,
-      "equityPct": null
+      "equityPct": 51
     },
     "sources": [
       "https://www.youm7.com/6048958",
       "https://www.elwatannews.com/news/details/6405270",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
+      "https://www.dostor.org/4283132"
     ]
   },
   {
@@ -339,7 +364,7 @@
     },
     "category": "Health",
     "founders": [
-      "Shaimaa Mohamed"
+      "Shaimaa Ahmed"
     ],
     "website": null,
     "ask": {
@@ -374,7 +399,7 @@
     },
     "category": "Home",
     "founders": [
-      "Youssef El-Rayan"
+      "Youssef El Rayan"
     ],
     "website": null,
     "ask": {
@@ -383,14 +408,18 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 900000,
+      "equityPct": 10
     },
     "sources": [
       "https://www.youm7.com/6056669",
       "https://www.youm7.com/6056721",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
+      "https://www.dostor.org/4290599",
+      "https://www.elwatannews.com/news/details/6412444"
     ]
   },
   {
@@ -407,23 +436,26 @@
     },
     "category": "Manufacturing",
     "founders": [
-      "Mohamed Abu Kalila"
+      "Mohamed Abu Kelila"
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 600000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "sharks": [
+        "Mohamed Mansour"
+      ],
+      "amountEGP": 600000,
+      "equityPct": 10
     },
     "sources": [
       "https://www.youm7.com/6056701",
       "https://www.youm7.com/6056721",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
+      "https://www.dostor.org/4290599"
     ]
   },
   {
@@ -453,7 +485,9 @@
     },
     "sources": [
       "https://www.youm7.com/6056713",
-      "https://www.elwatannews.com/news/details/6412500"
+      "https://www.elwatannews.com/news/details/6412500",
+      "https://www.dostor.org/4289741",
+      "https://www.youm7.com/story/2023/1/21/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D8%B5%D8%B1%D9%88%D9%81%D9%89-%D9%84%D9%80-Shark-Tank-%D9%8A%D8%B3%D8%A7%D8%B9%D8%AF-%D8%A7%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D9%81%D9%89-%D8%B5%D8%B1%D9%81/6056713"
     ]
   },
   {
@@ -470,7 +504,7 @@
     },
     "category": "Agriculture",
     "founders": [
-      "Hisham El-Banna"
+      "Hisham El Banna"
     ],
     "website": null,
     "ask": {
@@ -479,7 +513,9 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Mohamed Farouk"
+      ],
       "amountEGP": 5000000,
       "equityPct": 50
     },
@@ -487,7 +523,9 @@
       "https://www.youm7.com/6064143",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%A3%D8%AC%D8%B1%D9%83%D9%88%D9%84%D9%88%D8%AC%D9%8A-%D9%88%D9%81%D9%8A/",
       "https://followict.news/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA/",
-      "https://sharktank-egypt.com/en/deals/technology-"
+      "https://sharktank-egypt.com/en/deals/technology-",
+      "https://www.dostor.org/4296282",
+      "https://www.elwatannews.com/news/details/6420382"
     ]
   },
   {
@@ -503,21 +541,29 @@
       "ar": "سوق إلكتروني للتجارة عبر الإنترنت."
     },
     "category": "Retail",
-    "founders": [],
+    "founders": [
+      "Mohamed El Kholy"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2000000,
+      "equityPct": 5
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "sharks": [
+        "Ayman Abbas",
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 2000000,
+      "equityPct": 30
     },
     "sources": [
       "https://www.youm7.com/6064143",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%A3%D8%AC%D8%B1%D9%83%D9%88%D9%84%D9%88%D8%AC%D9%8A-%D9%88%D9%81%D9%8A/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%A3%D8%AC%D8%B1%D9%83%D9%88%D9%84%D9%88%D8%AC%D9%8A-%D9%88%D9%81%D9%8A/",
+      "https://www.dostor.org/4296308",
+      "https://fintechgate.net/2023/01/29/%D8%AE%D9%84%D8%A7%D9%84-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%B9%D8%A8%D8%A7%D8%B3-%D9%88%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B3%D8%AA%D8%AD%D9%88%D8%B0%D8%A7%D9%86/",
+      "https://www.elwatannews.com/news/details/6420438"
     ]
   },
   {
@@ -534,12 +580,12 @@
     },
     "category": "Tech",
     "founders": [
-      "Bimen Wagdy"
+      "Bemen Wagdy"
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2500000,
+      "equityPct": 5
     },
     "deal": {
       "made": false,
@@ -549,7 +595,9 @@
     },
     "sources": [
       "https://www.youm7.com/6064101",
-      "https://www.youm7.com/6064143"
+      "https://www.youm7.com/6064143",
+      "https://www.dostor.org/4296294",
+      "https://www.elwatannews.com/news/details/6420402"
     ]
   },
   {
@@ -591,8 +639,8 @@
     },
     "category": "Tech",
     "founders": [
-      "Mostafa Wassify",
-      "Mohamed El-Hafez"
+      "Mostafa Wasfy",
+      "Mohamed El Hafez"
     ],
     "website": null,
     "ask": {
@@ -649,16 +697,24 @@
       "ar": "فيست رياضي يُرتدى لتحسين اللياقة البدنية."
     },
     "category": "Sports",
-    "founders": [],
+    "founders": [
+      "Kamal Abu El Kheir"
+    ],
     "website": null,
     "ask": {
       "amountEGP": 1200000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6072838",
-      "https://www.youm7.com/6072840"
+      "https://www.youm7.com/6072840",
+      "https://www.dostor.org/4303013"
     ]
   },
   {
@@ -674,17 +730,28 @@
       "ar": "تطبيق يعرّف المستخدم بأماكن بيع المنتج ومقاسه وجودته."
     },
     "category": "Tech",
-    "founders": [],
+    "founders": [
+      "Youssef Samir"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 370000,
+      "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Abdallah Sallam"
+      ],
+      "amountEGP": 370000,
+      "equityPct": 15
+    },
     "sources": [
       "https://www.youm7.com/6072839",
       "https://www.youm7.com/6072840",
-      "https://sharktank-egypt.com/en/deals/technology-"
+      "https://sharktank-egypt.com/en/deals/technology-",
+      "https://www.dostor.org/4303910"
     ]
   },
   {
@@ -703,19 +770,20 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 19200000,
+      "equityPct": 47
     },
     "deal": {
       "made": true,
       "sharks": [],
-      "amountEGP": 19000000,
-      "equityPct": null
+      "amountEGP": 17600000,
+      "equityPct": 50
     },
     "sources": [
       "https://www.youm7.com/6080737",
       "https://www.elwatannews.com/news/details/6437054",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%AC%D9%88%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%D9%86%D8%B4-%D8%AA%D8%AD%D8%B5/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%AC%D9%88%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%D9%86%D8%B4-%D8%AA%D8%AD%D8%B5/",
+      "https://arabhardware.net/articles/%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83--%D8%A3%D9%83%D8%A8%D8%B1-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D9%84"
     ]
   },
   {
@@ -822,7 +890,9 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Mohamed Mansour"
+      ],
       "amountEGP": 2000000,
       "equityPct": 25
     },
@@ -830,7 +900,8 @@
       "https://www.youm7.com/6088535",
       "https://www.youm7.com/6088578",
       "https://www.elwatannews.com/news/details/6445478",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%83%D8%A7%D9%84%D9%85%D9%8A-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%83%D8%A7%D9%84%D9%85%D9%8A-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/",
+      "https://www.youm7.com/story/2023/2/18/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-Shark-Tank-%D8%B4%D9%8A%D8%A7%D9%84%D8%A9-%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D9%85%D8%B1%D9%8A%D8%AD%D8%A9-%D9%84%D9%84%D8%A3%D9%85-%D9%81%D9%89-%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D8%A9/6088578"
     ]
   },
   {
@@ -876,7 +947,9 @@
       "ar": "مشروع أثاث فني يقدم ترابيزات مقاومة للمياه."
     },
     "category": "Home",
-    "founders": [],
+    "founders": [
+      "Hany Bahaa"
+    ],
     "website": null,
     "ask": {
       "amountEGP": null,
@@ -932,17 +1005,22 @@
     "website": null,
     "ask": {
       "amountEGP": 3500000,
-      "equityPct": 45
+      "equityPct": 7.5
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
+      "sharks": [
+        "Ahmed El Sewedy",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 3500000,
       "equityPct": null
     },
     "sources": [
       "https://www.youm7.com/6096443",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/",
+      "https://www.dostor.org/4322411",
+      "https://www.elwatannews.com/news/details/6453822"
     ]
   },
   {
@@ -958,7 +1036,9 @@
       "ar": "روبوت ينظف الألواح الشمسية بشكل أسرع وأكثر أماناً."
     },
     "category": "Tech",
-    "founders": [],
+    "founders": [
+      "Mohamed Mahmoud"
+    ],
     "website": null,
     "ask": {
       "amountEGP": null,
@@ -967,7 +1047,8 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6096409",
-      "https://www.youm7.com/6096443"
+      "https://www.youm7.com/6096443",
+      "https://www.youm7.com/story/2023/2/25/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A5%D9%81%D9%8A%D9%83%D8%A7-%D9%84%D9%80Shark-Tank-%D8%B1%D9%88%D8%A8%D9%88%D8%AA-%D9%8A%D9%86%D8%B8%D9%81-%D8%A7%D9%84%D8%AE%D9%84%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9-%D8%A8%D8%B4%D9%83%D9%84/6096409"
     ]
   },
   {
@@ -985,12 +1066,12 @@
     "category": "Health",
     "founders": [
       "Mina Ashraf",
-      "Gehan Abdallah"
+      "Gihan Abdallah"
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -1003,7 +1084,8 @@
     "sources": [
       "https://www.youm7.com/6096442",
       "https://www.youm7.com/6096443",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-sporty-%D9%88cosmos-%D8%AA%D8%AD%D8%B5%D9%84/",
+      "https://www.youm7.com/story/2023/2/25/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-Shark-Tank-%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D9%89-%D8%A8%D8%B1%D9%88-%D9%86%D8%A8%D9%8A%D8%B9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9/6096443"
     ]
   },
   {
@@ -1047,13 +1129,13 @@
     },
     "category": "Services",
     "founders": [
-      "Mohamed Akmal",
+      "Akmal",
       "Shorouk Alaa"
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 5
     },
     "deal": {
       "made": false,
@@ -1063,7 +1145,8 @@
     },
     "sources": [
       "https://www.youm7.com/6103941",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%85%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%B4%D9%8A-%D8%AA/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D9%85%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%B4%D9%8A-%D8%AA/",
+      "https://followict.news/0n3o"
     ]
   },
   {
@@ -1079,15 +1162,50 @@
       "ar": "تأجير مستلزمات الأطفال المستعملة بسعر أرخص."
     },
     "category": "Services",
-    "founders": [],
+    "founders": [
+      "Mariam El Shabakshy"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
+      "amountEGP": 5000000,
+      "equityPct": 15
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
       "equityPct": null
+    },
+    "sources": [
+      "https://www.youm7.com/6103992",
+      "https://followict.news/0n3o"
+    ]
+  },
+  {
+    "id": "skoolix",
+    "season": 1,
+    "episode": 9,
+    "name": {
+      "en": "Skoolix",
+      "ar": "سكوليكس"
+    },
+    "description": {
+      "en": "School platform connecting students, parents, teachers and school administration to share learning content and track progress.",
+      "ar": "منصة مدرسية تجمع الطلاب وأولياء الأمور والمدرسين وإدارة المدرسة لمشاركة المحتوى التعليمي ومتابعة المستوى."
+    },
+    "category": "Education",
+    "founders": [
+      "Fady Osama"
+    ],
+    "website": "https://skoolix.app",
+    "ask": {
+      "amountEGP": 7000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6103992"
+      "https://www.elwatannews.com/news/details/6462258",
+      "https://www.dostor.org/4328927/"
     ]
   },
   {
@@ -1103,7 +1221,9 @@
       "ar": "مطبخ مركزي يشغّل ويدير عدة مطاعم ويزودها بالوجبات في الوقت نفسه."
     },
     "category": "Food",
-    "founders": [],
+    "founders": [
+      "Mostafa Wahdan"
+    ],
     "website": null,
     "ask": {
       "amountEGP": 10000000,
@@ -1112,7 +1232,8 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6111712",
-      "https://sharktank-egypt.com/en/deals/food-and-beverage"
+      "https://sharktank-egypt.com/en/deals/food-and-beverage",
+      "https://www.youm7.com/story/2023/3/11/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B4%D9%8A%D9%81%D8%B3-%D9%87%D8%A7%D9%88%D8%B3-%D9%84%D9%80Shark-Tank-%D9%8A%D8%B4%D8%BA%D9%84-%D9%88%D9%8A%D8%AF%D9%8A%D8%B1-%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D8%A8%D8%AA%D8%B2%D9%88%D9%8A%D8%AF%D9%87%D8%A7/6111663"
     ]
   },
   {
@@ -1128,7 +1249,9 @@
       "ar": "ماكينة لتجميع الزجاجات والعبوات الفارغة مقابل رصيد موبايل وخصومات."
     },
     "category": "Other",
-    "founders": [],
+    "founders": [
+      "Islam El Refaey"
+    ],
     "website": null,
     "ask": {
       "amountEGP": 1500000,
@@ -1137,7 +1260,75 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6111712",
-      "https://www.elwatannews.com/news/details/6471130"
+      "https://www.elwatannews.com/news/details/6471130",
+      "https://www.dostor.org/4335224"
+    ]
+  },
+  {
+    "id": "tomatiki",
+    "season": 1,
+    "episode": 10,
+    "name": {
+      "en": "Tomatiki",
+      "ar": "توماتيكي"
+    },
+    "description": {
+      "en": "Smart irrigation and greenhouse devices that cut fertilizer and energy use.",
+      "ar": "أجهزة ذكية للري والصوب الزراعية توفر في الأسمدة والطاقة."
+    },
+    "category": "Agriculture",
+    "founders": [
+      "Mohamed Barakat"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 2000000,
+      "equityPct": 5
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 2000000,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.dostor.org/4335206",
+      "https://www.youm7.com/story/2023/3/11/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D9%80Shark-Tank-%D8%A3%D8%AC%D9%87%D8%B2%D8%A9-%D8%B0%D9%83%D9%8A%D8%A9-%D9%84%D9%84%D8%B1%D9%89-%D8%AA%D9%82%D8%AA%D8%B5%D8%AF-%D9%81%D9%89-%D9%83%D9%85%D9%8A%D8%A9/6111650",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%A9-tomatiki-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
+    ]
+  },
+  {
+    "id": "portal",
+    "season": 1,
+    "episode": 10,
+    "name": {
+      "en": "Portal",
+      "ar": "بورتال"
+    },
+    "description": {
+      "en": "Low-cost tech solutions such as hologram shows and an advertising robot.",
+      "ar": "حلول تقنية منخفضة التكلفة مثل عروض الهولوجرام وروبوت للإعلانات."
+    },
+    "category": "Tech",
+    "founders": [
+      "Ahmed Mahfouz"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.elwatannews.com/news/details/6471194",
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%A9-tomatiki-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
     ]
   },
   {
@@ -1184,8 +1375,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -1198,7 +1389,8 @@
     "sources": [
       "https://www.youm7.com/6120238",
       "https://www.youm7.com/6120282",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/",
+      "https://www.youm7.com/story/2023/3/18/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D8%A7%D8%A8%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%83-%D9%84%D9%80Shark-Tank-%D9%86%D8%B5%D9%85%D9%85-%D9%88%D9%86%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9/6120238"
     ]
   },
   {
@@ -1214,7 +1406,9 @@
       "ar": "منصة لتوصيل الطلاب بأمان وبتكلفة اقتصادية مناسبة."
     },
     "category": "Services",
-    "founders": [],
+    "founders": [
+      "Hosny Ahmed"
+    ],
     "website": null,
     "ask": {
       "amountEGP": null,
@@ -1222,7 +1416,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6120282"
+      "https://www.youm7.com/6120282",
+      "https://www.youm7.com/story/2023/3/18/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B3%D9%83%D9%88%D9%84%D8%B2-%D9%84%D9%80Shark-Tank-%D9%85%D9%86%D8%B5%D8%A9-%D9%84%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%A8%D8%A3%D9%85%D8%A7%D9%86-%D9%88%D8%AA%D9%83%D9%84%D9%81%D8%A9/6120257"
     ]
   },
   {
@@ -1254,7 +1449,8 @@
     },
     "sources": [
       "https://www.youm7.com/6120280",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/",
+      "https://www.youm7.com/story/2023/3/19/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A9-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D8%B5%D9%81%D9%88%D8%B1%D8%A9-%D9%84%D9%80Shark-Tank-%D8%AA%D8%A3%D9%84%D9%8A%D9%81-%D9%88%D8%A8%D9%8A%D8%B9-%D9%83%D8%AA%D8%A8-%D9%88%D9%82%D8%B5%D8%B5-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84/6120280"
     ]
   },
   {
@@ -1306,8 +1502,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2500000,
+      "equityPct": 20
     },
     "deal": {
       "made": true,
@@ -1368,7 +1564,12 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youm7.com/6360416",
       "https://www.youm7.com/6360475"
@@ -1422,7 +1623,14 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 4000000,
+      "equityPct": 51
+    },
     "sources": [
       "https://www.youm7.com/6360475"
     ]
@@ -1457,6 +1665,30 @@
     },
     "sources": [
       "https://www.youm7.com/6368392"
+    ]
+  },
+  {
+    "id": "fool-tank",
+    "season": 2,
+    "episode": 3,
+    "name": {
+      "en": "Fool Tank",
+      "ar": "فول تانك"
+    },
+    "description": {
+      "en": "Egyptian breakfast (foul) concept offering high-quality traditional breakfast.",
+      "ar": "مشروع يقدم إفطارًا مصريًا بأعلى جودة."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6368393"
     ]
   },
   {
@@ -1951,6 +2183,54 @@
     ]
   },
   {
+    "id": "loriental",
+    "season": 2,
+    "episode": 10,
+    "name": {
+      "en": "LOriental",
+      "ar": "لورينتال"
+    },
+    "description": {
+      "en": "Premium catering company serving weddings and events.",
+      "ar": "شركة تقدم خدمات الأكل الفاخر (كاترينج) في الأفراح والمناسبات."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://gate.ahram.org.eg/News/4662165.aspx"
+    ]
+  },
+  {
+    "id": "zee-shoes",
+    "season": 2,
+    "episode": 10,
+    "name": {
+      "en": "ZEE",
+      "ar": "زي"
+    },
+    "description": {
+      "en": "Egyptian-made footwear brand.",
+      "ar": "علامة أحذية مصنوعة في مصر."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://gate.ahram.org.eg/News/4662165.aspx"
+    ]
+  },
+  {
     "id": "interact",
     "season": 2,
     "episode": 11,
@@ -1995,6 +2275,31 @@
     },
     "deal": null,
     "sources": [
+      "https://www.elwatannews.com/news/details/7055299"
+    ]
+  },
+  {
+    "id": "fatties",
+    "season": 2,
+    "episode": 11,
+    "name": {
+      "en": "Fatties",
+      "ar": "فاتيس"
+    },
+    "description": {
+      "en": "Doughnut brand that sold 100,000 doughnuts in 2023.",
+      "ar": "مشروع دونتس باع 100 ألف قطعة دونتس عام 2023."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6436042",
       "https://www.elwatannews.com/news/details/7055299"
     ]
   },
@@ -2155,6 +2460,33 @@
     ]
   },
   {
+    "id": "era-care",
+    "season": 2,
+    "episode": 15,
+    "name": {
+      "en": "Era Care",
+      "ar": "إيرا كير"
+    },
+    "description": {
+      "en": "Skincare/cosmetics brand with therapeutic effect, started with EGP 200; product sold at EGP 186.",
+      "ar": "علامة مستحضرات تجميل لها أثر علاجي على البشرة، بدأت برأس مال 200 جنيه."
+    },
+    "category": "Beauty",
+    "founders": [
+      "Erada Fattah"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6465758",
+      "https://sharktankarabi.com/778/"
+    ]
+  },
+  {
     "id": "piccup",
     "season": 2,
     "episode": 16,
@@ -2178,6 +2510,32 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6473181"
+    ]
+  },
+  {
+    "id": "abs-shipping",
+    "season": 2,
+    "episode": 16,
+    "name": {
+      "en": "ABS",
+      "ar": "إيه بي إس"
+    },
+    "description": {
+      "en": "Shipping/courier company that handled 12 million shipments in 2023, targeting 17 million in 2024.",
+      "ar": "شركة شحن وصلت إلى 12 مليون شحنة في 2023 وتستهدف 17 مليون شحنة في 2024."
+    },
+    "category": "Services",
+    "founders": [
+      "Mohamed El Demerdash"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6473188"
     ]
   },
   {
@@ -2208,7 +2566,8 @@
       "equityPct": null
     },
     "sources": [
-      "https://www.youm7.com/6480371"
+      "https://www.youm7.com/6480371",
+      "https://www.youm7.com/6480327"
     ]
   },
   {
@@ -2266,6 +2625,107 @@
     ]
   },
   {
+    "id": "the-maker",
+    "season": 2,
+    "episode": 18,
+    "name": {
+      "en": "The Maker",
+      "ar": "ذا ميكر"
+    },
+    "description": {
+      "en": "Football talent academy founded by Ahmed Hossam \"Mido\" offering free training, education, nutrition and culture to talents from all governorates.",
+      "ar": "مشروع متكامل لأحمد حسام ميدو يحتضن المواهب الكروية من كل محافظات مصر ويقدم لهم تدريبًا وتعليمًا وتغذية بدون مقابل."
+    },
+    "category": "Sports",
+    "founders": [
+      "Ahmed Hossam Mido"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 25000000,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6486350",
+      "https://www.youm7.com/6487646",
+      "https://www.cairo24.com/1960323",
+      "https://sharktankarabi.com/85/"
+    ]
+  },
+  {
+    "id": "gelato-on-the-wheel",
+    "season": 2,
+    "episode": 18,
+    "name": {
+      "en": "Gelato on the Wheel",
+      "ar": "جيلاتو أون ذا ويل"
+    },
+    "description": {
+      "en": "Ice-cream cart brand (since 2015) making natural ice cream, present in North Coast, Ain Sokhna, Soma Bay and El Gouna.",
+      "ar": "عربة آيس كريم من مواد طبيعية بدأت عام 2015، تتواجد في الساحل الشمالي والعين السخنة وسوما باي والجونة."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6486350"
+    ]
+  },
+  {
+    "id": "brazilian-picole",
+    "season": 2,
+    "episode": 18,
+    "name": {
+      "en": "Brazilian Picolé",
+      "ar": "برازيليان بيكوليه"
+    },
+    "description": {
+      "en": "Brazilian-style ice-pop (picolé) brand.",
+      "ar": "علامة مصاصات آيس كريم على الطريقة البرازيلية."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6486350"
+    ]
+  },
+  {
+    "id": "becom",
+    "season": 2,
+    "episode": 18,
+    "name": {
+      "en": "BECOM",
+      "ar": "بيكوم"
+    },
+    "description": {
+      "en": "Egyptian company founded 2023 recycling agricultural waste into organic fertilizer or feed via an app.",
+      "ar": "شركة مصرية بدأت في 2023 لإعادة تدوير المخلفات الزراعية وتحويلها إلى سماد عضوي أو أعلاف عبر تطبيق."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://gate.ahram.org.eg/News/4707405.aspx"
+    ]
+  },
+  {
     "id": "masafa",
     "season": 2,
     "episode": 19,
@@ -2284,9 +2744,66 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6495137"
+    ]
+  },
+  {
+    "id": "naseej",
+    "season": 2,
+    "episode": 19,
+    "name": {
+      "en": "Naseej",
+      "ar": "نسيج"
+    },
+    "description": {
+      "en": "Family-owned company designing, specifying and distributing textiles, ~95% made in Egypt.",
+      "ar": "شركة عائلية متخصصة في تصميم وتوصيف وتوزيع المنسوجات، تصنع نحو 95% من منتجاتها في مصر."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Mohamed Mardini"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6495135"
+    ]
+  },
+  {
+    "id": "the-box",
+    "season": 2,
+    "episode": 19,
+    "name": {
+      "en": "The Box",
+      "ar": "البوكس"
+    },
+    "description": {
+      "en": "Family entertainment box with activities for parents and kids.",
+      "ar": "بوكس ترفيهي يقدم أنشطة للعائلة كلها من الأهل والأبناء."
+    },
+    "category": "Entertainment",
+    "founders": [
+      "Nehal Kamal"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6495136"
     ]
   },
   {
@@ -2409,14 +2926,14 @@
     "website": null,
     "ask": {
       "amountEGP": 80000000,
-      "equityPct": null
+      "equityPct": 30
     },
     "deal": {
       "made": true,
       "sharks": [
         "Ahmed Tarek Khalil"
       ],
-      "amountEGP": null,
+      "amountEGP": 80000000,
       "equityPct": null
     },
     "sources": [
@@ -2446,9 +2963,11 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 12500000,
+      "equityPct": 27
     },
     "sources": [
       "https://www.youm7.com/6744133",
@@ -2470,7 +2989,7 @@
     },
     "category": "Beauty",
     "founders": [
-      "Alya Osman"
+      "Alia Osman"
     ],
     "website": null,
     "ask": {
@@ -2487,7 +3006,8 @@
       "equityPct": 50
     },
     "sources": [
-      "https://arabfounders.net/en/shark-tank-egypt-investments-2024/"
+      "https://arabfounders.net/en/shark-tank-egypt-investments-2024/",
+      "https://www.soutalomma.com/Article/1134004"
     ]
   },
   {
@@ -2506,13 +3026,14 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2000000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
       "https://www.dostor.org/4843743",
-      "https://www.elwatannews.com/news/details/7632333"
+      "https://www.elwatannews.com/news/details/7632333",
+      "https://www.soutalomma.com/Article/1135497"
     ]
   },
   {
@@ -2556,13 +3077,14 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 10000000,
+      "equityPct": 25
     },
     "deal": null,
     "sources": [
       "https://www.dostor.org/4843743",
-      "https://www.elwatannews.com/news/details/7632333"
+      "https://www.elwatannews.com/news/details/7632333",
+      "https://www.youm7.com/6752357"
     ]
   },
   {
@@ -2584,9 +3106,16 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 15000000,
+      "equityPct": 35
+    },
     "sources": [
-      "https://www.youm7.com/6759051"
+      "https://www.youm7.com/6759051",
+      "https://vcfoconsulting.com/shark-tank-season-3-ep-3/",
+      "https://www.youm7.com/6760492"
     ]
   },
   {
@@ -2605,12 +3134,14 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6759051"
+      "https://www.youm7.com/6759051",
+      "https://vcfoconsulting.com/shark-tank-season-3-ep-3/",
+      "https://www.youm7.com/6760563"
     ]
   },
   {
@@ -2629,12 +3160,18 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 50
+    },
     "sources": [
-      "https://www.youm7.com/6759051"
+      "https://www.youm7.com/6759051",
+      "https://vcfoconsulting.com/shark-tank-season-3-ep-3/"
     ]
   },
   {
@@ -2678,13 +3215,14 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 500000,
+      "equityPct": 5
     },
     "deal": null,
     "sources": [
       "https://almalnews.com/1888207/",
-      "https://sharktank-egypt.com/en/deals/fashion"
+      "https://sharktank-egypt.com/en/deals/fashion",
+      "https://www.youm7.com/6768636"
     ]
   },
   {
@@ -2728,12 +3266,13 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 15
     },
     "deal": null,
     "sources": [
-      "https://almalnews.com/1888207/"
+      "https://almalnews.com/1888207/",
+      "https://www.youm7.com/6768627"
     ]
   },
   {
@@ -2786,6 +3325,30 @@
     ]
   },
   {
+    "id": "halite-egypt",
+    "season": 3,
+    "episode": 5,
+    "name": {
+      "en": "Halite Egypt",
+      "ar": "هاليت إيجيبت"
+    },
+    "description": {
+      "en": "Rock salt producer from Siwa.",
+      "ar": "منتج للملح الصخري من سيوة."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 75000000,
+      "equityPct": 25
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6776511"
+    ]
+  },
+  {
     "id": "nuit-fragrances",
     "season": 3,
     "episode": 6,
@@ -2801,12 +3364,13 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6783395"
+      "https://www.youm7.com/6783395",
+      "https://www.youm7.com/6784624"
     ]
   },
   {
@@ -2831,6 +3395,30 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6783395"
+    ]
+  },
+  {
+    "id": "target-egypt",
+    "season": 3,
+    "episode": 6,
+    "name": {
+      "en": "Target Egypt",
+      "ar": "تارجت إيجيبت"
+    },
+    "description": {
+      "en": "Startup that pitched on Shark Tank Egypt; details not yet documented.",
+      "ar": "شركة ناشئة ظهرت في شارك تانك مصر، ولم تُوثَّق تفاصيلها بعد."
+    },
+    "category": "Other",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 8500000,
+      "equityPct": 30
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6784654"
     ]
   },
   {
@@ -2980,17 +3568,20 @@
       "ar": "شركة تكنولوجيا زراعية تقدم حلول زراعة ذكية متكاملة للمراقبة والتنبيه والتحكم والتحليل."
     },
     "category": "Agriculture",
-    "founders": [],
+    "founders": [
+      "Hazem El Tawab"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 15000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
       "https://www.youm7.com/6799417",
       "https://www.wamda.com/2025/01/egypt-renile-secures-450000-investment",
-      "https://entarabi.com/en/2025/01/renile-egypt-secures-eight-figure-funding-in-first-investment-round-led-by-keheilan/"
+      "https://entarabi.com/en/2025/01/renile-egypt-secures-eight-figure-funding-in-first-investment-round-led-by-keheilan/",
+      "https://www.youm7.com/6800561"
     ]
   },
   {
@@ -3007,8 +3598,8 @@
     },
     "category": "Fashion",
     "founders": [
-      "Khaled Borai",
-      "Mina Mandalon"
+      "Khaled Baraey",
+      "Mina Mandaloun"
     ],
     "website": null,
     "ask": {
@@ -3047,6 +3638,58 @@
     "sources": [
       "https://www.youm7.com/6808749",
       "https://www.youm7.com/6807489"
+    ]
+  },
+  {
+    "id": "tab",
+    "season": 3,
+    "episode": 10,
+    "name": {
+      "en": "tab",
+      "ar": "تاب"
+    },
+    "description": {
+      "en": "Digital platform that helps people network and connect effectively.",
+      "ar": "منصة رقمية تساعد الناس على التواصل بشكل فعال."
+    },
+    "category": "Tech",
+    "founders": [
+      "Marwan"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 15000000,
+      "equityPct": 30
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6816756"
+    ]
+  },
+  {
+    "id": "euphoria-denims",
+    "season": 3,
+    "episode": 10,
+    "name": {
+      "en": "Euphoria Denims",
+      "ar": "يوفوريا دنيمز"
+    },
+    "description": {
+      "en": "Egyptian brand of 100% cotton jeans offered in 11 sizes.",
+      "ar": "براند مصري لبيع بنطلونات جينز قطن 100% بـ11 مقاسًا."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Nada Amin"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 20
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6816735"
     ]
   },
   {
@@ -3110,11 +3753,13 @@
       "ar": "منصة تسهّل إجراءات الاستيراد والتصدير في 7 خطوات."
     },
     "category": "Services",
-    "founders": [],
+    "founders": [
+      "Moamen Ragab"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 7000000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
@@ -3190,8 +3835,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 100000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
@@ -3265,6 +3910,33 @@
       "ar": "شركة متخصصة في حلول التبريد."
     },
     "category": "Services",
+    "founders": [
+      "Karim Taha"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 4000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6839509",
+      "https://www.youm7.com/6839729"
+    ]
+  },
+  {
+    "id": "lakanto",
+    "season": 3,
+    "episode": 13,
+    "name": {
+      "en": "LAKANTO",
+      "ar": "لاكانتو"
+    },
+    "description": {
+      "en": "Naturally sweetened confectionery products.",
+      "ar": "منتجات حلويات محلاة بشكل طبيعي."
+    },
+    "category": "Food",
     "founders": [],
     "website": null,
     "ask": {
@@ -3273,7 +3945,7 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6839509"
+      "https://www.youm7.com/6839770"
     ]
   },
   {
@@ -3329,6 +4001,30 @@
     ]
   },
   {
+    "id": "zuri",
+    "season": 3,
+    "episode": 14,
+    "name": {
+      "en": "ZURI",
+      "ar": "زوري"
+    },
+    "description": {
+      "en": "Designs and manufactures practical, comfortable bags in Egyptian workshops.",
+      "ar": "تصميم وتصنيع شنط عملية ومريحة في ورش مصرية."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "http://www.soutalomma.com/Article/1150031"
+    ]
+  },
+  {
     "id": "srv",
     "season": 3,
     "episode": 15,
@@ -3368,11 +4064,14 @@
       "ar": "مطعم وجبات سريعة راقية يقدم أطباقاً أمريكية."
     },
     "category": "Food",
-    "founders": [],
+    "founders": [
+      "Mohamed Arafa",
+      "Ibrahim Arafa"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 14000000,
+      "equityPct": 30
     },
     "deal": null,
     "sources": [
@@ -3393,15 +4092,18 @@
       "ar": "تطبيق تسوق مباشر يجمع بين التواصل الاجتماعي والتجارة الإلكترونية ويعمل في مصر والسعودية."
     },
     "category": "Tech",
-    "founders": [],
+    "founders": [
+      "Mostafa Hanafy"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 5
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6864691"
+      "https://www.youm7.com/6864691",
+      "https://www.youm7.com/6865009"
     ]
   },
   {
@@ -3532,6 +4234,57 @@
     ]
   },
   {
+    "id": "zonta",
+    "season": 3,
+    "episode": 18,
+    "name": {
+      "en": "Zonta",
+      "ar": "زونتا"
+    },
+    "description": {
+      "en": "Locally made (80%+) sneaker brand with Arabic-identity designs.",
+      "ar": "براند أحذية رياضية مصنعة محليًا بنسبة تتجاوز 80% بتصميمات تحمل الهوية العربية."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Ahmed El Hefny"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 5000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/6881971",
+      "https://www.youm7.com/6881760"
+    ]
+  },
+  {
+    "id": "three-diner",
+    "season": 3,
+    "episode": 18,
+    "name": {
+      "en": "3 DINER",
+      "ar": "ثري داينر"
+    },
+    "description": {
+      "en": "Restaurant brand by Chef Studios serving American comfort food, known for its Philly cheesesteak sandwich.",
+      "ar": "علامة مطعم تابعة لشركة Chef Studios تقدم أكلات أمريكية وتشتهر بساندويتش فيلي تشيز ستيك."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.mobtada.com/culture/1481470"
+    ]
+  },
+  {
     "id": "upfuse",
     "season": 3,
     "episode": 19,
@@ -3650,7 +4403,7 @@
     },
     "category": "Fintech",
     "founders": [
-      "Mohab Abu Eita"
+      "Mohab Abou Eita"
     ],
     "website": null,
     "ask": {
@@ -3666,7 +4419,7 @@
   {
     "id": "breathe",
     "season": 3,
-    "episode": null,
+    "episode": 20,
     "name": {
       "en": "Breathe",
       "ar": "بريذ"
@@ -3676,22 +4429,26 @@
       "ar": "علامة ملابس للمحجبات تقدم غطاء شعر \"بندانة\" من البامبو."
     },
     "category": "Fashion",
-    "founders": [],
+    "founders": [
+      "Mohamed Bakry"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 20000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
       "https://www.dostor.org/4979257",
-      "https://sharktank-egypt.com/en/deals/fashion"
+      "https://sharktank-egypt.com/en/deals/fashion",
+      "https://www.youm7.com/6898813",
+      "https://www.youm7.com/6897404"
     ]
   },
   {
     "id": "basq",
     "season": 3,
-    "episode": null,
+    "episode": 20,
     "name": {
       "en": "BASQ",
       "ar": "باسك"
@@ -3701,15 +4458,19 @@
       "ar": "علامة متخصصة في صناعة الحلويات."
     },
     "category": "Food",
-    "founders": [],
+    "founders": [
+      "Mariam Taha",
+      "Mohamed Hamama"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
-      "https://www.dostor.org/4979257"
+      "https://www.dostor.org/4979257",
+      "https://www.youm7.com/6898849"
     ]
   },
   {
@@ -3728,14 +4489,16 @@
     "founders": [
       "Omar El-Gabaly"
     ],
-    "website": null,
+    "website": "https://waymoure.com/",
     "ask": {
       "amountEGP": 8000000,
       "equityPct": 15
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7149952"
+      "https://www.youm7.com/7149952",
+      "https://waymoure.com/",
+      "https://www.youtube.com/watch?v=zMNdCKlbWt8"
     ]
   },
   {
@@ -3790,6 +4553,32 @@
     ]
   },
   {
+    "id": "helpoo",
+    "season": 4,
+    "episode": 2,
+    "name": {
+      "en": "Helpoo",
+      "ar": "هيلبو"
+    },
+    "description": {
+      "en": "Licensed roadside-assistance app and 17000 hotline offering towing, tyre changes and battery charging with a tracked rescue fleet.",
+      "ar": "تطبيق وخط ساخن (17000) لخدمات المساعدة على الطريق من ونش وتغيير إطارات وشحن بطاريات بأسطول مجهز بكاميرات وأجهزة تتبع."
+    },
+    "category": "Services",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": 40000000,
+      "equityPct": 25
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/story/2025/10/15/%D8%B4%D8%B1%D9%83%D8%A9-%D9%87%D9%8A%D9%84%D8%A8%D9%88-%D8%AA%D8%B7%D9%84%D8%A8-40-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1/7158596",
+      "https://misrconnect.com/en/news/celebrities/helpoo-launches-shark-tank-egypt-season-4-with-a-powerful-roadside-assistance-pitch",
+      "https://www.youtube.com/watch?v=Bkxd84k8fzo"
+    ]
+  },
+  {
     "id": "mystery-bag",
     "season": 4,
     "episode": 3,
@@ -3840,6 +4629,35 @@
     ]
   },
   {
+    "id": "carvizita",
+    "season": 4,
+    "episode": 3,
+    "name": {
+      "en": "CarVizita",
+      "ar": "كار فيزيتا"
+    },
+    "description": {
+      "en": "Mobile car-maintenance service booked through an app.",
+      "ar": "خدمة صيانة سيارات متنقلة تُطلب عبر تطبيق."
+    },
+    "category": "Services",
+    "founders": [
+      "Gamal Badr"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7237946",
+      "https://www.youm7.com/story/2025/10/22/3-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%AA%D8%B4%D8%A7%D8%B1%D9%83-%D8%A7%D9%84%D9%8A%D9%84%D8%A9-%D9%81%D9%89-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1-%D8%B9%D9%84%D9%89/7166493",
+      "https://www.dostor.org/5273439",
+      "https://sharktankarabi.com/3154/"
+    ]
+  },
+  {
     "id": "tayar",
     "season": 4,
     "episode": 4,
@@ -3862,7 +4680,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7177610"
+      "https://www.youm7.com/7177610",
+      "https://www.youm7.com/story/2025/10/29/%D9%85%D8%A4%D8%B3%D8%B3-%D8%B7%D9%8A%D8%A7%D8%B1-%D9%8A%D8%B7%D9%84%D8%A8-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7-%D8%A8%D9%8015-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87/7177610"
     ]
   },
   {
@@ -3886,7 +4705,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7177646"
+      "https://www.youm7.com/7177646",
+      "https://www.aldawlanews.com/1304272"
     ]
   },
   {
@@ -3935,7 +4755,8 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/7186643",
-      "https://www.youm7.com/7185089"
+      "https://www.youm7.com/7185089",
+      "https://www.aldawlanews.com/1306967"
     ]
   },
   {
@@ -3965,7 +4786,9 @@
     },
     "sources": [
       "https://www.youm7.com/7186669",
-      "https://www.youm7.com/7185089"
+      "https://www.youm7.com/7185089",
+      "https://www.youm7.com/story/2025/11/5/%D8%B4%D8%A7%D8%A8%D8%A7%D9%86-%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%D8%A7%D9%86-%D9%8A%D8%AD%D8%B5%D9%84%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%87%D9%85%D8%A7-%C2%AB%D8%A8%D9%8A%D9%88%D8%B1-%D8%A8%D8%AA%D8%B1%D8%B2%C2%BB-%D9%81%D9%8A-%C2%AB%D8%B4%D8%A7%D8%B1%D9%83/7186669",
+      "https://www.aldawlanews.com/1306987"
     ]
   },
   {
@@ -3984,12 +4807,13 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
+      "amountEGP": 3000000,
       "equityPct": null
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7185089"
+      "https://www.youm7.com/7185089",
+      "https://www.aldawlanews.com/1307017"
     ]
   },
   {
@@ -4015,7 +4839,9 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7195538"
+      "https://www.youm7.com/7195538",
+      "https://www.youm7.com/story/2025/11/12/%D8%B5%D8%A7%D8%AD%D8%A8-Mavericks-%D9%84%D9%80-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%81%D9%86%D9%8A-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%A5%D8%AD%D9%8A%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%AE%D9%84%D9%81%D8%A7%D8%AA/7195538",
+      "https://www.aldawlanews.com/1309671"
     ]
   },
   {
@@ -4039,7 +4865,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7195516"
+      "https://www.youm7.com/7195516",
+      "https://www.aldawlanews.com/1309673"
     ]
   },
   {
@@ -4066,7 +4893,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7195500"
+      "https://www.youm7.com/7195500",
+      "https://www.aldawlanews.com/1309676"
     ]
   },
   {
@@ -4091,7 +4919,8 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/7203897",
-      "https://www.youm7.com/7202688"
+      "https://www.youm7.com/7202688",
+      "https://www.youm7.com/story/2025/11/19/%D8%B4%D8%A8%D8%A7%D8%A8-%D9%8A%D9%84%D8%A7-%D8%AD%D8%A7%D8%AC%D8%B2-%D9%8A%D8%B7%D9%84%D8%A8%D9%88%D9%86-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83/7203897"
     ]
   },
   {
@@ -4111,12 +4940,13 @@
     "website": null,
     "ask": {
       "amountEGP": 5000000,
-      "equityPct": 12.5
+      "equityPct": null
     },
     "deal": null,
     "sources": [
       "https://www.youm7.com/7203942",
-      "https://www.youm7.com/7202688"
+      "https://www.youm7.com/7202688",
+      "https://www.youm7.com/story/2025/11/19/%D9%85%D8%A4%D8%B3%D8%B3%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%81%D9%8A%D9%86%D9%88-%D9%8A%D8%B7%D9%84%D8%A8%D9%88%D9%86-5-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83/7203942"
     ]
   },
   {
@@ -4192,7 +5022,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7212970"
+      "https://www.youm7.com/7212970",
+      "https://www.youm7.com/story/2025/11/26/%D8%AA%D8%B4%D9%88%D8%B1%D9%8A%D8%AA%D9%88-%D8%AA%D8%B7%D9%84%D8%A8-3-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%84%D9%84%D8%AA%D9%88%D8%B3%D8%B9-%D9%81%D9%8A/7212967"
     ]
   },
   {
@@ -4270,7 +5101,8 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7228288"
+      "https://www.youm7.com/7228288",
+      "https://www.youm7.com/story/2025/12/10/3-%D9%82%D8%B5%D8%B5-%D9%86%D8%AC%D8%A7%D8%AD-%D8%AA%D8%AA%D9%86%D8%A7%D9%81%D8%B3-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D9%81%D9%8A-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1-%D8%B9%D9%84%D9%89/7228288"
     ]
   },
   {
@@ -4314,12 +5146,14 @@
     "website": null,
     "ask": {
       "amountEGP": 15000000,
-      "equityPct": null
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
       "https://www.youm7.com/7246022",
-      "https://www.dostor.org/5353826"
+      "https://www.dostor.org/5353826",
+      "https://www.youm7.com/story/2025/12/24/%D9%85%D8%A4%D8%B3%D8%B3%D9%88-Nutrifits-%D9%8A%D8%B3%D8%AA%D8%B9%D8%B1%D8%B6-%D8%AE%D8%B7%D8%AA%D9%87-%D9%84%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D8%B5%D9%86%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%A3%D8%BA%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%88%D9%8A%D8%B7%D9%84%D8%A8-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D9%8B/7246022",
+      "https://sharktankarabi.com/3556/"
     ]
   },
   {
@@ -4346,7 +5180,37 @@
     },
     "deal": null,
     "sources": [
-      "https://www.dostor.org/5353826"
+      "https://www.dostor.org/5353826",
+      "https://www.youm7.com/story/2025/12/24/%D8%B4%D9%82%D9%8A%D9%82%D8%AA%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D9%86-2-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%87%D9%85/7246003"
+    ]
+  },
+  {
+    "id": "re-blocks",
+    "season": 4,
+    "episode": 12,
+    "name": {
+      "en": "Re-Blocks",
+      "ar": "ري بلوكس"
+    },
+    "description": {
+      "en": "LEGO-style building blocks made entirely from recycled plastic, aimed at reusable exhibition booths.",
+      "ar": "مكعبات بناء تشبه الليجو مصنوعة بالكامل من البلاستيك المعاد تدويره لاستخدامها في أجنحة المعارض."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Ahmed El-Bably",
+      "Dina Soliman"
+    ],
+    "website": null,
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 10
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/story/2025/12/24/%D8%B4%D8%B1%D9%83%D8%A9-Re-Blocks-%D8%AA%D8%AE%D8%B7%D9%81-%D8%A3%D9%86%D8%B8%D8%A7%D8%B1-%D9%84%D8%AC%D9%86%D8%A9-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A8%D8%A3%D8%AD%D8%AC%D8%A7%D8%B1-%D9%84%D9%8A%D8%AC%D9%88/7246018",
+      "https://www.aldawlanews.com/1324210",
+      "https://sharktankarabi.com/3552/"
     ]
   },
   {
@@ -4425,29 +5289,374 @@
     ]
   },
   {
-    "id": "carvizita",
+    "id": "the-nines",
     "season": 4,
     "episode": null,
     "name": {
-      "en": "CarVizita",
-      "ar": "كار فيزيتا"
+      "en": "The Nines",
+      "ar": "ذا ناينز"
     },
     "description": {
-      "en": "Mobile car-maintenance service booked through an app.",
-      "ar": "خدمة صيانة سيارات متنقلة تُطلب عبر تطبيق."
+      "en": "Designer luggage covers that make suitcases easy to spot at baggage claim.",
+      "ar": "أغطية مصممة لشنط السفر تميز الحقيبة وتعبر عن شخصية صاحبها."
     },
-    "category": "Services",
-    "founders": [
-      "Gamal Badr"
-    ],
+    "category": "Fashion",
+    "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": 3000000,
-      "equityPct": 10
+      "amountEGP": null,
+      "equityPct": null
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/7237946"
+      "https://www.youtube.com/watch?v=HtNe0hgjDqw",
+      "https://www.youtube.com/watch?v=VLEX9zG0aZY"
+    ]
+  },
+  {
+    "id": "gorilla-fits",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Gorilla Fits",
+      "ar": "جوريلا فيتس"
+    },
+    "description": {
+      "en": "Egyptian sportswear brand aiming to compete with global labels.",
+      "ar": "براند مصري للملابس الرياضية يهدف لمنافسة العلامات العالمية."
+    },
+    "category": "Sports",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Bishoy Azmy"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=KrGjoVJzQuI",
+      "https://www.youtube.com/watch?v=TLuMEzkj18A",
+      "https://www.youtube.com/watch?v=1ToJvdjwrEY"
+    ]
+  },
+  {
+    "id": "wrap-and-roll",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Wrap and Roll",
+      "ar": "راب آند رول"
+    },
+    "description": {
+      "en": "Season 4 startup that chose Bishoy Azmy as its investor after negotiating with the sharks.",
+      "ar": "مشروع من الموسم الرابع اختار الاستثمار مع بيشوي عزمي بعد تفاوض مع الشاركس."
+    },
+    "category": "Other",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Bishoy Azmy"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=KrGjoVJzQuI",
+      "https://www.youtube.com/watch?v=Bi9gzV655fQ"
+    ]
+  },
+  {
+    "id": "lamarckii",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Lamarckii",
+      "ar": "لاماركي"
+    },
+    "description": {
+      "en": "Smart-apiary project using technology to tackle bee decline, including home beehives.",
+      "ar": "أول مناحل ذكية في مصر تستخدم التكنولوجيا لمواجهة اختفاء النحل، مع خلايا نحل منزلية."
+    },
+    "category": "Agriculture",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=kQM0eLYZ5Tw",
+      "https://www.youtube.com/watch?v=IXuwYQNsF8M",
+      "https://sharktankarabi.com/4008/"
+    ]
+  },
+  {
+    "id": "callista",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Callista",
+      "ar": "كاليستا"
+    },
+    "description": {
+      "en": "Casual, comfortable everyday clothing brand for women.",
+      "ar": "براند ملابس كاجوال مريحة للسيدات للاستخدام اليومي."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=kQM0eLYZ5Tw",
+      "https://www.youtube.com/watch?v=SszSyqiQJNc"
+    ]
+  },
+  {
+    "id": "didos-snacks",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "DIDO's Snacks",
+      "ar": "ديدوز سناكس"
+    },
+    "description": {
+      "en": "Healthy fruit-sugar biscuit snacks with natural ingredients; reported EGP 30M sales in 12 months.",
+      "ar": "سناكس وبسكويت صحي بسكر الفواكه ومكونات طبيعية، وحقق مبيعات 30 مليون جنيه في 12 شهرًا."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": "https://www.facebook.com/dido.s.snacks/",
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=e1huH9yeMyo",
+      "https://sharktankarabi.com/3698/",
+      "https://www.facebook.com/dido.s.snacks/"
+    ]
+  },
+  {
+    "id": "frupops",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Frupops",
+      "ar": "فروبوبس"
+    },
+    "description": {
+      "en": "Frozen fruit snacks made from Egyptian produce with no added sugar or artificial colours, founded in 2023.",
+      "ar": "سناكس فواكه مجمدة من المحاصيل المصرية بدون سكر أو ألوان صناعية، تأسست عام 2023."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=0fJlGQuDWG8",
+      "https://sharktankarabi.com/3862/"
+    ]
+  },
+  {
+    "id": "sphinx-safety",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Sphinx",
+      "ar": "سفنكس"
+    },
+    "description": {
+      "en": "First 100% Egyptian-made safety-shoe brand; several sharks competed with offers.",
+      "ar": "أول براند مصري لأحذية السيفتي مصنعة محليًا 100%، وتنافس الشاركس على الاستثمار فيه."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=rH7DTmyTczc",
+      "https://www.tiktok.com/@cbcegypt/video/7595302389981121813",
+      "https://sharktankarabi.com/3738/"
+    ]
+  },
+  {
+    "id": "stunning",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Stunning",
+      "ar": "ستانينج"
+    },
+    "description": {
+      "en": "Arabic AI platform that turns a spoken idea into a website, app or dashboard without code.",
+      "ar": "منصة عربية بالذكاء الاصطناعي تحول فكرتك إلى موقع أو تطبيق أو لوحة تحكم بدون كود."
+    },
+    "category": "Tech",
+    "founders": [
+      "Mohamed Ghaith"
+    ],
+    "website": "https://stunning.so",
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=i-tONMJppcw",
+      "https://sharktankarabi.com/3670/",
+      "https://nabdapp.com/t/166159146"
+    ]
+  },
+  {
+    "id": "jouzoor",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Jouzoor",
+      "ar": "جذور"
+    },
+    "description": {
+      "en": "Brand turning palm waste into sustainable bags and decor, employing 120 Egyptian women.",
+      "ar": "براند يحول مخلفات النخيل إلى شنط وديكور مستدام ويوفر عملًا لـ120 سيدة مصرية."
+    },
+    "category": "Home",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=eAk2iuJ57mA",
+      "https://www.youtube.com/watch?v=TiZ1geUw1BU"
+    ]
+  },
+  {
+    "id": "havana-socks",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "HAVANA",
+      "ar": "هافانا"
+    },
+    "description": {
+      "en": "Bamboo socks brand for diabetics and athletes; grew from EGP 15K capital to EGP 50M sales.",
+      "ar": "براند شرابات من البامبو لمرضى السكر والرياضيين، بدأ برأس مال 15 ألف جنيه ووصل لمبيعات 50 مليون جنيه."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=MiciW6RGQzs",
+      "https://sharktankarabi.com/3910/",
+      "https://sharktankarabi.com/3956/"
+    ]
+  },
+  {
+    "id": "kak-squad",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "KAK Squad",
+      "ar": "كاك سكواد"
+    },
+    "description": {
+      "en": "Fried-chicken and burger fast-food brand with its own integrated factory.",
+      "ar": "مطعم وجبات سريعة للفراخ المقلية والبرجر بمصنع متكامل خاص به."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": "https://kaksquad.com/",
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=vRfXxAJI7jU",
+      "https://www.youtube.com/watch?v=jSjaFvn3Xow",
+      "https://misrconnect.com/en/news/celebrities/kak-squad-restaurant-egyptian-success-story-spotlighted-on-shark-tank-egypt"
+    ]
+  },
+  {
+    "id": "boka-home",
+    "season": 4,
+    "episode": null,
+    "name": {
+      "en": "Boka Home",
+      "ar": "بوكا هوم"
+    },
+    "description": {
+      "en": "Fashion project featured alongside Callista in Season 4.",
+      "ar": "مشروع أزياء ظهر مع Callista في الموسم الرابع."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.youtube.com/watch?v=GTX8Ces3VTs"
     ]
   },
   {
@@ -4475,7 +5684,8 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/7571670",
-      "https://www.youm7.com/7571713"
+      "https://www.youm7.com/7571713",
+      "https://www.youm7.com/story/2026/10/7/%D9%85%D8%A4%D8%B3%D8%B3%D8%A7-%C2%AB%D8%A7%D9%81%D8%AA%D8%AD-%D8%AA%D9%88%D8%A8%D9%83%C2%BB-%D9%8A%D8%B7%D9%84%D8%A8%D8%A7%D9%86-%D9%85%D9%84%D9%8A%D9%88%D9%86%D9%8A-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%82%D8%A7%D8%A8%D9%84-15-%D9%81%D9%8A-%C2%AB%D8%B4%D8%A7%D8%B1%D9%83/7571670"
     ]
   },
   {
@@ -4520,13 +5730,14 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 36000000,
+      "equityPct": 20
     },
     "deal": null,
     "sources": [
       "https://www.youm7.com/7571708",
-      "https://www.mobtada.com/culture/1657155"
+      "https://www.mobtada.com/culture/1657155",
+      "http://www.soutalomma.com/Article/1253742/%D9%85%D8%A4%D8%B3%D8%B3-%C2%AB%D8%A3%D9%88%D9%84%D9%85%D8%A8%D9%8A%D9%83-%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D8%B3%C2%BB-%D9%8A%D8%B7%D9%84%D8%A8-36-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%82%D8%A7%D8%A8%D9%84-20-%D9%85%D9%86"
     ]
   }
 ]
