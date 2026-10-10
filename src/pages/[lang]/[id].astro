@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import { ID, ROOT, founderRef, sharkRef, seasonRef } from '../../schema';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
@@ -59,6 +60,8 @@ const about = (x as any).about as { founded?: number; city?: { en: string; ar: s
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': ID.startup(x.id),
+  url: `${ROOT}${lang}/${x.id}/`,
   name: x.name[lang],
   alternateName: otherName,
   description: x.description[lang],
@@ -67,9 +70,12 @@ const jsonld = {
   ...(about?.founded && { foundingDate: String(about.founded) }),
   ...(about?.city && { address: { '@type': 'PostalAddress', addressLocality: about.city.en, addressCountry: 'EG' } }),
   ...(image && { image: image.startsWith('http') ? image : new URL(image.slice(1), site).href }),
-  ...(x.founders?.length && { founder: team.map((f) => ({ '@type': 'Person', name: f.name[lang], alternateName: f.name[lang === 'ar' ? 'en' : 'ar'] })) }),
-  subjectOf: { '@type': 'TVEpisode', partOfSeries: { '@type': 'TVSeries', name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر' },
-    partOfSeason: { '@type': 'TVSeason', seasonNumber: x.season }, ...(x.episode != null && { episodeNumber: x.episode }) },
+  ...(x.founders?.length && { founder: (x.founders ?? []).map(founderRef) }),
+  // The sharks who invested on the show.
+  ...(x.deal?.made && x.deal.sharks?.length && { funder: x.deal.sharks.map(sharkRef) }),
+  ...(x.category && { knowsAbout: x.category }),
+  subjectOf: x.episode != null ? { '@type': 'TVEpisode', '@id': ID.episode(x.season, x.episode), episodeNumber: x.episode, partOfSeason: seasonRef(x.season), partOfSeries: { '@id': ID.series } }
+    : seasonRef(x.season),
 };
 const card: Card = { kind: 'startup', title: x.name[lang], alt: otherName, sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
   eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '), shot: image, play: !screenshot(x.id) && !!x.video,

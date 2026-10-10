@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import { ID, photo } from '../../../schema';
 import Avatar from '../../../components/Avatar.astro';
 import Links from '../../../components/Links.astro';
 import MiniCard from '../../../components/MiniCard.astro';
@@ -26,8 +27,9 @@ const { wikipedia, wikipediaAr, ...links } = (p.links ?? {}) as Record<string, s
 const other = [wikipedia && { name: 'Wikipedia', url: wikipedia }, wikipediaAr && { name: 'ويكيبيديا', url: wikipediaAr }, ...(p.companies ?? []).filter((c) => c.url).map((c) => ({ name: c.name, url: c.url! }))].filter(Boolean);
 const { website, ...social } = links;
 const jsonld = {
-  '@context': 'https://schema.org', '@type': 'Person', name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'],
-  ...(p.title && { jobTitle: p.title[lang] }), ...(p.bio && { description: p.bio[lang] }), ...(p.photo && { image: p.photo.url.startsWith('/') ? new URL(`${base}${p.photo.url}`, Astro.site).href : p.photo.url }),
+  '@context': 'https://schema.org', '@type': 'Person', '@id': ID.shark(p.id), url: new URL(`${base}/${lang}/sharks/${p.id}/`, Astro.site).href, name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'],
+  ...(p.title && { jobTitle: p.title[lang] }), ...(p.bio && { description: p.bio[lang] }), ...(p.photo && { image: photo(p.photo) }),
+  ...(sectors.length && { knowsAbout: sectors.map(([c]) => c) }),
   sameAs: Object.values(p.links ?? {}),
 };
 ---

@@ -1,5 +1,6 @@
 ---
-import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, type Lang, type Card } from '../config';
+import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, type Lang, type Card } from '../config';
+import { siteNodes, ID } from '../schema';
 interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card }
 const { lang, title, description, altPath, image, jsonld, card } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -14,6 +15,41 @@ const desc = description ?? s.tagline;
 // Every page gets its own share image at /og/<path>.jpg, rendered from `og` after the build (scripts/og.mjs).
 const og = card ?? { kind: 'page', title: title ?? s.title, sub: description ?? s.tagline, photo: image };
 const ogPath = `/og/${Astro.url.pathname.slice(base.length).replace(/^\/|\/$/g, '') || 'index'}.jpg`;
+// One @graph per page: site + publisher + show, this WebPage, its breadcrumb trail and the page's own entity.
+const segs = Astro.url.pathname.slice(base.length).split('/').filter(Boolean);
+const label = (k: string, prev?: string, prev2?: string): string | null => {
+  if (!prev) return ({ sharks: s.navSharks, founders: s.navFounders, faq: s.navFaq } as Record<string, string>)[k] ?? startups.find((x) => x.id === k)?.name[lang] ?? null;
+  if (prev === 'season') return seasonLabel(Number(k), lang);
+  if (prev === 'episode') return lang === 'ar' ? `الحلقة ${num(Number(k), lang)}` : `Episode ${k}`;
+  if (prev === 'category' || prev === 'sector') { const c = categories.find((c) => catSlug(c) === k); return c ? category(c, lang) : null; }
+  if (prev === 'sharks' && !prev2) return sharks.find((p) => p.id === k)?.name[lang] ?? null;
+  if (prev === 'founders' && !prev2) return founders.find((p) => p.id === k)?.name[lang] ?? null;
+  return null; // "season", "category", "vs", "top"…: path levels with no page of their own
+};
+const crumbs = [{ name: s.home, url: abs(`/${lang}/`) }];
+const startup = segs.length === 2 ? startups.find((x) => x.id === segs[1]) : undefined;
+// Startup pages sit under their season, as in the visible breadcrumb.
+if (startup) crumbs.push({ name: seasonLabel(startup.season, lang), url: abs(`/${lang}/season/${startup.season}/`) });
+segs.slice(1).forEach((k, i, a) => {
+  const name = label(k, a[i - 1], a[i - 2]) ?? (i === a.length - 1 ? title : null);
+  if (name) crumbs.push({ name, url: abs(`/${segs.slice(0, i + 2).join('/')}/`) });
+});
+const { '@context': _ctx, ...entity } = (jsonld ?? {}) as Record<string, any>;
+const pageTypes = ['FAQPage', 'CollectionPage', 'ProfilePage', 'WebPage'];
+const isPage = pageTypes.includes(entity['@type']);
+const isPerson = entity['@type'] === 'Person';
+const page = {
+  '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : segs.length <= 1 ? 'CollectionPage' : 'WebPage',
+  '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site },
+  primaryImageOfPage: { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 },
+  ...(crumbs.length > 1 && { breadcrumb: { '@id': `${url}#breadcrumb` } }),
+  ...(isPage ? (({ '@type': _t, ...rest }) => rest)(entity) : jsonld ? { mainEntity: { '@id': entity['@id'] ?? `${url}#main` } } : {}),
+};
+const graph = { '@context': 'https://schema.org', '@graph': [
+  ...siteNodes(lang), page,
+  ...(crumbs.length > 1 ? [{ '@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`, itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url })) }] : []),
+  ...(jsonld && !isPage ? [{ '@id': `${url}#main`, ...entity, mainEntityOfPage: { '@id': `${url}#webpage` } }] : []),
+] };
 const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'startups';
 ---
 <!doctype html>
@@ -46,7 +82,7 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={abs(ogPath)} />
     <script type="application/json" id="og-card" set:html={JSON.stringify(og)} />
-    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+    <script type="application/ld+json" set:html={JSON.stringify(graph)} />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     <link rel="icon" href={`${base}/favicon-32.png`} sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
