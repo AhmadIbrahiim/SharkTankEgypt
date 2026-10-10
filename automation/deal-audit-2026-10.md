@@ -105,3 +105,19 @@ Read in full and still open: Bikado (Dostor 4310500 covers the episode but gives
 | Gammbaz | Terms only: EGP 500K for 25% | ELLE Egypt: "she settled on their investment proposal of 500,000 Egyptian Pounds for a 25% stake". Her father: "three of the five sharks", not named. |
 
 Still without a named shark (15): Y Studio, Portal (followict: every shark on the panel put in EGP 2,000; the panel for that episode isn't listed), Shaghalny (Ayman Abbas is a later partner; the founder says all five sharks invested), Mobikya, Lelu, Dr. Joy, Gammbaz, Fit & Fresh, El Fares, ZINK, Dentolize, Hawy (all sharks joined; Ayman Abbas named "first among them"), Khayai, Pure Butters, Somaia Aboelezz.
+
+## Sixth pass: Season 1 checked against FollowICT's season list
+
+FollowICT's "بعد انتهاء الموسم الأول.. قائمة الشركات التي حصلت على استثمارات" (25 Mar 2023) lists all 21 Season 1 investments with the ask and the accepted offer; our 21 match it. Corrections:
+
+| Startup | Change |
+|---|---|
+| Mawared | Ask EGP 2.5M for 50% → **2.5M for 15%** (the 51% was Ayman Abbas's offer, not the ask) |
+| Mandoobak Smart | Sharks Mohamed Farouk → **Mohamed Farouk + Ahmed El Sewedy** ("وافقا في النهاية على عرض محمد فاروق وأحمد السويدي") |
+| Relaxant | Ask 600K for 25% → **500K for 10%** (600K/25% was her counter-offer, which Sallam accepted) |
+| Sporty Pro | Deal 45% → **40%** (30% El Sewedy + 10% Farouk) |
+| Tomatiki | Ask equity filled: 5% |
+| Portal | Ask equity filled: 10% |
+| Asfoura | Ask filled: 2.5M for 20% |
+
+A partial name list supplied by the maintainer (93 companies, unverified, no terms) was matched against the directory: all but four names are already here. HealthTag, Naydin Care, Ami's Bakery and Zaher are being checked before anything is added.
