@@ -2317,8 +2317,8 @@
       "ar": "كيدز كيت"
     },
     "description": {
-      "en": "Kids Kit (Kidzkit) is billed as the first online marketplace in Egypt and the MENA region for renting baby and children's gear, letting families rent used items for less instead of buying them new. It also helps mothers earn a side income by renting out the gear their own children have outgrown. Founder Mariam El Shabakshy charmed the sharks from her opening and asked for EGP 5 million for 15%, leaving with a deal.",
-      "ar": "كيدز كيت أول سوق إلكتروني في مصر والشرق الأوسط وشمال أفريقيا لتأجير مستلزمات الأطفال المستعملة بتكلفة أقل بدلاً من شرائها جديدة. كما تتيح للأمهات تحقيق دخل إضافي من تأجير المستلزمات التي لم يعد أطفالهن بحاجة إليها لعائلات أخرى. نالت مؤسستها مريم الشبكشي إعجاب المستثمرين منذ بداية حديثها، وطلبت 5 ملايين جنيه مقابل 15%، وخرجت بصفقة."
+      "en": "Kids Kit (Kidzkit) is billed as the first online marketplace in Egypt and the MENA region for renting baby and children's gear, letting families rent used items for less instead of buying them new. It also helps mothers earn a side income by renting out the gear their own children have outgrown. Founder Mariam El Shabakshy charmed the sharks from her opening and asked for EGP 5 million for 15%, leaving with a deal. She accepted Ayman Abbas's offer of EGP 5 million for 40%, paid over three years.",
+      "ar": "كيدز كيت أول سوق إلكتروني في مصر والشرق الأوسط وشمال أفريقيا لتأجير مستلزمات الأطفال المستعملة بتكلفة أقل بدلاً من شرائها جديدة. كما تتيح للأمهات تحقيق دخل إضافي من تأجير المستلزمات التي لم يعد أطفالهن بحاجة إليها لعائلات أخرى. نالت مؤسستها مريم الشبكشي إعجاب المستثمرين منذ بداية حديثها، وطلبت 5 ملايين جنيه مقابل 15%، وخرجت بصفقة. وقبلت عرض أيمن عباس بخمسة ملايين جنيه مقابل 40%، تُدفع على ثلاث سنوات."
     },
     "category": "Services",
     "founders": [
@@ -2331,16 +2331,19 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 40
     },
     "sources": [
       "https://www.youm7.com/6103992",
       "https://followict.news/0n3o",
       "https://www.youtube.com/watch?v=OT5cXe3DcR4",
       "https://www.youtube.com/watch?v=uVC6j2rL8WE",
-      "https://english.ahram.org.eg/News/472917.aspx"
+      "https://english.ahram.org.eg/News/472917.aspx",
+      "https://www.dostor.org/4328934"
     ],
     "video": "OT5cXe3DcR4",
     "links": {
@@ -3011,8 +3014,8 @@
       "ar": "عصفورة"
     },
     "description": {
-      "en": "Asfoura is the first Egyptian publisher dedicated to children's books and stories written in Egyptian colloquial Arabic, founded in Cairo in 2021 to help children build their spoken Arabic in a familiar, unintimidating way. Many of its titles revolve around Egyptian food, such as Waraa Shagar, about two friends cooking molokhia, and Kahk El-Eid, about a boy baking kahk with his grandmother, and it pairs the books with hands-on cooking workshops. It sold about 3,200 books in its latest year. The sharks competed fiercely to win over founder Maram Khamis, and she closed a deal for EGP 2.5 million in exchange for 30%.",
-      "ar": "عصفورة أول دار نشر مصرية متخصصة في كتب وقصص الأطفال بالعامية المصرية، تأسست في القاهرة عام 2021 لمساعدة الأطفال على تنمية لغتهم المحكية بأسلوب مألوف وبسيط. تدور كثير من إصداراتها حول الأكل المصري، مثل \"ورق شجر\" عن صديقين يطبخان الملوخية، و\"كحك العيد\" عن طفل يخبز الكحك مع جدته، وتصاحبها ورش طبخ عملية للأطفال. وباعت الدار نحو 3200 كتاب في عامها الأخير. تنافس المستثمرون بشدة لإقناع مؤسستها مرام خميس بعروضهم، وانتهى العرض بصفقة قيمتها مليونان ونصف المليون جنيه مقابل 30%."
+      "en": "Asfoura is the first Egyptian publisher dedicated to children's books and stories written in Egyptian colloquial Arabic, founded in Cairo in 2021 to help children build their spoken Arabic in a familiar, unintimidating way. Many of its titles revolve around Egyptian food, such as Waraa Shagar, about two friends cooking molokhia, and Kahk El-Eid, about a boy baking kahk with his grandmother, and it pairs the books with hands-on cooking workshops. It sold about 3,200 books in its latest year. The sharks competed fiercely to win over founder Maram Khamis, and she accepted a joint offer of EGP 2.5 million for 30% from Abdallah Sallam, Ahmed El Sewedy and Mohamed Farouk.",
+      "ar": "عصفورة أول دار نشر مصرية متخصصة في كتب وقصص الأطفال بالعامية المصرية، تأسست في القاهرة عام 2021 لمساعدة الأطفال على تنمية لغتهم المحكية بأسلوب مألوف وبسيط. تدور كثير من إصداراتها حول الأكل المصري، مثل \"ورق شجر\" عن صديقين يطبخان الملوخية، و\"كحك العيد\" عن طفل يخبز الكحك مع جدته، وتصاحبها ورش طبخ عملية للأطفال. وباعت الدار نحو 3200 كتاب في عامها الأخير. تنافس المستثمرون بشدة لإقناع مؤسستها مرام خميس بعروضهم، وقبلت عرضاً مشتركاً من عبد الله سلام وأحمد السويدي ومحمد فاروق بمليونين ونصف المليون جنيه مقابل 30%."
     },
     "category": "Education",
     "founders": [
@@ -3025,9 +3028,13 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Abdallah Sallam",
+        "Ahmed El Sewedy",
+        "Mohamed Farouk"
+      ],
       "amountEGP": 2500000,
-      "equityPct": null
+      "equityPct": 30
     },
     "sources": [
       "https://www.youm7.com/6120280",
@@ -3773,8 +3780,8 @@
       "ar": "سيمبلكس"
     },
     "description": {
-      "en": "Simplex designs and manufactures computer-controlled (CNC) machines such as routers, plasma cutters, fiber lasers and milling machines. It began as Ahmed Shaaban's graduation project at Minya University and now serves more than 4,500 customers in over 30 countries across Africa, Europe and the Middle East. In 2025 it raised $13 million led by Saudi Arabia's National Industrial Development Centre, and in July 2026 it opened a 40,000 m² second factory in 10th of Ramadan City, lifting capacity to 1,500 machines a year. On Shark Tank, Shaaban asked for EGP 50 million for 6%, then the largest ask the show had seen.",
-      "ar": "تصمّم سيمبلكس وتصنّع ماكينات تعمل بالتحكم الرقمي بالكمبيوتر (CNC)، منها ماكينات الراوتر والبلازما والليزر الفايبر والتفريز. بدأت الشركة مشروعَ تخرج لمؤسسها أحمد شعبان في جامعة المنيا، وتخدم اليوم أكثر من 4500 عميل في أكثر من 30 دولة في أفريقيا وأوروبا والشرق الأوسط. جمعت 13 مليون دولار في 2025 بقيادة المركز الوطني للتنمية الصناعية السعودي، وافتتحت في يوليو 2026 مصنعها الثاني بمساحة 40 ألف متر مربع في العاشر من رمضان، لترتفع طاقتها إلى 1500 ماكينة سنوياً. وفي شارك تانك طلب شعبان 50 مليون جنيه مقابل 6%، وكان أكبر مبلغ يُطلب في البرنامج حينها."
+      "en": "Simplex designs and manufactures computer-controlled (CNC) machines such as routers, plasma cutters, fiber lasers and milling machines. It began as Ahmed Shaaban's graduation project at Minya University and now serves more than 4,500 customers in over 30 countries across Africa, Europe and the Middle East. In 2025 it raised $13 million led by Saudi Arabia's National Industrial Development Centre, and in July 2026 it opened a 40,000 m² second factory in 10th of Ramadan City, lifting capacity to 1,500 machines a year. On Shark Tank, Shaaban asked for EGP 50 million for 6%, then the largest ask the show had seen. Ahmed Tarek, Mohamed Farouk and Ahmed El Sewedy made a joint offer, and the two sides agreed on EGP 50 million for 27.5%. Shaaban later told Enterprise that talks with El Sewedy after the show were not completed because they disagreed on the size of the stake.",
+      "ar": "تصمّم سيمبلكس وتصنّع ماكينات تعمل بالتحكم الرقمي بالكمبيوتر (CNC)، منها ماكينات الراوتر والبلازما والليزر الفايبر والتفريز. بدأت الشركة مشروعَ تخرج لمؤسسها أحمد شعبان في جامعة المنيا، وتخدم اليوم أكثر من 4500 عميل في أكثر من 30 دولة في أفريقيا وأوروبا والشرق الأوسط. جمعت 13 مليون دولار في 2025 بقيادة المركز الوطني للتنمية الصناعية السعودي، وافتتحت في يوليو 2026 مصنعها الثاني بمساحة 40 ألف متر مربع في العاشر من رمضان، لترتفع طاقتها إلى 1500 ماكينة سنوياً. وفي شارك تانك طلب شعبان 50 مليون جنيه مقابل 6%، وكان أكبر مبلغ يُطلب في البرنامج حينها. وقدّم أحمد طارق ومحمد فاروق وأحمد السويدي عرضاً مشتركاً، واتفق الطرفان على 50 مليون جنيه مقابل 27.5%. وقال شعبان لاحقاً لموقع Enterprise إن المفاوضات مع السويدي بعد البرنامج لم تكتمل بسبب الخلاف على حجم الحصة."
     },
     "category": "Manufacturing",
     "founders": [
@@ -3787,7 +3794,11 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Mohamed Farouk",
+        "Ahmed El Sewedy"
+      ],
       "amountEGP": 50000000,
       "equityPct": 27.5
     },
@@ -3800,7 +3811,9 @@
       "https://www.wamda.com/index.php/en/2026/07/simplex-inaugurates-second-factory-50-million-investment",
       "https://enterpriseam.com/egypt/2026/08/03/simplex-raises-new-funding-round-to-up-cnc-annual-production-capacity-to-3-5k-units/",
       "https://www.dabafinance.com/en/news/simplex-egypt-cnc-manufacturing-expansion",
-      "https://egyptinnovate.com/en/news/an-egyptian-industrial-success-story-simplex-advances-to-the-africas-business-heroes-grand-finale"
+      "https://egyptinnovate.com/en/news/an-egyptian-industrial-success-story-simplex-advances-to-the-africas-business-heroes-grand-finale",
+      "https://followict.news/تعرف-على-simplex-التي-حصدت-عرضا-بقيمة-50-مليو/",
+      "https://enterpriseam.com/egypt/2024/10/28/local-investor-snaps-up-minority-stake-in-simplex/"
     ],
     "video": "5V8xd4-2t84",
     "links": {
@@ -4539,14 +4552,16 @@
     "deal": {
       "made": true,
       "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 500000,
+      "equityPct": 25
     },
     "sources": [
       "https://www.youm7.com/6429004",
       "https://entarabi.com/en/2024/01/the-success-story-of-gammbaz-company-in-an-exclusive-interview-with-enta-arabi/",
       "https://www.youtube.com/watch?v=3Y1-4yBEMBo",
-      "https://entarabi.com/en/2024/01/the-success-story-of-gammbaz-company-in-an-exclusive-interview-with-enta-arabi/"
+      "https://entarabi.com/en/2024/01/the-success-story-of-gammbaz-company-in-an-exclusive-interview-with-enta-arabi/",
+      "https://www.elle.eg/the-tale-of-a-candle-maker/",
+      "https://solihullobserver.co.uk/news/solihull-teenager-smells-success-with-shark-tank-investment/"
     ],
     "video": "3Y1-4yBEMBo",
     "links": {
@@ -5932,8 +5947,8 @@
       "ar": "مسافة"
     },
     "description": {
-      "en": "Masafa is a Cairo-based online platform, founded in 2022, that acts as a broker for scrap and surplus building materials. Businesses list leftover stock and scrap through the app and other buyers find the materials they need, turning waste into tradeable inventory. CB Insights lists Ahmed Mamdouh as founder and COO, and compares it with recycling marketplaces such as Bekia.",
-      "ar": "مسافة منصة إلكترونية من القاهرة تأسست عام 2022، تعمل وسيطاً في بيع الخردة وفوائض مواد البناء. تعرض الشركات مخزونها الفائض والخردة عبر التطبيق، ويجد المشترون المواد التي يحتاجونها، فتتحول المخلفات إلى بضاعة قابلة للتداول. ويذكر موقع CB Insights أن أحمد ممدوح هو مؤسسها ومديرها التنفيذي للعمليات."
+      "en": "Masafa is a Cairo-based online platform, founded in 2022, that acts as a broker for scrap and surplus building materials. Businesses list leftover stock and scrap through the app and other buyers find the materials they need, turning waste into tradeable inventory. CB Insights lists Ahmed Mamdouh as founder and COO, and compares it with recycling marketplaces such as Bekia. On Shark Tank the founders accepted EGP 5 million for 50% plus 10% of profits. Ahmed Mamdouh is COO of Mrkoon, the scrap marketplace StartupScene profiled as a Shark Tank alumnus backed by Ayman Abbas.",
+      "ar": "مسافة منصة إلكترونية من القاهرة تأسست عام 2022، تعمل وسيطاً في بيع الخردة وفوائض مواد البناء. تعرض الشركات مخزونها الفائض والخردة عبر التطبيق، ويجد المشترون المواد التي يحتاجونها، فتتحول المخلفات إلى بضاعة قابلة للتداول. ويذكر موقع CB Insights أن أحمد ممدوح هو مؤسسها ومديرها التنفيذي للعمليات. وفي شارك تانك قبل المؤسسون 5 ملايين جنيه مقابل 50% و10% من الأرباح. وأحمد ممدوح هو مدير العمليات في Mrkoon، منصة الخردة التي قدّمها موقع StartupScene كإحدى شركات شارك تانك المدعومة من أيمن عباس."
     },
     "category": "Retail",
     "founders": [
@@ -5946,13 +5961,16 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ayman Abbas"
+      ],
       "amountEGP": 5000000,
       "equityPct": 50
     },
     "sources": [
       "https://www.youm7.com/6495137",
-      "https://www.cbinsights.com/company/masafa"
+      "https://www.cbinsights.com/company/masafa",
+      "https://cairoscene.com/Business/StartupScene-Madinet-Masr-Present-Tank-Tales-Episode-3-Mrkoon"
     ],
     "links": {
       "linkedin": "https://eg.linkedin.com/company/masafa2030",
