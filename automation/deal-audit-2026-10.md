@@ -57,3 +57,25 @@ Research agents checked all 142 startups with an unknown outcome. Each result be
   - Portal: EGP 10,000. Its tiny ask was real.
 - **No deal:** Akoub, Evica (took the golden ticket instead), StepInside, Chef Me and Creative Art.
 - **Asks filled in:** about 60 startups. Only missing figures were added; no recorded figure was overwritten.
+
+## Third pass: article reading for unknown outcomes
+
+Actions downloaded 357 articles about the 117 startups whose outcome was unknown (`automation/sources/`). Six subagents then read only those excerpts and quoted the sentence behind each change. An outcome changed only when an article states it.
+
+| Startup | Change | Source |
+|---|---|---|
+| CIPPO | Deal: Yassin Mansour, EGP 30M for 49% | youm7 6800514 |
+| Hoods | Deal: Ahmed Tarek Khalil + Mona Ataya, EGP 5M for 15% (3.75M equity + 1.25M loan) | cbinsights (citing Daily News Egypt) |
+| Zonta | Deal: Mohamed Farouk, Abdallah Sallam + guest shark Nour Swid, EGP 5M for 15% | cairoscene. Nour Swid added to the Season 3 line-up as a guest. |
+| Dr. Joy | Deal: EGP 4M for 60% (drops to 51%), sharks not named | youm7 6385166 |
+| Gammbaz | Deal made, terms not reported | entarabi interview |
+| Can Bank | No deal: sharks bought machines personally, no investment | dostor 4335224 |
+| I Ape | No deal: "ولم يقدم المستثمرون أي عروض" | followict |
+| Amwal | No deal: "ولم يحصلا على دعم" | youm7 6064105 |
+| Cut X | No deal; ask EGP 6M for 25% | followict |
+| Skoolix | No deal | dostor 4328927 |
+| Tutoro, Fool Tank | Ask filled (4M/10%, 5M/25%) | youm7 |
+
+Still unknown, because the article names offers but not the accepted one: Nutrifits (Farouk 15M/30% vs Ahmed Tarek 40M/40%), Re-Blocks (three Farouk offers), Stunning (5M/25% from all sharks or one), Tern Icecream (offer at the ask, acceptance not stated), Bar & Jar (article cut off after Mansour's 1.7M/30% offer), Tayar (valuation "an obstacle", no explicit outcome).
+
+Totals after pass 3: 71 deals, 29 no-deal, 115 unknown, 145 asks known.

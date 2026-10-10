@@ -500,10 +500,15 @@
     ],
     "website": null,
     "ask": {
+      "amountEGP": 6000000,
+      "equityPct": 25
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
       "https://www.youm7.com/6048990",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
@@ -514,8 +519,8 @@
       "instagram": "https://www.instagram.com/cutx_eg/"
     },
     "pitch": {
-      "en": "Founders Ahmed Ashraf and Ali Abdallah brought Cut X to the second episode of Shark Tank Egypt's first season. They presented their Egyptian line of protective and comfort products and their plan to register the products globally. Public sources do not show how much they asked for or whether they closed a deal.",
-      "ar": "قدّم المؤسسان أحمد أشرف وعلي عبد الله مشروع كات إكس في الحلقة الثانية من الموسم الأول لبرنامج شارك تانك مصر. وعرضا خط منتجات الحماية والراحة المصري الخاص بهما، وخطتهما لتسجيل المنتجات عالميًا. ولا توضح المصادر العامة قيمة الاستثمار المطلوب أو ما إذا كانت قد أُبرمت صفقة."
+      "en": "Founders Ahmed Ashraf and Ali Abdallah brought Cut X to the second episode of Shark Tank Egypt's first season. They presented their Egyptian line of protective and comfort products and their plan to register the products globally. They asked for EGP 6 million for 25% and left without a deal.",
+      "ar": "قدّم المؤسسان أحمد أشرف وعلي عبد الله مشروع كات إكس في الحلقة الثانية من الموسم الأول لبرنامج شارك تانك مصر. وعرضا خط منتجات الحماية والراحة المصري الخاص بهما، وخطتهما لتسجيل المنتجات عالميًا. وطلبا 6 ملايين جنيه مقابل 25% من الشركة، وغادرا دون صفقة."
     }
   },
   {
@@ -1221,14 +1226,20 @@
       "amountEGP": 10000000,
       "equityPct": 5
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6064105",
       "https://www.youm7.com/6064143",
       "https://www.youtube.com/watch?v=oz8-LkpoWcA",
       "https://www.youtube.com/watch?v=Tgdn8ylkd7M",
       "https://datacommons.dealroom.co/companies/amwal_1",
-      "https://www.cbinsights.com/company/amwal-group"
+      "https://www.cbinsights.com/company/amwal-group",
+      "https://www.youm7.com/story/2023/1/28/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A3%D9%85%D9%88%D8%A7%D9%84-%D9%84%D9%80-Shark-Tank-%D9%86%D8%B3%D9%87%D9%84-%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%89-%D8%B9%D9%84%D9%89/6064105"
     ],
     "video": "oz8-LkpoWcA",
     "pitch": {
@@ -1319,12 +1330,13 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 4000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6072840"
+      "https://www.youm7.com/6072840",
+      "https://www.youm7.com/story/2023/2/4/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-Shark-Tank-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%83-%D8%B3%D9%85%D8%A7%D8%B1%D8%AA-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%8A%D9%88%D9%81%D8%B1-%D9%88%D9%82%D8%AA%D8%A7/6072840"
     ]
   },
   {
@@ -2372,7 +2384,12 @@
       "amountEGP": 7000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.elwatannews.com/news/details/6462258",
       "https://www.dostor.org/4328927/",
@@ -2530,7 +2547,12 @@
       "amountEGP": 1500000,
       "equityPct": 5
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6111712",
       "https://www.elwatannews.com/news/details/6471130",
@@ -2782,7 +2804,12 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6120282",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-labtronic-%D9%88%D8%B9%D8%B5%D9%81%D9%88/"
@@ -3507,8 +3534,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 25
     },
     "deal": null,
     "sources": [
@@ -3860,13 +3887,19 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 4000000,
+      "equityPct": 60
+    },
     "sources": [
       "https://www.youm7.com/6385166",
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
       "https://www.youtube.com/watch?v=T-vKEMB29qY",
       "https://www.youtube.com/watch?v=Tf2sIRBltb8",
-      "https://kidzapp.com/eg/kids-activities/cairo/baby-toddler/drjoy-healthy-sweets-121484"
+      "https://kidzapp.com/eg/kids-activities/cairo/baby-toddler/drjoy-healthy-sweets-121484",
+      "https://www.youm7.com/story/2023/11/22/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AE%D8%A7%D9%85%D8%B3-%D8%AD%D9%84%D9%82%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-2-%D9%84%D9%80-Shark-Tank-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B3%D9%8A%D9%85%D8%A8%D9%84%D9%83%D8%B3/6385166"
     ],
     "video": "T-vKEMB29qY",
     "links": {
@@ -4494,11 +4527,17 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6429004",
       "https://entarabi.com/en/2024/01/the-success-story-of-gammbaz-company-in-an-exclusive-interview-with-enta-arabi/",
-      "https://www.youtube.com/watch?v=3Y1-4yBEMBo"
+      "https://www.youtube.com/watch?v=3Y1-4yBEMBo",
+      "https://entarabi.com/en/2024/01/the-success-story-of-gammbaz-company-in-an-exclusive-interview-with-enta-arabi/"
     ],
     "video": "3Y1-4yBEMBo",
     "links": {
@@ -7653,14 +7692,22 @@
       "amountEGP": 4000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Yassin Mansour"
+      ],
+      "amountEGP": 30000000,
+      "equityPct": 49
+    },
     "sources": [
       "https://www.youm7.com/6800514",
       "https://www.youm7.com/6799417",
       "https://www.youtube.com/watch?v=s3E0BtAjtRo",
       "https://www.zoominfo.com/c/cippo/557644546",
       "https://www.founditgulf.com/job/school-integration-teacher-german-french-speaker-cippo-egypt-61049775",
-      "https://wuzzuf.net/jobs/careers/CIPPO-Egypt-56027"
+      "https://wuzzuf.net/jobs/careers/CIPPO-Egypt-56027",
+      "https://www.youm7.com/story/2024/12/4/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-CIPPO-%D9%86%D9%82%D8%AF%D9%85-%D8%AC%D9%84%D8%B3%D8%A7%D8%AA-%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9-%D9%86%D9%81%D8%B3%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D8%B7%D9%81%D8%A7%D9%84-%D8%A8%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84/6800514"
     ],
     "video": "s3E0BtAjtRo",
     "links": {
@@ -9233,7 +9280,15 @@
       "amountEGP": 5000000,
       "equityPct": 5
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Mona Ataya"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 15
+    },
     "sources": [
       "https://www.youm7.com/6864691",
       "https://www.youm7.com/6865009",
@@ -9658,7 +9713,16 @@
       "amountEGP": 5000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk",
+        "Abdallah Sallam",
+        "Nour Swid"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 15
+    },
     "sources": [
       "https://www.youm7.com/6881971",
       "https://www.youm7.com/6881760",
