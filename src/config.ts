@@ -20,7 +20,7 @@ export const giscus = {
 };
 
 // Google Search Console → HTML tag verification → paste the content="…" value here.
-export const googleVerification = '';
+export const googleVerification = 'oxBn-T41uCZ5ddqGiXpFfS6q6LtcRe5YL0VtShRcXX8';
 
 export const suggestUrl = 'https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml';
 
