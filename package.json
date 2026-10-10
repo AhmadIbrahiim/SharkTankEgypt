@@ -1,5 +1,23 @@
 {
   "name": "shark-tank-egypt-directory",
+  "description": "Bilingual (Arabic/English) directory of every startup, shark, founder and deal from Shark Tank Egypt",
+  "homepage": "https://ahmadibrahiim.github.io/SharkTankEgypt/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmadIbrahiim/SharkTankEgypt.git"
+  },
+  "keywords": [
+    "shark-tank",
+    "shark-tank-egypt",
+    "egypt",
+    "startups",
+    "investors",
+    "directory",
+    "arabic",
+    "bilingual",
+    "astro",
+    "github-pages"
+  ],
   "type": "module",
   "private": true,
   "scripts": {

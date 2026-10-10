@@ -1,59 +1,59 @@
-# 🦈 Shark Tank Egypt Directory · دليل شارك تانك مصر
+<div align="center">
 
-A bilingual (Arabic / English) directory of every startup that pitched on Shark Tank Egypt, across all seasons and episodes, with descriptions, websites, screenshots, deal details, ratings and comments. It runs entirely on GitHub.
+<a href="https://ahmadibrahiim.github.io/SharkTankEgypt/"><img src=".github/social-preview.jpg" alt="Shark Tank Egypt Directory: every startup that pitched on Shark Tank Egypt" width="760"></a>
 
-**Live:** https://ahmadibrahiim.github.io/SharkTankEgypt/
+# Shark Tank Egypt Directory · دليل شارك تانك مصر
 
-| Piece | How it runs on GitHub |
+**Every startup, shark, founder and deal from Shark Tank Egypt, in Arabic and English.**<br>
+**كل الشركات والمستثمرين والمؤسسين والصفقات في شارك تانك مصر، بالعربية والإنجليزية.**
+
+[![Deploy](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml/badge.svg)](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml)
+[![Website](https://img.shields.io/badge/site-ahmadibrahiim.github.io%2FSharkTankEgypt-E0562F)](https://ahmadibrahiim.github.io/SharkTankEgypt/)
+[![Built with Astro](https://img.shields.io/badge/built%20with-Astro-FF5D01?logo=astro&logoColor=white)](https://astro.build)
+
+**[العربية](https://ahmadibrahiim.github.io/SharkTankEgypt/ar/)** · **[English](https://ahmadibrahiim.github.io/SharkTankEgypt/en/)** · **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)**
+
+</div>
+
+---
+
+An unofficial, community-run directory of every startup that pitched on *Shark Tank Egypt* (شارك تانك مصر): 215 startups, 66 recorded deals, 15 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
+
+## What's inside
+
+- **Startup pages**: what they do, their services, a pitch summary, the ask and the final deal, founders, website and socials, a screenshot or the pitch video, and comments.
+- **Shark profiles**: portfolio, money invested, average equity, favourite sectors, co-investors, and deals by season and by sector.
+- **Founder profiles**: their companies, co-founders and how the pitch went.
+- **Episodes, seasons and sectors**: who pitched, who invested, and the biggest asks and deals.
+- **Shark vs shark** comparisons and **rankings**: biggest deals, highest valuations, joint deals, startups that got no deal, and more.
+- **10,000+ questions answered** (FAQ) in both languages, including Egyptian-dialect phrasing.
+- A generated **share image** for every page, and full **schema.org** structured data.
+
+## How it works
+
+| Piece | Where |
 |---|---|
-| Site | [Astro](https://astro.build) static build → GitHub Pages (`.github/workflows/deploy.yml`) |
-| Data | `src/data/startups.json` + `src/data/seasons.json`, validated by `npm run check-data` in CI |
-| Screenshots | Playwright in GitHub Actions (`.github/workflows/screenshots.yml`): weekly, on data changes, or manually |
-| Rating & comments | [Giscus](https://giscus.app), with one GitHub Discussion per startup. Reactions 👍 ❤️ 🚀 serve as the rating |
+| Data | `src/data/*.json`: startups, people (sharks and founders), seasons, Arabic names. Validated by `npm run check-data` on every deploy. |
+| Site | [Astro](https://astro.build) static build (about 1,360 pages), published to the `gh-pages` branch by `.github/workflows/deploy.yml`. |
+| Share images | `scripts/og.mjs` renders a 1200×630 card per page with Playwright after each build. |
+| Screenshots | `.github/workflows/screenshots.yml` captures each startup's website weekly and whenever the data changes. |
+| Research helpers | The `harvest`, `photos` and `enrich` workflows collect raw material into `automation/`. Nothing there reaches the site until a person reviews it. |
+| Ratings and comments | [giscus](https://giscus.app): one GitHub Discussion per startup. |
+| SEO | `/ar/` and `/en/` URLs with `hreflang`, a sitemap, one linked JSON-LD graph per page (WebSite, Organization, Person/ProfilePage, TVSeries/TVSeason/TVEpisode, BreadcrumbList, FAQPage). |
 
-## One-time setup
+## Contributing
 
-1. **Settings → Pages → Source:** choose **GitHub Actions**.
-2. **Settings → General → Features:** enable **Discussions**, then create a discussion category named `Startups` (type: *Announcement*, so only giscus/maintainers create threads).
-3. Install the [giscus app](https://github.com/apps/giscus) on this repo.
-4. Go to https://giscus.app, enter `AhmadIbrahiim/SharkTankEgypt` and the `Startups` category, then copy `data-repo-id` and `data-category-id` into `giscus` in `src/config.ts`. Comments stay hidden until both are set.
-5. **Actions → Refresh screenshots → Run workflow** to capture the first batch.
-
-## SEO (Google, Arabic + English)
-
-Built in: separate `/ar/` and `/en/` URLs per startup with `hreflang` + canonical tags, page titles that contain both the Arabic and English names, Open Graph tags (the screenshot is the share image), schema.org JSON-LD (`Organization` per startup, `ItemList` on the directory), and `sitemap.xml` with language alternates.
-
-To get indexed:
-1. Open [Google Search Console](https://search.google.com/search-console) and add a **URL-prefix** property for `https://ahmadibrahiim.github.io/SharkTankEgypt/`.
-2. Choose **HTML tag** verification and paste the `content` value into `googleVerification` in `src/config.ts`, then push and verify.
-3. Under **Sitemaps**, submit `sitemap.xml`.
-4. Optional but recommended: a custom domain (e.g. `sharktankegypt.directory`). It ranks better than a `github.io` subpath, and `robots.txt` only counts at a domain root. If you add one, set `site` and `base` in `astro.config.mjs` and the URL in `public/robots.txt`.
-
-## Contributing data
-
-Edit `src/data/startups.json` (there's a link in the site footer) and open a PR. Each entry looks like this:
-
-```json
-{
-  "id": "kebab-case-slug",
-  "season": 1, "episode": 3,
-  "name": { "en": "…", "ar": "…" },
-  "description": { "en": "…", "ar": "…" },
-  "category": "Food", "founders": ["…"],
-  "website": "https://…",
-  "ask":  { "amountEGP": 2000000, "equityPct": 10 },
-  "deal": { "made": true, "sharks": ["…"], "amountEGP": 2000000, "equityPct": 20 },
-  "sources": ["https://…"]
-}
-```
-
-Use `null` for anything unknown. Never change an existing `id`, because its comments are keyed to it.
+Corrections and new information are very welcome, especially deal outcomes, founder names and links. See [CONTRIBUTING.md](CONTRIBUTING.md). The quickest way is the **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)** form, which needs no code.
 
 ## Local development
 
 ```sh
 npm install
 npm run dev          # http://localhost:4321/SharkTankEgypt/
-npm run check-data
-npx playwright install chromium && npm run screenshots -- --missing
+npm run check-data   # validate src/data
+npm run build && node scripts/og.mjs   # full build with share images
 ```
+
+## Disclaimer
+
+This is an independent fan and community project. It is not affiliated with Shark Tank, Sony Pictures Television, CBC or WATCH IT. Facts come from public sources, which are listed on each startup page. Founders who would like their information changed or removed can [open an issue](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new).
