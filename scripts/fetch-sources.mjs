@@ -2,12 +2,13 @@
 // plus the show's deal pages, so outcomes can be read from the articles themselves.
 // Runs in GitHub Actions (open internet). Usage: node scripts/fetch-sources.mjs <out.json>
 import { readFileSync, writeFileSync } from 'node:fs';
-import { get } from './harvest.mjs';
+import { get, youtube } from './harvest.mjs';
 import { textOf } from './enrich.mjs';
 
 const startups = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
 const SOCIAL = /youtube|youtu\.be|instagram|facebook|tiktok|linkedin|twitter|x\.com/;
-const open = startups.filter((x) => !x.deal || x.deal.made == null);
+// Unknown outcomes, plus deals recorded without the shark's name.
+const open = startups.filter((x) => !x.deal || x.deal.made == null || (x.deal.made && !x.deal.sharks?.length));
 const jobs = open.flatMap((x) => x.sources.filter((u) => !SOCIAL.test(u)).map((url) => ({ id: x.id, url })));
 // leads.json: extra articles found by search, read in full here because snippets cut off
 try { jobs.push(...JSON.parse(readFileSync('automation/sources/leads.json', 'utf8'))); } catch {}
@@ -19,5 +20,18 @@ for (let i = 0; i < jobs.length; i += 6) // a few at a time: polite to the news 
     try { const { html, url } = await get(j.url); return { ...j, final: url, text: textOf(html, 12000) }; }
     catch (e) { return { ...j, error: String(e.message ?? e) }; }
   })));
+// YouTube titles and descriptions of the pitch videos often name the shark and the outcome.
+// One at a time with a pause: YouTube answers 429 to bursts. oEmbed (title only) is the fallback.
+const ytId = (u) => u.match(/(?:v=|youtu\.be\/|shorts\/)([\w-]{11})/)?.[1];
+const vids = [...new Map(open.flatMap((x) => [x.video, ...x.sources.map(ytId)].filter(Boolean).map((v) => [v, x.id]))).entries()];
+for (const [v, id] of vids) {
+  const url = `https://www.youtube.com/watch?v=${v}`;
+  try { const r = await youtube(v); out.push({ id, url, text: `${r.title ?? ''}\n${r.description ?? ''}`, channel: r.channel }); }
+  catch (e) {
+    try { const { html } = await get(`https://www.youtube.com/oembed?format=json&url=${encodeURIComponent(url)}`); const j = JSON.parse(html); out.push({ id, url, text: j.title, channel: j.author_name, oembed: true }); }
+    catch (e2) { out.push({ id, url, error: String(e.message ?? e) }); }
+  }
+  await new Promise((r) => setTimeout(r, 1500));
+}
 writeFileSync(process.argv[2], JSON.stringify(out, null, 1));
 console.log(`${out.filter((x) => x.text).length}/${out.length} fetched for ${open.length} startups`);
