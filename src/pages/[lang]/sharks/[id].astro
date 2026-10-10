@@ -42,7 +42,7 @@ const jsonld = {
         <h1>{p.name[lang]}</h1>
         <p class="alt">{p.name[lang === 'ar' ? 'en' : 'ar']}</p>
         {p.title && <p class="title">{p.title[lang]}</p>}
-        <p class="seasons">{s.appearedIn}: {p.seasons.map((n) => <a href={`${base}/${lang}/?s=${n}`}>{seasonLabel(n, lang)}</a>)}</p>
+        <p class="seasons">{s.appearedIn}: {p.seasons.map((n) => <a href={`${base}/${lang}/season/${n}/`}>{seasonLabel(n, lang)}</a>)}</p>
         {p.bio ? <p class="bio">{p.bio[lang]}</p> : <p class="bio muted">{s.profileThin} <a href={suggestUrl}>{s.helpBtn}</a></p>}
         <Links website={website} links={{ ...social, other }} lang={lang} label={s.online} />
       </div>
