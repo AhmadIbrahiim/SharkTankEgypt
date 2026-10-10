@@ -1,11 +1,14 @@
 import { existsSync } from 'node:fs';
-import startups from './data/startups.json';
+import data from './data/startups.json';
 import seasons from './data/seasons.json';
 
 export type Lang = 'ar' | 'en';
 export const langs: Lang[] = ['ar', 'en'];
-export type Startup = (typeof startups)[number];
-export { startups, seasons };
+export type Startup = (typeof data)[number];
+// Newest first; season 0 (July 2025 specials) aired between seasons 3 and 4.
+const rank = (n: number) => (n === 0 ? 3.5 : n);
+export const startups = [...data].sort((a, b) => rank(b.season) - rank(a.season) || (a.episode ?? 99) - (b.episode ?? 99));
+export { seasons };
 
 // Fill these from https://giscus.app after enabling Discussions on the repo.
 // Comments stay hidden until repoId and categoryId are set.
@@ -40,7 +43,7 @@ export const t = {
     noDeal: 'بدون صفقة',
     allCategories: 'كل المجالات',
     sort: 'الترتيب',
-    sortEpisode: 'حسب الحلقة',
+    sortEpisode: 'الأحدث أولًا',
     sortName: 'أبجديًا',
     sortDeal: 'الأكبر استثمارًا',
     results: 'نتيجة',
@@ -90,7 +93,7 @@ export const t = {
     noDeal: 'No deal',
     allCategories: 'All categories',
     sort: 'Sort',
-    sortEpisode: 'By episode',
+    sortEpisode: 'Newest first',
     sortName: 'A–Z',
     sortDeal: 'Biggest deal',
     results: 'results',
@@ -146,3 +149,15 @@ const categoryAr: Record<string, string> = {
 };
 /** Category values are stored in English; show Arabic labels where known. */
 export const category = (c: string, lang: Lang) => (lang === 'ar' ? categoryAr[c] ?? c : c);
+
+/** Season 0 holds the July 2025 specials, which sit outside the numbered seasons. */
+export const seasonLabel = (n: number, lang: Lang, short = false) =>
+  n === 0 ? (lang === 'ar' ? 'حلقات خاصة' : 'Specials') : short ? `${t[lang].seasonShort}${num(n, lang)}` : `${t[lang].season} ${num(n, lang)}`;
+
+const sharkAr: Record<string, string> = {
+  'Ayman Abbas': 'أيمن عباس', 'Ahmed El Sewedy': 'أحمد السويدي', 'Abdallah Sallam': 'عبد الله سلام',
+  'Ahmed Tarek Khalil': 'أحمد طارق خليل', 'Dina Ghabbour': 'دينا غبور', 'Mohamed Farouk': 'محمد فاروق',
+  'Hilda Louca': 'هيلدا لوقا', 'Mohamed Mansour': 'محمد منصور', 'Hend Sabry': 'هند صبري', 'Yassin Mansour': 'ياسين منصور',
+  'Mona Ataya': 'منى عطايا', 'Bishoy Azmy': 'بيشوي عزمي', 'Robert Herjavec': 'روبرت هيرجافيك',
+};
+export const shark = (n: string, lang: Lang) => (lang === 'ar' ? sharkAr[n] ?? n : n);
