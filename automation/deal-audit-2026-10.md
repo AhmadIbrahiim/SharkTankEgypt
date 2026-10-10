@@ -87,3 +87,6 @@ Five subagents searched the web for the remaining 115 unknowns (about 190 search
 | Startup | Change | Source |
 |---|---|---|
 | Curlit | Deal: Dina Ghabbour + Mohamed Farouk, EGP 5M for 50% (drops to 30% once capital is recouped, plus 5% of profits as fees). "Alya accepted this offer." | arabfounders.net |
+| AgriCash | Deal: Mohamed Farouk + Ahmed Tarek Khalil, EGP 15M for 40%, dropping to 30% on the founder's condition: "وهو الأمر الذي وافق عليه فاروق وطارق". The article names the company as Diaa Youssef's; Dostor 4579540 (12 Dec 2023) lists AgriCash in the next day's episode 8. | youm7 6412984 (13 Dec 2023) |
+
+Read in full and still open: Bikado (Dostor 4310500 covers the episode but gives no Bikado result), Schoolz, Ketolicious, Fino, Plume, the two Season 2 episode recaps (pitch descriptions only), KAK Squad (only Farouk's own refusal), Nutrifits (two offers, no acceptance). The sharktank-egypt.com deal pages render with JavaScript, so their text can't be read.
