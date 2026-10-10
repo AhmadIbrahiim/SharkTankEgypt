@@ -32,7 +32,8 @@ const jsonld = {
 };
 ---
 <Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']})`} description={p.bio?.[lang] ?? `${p.name[lang]} – ${s.sharksTitle}`}
-  image={p.photo?.url} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/${p.id}/`}>
+  card={{ kind: 'person', title: p.name[lang], alt: p.name[lang === 'ar' ? 'en' : 'ar'], photo: p.photo?.url, eyebrow: `${lang === 'ar' ? 'مستثمر' : 'Shark'} · ${p.seasons.map((n) => seasonLabel(n, lang, true)).join(' ')}`, sub: p.title?.[lang],
+    stats: [[num(p.deals.length, lang), s.dealsCount], ...(total ? [[money(total, lang)!, s.invested] as [string, string]] : []), ...(avgEq != null ? [[pct(Math.round(avgEq), lang), s.avgEquity] as [string, string]] : [])] }} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/${p.id}/`}>
   <div class="container">
     <nav class="crumbs"><a href={`${base}/${lang}/sharks/`}>{s.navSharks}</a> <span>/</span> <span aria-current="page">{p.name[lang]}</span></nav>
 

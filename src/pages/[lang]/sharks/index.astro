@@ -9,7 +9,7 @@ const s = t[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const total = (d: typeof sharks[number]['deals']) => d.reduce((a, x) => a + (x.deal?.amountEGP ?? 0), 0);
 ---
-<Base lang={lang} title={s.sharksTitle} description={s.sharksIntro} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/`}>
+<Base lang={lang} title={s.sharksTitle} description={s.sharksIntro} card={{ kind: 'list', title: s.sharksTitle, sub: s.sharksIntro, faces: sharks.map((p) => p.photo?.url).filter((u): u is string => !!u) }} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/`}>
   <div class="container">
     <header class="intro">
       <h1>🦈 {s.sharksTitle}</h1>

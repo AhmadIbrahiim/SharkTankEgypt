@@ -343,3 +343,19 @@ export const stats = (xs: Startup[]) => {
   for (const x of deals) for (const n of x.deal?.sharks ?? []) by.set(n, (by.get(n) ?? 0) + 1);
   return { count: xs.length, deals: deals.length, invested, topSharks: [...by].sort((a, b) => b[1] - a[1]).slice(0, 5) };
 };
+
+/** Data for a page's generated share image (rendered after the build by scripts/og.mjs). */
+export type Card = {
+  kind: 'page' | 'startup' | 'person' | 'vs' | 'list';
+  title: string; alt?: string; eyebrow?: string; sub?: string;
+  photo?: string; shot?: string; play?: boolean; faces?: string[]; thumbs?: string[];
+  stats?: [string, string][]; badge?: { text: string; tone: 'ok' | 'no' | 'ask' };
+  vs?: { name: string; photo?: string; stats: string[] }[];
+};
+/** Share card for a page that lists startups (season, sector, episode, rankings…). */
+export const listCard = (title: string, sub: string, items: Startup[], lang: Lang, eyebrow?: string): Card => {
+  const st = stats(items);
+  return { kind: 'list', title, sub, eyebrow,
+    thumbs: items.map((x) => screenshot(x.id) ?? (x.video ? thumb(x.video) : null)).filter((u): u is string => !!u).slice(0, 4),
+    stats: [[num(st.count, lang), t[lang].statStartups], [num(st.deals, lang), t[lang].statDeals], ...(st.invested ? [[money(st.invested, lang)!, t[lang].statInvested] as [string, string]] : [])] };
+};

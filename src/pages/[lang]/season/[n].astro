@@ -4,7 +4,7 @@ import Listing from '../../../components/Listing.astro';
 import Faq from '../../../components/Faq.astro';
 import { seasonFaq, episodes, sectorSeasons } from '../../../faq';
 import Chips from '../../../components/Chips.astro';
-import { langs, startups, seasons, seasonLabel, category, catSlug, stats, t, num, money, type Lang } from '../../../config';
+import { langs, listCard, startups, seasons, seasonLabel, category, catSlug, stats, t, num, money, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => seasons.map((x) => ({ params: { lang, n: String(x.season) } })));
 const lang = Astro.params.lang as Lang;
@@ -19,7 +19,7 @@ const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 const jsonld = { '@context': 'https://schema.org', '@type': 'TVSeason', name: title, seasonNumber: n, description: intro,
   partOfSeries: { '@type': 'TVSeries', name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر' } };
 ---
-<Base lang={lang} title={title} description={intro} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/season/${n}/`}>
+<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, seasonLabel(n, lang))} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/season/${n}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} />
   <div class="container">
     <Chips title={lang === 'ar' ? `حلقات ${label}` : `${label} episodes`} links={episodes.filter(([k]) => k === n).map(([, e]) => ({ href: `${import.meta.env.BASE_URL.replace(/\/$/, '')}/${lang}/season/${n}/episode/${e}/`, label: lang === 'ar' ? `الحلقة ${num(e, lang)}` : `Episode ${e}` }))} />
