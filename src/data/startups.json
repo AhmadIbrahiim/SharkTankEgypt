@@ -160,8 +160,10 @@
       "https://www.youm7.com/6038888",
       "https://www.dostor.org/4277750",
       "https://businessmonthlyeg.com/shark-tank-premieres-in-egypt/",
-      "https://www.youm7.com/story/2023/1/8/%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%84%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D9%85%D9%86-Shark-Tank-%D8%A8%D9%82%D9%8A%D9%85%D8%A9/6038985"
-    ]
+      "https://www.youm7.com/story/2023/1/8/%D8%AE%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%84%D9%84%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%AA%D9%85%D9%88%D9%8A%D9%84-%D9%85%D9%86-Shark-Tank-%D8%A8%D9%82%D9%8A%D9%85%D8%A9/6038985",
+      "https://www.youtube.com/watch?v=LA_ZseGOHRg"
+    ],
+    "video": "LA_ZseGOHRg"
   },
   {
     "id": "habu-arts",
@@ -430,8 +432,10 @@
       "https://www.youm7.com/6056721",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
       "https://www.dostor.org/4290599",
-      "https://www.elwatannews.com/news/details/6412444"
-    ]
+      "https://www.elwatannews.com/news/details/6412444",
+      "https://www.youtube.com/watch?v=RcLKQ0NYSBw"
+    ],
+    "video": "RcLKQ0NYSBw"
   },
   {
     "id": "tilestic",
@@ -467,8 +471,10 @@
       "https://www.youm7.com/6056721",
       "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7%D9%86-%D8%AA%D8%AD%D8%B5%D9%84%D8%A7%D9%86/",
       "https://www.dostor.org/4290599",
-      "https://www.facebook.com/Tilestic/"
-    ]
+      "https://www.facebook.com/Tilestic/",
+      "https://www.youtube.com/watch?v=Vt5rVNHxQJM"
+    ],
+    "video": "Vt5rVNHxQJM"
   },
   {
     "id": "masroufi",
@@ -1145,8 +1151,8 @@
       "ar": "بيكوك ديزاينز"
     },
     "description": {
-      "en": "Turns palm fronds into furniture with higher efficiency; spent EGP 2M on R&D.",
-      "ar": "تحويل جريد النخيل إلى أثاث بكفاءة أعلى، وأنفقت الشركة 2 مليون جنيه على البحث والتطوير."
+      "en": "Peacock Designs, founded by Dalia Salem and Mostafa El-Sayed, recycles palm fronds into furniture more efficiently and has spent EGP 2 million on research and development. The founders asked the sharks for EGP 10 million for 10%, valuing the company at EGP 100 million.",
+      "ar": "بيكوك ديزاينز شركة أسسها داليا سالم ومصطفى السيد، تعيد تدوير جريد النخيل إلى أثاث بكفاءة أعلى، وأنفقت مليوني جنيه على البحث والتطوير. طلب المؤسسان من المستثمرين 10 ملايين جنيه مقابل 10%، أي بتقييم 100 مليون جنيه للشركة."
     },
     "category": "Home",
     "founders": [
@@ -1155,13 +1161,15 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 10000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6103943"
-    ]
+      "https://www.youm7.com/6103943",
+      "https://www.youtube.com/watch?v=Wuud7Rvls-8"
+    ],
+    "video": "Wuud7Rvls-8"
   },
   {
     "id": "career-180",
@@ -1388,8 +1396,10 @@
     },
     "sources": [
       "https://www.elwatannews.com/news/details/6471194",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%A9-tomatiki-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/"
-    ]
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%A9-tomatiki-%D8%AA%D8%AD%D8%B5%D8%AF-2-%D9%85%D9%84/",
+      "https://www.youtube.com/watch?v=QvRzN1rN_68"
+    ],
+    "video": "QvRzN1rN_68"
   },
   {
     "id": "i-ape",
@@ -1527,8 +1537,8 @@
       "ar": "بلومز إيجيبت"
     },
     "description": {
-      "en": "13-year-old company that develops children's personality, culture and skills.",
-      "ar": "شركة تعمل منذ 13 عاماً في تنمية شخصية وثقافة ومهارات الأطفال."
+      "en": "Blooms Egypt has spent 13 years developing children's personality, culture and skills, through performing-arts activities, informal education, international camps abroad and events for young people aged roughly 5 to 18. Founder Seif Ramadan closed a deal with Ahmed El Sewedy.",
+      "ar": "تعمل بلومز إيجيبت منذ 13 عاماً على تنمية شخصية الأطفال وثقافتهم ومهاراتهم، عبر أنشطة الفنون الأدائية والتعليم غير الرسمي والمعسكرات الدولية والفعاليات للشباب من نحو 5 إلى 18 عاماً. وأبرم مؤسسها سيف رمضان صفقة مع أحمد السويدي."
     },
     "category": "Education",
     "founders": [
@@ -1548,7 +1558,9 @@
     "sources": [
       "https://www.youm7.com/6352489",
       "https://www.youm7.com/6352547",
-      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-blooms-%D9%88%D9%83%D8%B1%D9%8A%D8%B2%D9%8A-%D8%AA/"
+      "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A-%D9%85%D9%86-shark-tank-egypt-%D8%B4%D8%B1%D9%83%D8%AA%D8%A7-blooms-%D9%88%D9%83%D8%B1%D9%8A%D8%B2%D9%8A-%D8%AA/",
+      "https://www.youtube.com/watch?v=8rjxQSsWWuQ",
+      "https://www.youtube.com/channel/UC4eFMG-vm3NDhC79Bg7ibPQ"
     ]
   },
   {
@@ -1755,11 +1767,13 @@
       "ar": "فول تانك"
     },
     "description": {
-      "en": "Egyptian breakfast (foul) concept offering high-quality traditional breakfast.",
-      "ar": "مشروع يقدم إفطارًا مصريًا بأعلى جودة."
+      "en": "Fool Tank is an Egyptian breakfast concept built around foul, serving traditional breakfast at the highest quality. Founder Hoda Hosny impressed the sharks with her energy and enthusiasm from the moment she entered the tank.",
+      "ar": "فول تانك مشروع يقدم الفطار المصري التقليدي القائم على الفول بأعلى جودة. أبهرت مؤسسته هدى حسني المستثمرين بقوتها وحماسها منذ لحظة دخولها التانك."
     },
     "category": "Food",
-    "founders": [],
+    "founders": [
+      "Hoda Hosny"
+    ],
     "website": null,
     "ask": {
       "amountEGP": null,
@@ -1767,8 +1781,10 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6368393"
-    ]
+      "https://www.youm7.com/6368393",
+      "https://www.youtube.com/watch?v=2tCGPd1WxwY"
+    ],
+    "video": "2tCGPd1WxwY"
   },
   {
     "id": "super-abla",
@@ -1779,8 +1795,8 @@
       "ar": "سوبر أبلة"
     },
     "description": {
-      "en": "Arabic-language learning system for children aged 3 to 6.",
-      "ar": "منظومة لتعليم اللغة العربية للأطفال من سن 3 إلى 6 سنوات."
+      "en": "Super Abla is an Arabic-language learning system for children aged 3 to 6, created by teacher Israa Saleh, known online as \"Super Abla\", who teaches letters through playful, innovative methods. In the tank, Ayman Abbas made an offer without asking a single question.",
+      "ar": "سوبر أبلة منظومة لتعليم اللغة العربية للأطفال من سن 3 إلى 6 سنوات، أسستها المعلمة إسراء صالح المعروفة بـ\"سوبر أبلة\" التي تعلم الحروف بطرق مبتكرة ومرحة. داخل التانك، قدم أيمن عباس عرضاً دون أن يطرح أي سؤال."
     },
     "category": "Education",
     "founders": [
@@ -1795,8 +1811,11 @@
     "sources": [
       "https://www.youm7.com/6376278",
       "https://www.youm7.com/6376335",
-      "https://www.dostor.org/4551879"
-    ]
+      "https://www.dostor.org/4551879",
+      "https://www.youtube.com/watch?v=drlTIu6hW8k",
+      "https://www.youtube.com/watch?v=mSlZRt0-fpg"
+    ],
+    "video": "drlTIu6hW8k"
   },
   {
     "id": "lelu",
@@ -1927,8 +1946,8 @@
       "ar": "دكتور جوي"
     },
     "description": {
-      "en": "Sugar-free dried-fruit snacks designed to fight tooth decay.",
-      "ar": "منتجات من الفاكهة المجففة بدون سكر لمحاربة تسوس الأسنان."
+      "en": "Dr. Joy makes sugar-free sweets from dried fruit, aimed at mothers whose children suffer from tooth decay. In the tank the sharks tasted the products and could not work out how they contained no sugar.",
+      "ar": "تقدم دكتور جوي حلويات من الفاكهة المجففة بدون سكر، موجهة للأمهات اللاتي يعاني أطفالهن من تسوس الأسنان. تذوق المستثمرون المنتجات داخل التانك ولم يستطيعوا معرفة كيف تخلو من السكر."
     },
     "category": "Food",
     "founders": [],
@@ -1940,8 +1959,11 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6385166",
-      "https://sharktank-egypt.com/en/deals/food-and-beverage"
-    ]
+      "https://sharktank-egypt.com/en/deals/food-and-beverage",
+      "https://www.youtube.com/watch?v=T-vKEMB29qY",
+      "https://www.youtube.com/watch?v=Tf2sIRBltb8"
+    ],
+    "video": "T-vKEMB29qY"
   },
   {
     "id": "pov",
@@ -2057,8 +2079,10 @@
     },
     "sources": [
       "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
-      "https://www.dostor.org/4571301"
-    ]
+      "https://www.dostor.org/4571301",
+      "https://www.youtube.com/watch?v=LGZAws63gH4"
+    ],
+    "video": "LGZAws63gH4"
   },
   {
     "id": "soccer-hub",
@@ -2069,8 +2093,8 @@
       "ar": "سوكر هب"
     },
     "description": {
-      "en": "Entertainment game that simulates football; no shark made an offer.",
-      "ar": "لعبة ترفيهية تحاكي كرة القدم، ولم يقدم المستثمرون أي عرض."
+      "en": "Soccer Hub is an entertainment game that simulates football. Founder Mohamed Said asked for EGP 2 million for 20%; Mohamed Farouk dismissed it as \"not sport but laziness\", and all the sharks withdrew citing no competitive advantage.",
+      "ar": "سوكر هب لعبة ترفيهية تحاكي كرة القدم. طلب مؤسسها محمد سعيد مليوني جنيه مقابل 20%، لكن محمد فاروق وصفها بأنها \"كسل وليست رياضة\"، وانسحب جميع المستثمرين لغياب الميزة التنافسية."
     },
     "category": "Entertainment",
     "founders": [
@@ -2089,8 +2113,11 @@
     },
     "sources": [
       "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
-      "https://www.dostor.org/4571301"
-    ]
+      "https://www.dostor.org/4571301",
+      "https://www.youtube.com/watch?v=dGLyN2qnSqc",
+      "https://www.youtube.com/watch?v=FrLrSZoVcWs"
+    ],
+    "video": "dGLyN2qnSqc"
   },
   {
     "id": "rnkl",
@@ -2489,8 +2516,8 @@
       "ar": "دارك سليوشن"
     },
     "description": {
-      "en": "Egyptian specialty-coffee company with its own roastery.",
-      "ar": "شركة مصرية للقهوة المختصة لديها مصنع خاص لتحميص البن."
+      "en": "Dark Solution is an Egyptian specialty-coffee brand with its own roastery, founded by Mounir Abdel Shahid with the ambition of competing with the world's largest coffee companies. The pitch sparked debate among the sharks, who all cheered the goal of building a coffee industry Egypt can be proud of.",
+      "ar": "دارك سليوشن علامة مصرية للقهوة المختصة تمتلك مصنعاً خاصاً لتحميص البن، أسسها منير عبد الشهيد بطموح منافسة كبرى شركات القهوة في العالم. أثار العرض نقاشاً بين المستثمرين الذين شجعوا جميعاً فكرة بناء صناعة قهوة مصرية."
     },
     "category": "Food",
     "founders": [
@@ -2504,8 +2531,12 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6443112",
-      "https://www.youm7.com/6441786"
-    ]
+      "https://www.youm7.com/6441786",
+      "https://m.youtube.com/watch?v=EfQBzQ67FVE",
+      "https://www.youtube.com/watch?v=OdyyWV_LjA0",
+      "https://www.youtube.com/shorts/yD4QKV5LIBc"
+    ],
+    "video": "EfQBzQ67FVE"
   },
   {
     "id": "salhly",
@@ -2601,8 +2632,8 @@
       "ar": "إيرا كير"
     },
     "description": {
-      "en": "Skincare/cosmetics brand with therapeutic effect, started with EGP 200; product sold at EGP 186.",
-      "ar": "علامة مستحضرات تجميل لها أثر علاجي على البشرة، بدأت برأس مال 200 جنيه."
+      "en": "Era Care is an Egyptian skincare and cosmetics brand whose products have a therapeutic effect on the skin. Founder Erada Fattah, from Upper Egypt, started it with less than EGP 200 to fulfil a childhood dream, and impressed the sharks with her story.",
+      "ar": "إيرا كير علامة مصرية لمستحضرات التجميل والعناية بالبشرة لها أثر علاجي. أسستها إرادة فتاح، ابنة الصعيد، بأقل من 200 جنيه تحقيقاً لحلم طفولتها، وأبهرت المستثمرين بقصتها."
     },
     "category": "Beauty",
     "founders": [
@@ -2616,7 +2647,9 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6465758",
-      "https://sharktankarabi.com/778/"
+      "https://sharktankarabi.com/778/",
+      "https://www.youtube.com/watch?v=4aRZpw8blYo",
+      "https://www.youtube.com/watch?v=-iuKvlS_LLw"
     ]
   },
   {
@@ -2628,8 +2661,8 @@
       "ar": "بيكأب"
     },
     "description": {
-      "en": "Safe student-transport app on monthly subscriptions, 30%+ cheaper than school buses.",
-      "ar": "تطبيق لنقل الطلاب بأمان باشتراكات شهرية توفر أكثر من 30% مقارنة بأتوبيس المدرسة."
+      "en": "Piccup is an app that replaces the school bus with safe door-to-door student transport on monthly subscriptions, more than 30% cheaper than school buses. Parents can track their children throughout the ride. Founder Khaled Bakr pitched it to the sharks in season 2.",
+      "ar": "بيكأب تطبيق يقدم بديلاً لأتوبيس المدرسة لنقل الطلاب بأمان باشتراكات شهرية توفر أكثر من 30% مقارنة بأتوبيس المدرسة، مع إمكانية متابعة أولياء الأمور لأبنائهم طوال الرحلة. عرضه مؤسسه خالد بكر على المستثمرين في الموسم الثاني."
     },
     "category": "Services",
     "founders": [
@@ -2642,8 +2675,10 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6473181"
-    ]
+      "https://www.youm7.com/6473181",
+      "https://www.youtube.com/watch?v=9elMGLcphnw"
+    ],
+    "video": "9elMGLcphnw"
   },
   {
     "id": "abs-shipping",
@@ -2676,8 +2711,10 @@
       "https://www.youm7.com/6473188",
       "https://sharktankarabi.com/%D8%A7%D9%88%D9%81%D8%B1-%D8%A8%D9%A8%D9%A0-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF%D9%89-%D9%8A%D8%AA%D8%B1%D9%81%D8%B6",
       "https://www.youtube.com/watch?v=Nmi0ADk1610",
-      "https://www.youtube.com/watch?v=LEUcIIiCT_A"
-    ]
+      "https://www.youtube.com/watch?v=LEUcIIiCT_A",
+      "https://www.youtube.com/watch?v=VHU0DGTjGd8"
+    ],
+    "video": "VHU0DGTjGd8"
   },
   {
     "id": "super-fanni",
@@ -3108,8 +3145,10 @@
       "https://www.youm7.com/6742879",
       "https://arabfounders.net/en/shark-tank-egypt-investments-2024/",
       "https://www.youtube.com/watch?v=q6pjFSnRdRo",
-      "https://www.youtube.com/watch?v=FZYP2-5szZg"
-    ]
+      "https://www.youtube.com/watch?v=FZYP2-5szZg",
+      "https://www.youtube.com/watch?v=A9vLR5xwB5Y"
+    ],
+    "video": "A9vLR5xwB5Y"
   },
   {
     "id": "duaya",
@@ -3120,8 +3159,8 @@
       "ar": "دواية"
     },
     "description": {
-      "en": "B2B health-tech marketplace connecting medical suppliers with pharmacies, clinics and labs.",
-      "ar": "منصة تكنولوجيا صحية تربط موردي المستلزمات الطبية بالصيدليات والعيادات والمعامل."
+      "en": "Duaya is a B2B health-tech marketplace that connects medical suppliers with pharmacies, clinics and labs, and helps companies in the sector adopt technology to fix problems in Egypt’s healthcare supply market. It became one of Ayman Abbas’s first investments on the show, closing at EGP 12.5 million for 27%.",
+      "ar": "دواية منصة تكنولوجيا صحية تربط موردي المستلزمات الطبية بالصيدليات والعيادات والمعامل، وتساعد شركات القطاع على تبنّي التكنولوجيا لحل مشكلات سوق الرعاية الصحية في مصر. وكانت من أوائل استثمارات أيمن عباس في البرنامج، بصفقة قيمتها 12.5 مليون جنيه مقابل 27%."
     },
     "category": "Health",
     "founders": [],
@@ -3141,8 +3180,11 @@
     "sources": [
       "https://www.youm7.com/6744133",
       "https://arabfounders.net/en/shark-tank-egypt-investments-2024/",
-      "https://www.wamda.com/en/2025/09/duaya-acquires-exmgo-figure-deal-relaunches-duaya"
-    ]
+      "https://www.wamda.com/en/2025/09/duaya-acquires-exmgo-figure-deal-relaunches-duaya",
+      "https://www.youtube.com/watch?v=P7mX2IJJqIU",
+      "https://www.youtube.com/watch?v=97zDC3gIc14"
+    ],
+    "video": "P7mX2IJJqIU"
   },
   {
     "id": "curlit",
@@ -3219,8 +3261,8 @@
       "ar": "إيجايك"
     },
     "description": {
-      "en": "EGIKE is an Egyptian electric-bike and green-mobility brand that uses artificial intelligence in making its batteries.",
-      "ar": "إيجايك علامة مصرية للدراجات الكهربائية والتنقل الأخضر، تستخدم الذكاء الاصطناعي في تصنيع بطارياتها."
+      "en": "EGIKE is an Egyptian startup that designs electric bikes for the Egyptian market and uses artificial intelligence in making their batteries. It pitched the bikes to the sharks as a green-mobility answer to everyday transport problems.",
+      "ar": "إيجايك شركة مصرية ناشئة تصمّم دراجات كهربائية تناسب السوق المصري، وتستخدم الذكاء الاصطناعي في تصنيع بطارياتها. وعرضت دراجاتها على الشاركس كحل للتنقل الأخضر ولمشكلات المواصلات اليومية."
     },
     "category": "Tech",
     "founders": [],
@@ -3233,7 +3275,8 @@
     "sources": [
       "https://www.dostor.org/4843743",
       "https://www.elwatannews.com/news/details/7632333",
-      "https://www.youtube.com/watch?v=BX-Awd-en_w"
+      "https://www.youtube.com/watch?v=BX-Awd-en_w",
+      "https://www.youtube.com/watch?v=kVjJq9AvxUo"
     ]
   },
   {
@@ -3320,8 +3363,10 @@
       "https://www.youm7.com/6759051",
       "https://vcfoconsulting.com/shark-tank-season-3-ep-3/",
       "https://www.youm7.com/6760563",
-      "https://www.soutalomma.com/Article/1136827/"
-    ]
+      "https://www.soutalomma.com/Article/1136827/",
+      "https://www.youtube.com/watch?v=hnSq2m1MQac"
+    ],
+    "video": "hnSq2m1MQac"
   },
   {
     "id": "el-fares",
@@ -3332,8 +3377,8 @@
       "ar": "الفارس"
     },
     "description": {
-      "en": "Produces disease-free plant seedlings at scale using tissue-culture propagation, giving farmers healthier planting stock. It asked for EGP 5 million for 15% and closed a deal for EGP 5 million in exchange for 50%.",
-      "ar": "تنتج شتلات نباتية خالية من الأمراض بكميات كبيرة عبر تقنية زراعة الأنسجة، لتوفّر للمزارعين شتلات أكثر سلامة. طلبت 5 ملايين جنيه مقابل 15%، وأبرمت صفقة بـ5 ملايين جنيه مقابل 50%."
+      "en": "El Fares for Agricultural Development uses tissue-culture cloning to mass-produce disease-free plant seedlings, giving farmers healthier planting stock. It asked for EGP 5 million for 15% and closed a deal for EGP 5 million in exchange for 50%.",
+      "ar": "تعتمد شركة الفارس للتنمية الزراعية على تقنية الاستنساخ بزراعة الأنسجة لإنتاج شتلات نباتية خالية من الأمراض بكميات كبيرة، لتوفّر للمزارعين شتلات أكثر سلامة. طلبت 5 ملايين جنيه مقابل 15%، وأبرمت صفقة بـ5 ملايين جنيه مقابل 50%."
     },
     "category": "Agriculture",
     "founders": [],
@@ -3351,8 +3396,10 @@
     "sources": [
       "https://www.youm7.com/6759051",
       "https://vcfoconsulting.com/shark-tank-season-3-ep-3/",
-      "https://www.youtube.com/watch?v=NHvBuQ627rg"
-    ]
+      "https://www.youtube.com/watch?v=NHvBuQ627rg",
+      "https://www.youtube.com/watch?v=SUgcuSNWFD4"
+    ],
+    "video": "SUgcuSNWFD4"
   },
   {
     "id": "metadoc",
@@ -3544,8 +3591,8 @@
       "ar": "نوي فراجرانسز"
     },
     "description": {
-      "en": "An Egyptian brand making inspired-by versions of international perfumes that took off on TikTok. The founders asked for EGP 5 million for 10%.",
-      "ar": "علامة مصرية تصنع عطوراً مستوحاة من العطور العالمية، واشتهرت عبر تيك توك. وطلب مؤسسوها 5 ملايين جنيه مقابل 10% من الشركة."
+      "en": "Nuit Fragrances is an Egyptian brand making inspired-by versions of international perfumes that took off on TikTok. In the tank the founders picked a perfume for each shark to match their personality, and asked for EGP 5 million for 10%.",
+      "ar": "نوي فراجرانسز علامة مصرية تصنع عطوراً مستوحاة من العطور العالمية واشتهرت عبر تيك توك. وفي التانك اختار مؤسسوها عطراً لكل شارك يناسب شخصيته، وطلبوا 5 ملايين جنيه مقابل 10% من الشركة."
     },
     "category": "Beauty",
     "founders": [],
@@ -3559,8 +3606,10 @@
       "https://www.youm7.com/6783395",
       "https://www.youm7.com/6784624",
       "https://www.youtube.com/watch?v=m8Tle7FB9KU",
-      "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q"
-    ]
+      "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q",
+      "https://www.youtube.com/watch?v=8roJhnnLl6g"
+    ],
+    "video": "8roJhnnLl6g"
   },
   {
     "id": "tekton",
@@ -3689,8 +3738,8 @@
       "ar": "زينك"
     },
     "description": {
-      "en": "A print-on-demand platform for custom-printed products that pitched in season three, episode seven.",
-      "ar": "منصة للطباعة حسب الطلب لمنتجات بتصاميم مخصصة، ظهرت في الحلقة السابعة من الموسم الثالث."
+      "en": "Zink Print is a print-on-demand platform that lets young people and content creators launch their own printed-merchandise brands without upfront capital. The team pitched it as a way for small brands in Egypt and the Middle East to grow and compete with global players, though Mohamed Farouk said he did not see how he could help.",
+      "ar": "زينك برينت منصة للطباعة حسب الطلب تتيح للشباب وصنّاع المحتوى إطلاق علاماتهم الخاصة من المنتجات المطبوعة دون رأس مال. وقدّمها فريقها كوسيلة لنمو العلامات الصغيرة في مصر والشرق الأوسط ومنافسة العلامات العالمية، بينما قال محمد فاروق إنه لا يعرف كيف يمكنه مساعدتهم."
     },
     "category": "Retail",
     "founders": [],
@@ -3701,8 +3750,11 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6791539"
-    ]
+      "https://www.youm7.com/6791539",
+      "https://www.youtube.com/watch?v=NgSVuVR98jU",
+      "https://www.youtube.com/watch?v=6OMqHHvSgn8"
+    ],
+    "video": "NgSVuVR98jU"
   },
   {
     "id": "cippo",
@@ -3816,8 +3868,8 @@
       "ar": "بافو"
     },
     "description": {
-      "en": "An Egyptian sustainability-focused brand selling more than 100 practical products made with Egyptian materials, handling about 20,000 orders a year worth EGP 25 million. Founders Khaled Baraey and Mina Mandaloun asked for EGP 3 million for 10%.",
-      "ar": "علامة مصرية تركّز على الاستدامة وتبيع أكثر من 100 منتج عملي مصنوع بخامات مصرية، وتنفّذ نحو 20 ألف طلب سنوياً بقيمة 25 مليون جنيه. وطلب مؤسساها خالد برعي ومينا مندلون 3 ملايين جنيه مقابل 10%."
+      "en": "PAVO is a sustainability-focused Egyptian brand selling more than 100 practical bags, clothes and shoes made with Egyptian materials, handling about 20,000 orders a year worth EGP 25 million. Founders Khaled Baraey and Mina Mandaloun asked for EGP 3 million for 10%.",
+      "ar": "بافو علامة مصرية تركّز على الاستدامة وتبيع أكثر من 100 منتج عملي من الشنط والملابس والأحذية المصنوعة بخامات مصرية، وتنفّذ نحو 20 ألف طلب سنوياً بقيمة 25 مليون جنيه. وطلب مؤسساها خالد برعي ومينا مندلون 3 ملايين جنيه مقابل 10%."
     },
     "category": "Fashion",
     "founders": [
@@ -3834,8 +3886,10 @@
       "https://www.youm7.com/6808721",
       "https://www.youm7.com/6807489",
       "https://sharktank-egypt.com/en/deals/fashion",
-      "https://www.youtube.com/watch?v=NwZSipTOOfM"
-    ]
+      "https://www.youtube.com/watch?v=NwZSipTOOfM",
+      "https://www.youtube.com/watch?v=1IjuqZUJu2E"
+    ],
+    "video": "1IjuqZUJu2E"
   },
   {
     "id": "whip-up",
@@ -3962,14 +4016,14 @@
       "ar": "إيرنوفا"
     },
     "description": {
-      "en": "A web app that uses AI to produce educational videos. The team entered the tank as virtual digital avatars, impressing the sharks, but left without a deal.",
-      "ar": "تطبيق ويب يستخدم الذكاء الاصطناعي لإنتاج فيديوهات تعليمية. ودخل فريقه التانك بنسخ افتراضية رقمية (أفاتار) أبهرت الشاركس، لكنه خرج دون صفقة."
+      "en": "Irnova is a web app that uses AI to produce educational videos and courses. Its team entered the tank as virtual digital avatars, which impressed the sharks, and asked for EGP 15 million, but left without a deal.",
+      "ar": "إيرنوفا تطبيق ويب يستخدم الذكاء الاصطناعي لإنتاج فيديوهات ودورات تعليمية. ودخل فريقه التانك بنسخ افتراضية رقمية (أفاتار) أبهرت الشاركس، وطلب 15 مليون جنيه، لكنه خرج دون صفقة."
     },
     "category": "Education",
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
+      "amountEGP": 15000000,
       "equityPct": null
     },
     "deal": {
@@ -3981,8 +4035,10 @@
     "sources": [
       "https://www.youm7.com/6823046",
       "https://sharktankarabi.com/1690/",
-      "https://www.youtube.com/watch?v=PqPn3Vl5-3k"
-    ]
+      "https://www.youtube.com/watch?v=PqPn3Vl5-3k",
+      "https://www.youtube.com/watch?v=43DrM3Ca2m0"
+    ],
+    "video": "43DrM3Ca2m0"
   },
   {
     "id": "ooaps",
@@ -4008,8 +4064,10 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6824424",
-      "https://www.youm7.com/6823046"
-    ]
+      "https://www.youm7.com/6823046",
+      "https://www.youtube.com/watch?v=_RSqERON5xY"
+    ],
+    "video": "_RSqERON5xY"
   },
   {
     "id": "gabris-wear",
@@ -4077,8 +4135,8 @@
       "ar": "هاوي"
     },
     "description": {
-      "en": "A 100% Egyptian T-shirt brand that asked for EGP 100,000 for 20% and closed a deal. It was among the season-three brands that gained strong social-media traction shortly after the show.",
-      "ar": "علامة تيشيرتات مصرية 100% طلبت 100 ألف جنيه مقابل 20% وخرجت بصفقة. وكانت من مشاريع الموسم الثالث التي حققت انتشاراً واسعاً على وسائل التواصل الاجتماعي بعد ظهورها بفترة قصيرة."
+      "en": "Hawy is a 100% Egyptian T-shirt brand that asked for EGP 100,000 for 20%. In a rare moment, all the sharks joined a single deal to invest in it and back it with their expertise. It was among the season-three brands that gained strong social-media traction soon after the show.",
+      "ar": "حاوي علامة تيشيرتات مصرية 100% طلبت 100 ألف جنيه مقابل 20%. وفي لحظة نادرة، اجتمع كل الشاركس في صفقة واحدة للاستثمار فيها ودعمها بخبراتهم. وكانت من مشاريع الموسم الثالث التي حققت انتشاراً واسعاً على وسائل التواصل الاجتماعي بعد ظهورها بفترة قصيرة."
     },
     "category": "Fashion",
     "founders": [],
@@ -4099,7 +4157,8 @@
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://www.youtube.com/shorts/xNapynx_Khw",
       "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q"
-    ]
+    ],
+    "video": "xNapynx_Khw"
   },
   {
     "id": "sparemart",
@@ -4110,8 +4169,8 @@
       "ar": "سبير مارت"
     },
     "description": {
-      "en": "Startup that pitched in the four-company episode alongside Gabri's Wear, Dentolize and Hawy.",
-      "ar": "شركة ناشئة شاركت في حلقة الشركات الأربع إلى جانب جابريز وير ودنتولايز وهاوي."
+      "en": "Spare Mart sells car spare parts and delivers them to the customer's location. During the pitch, shark Ahmed Tarek challenged the founder on how he would manage all of it in practice.",
+      "ar": "سبير مارت شركة لبيع قطع غيار السيارات وتوصيلها إلى مكان العميل. وخلال العرض تحدّى الشارك أحمد طارق المؤسس متسائلاً عن كيفية تنفيذ كل ذلك على أرض الواقع."
     },
     "category": "Other",
     "founders": [],
@@ -4122,8 +4181,10 @@
     },
     "deal": null,
     "sources": [
-      "https://www.youm7.com/6830874"
-    ]
+      "https://www.youm7.com/6830874",
+      "https://www.youtube.com/watch?v=y-46S-TbODw"
+    ],
+    "video": "y-46S-TbODw"
   },
   {
     "id": "monsters-table",
@@ -4457,8 +4518,8 @@
       "ar": "مانديسا"
     },
     "description": {
-      "en": "An Egyptian brand of natural home products such as loofahs, towels, soap and Egyptian honey.",
-      "ar": "علامة مصرية لمنتجات منزلية طبيعية مثل الليف والفوط والصابون والعسل المصري."
+      "en": "Mandisa is an Egyptian brand of natural home products such as loofahs, towels and soap, sourced from Siwa and Sohag and exported to Korea and Japan. Its founder lived in Korea for over nine years, and the brand's loofahs avoid the chlorine bleaching common in the market. In the tank, the sharks debated its competition and the need for state support to promote Egyptian-made goods.",
+      "ar": "مانديسا علامة مصرية لمنتجات منزلية طبيعية مثل الليف والفوط والصابون، مصدرها سيوة وسوهاج وتُصدَّر إلى كوريا واليابان. عاش مؤسسها في كوريا أكثر من تسع سنوات، ويتميز ليف العلامة بخلوه من التبييض بالكلور الشائع في السوق. وداخل التانك ناقش الشاركس منافسيها وحاجتها إلى دعم الدولة للترويج للصناعة المصرية."
     },
     "category": "Home",
     "founders": [],
@@ -4469,8 +4530,11 @@
     },
     "deal": null,
     "sources": [
-      "https://www.dostor.org/4952899"
-    ]
+      "https://www.dostor.org/4952899",
+      "https://www.youtube.com/watch?v=K6C26xq56fI",
+      "https://www.youtube.com/watch?v=GEaxnzldntk"
+    ],
+    "video": "K6C26xq56fI"
   },
   {
     "id": "estealamy",
@@ -4481,8 +4545,8 @@
       "ar": "استعلامي"
     },
     "description": {
-      "en": "A fintech startup that uses AI to verify the data of loan applicants.",
-      "ar": "شركة تكنولوجيا مالية ناشئة تستخدم الذكاء الاصطناعي للتحقق من بيانات المتقدمين للحصول على قروض."
+      "en": "Estealamy is a fintech startup that uses AI to verify loan applicants' data, helping lenders approve loans in as little as 30 minutes. It also delivers field-inquiry reports to financing providers through a mobile app and dashboard within 24 hours.",
+      "ar": "استعلامي شركة تكنولوجيا مالية ناشئة تستخدم الذكاء الاصطناعي للتحقق من بيانات المتقدمين للقروض، بما يتيح لجهات التمويل البت في القرض خلال 30 دقيقة فقط. كما تقدم تقارير الاستعلام الميداني لجهات التمويل عبر تطبيق موبايل ولوحة تحكم خلال 24 ساعة."
     },
     "category": "Fintech",
     "founders": [],
@@ -4493,8 +4557,11 @@
     },
     "deal": null,
     "sources": [
-      "https://www.dostor.org/4952899"
-    ]
+      "https://www.dostor.org/4952899",
+      "https://www.youtube.com/watch?v=y9b4bFexAf4",
+      "https://www.youtube.com/watch?v=7H1yzi-CH48"
+    ],
+    "video": "y9b4bFexAf4"
   },
   {
     "id": "snugglez",
@@ -5348,8 +5415,8 @@
       "ar": "كيتوليشس"
     },
     "description": {
-      "en": "Ketolicious is a food manufacturer that describes itself as the first company in Egypt and the Middle East specialising in keto food products. It follows a clean-label approach and serves people on keto and low-carb diets.",
-      "ar": "كيتوليشس مصنع أغذية يقدم نفسه بوصفه أول شركة في مصر والشرق الأوسط متخصصة في إنتاج أطعمة الكيتو، ويتبع نهج المكونات النظيفة الواضحة، ويخدم متبعي حمية الكيتو والأنظمة منخفضة الكربوهيدرات."
+      "en": "Ketolicious is a food manufacturer that describes itself as the first company in Egypt and the Middle East specialising in keto food products, following a clean-label approach for people on keto and low-carb diets. In the tank, the sharks were divided over the project's idea.",
+      "ar": "كيتوليشس مصنع أغذية يقدم نفسه بوصفه أول شركة في مصر والشرق الأوسط متخصصة في إنتاج أطعمة الكيتو، ويتبع نهج المكونات النظيفة الواضحة لخدمة متبعي حمية الكيتو والأنظمة منخفضة الكربوهيدرات. وداخل التانك اختلف الشاركس حول فكرة المشروع."
     },
     "category": "Food",
     "founders": [],
@@ -5361,7 +5428,8 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/7202688",
-      "https://www.youtube.com/channel/UC1KWEteQGtKzN66Q6lBp_YA"
+      "https://www.youtube.com/channel/UC1KWEteQGtKzN66Q6lBp_YA",
+      "https://www.youtube.com/watch?v=5GdcZh3oldQ"
     ]
   },
   {
@@ -5373,8 +5441,8 @@
       "ar": "سمية أبو العز"
     },
     "description": {
-      "en": "Fashion design label.",
-      "ar": "علامة لتصميم الأزياء."
+      "en": "Somaia Aboelezz is an Egyptian fashion label whose designs draw on ancient Egyptian dress, channelling the strength and beauty of the goddess Bastet. Its founder, an illustrator turned fashion designer, closed a deal in Season 4.",
+      "ar": "سمية أبو العز علامة أزياء مصرية تستلهم تصميماتها من ملابس الحضارة المصرية القديمة، وتعكس قوة الإلهة باستت وجمالها. ونجحت مؤسستها، الرسامة التي تحولت إلى تصميم الأزياء، في الخروج بصفقة في الموسم الرابع."
     },
     "category": "Fashion",
     "founders": [
@@ -5393,8 +5461,11 @@
     },
     "sources": [
       "https://www.youm7.com/7202688",
-      "https://www.youm7.com/story/2025/11/19/%D9%81%D9%86%D8%A7%D9%86%D8%A9-%D8%AA%D8%A8%D9%87%D8%B1-%D9%84%D8%AC%D9%86%D8%A9-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A8%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%8A%D8%AF%D9%85%D8%AC-%D8%A7%D9%84%D9%81%D9%86-%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D9%8A-%D9%88%D8%B5%D9%86%D8%A7%D8%B9%D8%A9/7203961"
-    ]
+      "https://www.youm7.com/story/2025/11/19/%D9%81%D9%86%D8%A7%D9%86%D8%A9-%D8%AA%D8%A8%D9%87%D8%B1-%D9%84%D8%AC%D9%86%D8%A9-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A8%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%8A%D8%AF%D9%85%D8%AC-%D8%A7%D9%84%D9%81%D9%86-%D8%A7%D9%84%D8%AA%D8%B4%D9%83%D9%8A%D9%84%D9%8A-%D9%88%D8%B5%D9%86%D8%A7%D8%B9%D8%A9/7203961",
+      "https://www.youtube.com/watch?v=cWScmDWwSu0",
+      "https://www.youtube.com/watch?v=FUfp7PPA3T4"
+    ],
+    "video": "cWScmDWwSu0"
   },
   {
     "id": "churreto",
@@ -5743,8 +5814,8 @@
       "ar": "تشاج أب"
     },
     "description": {
-      "en": "Chug Up makes air-infusion water bottles with flavour pods that make plain water taste flavoured, encouraging people to drink more. A Season 4 recap features it among Abdallah Sallam's investments.",
-      "ar": "تشاج أب تنتج زجاجات مياه بتقنية Air-Infusion مع كبسولات نكهات تمنح الماء العادي طعمًا مميزًا، لتشجيع الناس على شرب المزيد من المياه. ويضم ملخص للموسم الرابع المشروع ضمن استثمارات عبد الله سلام."
+      "en": "Chug Up makes air-infusion water bottles with flavour pods that give plain water a taste and scent without any additives, encouraging people to drink more. A Season 4 recap features it among Abdallah Sallam's investments.",
+      "ar": "تشاج أب تنتج زجاجات مياه بتقنية Air-Infusion مع كبسولات نكهات تمنح الماء النقي طعمًا ورائحة دون أي إضافات، لتشجيع الناس على شرب المزيد من المياه. ويضم ملخص للموسم الرابع المشروع ضمن استثمارات عبد الله سلام."
     },
     "category": "Health",
     "founders": [],
@@ -5757,8 +5828,10 @@
     "sources": [
       "https://almalnews.com/2097274/",
       "https://www.elwatannews.com/news/details/8219208",
-      "https://www.youtube.com/watch?v=StXT_l6WaEM"
-    ]
+      "https://www.youtube.com/watch?v=StXT_l6WaEM",
+      "https://www.youtube.com/watch?v=UuAakh3uGjk"
+    ],
+    "video": "UuAakh3uGjk"
   },
   {
     "id": "plume",
@@ -5796,8 +5869,8 @@
       "ar": "ليل كيتشن"
     },
     "description": {
-      "en": "Fried-chicken restaurant that began as a cloud kitchen in Fayoum.",
-      "ar": "مطعم فرايد تشيكن بدأ كمطبخ سحابي في الفيوم."
+      "en": "Lil Kitchen is a fried-chicken restaurant founded by young entrepreneurs from Fayoum that began as a cloud kitchen and built its name on consistent taste and quality. In the Season 4 tank, the founders were pressed on what sets them apart from competitors.",
+      "ar": "ليل كيتشن مطعم فرايد تشيكن أسسه شباب من الفيوم، بدأ كمطبخ سحابي وبنى اسمه على ثبات الطعم والجودة. وفي التانك خلال الموسم الرابع واجه المؤسسون سؤال الشاركس عما يميزهم عن المنافسين."
     },
     "category": "Food",
     "founders": [],
@@ -5810,8 +5883,12 @@
     "sources": [
       "https://www.elwatannews.com/news/details/8219208",
       "https://www.dostor.org/5407960",
-      "https://www.youtube.com/watch?v=xJL-10a1c44"
-    ]
+      "https://www.youtube.com/watch?v=xJL-10a1c44",
+      "https://www.youtube.com/watch?v=6Iypwc-vS9s",
+      "https://www.youtube.com/watch?v=2KcXP9Z_ng0",
+      "https://www.youtube.com/shorts/XoOvpCYNG-k"
+    ],
+    "video": "6Iypwc-vS9s"
   },
   {
     "id": "the-nines",
@@ -5906,8 +5983,10 @@
     "sources": [
       "https://www.youtube.com/watch?v=KrGjoVJzQuI",
       "https://www.youtube.com/watch?v=Bi9gzV655fQ",
-      "https://www.youtube.com/watch?v=TIn35dyTP08"
-    ]
+      "https://www.youtube.com/watch?v=TIn35dyTP08",
+      "https://www.youtube.com/shorts/7WRbxDZktJ0"
+    ],
+    "video": "7WRbxDZktJ0"
   },
   {
     "id": "lamarckii",
