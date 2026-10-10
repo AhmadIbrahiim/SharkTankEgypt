@@ -1,21 +1,28 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Shot from '../../components/Shot.astro';
-import { langs, startups, giscus, t, terms, screenshot, type Lang, type Startup } from '../../config';
+import Sharks from '../../components/Sharks.astro';
+import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, type Lang, type Startup } from '../../config';
 
 export const getStaticPaths = () =>
-  langs.flatMap((lang) => startups.map((x) => ({ params: { lang, id: x.id }, props: { x } })));
+  langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
 const lang = Astro.params.lang as Lang;
-const { x } = Astro.props as { x: Startup };
+const { i } = Astro.props as { i: number };
+const x: Startup = startups[i];
+const prev = startups[i - 1], next = startups[i + 1];
 const s = t[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const num = (n: number) => n.toLocaleString(lang === 'ar' ? 'ar-EG' : 'en-US');
 const commentsOn = giscus.repoId && giscus.categoryId;
 const otherName = x.name[lang === 'ar' ? 'en' : 'ar'];
 // Both names in the title so the page matches Arabic and English searches.
-const pageTitle = `${x.name[lang]} (${otherName}) – ${s.season} ${num(x.season)}`;
+const pageTitle = `${x.name[lang]} (${otherName}) – ${s.season} ${num(x.season, lang)}`;
 const image = screenshot(x.id) ?? undefined;
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
+const host = x.website?.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+const terms = [
+  { label: s.ask, amount: x.ask?.amountEGP, equity: x.ask?.equityPct, tone: '' },
+  ...(x.deal?.made ? [{ label: s.finalDeal, amount: x.deal.amountEGP, equity: x.deal.equityPct, tone: 'ok' }] : []),
+].filter((d) => d.amount != null || d.equity != null);
 const jsonld = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -28,65 +35,149 @@ const jsonld = {
   subjectOf: { '@type': 'TVEpisode', partOfSeries: { '@type': 'TVSeries', name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر' },
     partOfSeason: { '@type': 'TVSeason', seasonNumber: x.season }, ...(x.episode != null && { episodeNumber: x.episode }) },
 };
+const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '→' : '←');
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} image={image} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/${x.id}/`}>
-  <a href={`${base}/${lang}/`}>{s.back}</a>
-  <article>
-    <div class="shotwrap">
-      {x.website ? <a href={x.website} target="_blank" rel="noopener"><Shot id={x.id} name={x.name[lang]} /></a> : <Shot id={x.id} name={x.name[lang]} />}
-    </div>
-    <div>
-      <h1>{x.name[lang]} <small>{x.name[lang === 'ar' ? 'en' : 'ar']}</small></h1>
-      <p class="meta">
-        {s.season} {num(x.season)}{x.episode != null && ` · ${s.episode} ${num(x.episode)}`}
-        {x.category && <span class="badge">{x.category}</span>}
-        {x.deal?.made != null && <span class={`badge ${x.deal.made ? 'ok' : 'no'}`}>{x.deal.made ? s.deal : s.noDeal}</span>}
-      </p>
-      <p>{x.description[lang]}</p>
-      <dl>
-        {x.website && <><dt>{s.website}</dt><dd><a href={x.website} target="_blank" rel="noopener">{x.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></dd></>}
-        {x.founders?.length > 0 && <><dt>{s.founders}</dt><dd>{x.founders.join('، ')}</dd></>}
-        <dt>{s.ask}</dt><dd>{terms(x.ask?.amountEGP, x.ask?.equityPct, lang)}</dd>
-        {x.deal?.made && <><dt>{s.finalDeal}</dt><dd>{terms(x.deal.amountEGP, x.deal.equityPct, lang)}</dd></>}
-        {x.deal?.sharks?.length > 0 && <><dt>{s.sharks}</dt><dd>{x.deal.sharks.join('، ')}</dd></>}
-      </dl>
-    </div>
-  </article>
+  <div class="container">
+    <nav class="crumbs" aria-label="breadcrumb">
+      <a href={`${base}/${lang}/`}>{s.home}</a>
+      <span aria-hidden="true">/</span>
+      <a href={`${base}/${lang}/?s=${x.season}`}>{s.season} {num(x.season, lang)}</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{x.name[lang]}</span>
+    </nav>
 
-  <section>
-    <h2>{s.comments}</h2>
-    {commentsOn ? (
-      <>
-        <p class="muted">{s.rateHint}</p>
-        {/* One discussion per startup, shared by both languages. */}
-        <script src="https://giscus.app/client.js" data-repo={giscus.repo} data-repo-id={giscus.repoId}
-          data-category={giscus.category} data-category-id={giscus.categoryId}
-          data-mapping="specific" data-term={x.id} data-strict="1" data-reactions-enabled="1"
-          data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme"
-          data-lang={lang} data-loading="lazy" crossorigin="anonymous" async></script>
-      </>
-    ) : <p class="muted">{s.commentsOff}</p>}
-  </section>
+    <article class="hero">
+      <div class="info">
+        <div class="row">
+          <span class="badge">{s.season} {num(x.season, lang)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
+          {x.category && <a class="badge nile" href={`${base}/${lang}/?c=${encodeURIComponent(x.category)}`}>{x.category}</a>}
+          {x.deal?.made === true && <span class="badge ok">🤝 {s.deal}</span>}
+          {x.deal?.made === false && <span class="badge">{s.noDeal}</span>}
+        </div>
+        <h1>{x.name[lang]}</h1>
+        {otherName !== x.name[lang] && <p class="alt" lang={lang === 'ar' ? 'en' : 'ar'}>{otherName}</p>}
+        <p class="lead">{x.description[lang]}</p>
+        <div class="actions">
+          {x.website && (
+            <a class="btn btn-primary" href={x.website} target="_blank" rel="noopener">
+              {s.visit}
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" class="ext"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          )}
+          <a class="btn btn-ghost" href="#comments">💬 {s.comments}</a>
+        </div>
+        {x.founders?.length > 0 && (
+          <p class="founders"><span>{s.founders}</span> {x.founders.join(lang === 'ar' ? '، ' : ', ')}</p>
+        )}
+      </div>
+      <div class="visual">
+        {x.website ? <a href={x.website} target="_blank" rel="noopener" aria-label={`${s.visit}: ${host}`}><Shot id={x.id} name={x.name[lang]} eager /></a> : <Shot id={x.id} name={x.name[lang]} eager />}
+        {host && <p class="host">{host}</p>}
+      </div>
+    </article>
 
-  {x.sources?.length > 0 && (
-    <details>
-      <summary>{s.sources}</summary>
-      <ul>{x.sources.map((u) => <li><a href={u} target="_blank" rel="noopener">{u}</a></li>)}</ul>
-    </details>
-  )}
+    {terms.length > 0 && (
+      <section class="terms">
+        {terms.map((d) => {
+          const v = valuation(d.amount, d.equity);
+          return (
+            <div class:list={['term', d.tone]}>
+              <h2>{d.label}</h2>
+              <p class="big">{money(d.amount, lang) ?? '—'}</p>
+              <p class="small">
+                {d.equity != null && <>{s.forEquity} <strong>{pct(d.equity, lang)}</strong></>}
+                {v && <> · {s.valuation} {money(v, lang)}</>}
+              </p>
+            </div>
+          );
+        })}
+        {x.deal?.sharks?.length > 0 && (
+          <div class="term sharks">
+            <h2>{s.sharks}</h2>
+            <Sharks names={x.deal.sharks} labels />
+          </div>
+        )}
+      </section>
+    )}
+
+    <section id="comments" class="comments">
+      <h2>💬 {s.comments}</h2>
+      {commentsOn ? (
+        <>
+          <p class="hint">{s.rateHint}</p>
+          {/* One discussion per startup, shared by both languages. */}
+          <script src="https://giscus.app/client.js" data-repo={giscus.repo} data-repo-id={giscus.repoId}
+            data-category={giscus.category} data-category-id={giscus.categoryId}
+            data-mapping="specific" data-term={x.id} data-strict="1" data-reactions-enabled="1"
+            data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme"
+            data-lang={lang} data-loading="lazy" crossorigin="anonymous" async></script>
+        </>
+      ) : <p class="hint">{s.commentsOff}</p>}
+    </section>
+
+    <nav class="pager" aria-label={`${s.prev} / ${s.next}`}>
+      {prev ? <a class="pg" href={`${base}/${lang}/${prev.id}/`}><small>{arrow('back')} {s.prev}</small><span>{prev.name[lang]}</span></a> : <span />}
+      {next && <a class="pg next" href={`${base}/${lang}/${next.id}/`}><small>{s.next} {arrow('fwd')}</small><span>{next.name[lang]}</span></a>}
+    </nav>
+
+    {x.sources?.length > 0 && (
+      <details class="sources">
+        <summary>{s.sources} ({num(x.sources.length, lang)})</summary>
+        <ul>{x.sources.map((u) => <li><a href={u} target="_blank" rel="noopener nofollow" dir="ltr">{u}</a></li>)}</ul>
+      </details>
+    )}
+  </div>
 </Base>
 
 <style>
-  article { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; margin: 16px 0 32px; }
-  @media (max-width: 760px) { article { grid-template-columns: 1fr; } }
-  .shotwrap a { text-decoration: none; }
-  .shotwrap { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); align-self: start; }
-  h1 { margin: 0; line-height: 1.3; }
-  h1 small { color: var(--muted); font-size: .55em; font-weight: 400; }
-  .meta { color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-  .muted { color: var(--muted); }
-  dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; }
-  dt { color: var(--muted); }
-  dd { margin: 0; overflow-wrap: anywhere; }
-  details { margin-top: 32px; color: var(--muted); overflow-wrap: anywhere; }
+  .crumbs { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 22px; font-size: .9rem; color: var(--ink-2); }
+  .crumbs a { color: var(--ink-2); text-decoration: none; }
+  .crumbs a:hover { color: var(--sun-ink); }
+  .crumbs [aria-current] { color: var(--ink); }
+
+  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 40px; align-items: center; padding-block: 28px 36px; }
+  @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 24px; } .visual { order: -1; } }
+  .row { display: flex; gap: 6px; flex-wrap: wrap; }
+  a.badge { text-decoration: none; }
+  h1 { font-size: clamp(2rem, 4.5vw, 3rem); margin-top: 14px; letter-spacing: -.02em; }
+  :global([dir='rtl']) h1 { letter-spacing: 0; }
+  .alt { margin: 4px 0 0; color: var(--ink-2); font-size: 1.1rem; }
+  .lead { font-size: 1.12rem; margin: 18px 0 24px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  :global([dir='rtl']) .ext { transform: scaleX(-1); }
+  .founders { margin: 22px 0 0; color: var(--ink-2); }
+  .founders span { font-weight: 500; color: var(--ink); margin-inline-end: 6px; }
+  .visual { padding: 12px; border-radius: calc(var(--radius) + 6px); background: var(--surface); box-shadow: var(--shadow-lift); transform: rotate(-1deg); transition: transform .4s; }
+  :global([dir='rtl']) .visual { transform: rotate(1deg); }
+  .visual:hover, :global([dir='rtl']) .visual:hover { transform: rotate(0); }
+  .visual a { text-decoration: none; }
+  .visual :global(.ph) { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+  .host { margin: 10px 4px 0; font-size: .85rem; color: var(--ink-2); direction: ltr; text-align: center; }
+
+  .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .term { padding: 20px 22px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+  .term.ok { background: var(--ok-soft); box-shadow: none; }
+  .term h2 { font-size: .9rem; font-weight: 500; color: var(--ink-2); }
+  .term.ok h2, .term.ok .big { color: var(--ok); }
+  .big { font-size: 1.9rem; font-weight: 650; margin: 6px 0 2px; }
+  .small { margin: 0; color: var(--ink-2); font-size: .92rem; }
+  .small strong { color: var(--ink); font-weight: 600; }
+  .sharks h2 { margin-bottom: 12px; }
+
+  .comments { margin-top: 40px; padding: 28px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 80px; }
+  .comments h2 { font-size: 1.35rem; }
+  .hint { color: var(--ink-2); margin: 8px 0 20px; }
+
+  .pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 32px; }
+  .pg { display: flex; flex-direction: column; max-width: 48%; padding: 14px 18px; border-radius: 16px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: border-color .2s, background .2s; }
+  .pg:hover { border-color: var(--sun); background: var(--surface); }
+  .pg small { color: var(--ink-2); }
+  .pg span { font-weight: 500; }
+  .pg.next { text-align: end; margin-inline-start: auto; }
+
+  .sources { margin-top: 28px; color: var(--ink-2); font-size: .9rem; }
+  .sources summary { cursor: pointer; }
+  .sources ul { padding-inline-start: 20px; }
+  .sources a { overflow-wrap: anywhere; color: var(--ink-2); }
 </style>
