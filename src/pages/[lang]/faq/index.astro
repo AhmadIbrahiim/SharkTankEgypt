@@ -1,0 +1,67 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Faq from '../../../components/Faq.astro';
+import Avatar from '../../../components/Avatar.astro';
+import { langs, t, category, catSlug, seasonLabel, type Lang } from '../../../config';
+import { programFaq } from '../../../faq';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const s = t[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const f = programFaq(lang);
+const all = [...f.general, ...f.sharks.flatMap((x) => x.qa), ...f.seasons.flatMap((x) => x.qa), ...f.categories.flatMap((x) => x.qa)];
+// One FAQPage for the whole page (Google reads a single FAQPage per URL).
+const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, name: s.faqHubTitle,
+  mainEntity: all.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
+---
+<Base lang={lang} title={s.faqHubTitle} description={s.faqHubIntro} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/faq/`}>
+  <div class="container narrow">
+    <header class="intro">
+      <h1>❓ {s.faqHubTitle}</h1>
+      <p>{s.faqHubIntro}</p>
+      <nav class="jump">
+        <a href="#general">{s.faqGeneral}</a><a href="#sharks">{s.navSharks}</a><a href="#seasons">{s.faqBySeason}</a><a href="#sectors">{s.faqBySector}</a>
+      </nav>
+    </header>
+
+    <Faq lang={lang} items={f.general} title={s.faqGeneral} id="general" ld={false} />
+
+    <h2 class="group" id="sharks">{s.navSharks}</h2>
+    {f.sharks.map(({ p, qa }) => (
+      <div class="block">
+        <a class="who" href={`${base}/${lang}/sharks/${p.id}/`}><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={40} /><span>{p.name[lang]}</span></a>
+        <Faq lang={lang} items={qa} title="" id={`shark-${p.id}`} ld={false} />
+      </div>
+    ))}
+
+    <h2 class="group" id="seasons">{s.faqBySeason}</h2>
+    {f.seasons.map(({ n, qa }) => (
+      <div class="block">
+        <a class="who" href={`${base}/${lang}/season/${n}/`}><span>{seasonLabel(n, lang)}</span></a>
+        <Faq lang={lang} items={qa} title="" id={`season-${n}`} ld={false} />
+      </div>
+    ))}
+
+    <h2 class="group" id="sectors">{s.faqBySector}</h2>
+    {f.categories.map(({ c, qa }) => (
+      <div class="block">
+        <a class="who" href={`${base}/${lang}/category/${catSlug(c)}/`}><span>{category(c, lang)}</span></a>
+        <Faq lang={lang} items={qa} title="" id={`sector-${catSlug(c)}`} ld={false} />
+      </div>
+    ))}
+  </div>
+</Base>
+<style>
+  .narrow { max-width: 860px; }
+  .intro { padding: 40px 0 0; text-align: center; }
+  .intro h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+  .intro p { color: var(--ink-2); max-width: 62ch; margin: 10px auto 0; }
+  .jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 20px; }
+  .jump a { padding: 6px 14px; border-radius: 999px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .9rem; }
+  .group { font-size: 1.5rem; margin: 48px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
+  .block { margin-top: 24px; }
+  .block :global(.faq) { margin-top: 10px; }
+  .who { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+  .who:hover span { color: var(--sun-ink); }
+</style>

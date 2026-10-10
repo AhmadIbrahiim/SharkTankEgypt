@@ -3,6 +3,8 @@ import Base from '../../../layouts/Base.astro';
 import Avatar from '../../../components/Avatar.astro';
 import Links from '../../../components/Links.astro';
 import MiniCard from '../../../components/MiniCard.astro';
+import Faq from '../../../components/Faq.astro';
+import { founderFaq } from '../../../faq';
 import { langs, founders, t, founderId, suggestUrl, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => founders.map((p) => ({ params: { lang, id: p.id }, props: { p } })));
@@ -41,6 +43,7 @@ const jsonld = {
       <h2>{s.theirStartups}</h2>
       <ul class="grid">{p.startups.map((x) => <li><MiniCard x={x} lang={lang} /></li>)}</ul>
     </section>
+    <Faq lang={lang} items={founderFaq(p, lang)} />
   </div>
 </Base>
 <style>
