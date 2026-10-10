@@ -305,9 +305,11 @@ export const founders = (() => {
   }
   return [...by].map(([id, f]) => {
     const p = profiles.get(`founder:${id}`);
-    // No published portrait for most founders: use the frame CBC published from their pitch on the show.
-    const v = f.startups.find((x) => x.video)?.video;
-    const photo = p?.photo ?? (v ? { url: existsSync(`public/people/pitch-${v}.jpg`) ? `/people/pitch-${v}.jpg` : `https://i.ytimg.com/vi/${v}/mqdefault.jpg`, credit: 'Shark Tank Egypt · CBC', creditUrl: `https://www.youtube.com/watch?v=${v}` } : undefined);
+    // No published portrait for most founders: use the frame CBC published from their pitch on the show,
+    // only where a reviewed crop exists in public/people (title cards and shark close-ups were rejected).
+    // Only for sole founders: with several founders the frame may show a co-founder.
+    const v = f.startups.filter((x) => (x.founders ?? []).length === 1).map((x) => x.video).find((v) => v && existsSync(`public/people/pitch-${v}.jpg`));
+    const photo = p?.photo ?? (v ? { url: `/people/pitch-${v}.jpg`, credit: 'Shark Tank Egypt · CBC', creditUrl: `https://www.youtube.com/watch?v=${v}` } : undefined);
     return { ...p, id, kind: 'founder' as const, key: f.key, name: p?.name ?? { en: f.key, ar: (namesAr as Record<string, string>)[f.key] ?? f.key }, photo, startups: f.startups };
   }).sort((a, b) => a.name.en.localeCompare(b.name.en));
 })();
