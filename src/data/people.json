@@ -105,7 +105,12 @@
       "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month",
       "https://misrconnect.com/en/profiles/967",
       "https://endeavoreg.org/mohamed-farouk-joins-endeavor-egypt-board/"
-    ]
+    ],
+    "photo": {
+      "url": "/people/mohamed-farouk.jpg",
+      "credit": "misrconnect.com",
+      "creditUrl": "https://misrconnect.com/en/profiles/967"
+    }
   },
   {
     "id": "hilda-louca",
@@ -255,7 +260,12 @@
       "https://enterpriseam.com/egypt/2023/01/09/shark-tank-egypt-gets-off-to-an-exciting-start/",
       "https://broadcastprome.com/news/shark-tank-egypt-season-3-premieres-this-month",
       "https://misrconnect.com/en/profiles/749"
-    ]
+    ],
+    "photo": {
+      "url": "/people/ayman-abbas.jpg",
+      "credit": "misrconnect.com",
+      "creditUrl": "https://misrconnect.com/en/profiles/749"
+    }
   },
   {
     "id": "dina-ghabbour",

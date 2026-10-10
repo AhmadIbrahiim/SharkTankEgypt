@@ -6,11 +6,18 @@ import { get, meta } from './harvest.mjs';
 
 const out = process.argv[2] ?? 'photos';
 mkdirSync(out, { recursive: true });
-const people = JSON.parse(readFileSync('src/data/people.json', 'utf8')).filter((p) => p.kind === 'shark' && !p.photo);
+const people = JSON.parse(readFileSync('src/data/people.json', 'utf8')).filter((p) => p.kind === 'shark' && !p.photo?.url?.startsWith('/'));
 const index = {};
 for (const p of people) {
   const pages = [...new Set([...Object.values(p.links ?? {}), ...(p.sources ?? [])])];
   index[p.id] = [];
+  // An external photo we already use is a candidate too (so it can be self-hosted).
+  if (p.photo?.url) {
+    try {
+      const res = await fetch(p.photo.url, { headers: { 'user-agent': 'SharkTankEgyptDirectory/1.0 (github.com/AhmadIbrahiim/SharkTankEgypt)' }, signal: AbortSignal.timeout(20000) });
+      if (res.ok) { const file = `${p.id}-0.jpg`; writeFileSync(`${out}/${file}`, Buffer.from(await res.arrayBuffer())); index[p.id].push({ file, src: p.photo.url, page: p.photo.creditUrl }); }
+    } catch (e) { console.log('✗', p.id, 'photo', e.message); }
+  }
   for (const page of pages) {
     try {
       const { html, url } = await get(page);
