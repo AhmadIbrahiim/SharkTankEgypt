@@ -1,0 +1,17 @@
+name: Test TikTok/Facebook clip access
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - run: pip install -q yt-dlp
+      # Can a CI runner list the show's official TikTok and Facebook videos, and fetch one's audio?
+      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 30 "https://www.tiktok.com/@sharktankegypt" 2>&1 | tail -35 || true
+      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 30 "https://www.facebook.com/SharkTankEgypt/videos" 2>&1 | tail -35 || true
+      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 30 "https://www.instagram.com/sharktank.egypt/reels/" 2>&1 | tail -20 || true
+      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 10 "https://www.dailymotion.com/search/shark%20tank%20egypt/videos" 2>&1 | tail -15 || true
+      - name: Fetch one TikTok clip's audio
+        run: |
+          id=$(yt-dlp --flat-playlist --print "%(webpage_url)s" --playlist-end 1 "https://www.tiktok.com/@sharktankegypt" 2>/dev/null | head -1)
+          echo "url: $id"; [ -n "$id" ] && yt-dlp -x --audio-format mp3 -o /tmp/a.%(ext)s "$id" 2>&1 | tail -5 && ls -la /tmp/a.* || true
