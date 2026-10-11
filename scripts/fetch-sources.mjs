@@ -9,10 +9,12 @@ const startups = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
 const SOCIAL = /youtube|youtu\.be|instagram|facebook|tiktok|linkedin|twitter|x\.com/;
 // Unknown outcomes, plus deals recorded without the shark's name.
 const open = startups.filter((x) => !x.deal || x.deal.made == null || (x.deal.made && !x.deal.sharks?.length));
-const jobs = open.flatMap((x) => x.sources.filter((u) => !SOCIAL.test(u)).map((url) => ({ id: x.id, url })));
+// --leads: only the hand-picked leads (fast); default: every source of every open startup too.
+const leadsOnly = process.argv.includes('--leads');
+const jobs = leadsOnly ? [] : open.flatMap((x) => x.sources.filter((u) => !SOCIAL.test(u)).map((url) => ({ id: x.id, url })));
 // leads.json: extra articles found by search, read in full here because snippets cut off
 try { jobs.push(...JSON.parse(readFileSync('automation/sources/leads.json', 'utf8'))); } catch {}
-for (const u of ['https://sharktank-egypt.com/en/deals', 'https://sharktank-egypt.com/ar/deals', 'https://sharktank-egypt.com/en']) jobs.push({ id: '_show', url: u });
+if (!leadsOnly) for (const u of ['https://sharktank-egypt.com/en/deals', 'https://sharktank-egypt.com/ar/deals', 'https://sharktank-egypt.com/en']) jobs.push({ id: '_show', url: u });
 
 const out = [];
 for (let i = 0; i < jobs.length; i += 6) // a few at a time: polite to the news sites
@@ -24,7 +26,7 @@ for (let i = 0; i < jobs.length; i += 6) // a few at a time: polite to the news 
 // One at a time with a pause: YouTube answers 429 to bursts. oEmbed (title only) is the fallback.
 const ytId = (u) => u.match(/(?:v=|youtu\.be\/|shorts\/)([\w-]{11})/)?.[1];
 const vids = [...new Map(open.flatMap((x) => [x.video, ...x.sources.map(ytId)].filter(Boolean).map((v) => [v, x.id]))).entries()];
-for (const [v, id] of vids) {
+for (const [v, id] of leadsOnly ? [] : vids) {
   const url = `https://www.youtube.com/watch?v=${v}`;
   try { const r = await youtube(v); out.push({ id, url, text: `${r.title ?? ''}\n${r.description ?? ''}`, channel: r.channel }); }
   catch (e) {
