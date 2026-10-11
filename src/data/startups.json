@@ -1718,11 +1718,17 @@
       "amountEGP": 3500000,
       "equityPct": 8
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6080709",
       "https://www.elwatannews.com/news/details/6437004",
-      "https://www.youtube.com/watch?v=fMCAaM9RFuc"
+      "https://www.youtube.com/watch?v=fMCAaM9RFuc",
+      "https://www.dostor.org/4310500"
     ],
     "video": "fMCAaM9RFuc",
     "pitch": {
@@ -13772,8 +13778,8 @@
       "ar": "ستانينج"
     },
     "description": {
-      "en": "Stunning (stunning.so), founded by Mohamed Ghaith in 2023, is an AI platform that turns an idea described in plain language, spoken or typed, into a website, app or dashboard without code. It generates layouts, images and copy, and adds built-in SEO, AI marketing tools, CRM features and multi-site management for agencies. It natively supports Arabic and right-to-left layouts and serves freelancers, agencies and businesses, with a strong focus on the MENA region. Ghaith came to it after four failed ventures; in the tank the sharks asked how it differs from Google, and the episode and a reported EGP 12.5M deal later stirred public debate.",
-      "ar": "ستانينج (stunning.so) منصة أسسها محمد غيث عام 2023، تعتمد على الذكاء الاصطناعي لتحويل فكرة يصفها المستخدم بلغة عادية، منطوقة أو مكتوبة، إلى موقع أو تطبيق أو لوحة تحكم دون كتابة كود. وتولّد التصميم والصور والنصوص تلقائيًا، وتضم أدوات مدمجة لتحسين الظهور في محركات البحث والتسويق بالذكاء الاصطناعي وإدارة العملاء، وإدارة عدة مواقع للوكالات. وتدعم العربية والكتابة من اليمين إلى اليسار بشكل أصيل، وتخدم المستقلين والوكالات والشركات مع تركيز واضح على منطقة الشرق الأوسط وشمال أفريقيا. وجاءت بعد أربع محاولات فاشلة لمؤسسها، وتساءل الشاركس عن الفرق بينها وبين جوجل، ثم أثارت الحلقة والصفقة المتداولة بقيمة 12.5 مليون جنيه جدلًا واسعًا."
+      "en": "Stunning (stunning.so), founded by Mohamed Ghaith in 2023, is an AI platform that turns an idea described in plain language, spoken or typed, into a website, app or dashboard without code. It generates layouts, images and copy, and adds built-in SEO, AI marketing tools, CRM features and multi-site management for agencies. It natively supports Arabic and right-to-left layouts and serves freelancers, agencies and businesses, with a strong focus on the MENA region. Ghaith came to it after four failed ventures; in the tank the sharks asked how it differs from Google, and the episode and its EGP 12.5M deal with Ahmed Tarek Khalil later stirred public debate.",
+      "ar": "ستانينج (stunning.so) منصة أسسها محمد غيث عام 2023، تعتمد على الذكاء الاصطناعي لتحويل فكرة يصفها المستخدم بلغة عادية، منطوقة أو مكتوبة، إلى موقع أو تطبيق أو لوحة تحكم دون كتابة كود. وتولّد التصميم والصور والنصوص تلقائيًا، وتضم أدوات مدمجة لتحسين الظهور في محركات البحث والتسويق بالذكاء الاصطناعي وإدارة العملاء، وإدارة عدة مواقع للوكالات. وتدعم العربية والكتابة من اليمين إلى اليسار بشكل أصيل، وتخدم المستقلين والوكالات والشركات مع تركيز واضح على منطقة الشرق الأوسط وشمال أفريقيا. وجاءت بعد أربع محاولات فاشلة لمؤسسها، وتساءل الشاركس عن الفرق بينها وبين جوجل، ثم أثارت الحلقة وصفقتها مع أحمد طارق خليل بقيمة 12.5 مليون جنيه جدلًا واسعًا."
     },
     "category": "Tech",
     "founders": [
@@ -13784,8 +13790,16 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 12500000,
+      "equityPct": 20
+    },
     "sources": [
+      "https://stunning.so/blog/how-mohamed-ghaith-proved-stunningsos-innovation-on-shark-tank-egypt",
       "https://www.youtube.com/watch?v=i-tONMJppcw",
       "https://sharktankarabi.com/3670/",
       "https://nabdapp.com/t/166159146",
@@ -13807,14 +13821,14 @@
           "Native Arabic and right-to-left support",
           "Built-in SEO, AI marketing and CRM tools",
           "Multi-site management for agencies",
-          "Reported EGP 12.5M deal on Shark Tank Egypt"
+          "EGP 12.5M for 20% from Ahmed Tarek Khalil on Shark Tank Egypt"
         ],
         "ar": [
           "تبني مواقع وتطبيقات ولوحات تحكم من فكرة موصوفة",
           "دعم أصيل للعربية والكتابة من اليمين لليسار",
           "أدوات مدمجة لمحركات البحث والتسويق وإدارة العملاء",
           "إدارة عدة مواقع للوكالات",
-          "صفقة متداولة بقيمة 12.5 مليون جنيه في شارك تانك مصر"
+          "12.5 مليون جنيه مقابل 20% من أحمد طارق خليل في شارك تانك مصر"
         ]
       }
     }

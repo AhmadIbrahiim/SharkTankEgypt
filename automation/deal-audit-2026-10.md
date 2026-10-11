@@ -211,3 +211,14 @@ The clip index was re-run to keep each clip's full description (the first pass o
 | Cover Spore | No deal ("الشاركس دايما جاهزين للمساعدة حتى لو من غير ديل") | sharktankarabi.com/446 |
 
 Leads that remain offers only: Nutrifits (Ahmed Tarek 40M/40%), DIDO's Snacks (Ahmed Tarek's late offer), Sphinx (joint offer from Dina Ghabbour, Bishoy Azmy and Mohamed Farouk), Stunning, Ami's Bakery, Pure Butters, Game Guru, ZINK, Pavo, Life Snacks, Super Abla, Weddngo, Dark Solution, Pharmabill, Flouxo (Farouk + El Sewedy offer), Baby Star (rejected Ahmed Tarek and Ayman Abbas's offer), Lelu (only Ayman Abbas stayed in), Plume (joint offer from Ahmed Tarek and Mohamed Farouk before its deal).
+
+## Eleventh pass: full article text (leads fetch)
+
+The lead articles were downloaded in full by `sources.yml` (leads-only mode) and read as text.
+
+| Startup | Result | Source |
+|---|---|---|
+| Stunning | Deal: Ahmed Tarek Khalil, EGP 12.5M for 20% ("a final agreement was reached with Mr. Ahmed Tarek for EGP 12.5 million in exchange for 20% of the company") | stunning.so/blog/how-mohamed-ghaith-proved-stunningsos-innovation-on-shark-tank-egypt |
+| Bikado | No deal ("جاء الرد النهائى بأن الفكرة «فى حاجة لتوضيح أكبر»") | dostor.org/4310500 |
+
+Read but not conclusive: the Cairo360 "pitches that landed a deal" roundup (it describes pitches only and itself says not every startup got a deal; its Fool Tank link redirects to the same page), Super Abla (Al Jazeera profile, no mention of the show's outcome), OOAPS (Enterprise funding article, no shark named), Nutrifits (offers only), KAK Squad (Mohamed Farouk declined; no final outcome), Ketolicious, Fino, Schoolz, Ami's Bakery (pitch only).
