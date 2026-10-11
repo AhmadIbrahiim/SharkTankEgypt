@@ -119,7 +119,11 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
       // Phones: the two-row header slides away while scrolling down and comes back on scroll up.
       const h = document.querySelector('.site-header')!;
       let last = scrollY;
-      addEventListener('scroll', () => { const y = scrollY; h.classList.toggle('away', y > last && y > 120); last = y; }, { passive: true });
+      // --hdr: the header's visible height, for sticky bars below it (0 while the phone header is slid away).
+      const phone = matchMedia('(max-width: 640px)');
+      const setH = () => document.documentElement.style.setProperty('--hdr', `${phone.matches && h.classList.contains('away') ? 0 : h.offsetHeight}px`);
+      addEventListener('scroll', () => { const y = scrollY; const away = y > last && y > 120; if (away !== h.classList.contains('away')) { h.classList.toggle('away', away); setH(); } last = y; }, { passive: true });
+      addEventListener('resize', setH); setH();
     </script>
 
     <main id="main"><slot /></main>
@@ -179,6 +183,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     --shadow: 0 1px 2px rgb(60 35 15 / .06), 0 10px 30px -12px rgb(60 35 15 / .18);
     --shadow-lift: 0 2px 4px rgb(60 35 15 / .06), 0 22px 44px -16px rgb(60 35 15 / .28);
     --radius: 20px;
+    --gap-sec: 40px; /* between page sections */
     color-scheme: light dark;
   }
   @media (prefers-color-scheme: dark) {
@@ -201,6 +206,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   }
   main { flex: 1; }
   h1, h2, h3 { line-height: 1.25; font-weight: 650; margin: 0; text-wrap: balance; }
+  @media (max-width: 640px) { :root { --gap-sec: 32px; } }
   p { text-wrap: pretty; }
   a { color: var(--sun-ink); text-underline-offset: 3px; }
   img { max-width: 100%; display: block; }
