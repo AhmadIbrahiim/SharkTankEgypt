@@ -3,7 +3,7 @@
 // Runs in GitHub Actions (open internet). Usage: node scripts/fetch-sources.mjs <out.json>
 import { readFileSync, writeFileSync } from 'node:fs';
 import { get, youtube } from './harvest.mjs';
-import { textOf } from './enrich.mjs';
+import { textOf } from './harvest.mjs';
 
 const startups = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
 const SOCIAL = /youtube|youtu\.be|instagram|facebook|tiktok|linkedin|twitter|x\.com/;

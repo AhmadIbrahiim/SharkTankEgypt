@@ -9,13 +9,8 @@ import { get, youtube, social } from './harvest.mjs';
 const MODEL = process.env.MODEL ?? 'openai/gpt-4.1-mini';
 const LIMIT = +(process.env.LIMIT ?? 140); // free tier allows ~150 requests/day for this model class
 
-/** Visible text of a page: headings and paragraphs, scripts/styles dropped, capped for the prompt. */
-export const textOf = (html, max = 5000) => html
-  .replace(/<(script|style|noscript|svg)[\s\S]*?<\/\1>/gi, ' ')
-  .replace(/<\/(h[1-6]|p|li|div|section)>/gi, '\n')
-  .replace(/<[^>]+>/g, ' ')
-  .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
-  .replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim().slice(0, max);
+import { textOf } from './harvest.mjs';
+export { textOf };
 
 if (process.argv.includes('--test')) {
   const t = textOf('<html><style>x{}</style><h1>Brand</h1><script>evil()</script><p>We sell&nbsp;honey.</p></html>');
