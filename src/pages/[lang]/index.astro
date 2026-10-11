@@ -188,6 +188,9 @@ const jsonld = {
     apply();
     q.focus();
   });
+  // The header's search button links here as #q.
+  const toSearch = () => location.hash === '#q' && q.focus();
+  toSearch(); addEventListener('hashchange', toSearch);
   // "/" jumps to search, like GitHub.
   addEventListener('keydown', (e) => {
     if (e.key === '/' && document.activeElement?.tagName !== 'INPUT') { e.preventDefault(); q.focus(); }
