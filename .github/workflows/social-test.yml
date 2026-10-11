@@ -1,17 +1,38 @@
-name: Test TikTok/Facebook clip access
+name: Test TikTok clip access
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
-      - run: pip install -q yt-dlp
-      # Can a CI runner list the show's official TikTok and Facebook videos, and fetch one's audio?
-      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 30 "https://www.tiktok.com/@sharktankegypt" 2>&1 | tail -35 || true
-      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 30 "https://www.facebook.com/SharkTankEgypt/videos" 2>&1 | tail -35 || true
-      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 30 "https://www.instagram.com/sharktank.egypt/reels/" 2>&1 | tail -20 || true
-      - run: yt-dlp --flat-playlist --print "%(id)s | %(title)s" --playlist-end 10 "https://www.dailymotion.com/search/shark%20tank%20egypt/videos" 2>&1 | tail -15 || true
-      - name: Fetch one TikTok clip's audio
+      - uses: actions/checkout@v4
+      - run: pip install -q "yt-dlp[default,curl-cffi]" faster-whisper
+      # Every clip on the show's official TikTok, with its caption (captions can name the outcome).
+      - run: |
+          yt-dlp --impersonate chrome --flat-playlist --dump-json "https://www.tiktok.com/@sharktank.egypt" > /tmp/tt.jsonl 2> /tmp/tt.err || true
+          wc -l /tmp/tt.jsonl; tail -5 /tmp/tt.err
+          python3 -c "
+          import json; rows=[json.loads(l) for l in open('/tmp/tt.jsonl')]
+          json.dump([{'id':r.get('id'),'url':r.get('url') or r.get('webpage_url'),'title':r.get('title'),'description':r.get('description'),'date':r.get('timestamp')} for r in rows], open('automation/sources/tiktok.json','w'), ensure_ascii=False, indent=1)
+          print(len(rows)); [print(r.get('title') or r.get('description')) for r in rows[:15]]"
+      # Can one clip's audio be fetched and transcribed (Arabic), and how long does it take?
+      - run: |
+          url=$(python3 -c "import json; print(json.load(open('automation/sources/tiktok.json'))[0]['url'])")
+          echo "$url"
+          yt-dlp --impersonate chrome -x --audio-format mp3 -o '/tmp/a.%(ext)s' "$url" 2>&1 | tail -3
+          time python3 -c "
+          from faster_whisper import WhisperModel
+          m=WhisperModel('small', compute_type='int8'); segs,_=m.transcribe('/tmp/a.mp3', language='ar')
+          print(' '.join(s.text for s in segs))"
+        continue-on-error: true
+      - name: Commit
+        if: always()
         run: |
-          id=$(yt-dlp --flat-playlist --print "%(webpage_url)s" --playlist-end 1 "https://www.tiktok.com/@sharktankegypt" 2>/dev/null | head -1)
-          echo "url: $id"; [ -n "$id" ] && yt-dlp -x --audio-format mp3 -o /tmp/a.%(ext)s "$id" 2>&1 | tail -5 && ls -la /tmp/a.* || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add automation/sources/tiktok.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: official TikTok clip list"
+          git pull -q --rebase origin main && git push origin HEAD:main
