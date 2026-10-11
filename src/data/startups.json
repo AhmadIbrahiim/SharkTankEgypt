@@ -5090,8 +5090,8 @@
       "ar": "ويدنجو"
     },
     "description": {
-      "en": "Weddngo (WEDDnGO) is a Cairo-based online marketplace, founded in 2020, for booking wedding services, from dress designers and makeup artists to photographers and wedding-car rentals. Couples can pay through 16+ options, including instalments, which the company offers to ease the cost of getting married. Founder Magd asked for EGP 12 million for 20%; Ahmed El Sewedy and Mohamed Farouk competed with offers before Ayman Abbas put a tougher one on the table.",
-      "ar": "ويدنجو سوق إلكتروني من القاهرة تأسس عام 2020 لحجز خدمات الأفراح، من مصممي الفساتين وخبراء المكياج إلى المصورين وتأجير سيارات الزفاف. ويتيح للعرسان الدفع بأكثر من 16 وسيلة منها التقسيط، بهدف تخفيف تكاليف الزواج. طلب مؤسسه مجد 12 مليون جنيه مقابل 20%، وتنافس أحمد السويدي ومحمد فاروق بعروضهما قبل أن يطرح أيمن عباس عرضاً أصعب."
+      "en": "Weddngo (WEDDnGO) is a Cairo-based online marketplace, founded in 2020, for booking wedding services, from dress designers and makeup artists to photographers and wedding-car rentals. Couples can pay through 16+ options, including instalments, which the company offers to ease the cost of getting married. Founder Magd asked for EGP 12 million for 20%; Ahmed El Sewedy and Mohamed Farouk competed with offers before Ayman Abbas put a tougher one on the table; Magd accepted Ayman's offer.",
+      "ar": "ويدنجو سوق إلكتروني من القاهرة تأسس عام 2020 لحجز خدمات الأفراح، من مصممي الفساتين وخبراء المكياج إلى المصورين وتأجير سيارات الزفاف. ويتيح للعرسان الدفع بأكثر من 16 وسيلة منها التقسيط، بهدف تخفيف تكاليف الزواج. طلب مؤسسه مجد 12 مليون جنيه مقابل 20%، وتنافس أحمد السويدي ومحمد فاروق بعروضهما قبل أن يطرح أيمن عباس عرضاً أصعب، وقبل مجد عرض أيمن."
     },
     "category": "Services",
     "founders": [
@@ -5102,7 +5102,14 @@
       "amountEGP": 12000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6441786",
       "https://www.youtube.com/watch?v=dj17yYZHoXA",
@@ -5111,7 +5118,8 @@
       "https://www.youtube.com/watch?v=gQ8zqzxkX2Y",
       "https://vc4a.com/ventures/weddngo",
       "https://datacommons.dealroom.co/companies/weddngo",
-      "https://zoominfo.com/pic/weddngo/1318755063"
+      "https://zoominfo.com/pic/weddngo/1318755063",
+      "https://www.tiktok.com/@sharktank.egypt/video/7322564779367763205"
     ],
     "video": "dj17yYZHoXA",
     "links": {
@@ -5520,12 +5528,20 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youm7.com/6465758",
       "https://sharktankarabi.com/778/",
       "https://www.youtube.com/watch?v=4aRZpw8blYo",
-      "https://www.youtube.com/watch?v=-iuKvlS_LLw"
+      "https://www.youtube.com/watch?v=-iuKvlS_LLw",
+      "https://www.tiktok.com/@sharktank.egypt/video/7330393995417373958"
     ],
     "pitch": {
       "en": "Erada Fattah brought Era Care to Shark Tank Egypt in season 2, presenting her therapeutic skincare and cosmetics line. She told the sharks how she launched the brand from Upper Egypt with less than EGP 200 to chase a childhood dream, and her story impressed them.",
@@ -7112,16 +7128,22 @@
       "amountEGP": 500000,
       "equityPct": 5
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://almalnews.com/1888207/",
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://www.youm7.com/6768636",
-      "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q"
+      "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q",
+      "https://www.tiktok.com/@sharktank.egypt/video/7436046293299907848"
     ],
     "pitch": {
-      "en": "The founders of Outdated presented their Egyptian fashion label in season 3, episode 4, asking for EGP 500,000 for 5% of the company, which put its value at EGP 10 million. The record shows no deal closing on air, but the appearance brought the brand a wave of social-media attention.",
-      "ar": "قدّم مؤسسو أوت ديتد علامتهم المصرية للأزياء في الحلقة الرابعة من الموسم الثالث، وطلبوا 500 ألف جنيه مقابل 5% من الشركة، أي بتقييم 10 ملايين جنيه. ولا يُظهر السجل إبرام صفقة على الهواء، لكن الظهور في البرنامج منح العلامة موجة من الاهتمام على وسائل التواصل الاجتماعي."
+      "en": "The founders of Outdated presented their Egyptian fashion label in season 3, episode 4, asking for EGP 500,000 for 5% of the company, which put its value at EGP 10 million. The founder took an offer on air (\"I took the offer\"), and the appearance brought the brand a wave of social-media attention.",
+      "ar": "قدّم مؤسسو أوت ديتد علامتهم المصرية للأزياء في الحلقة الرابعة من الموسم الثالث، وطلبوا 500 ألف جنيه مقابل 5% من الشركة، أي بتقييم 10 ملايين جنيه. وقبل المؤسس عرضاً على الهواء، كما أن الظهور في البرنامج منح العلامة موجة من الاهتمام على وسائل التواصل الاجتماعي."
     }
   },
   {
@@ -8109,7 +8131,14 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Dina Ghabbour"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6808721",
       "https://www.youm7.com/6807489",
@@ -8117,7 +8146,8 @@
       "https://www.youtube.com/watch?v=NwZSipTOOfM",
       "https://www.youtube.com/watch?v=1IjuqZUJu2E",
       "https://cairoscene.com/Styled/We-re-Totes-in-Love-with-This-Egyptian-Bag-Bran",
-      "https://www.cairo360.com/?p=1792367"
+      "https://www.cairo360.com/?p=1792367",
+      "https://www.tiktok.com/@sharktank.egypt/video/7448611527747325192"
     ],
     "video": "1IjuqZUJu2E",
     "links": {
@@ -8166,11 +8196,17 @@
       "amountEGP": 25000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 25000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youm7.com/6808749",
       "https://www.youm7.com/6807489",
-      "https://whipup.co/"
+      "https://whipup.co/",
+      "https://www.tiktok.com/@sharktank.egypt/video/7447300883890621714"
     ],
     "links": {
       "facebook": "https://www.facebook.com/WhipUpEgypt/"
@@ -8206,8 +8242,8 @@
       ]
     },
     "pitch": {
-      "en": "In Season 3, Episode 9, founder Tarek Amir pitched Whip Up's egg-processing factory, which separates whites from yolks and reprocesses eggs into pasteurized products. He asked for EGP 25 million in exchange for 20% of the company. He left without a deal.",
-      "ar": "في الحلقة التاسعة من الموسم الثالث، عرض المؤسس طارق أمير مصنع ويب أب لتصنيع البيض، الذي يفصل البياض عن الصفار ويعيد تصنيع البيض في صورة منتجات مبسترة. وطلب 25 مليون جنيه مقابل 20% من الشركة، لكنه خرج دون صفقة."
+      "en": "In Season 3, Episode 9, founder Tarek Amir pitched Whip Up's egg-processing factory, which separates whites from yolks and reprocesses eggs into pasteurized products. He asked for EGP 25 million in exchange for 20% of the company. He closed a deal at EGP 25 million for 35%, with a time-limited royalty.",
+      "ar": "في الحلقة التاسعة من الموسم الثالث، عرض المؤسس طارق أمير مصنع ويب أب لتصنيع البيض، الذي يفصل البياض عن الصفار ويعيد تصنيع البيض في صورة منتجات مبسترة. وطلب 25 مليون جنيه مقابل 20% من الشركة، وأغلق صفقة بـ25 مليون جنيه مقابل 35% مع عائد (رويالتي) لمدة محدودة."
     },
     "about": {
       "highlights": {
@@ -13325,7 +13361,10 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ayman Abbas",
+        "Hend Sabry"
+      ],
       "amountEGP": null,
       "equityPct": null
     },

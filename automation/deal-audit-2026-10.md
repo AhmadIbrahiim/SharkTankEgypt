@@ -256,3 +256,18 @@ Clip titles that only suggest an outcome were not applied (the owner declined in
 | Horra | Deal (sharks not named; "she wanted 2 sharks") | "حرة خلت الشاركس ينافسوا بعض حتى بعد الديل" (7344357896588692742) |
 
 Not applied: "محمد فاروق قرر يستثمر في Olympia Football EG" (7694273009040887060). This may be a different Season 5 startup from Olympic Sports, which is a swimming academy, so the match is unconfirmed. Captions that only show offers or ask "will they take it?" were also skipped.
+
+## Fifteenth pass: transcripts of the official TikTok clips
+
+`transcribe.yml` downloaded up to 4 official clips per unknown startup (132 clips, 42 startups) and transcribed them with faster-whisper (`small`, Arabic). Of these, 123 clips were transcribed (`automation/sources/transcripts-*.json`). Each decisive line below was checked against the clip's own official caption. Whisper's spelling is corrected in brackets.
+
+| Startup | Result | Decisive line (clip id) |
+|---|---|---|
+| Era Care | Deal: Ayman Abbas, 35% (amount not audible) | "إحنا هناخد الأوفر بتاع أيمن بس هو هيكون خمسة وتلاتين في المية" … "أنا موافق كأيمن … أنا معك بالخمسة وتلاتين في المية" … "يلا مبروك" (7330393995417373958) |
+| Weddngo | Deal: Ayman Abbas | "أنا موافع [موافق] على أفر ستزايمن [أستاذ أيمن] مبروه [مبروك]"; the rival offers in the same clip were from "أستاذ أحمد" and "أستاذ حمادة" (7322564779367763205) |
+| Lil Kitchen | Sharks named: Ayman Abbas + Hend Sabry (deal already recorded) | "ما كناش متوقعين إنه أيضا [أيمن] عباس وهنصبري [وهند صبري] يكونوا مع بعضه في الديل" (7604465741903056146) |
+| Pavo | Deal: Dina Ghabbour | "هناخد الافر بتاع دينا" (7448611527747325192) |
+| Whip Up | Deal: EGP 25M for 35% (shark not named; time-limited royalty) | "35% قابل [مقابل] 25 مليون … مبروك" (7447300883890621714). This replaces unsourced prose from the early research batch that said "left without a deal". |
+| Outdated | Deal (shark not named) | "أنا خدت لوقف [الأوفر]"; caption: "ميسبش فرصة انه يخرج من غير Deal" (7436046293299907848) |
+
+Unclear in the transcripts (offers or negotiation only): Life Snacks, Mother Naked, Super Abla, Pharmabill, Nuit, Waymoure, Bayt El Saad, Tayar, Baby Star, Yalla Hagz, Fino, Pencilight, Sphinx Safety, Havana, Ami's Bakery, Connecto, Jouzoor, KAK Squad. Some clips under "tab" and "abgad" belonged to other startups (Lil Kitchen, DIDO's) and were matched by the clip's caption, not by the group they were filed under.
