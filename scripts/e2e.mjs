@@ -87,5 +87,12 @@ await test('startup page shows summary, verification and sources', async () => {
   assert.match(await p.textContent('.verify'), /Verified/);
   assert.ok(await p.isVisible('details.sources'));
 });
+await test('valuation calculator: 1M for 20% is 5M post-money, 4M pre-money; rejects bad input', async () => {
+  const p = await page(); await p.goto(`${U}/en/deals/`);
+  await p.fill('#ca', '1000000'); await p.fill('#ce', '20');
+  assert.match(await p.textContent('#co'), /Post-money: EGP 5,000,000 · Pre-money: EGP 4,000,000/);
+  await p.fill('#ce', '0'); assert.match(await p.textContent('#co'), /between 0 and 100/);
+  await p.fill('#ce', '150'); assert.match(await p.textContent('#co'), /between 0 and 100/);
+});
 await browser.close(); server.close();
 console.log(`e2e: ${passed} passed${process.exitCode ? ', some FAILED' : ''}`);
