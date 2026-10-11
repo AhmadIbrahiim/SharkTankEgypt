@@ -102,7 +102,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         )}
         <p class="lead">{x.description[lang].split(/(?<=[.!?؟])\s+/)[0]}</p>
         <p class="answer"><strong>{lang === 'ar' ? 'باختصار:' : 'In short:'}</strong> {autoPitch}</p>
-        <div class="actions">
+        {(x.website || commentsOn) && <div class="actions">
           {x.website && (
             <a class="btn btn-primary" href={x.website} target="_blank" rel="noopener">
               {s.visit}
@@ -110,7 +110,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
             </a>
           )}
           {commentsOn && <a class="btn btn-ghost" href="#comments">💬 {s.comments}</a>}
-        </div>
+        </div>}
       </div>
       <div class="visual">
         {x.video ? (
@@ -159,7 +159,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 
     <section id="pitch" class="sec">
       <h2>{s.secPitch}</h2>
-      <p class="pitchtext">{pitchText?.[lang] ?? autoPitch}</p>
+      {/* Without a written pitch the summary is already at the top; the cards below carry the terms. */}
+      {(pitchText?.[lang] || !terms.length) && <p class="pitchtext">{pitchText?.[lang] ?? autoPitch}</p>}
       {terms.length > 0 && (
       <section class="terms">
         {terms.map((d) => {
@@ -266,7 +267,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .crumbs a:hover { color: var(--sun-ink); }
   .crumbs [aria-current] { color: var(--ink); }
 
-  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 40px; align-items: center; padding-block: 28px 36px; }
+  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 40px; align-items: center; padding-block: 28px 16px; }
   @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 24px; } .visual { order: -1; } }
   .row { display: flex; gap: 6px; flex-wrap: wrap; }
   a.badge { text-decoration: none; }
@@ -274,10 +275,10 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   :global([dir='rtl']) h1 { letter-spacing: 0; }
   .alt { margin: 4px 0 0; color: var(--ink-2); font-size: 1.1rem; }
   .facts { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 12px 0 0; color: var(--ink-2); font-size: .95rem; }
-  .secnav { position: sticky; top: 64px; z-index: 5; display: flex; gap: 4px; overflow-x: auto; margin: 8px 0 4px; padding: 6px; border-radius: 999px; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(10px); box-shadow: var(--shadow); scrollbar-width: none; }
+  .secnav { position: sticky; top: calc(var(--hdr, 64px) + 8px); transition: top .25s ease; z-index: 5; display: flex; gap: 4px; overflow-x: auto; margin: 8px 0 4px; padding: 6px; border-radius: 999px; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(10px); box-shadow: var(--shadow); scrollbar-width: none; }
   .secnav a { flex: none; padding: 7px 16px; border-radius: 999px; color: var(--ink-2); text-decoration: none; font-size: .92rem; }
   .secnav a:hover { background: var(--surface-2); color: var(--ink); }
-  .sec { margin-top: 36px; scroll-margin-top: 130px; }
+  .sec { margin-top: var(--gap-sec); scroll-margin-top: calc(var(--hdr, 64px) + 70px); }
   #online :global(.online h2) { font-size: 1.4rem; font-weight: 650; color: var(--ink); margin-bottom: 14px; }
   #online :global(.online) { margin-top: 0; }
   .sec > h2 { font-size: 1.4rem; margin-bottom: 14px; }
@@ -300,8 +301,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .glance li { position: relative; padding-inline-start: 28px; }
   .glance li::before { content: '✓'; position: absolute; inset-inline-start: 0; top: 1px; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: .75rem; font-weight: 700; color: var(--ok); background: var(--ok-soft); }
   .lead { font-size: 1.12rem; margin: 18px 0 12px; }
-  .answer { margin: 0 0 24px; padding: 10px 14px; border-radius: 12px; background: var(--surface-2); color: var(--ink); font-size: .98rem; }
-  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .answer { margin: 0; padding: 10px 14px; border-radius: 12px; background: var(--surface-2); color: var(--ink); font-size: .98rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
   :global([dir='rtl']) .ext { transform: scaleX(-1); }
   .founders { margin: 22px 0 0; color: var(--ink-2); }
   .founders span { font-weight: 500; color: var(--ink); margin-inline-end: 6px; }
@@ -326,21 +327,21 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .small strong { color: var(--ink); font-weight: 600; }
   .sharks h2 { margin-bottom: 12px; }
 
-  .help { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: 28px; padding: 20px 24px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--sun) 45%, var(--line)); background: color-mix(in srgb, var(--sun-soft) 55%, transparent); }
+  .help { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: var(--gap-sec); padding: 20px 24px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--sun) 45%, var(--line)); background: color-mix(in srgb, var(--sun-soft) 55%, transparent); }
   .help div { flex: 1 1 280px; }
   .help h2 { font-size: 1.1rem; }
   .help p { margin: 4px 0 0; color: var(--ink-2); }
   .help .miss strong { color: var(--sun-ink); font-weight: 600; }
-  .comments { margin-top: 40px; padding: 28px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 80px; }
+  .comments { margin-top: var(--gap-sec); padding: 28px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); scroll-margin-top: 80px; }
   .comments h2 { font-size: 1.35rem; }
   .hint { color: var(--ink-2); margin: 8px 0 20px; }
 
-  .pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 32px; }
-  .pg { display: flex; flex-direction: column; max-width: 48%; padding: 14px 18px; border-radius: 16px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: border-color .2s, background .2s; }
+  .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: var(--gap-sec); }
+  .pg { display: flex; flex-direction: column; padding: 14px 18px; border-radius: 16px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: border-color .2s, background .2s; }
   .pg:hover { border-color: var(--sun); background: var(--surface); }
   .pg small { color: var(--ink-2); }
   .pg span { font-weight: 500; }
-  .pg.next { text-align: end; margin-inline-start: auto; }
+  .pg.next { text-align: end; grid-column: 2; }
 
   .sources { margin-top: 28px; color: var(--ink-2); font-size: .9rem; }
   .sources summary { cursor: pointer; }
