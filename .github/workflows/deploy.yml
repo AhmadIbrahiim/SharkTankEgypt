@@ -18,6 +18,7 @@ jobs:
         with: { node-version: 22, cache: npm }
       - run: npm ci
       - run: npm run check-data
+      - run: npm test
       # Prose vs deal-field contradictions, impossible figures, shark not on the season lineup: fail the build.
       - run: npm run audit-data
       - run: npm run build
@@ -25,6 +26,8 @@ jobs:
       - run: npm run audit-seo
       # A share image per page (dist/og/…), referenced by each page's og:image.
       - run: npx playwright install --with-deps chromium
+      # Search, filters, URL state, language switch, keyboard nav and phone layouts in a real browser.
+      - run: npm run e2e
       - run: node scripts/og.mjs
       # Publish to the gh-pages branch (Settings → Pages → Deploy from branch: gh-pages).
       # .nojekyll stops GitHub's Jekyll step from dropping Astro's _astro/ folder.

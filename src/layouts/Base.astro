@@ -1,6 +1,8 @@
 ---
 import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card } from '../config';
 import { siteNodes, ID } from '../schema';
+// Self-hosted variable font (Arabic + Latin subsets load on demand): no render-blocking third-party CSS.
+import '@fontsource-variable/readex-pro/wght.css';
 interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card }
 const { lang, title, description, altPath, image, jsonld, card } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -89,9 +91,6 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <link rel="icon" href={`${base}/favicon-32.png`} sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
     <link rel="manifest" href={`${base}/site.webmanifest`} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300..700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <a class="skip" href="#main">{lang === 'ar' ? 'تخطَّ إلى المحتوى' : 'Skip to content'}</a>
@@ -180,7 +179,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     --bg: #fbf6ee; --surface: #ffffff; --surface-2: #f5ecdf; --line: #eadfcf;
     --ink: #2b211a; --ink-2: #6e5f52;
     --sun: #e0562f; --sun-ink: #b5401c; --sun-soft: #fce6dc;
-    --nile: #0f7a72; --nile-soft: #dcf1ee;
+    --nile: #0c6b64; --nile-soft: #dcf1ee;
     --ok: #1f7a4d; --ok-soft: #e1f3e8;
     --shadow: 0 1px 2px rgb(60 35 15 / .06), 0 10px 30px -12px rgb(60 35 15 / .18);
     --shadow-lift: 0 2px 4px rgb(60 35 15 / .06), 0 22px 44px -16px rgb(60 35 15 / .28);
@@ -203,7 +202,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   html { -webkit-text-size-adjust: 100%; }
   body {
     margin: 0; min-height: 100vh; display: flex; flex-direction: column;
-    font-family: 'Readex Pro', system-ui, sans-serif; font-weight: 350; line-height: 1.65;
+    font-family: 'Readex Pro Variable', system-ui, sans-serif; font-weight: 350; line-height: 1.65;
     background: var(--bg); color: var(--ink);
   }
   main { flex: 1; }
@@ -245,8 +244,8 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
 
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 20px; border-radius: 999px; font: inherit; font-weight: 500; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s, background .2s, box-shadow .2s; white-space: nowrap; }
   .btn:active { transform: scale(.97); }
-  .btn-primary { background: var(--sun); color: #fff; box-shadow: 0 6px 18px -6px color-mix(in srgb, var(--sun) 70%, transparent); }
-  @media (prefers-color-scheme: dark) { .btn-primary { color: #1b0f09; } }
+  .btn-primary { background: #c94a24; color: #fff; box-shadow: 0 6px 18px -6px color-mix(in srgb, var(--sun) 70%, transparent); }
+  @media (prefers-color-scheme: dark) { .btn-primary { background: var(--sun); color: #1b0f09; } }
   .btn-primary:hover { background: color-mix(in srgb, var(--sun) 88%, #000); }
   .btn-ghost { background: var(--surface); color: var(--ink); border-color: var(--line); }
   .btn-ghost:hover { border-color: var(--sun); }

@@ -3,7 +3,8 @@ import Base from '../../layouts/Base.astro';
 import { ID, ROOT } from '../../schema';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, listCard, startups, seasons, t, num, money, pct, category, seasonLabel, shark, suggestUrl, type Lang } from '../../config';
+import { langs, listCard, startups, seasons, sharks, founders, founderId, t, num, money, pct, category, seasonLabel, shark, suggestUrl, type Lang } from '../../config';
+import { norm } from '../../search.mjs';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -12,6 +13,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categories = [...new Set(startups.map((x) => x.category).filter(Boolean))].sort() as string[];
 const deals = startups.filter((x) => x.deal?.made);
 const invested = deals.reduce((sum, x) => sum + (x.deal?.amountEGP ?? 0), 0);
+const first = (t: string) => t.split(/(?<=[.!?؟])\s/)[0];
+const arName = new Map(founders.map((f) => [f.id, f.name.ar]));
+// Search index per card: names, sector, founders and sharks in both languages, plus the first sentence of each description.
+const indexText = (x: (typeof startups)[number]) => norm([x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'),
+  ...(x.founders ?? []).flatMap((n) => [n, arName.get(founderId(n))]), ...(x.deal?.sharks ?? []).flatMap((n) => [n, shark(n, 'ar')]), first(x.description.en), first(x.description.ar)].join(' '));
 
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 const jsonld = {
@@ -59,10 +65,16 @@ const jsonld = {
           <option value="">{s.allCategories}</option>
           {categories.map((c) => <option value={c}>{category(c, lang)}</option>)}
         </select>
+        <select id="sh" aria-label={s.sharks}>
+          <option value="">{s.allSharks}</option>
+          {sharks.filter((p) => p.deals.length).map((p) => <option value={p.key}>{p.name[lang]}</option>)}
+        </select>
         <select id="sort" aria-label={s.sort}>
           <option value="">{s.sortEpisode}</option>
           <option value="name">{s.sortName}</option>
+          <option value="oldest">{s.sortOldest}</option>
           <option value="deal">{s.sortDeal}</option>
+          <option value="ask">{s.sortAsk}</option>
         </select>
       </div>
     </div>
@@ -72,12 +84,15 @@ const jsonld = {
       {startups.map((x, i) => (
         <li
           data-i={i}
+          hidden={i >= 24 /* = PAGE in the script: the first layout covers one page, not all 218 cards */}
           data-s={x.season}
           data-d={x.deal?.made == null ? '' : x.deal.made ? '1' : '0'}
           data-c={x.category ?? ''}
           data-name={x.name[lang]}
           data-amount={x.deal?.made ? x.deal.amountEGP ?? 0 : -1}
-          data-text={[x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'), ...(x.founders ?? []), ...(x.deal?.sharks ?? []).flatMap((n) => [n, shark(n, 'ar')]), x.description.en, x.description.ar].join(' ').toLowerCase()}
+          data-ask={x.ask?.amountEGP ?? -1}
+          data-sh={(x.deal?.made ? x.deal.sharks ?? [] : []).join('|')}
+          data-text={indexText(x)}
         >
           <a class="card" href={`${base}/${lang}/${x.id}/`}>
             <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager={i < 6} />
@@ -121,12 +136,15 @@ const jsonld = {
 </Base>
 
 <script>
-  // Filters live in the URL (?q=&s=&d=&c=&sort=) so any view can be shared or bookmarked.
+  import { matches } from '../../search.mjs';
+  // Filters live in the URL (?q=&s=&d=&c=&sh=&sort=) so any view can be shared or bookmarked, and survive the back button.
   const grid = document.getElementById('grid')!;
   const items = [...grid.children] as HTMLElement[];
   const q = document.getElementById('q') as HTMLInputElement;
   const c = document.getElementById('c') as HTMLSelectElement;
   const sort = document.getElementById('sort') as HTMLSelectElement;
+  const sh = document.getElementById('sh') as HTMLSelectElement;
+  let order = '';
   const groups = [...document.querySelectorAll<HTMLElement>('.chips')];
   const fmt = new Intl.NumberFormat(document.documentElement.lang === 'ar' ? 'ar-EG' : 'en-US');
   const collator = new Intl.Collator(document.documentElement.lang);
@@ -139,21 +157,24 @@ const jsonld = {
     group.querySelectorAll<HTMLElement>('.chip').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === v)));
 
   function apply() {
-    const state = { q: q.value.trim(), s: chipValue('s'), d: chipValue('d'), c: c.value, sort: sort.value };
-    const needle = state.q.toLowerCase();
+    const state = { q: q.value.trim(), s: chipValue('s'), d: chipValue('d'), c: c.value, sh: sh.value, sort: sort.value };
     let n = 0;
     for (const li of items) {
       const d = li.dataset;
-      const show = (!needle || d.text!.includes(needle)) && (!state.s || d.s === state.s) && (!state.d || d.d === state.d) && (!state.c || d.c === state.c);
+      const show = matches(d.text!, state.q) && (!state.s || d.s === state.s) && (!state.d || d.d === state.d) && (!state.c || d.c === state.c)
+        && (!state.sh || d.sh!.split('|').includes(state.sh));
       li.dataset.match = show ? '1' : '';
       if (show) n++;
       li.hidden = !show;
     }
     const by = state.sort === 'name' ? (a: HTMLElement, b: HTMLElement) => collator.compare(a.dataset.name!, b.dataset.name!)
       : state.sort === 'deal' ? (a: HTMLElement, b: HTMLElement) => +b.dataset.amount! - +a.dataset.amount!
+      : state.sort === 'ask' ? (a: HTMLElement, b: HTMLElement) => +b.dataset.ask! - +a.dataset.ask!
+      : state.sort === 'oldest' ? (a: HTMLElement, b: HTMLElement) => +b.dataset.i! - +a.dataset.i!
       : (a: HTMLElement, b: HTMLElement) => +a.dataset.i! - +b.dataset.i!;
     const sorted = [...items].sort(by);
-    grid.append(...sorted);
+    // Re-insert the 218 cards only when the order changes (typing in search doesn't reorder).
+    if (state.sort !== order) { grid.append(...sorted); order = state.sort; }
     // hide past the limit in display order, not source order
     let shown = 0;
     for (const li of sorted) if (li.dataset.match === '1') li.hidden = ++shown > limit;
@@ -170,6 +191,7 @@ const jsonld = {
   q.value = params.get('q') ?? '';
   c.value = params.get('c') ?? '';
   sort.value = params.get('sort') ?? '';
+  sh.value = params.get('sh') ?? '';
   for (const g of groups) {
     setChip(g, params.get(g.dataset.key!) ?? '');
     g.addEventListener('click', (e) => {
@@ -182,8 +204,9 @@ const jsonld = {
   q.addEventListener('input', filter);
   c.addEventListener('change', filter);
   sort.addEventListener('change', filter);
+  sh.addEventListener('change', filter);
   document.getElementById('reset')!.addEventListener('click', () => {
-    q.value = c.value = sort.value = '';
+    q.value = c.value = sort.value = sh.value = '';
     groups.forEach((g) => setChip(g, ''));
     apply();
     q.focus();
