@@ -198,3 +198,16 @@ Actions indexed all 2,785 official Shark Tank Egypt clips reposted on sharktanka
 | Halite Egypt | No deal | https://sharktankarabi.com/191/ |
 
 Also: El Fares's amount corrected from EGP 5M to 6.25M (all five sharks, 50%); Health Tag recorded at EGP 20M for 60% with Ahmed Tarek and Mohamed Farouk; Shaghalny's shark named (Ayman Abbas, among his first three investments). Sadu Designs: a clip says all the sharks joined its deal, but only Mohamed Farouk is named, so it stays as recorded.
+
+## Tenth pass: full clip descriptions
+
+The clip index was re-run to keep each clip's full description (the first pass only had a ~200-character preview). New outcomes:
+
+| Startup | Result | Clip |
+|---|---|---|
+| Gabri's Wear | Deal with Ayman Abbas ("Gabri's Wear اختاروا عرض أيمن عباس") | sharktankarabi.com/1806 |
+| Roufy's | Deal: Abdallah Sallam + Mohamed Farouk + Ahmed Tarek Khalil, EGP 14M for 50% | sharktankarabi.com/2008 |
+| AgriKemet | Deal with Mohamed Farouk ("من احسن الشركات اللي دخلنا فيها", Farouk on AgriKemet; other partners, if any, not named) | sharktankarabi.com/2224 |
+| Cover Spore | No deal ("الشاركس دايما جاهزين للمساعدة حتى لو من غير ديل") | sharktankarabi.com/446 |
+
+Leads that remain offers only: Nutrifits (Ahmed Tarek 40M/40%), DIDO's Snacks (Ahmed Tarek's late offer), Sphinx (joint offer from Dina Ghabbour, Bishoy Azmy and Mohamed Farouk), Stunning, Ami's Bakery, Pure Butters, Game Guru, ZINK, Pavo, Life Snacks, Super Abla, Weddngo, Dark Solution, Pharmabill, Flouxo (Farouk + El Sewedy offer), Baby Star (rejected Ahmed Tarek and Ayman Abbas's offer), Lelu (only Ayman Abbas stayed in), Plume (joint offer from Ahmed Tarek and Mohamed Farouk before its deal).

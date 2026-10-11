@@ -5428,8 +5428,8 @@
       "ar": "أجري كيميت"
     },
     "description": {
-      "en": "AgriKemet is an Egyptian agri-tech startup founded by Nourhan Massoud that turns agricultural waste into alternatives to chemical fertilisers. It tackles two problems at once: the huge volume of crop residue that is burned or dumped every season, and farmers' heavy reliance on costly chemical inputs. Massoud presents the idea as an answer to a global waste problem, and on Shark Tank Egypt's second season it won offers from every shark in the tank.",
-      "ar": "أجري كيميت شركة مصرية ناشئة في مجال التكنولوجيا الزراعية أسستها نورهان مسعود، وتحوّل المخلفات الزراعية إلى بدائل للأسمدة الكيماوية. وتعالج الشركة مشكلتين معاً: الكميات الهائلة من المخلفات الزراعية التي تُحرق أو تُلقى كل موسم، واعتماد المزارعين الكبير على المدخلات الكيماوية المكلفة. وتقدّم مسعود فكرتها حلاً لأزمة عالمية في التعامل مع المخلفات، وقد حصلت في الموسم الثاني من شارك تانك مصر على عروض من جميع المستثمرين."
+      "en": "AgriKemet is an Egyptian agri-tech startup founded by Nourhan Massoud that turns agricultural waste into alternatives to chemical fertilisers. It tackles two problems at once: the huge volume of crop residue that is burned or dumped every season, and farmers' heavy reliance on costly chemical inputs. Massoud presents the idea as an answer to a global waste problem, and on Shark Tank Egypt's second season it won offers from every shark in the tank. Mohamed Farouk later called it \"one of the best companies we invested in\".",
+      "ar": "أجري كيميت شركة مصرية ناشئة في مجال التكنولوجيا الزراعية أسستها نورهان مسعود، وتحوّل المخلفات الزراعية إلى بدائل للأسمدة الكيماوية. وتعالج الشركة مشكلتين معاً: الكميات الهائلة من المخلفات الزراعية التي تُحرق أو تُلقى كل موسم، واعتماد المزارعين الكبير على المدخلات الكيماوية المكلفة. وتقدّم مسعود فكرتها حلاً لأزمة عالمية في التعامل مع المخلفات، وقد حصلت في الموسم الثاني من شارك تانك مصر على عروض من جميع المستثمرين. ووصفها محمد فاروق لاحقاً بأنها «من أحسن الشركات اللي دخلنا فيها»."
     },
     "category": "Agriculture",
     "founders": [
@@ -5440,11 +5440,19 @@
       "amountEGP": 1000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6458160",
       "https://www.youtube.com/watch?v=uRSRcnE361g",
-      "https://www.youtube.com/watch?v=oxlGLn0-Yn4"
+      "https://www.youtube.com/watch?v=oxlGLn0-Yn4",
+      "https://sharktankarabi.com/2224/"
     ],
     "video": "uRSRcnE361g",
     "links": {
@@ -5695,8 +5703,8 @@
       "ar": "كوفر سبور"
     },
     "description": {
-      "en": "Cover Spore is an Egyptian startup that makes aluminium covers to protect car wheel rims from scratches, kerb damage and everyday wear. The company says it is the first product of its kind made in Egypt. It is aimed at car owners who want to keep their rims in good condition without costly repairs or replacements. Founder Sherif Abdallah is pursuing a patent for the design.",
-      "ar": "كوفر سبور شركة مصرية ناشئة تصنع أغطية من الألومنيوم تحمي جنوط السيارات من الخدوش واحتكاك الأرصفة والتآكل اليومي. وتقول الشركة إن منتجها هو الأول من نوعه الذي يُصنع في مصر. ويستهدف المنتج أصحاب السيارات الراغبين في الحفاظ على جنوطهم بحالة جيدة دون تكاليف الإصلاح أو الاستبدال. ويسعى المؤسس شريف عبد الله إلى الحصول على براءة اختراع للتصميم."
+      "en": "Cover Spore is an Egyptian startup that makes aluminium covers to protect car wheel rims from scratches, kerb damage and everyday wear. The company says it is the first product of its kind made in Egypt. It is aimed at car owners who want to keep their rims in good condition without costly repairs or replacements. Founder Sherif Abdallah is pursuing a patent for the design. It left without a deal, though the five sharks offered to help.",
+      "ar": "كوفر سبور شركة مصرية ناشئة تصنع أغطية من الألومنيوم تحمي جنوط السيارات من الخدوش واحتكاك الأرصفة والتآكل اليومي. وتقول الشركة إن منتجها هو الأول من نوعه الذي يُصنع في مصر. ويستهدف المنتج أصحاب السيارات الراغبين في الحفاظ على جنوطهم بحالة جيدة دون تكاليف الإصلاح أو الاستبدال. ويسعى المؤسس شريف عبد الله إلى الحصول على براءة اختراع للتصميم. وخرجت دون صفقة، مع وعد الشاركس الخمسة بالمساعدة."
     },
     "category": "Other",
     "founders": [
@@ -5707,13 +5715,19 @@
       "amountEGP": 7000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6480371",
       "https://www.youtube.com/watch?v=EkViGBR_zZA",
       "https://www.youtube.com/watch?v=4xx94lbgpbg",
       "https://www.youtube.com/watch?v=fPFxtjHvh2A",
-      "https://www.youtube.com/watch?v=m6M2bmj9VT8"
+      "https://www.youtube.com/watch?v=m6M2bmj9VT8",
+      "https://sharktankarabi.com/446/"
     ],
     "video": "EkViGBR_zZA",
     "links": {
@@ -8615,8 +8629,8 @@
       "ar": "جابريز وير"
     },
     "description": {
-      "en": "Gabri's Wear is an Egyptian women's formalwear brand created to address the shortage of formal clothing options for women in Egypt. It is known for light blazers and wrinkle-free formal trousers made from durable materials at reasonable prices, and it encourages women to wear formal pieces every day, not just for special occasions. Founder Lilian Ghobrial asked for EGP 3 million for 10%.",
-      "ar": "جابريز وير علامة مصرية للملابس الرسمية النسائية نشأت لسد النقص في خيارات الملابس الرسمية للسيدات في مصر. تشتهر بالبليزرات الخفيفة والبنطلونات الرسمية المقاومة للتجعد، المصنوعة من خامات متينة وبأسعار معقولة، وتشجع المرأة على ارتداء القطع الرسمية يومياً لا في المناسبات فقط. وطلبت مؤسستها ليليان غبريال 3 ملايين جنيه مقابل 10%."
+      "en": "Gabri's Wear is an Egyptian women's formalwear brand created to address the shortage of formal clothing options for women in Egypt. It is known for light blazers and wrinkle-free formal trousers made from durable materials at reasonable prices, and it encourages women to wear formal pieces every day, not just for special occasions. Founder Lilian Ghobrial asked for EGP 3 million for 10%. On the show it accepted Ayman Abbas's offer.",
+      "ar": "جابريز وير علامة مصرية للملابس الرسمية النسائية نشأت لسد النقص في خيارات الملابس الرسمية للسيدات في مصر. تشتهر بالبليزرات الخفيفة والبنطلونات الرسمية المقاومة للتجعد، المصنوعة من خامات متينة وبأسعار معقولة، وتشجع المرأة على ارتداء القطع الرسمية يومياً لا في المناسبات فقط. وطلبت مؤسستها ليليان غبريال 3 ملايين جنيه مقابل 10%. وفي البرنامج قبلت عرض أيمن عباس."
     },
     "category": "Fashion",
     "founders": [
@@ -8627,13 +8641,21 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6832074",
       "https://www.youm7.com/6830874",
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://www.facebook.com/p/Gabris-Wear-61560579770841/",
-      "https://cairo360.com/?p=1777121"
+      "https://cairo360.com/?p=1777121",
+      "https://sharktankarabi.com/1806/"
     ],
     "links": {
       "instagram": "https://www.instagram.com/gabriswear/",
@@ -9414,8 +9436,8 @@
       "ar": "روفيز"
     },
     "description": {
-      "en": "Roufy's is a premium American-style burger restaurant in Maadi, Cairo, started by brothers Mohamed and Ibrahim Arafa, who source special cuts and premium ingredients yet price below the market. Diners praise its home-made feel and dishes such as The Melt burger and sandwich, the Shrooms burger, buffalo wings, mac and cheese and mini pancakes. The brothers asked for EGP 14 million for 30%.",
-      "ar": "روفيز مطعم برجر راقٍ على الطريقة الأمريكية في المعادي بالقاهرة، أسسه الأخوان محمد وإبراهيم عرفة، ويعتمد على قطعيات لحم خاصة ومكونات عالية الجودة بأسعار أقل من السوق. يشيد رواده بطعمه المنزلي وبأطباق مثل برجر وساندويتش «ذا ملت» وبرجر المشروم وأجنحة البافلو والمكرونة بالجبن والبان كيك الصغير. وطلب الأخوان 14 مليون جنيه مقابل 30%."
+      "en": "Roufy's is a premium American-style burger restaurant in Maadi, Cairo, started by brothers Mohamed and Ibrahim Arafa, who source special cuts and premium ingredients yet price below the market. Diners praise its home-made feel and dishes such as The Melt burger and sandwich, the Shrooms burger, buffalo wings, mac and cheese and mini pancakes. The brothers asked for EGP 14 million for 30%. On the show the brothers accepted a joint offer from Abdallah Sallam, Mohamed Farouk and Ahmed Tarek for EGP 14 million for 50%.",
+      "ar": "روفيز مطعم برجر راقٍ على الطريقة الأمريكية في المعادي بالقاهرة، أسسه الأخوان محمد وإبراهيم عرفة، ويعتمد على قطعيات لحم خاصة ومكونات عالية الجودة بأسعار أقل من السوق. يشيد رواده بطعمه المنزلي وبأطباق مثل برجر وساندويتش «ذا ملت» وبرجر المشروم وأجنحة البافلو والمكرونة بالجبن والبان كيك الصغير. وطلب الأخوان 14 مليون جنيه مقابل 30%. وفي البرنامج قبل الأخوان عرضاً مشتركاً من عبدالله سلام ومحمد فاروق وأحمد طارق بقيمة 14 مليون جنيه مقابل 50%."
     },
     "category": "Food",
     "founders": [
@@ -9427,14 +9449,24 @@
       "amountEGP": 14000000,
       "equityPct": 30
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam",
+        "Mohamed Farouk",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 14000000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6856439",
       "https://www.dostor.org/4935430",
       "https://www.facebook.com/roufy.s/",
       "https://www.youtube.com/watch?v=NqAbjHB3stc",
       "https://www.youtube.com/watch?v=Dku-JkV9Ek8",
-      "https://wanderlog.com/place/details/3748085"
+      "https://wanderlog.com/place/details/3748085",
+      "https://sharktankarabi.com/2008/"
     ],
     "video": "NqAbjHB3stc",
     "links": {
