@@ -1,103 +1,1864 @@
 {
  "startups": [
   {
-   "cat": "fintech",
-   "name": "Masroofi",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "cat": "apps",
+   "href": "https://youtu.be/4kTJOhDgbDs",
+   "name": "Dagen Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/xsI5BjnP5I8",
+   "name": "Totoro Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/0wo-fBfxuOQ",
+   "name": "Tap Tag Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/xXXKF2fgMJQ",
+   "name": "Picado Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/BHf2I3J0UK4",
+   "name": "Choroida Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/1pqLJJ-DxrU",
+   "name": "Career 180 Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/WVFnNtGpoMA",
+   "name": "Skoolix Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/v8vebnfR98o",
+   "name": "Schools Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/IDZ2d1GfvMw",
+   "name": "Sympl Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/p8jSiqmdH_4",
+   "name": "Shaghalni Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/0xjv9FdZw9k",
+   "name": "RawMart Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/oTd1JdZxOYQ",
+   "name": "AgriCash Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/bDEKLyp2Pok",
+   "name": "TravMed Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/gQ8zqzxkX2Y",
+   "name": "Weddngo Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/4roAnXCpRdw",
+   "name": "Abgad Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/O3pTWbQRq1M",
+   "name": "Salhly Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/JegWdNDPVtE",
+   "name": "3ayz Doctor Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/q1U4UIc8oSg",
+   "name": "Momken Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/ioZXUWqELI0",
+   "name": "Piccup Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/FB3fHSyHlVg",
+   "name": "UpRyde Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/fwFqszjI5q0",
+   "name": "Becom Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/5yyaocZI3tk",
+   "name": "Duaya Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/pScwobM9jYk",
+   "name": "MetaDoc Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/2SkoPZeMzf0",
+   "name": "Dameg Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/BrCI5dFnu88",
+   "name": "DXwand Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/74j0HSW1tjM",
+   "name": "Tap Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/FlvLs0wGEv0",
+   "name": "Dentolize Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/-0EWjyzOGHA",
+   "name": "SpareMart Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/gC13n-oFBvQ",
+   "name": "RoboDesk Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/GA3RxTJpqjM",
+   "name": "Health Tag Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/fnIfORoU6ic",
+   "name": "Cognify Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/y9b4bFexAf4",
+   "name": "Estelamy Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/fgL2AqaLw0w",
+   "name": "Seater Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/oCXBeyzBRHA",
+   "name": "Raseedi Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/eCKivFRUTR0",
+   "name": "Loop Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/3oF5c9e6mQQ",
+   "name": "Amanleek Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/wpJOB9HLbhI",
+   "name": "Yumby Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/uh5lhV5V_y0",
+   "name": "LRNOVA Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/MHW5WaO7Dow",
+   "name": "Scooby Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/rl85CQFan4U",
+   "name": "Jeded Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/afeWdy7SPto",
+   "name": "Flowrista Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/7op-_1xPWg0",
+   "name": "Zink Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/dv00mf3olp8",
+   "name": "Mandoubak Smart Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "apps",
+   "href": "https://youtu.be/_RSqERON5xY",
+   "name": "Ooaaps Apps Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/MHW5WaO7Dow",
+   "name": "Scooby Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/fa2QUyyzz0A",
+   "name": "IAPE Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/v8vebnfR98o",
+   "name": "schools Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/rl85CQFan4U",
+   "name": "Jadeed Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/4xx94lbgpbg",
+   "name": "Cover Spore Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/0E3JodZ_dqs",
+   "name": "Al Motaheda Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/kVjJq9AvxUo",
+   "name": "EGike Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/-0EWjyzOGHA",
+   "name": "SpareMart Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/fgL2AqaLw0w",
+   "name": "Seater Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "automotive",
+   "href": "https://youtu.be/eCKivFRUTR0",
+   "name": "Loop Automotive Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/6N9ISnZvHlI",
+   "name": "MaWard Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/4oSz_lYzbjU",
+   "name": "Calmy Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/6UXjEpNqJH4",
+   "name": "Not Food Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/bDEKLyp2Pok",
+   "name": "TravMed Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/MNvPnsGcDBo",
+   "name": "Zat Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/4AAcOSexYTg",
+   "name": "Era Care Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/c9IJJx_xOsQ",
+   "name": "Curlit Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/pScwobM9jYk",
+   "name": "MetaDoc"
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/m8Tle7FB9KU",
+   "name": "Nuit Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/s3E0BtAjtRo",
+   "name": "Cippo Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/yZaO2Tf2dLI",
+   "name": "Ashry Naturals Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/GA3RxTJpqjM",
+   "name": "‏Health Tag Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/GEaxnzldntk",
+   "name": "Mandisa Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/GDHYJM3aE7A",
+   "name": "Mother Naked Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "health-and-beauty",
+   "href": "https://youtu.be/eEX0GWXnB14",
+   "name": "Breathe Health and Beauty Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/WxiApsJmmVg",
+   "name": "Cut X Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/y_YsTRv6vxQ",
+   "name": "Lelu Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/FqykquNeTq4",
+   "name": "Zee Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/yw3RuzgwIqw",
+   "name": "Alma Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/pcm9UoYzkI4",
+   "name": "Horra Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/0v3pHQW6OnM",
+   "name": "Outdated Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/lWVq_gkkvN8",
+   "name": "Pavo Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/m15gZxGf9fo",
+   "name": "Euphoria Denims Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/5vGKRADzBB0",
+   "name": "Gabri’s wear Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/3d16VszmhrU",
+   "name": "Hawy Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/suzwo2c00bI",
+   "name": "Zuri Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/rHVdY1ffuKY",
+   "name": "Lokal Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/JnnxPsiZ1YE",
+   "name": "Snugglez Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/SBLTRSbGuN8",
+   "name": "Zonta Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/uBjrb9UwWjI",
+   "name": "UP FUSE Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/eEX0GWXnB14",
+   "name": "Breathe Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/j35af6Fhmz0",
+   "name": "Aligned Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fashion",
+   "href": "https://youtu.be/cJRaDB35zrs",
+   "name": "Y Studios Fashion Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "entertainment-and-arts",
+   "href": "https://youtu.be/YIDFNH8BZP0",
+   "name": "Asfoura Entertainment and Arts Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "entertainment-and-arts",
+   "href": "https://youtu.be/QXcF8ZfP-Tk",
+   "name": "Blooms Entertainment and Arts Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "entertainment-and-arts",
+   "href": "https://youtu.be/q40t7hCLNfE",
+   "name": "Country House Entertainment and Arts Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "entertainment-and-arts",
+   "href": "https://youtu.be/DDRg8pupkrI",
+   "name": "Soccer Hub Entertainment and Arts Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "entertainment-and-arts",
+   "href": "https://youtu.be/sZcMqwdyfo4",
+   "name": "The Box Entertainment and Arts Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "entertainment-and-arts",
+   "href": "https://youtu.be/ev8z2yZS9tc",
+   "name": "Gelato on Wheelz Entertainment and Arts Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/LA_ZseGOHRg",
+   "name": "Country’s Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/OSlwZYqGj3k",
+   "name": "Büata Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/4ZSKSDD06xc",
+   "name": "Jojo’s Ranch Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/VrvjSvulAKQ",
+   "name": "Chefs House Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/fa2QUyyzz0A",
+   "name": "IAPE Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/kOKBAskFe5I",
+   "name": "Crazy Tuna Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/6UXjEpNqJH4",
+   "name": "Not Food Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/2tCGPd1WxwY",
+   "name": "Fool Tank Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/Tf2sIRBltb8",
+   "name": "Dr.Joy Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/BdzI86FhXOk",
+   "name": "Bar & Jar Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/5b-G_Oueotw",
+   "name": "The Lean Jerky Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/L4fMtrunWdw",
+   "name": "Loriental Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/DQ65rjFpnes",
+   "name": "Fati's Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/5LjJC0lZqHs",
+   "name": "Dark Solutions Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/kS-h9cJajOU",
+   "name": "ALProtein Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/v29urrjjCFE",
+   "name": "Zero Sugar Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/ev8z2yZS9tc",
+   "name": "Gelato on Wheelz Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/k34oFW6nvBk",
+   "name": "Yaya Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/Yv-zc1JUJC0",
+   "name": "Bzour Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/v0ZbzyxS6Ew",
+   "name": "Fit & Fresh Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/0MhH64Zj8mE",
+   "name": "On Board Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/ifRCHa7nFzs",
+   "name": "Mini Melts Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/-c8O3Tc9uX8",
+   "name": "Ostrich Land Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/TR3bQ_R9iac",
+   "name": "Whip Up Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/YXs6JRhoQbg",
+   "name": "The Monster's Table Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/hOdv_KVv8Pw",
+   "name": "Lakanto Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/NqAbjHB3stc",
+   "name": "Roufy’s Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/WmWszP6V7UA",
+   "name": "Cleo Foods Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/gE7fZq7fwXs",
+   "name": "3 Diner Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/9BT9e9ztpAc",
+   "name": "Basq Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/0nScplMc0lg",
+   "name": "Life Snacks Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/mMXCPL7uDzU",
+   "name": "Almaz Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "food-and-beverage",
+   "href": "https://youtu.be/xMlqGmiAmc4",
+   "name": "TERN Food and Beverage Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/_cSEjZAhETY",
+   "name": "Relaxent Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/UZ8NIEzgmOI",
+   "name": "Creative Art Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/Wuud7Rvls-8",
+   "name": "Peacock Designs Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/yD1E9uteUoA",
+   "name": "Mobikeya Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/Up015tZVsS0",
+   "name": "Shelter Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/DY6QUkrt-0A",
+   "name": "Rnkl Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/xRHgCnOoqCI",
+   "name": "Creative Wrap Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/lY1fl60mXHY",
+   "name": "Gammbaz Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/00saxqSHcq0",
+   "name": "Naseej Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/FZYP2-5szZg",
+   "name": "Al-Ahram Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/r5S4ze-Syfo",
+   "name": "Carpetivity Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/NOPgqv2vI7U",
+   "name": "Right Home Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/l51qd5YGEhQ",
+   "name": "Tekton Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "home-and-furniture",
+   "href": "https://youtu.be/Gl87kU0gFOQ",
+   "name": "Sadu Designs Home and Furniture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/MHW5WaO7Dow",
+   "name": "Scooby Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/xXXKF2fgMJQ",
+   "name": "Picado Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/BHf2I3J0UK4",
+   "name": "Choroida Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/2JVjk5YRkoU",
+   "name": "ChefMe.com Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/C4lRAId_IA0",
+   "name": "Cosmos Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/1pqLJJ-DxrU",
+   "name": "Career 180 Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/WVFnNtGpoMA",
+   "name": "Skoolix Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/S0Io1xXglvw",
+   "name": "Kidz Kit Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/VrvjSvulAKQ",
+   "name": "Chef's House Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/RCMvac6hGXw",
+   "name": "Can Bank Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/fa2QUyyzz0A",
+   "name": "IAPE Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/RuDVR0j0p_4",
+   "name": "Labtronic Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/v8vebnfR98o",
+   "name": "Schoolz Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/kOKBAskFe5I",
+   "name": "Crazy Tuna Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/QXcF8ZfP-Tk",
+   "name": "Blooms Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/IDZ2d1GfvMw",
+   "name": "Sympl Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/p8jSiqmdH_4",
+   "name": "Shaghalni Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/_KPV43ZNriY",
+   "name": "The Supply List Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/2tCGPd1WxwY",
+   "name": "Fool Tank Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/drlTIu6hW8k",
+   "name": "Super Abla Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/5V8xd4-2t84",
+   "name": "Simplex Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/Up015tZVsS0",
+   "name": "Shelter Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/_-UKYfKr_Us",
+   "name": "POV Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/Nbnfmb8fvjY",
+   "name": "Ingene Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/0xjv9FdZw9k",
+   "name": "Rawmart Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/oTd1JdZxOYQ",
+   "name": "AgriCash Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/bDEKLyp2Pok",
+   "name": "TraMed Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/Hmy334-lFG4",
+   "name": "Mico Pex Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/dGgdiOKh0zg",
+   "name": "El Supplier.Com Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/CQ-kGFEzGO4",
+   "name": "Potcast Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/L4fMtrunWdw",
+   "name": "Loriental Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/gQ8zqzxkX2Y",
+   "name": "Weddngo Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/4roAnXCpRdw",
+   "name": "Abgad Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/O3pTWbQRq1M",
+   "name": "Salhly Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/afeWdy7SPto",
+   "name": "Flowrista Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/JegWdNDPVtE",
+   "name": "3ayz Doctor Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/q1U4UIc8oSg",
+   "name": "Mmkn Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/i3uMH7J1R1w",
+   "name": "Abs Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/ioZXUWqELI0",
+   "name": "Piccup Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/FB3fHSyHlVg",
+   "name": "UpRyde Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/Qt6DCCFI-lk",
+   "name": "Super Fny Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/4xx94lbgpbg",
+   "name": "Cover Spore Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/rrHsgcXg8xg",
+   "name": "The Maker Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/fwFqszjI5q0",
+   "name": "Becom Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/ev8z2yZS9tc",
+   "name": "Gelato on Wheelz Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/sZcMqwdyfo4",
+   "name": "The Box Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/puB671rpzNo",
+   "name": "Masafa Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/k34oFW6nvBk",
+   "name": "Yaya Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/5yyaocZI3tk",
+   "name": "Duaya Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/kVjJq9AvxUo",
+   "name": "EGike Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/-GpydWZtomM",
+   "name": "Abd Elaziz El masry Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/pScwobM9jYk",
+   "name": "MetaDoc Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/0MhH64Zj8mE",
+   "name": "On Board Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/2E4tXi4-bA4",
+   "name": "Halite Egypt Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/6Y0GFjY-PYk",
+   "name": "Targetech Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/2SkoPZeMzf0",
+   "name": "Dameg Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/7op-_1xPWg0",
+   "name": "Zink Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/s3E0BtAjtRo",
+   "name": "Cippo Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/BrCI5dFnu88",
+   "name": "DXWand Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/wtip1-fxApA",
+   "name": "ReNile Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/NVy1UrnwBiA",
+   "name": "Argonova Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/74j0HSW1tjM",
+   "name": "Tap Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/uh5lhV5V_y0",
+   "name": "LRNOVA Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/_RSqERON5xY",
+   "name": "Ooaaps Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/FlvLs0wGEv0",
+   "name": "Dentolize Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/-0EWjyzOGHA",
+   "name": "SpareMart Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/gC13n-oFBvQ",
+   "name": "RoboDesk Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/fqCVdK5RBiU",
+   "name": "SRV Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/2xXbwyVhMvM",
+   "name": "Hoods Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/GA3RxTJpqjM",
+   "name": "‏Health Tag Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/fnIfORoU6ic",
+   "name": "Cognify Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/y9b4bFexAf4",
+   "name": "Estelamy Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/fgL2AqaLw0w",
+   "name": "Seater Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/oCXBeyzBRHA",
+   "name": "Raseedi Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/eCKivFRUTR0",
+   "name": "Loop Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/qqmmsOGLZaA",
+   "name": "Bubble store Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/3oF5c9e6mQQ",
+   "name": "Amanleek Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/wpJOB9HLbhI",
+   "name": "Yumby Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/r7MF82JK5lA",
+   "name": "Step Inside"
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/zi3qTuPB8D0",
+   "name": "Virclo Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "services",
+   "href": "https://youtu.be/dv00mf3olp8",
+   "name": "Mandoubak Smart Services Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/r7MF82JK5lA",
+   "name": "Step Inside E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/zi3qTuPB8D0",
+   "name": "Virclo E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/2JVjk5YRkoU",
+   "name": "ChefMe.com E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/t_zrCJ-0Lfw",
+   "name": "Sporty Pro E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/S0Io1xXglvw",
+   "name": "Kidz Kit E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/kOKBAskFe5I",
+   "name": "Crazy Tuna E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/IDZ2d1GfvMw",
+   "name": "Sympl E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/_KPV43ZNriY",
+   "name": "The Supply List E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/q40t7hCLNfE",
+   "name": "Country House E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/y_YsTRv6vxQ",
+   "name": "Lelu E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/_-UKYfKr_Us",
+   "name": "POV Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/0xjv9FdZw9k",
+   "name": "RawMart E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/5b-G_Oueotw",
+   "name": " The Lean Jerky E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/dGgdiOKh0zg",
+   "name": "El Supplier.com E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/afeWdy7SPto",
+   "name": "Flowrista E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/puB671rpzNo",
+   "name": "Masafa E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/5yyaocZI3tk",
+   "name": "Duaya E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/7op-_1xPWg0",
+   "name": "Zink E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/yZaO2Tf2dLI",
+   "name": "Ashry Naturals E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/J0PQI1yG8WE",
+   "name": "The Baby Garage E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/-0EWjyzOGHA",
+   "name": "SpareMart E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "e-commerce",
+   "href": "https://youtu.be/2xXbwyVhMvM",
+   "name": "Hoods E-commerce Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/xsI5BjnP5I8",
+   "name": "Tutoruu Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/xXXKF2fgMJQ",
+   "name": "Picado Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/1pqLJJ-DxrU",
+   "name": "Career 180 Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/WVFnNtGpoMA",
+   "name": "Skoolix Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/YIDFNH8BZP0",
+   "name": "Asfoura Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/drlTIu6hW8k",
+   "name": "Super Abla Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/USy_dNZm1To",
+   "name": "Interact Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/4roAnXCpRdw",
+   "name": "Abgad Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/Qt6DCCFI-lk",
+   "name": "Super Fny Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/s3E0BtAjtRo",
+   "name": "Cippo Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/uh5lhV5V_y0",
+   "name": "Lrnova Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "education-",
+   "href": "https://youtu.be/fnIfORoU6ic",
+   "name": "Cognify Education Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/qeUKiwMzYws",
+   "name": "Serket Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/BHf2I3J0UK4",
+   "name": "Choroida Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/C4lRAId_IA0",
+   "name": "Cosmos Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/Nbnfmb8fvjY",
+   "name": "Ingene Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/JegWdNDPVtE",
+   "name": "3ayz Doctor Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/5yyaocZI3tk",
+   "name": "Duaya Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/-GpydWZtomM",
+   "name": "Abd Elaziz El Masry Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/pScwobM9jYk",
+   "name": "MetaDoc Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/2SkoPZeMzf0",
+   "name": "Dameg Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/FlvLs0wGEv0",
+   "name": "Dentolize Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "medical-",
+   "href": "https://youtu.be/GA3RxTJpqjM",
+   "name": "Health tag Medical Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "sports",
+   "href": "https://youtu.be/d0i-sKOdshc",
+   "name": "Gear + Pro Sports Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "sports",
+   "href": "https://youtu.be/t_zrCJ-0Lfw",
+   "name": "Sporty Pro Sports Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "sports",
+   "href": "https://youtu.be/rrHsgcXg8xg",
+   "name": "The Maker Sports Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Amwal",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/6ZCqzJ_IPEI",
+   "name": "Masroofi FinTech Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Agri Cash",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/oz8-LkpoWcA",
+   "name": "Amwal FinTech Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Weddngo",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/oTd1JdZxOYQ",
+   "name": "Agri Cash FinTech Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Abgad",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/gQ8zqzxkX2Y",
+   "name": "Weddngo  FinTech Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Tap",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/4roAnXCpRdw",
+   "name": "Abgad FinTech Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Raseedi",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/74j0HSW1tjM",
+   "name": "Tap FinTech Deals Shark Tank Egypt "
   },
   {
    "cat": "fintech",
-   "name": "Amanleek",
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "text": ""
+   "href": "https://youtu.be/oCXBeyzBRHA",
+   "name": "Raseedi  FinTech Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "fintech",
+   "href": "https://youtu.be/3oF5c9e6mQQ",
+   "name": "Amanleek FinTech Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/xMN6RJhLseQ",
+   "name": "Akoub  Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/TaReWEd0UHQ",
+   "name": "Tomatiki Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/rl85CQFan4U",
+   "name": "Jeded Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/oTd1JdZxOYQ",
+   "name": "Agri Cash Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/uRSRcnE361g",
+   "name": "Agrikemet Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/fwFqszjI5q0",
+   "name": "Becom Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/SUgcuSNWFD4",
+   "name": "Elfares Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/wtip1-fxApA",
+   "name": "ReNile Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "agriculture",
+   "href": "https://youtu.be/NVy1UrnwBiA",
+   "name": "Argonova Agriculture Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/r7MF82JK5lA",
+   "name": "Step Inside Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/qeUKiwMzYws",
+   "name": "Serket Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/xMN6RJhLseQ",
+   "name": "Akoub Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/CoafaRJNxe4",
+   "name": "Agrcology Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/0wo-fBfxuOQ",
+   "name": "Tap Tag Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/BHf2I3J0UK4",
+   "name": "Choroida"
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/ugehEGfKjHQ",
+   "name": "Ivica Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/C4lRAId_IA0",
+   "name": "Cosmos Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/RCMvac6hGXw",
+   "name": "Can Bank Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/TaReWEd0UHQ",
+   "name": "Tomatiki Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/QvRzN1rN_68",
+   "name": "Portal Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/v8vebnfR98o",
+   "name": "Schoolz Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/rl85CQFan4U",
+   "name": "jeded Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/_-UKYfKr_Us",
+   "name": "POV Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/bDEKLyp2Pok",
+   "name": "TravMed Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/USy_dNZm1To",
+   "name": "Interact Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/kS-h9cJajOU",
+   "name": "AIProtein Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/v6dWRwhTw3Y",
+   "name": "Fluxo Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/ioZXUWqELI0",
+   "name": "Piccup Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/puB671rpzNo",
+   "name": "Masafa Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/5yyaocZI3tk",
+   "name": "Duaya Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/kVjJq9AvxUo",
+   "name": "EGike Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/SUgcuSNWFD4",
+   "name": "Elfares Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/ifRCHa7nFzs",
+   "name": "Mini Melts Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/7op-_1xPWg0",
+   "name": "Zink Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/s3E0BtAjtRo",
+   "name": "Cippo Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/BrCI5dFnu88",
+   "name": "DXwand Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/wtip1-fxApA",
+   "name": "ReNile Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/74j0HSW1tjM",
+   "name": "Tap Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/uh5lhV5V_y0",
+   "name": "LRNOVA Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/FlvLs0wGEv0",
+   "name": "Dentolize Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/Uc71DhVFbKM",
+   "name": "RighTemp Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/gC13n-oFBvQ",
+   "name": "RoboDesk Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/GA3RxTJpqjM",
+   "name": "Health Tag Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/fnIfORoU6ic",
+   "name": "Cognify Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/y9b4bFexAf4",
+   "name": "Estelamy Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/fgL2AqaLw0w",
+   "name": "Seater Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/3oF5c9e6mQQ",
+   "name": "Amanleek Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/rq9VtekKJ4c",
+   "name": "Cardoo Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "technology-",
+   "href": "https://youtu.be/wpJOB9HLbhI",
+   "name": "Yumby Technology Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/zi3qTuPB8D0",
+   "name": "Virclo Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/Wuud7Rvls-8",
+   "name": "Peacock Designs Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/RCMvac6hGXw",
+   "name": "Can Bank Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/yD1E9uteUoA",
+   "name": "Mobikeya Recycling Deals Shark Tank Egypt"
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/DY6QUkrt-0A",
+   "name": "Rnkl Recycling Deals Shark Tank Egypt"
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/yw3RuzgwIqw",
+   "name": "Alma Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/uRSRcnE361g",
+   "name": "Agrikemet Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/fwFqszjI5q0",
+   "name": "Becom Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/puB671rpzNo",
+   "name": "Masafa Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/l51qd5YGEhQ",
+   "name": "Tekton Recycling Deals Shark Tank Egypt"
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/uBjrb9UwWjI",
+   "name": "UP FUSE Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "recycling-",
+   "href": "https://youtu.be/qqmmsOGLZaA",
+   "name": "Bubble store Recycling Deals Shark Tank Egypt "
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/WxiApsJmmVg",
+   "name": "Cut X Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/RcLKQ0NYSBw",
+   "name": "Grif Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/Vt5rVNHxQJM",
+   "name": "Tilestic Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/BHf2I3J0UK4",
+   "name": "Choroida Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/2JVjk5YRkoU",
+   "name": "ChefMe.com Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/ugehEGfKjHQ",
+   "name": "Efika Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/C4lRAId_IA0",
+   "name": "Cosmos Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/Wuud7Rvls-8",
+   "name": "Peacock Designs Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/fa2QUyyzz0A",
+   "name": "IAPE Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/yD1E9uteUoA",
+   "name": "Mobikeya Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/5V8xd4-2t84",
+   "name": "Simplex Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/Up015tZVsS0",
+   "name": "Shelter Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/Hmy334-lFG4",
+   "name": "Mico Pex Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/v6dWRwhTw3Y",
+   "name": "Fluxo Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/4xx94lbgpbg",
+   "name": "Cover Spore Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/fwFqszjI5q0",
+   "name": "Becom Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/FZYP2-5szZg",
+   "name": "Al-Ahram Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/0E3JodZ_dqs",
+   "name": "Al Motaheda Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/-GpydWZtomM",
+   "name": "Abd Elaziz El Masry Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/2E4tXi4-bA4",
+   "name": "Halite Egypt Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/6Y0GFjY-PYk",
+   "name": "Targetech Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/l51qd5YGEhQ",
+   "name": "Tekton Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/NVy1UrnwBiA",
+   "name": "Argonova Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/TR3bQ_R9iac",
+   "name": "Whip Up Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/Uc71DhVFbKM",
+   "name": "RighTemp Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/lrgrl6b-fJM",
+   "name": "ANF Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/rq9VtekKJ4c",
+   "name": "Cardoo Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "manufacturing-",
+   "href": "https://youtu.be/xMlqGmiAmc4",
+   "name": "TERN Manufacturing Deal Shark Tank Egypt"
+  },
+  {
+   "cat": "other",
+   "href": "https://youtu.be/RuDVR0j0p_4",
+   "name": "Labtronic Best Shark Tank Egypt Deals"
+  },
+  {
+   "cat": "other",
+   "href": "https://youtu.be/5V8xd4-2t84",
+   "name": "Simplex Best Shark Tank Egypt Deals"
+  },
+  {
+   "cat": "other",
+   "href": "https://youtu.be/Hmy334-lFG4",
+   "name": "Mico Pex Best Shark Tank Egypt Deals"
+  },
+  {
+   "cat": "other",
+   "href": "https://youtu.be/CQ-kGFEzGO4",
+   "name": "Potcast Best Shark Tank Egypt Deals"
+  },
+  {
+   "cat": "other",
+   "href": "https://youtu.be/q1U4UIc8oSg",
+   "name": "Mmkn Best Shark Tank Egypt Deals"
+  },
+  {
+   "cat": "other",
+   "href": "https://youtu.be/i3uMH7J1R1w",
+   "name": "Abs Best Shark Tank Egypt Deals"
   }
- ],
- "requests": [
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/deals/fintech",
-   "status": 200,
-   "body": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" class=\"__variable_45314e __variable_e4a7fa\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"preload\" as=\"image\" href=\"https://www.facebook.com/tr?id=673738606136116&amp;ev=PageView&amp;noscript=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/2694fbefe4b02161.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/a52d86e8c9f4ac90.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-c8a9d41cab5073e9.js\"/><script src=\"/_next/static/chunks/fd9d1056-8d9aad5f06f59664.js\" async=\"\"></script><script src=\"/_next/static/chunks/8069-f15c43a4a19c7990.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-ffa82bccba42d257.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/not-found-abb24b34136850f6.js\" async=\"\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-VJYL20B83D\"></script><script src=\"/_next/static/chunks/6297-441a736e4543568f.js\" async=\"\"></script><script src=\"/_next/static/chunks/1749-71ee5f7c959f3e1c.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/%5Blocale%5D/(landing)/(auth)/layout-3e0673a3be0c3c11.js\" async=\"\"></script><script src=\"/_next/static/chunks/2150-ad8720df7bc40d00.js\" async=\"\"></script><script src=\"/_next/static/chunks/3376-07a1a7e363c4ab21.js\" async=\"\"></script><script src=\"/_next/static/chunks/8334-187c6b42695706a1.js\" async=\"\"></script><script src=\"/_next/static/chunks/6288-4ca645dabc61478e.js\" async=\"\"></script><script src=\"/_next/static/chunks/6040-25093f84a2324da2.js\" async=\"\"></script><script src=\"/_next/static/chunks/1126-43f7d762a08e7b30.js\" async=\"\"></script><script src=\"/_next/static/chunks/9911-c1e40d30a8eba517.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/%5Blocale%5D/(landing)/layout-062265c9551fb32a.js\" async=\"\"></script><script src=\"/_next/static/chunks/982-49ecab2fbe4efe55.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/%5Blocale%5D/(landing)/error-a736c292c9dfef29.js\" async=\"\"></script><script src=\"/_next/static/chunks/905-85f9d05eb08d6f71.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/%5Blocale%5D/(landing)/deals/%5BdealSlug%5D/page-9b32d9e62a61b5c3.js\" async=\"\"></script><title>Shark Tank Egypt - Fintech Deals</title><meta name=\"description\" content=\"Explore all successful fintech and digital finance deals made on Shark Tank Egypt. See which innovative financial platforms secured investment.\"/><meta name=\"keywords\" content=\"Fintech Deals\"/><link rel=\"canonical\" href=\"https://sharktank-egypt.com/deals/fintech\"/><meta property=\"og:title\" content=\"Shark Tank Egypt - Fintech Deals\"/><meta property=\"og:description\" content=\"Explore all successful fintech and digital finance deals made on Shark Tank Egypt. See which innovative financial platforms secured investment.\"/><meta property=\"og:url\" content=\"https://sharktank-egypt.com/deals/fintech\"/><meta property=\"og:type\" content=\"website\"/><meta name=\"twitter:card\" content=\"summary\"/><meta name=\"twitter:title\" content=\"Shark Tank Egypt - Fintech Deals\"/><meta name=\"twitter:description\" content=\"Explore all successful fintech and digital finance deals made on Shark Tank Egypt. See which innovative financial platforms secured investment.\"/><link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\" sizes=\"72x61\"/>\r\n<!-- -->\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-VJYL20B83D');\r\n</script>\r\n\r\n<!-- -->\r\n<script>\r\n!function(f,b,e,v,n,t,s)\r\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\r\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\r\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\r\nn.queue=[];t=b.createElement(e);t.async=!0;\r\nt.src=v;s=b.getElementsByTagName(e)[0];\r\ns.parentNode.insertBefore(t,s)}(window, document,'script',\r\n'https://connect.facebook.net/en_US/fbevents.js');\r\nfbq('init', '673738606136116');\r\nfbq('track', 'PageView');\r\n</script>\r\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\" src=\"https://www.facebook.com/tr?id=673738606136116&amp;ev=PageView&amp;noscript=1\"/></noscript>\r\n<script src=\"/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js\" noModule=\"\"></script></head><body class=\"relative flex min-h-screen flex-col\"><header class=\"fixed inset-x-0 z-50 flex h-[100px] flex-col items-center justify-center bg-primary py-6 text-white shadow-sm transition-all duration-500 max-sm:bg-primary\"><div class=\"container\"><div class=\"flex items-center justify-between gap-3\"><button class=\"btn-menu flex min-h-[28px] cursor-pointer items-center border-0 bg-transparent px-0 text-inherit transition duration-300 ease-linear focus:outline-none lg:hidden\" type=\"button\" aria-label=\"mobileMenu\" aria-labelledby=\"mobileMenu\"><i class=\"btn-menu__bars relative left-0 block h-[2px] w-[20px] bg-white transition duration-300 before:absolute before:block before:h-full before:w-full before:bg-white before:transition before:duration-300 before:content-[&#x27;&#x27;] after:absolute after:block after:h-full after:w-full after:bg-white after:transition after:duration-300 after:content-[&#x27;&#x27;] before:-translate-y-1.5 after:translate-y-1.5\" aria-hidden=\"true\"></i></button><div><a href=\"/en\"><img alt=\"shark tank logo\" loading=\"lazy\" width=\"65\" height=\"80\" decoding=\"async\" data-nimg=\"1\" class=\"h-20 w-auto object-contain\" style=\"color:transparent\" srcSet=\"/_next/image?url=%2Fimages%2Flogo.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&amp;w=256&amp;q=75 2x\" src=\"/_next/image?url=%2Fimages%2Flogo.png&amp;w=256&amp;q=75\"/></a></div><div class=\"hidden lg:block\"><ul class=\"hidden items-center justify-center gap-4 sm:text-sm lg:flex xl:gap-6\"><li><a class=\"navLink text-nowrap\" href=\"/en/about\">About</a></li><li><a class=\"navLink text-nowrap activeLink\" href=\"/en/deals\">Deals</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/sharks\">sharks</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/seasons\">Seasons</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/team\">Our Team</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/contact-us\">Contact us</a></li></ul></div><div class=\"flex items-center justify-end gap-3\"><a class=\"font mr-4 hidden items-center justify-center uppercase transition-colors duration-300 lg:flex text-white\" href=\"/en/login\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0\" y=\"0\" viewBox=\"0 0 462 462\" style=\"enable-background:new 0 0 512 512\" xml:space=\"preserve\" class=\"size-6 stroke-2 mr-2 flex items-center justify-center fill-white text-lg uppercase transition-colors duration-300 xl:text-4xl\"><g><path d=\"M231 229.91a72 72 0 1 1 72-72 72.08 72.08 0 0 1-72 72zm0-124a52 52 0 1 0 52 52 52.06 52.06 0 0 0-52-52zM356 376.09a10 10 0 0 1-10-10v-24.72a71.7 71.7 0 0 0-71.62-71.62h-86.76A71.7 71.7 0 0 0 116 341.37v24.72a10 10 0 0 1-20 0v-24.72a91.73 91.73 0 0 1 91.62-91.62h86.75A91.73 91.73 0 0 1 366 341.37v24.72a10 10 0 0 1-10 10z\" opacity=\"1\" data-original=\"#000000\"></path></g></svg><span class=\"text-sm sm:text-base\">Log In</span></a><div class=\"flex items-center justify-center gap-3 lg:hidden\"><button type=\"button\" class=\"flex items-center justify-center rounded-3xl bg-[#FFE46C] ltr:font-kenyan font-bold text-black transition-all duration-300 hover:bg-white lg:text-base px-3 py-2 text-xs uppercase sm:text-base md:px-6 lg:px-6\">Apply Now</button></div><div class=\"hidden items-center justify-center gap-3 lg:flex\"><button type=\"button\" class=\"flex items-center justify-center rounded-3xl bg-[#FFE46C] ltr:font-kenyan font-bold text-black transition-all duration-300 hover:bg-white lg:text-base px-3 py-2 text-xs uppercase sm:text-base md:px-6 lg:px-6\">Apply Now</button></div><a class=\"font-bold uppercase text-white transition-colors duration-300 rtl:font-bold __className_e4a7fa\" href=\"/ar/deals/fintech\"><span class=\"font-cairo\">AR</span></a></div></div></div></header><div class=\"min-h-screen bg-primary text-white\"><div class=\"container flex min-h-screen flex-col pt-32\"><div class=\"w-full flex-shrink-0 pb-10 md:w-1/2\"><div class=\"mb-3 w-fit gap-2 self-start rounded-md p-2 font-semibold flex\"><a href=\"/en/deals\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6 font-bold text-white hover:text-white/50\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18\"></path></svg></a><nav aria-label=\"breadcrumb\"><ol class=\"flex flex-wrap items-center gap-1.5 break-words text-sm text-white sm:gap-2.5\"><li class=\"inline-flex items-center gap-1.5\"><a class=\"transition-colors font-cairo text-white/60 hover:text-white\" href=\"/en\">Home </a></li><li role=\"presentation\" aria-hidden=\"true\" class=\"[&amp;&gt;svg]:size-3.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6 rtl:rotate-180\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path></svg></li><li class=\"inline-flex items-center gap-1.5\"><a class=\"transition-colors font-cairo capitalize text-white/60 hover:text-white\" href=\"/en/deals\">Deals</a></li><li role=\"presentation\" aria-hidden=\"true\" class=\"[&amp;&gt;svg]:size-3.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6 rtl:rotate-180\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path></svg></li><li class=\"inline-flex items-center gap-1.5 font-cairo uppercase text-white\">Fintech</li></ol></nav></div><h1 class=\"text-6xl font-extrabold uppercase md:text-7xl rtl:mb-4 rtl:text-5xl\" style=\"color:#fff;border-top:2px solid #fff;padding-top:1.5rem\">Fintech</h1></div><div class=\"mb-8 flex flex-shrink-0 flex-wrap items-center justify-between gap-4\"><div class=\"flex flex-wrap gap-2\"><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-white text-gray-900\">Seasons</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Season 1</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Season 2</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Season 3</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Special Episodes</button></div></div><div class=\"grid flex-grow grid-cols-1 gap-6 overflow-y-auto pb-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4\"><a href=\"https://youtu.be/6ZCqzJ_IPEI\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Masroofi FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Masroofi</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/oz8-LkpoWcA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Amwal FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Amwal</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/oTd1JdZxOYQ\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Agri Cash FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Agri Cash</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/gQ8zqzxkX2Y\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Weddngo  FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Weddngo </h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/4roAnXCpRdw\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Abgad FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Abgad</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/74j0HSW1tjM\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Tap FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Tap</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/oCXBeyzBRHA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Raseedi  FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=3840&amp;q=75\"/><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Raseedi </h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/3oF5c9e6mQQ\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity:0;transform:translateY(20px) translateZ(0)\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Amanleek FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcSet=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=640&amp;q=75 640"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"__PAGE__\",[\"__PAGE__\",{}],null,null]]]\n"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/sharks?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"sharks\",[\"sharks\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/seasons?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"seasons\",[\"seasons\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/about?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"about\",[\"about\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/deals?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"deals\",\"children\",\"__PAGE__\",[\"__PAGE__\",{}],null,null]]]\n"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/login?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"(auth)\",[\"(auth)\",{\"children\":[\"login\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],null,null]]]\n"
-  },
-  {
-   "for": null,
-   "url": "https://sharktank-egypt.com/en/team?_rsc=3tyrm",
-   "status": 200,
-   "body": "0:[\"xdSozG8OlRPRy-VKf1pqa\",[[\"children\",[\"locale\",\"en\",\"d\"],\"children\",\"(landing)\",\"children\",\"team\",[\"team\",{\"children\":[\"__PAGE__\",{}]}],null,null]]]\n"
-  }
- ],
- "html": "<!DOCTYPE html><html lang=\"en\" dir=\"ltr\" class=\"__variable_45314e __variable_e4a7fa\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"preload\" as=\"image\" href=\"https://www.facebook.com/tr?id=673738606136116&amp;ev=PageView&amp;noscript=1\"><link rel=\"stylesheet\" href=\"/_next/static/css/2694fbefe4b02161.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/css/a52d86e8c9f4ac90.css\" data-precedence=\"next\"><link rel=\"preload\" as=\"script\" fetchpriority=\"low\" href=\"/_next/static/chunks/webpack-c8a9d41cab5073e9.js\"><script src=\"https://connect.facebook.net/signals/config/673738606136116?v=2.9.415&amp;r=stable&amp;domain=sharktank-egypt.com&amp;hme=a4c28c8787325ac3f8f9eac68364f47df2a8c4266e43177443e5d7f6289c9774&amp;ex_m=117%2C240%2C170%2C27%2C81%2C82%2C161%2C77%2C76%2C11%2C180%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C175%2C182%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C162%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C163%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C165%2C164%2C166%2C156%2C154%2C30%2C42%2C66%2C122%2C177%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C176%2C179%2C41%2C56%2C126%2C54%2C160%2C71%2C184%2C109%2C183%2C209%2C254%2C83%2C273%2C272%2C271%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C171%2C85%2C174%2C172%2C173%2C57%2C67%2C136%2C19%2C178%2C52%2C322%2C323%2C324%2C321%2C337%2C359%2C247%2C236%2C69%2C237%2C235%2C362%2C353%2C59%2C248%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C167%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C181%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C186%2C187%2C105%2C106%2C9%2C115%2C185%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C168%2C50%2C158%2C0%2C93%2C151%2C155%2C169%2C45%2C121%2C13%2C188\" async=\"\"></script><script async=\"\" src=\"https://connect.facebook.net/en_US/fbevents.js\"></script><script src=\"/_next/static/chunks/fd9d1056-8d9aad5f06f59664.js\" async=\"\"></script><script src=\"/_next/static/chunks/8069-f15c43a4a19c7990.js\" async=\"\"></script><script src=\"/_next/static/chunks/main-app-ffa82bccba42d257.js\" async=\"\"></script><script src=\"/_next/static/chunks/app/not-found-abb24b34136850f6.js\" async=\"\"></script><script async=\"\" src=\"https://www.googletagmanager.com/gtag/js?id=G-VJYL20B83D\"></script><script src=\"/_next/static/chunks/app/%5Blocale%5D/(landing)/(auth)/layout-3e0673a3be0c3c11.js\" async=\"\"></script><title>Shark Tank Egypt - Fintech Deals</title><meta name=\"description\" content=\"Explore all successful fintech and digital finance deals made on Shark Tank Egypt. See which innovative financial platforms secured investment.\"><meta name=\"keywords\" content=\"Fintech Deals\"><link rel=\"canonical\" href=\"https://sharktank-egypt.com/deals/fintech\"><meta property=\"og:title\" content=\"Shark Tank Egypt - Fintech Deals\"><meta property=\"og:description\" content=\"Explore all successful fintech and digital finance deals made on Shark Tank Egypt. See which innovative financial platforms secured investment.\"><meta property=\"og:url\" content=\"https://sharktank-egypt.com/deals/fintech\"><meta property=\"og:type\" content=\"website\"><meta name=\"twitter:card\" content=\"summary\"><meta name=\"twitter:title\" content=\"Shark Tank Egypt - Fintech Deals\"><meta name=\"twitter:description\" content=\"Explore all successful fintech and digital finance deals made on Shark Tank Egypt. See which innovative financial platforms secured investment.\"><link rel=\"icon\" href=\"/favicon.ico\" type=\"image/x-icon\" sizes=\"72x61\">\n<!-- -->\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-VJYL20B83D');\n</script>\n\n<!-- -->\n<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '673738606136116');\nfbq('track', 'PageView');\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\" src=\"https://www.facebook.com/tr?id=673738606136116&amp;ev=PageView&amp;noscript=1\"/></noscript>\n<script src=\"/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js\" nomodule=\"\"></script><style type=\"text/css\">:where(html[dir=\"ltr\"]),:where([data-sonner-toaster][dir=\"ltr\"]){--toast-icon-margin-start: -3px;--toast-icon-margin-end: 4px;--toast-svg-margin-start: -1px;--toast-svg-margin-end: 0px;--toast-button-margin-start: auto;--toast-button-margin-end: 0;--toast-close-button-start: 0;--toast-close-button-end: unset;--toast-close-button-transform: translate(-35%, -35%)}:where(html[dir=\"rtl\"]),:where([data-sonner-toaster][dir=\"rtl\"]){--toast-icon-margin-start: 4px;--toast-icon-margin-end: -3px;--toast-svg-margin-start: 0px;--toast-svg-margin-end: -1px;--toast-button-margin-start: 0;--toast-button-margin-end: auto;--toast-close-button-start: unset;--toast-close-button-end: 0;--toast-close-button-transform: translate(35%, -35%)}:where([data-sonner-toaster]){position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1: hsl(0, 0%, 99%);--gray2: hsl(0, 0%, 97.3%);--gray3: hsl(0, 0%, 95.1%);--gray4: hsl(0, 0%, 93%);--gray5: hsl(0, 0%, 90.9%);--gray6: hsl(0, 0%, 88.7%);--gray7: hsl(0, 0%, 85.8%);--gray8: hsl(0, 0%, 78%);--gray9: hsl(0, 0%, 56.1%);--gray10: hsl(0, 0%, 52.3%);--gray11: hsl(0, 0%, 43.5%);--gray12: hsl(0, 0%, 9%);--border-radius: 8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:none;z-index:999999999}:where([data-sonner-toaster][data-x-position=\"right\"]){right:max(var(--offset),env(safe-area-inset-right))}:where([data-sonner-toaster][data-x-position=\"left\"]){left:max(var(--offset),env(safe-area-inset-left))}:where([data-sonner-toaster][data-x-position=\"center\"]){left:50%;transform:translate(-50%)}:where([data-sonner-toaster][data-y-position=\"top\"]){top:max(var(--offset),env(safe-area-inset-top))}:where([data-sonner-toaster][data-y-position=\"bottom\"]){bottom:max(var(--offset),env(safe-area-inset-bottom))}:where([data-sonner-toast]){--y: translateY(100%);--lift-amount: calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);filter:blur(0);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:none;overflow-wrap:anywhere}:where([data-sonner-toast][data-styled=\"true\"]){padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px #0000001a;width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}:where([data-sonner-toast]:focus-visible){box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast][data-y-position=\"top\"]){top:0;--y: translateY(-100%);--lift: 1;--lift-amount: calc(1 * var(--gap))}:where([data-sonner-toast][data-y-position=\"bottom\"]){bottom:0;--y: translateY(100%);--lift: -1;--lift-amount: calc(var(--lift) * var(--gap))}:where([data-sonner-toast]) :where([data-description]){font-weight:400;line-height:1.4;color:inherit}:where([data-sonner-toast]) :where([data-title]){font-weight:500;line-height:1.5;color:inherit}:where([data-sonner-toast]) :where([data-icon]){display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}:where([data-sonner-toast][data-promise=\"true\"]) :where([data-icon])>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}:where([data-sonner-toast]) :where([data-icon])>*{flex-shrink:0}:where([data-sonner-toast]) :where([data-icon]) svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}:where([data-sonner-toast]) :where([data-content]){display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;cursor:pointer;outline:none;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}:where([data-sonner-toast]) :where([data-button]):focus-visible{box-shadow:0 0 0 2px #0006}:where([data-sonner-toast]) :where([data-button]):first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}:where([data-sonner-toast]) :where([data-cancel]){color:var(--normal-text);background:rgba(0,0,0,.08)}:where([data-sonner-toast][data-theme=\"dark\"]) :where([data-cancel]){background:rgba(255,255,255,.3)}:where([data-sonner-toast]) :where([data-close-button]){position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;background:var(--gray1);color:var(--gray12);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}:where([data-sonner-toast]) :where([data-close-button]):focus-visible{box-shadow:0 4px 12px #0000001a,0 0 0 2px #0003}:where([data-sonner-toast]) :where([data-disabled=\"true\"]){cursor:not-allowed}:where([data-sonner-toast]):hover :where([data-close-button]):hover{background:var(--gray2);border-color:var(--gray5)}:where([data-sonner-toast][data-swiping=\"true\"]):before{content:\"\";position:absolute;left:0;right:0;height:100%;z-index:-1}:where([data-sonner-toast][data-y-position=\"top\"][data-swiping=\"true\"]):before{bottom:50%;transform:scaleY(3) translateY(50%)}:where([data-sonner-toast][data-y-position=\"bottom\"][data-swiping=\"true\"]):before{top:50%;transform:scaleY(3) translateY(-50%)}:where([data-sonner-toast][data-swiping=\"false\"][data-removed=\"true\"]):before{content:\"\";position:absolute;inset:0;transform:scaleY(2)}:where([data-sonner-toast]):after{content:\"\";position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}:where([data-sonner-toast][data-mounted=\"true\"]){--y: translateY(0);opacity:1}:where([data-sonner-toast][data-expanded=\"false\"][data-front=\"false\"]){--scale: var(--toasts-before) * .05 + 1;--y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}:where([data-sonner-toast])>*{transition:opacity .4s}:where([data-sonner-toast][data-expanded=\"false\"][data-front=\"false\"][data-styled=\"true\"])>*{opacity:0}:where([data-sonner-toast][data-visible=\"false\"]){opacity:0;pointer-events:none}:where([data-sonner-toast][data-mounted=\"true\"][data-expanded=\"true\"]){--y: translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}:where([data-sonner-toast][data-removed=\"true\"][data-front=\"true\"][data-swipe-out=\"false\"]){--y: translateY(calc(var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed=\"true\"][data-front=\"false\"][data-swipe-out=\"false\"][data-expanded=\"true\"]){--y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}:where([data-sonner-toast][data-removed=\"true\"][data-front=\"false\"][data-swipe-out=\"false\"][data-expanded=\"false\"]){--y: translateY(40%);opacity:0;transition:transform .5s,opacity .2s}:where([data-sonner-toast][data-removed=\"true\"][data-front=\"false\"]):before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount, 0px));transition:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation:swipe-out .2s ease-out forwards}@keyframes swipe-out{0%{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount)));opacity:1}to{transform:translateY(calc(var(--lift) * var(--offset) + var(--swipe-amount) + var(--lift) * -100%));opacity:0}}@media (max-width: 600px){[data-sonner-toaster]{position:fixed;--mobile-offset: 16px;right:var(--mobile-offset);left:var(--mobile-offset);width:100%}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset)}[data-sonner-toaster][data-y-position=bottom]{bottom:20px}[data-sonner-toaster][data-y-position=top]{top:20px}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset);right:var(--mobile-offset);transform:none}}[data-sonner-toaster][data-theme=light]{--normal-bg: #fff;--normal-border: var(--gray4);--normal-text: var(--gray12);--success-bg: hsl(143, 85%, 96%);--success-border: hsl(145, 92%, 91%);--success-text: hsl(140, 100%, 27%);--info-bg: hsl(208, 100%, 97%);--info-border: hsl(221, 91%, 91%);--info-text: hsl(210, 92%, 45%);--warning-bg: hsl(49, 100%, 97%);--warning-border: hsl(49, 91%, 91%);--warning-text: hsl(31, 92%, 45%);--error-bg: hsl(359, 100%, 97%);--error-border: hsl(359, 100%, 94%);--error-text: hsl(360, 100%, 45%)}[data-sonner-toaster][data-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1)}[data-sonner-toaster][data-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg: #fff;--normal-border: var(--gray3);--normal-text: var(--gray12)}[data-sonner-toaster][data-theme=dark]{--normal-bg: #000;--normal-border: hsl(0, 0%, 20%);--normal-text: var(--gray1);--success-bg: hsl(150, 100%, 6%);--success-border: hsl(147, 100%, 12%);--success-text: hsl(150, 86%, 65%);--info-bg: hsl(215, 100%, 6%);--info-border: hsl(223, 100%, 12%);--info-text: hsl(216, 87%, 65%);--warning-bg: hsl(64, 100%, 6%);--warning-border: hsl(60, 100%, 12%);--warning-text: hsl(46, 87%, 65%);--error-bg: hsl(358, 76%, 10%);--error-border: hsl(357, 89%, 16%);--error-text: hsl(358, 100%, 81%)}[data-rich-colors=true] [data-sonner-toast][data-type=success],[data-rich-colors=true] [data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true] [data-sonner-toast][data-type=info],[data-rich-colors=true] [data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true] [data-sonner-toast][data-type=warning],[data-rich-colors=true] [data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true] [data-sonner-toast][data-type=error],[data-rich-colors=true] [data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size: 16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:nth-child(1){animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}to{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}to{opacity:.15}}@media (prefers-reduced-motion){[data-sonner-toast],[data-sonner-toast]>*,.sonner-loading-bar{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}\n</style></head><body class=\"relative flex min-h-screen flex-col\" style=\"overflow: auto;\"><header class=\"fixed inset-x-0 z-50 flex h-[100px] flex-col items-center justify-center bg-primary py-6 text-white shadow-sm transition-all duration-500 max-sm:bg-primary\"><div class=\"container\"><div class=\"flex items-center justify-between gap-3\"><button class=\"btn-menu flex min-h-[28px] cursor-pointer items-center border-0 bg-transparent px-0 text-inherit transition duration-300 ease-linear focus:outline-none lg:hidden\" type=\"button\" aria-label=\"mobileMenu\" aria-labelledby=\"mobileMenu\"><i class=\"btn-menu__bars relative left-0 block h-[2px] w-[20px] bg-white transition duration-300 before:absolute before:block before:h-full before:w-full before:bg-white before:transition before:duration-300 before:content-[''] after:absolute after:block after:h-full after:w-full after:bg-white after:transition after:duration-300 after:content-[''] before:-translate-y-1.5 after:translate-y-1.5\" aria-hidden=\"true\"></i></button><div><a href=\"/en\"><img alt=\"shark tank logo\" loading=\"lazy\" width=\"65\" height=\"80\" decoding=\"async\" data-nimg=\"1\" class=\"h-20 w-auto object-contain\" style=\"color:transparent\" srcset=\"/_next/image?url=%2Fimages%2Flogo.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&amp;w=256&amp;q=75 2x\" src=\"/_next/image?url=%2Fimages%2Flogo.png&amp;w=256&amp;q=75\"></a></div><div class=\"hidden lg:block\"><ul class=\"hidden items-center justify-center gap-4 sm:text-sm lg:flex xl:gap-6\"><li><a class=\"navLink text-nowrap\" href=\"/en/about\">About</a></li><li><a class=\"navLink text-nowrap activeLink\" href=\"/en/deals\">Deals</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/sharks\">sharks</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/seasons\">Seasons</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/team\">Our Team</a></li><li><a class=\"navLink text-nowrap\" href=\"/en/contact-us\">Contact us</a></li></ul></div><div class=\"flex items-center justify-end gap-3\"><a class=\"font mr-4 hidden items-center justify-center uppercase transition-colors duration-300 lg:flex text-white\" href=\"/en/login\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0\" y=\"0\" viewBox=\"0 0 462 462\" style=\"enable-background:new 0 0 512 512\" xml:space=\"preserve\" class=\"size-6 stroke-2 mr-2 flex items-center justify-center fill-white text-lg uppercase transition-colors duration-300 xl:text-4xl\"><g><path d=\"M231 229.91a72 72 0 1 1 72-72 72.08 72.08 0 0 1-72 72zm0-124a52 52 0 1 0 52 52 52.06 52.06 0 0 0-52-52zM356 376.09a10 10 0 0 1-10-10v-24.72a71.7 71.7 0 0 0-71.62-71.62h-86.76A71.7 71.7 0 0 0 116 341.37v24.72a10 10 0 0 1-20 0v-24.72a91.73 91.73 0 0 1 91.62-91.62h86.75A91.73 91.73 0 0 1 366 341.37v24.72a10 10 0 0 1-10 10z\" opacity=\"1\" data-original=\"#000000\"></path></g></svg><span class=\"text-sm sm:text-base\">Log In</span></a><div class=\"flex items-center justify-center gap-3 lg:hidden\"><button type=\"button\" class=\"flex items-center justify-center rounded-3xl bg-[#FFE46C] ltr:font-kenyan font-bold text-black transition-all duration-300 hover:bg-white lg:text-base px-3 py-2 text-xs uppercase sm:text-base md:px-6 lg:px-6\">Apply Now</button></div><div class=\"hidden items-center justify-center gap-3 lg:flex\"><button type=\"button\" class=\"flex items-center justify-center rounded-3xl bg-[#FFE46C] ltr:font-kenyan font-bold text-black transition-all duration-300 hover:bg-white lg:text-base px-3 py-2 text-xs uppercase sm:text-base md:px-6 lg:px-6\">Apply Now</button></div><a class=\"font-bold uppercase text-white transition-colors duration-300 rtl:font-bold __className_e4a7fa\" href=\"/ar/deals/fintech\"><span class=\"font-cairo\">AR</span></a></div></div></div></header><div class=\"min-h-screen bg-primary text-white\"><div class=\"container flex min-h-screen flex-col pt-32\"><div class=\"w-full flex-shrink-0 pb-10 md:w-1/2\"><div class=\"mb-3 w-fit gap-2 self-start rounded-md p-2 font-semibold flex\"><a href=\"/en/deals\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6 font-bold text-white hover:text-white/50\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18\"></path></svg></a><nav aria-label=\"breadcrumb\"><ol class=\"flex flex-wrap items-center gap-1.5 break-words text-sm text-white sm:gap-2.5\"><li class=\"inline-flex items-center gap-1.5\"><a class=\"transition-colors font-cairo text-white/60 hover:text-white\" href=\"/en\">Home </a></li><li role=\"presentation\" aria-hidden=\"true\" class=\"[&amp;&gt;svg]:size-3.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6 rtl:rotate-180\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path></svg></li><li class=\"inline-flex items-center gap-1.5\"><a class=\"transition-colors font-cairo capitalize text-white/60 hover:text-white\" href=\"/en/deals\">Deals</a></li><li role=\"presentation\" aria-hidden=\"true\" class=\"[&amp;&gt;svg]:size-3.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 24 24\" stroke-width=\"1.5\" stroke=\"currentColor\" class=\"size-6 rtl:rotate-180\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m8.25 4.5 7.5 7.5-7.5 7.5\"></path></svg></li><li class=\"inline-flex items-center gap-1.5 font-cairo uppercase text-white\">Fintech</li></ol></nav></div><h1 class=\"text-6xl font-extrabold uppercase md:text-7xl rtl:mb-4 rtl:text-5xl\" style=\"color:#fff;border-top:2px solid #fff;padding-top:1.5rem\">Fintech</h1></div><div class=\"mb-8 flex flex-shrink-0 flex-wrap items-center justify-between gap-4\"><div class=\"flex flex-wrap gap-2\"><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-white text-gray-900\">Seasons</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Season 1</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Season 2</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Season 3</button><button class=\"rounded-full px-4 py-2 font-cairo text-sm font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700\">Special Episodes</button></div></div><div class=\"grid flex-grow grid-cols-1 gap-6 overflow-y-auto pb-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4\"><a href=\"https://youtu.be/6ZCqzJ_IPEI\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Masroofi FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F203a97ed-c10d-444c-acf7-3d3c40ac9c1a.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Masroofi</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/oz8-LkpoWcA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Amwal FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F2f76f3eb-4abb-4310-b0ba-6a6cea6379a3.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Amwal</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/oTd1JdZxOYQ\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Agri Cash FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F08efb99d-c07d-41b0-8a9a-8854c677573f.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Agri Cash</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/gQ8zqzxkX2Y\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Weddngo  FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F4482956b-d3c9-4ea8-957b-0f605d1fdaa2.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Weddngo </h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/4roAnXCpRdw\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Abgad FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fb1b968ce-00e9-480a-9c2b-db877b1c7b40.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Abgad</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/74j0HSW1tjM\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Tap FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F89abe928-c743-414b-9eb1-81ff9898c3da.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Tap</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/oCXBeyzBRHA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Raseedi  FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2F435ec1c3-4c93-42df-932d-81329e6e2cea.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Raseedi </h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a><a href=\"https://youtu.be/3oF5c9e6mQQ\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"group block h-fit overflow-hidden rounded-xl bg-gradient-to-br from-[#4198C1] to-[#27366D] shadow-lg transition-all duration-300 hover:shadow-xl\" style=\"opacity: 1; transform: none;\"><div class=\"relative aspect-video overflow-hidden\"><img alt=\"Amanleek FinTech Deals Shark Tank Egypt \" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover transition-transform duration-300 group-hover:scale-105\" style=\"position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent\" sizes=\"100vw\" srcset=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=3840&amp;q=75 3840w\" src=\"/_next/image?url=https%3A%2F%2FImageRepository.psdigital.me%2Fe8217312-eae8-46de-9632-ac62ea685102.jpg&amp;w=3840&amp;q=75\"><div class=\"absolute inset-0 flex items-center justify-center bg-primary/40\"></div></div><div class=\"flex items-center justify-between p-4\"><h3 class=\"mb-1 line-clamp-2 text-xl font-medium text-white\">Amanleek</h3><div class=\"flex items-center gap-2 rounded-full border-2 border-white bg-transparent p-2 font-medium text-white transition-all duration-200 group-hover:scale-105 group-hover:border-primary group-hover:bg-white group-hover:text-primary\"><svg class=\"h-5 w-5 transition-all duration-200\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z\"></path></svg></div></div></a></div></div></div><div class=\"container flex h-24 flex-col items-center justify-center gap-3  bg-black text-white sm:h-14 sm:flex-row sm:justify-between\"><div class=\"text-center text-sm lg:text-start \">© <!-- -->2026<!-- --> <!-- -->All Rights Reserved. | Powered by<a class=\"mx-1 font-bold\" target=\"_blank\" href=\"https://psdigital.me/\">PSdigital</a></div><div class=\"flex items-center justify-center gap-3\"><a href=\"https://www.instagram.com/sharktank.egypt?igsh=bjRpbTRvcTJtMjk0\" target=\"_blank\" class=\"flex-1\" aria-label=\"instagram\"><svg width=\"149px\" height=\"149px\" viewBox=\"0 0 192 192\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#ffffff\" class=\"size-6\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"><path stroke=\"#ffffff\" stroke-width=\"12\" d=\"M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z\"></path><circle cx=\"96\" cy=\"96\" r=\"30\" stroke=\"#ffffff\" stroke-width=\"12\"></circle><circle cx=\"135\" cy=\"57\" r=\"9\" fill=\"#ffffff\"></circle></g></svg></a><a href=\"https://x.com/SharkTankEgypt/status/1875211150989881806\" target=\"_blank\" class=\"flex-1\" aria-label=\"Twitter\"><svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 1226.37 1226.37\" class=\"size-4\" fill=\"currentColor\"><g><path d=\"M727.348 519.284 1174.075 0h-105.86L680.322 450.887 370.513 0H13.185l468.492 681.821L13.185 1226.37h105.866l409.625-476.152 327.181 476.152h357.328L727.322 519.284zM582.35 687.828l-47.468-67.894-377.686-540.24H319.8l304.797 435.991 47.468 67.894 396.2 566.721H905.661L582.35 687.854z\" fill=\"currentColor\"></path></g></svg></a><a href=\"https://www.linkedin.com/company/shark-tank-egypt?trk=feed_main-feed-card_feed-actor-image\" target=\"_blank\" class=\"flex-1\" aria-label=\"linkedin\"><svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"149px\" height=\"149px\" viewBox=\"0 0 40 40\" enable-background=\"new 0 0 40 40\" xml:space=\"preserve\" fill=\"#ffffff\" stroke=\"#ffffff\" class=\"size-6\"><g id=\"SVGRepo_bgCarrier\" stroke-width=\"0\"></g><g id=\"SVGRepo_tracerCarrier\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></g><g id=\"SVGRepo_iconCarrier\"> <g display=\"none\"> <path display=\"inline\" d=\"M20.01,36.5c-0.277,0-0.537-0.137-0.693-0.368L9.468,21.529c-1.171-1.861-1.79-3.993-1.79-6.162 C7.678,8.824,13.206,3.5,20,3.5c6.795,0,12.322,5.324,12.322,11.867c0,2.164-0.612,4.284-1.77,6.129l-9.851,14.636 C20.547,36.363,20.287,36.5,20.01,36.5L20.01,36.5z M20,5.17c-5.873,0-10.652,4.574-10.652,10.197c0,1.854,0.525,3.669,1.52,5.251 l9.14,13.55l9.146-13.581c0.981-1.566,1.499-3.371,1.499-5.22C30.652,9.744,25.873,5.17,20,5.17L20,5.17z\"></path> <path display=\"inline\" d=\"M20,20.857c-3.159,0-5.728-2.482-5.728-5.535c0-3.051,2.569-5.534,5.728-5.534s5.729,2.483,5.729,5.534 C25.729,18.375,23.158,20.857,20,20.857L20,20.857z M20,11.458c-2.237,0-4.057,1.734-4.057,3.864c0,2.13,1.82,3.865,4.057,3.865 s4.058-1.734,4.058-3.865C24.058,13.192,22.236,11.458,20,11.458L20,11.458z\"></path> </g> <path display=\"none\" d=\"M36.705,34.289L26.059,23.615c3.918-4.69,3.688-11.708-0.707-16.114C23.1,5.243,20.104,4,16.919,4 S10.74,5.243,8.488,7.501c-4.647,4.66-4.647,12.241,0,16.899c2.253,2.257,5.248,3.5,8.431,3.5c2.866,0,5.573-1.015,7.728-2.86 l10.639,10.665C35.479,35.902,35.738,36,35.994,36s0.514-0.098,0.709-0.293C37.096,35.316,37.097,34.68,36.705,34.289z M9.766,23.126c-3.945-3.958-3.945-10.395,0-14.351c1.912-1.914,4.452-2.97,7.153-2.97s5.243,1.056,7.153,2.97 c3.946,3.956,3.946,10.394,0,14.351c-1.91,1.914-4.452,2.969-7.153,2.969S11.678,25.04,9.766,23.126z\"></path> <path display=\"none\" d=\"M25.38,34.848c-0.066,0-0.136-0.009-0.206-0.024l-10.498-2.561l-10.61,2.561 c-0.069,0.016-0.139,0.024-0.205,0.024c-0.191,0-0.38-0.064-0.532-0.184C3.12,34.5,3,34.252,3,33.986V8.635 c0-0.397,0.27-0.741,0.657-0.836l10.76-2.623l0.407,0.003l10.504,2.558l10.607-2.561c0.065-0.016,0.135-0.023,0.203-0.023 c0.195,0,0.38,0.063,0.533,0.183C36.881,5.499,37,5.746,37,6.012v25.352c0,0.397-0.27,0.741-0.656,0.837l-10.759,2.622 C25.516,34.839,25.446,34.848,25.38,34.848L25.38,34.848z M15.481,30.688l9.039,2.203V9.311l-9.039-2.203V30.688z M26.24,9.311 v23.58l9.039-2.202V7.108L26.24,9.311z M4.721,9.311v23.58l9.039-2.202V7.108L4.721,9.311z\"></path> <g display=\"none\"> <path display=\"inline\" d=\"M9.708,35C7.112,35,5,32.893,5,30.303c0-2.592,2.112-4.699,4.708-4.699c2.595,0,4.707,2.107,4.707,4.699 C14.415,32.893,12.303,35,9.708,35L9.708,35z M9.708,27.445c-1.578,0-2.863,1.281-2.863,2.857c0,1.574,1.285,2.855,2.863,2.855 c1.578,0,2.861-1.281,2.861-2.855C12.568,28.727,11.285,27.445,9.708,27.445L9.708,27.445z\"></path> <path display=\"inline\" d=\"M24.574,35c-0.621,0-1.125-0.505-1.125-1.126c0-9.552-7.771-17.324-17.323-17.324 C5.505,16.55,5,16.045,5,15.425s0.505-1.126,1.126-1.126c10.792,0,19.573,8.781,19.573,19.575C25.699,34.495,25.193,35,24.574,35 L24.574,35z\"></path> <path display=\"inline\" d=\"M33.916,35c-0.597,0-1.082-0.486-1.082-1.084c0-14.75-12-26.751-26.751-26.751 C5.486,7.165,5,6.68,5,6.083C5,5.486,5.486,5,6.083,5C22.027,5,35,17.972,35,33.916C35,34.514,34.514,35,33.916,35L33.916,35z\"></path> </g> <g display=\"none\"> <path display=\"inline\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20,29.616c-6.911,0-13.412-3.681-17-9.615 c3.588-5.935,10.089-9.617,17-9.617c6.91,0,13.412,3.682,17,9.617C33.412,25.936,26.91,29.616,20,29.616L20,29.616z M19.998,12.254 c-5.817,0-11.309,2.848-14.687,7.618l-0.088,0.125l0.088,0.124c3.378,4.77,8.87,7.618,14.687,7.618 c5.82,0,11.311-2.849,14.687-7.618l0.089-0.124l-0.089-0.125C31.309,15.103,25.818,12.254,19.998,12.254L19.998,12.254z\"></path> <path display=\"inline\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M19.987,13.521c-3.574,0-6.478,2.9-6.478,6.479 c0,3.579,2.904,6.478,6.478,6.478c3.581,0,6.478-2.898,6.478-6.478C26.465,16.42,23.568,13.521,19.987,13.521z M19.987,24.857 c-2.68,0-4.858-2.175-4.858-4.858s2.178-4.859,4.858-4.859c2.686,0,4.858,2.175,4.858,4.859S22.673,24.857,19.987,24.857z\"></path> </g> <path display=\"none\" d=\"M7.336,35.5c-0.399,0-0.725-0.325-0.725-0.726v-7.599c0-0.4,0.326-0.725,0.725-0.725h3.181v-6.336 c0-0.342,0.276-0.619,0.619-0.619h8.247v-5.949h-3.181c-0.398,0-0.725-0.325-0.725-0.726V5.223c0-0.399,0.326-0.723,0.725-0.723 h7.598c0.398,0,0.725,0.324,0.725,0.723v7.599c0,0.401-0.326,0.726-0.725,0.726H20.62v5.949h8.245c0.341,0,0.618,0.277,0.618,0.619 v6.336h3.182c0.397,0,0.724,0.324,0.724,0.725v7.599c0,0.399-0.326,0.725-0.724,0.725h-7.599c-0.4,0-0.726-0.325-0.726-0.725v-7.599 c0-0.4,0.325-0.725,0.726-0.725h3.179v-5.717H11.754v5.717h3.18c0.399,0,0.725,0.324,0.725,0.725v7.599 c0,0.4-0.325,0.726-0.725,0.726H7.336z M8.061,34.051h6.149V27.9H8.061V34.051z M25.79,34.051h6.149V27.9H25.79V34.051z M16.927,12.099h6.146V5.949h-6.146V12.099z\"></path> <g display=\"none\"> <path display=\"inline\" d=\"M11.018,35.01c-0.402,0-0.736-0.314-0.759-0.717L8.879,9.946H5.75c-0.419,0-0.76-0.342-0.76-0.76 c0-0.419,0.341-0.761,0.76-0.761h3.59L9.495,8.45L9.6,8.426h5.171V5.75c0-0.419,0.34-0.76,0.76-0.76h8.939 c0.419,0,0.76,0.341,0.76,0.76v2.676h5.174l0.175,0.028l0.118-0.028h3.554c0.419,0,0.76,0.342,0.76,0.761 c0,0.418-0.341,0.76-0.76,0.76h-3.128l-1.36,24.346c-0.023,0.402-0.356,0.718-0.759,0.718H11.018z M11.735,33.49h16.549L29.6,9.946 H10.4L11.735,33.49z M16.29,8.426h7.42V6.51h-7.42V8.426z\"></path> <path display=\"inline\" d=\"M14.302,12.201c-0.249,0.012-0.435,0.102-0.57,0.252c-0.135,0.152-0.203,0.348-0.192,0.551l0.998,17.608 c0.024,0.401,0.357,0.716,0.759,0.716v0.19l0.045-0.19c0.417-0.024,0.737-0.385,0.715-0.804l-0.999-17.606 C15.034,12.516,14.702,12.201,14.302,12.201L14.302,12.201z\"></path> <path display=\"inline\" d=\"M25.709,12.202c-0.445,0-0.776,0.314-0.8,0.716l-1,17.606c-0.022,0.419,0.298,0.779,0.717,0.804 l0.044,0.19v-0.19c0.402,0,0.735-0.314,0.757-0.716l1.001-17.608c0.011-0.203-0.058-0.398-0.192-0.551 c-0.136-0.15-0.321-0.24-0.523-0.251C25.711,12.202,25.71,12.202,25.709,12.202L25.709,12.202z\"></path> <path display=\"inline\" d=\"M20,12.201c-0.419,0-0.76,0.341-0.76,0.76v17.607c0,0.419,0.341,0.76,0.76,0.76s0.76-0.341,0.76-0.76 V12.961C20.76,12.542,20.419,12.201,20,12.201L20,12.201z\"></path> </g> <g display=\"none\"> <path display=\"inline\" d=\"M8.236,15.765C5.901,15.765,4,17.665,4,20c0,2.336,1.901,4.234,4.236,4.234 c2.336,0,4.235-1.898,4.235-4.234C12.472,17.665,10.572,15.765,8.236,15.765z M8.236,22.824c-1.557,0-2.823-1.268-2.823-2.824 c0-1.557,1.267-2.824,2.823-2.824c1.558,0,2.822,1.267,2.822,2.824C11.059,21.557,9.794,22.824,8.236,22.824z\"></path> <path display=\"inline\" d=\"M20,15.765c-2.334,0-4.236,1.899-4.236,4.235c0,2.336,1.902,4.234,4.236,4.234 c2.337,0,4.236-1.898,4.236-4.234C24.236,17.665,22.337,15.765,20,15.765z M20,22.824c-1.557,0-2.822-1.268-2.822-2.824 c0-1.557,1.266-2.824,2.822-2.824c1.559,0,2.822,1.267,2.822,2.824C22.822,21.557,21.559,22.824,20,22.824z\"></path> <path display=\"inline\" d=\"M31.764,15.765c-2.334,0-4.235,1.899-4.235,4.235c0,2.336,1.901,4.234,4.235,4.234 C34.101,24.234,36,22.336,36,20C36,17.665,34.101,15.765,31.764,15.765z M31.764,22.824c-1.556,0-2.822-1.268-2.822-2.824 c0-1.557,1.267-2.824,2.822-2.824c1.559,0,2.823,1.267,2.823,2.824C34.587,21.557,33.322,22.824,31.764,22.824z\"></path> </g> <path display=\"none\" d=\"M33.125,19.125H8.98L20.841,7.5c0.345-0.338,0.351-0.892,0.013-1.237s-0.892-0.35-1.237-0.012L6.262,19.339 C6.095,19.503,6,19.729,6,19.965c0,0.005,0,0.011,0,0.017C6,19.989,6,19.994,6,20c0,0.319,0.171,0.598,0.427,0.751L19.69,33.75 c0.17,0.167,0.392,0.25,0.613,0.25c0.227,0,0.453-0.088,0.625-0.262c0.338-0.346,0.332-0.9-0.013-1.238L9.055,20.875h24.07 C33.607,20.875,34,20.483,34,20S33.607,19.125,33.125,19.125z\"></path> <path display=\"none\" d=\"M34,20c0-0.32-0.172-0.599-0.428-0.751L20.31,6.25c-0.345-0.338-0.899-0.333-1.237,0.012 S18.738,7.161,19.084,7.5l11.861,11.625H6.875C6.393,19.125,6,19.517,6,20s0.393,0.875,0.875,0.875H31.02L19.158,32.5 c-0.344,0.339-0.35,0.893-0.012,1.238C19.318,33.912,19.545,34,19.771,34c0.221,0,0.442-0.083,0.612-0.25l13.353-13.089 C33.904,20.497,34,20.271,34,20.035c0-0.005-0.001-0.011-0.001-0.017C33.999,20.011,34,20.006,34,20z\"></path> <path display=\"none\" d=\"M33.75,19.616L20.66,6.262C20.496,6.095,20.271,6,20.037,6c-0.007,0-0.014,0.001-0.02,0.001S20.006,6,20,6 c-0.32,0-0.598,0.172-0.751,0.428L6.25,19.69c-0.338,0.345-0.332,0.899,0.013,1.237c0.171,0.167,0.391,0.25,0.612,0.25 c0.227-0.001,0.454-0.088,0.625-0.263l11.625-11.86v24.07C19.125,33.607,19.518,34,20,34c0.483,0,0.875-0.393,0.875-0.875V8.981 L32.5,20.841c0.338,0.345,0.893,0.35,1.237,0.013C34.082,20.515,34.088,19.96,33.75,19.616z\"></path> <path display=\"none\" d=\"M33.737,19.071c-0.345-0.337-0.899-0.332-1.237,0.014l-11.625,11.86V6.875C20.875,6.392,20.483,6,20,6 c-0.482,0-0.875,0.392-0.875,0.875V31.02L7.5,19.159c-0.338-0.345-0.892-0.351-1.237-0.013c-0.345,0.338-0.351,0.892-0.013,1.237 l13.09,13.354C19.504,33.905,19.729,34,19.965,34c0.005,0,0.012-0.001,0.018-0.001C19.989,33.999,19.994,34,20,34 c0.32,0,0.599-0.172,0.752-0.428L33.75,20.31C34.088,19.965,34.082,19.41,33.737,19.071z\"></path> <path display=\"none\" d=\"M26.714,34c-0.222,0-0.442-0.083-0.612-0.251l-13.429-13.16c-0.167-0.164-0.262-0.39-0.262-0.624 c0-0.236,0.095-0.462,0.262-0.626L26.027,6.251c0.344-0.339,0.898-0.334,1.237,0.011c0.338,0.346,0.331,0.899-0.013,1.237 L14.536,19.965l12.79,12.536c0.345,0.337,0.351,0.892,0.013,1.237C27.168,33.912,26.939,34,26.714,34z\"></path> <path display=\"none\" d=\"M13.36,34c-0.225,0-0.453-0.088-0.624-0.262c-0.339-0.346-0.333-0.899,0.01-1.237l12.717-12.466 L12.673,7.499c-0.345-0.339-0.35-0.893-0.013-1.237c0.34-0.344,0.894-0.35,1.238-0.012l13.429,13.161 c0.167,0.164,0.262,0.39,0.262,0.624c0,0.236-0.094,0.461-0.262,0.625L13.974,33.75C13.803,33.917,13.581,34,13.36,34z\"></path> <path display=\"none\" d=\"M5.938,28.131c-0.236,0-0.474-0.089-0.657-0.269c-0.368-0.362-0.375-0.956-0.012-1.325L19.37,12.149 c0.176-0.179,0.417-0.28,0.669-0.28s0.493,0.101,0.669,0.28l14.023,14.308c0.363,0.369,0.356,0.963-0.012,1.326 c-0.37,0.361-0.965,0.356-1.326-0.014L20.039,14.146L6.608,27.85C6.423,28.037,6.182,28.13,5.938,28.131z\"></path> <path display=\"none\" d=\"M19.962,28.131c-0.253,0-0.493-0.102-0.67-0.281L5.27,13.542c-0.364-0.37-0.357-0.963,0.011-1.326 c0.372-0.362,0.965-0.356,1.326,0.013l13.354,13.625l13.433-13.704c0.361-0.37,0.954-0.376,1.326-0.015 c0.368,0.363,0.375,0.957,0.013,1.327L20.632,27.85C20.454,28.029,20.214,28.131,19.962,28.131z\"></path> <g display=\"none\"> <path display=\"inline\" d=\"M6.72,34C6.323,34,6,33.678,6,33.281v-5.811c0-0.396,0.323-0.721,0.72-0.721h5.81 c0.397,0,0.72,0.324,0.72,0.721v5.811c0,0.396-0.323,0.719-0.72,0.719H6.72z M7.439,32.561h4.371v-4.371H7.439V32.561z\"></path> <path display=\"inline\" d=\"M17.095,34c-0.396,0-0.72-0.322-0.72-0.719v-5.811c0-0.396,0.323-0.721,0.72-0.721h5.811 c0.396,0,0.72,0.324,0.72,0.721v5.811c0,0.396-0.323,0.719-0.72,0.719H17.095z M17.815,32.561h4.371v-4.371h-4.371V32.561z\"></path> <path display=\"inline\" d=\"M27.471,34c-0.397,0-0.721-0.322-0.721-0.719v-5.811c0-0.396,0.323-0.721,0.721-0.721h5.81 c0.396,0,0.72,0.324,0.72,0.721v5.811C34,33.678,33.677,34,33.28,34H27.471z M28.189,32.561h4.371v-4.371h-4.371V32.561z\"></path> <path display=\"inline\" d=\"M6.72,23.625c-0.396,0-0.72-0.322-0.72-0.719v-5.811c0-0.397,0.323-0.72,0.72-0.72h5.81 c0.397,0,0.72,0.323,0.72,0.72v5.811c0,0.396-0.323,0.719-0.72,0.719H6.72z M7.439,22.186h4.371v-4.371H7.439V22.186z\"></path> <path display=\"inline\" d=\"M17.095,23.625c-0.396,0-0.72-0.322-0.72-0.719v-5.811c0-0.397,0.323-0.72,0.72-0.72h5.811 c0.396,0,0.72,0.323,0.72,0.72v5.811c0,0.396-0.323,0.719-0.72,0.719H17.095z M17.815,22.186h4.371v-4.371h-4.371V22.186z\"></path> <path display=\"inline\" d=\"M27.471,23.625c-0.397,0-0.721-0.322-0.721-0.719v-5.811c0-0.397,0.323-0.72,0.721-0.72h5.81 c0.396,0,0.72,0.323,0.72,0.72v5.811c0,0.396-0.323,0.719-0.72,0.719H27.471z M28.189,22.186h4.371v-4.371h-4.371V22.186z\"></path> <path display=\"inline\" d=\"M6.72,13.25C6.323,13.25,6,12.927,6,12.531v-5.81C6,6.324,6.323,6,6.72,6h5.81 c0.397,0,0.72,0.323,0.72,0.72v5.81c0,0.396-0.323,0.719-0.72,0.719H6.72z M7.439,11.811h4.371V7.439H7.439V11.811z\"></path> <path display=\"inline\" d=\"M17.095,13.25c-0.396,0-0.72-0.322-0.72-0.719v-5.81c0-0.397,0.323-0.72,0.72-0.72h5.811 c0.396,0,0.72,0.323,0.72,0.72v5.81c0,0.396-0.323,0.719-0.72,0.719H17.095z M17.815,11.811h4.371V7.439h-4.371V11.811z\"></path> <path display=\"inline\" d=\"M27.471,13.25c-0.397,0-0.721-0.322-0.721-0.719v-5.81c0-0.397,0.323-0.72,0.721-0.72h5.81 C33.677,6,34,6.324,34,6.721v5.81c0,0.396-0.323,0.719-0.72,0.719H27.471z M28.189,11.811h4.371V7.439h-4.371V11.811z\"></path> </g> <g display=\"none\"> <path display=\"inline\" d=\"M16.225,8.013h16.949C33.63,8.013,34,7.6"
+ ]
 }
