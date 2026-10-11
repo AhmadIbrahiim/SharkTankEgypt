@@ -1,7 +1,7 @@
 // Reads the official site (sharktank-egypt.com) in a real browser. Deal-category pages list startup
 // names without links, so each name is clicked and whatever it opens (a page, a modal, a data request)
 // is recorded, so pitch outcomes can be read from it.
-// Usage (in Actions): node scripts/probe-site.mjs <out.json> [maxCategories]
+// Usage (in Actions): node scripts/probe-site.mjs <out.json> [cat1,cat2,…]
 import { chromium } from 'playwright';
 import { writeFileSync } from 'node:fs';
 
@@ -19,13 +19,13 @@ ctx.on('response', async (r) => {
 });
 
 const page = await ctx.newPage();
-for (const cat of CATS.slice(0, +(process.argv[3] ?? 99))) {
+for (const cat of process.argv[3]?.split(',') ?? CATS) {
   const url = `${ROOT}/en/deals/${cat}`;
   try { await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }); } catch (e) { out.startups.push({ cat, error: String(e.message) }); continue; }
   const before = await page.evaluate(() => document.body.innerText);
   const names = before.split('\n').map((s) => s.trim());
   const list = names.slice(names.lastIndexOf('Special Episodes') + 1, names.findIndex((s) => s.startsWith('©'))).filter(Boolean);
-  if (cat === CATS[0]) out.html = (await page.content()).slice(0, 60000); // markup sample, to see how cards are built
+  out.html ??= (await page.content()).slice(0, 60000); // markup sample, to see how cards are built
   for (const name of list) {
     current = name;
     const rec = { cat, name };
@@ -40,6 +40,7 @@ for (const cat of CATS.slice(0, +(process.argv[3] ?? 99))) {
     if (page.url() !== url) await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
     else await page.keyboard.press('Escape').catch(() => {});
   }
+  writeFileSync(process.argv[2], JSON.stringify(out, null, 1)); // after each category: a killed runner keeps what it read
 }
 await browser.close();
 writeFileSync(process.argv[2], JSON.stringify(out, null, 1));

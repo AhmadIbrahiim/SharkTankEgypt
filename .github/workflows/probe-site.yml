@@ -1,5 +1,8 @@
 name: Read the official site
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      categories: { description: "Comma-separated deal categories (empty = all)", type: string, default: "" }
 permissions:
   contents: write
 jobs:
@@ -12,8 +15,9 @@ jobs:
         with: { node-version: 22, cache: npm }
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - run: node scripts/probe-site.mjs automation/sources/site.json
+      - run: timeout 40m node scripts/probe-site.mjs automation/sources/site.json ${{ inputs.categories }}
       - name: Commit
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
