@@ -1,5 +1,5 @@
 ---
-import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, type Lang, type Card } from '../config';
+import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card } from '../config';
 import { siteNodes, ID } from '../schema';
 interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card }
 const { lang, title, description, altPath, image, jsonld, card } = Astro.props;
@@ -40,7 +40,7 @@ const isPage = pageTypes.includes(entity['@type']);
 const isPerson = entity['@type'] === 'Person';
 const page = {
   '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : segs.length <= 1 ? 'CollectionPage' : 'WebPage',
-  '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site },
+  '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site }, dateModified: dataUpdated,
   primaryImageOfPage: { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 },
   ...(crumbs.length > 1 && { breadcrumb: { '@id': `${url}#breadcrumb` } }),
   ...(isPage ? (({ '@type': _t, ...rest }) => rest)(entity) : jsonld ? { mainEntity: { '@id': entity['@id'] ?? `${url}#main` } } : {}),
@@ -146,6 +146,7 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
             <a href={`${base}/${lang}/`}>{s.navStartups}</a>
             <a href={`${base}/${lang}/sharks/`}>{s.navSharks}</a>
             <a href={`${base}/${lang}/founders/`}>{s.navFounders}</a>
+            <a href={`${base}/${lang}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
             <a href={`${base}/${lang}/faq/`}>{s.navFaq}</a>
             <a href={`${base}${altPath}`} hreflang={other}>{s.switchLang}</a>
           </nav>
@@ -158,7 +159,7 @@ const section = /\/(sharks|founders|faq)\//.exec(Astro.url.pathname)?.[1] ?? 'st
             <p>{categories.map((c) => <a href={`${base}/${lang}/category/${catSlug(c)}/`}>{category(c, lang)}</a>)}</p>
           </nav>
         </div>
-        <p class="fine">© {new Date().getFullYear()} {s.brandName} · {s.madeWith}</p>
+        <p class="fine">© {new Date().getFullYear()} {s.brandName} · {s.madeWith} · {lang === 'ar' ? 'آخر تحديث للبيانات' : 'Data updated'} <time datetime={dataUpdated}>{dataUpdated}</time> · <a href={`${base}/data/deals.csv`}>CSV</a> · <a href={`${base}/llms.txt`}>llms.txt</a></p>
       </div>
     </footer>
   </body>

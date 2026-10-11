@@ -1,4 +1,5 @@
 import { existsSync } from 'node:fs';
+import { execSync } from 'node:child_process';
 import data from './data/startups.json';
 import seasons from './data/seasons.json';
 import peopleData from './data/people.json';
@@ -11,6 +12,11 @@ export type Startup = (typeof data)[number];
 const rank = (n: number) => (n === 0 ? 3.5 : n);
 export const startups = [...data].sort((a, b) => rank(b.season) - rank(a.season) || (a.episode ?? 99) - (b.episode ?? 99));
 export { seasons };
+/** Date the data last changed (YYYY-MM-DD), for sitemap lastmod, dateModified and the footer. */
+export const dataUpdated = (() => {
+  try { return execSync('git log -1 --format=%cs -- src/data', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || new Date().toISOString().slice(0, 10); }
+  catch { return new Date().toISOString().slice(0, 10); }
+})();
 
 // Fill these from https://giscus.app after enabling Discussions on the repo.
 // Comments stay hidden until repoId and categoryId are set.

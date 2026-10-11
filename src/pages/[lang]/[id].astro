@@ -6,7 +6,7 @@ import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
-import { startupFaq } from '../../faq';
+import { startupFaq, summary } from '../../faq';
 import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup, type Card } from '../../config';
 
 export const getStaticPaths = () =>
@@ -42,19 +42,8 @@ const team = (x.founders ?? []).map((n) => allFounders.find((f) => f.id === foun
 // Pitch summary: the written one, else a factual line built from the structured data (never an empty section).
 const list = (xs: string[]) => xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(lang === 'ar' ? '، ' : ', ')}${lang === 'ar' ? ' و' : ' and '}${xs.at(-1)}`;
 const sharkNames = list((x.deal?.sharks ?? []).map((n) => shark(n, lang)));
-const askV = valuation(x.ask?.amountEGP, x.ask?.equityPct);
 const where = `${seasonLabel(x.season, lang)}${x.episode != null ? (lang === 'ar' ? `، الحلقة ${num(x.episode, lang)}` : `, episode ${x.episode}`) : ''}`;
-const autoPitch = lang === 'ar'
-  ? [`عرض فريق ${x.name.ar} مشروعه في ${where}.`,
-     x.ask?.amountEGP != null && `طلب المؤسسون ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` مقابل ${pct(x.ask.equityPct, lang)}` : ''}${askV ? `، أي بتقييم ${money(askV, lang)}` : ''}.`,
-     x.deal?.made === true && `انتهى العرض بصفقة${sharkNames ? ` مع ${sharkNames}` : ''}${x.deal.amountEGP != null ? ` بقيمة ${money(x.deal.amountEGP, lang)}` : ''}${x.deal.equityPct != null ? ` مقابل ${pct(x.deal.equityPct, lang)}` : ''}.`,
-     x.deal?.made === false && 'غادر الفريق دون صفقة.',
-     x.deal?.made == null && 'لم نسجّل نتيجة العرض بعد.'].filter(Boolean).join(' ')
-  : [`${x.name.en} pitched in ${where}.`,
-     x.ask?.amountEGP != null && `The founders asked for ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` for ${pct(x.ask.equityPct, lang)}` : ''}${askV ? `, valuing the company at ${money(askV, lang)}` : ''}.`,
-     x.deal?.made === true && `They walked away with a deal${sharkNames ? ` with ${sharkNames}` : ''}${x.deal.amountEGP != null ? `: ${money(x.deal.amountEGP, lang)}` : ''}${x.deal.equityPct != null ? ` for ${pct(x.deal.equityPct, lang)}` : ''}.`,
-     x.deal?.made === false && 'They left without a deal.',
-     x.deal?.made == null && 'The outcome hasn’t been recorded yet.'].filter(Boolean).join(' ');
+const autoPitch = summary(x, lang);
 const hasLinks = !!x.website || Object.keys(x.links ?? {}).length > 0;
 const about = (x as any).about as { founded?: number; city?: { en: string; ar: string }; highlights?: { en: string[]; ar: string[] } } | undefined;
 const jsonld = {
@@ -112,6 +101,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
           </p>
         )}
         <p class="lead">{x.description[lang].split(/(?<=[.!?؟])\s+/)[0]}</p>
+        <p class="answer"><strong>{lang === 'ar' ? 'باختصار:' : 'In short:'}</strong> {autoPitch}</p>
         <div class="actions">
           {x.website && (
             <a class="btn btn-primary" href={x.website} target="_blank" rel="noopener">
@@ -309,7 +299,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .glance ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 28px; }
   .glance li { position: relative; padding-inline-start: 28px; }
   .glance li::before { content: '✓'; position: absolute; inset-inline-start: 0; top: 1px; width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: .75rem; font-weight: 700; color: var(--ok); background: var(--ok-soft); }
-  .lead { font-size: 1.12rem; margin: 18px 0 24px; }
+  .lead { font-size: 1.12rem; margin: 18px 0 12px; }
+  .answer { margin: 0 0 24px; padding: 10px 14px; border-radius: 12px; background: var(--surface-2); color: var(--ink); font-size: .98rem; }
   .actions { display: flex; flex-wrap: wrap; gap: 10px; }
   :global([dir='rtl']) .ext { transform: scaleX(-1); }
   .founders { margin: 22px 0 0; color: var(--ink-2); }

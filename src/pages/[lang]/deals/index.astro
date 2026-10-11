@@ -1,0 +1,101 @@
+---
+// Every recorded deal on one page: the table assistants and readers cite for "list of Shark Tank Egypt deals".
+import Base from '../../../layouts/Base.astro';
+import Faq from '../../../components/Faq.astro';
+import { ROOT, ID } from '../../../schema';
+import { langs, startups, sharks, seasons, money, pct, num, seasonLabel, shark, valuation, dataUpdated, type Lang } from '../../../config';
+import { programFaq, list } from '../../../faq';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
+const lang = Astro.params.lang as Lang;
+const ar = lang === 'ar';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const deals = startups.filter((x) => x.deal?.made).sort((a, b) => (b.deal!.amountEGP ?? -1) - (a.deal!.amountEGP ?? -1) || a.season - b.season);
+const noDeals = startups.filter((x) => x.deal?.made === false).length;
+const unknown = startups.length - deals.length - noDeals;
+const total = deals.reduce((a, x) => a + (x.deal!.amountEGP ?? 0), 0);
+const bySeason = [...seasons].sort((a, b) => (a.season || 3.5) - (b.season || 3.5)).map((s) => {
+  const xs = startups.filter((x) => x.season === s.season), d = xs.filter((x) => x.deal?.made);
+  return { s, pitched: xs.length, deals: d.length, sum: d.reduce((a, x) => a + (x.deal!.amountEGP ?? 0), 0) };
+});
+const bySharks = sharks.filter((p) => p.deals.length).map((p) => ({ p, n: p.deals.length, sum: p.deals.reduce((a, x) => a + (x.deal?.amountEGP ?? 0), 0) }));
+const title = ar ? 'كل صفقات شارك تانك مصر' : 'Every Shark Tank Egypt deal';
+const intro = ar
+  ? `${num(deals.length, lang)} صفقة مسجلة من ${num(startups.length, lang)} شركة عرضت في البرنامج، باستثمارات معلنة ${money(total, lang)}. خرجت ${num(noDeals, lang)} شركة دون صفقة، ولم يؤكد أي مصدر نتيجة ${num(unknown, lang)} عرضاً بعد.`
+  : `${deals.length} recorded deals from ${startups.length} startups that pitched, worth ${money(total, lang)} in disclosed investment. ${noDeals} left without a deal; ${unknown} outcomes are not yet confirmed by any source.`;
+const faq = programFaq(lang).general.filter((x) => /deal|invest|صفق|استثمر|ضخ/i.test(x.q));
+const jsonld = {
+  '@context': 'https://schema.org', '@type': 'Dataset', '@id': `${ROOT}en/deals/#dataset`,
+  name: title, description: intro, inLanguage: ['ar', 'en'], dateModified: dataUpdated, isAccessibleForFree: true,
+  license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@id': ID.org }, about: { '@id': ID.series },
+  keywords: ['Shark Tank Egypt', 'شارك تانك مصر', 'startups', 'investment', 'Egypt'],
+  distribution: [
+    { '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: `${ROOT}data/deals.csv` },
+    { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: `${ROOT}data/startups.json` },
+  ],
+};
+---
+<Base lang={lang} title={title} description={intro} jsonld={jsonld} altPath={`/${ar ? 'en' : 'ar'}/deals/`}>
+  <div class="container">
+    <header class="intro">
+      <h1>🤝 {title}</h1>
+      <p>{intro}</p>
+      <p class="dl">
+        <a href={`${base}/data/deals.csv`} download>⬇ CSV</a>
+        <a href={`${base}/data/startups.json`}>⬇ JSON</a>
+        <span>{ar ? 'آخر تحديث للبيانات' : 'Data updated'}: <time datetime={dataUpdated}>{dataUpdated}</time></span>
+      </p>
+    </header>
+
+    <section>
+      <h2>{ar ? 'كم صفقة في كل موسم؟' : 'How many deals were made in each season?'}</h2>
+      <div class="scroll"><table>
+        <thead><tr><th>{ar ? 'الموسم' : 'Season'}</th><th>{ar ? 'شركات عرضت' : 'Pitched'}</th><th>{ar ? 'صفقات' : 'Deals'}</th><th>{ar ? 'الاستثمار المعلن' : 'Disclosed investment'}</th></tr></thead>
+        <tbody>{bySeason.map((r) => <tr><td><a href={`${base}/${lang}/season/${r.s.season}/`}>{seasonLabel(r.s.season, lang)}</a></td><td>{num(r.pitched, lang)}</td><td>{num(r.deals, lang)}</td><td>{money(r.sum, lang) ?? '—'}</td></tr>)}</tbody>
+      </table></div>
+    </section>
+
+    <section>
+      <h2>{ar ? 'كم صفقة أبرم كل مستثمر؟' : 'How many deals has each shark made?'}</h2>
+      <div class="scroll"><table>
+        <thead><tr><th>{ar ? 'المستثمر' : 'Shark'}</th><th>{ar ? 'صفقات' : 'Deals'}</th><th>{ar ? 'قيمة الصفقات التي شارك فيها' : 'Value of deals joined'}</th></tr></thead>
+        <tbody>{bySharks.map((r) => <tr><td><a href={`${base}/${lang}/sharks/${r.p.id}/`}>{r.p.name[lang]}</a></td><td>{num(r.n, lang)}</td><td>{money(r.sum, lang) ?? '—'}</td></tr>)}</tbody>
+      </table></div>
+    </section>
+
+    <section>
+      <h2>{ar ? 'قائمة كل الصفقات' : 'All deals'}</h2>
+      <div class="scroll"><table class="all">
+        <thead><tr><th>{ar ? 'الشركة' : 'Startup'}</th><th>{ar ? 'الموسم' : 'Season'}</th><th>{ar ? 'المستثمرون' : 'Sharks'}</th><th>{ar ? 'المبلغ' : 'Amount'}</th><th>{ar ? 'الحصة' : 'Equity'}</th><th>{ar ? 'التقييم' : 'Valuation'}</th></tr></thead>
+        <tbody>{deals.map((x) => {
+          const v = valuation(x.deal!.amountEGP, x.deal!.equityPct);
+          return <tr>
+            <td><a href={`${base}/${lang}/${x.id}/`}>{x.name[lang]}</a></td>
+            <td>{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${ar ? 'ح' : 'E'}${num(x.episode, lang)}`}</td>
+            <td>{x.deal!.sharks?.length ? list(x.deal!.sharks.map((n) => shark(n, lang)), lang) : (ar ? 'غير مذكور' : 'not named')}</td>
+            <td>{money(x.deal!.amountEGP, lang) ?? '—'}</td>
+            <td>{x.deal!.equityPct != null ? pct(x.deal!.equityPct, lang) : '—'}</td>
+            <td>{v ? money(v, lang) : '—'}</td>
+          </tr>;
+        })}</tbody>
+      </table></div>
+      <p class="note">{ar ? 'تُسجَّل الصفقة فقط عندما يذكرها مصدر علني صراحة؛ مصادر كل شركة في صفحتها.' : 'A deal is recorded only when a public source states it; each startup page lists its sources.'}</p>
+    </section>
+
+    <Faq lang={lang} items={faq} />
+  </div>
+</Base>
+<style>
+  .intro { margin: 28px 0 8px; }
+  .intro h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); }
+  .dl { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; color: var(--ink-2); font-size: .92rem; }
+  .dl a { font-weight: 600; }
+  section { margin-top: 28px; }
+  h2 { font-size: 1.2rem; margin-bottom: 10px; }
+  .scroll { overflow-x: auto; background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); }
+  table { width: 100%; border-collapse: collapse; font-size: .93rem; }
+  th, td { padding: 9px 12px; border-top: 1px solid var(--line); text-align: start; white-space: nowrap; }
+  thead th { border-top: 0; color: var(--ink-2); font-weight: 500; font-size: .85rem; }
+  table.all td:nth-child(3) { white-space: normal; min-width: 12rem; }
+  .note { color: var(--ink-2); font-size: .88rem; margin-top: 8px; }
+</style>
