@@ -26,7 +26,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "screenshots": "node scripts/screenshots.mjs",
-    "check-data": "node scripts/check-data.mjs"
+    "check-data": "node scripts/check-data.mjs",
+    "audit-data": "node scripts/audit-data.mjs --strict"
   },
   "dependencies": {
     "astro": "7.3.8"

@@ -7,7 +7,7 @@ import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
 import { startupFaq, summary } from '../../faq';
-import { langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup, type Card } from '../../config';
+import { verification, langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup, type Card } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -238,6 +238,10 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       {next && <a class="pg next" href={`${base}/${lang}/${next.id}/`}><small>{s.next} {arrow('fwd')}</small><span>{next.name[lang]}</span></a>}
     </nav>
 
+    <p class:list={['verify', verification(x)]}>
+      {verification(x) === 'verified' ? '✔' : verification(x) === 'unverified' ? '⚠' : '◐'} {s.verify[verification(x)]}
+      {x.checked && <> · {s.checked} <time datetime={x.checked}>{x.checked}</time></>}
+    </p>
     {x.sources?.length > 0 && (
       <details class="sources">
         <summary>{s.sources} ({num(x.sources.length, lang)})</summary>
@@ -343,6 +347,9 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .pg span { font-weight: 500; }
   .pg.next { text-align: end; grid-column: 2; }
 
+  .verify { margin: var(--gap-sec) 0 0; font-size: .9rem; color: var(--ink-2); }
+  .verify.verified { color: var(--ok); }
+  .verify + .sources { margin-top: 8px; }
   .sources { margin-top: 28px; color: var(--ink-2); font-size: .9rem; }
   .sources summary { cursor: pointer; }
   .sources ul { padding-inline-start: 20px; }

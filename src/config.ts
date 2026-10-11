@@ -12,6 +12,12 @@ export type Startup = (typeof data)[number];
 const rank = (n: number) => (n === 0 ? 3.5 : n);
 export const startups = [...data].sort((a, b) => rank(b.season) - rank(a.season) || (a.episode ?? 99) - (b.episode ?? 99));
 export { seasons };
+/** How well a record is backed: sourced outcome with sharks and terms = verified; some of it missing = partial; no source = unverified. */
+export type Verification = 'verified' | 'partially_verified' | 'unverified';
+export const verification = (x: Startup): Verification =>
+  !x.sources?.length ? 'unverified'
+  : x.deal?.made === false || (x.deal?.made && x.deal.sharks?.length && (x.deal.amountEGP != null || x.deal.equityPct != null)) ? 'verified'
+  : 'partially_verified';
 /** Date the data last changed (YYYY-MM-DD), for sitemap lastmod, dateModified and the footer. */
 export const dataUpdated = (() => {
   try { return execSync('git log -1 --format=%cs -- src/data', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || new Date().toISOString().slice(0, 10); }
@@ -90,6 +96,8 @@ export const t = {
     navFounders: 'المؤسسون',
     navFaq: 'أسئلة شائعة',
     navDeals: 'الصفقات',
+    verify: { verified: 'تم التحقق من المصادر', partially_verified: 'تحقق جزئي: بعض التفاصيل غير مؤكدة', unverified: 'غير موثّق: لا يوجد مصدر بعد' },
+    checked: 'آخر مراجعة',
     navFaqTab: 'الأسئلة',
     navMain: 'التنقل الرئيسي',
     faqTitle: 'أسئلة شائعة',
@@ -205,6 +213,8 @@ export const t = {
     navFounders: 'Founders',
     navFaq: 'FAQ',
     navDeals: 'Deals',
+    verify: { verified: 'Verified against sources', partially_verified: 'Partially verified: some details unconfirmed', unverified: 'Unverified: no source yet' },
+    checked: 'Last checked',
     navFaqTab: 'FAQ',
     navMain: 'Main',
     faqTitle: 'Frequently asked questions',
