@@ -3476,8 +3476,8 @@
       "ar": "موبيكيا"
     },
     "description": {
-      "en": "Mobikya is a Cairo upcycling studio that turns solid waste into eco-friendly furniture and décor such as poufs, mirrors, armchairs and coffee tables. Its signature material is scrap tyres, bought from mechanics before they are burned, alongside items like washing-machine drums; clients who bring their own scrap pay less. Its name comes from the Egyptian word for junk. Brothers Ibrahim and Ahmed Abu Gendy pitched it as their family's dream and left the tank having accepted an offer.",
-      "ar": "موبيكيا استوديو في القاهرة يعيد تدوير المخلفات الصلبة ويحوّلها إلى أثاث وديكور صديق للبيئة، مثل البوفات والمرايا والكراسي وطاولات القهوة. خامته الأبرز إطارات السيارات المستعملة التي يشتريها من الميكانيكيين قبل حرقها، إلى جانب أشياء مثل أحواض الغسالات، ويدفع العميل أقل كلما أحضر مخلفاته بنفسه. واسمه مأخوذ من كلمة «روبابيكيا». قدّم الأخوان إبراهيم وأحمد أبو جندي المشروع بوصفه حلم عائلتهما، وخرجا من التانك بعد قبول عرض استثماري."
+      "en": "Mobikya is a Cairo upcycling studio that turns solid waste into eco-friendly furniture and décor such as poufs, mirrors, armchairs and coffee tables. Its signature material is scrap tyres, bought from mechanics before they are burned, alongside items like washing-machine drums; clients who bring their own scrap pay less. Its name comes from the Egyptian word for junk. Brothers Ibrahim and Ahmed Abu Gendy pitched it as their family's dream and left the tank having accepted an offer. Its deal was a joint investment by Dina Ghabbour and Ayman Abbas.",
+      "ar": "موبيكيا استوديو في القاهرة يعيد تدوير المخلفات الصلبة ويحوّلها إلى أثاث وديكور صديق للبيئة، مثل البوفات والمرايا والكراسي وطاولات القهوة. خامته الأبرز إطارات السيارات المستعملة التي يشتريها من الميكانيكيين قبل حرقها، إلى جانب أشياء مثل أحواض الغسالات، ويدفع العميل أقل كلما أحضر مخلفاته بنفسه. واسمه مأخوذ من كلمة «روبابيكيا». قدّم الأخوان إبراهيم وأحمد أبو جندي المشروع بوصفه حلم عائلتهما، وخرجا من التانك بعد قبول عرض استثماري. وكانت صفقتها استثماراً مشتركاً من دينا غبور وأيمن عباس."
     },
     "category": "Manufacturing",
     "founders": [
@@ -3491,7 +3491,10 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Dina Ghabbour",
+        "Ayman Abbas"
+      ],
       "amountEGP": null,
       "equityPct": null
     },
@@ -3502,7 +3505,8 @@
       "https://auctoday.aucegypt.edu/news/one-mans-trash-another-mans-treasure",
       "https://theswitchers.eu/?p=9976",
       "https://crunchbase.com/organization/mobikya",
-      "https://creativepool.com/TrashDesigner/projects/the-tire-house-for-mobikya"
+      "https://creativepool.com/TrashDesigner/projects/the-tire-house-for-mobikya",
+      "https://www.youtube.com/watch?v=0r8SGKtcHcI"
     ],
     "video": "yD1E9uteUoA",
     "links": {
@@ -12579,8 +12583,8 @@
       "ar": "إن إن أو هوم"
     },
     "description": {
-      "en": "NNO Home is an Egyptian home-décor brand founded by sisters Nehal and Nouran Osama, and its name comes from their initials. The brand makes eco-friendly pottery that is painted by hand by real artists. Each piece is made to order, so customers get original décor instead of mass-produced items. The founders bring about ten years of interior-styling experience to the brand, and they also champion women's entrepreneurship.",
-      "ar": "إن إن أو هوم علامة مصرية للديكور المنزلي أسستها الشقيقتان نهال ونوران أسامة، ويأتي اسمها من الأحرف الأولى لاسميهما. تنتج العلامة فخارًا صديقًا للبيئة يرسمه فنانون حقيقيون يدويًا، وتُصنع كل قطعة حسب الطلب، فيحصل العميل على ديكور أصيل بدلًا من المنتجات المصنّعة بالجملة. وتعتمد المؤسستان على خبرة تقارب عشر سنوات في التنسيق الداخلي، وتدعمان ريادة الأعمال النسائية."
+      "en": "NNO Home is an Egyptian home-décor brand founded by sisters Nehal and Nouran Osama, and its name comes from their initials. The brand makes eco-friendly pottery that is painted by hand by real artists. Each piece is made to order, so customers get original décor instead of mass-produced items. The founders bring about ten years of interior-styling experience to the brand, and they also champion women's entrepreneurship. The sisters left the tank with the EGP 2 million they asked for.",
+      "ar": "إن إن أو هوم علامة مصرية للديكور المنزلي أسستها الشقيقتان نهال ونوران أسامة، ويأتي اسمها من الأحرف الأولى لاسميهما. تنتج العلامة فخارًا صديقًا للبيئة يرسمه فنانون حقيقيون يدويًا، وتُصنع كل قطعة حسب الطلب، فيحصل العميل على ديكور أصيل بدلًا من المنتجات المصنّعة بالجملة. وتعتمد المؤسستان على خبرة تقارب عشر سنوات في التنسيق الداخلي، وتدعمان ريادة الأعمال النسائية. وخرجت الشقيقتان من التانك بالمليوني جنيه اللذين طلبتاهما."
     },
     "category": "Home",
     "founders": [
@@ -12592,12 +12596,18 @@
       "amountEGP": 2000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 2000000,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/5353826",
       "https://www.youm7.com/story/2025/12/24/%D8%B4%D9%82%D9%8A%D9%82%D8%AA%D8%A7%D9%86-%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D9%86-2-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%87%D9%85/7246003",
       "https://www.youtube.com/watch?v=RLq3zPsgENs",
-      "https://nno-home.daftra.com"
+      "https://nno-home.daftra.com",
+      "https://www.youtube.com/watch?v=N8POze0VTas"
     ],
     "video": "RLq3zPsgENs",
     "links": {
@@ -12664,8 +12674,8 @@
       "ar": "ري بلوكس"
     },
     "description": {
-      "en": "Re-Blocks (Reblox) is an Egyptian architecture studio founded by architects Ahmed El-Bably and Dina Soliman that builds with LEGO-style blocks made entirely from recycled plastic. It tackles the waste of temporary event structures: by the founders' account, around 70% of pop-up booths end up in landfill after two or three days. The system uses just two block designs, a single and a double, that can be assembled, taken apart and rebuilt into completely different structures. In two years Reblox has delivered more than 170 builds, from Cairo Design Week to the RiseUp Summit.",
-      "ar": "ري بلوكس (Reblox) استوديو معماري مصري أسسه المعماريان أحمد البابلي ودينا سليمان، ويبني بمكعبات تشبه الليغو مصنوعة بالكامل من البلاستيك المعاد تدويره. يعالج المشروع مشكلة هدر الهياكل المؤقتة للفعاليات، إذ ينتهي نحو 70% من الأجنحة المؤقتة في مكبات النفايات بعد يومين أو ثلاثة بحسب المؤسسين. يعتمد النظام على تصميمين فقط للمكعب، مفرد ومزدوج، يمكن تركيبهما وفكهما وإعادة بنائهما في هياكل مختلفة تماماً. وخلال عامين نفذت ري بلوكس أكثر من 170 مشروعاً، من أسبوع القاهرة للتصميم إلى قمة رايز أب."
+      "en": "Re-Blocks (Reblox) is an Egyptian architecture studio founded by architects Ahmed El-Bably and Dina Soliman that builds with LEGO-style blocks made entirely from recycled plastic. It tackles the waste of temporary event structures: by the founders' account, around 70% of pop-up booths end up in landfill after two or three days. The system uses just two block designs, a single and a double, that can be assembled, taken apart and rebuilt into completely different structures. In two years Reblox has delivered more than 170 builds, from Cairo Design Week to the RiseUp Summit. The founders left the tank with the EGP 1 million they asked for.",
+      "ar": "ري بلوكس (Reblox) استوديو معماري مصري أسسه المعماريان أحمد البابلي ودينا سليمان، ويبني بمكعبات تشبه الليغو مصنوعة بالكامل من البلاستيك المعاد تدويره. يعالج المشروع مشكلة هدر الهياكل المؤقتة للفعاليات، إذ ينتهي نحو 70% من الأجنحة المؤقتة في مكبات النفايات بعد يومين أو ثلاثة بحسب المؤسسين. يعتمد النظام على تصميمين فقط للمكعب، مفرد ومزدوج، يمكن تركيبهما وفكهما وإعادة بنائهما في هياكل مختلفة تماماً. وخلال عامين نفذت ري بلوكس أكثر من 170 مشروعاً، من أسبوع القاهرة للتصميم إلى قمة رايز أب. وخرج المؤسسان من التانك بالمليون جنيه الذي طلباه."
     },
     "category": "Manufacturing",
     "founders": [
@@ -12677,7 +12687,12 @@
       "amountEGP": 1000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 1000000,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/story/2025/12/24/%D8%B4%D8%B1%D9%83%D8%A9-Re-Blocks-%D8%AA%D8%AE%D8%B7%D9%81-%D8%A3%D9%86%D8%B8%D8%A7%D8%B1-%D9%84%D8%AC%D9%86%D8%A9-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A8%D8%A3%D8%AD%D8%AC%D8%A7%D8%B1-%D9%84%D9%8A%D8%AC%D9%88/7246018",
       "https://www.aldawlanews.com/1324210",
@@ -12686,7 +12701,8 @@
       "https://www.youtube.com/watch?v=StXT_l6WaEM",
       "https://scenehome.com/Design-Leaders/Reblox-Crafts-Spaces-Designed-to-Come-Apart-Without-Being-Tossed-Out",
       "https://www.findglocal.com/EG/Unknown/141664063421632/Reblox",
-      "https://www.youm7.com/7246018"
+      "https://www.youm7.com/7246018",
+      "https://www.youtube.com/watch?v=N8POze0VTas"
     ],
     "video": "oLTvakD4Fwg",
     "links": {
@@ -13801,8 +13817,8 @@
       "ar": "أو جي بيز"
     },
     "description": {
-      "en": "OG Bees is an Egyptian platform for producing and managing user-generated content (UGC) for brands. Instead of relying only on big influencers or studio shoots, it turns everyday social-media users into paid content creators who make authentic posts and videos for brands. Brands get a steady flow of real, relatable content, while ordinary users get a way to earn from what they already do online. The startup pitched on Season 4 of Shark Tank Egypt, where several sharks competed for the deal.",
-      "ar": "أو جي بيز منصة مصرية لإنتاج وإدارة المحتوى الذي يصنعه المستخدمون (UGC) لصالح العلامات التجارية. وبدلًا من الاعتماد على كبار المؤثرين أو جلسات التصوير الاحترافية وحدها، تحوّل المنصة مستخدمي وسائل التواصل الاجتماعي العاديين إلى صنّاع محتوى مدفوعي الأجر يقدّمون منشورات ومقاطع فيديو حقيقية وقريبة من الجمهور. تحصل العلامات التجارية على محتوى أصيل بشكل مستمر، ويحصل المستخدمون على فرصة للربح مما يفعلونه يوميًا على الإنترنت. وقد عرضت الشركة فكرتها في الموسم الرابع من برنامج شارك تانك مصر، حيث تنافس عدد من المستثمرين على الصفقة."
+      "en": "OG Bees is an Egyptian platform for producing and managing user-generated content (UGC) for brands. Instead of relying only on big influencers or studio shoots, it turns everyday social-media users into paid content creators who make authentic posts and videos for brands. Brands get a steady flow of real, relatable content, while ordinary users get a way to earn from what they already do online. The startup pitched on Season 4 of Shark Tank Egypt, where several sharks competed for the deal. Ayman Abbas invested; the show listed it among his three strongest Season 4 investments.",
+      "ar": "أو جي بيز منصة مصرية لإنتاج وإدارة المحتوى الذي يصنعه المستخدمون (UGC) لصالح العلامات التجارية. وبدلًا من الاعتماد على كبار المؤثرين أو جلسات التصوير الاحترافية وحدها، تحوّل المنصة مستخدمي وسائل التواصل الاجتماعي العاديين إلى صنّاع محتوى مدفوعي الأجر يقدّمون منشورات ومقاطع فيديو حقيقية وقريبة من الجمهور. تحصل العلامات التجارية على محتوى أصيل بشكل مستمر، ويحصل المستخدمون على فرصة للربح مما يفعلونه يوميًا على الإنترنت. وقد عرضت الشركة فكرتها في الموسم الرابع من برنامج شارك تانك مصر، حيث تنافس عدد من المستثمرين على الصفقة. واستثمر فيها أيمن عباس، وذكرها البرنامج ضمن أقوى ثلاثة استثمارات له في الموسم الرابع."
     },
     "category": "Tech",
     "founders": [],
@@ -13811,7 +13827,14 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youtube.com/watch?v=F1NkHp237TY",
       "https://www.youtube.com/watch?v=JyEpncMRFAo",
@@ -14059,8 +14082,8 @@
       "ar": "دريب"
     },
     "description": {
-      "en": "Drip, also known as Drip Yourself, is an Egyptian specialty-coffee brand built around convenience. It sells single-serve drip bags and coffee pouches, so coffee lovers can brew a consistent, quality cup at home, at the office or while travelling, without a machine or barista skills. The brand sells mainly online and through Instagram, and its founders told the Sharks they had made about EGP 500,000 in online sales in their first six months.",
-      "ar": "دريب، المعروفة أيضًا باسم Drip Yourself، علامة مصرية للقهوة المختصة تقوم على فكرة السهولة. تبيع أكياس القهوة المقطّرة أحادية الاستخدام وعبوات القهوة، ليحضّر محبو القهوة كوبًا ثابت الجودة في المنزل أو المكتب أو أثناء السفر دون ماكينة أو مهارات باريستا. تعتمد العلامة أساسًا على البيع عبر الإنترنت وإنستغرام، وقد أخبر مؤسسوها المستثمرين بأنهم حققوا نحو 500 ألف جنيه مصري من المبيعات الإلكترونية خلال أول ستة أشهر."
+      "en": "Drip, also known as Drip Yourself, is an Egyptian specialty-coffee brand built around convenience. It sells single-serve drip bags and coffee pouches, so coffee lovers can brew a consistent, quality cup at home, at the office or while travelling, without a machine or barista skills. The brand sells mainly online and through Instagram, and its founders told the Sharks they had made about EGP 500,000 in online sales in their first six months. It closed a joint deal with Dina Ghabbour and Ayman Abbas.",
+      "ar": "دريب، المعروفة أيضًا باسم Drip Yourself، علامة مصرية للقهوة المختصة تقوم على فكرة السهولة. تبيع أكياس القهوة المقطّرة أحادية الاستخدام وعبوات القهوة، ليحضّر محبو القهوة كوبًا ثابت الجودة في المنزل أو المكتب أو أثناء السفر دون ماكينة أو مهارات باريستا. تعتمد العلامة أساسًا على البيع عبر الإنترنت وإنستغرام، وقد أخبر مؤسسوها المستثمرين بأنهم حققوا نحو 500 ألف جنيه مصري من المبيعات الإلكترونية خلال أول ستة أشهر. وأبرمت صفقة مشتركة مع دينا غبور وأيمن عباس."
     },
     "category": "Food",
     "founders": [],
@@ -14069,12 +14092,21 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Dina Ghabbour",
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youtube.com/watch?v=o3dtI3l9Nks",
       "https://www.youtube.com/watch?v=C2FLmV4e-T0",
       "https://www.youtube.com/watch?v=LesNvf9bM7c",
-      "https://www.instagram.com/drip.yourself/"
+      "https://www.instagram.com/drip.yourself/",
+      "https://www.youtube.com/watch?v=0r8SGKtcHcI"
     ],
     "links": {
       "instagram": "https://www.instagram.com/drip.yourself/"
@@ -14167,8 +14199,8 @@
       "ar": "نايدين"
     },
     "description": {
-      "en": "Naydin makes toothpaste that it bills as the first in Egypt free of artificial colours, with natural fruit flavours and gentle, safe ingredients. It pitched to the sharks in Season 4.",
-      "ar": "نايدين تصنع معجون أسنان تقدّمه كأول معجون في مصر خالٍ من الألوان الصناعية، بنكهات فواكه طبيعية ومكونات لطيفة وآمنة. وعرضت مشروعها على الشاركس في الموسم الرابع."
+      "en": "Naydin makes toothpaste that it bills as the first in Egypt free of artificial colours, with natural fruit flavours and gentle, safe ingredients. It pitched to the sharks in Season 4. Ayman Abbas invested; the show listed it among his three strongest Season 4 investments.",
+      "ar": "نايدين تصنع معجون أسنان تقدّمه كأول معجون في مصر خالٍ من الألوان الصناعية، بنكهات فواكه طبيعية ومكونات لطيفة وآمنة. وعرضت مشروعها على الشاركس في الموسم الرابع. واستثمر فيها أيمن عباس، وذكرها البرنامج ضمن أقوى ثلاثة استثمارات له في الموسم الرابع."
     },
     "category": "Health",
     "founders": [],
@@ -14177,10 +14209,18 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://sharktankarabi.com/3612/",
-      "https://sharktankarabi.com/3634/"
+      "https://sharktankarabi.com/3634/",
+      "https://www.youtube.com/watch?v=MTBclNRzQEY"
     ]
   },
   {

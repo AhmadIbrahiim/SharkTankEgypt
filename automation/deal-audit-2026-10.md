@@ -152,3 +152,7 @@ Subagents searched the official Shark Tank Egypt YouTube and TikTok accounts dir
 | Kaynuna | No deal | YouTube w1Q8Myvt2ts: "Kaynuna رفضوا ٣ offers من الشاركس" |
 
 Held back: Health Tag (search summaries describe a 20M for 60% deal with Ahmed Tarek and Mohamed Farouk, but the wording wasn't seen verbatim). Sadu Designs is recorded with Mohamed Farouk only, while the same Robo Desk clip says all five sharks joined it; left until the panel is known.
+| Naydin, OG Bees | Deal with Ayman Abbas | YouTube MTBclNRzQEY "3 من أقوى استثمارات أيمن عباس في الموسم الرابع" lists Nile Naturals, Naydin Care and OG Bees (Nile Naturals was already recorded as Abbas's deal, which corroborates the list) |
+| Drip Yourself | Deal with Dina Ghabbour + Ayman Abbas | YouTube 0r8SGKtcHcI "استثمارات دينا غبور وأيمن عباس خلال ال٤ مواسم": "Driftech، Drip Yourself، وMobikya جمعوا دينا غبور وأيمن عباس في نفس الـ Deal" |
+| Mobikya | Sharks named: Dina Ghabbour + Ayman Abbas (deal already recorded) | same clip |
+| NNO Home, Re-Blocks | Deal for the amount asked (EGP 2M and 1M); sharks and equity not stated | YouTube N8POze0VTas "مشروعين عرفوا يخرجوا بنفس الاستثمار اللي طلبوه — NNO وReblox" |
