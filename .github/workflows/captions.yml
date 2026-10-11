@@ -1,0 +1,36 @@
+name: Fetch pitch captions
+# Downloads YouTube's Arabic auto-captions for the pitch videos of startups whose outcome is still
+# unknown (automation/sources/caption-targets.json), so the decision can be read from the transcript.
+# YouTube blocks anonymous requests from GitHub's servers, so this needs a YOUTUBE_COOKIES secret:
+# a Netscape-format cookies.txt exported from a browser signed in to YouTube.
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  captions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q -U yt-dlp
+      - name: Download captions
+        env:
+          COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+        run: |
+          [ -n "$COOKIES" ] || { echo "::error::Add the YOUTUBE_COOKIES secret first"; exit 1; }
+          printf '%s' "$COOKIES" > /tmp/cookies.txt
+          mkdir -p automation/captions
+          for v in $(node -e 'for (const x of require("./automation/sources/caption-targets.json")) for (const v of x.v) console.log(v)' | sort -u); do
+            yt-dlp --cookies /tmp/cookies.txt --skip-download --write-auto-subs --write-subs --sub-langs "ar.*,ar" \
+              --sub-format vtt -o "automation/captions/%(id)s" "https://www.youtube.com/watch?v=$v" || true
+            sleep 3
+          done
+          rm -f /tmp/cookies.txt
+          ls automation/captions | wc -l
+      - name: Commit to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add automation/captions
+          git diff --cached --quiet && exit 0
+          git commit -qm "chore: pitch captions for unknown outcomes"
+          git pull -q --rebase origin main && git push origin HEAD:main
