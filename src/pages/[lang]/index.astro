@@ -148,6 +148,7 @@ const jsonld = {
   const sort = document.getElementById('sort') as HTMLSelectElement;
   const sh = document.getElementById('sh') as HTMLSelectElement;
   let order = '';
+  let zeroTimer: ReturnType<typeof setTimeout>;
   const groups = [...document.querySelectorAll<HTMLElement>('.chips')];
   const fmt = new Intl.NumberFormat(document.documentElement.lang === 'ar' ? 'ar-EG' : 'en-US');
   const collator = new Intl.Collator(document.documentElement.lang);
@@ -182,6 +183,9 @@ const jsonld = {
     let shown = 0;
     for (const li of sorted) if (li.dataset.match === '1') li.hidden = ++shown > limit;
     document.getElementById('count')!.textContent = fmt.format(n);
+    // Zero-result searches tell us what people look for and don't find (only when analytics is on).
+    clearTimeout(zeroTimer);
+    if (!n && state.q) zeroTimer = setTimeout(() => (window as any).goatcounter?.count?.({ path: `search-zero/${state.q.toLowerCase()}`, title: state.q, event: true }), 1500);
     document.getElementById('more-wrap')!.hidden = n <= limit;
     document.getElementById('empty')!.hidden = n > 0;
     document.getElementById('missing')!.hidden = n === 0;
