@@ -138,3 +138,17 @@ Actions fetched the titles of 167 of the 173 YouTube videos linked from open sta
 Titles that hint but don't state an outcome, so nothing changed: The Lean Jerky ("وقعوا في ايد احمد طارق"), YAYA ("محمد منصور هيساعد يحيى"), Hawy ("كل الشاركس في Deal واحد"; panel not listed), El Fares (compilation of pitches where all five sharks joined one investment), OG Bees and Re-Blocks (compilations of Ayman Abbas's and Abdallah Sallam's Season 4 investments, each linked from several startups), Nutrifits ("أعلى أوفر من أحمد طارق": an offer), Super Abla and AgriKemet (offers from every shark).
 
 Follow-up on the maintainer's list: **Ami's Bakery** (founders Amira and Soha Abaza) and **Naydin** (toothpaste) added as Season 4 pitches. Their official clips, reposted at sharktankarabi.com/3632 and /3612, /3634 (posted 1–2 Jan 2026), are titled "… | شارك تانك مصر | الموسم الرابع". Episode, ask and outcome are not stated, so they stay empty. Health Tag's Youm7 quote was confirmed in the full article. Zaher's page held no usable text and it remains unlisted.
+
+## Eighth pass: the show's own clip titles and posts
+
+Subagents searched the official Shark Tank Egypt YouTube and TikTok accounts directly.
+
+| Startup | Change | Official post |
+|---|---|---|
+| Target Egypt (on air as Targetech) | Deal: Mohamed Farouk + Mohamed Mansour, EGP 8.5M for 50% (ask 8.5M for 30% matches) | TikTok @sharktank.egypt 7440483757989039378: "Targetech عمل Deal مع محمد فاروق ومحمد منصور ب ٨ ونص مليون جنيه مقابل ٥٠٪" |
+| AbdelAziz Elmasry | No deal | TikTok @sharktank.egypt 7433441987052719376 (posted after S3E3): "حتى لو طلعت من غير ديل تفضل مكمل زي يوسف" (Youssef El-Masry is the only Youssef among Season 3 founders) |
+| Robo Desk | Deal with all five sharks on the panel (names and terms not given) | YouTube NHvBuQ627rg: "El Fares و Sadu Design و RoboDesk ٣ مشاريع قدرت تلفت انتباه كل الشاركس و دخلوا في استثمار واحد" |
+| Estealamy | No deal | YouTube TjHaV1gftAY: "رفض Offers من 3 شاركس وخرج من غير Deal" (description names Estealamy, Ayman Abbas, Mohamed Farouk and Ahmed Tarek) |
+| Kaynuna | No deal | YouTube w1Q8Myvt2ts: "Kaynuna رفضوا ٣ offers من الشاركس" |
+
+Held back: Health Tag (search summaries describe a 20M for 60% deal with Ahmed Tarek and Mohamed Farouk, but the wording wasn't seen verbatim). Sadu Designs is recorded with Mohamed Farouk only, while the same Robo Desk clip says all five sharks joined it; left until the panel is known.
