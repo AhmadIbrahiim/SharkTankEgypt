@@ -15,6 +15,12 @@ for (const s of startups) {
   assert.ok(s.episode === null || Number.isInteger(s.episode), `${where}: episode must be integer or null`);
   for (const f of ['name', 'description']) for (const l of ['en', 'ar']) assert.ok(s[f]?.[l]?.trim(), `${where}: ${f}.${l} is empty`);
   assert.match(s.checked ?? '', /^\d{4}-\d{2}-\d{2}$/, `${where}: checked must be the YYYY-MM-DD date the outcome/sources were last reviewed`);
+  // "Where are they now": dated, sourced updates only.
+  for (const u of s.updates ?? []) {
+    assert.match(u.date ?? '', /^\d{4}(-\d{2}(-\d{2})?)?$/, `${where}: update date must be YYYY, YYYY-MM or YYYY-MM-DD`);
+    assert.ok(u.en?.trim() && u.ar?.trim(), `${where}: update needs en and ar text`);
+    assert.equal(new URL(u.source).protocol, 'https:', `${where}: update needs an https source`);
+  }
   if (s.video) assert.match(s.video, /^[A-Za-z0-9_-]{11}$/, `${where}: video must be a YouTube id`);
   if (s.website) {
     assert.equal(new URL(s.website).protocol, 'https:', `${where}: website must be https`);

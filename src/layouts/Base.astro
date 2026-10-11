@@ -1,5 +1,5 @@
 ---
-import { t, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card } from '../config';
+import { t, goatcounter, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card } from '../config';
 import { siteNodes, ID } from '../schema';
 // Self-hosted variable font (Arabic + Latin subsets load on demand): no render-blocking third-party CSS.
 import '@fontsource-variable/readex-pro/wght.css';
@@ -91,6 +91,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <link rel="icon" href={`${base}/favicon-32.png`} sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href={`${base}/apple-touch-icon.png`} />
     <link rel="manifest" href={`${base}/site.webmanifest`} />
+    {goatcounter && <script is:inline data-goatcounter={`https://${goatcounter}.goatcounter.com/count`} async src="//gc.zgo.at/count.js"></script>}
   </head>
   <body>
     <a class="skip" href="#main">{lang === 'ar' ? 'تخطَّ إلى المحتوى' : 'Skip to content'}</a>

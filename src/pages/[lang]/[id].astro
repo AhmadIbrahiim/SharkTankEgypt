@@ -240,6 +240,15 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
     </section>
     )}
 
+    {(x as any).updates?.length > 0 && (
+      <section class="sec" aria-labelledby="updates">
+        <h2 id="updates">{s.updates}</h2>
+        <ol class="timeline">{[...(x as any).updates].sort((p: any, q: any) => q.date.localeCompare(p.date)).map((u: any) => (
+          <li><time datetime={u.date}>{u.date}</time> <span>{u[lang]}</span> <a href={u.source} target="_blank" rel="noopener nofollow">{lang === 'ar' ? 'المصدر' : 'Source'}</a></li>
+        ))}</ol>
+      </section>
+    )}
+
     {related.length > 0 && (
       <section class="sec related" aria-labelledby="related">
         <h2 id="related">{s.related}</h2>
@@ -354,6 +363,9 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .comments h2 { font-size: 1.35rem; }
   .hint { color: var(--ink-2); margin: 8px 0 20px; }
 
+  .timeline { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
+  .timeline li { padding: 10px 14px; border-inline-start: 3px solid var(--sun); background: var(--surface); border-radius: 10px; }
+  .timeline time { font-weight: 600; margin-inline-end: 8px; }
   .relgrid { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 14px; }
   .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: var(--gap-sec); }
   .pg { display: flex; flex-direction: column; padding: 14px 18px; border-radius: 16px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: border-color .2s, background .2s; }

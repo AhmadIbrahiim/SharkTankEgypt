@@ -34,6 +34,9 @@ export const giscus = {
 };
 
 // Google Search Console → HTML tag verification → paste the content="…" value here.
+// Privacy-friendly analytics: set to your GoatCounter code (https://<code>.goatcounter.com) to turn it on. Off while empty.
+export const goatcounter = '';
+
 export const googleVerification = 'oxBn-T41uCZ5ddqGiXpFfS6q6LtcRe5YL0VtShRcXX8';
 
 export const suggestUrl = 'https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml';
@@ -64,6 +67,7 @@ export const t = {
     sortDeal: 'الأكبر استثمارًا',
     sortOldest: 'الأقدم أولًا',
     unknownOutcome: 'النتيجة غير مؤكدة',
+    updates: 'أين هم الآن؟',
     related: 'شركات أخرى من نفس الحلقة والمجال',
     sortAsk: 'الأعلى طلبًا',
     allSharks: 'كل المستثمرين',
@@ -186,6 +190,7 @@ export const t = {
     sortDeal: 'Biggest deal',
     sortOldest: 'Oldest first',
     unknownOutcome: 'Outcome unconfirmed',
+    updates: 'Where are they now?',
     related: 'More from the same episode and sector',
     sortAsk: 'Biggest ask',
     allSharks: 'All sharks',
