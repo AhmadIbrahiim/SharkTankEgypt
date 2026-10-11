@@ -18,6 +18,8 @@ jobs:
         with: { node-version: 22, cache: npm }
       - run: npm ci
       - run: npm run check-data
+      # Prose vs deal-field contradictions, impossible figures, shark not on the season lineup: fail the build.
+      - run: npm run audit-data
       - run: npm run build
       # A share image per page (dist/og/…), referenced by each page's og:image.
       - run: npx playwright install --with-deps chromium
