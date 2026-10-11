@@ -33,6 +33,22 @@ const median = (xs: number[]) => { if (!xs.length) return null; const a = [...xs
 const dealValuation = (x: Startup) => valuation(x.deal?.amountEGP, x.deal?.equityPct);
 const byDealValuation = (xs: Startup[]) => xs.filter((x) => x.deal?.made && dealValuation(x)).sort((a, b) => dealValuation(b)! - dealValuation(a)!);
 const lastSeason = Math.max(...seasons.map((s) => s.season));
+/** One factual sentence per startup, from the data only: the line LLMs and readers can lift as the answer. */
+export const summary = (x: Startup, lang: Lang) => {
+  const names = list((x.deal?.sharks ?? []).map((n) => sharkName(n, lang)), lang);
+  const askV = valuation(x.ask?.amountEGP, x.ask?.equityPct);
+  return lang === 'ar'
+    ? [`عرض فريق ${x.name.ar} مشروعه في ${where(x, lang)}.`,
+       x.ask?.amountEGP != null && `طلب المؤسسون ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` مقابل ${pct(x.ask.equityPct, lang)}` : ''}${askV ? `، أي بتقييم ${money(askV, lang)}` : ''}.`,
+       x.deal?.made === true && `انتهى العرض بصفقة${names ? ` مع ${names}` : ''}${x.deal.amountEGP != null ? ` بقيمة ${money(x.deal.amountEGP, lang)}` : ''}${x.deal.equityPct != null ? ` مقابل ${pct(x.deal.equityPct, lang)}` : ''}.`,
+       x.deal?.made === false && 'غادر الفريق دون صفقة.',
+       x.deal?.made == null && 'لا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن.'].filter(Boolean).join(' ')
+    : [`${x.name.en} pitched in ${where(x, lang)}.`,
+       x.ask?.amountEGP != null && `The founders asked for ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` for ${pct(x.ask.equityPct, lang)}` : ''}${askV ? `, valuing the company at ${money(askV, lang)}` : ''}.`,
+       x.deal?.made === true && `They walked away with a deal${names ? ` with ${names}` : ''}${x.deal.amountEGP != null ? `: ${money(x.deal.amountEGP, lang)}` : ''}${x.deal.equityPct != null ? ` for ${pct(x.deal.equityPct, lang)}` : ''}.`,
+       x.deal?.made === false && 'They left without a deal.',
+       x.deal?.made == null && 'No public source confirms the outcome yet.'].filter(Boolean).join(' ');
+};
 /** [season, episode] pairs that have startups, in airing order. */
 export const episodes = [...new Set(startups.filter((x) => x.episode != null).map((x) => `${x.season}-${x.episode}`))]
   .map((k) => k.split('-').map(Number) as [number, number]).sort((a, b) => a[0] - b[0] || a[1] - b[1]);

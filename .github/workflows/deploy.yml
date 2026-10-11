@@ -32,3 +32,10 @@ jobs:
           git add -A
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -qm "Deploy ${GITHUB_SHA}"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages
+      # Tell Bing (which also feeds ChatGPT search), Yandex and others that pages changed (IndexNow). The key file is public/8ee7d5496a4b6b2d597639e58b275fa1.txt.
+      - if: github.event_name == 'push'
+        run: |
+          sleep 90 # let Pages publish first
+          urls=$(grep -o '<loc>[^<]*' dist/sitemap.xml | sed 's/<loc>//' | head -9000 | python3 -c "import json,sys; print(json.dumps([l.strip() for l in sys.stdin]))")
+          curl -sS -o /dev/null -w "IndexNow HTTP %{http_code}\n" -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json; charset=utf-8' \
+            -d "{\"host\":\"ahmadibrahiim.github.io\",\"key\":\"8ee7d5496a4b6b2d597639e58b275fa1\",\"keyLocation\":\"https://ahmadibrahiim.github.io/SharkTankEgypt/8ee7d5496a4b6b2d597639e58b275fa1.txt\",\"urlList\":$urls}" || true
