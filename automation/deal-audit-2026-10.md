@@ -222,3 +222,9 @@ The lead articles were downloaded in full by `sources.yml` (leads-only mode) and
 | Bikado | No deal ("جاء الرد النهائى بأن الفكرة «فى حاجة لتوضيح أكبر»") | dostor.org/4310500 |
 
 Read but not conclusive: the Cairo360 "pitches that landed a deal" roundup (it describes pitches only and itself says not every startup got a deal; its Fool Tank link redirects to the same page), Super Abla (Al Jazeera profile, no mention of the show's outcome), OOAPS (Enterprise funding article, no shark named), Nutrifits (offers only), KAK Squad (Mohamed Farouk declined; no final outcome), Ketolicious, Fino, Schoolz, Ami's Bakery (pitch only).
+
+## Twelfth pass: official site and pitch-video text
+
+- sharktank-egypt.com, read in a browser (`probe-site.yml`): the deal-category pages hold 372 cards, and each card only links to the startup's official YouTube pitch video. There are no per-startup pages, no deal terms and no data API (the only JSON is the login session). Card links are in `automation/sources/site.json`.
+- Titles and descriptions of 105 pitch videos for 60 unknown startups, read without contacting YouTube (`wayback.yml`: Wayback Machine snapshots, with noembed.com for titles): every video returned a title and 10 returned a description (`automation/sources/wayback-out.json`). All are teasers ("هل الشاركس هيستثمروا؟", "ياترى هياخدوا ديل؟"). None states an outcome, so nothing was applied. Suggestive but not explicit: "The Lean Jerky وقعوا في ايد احمد طارق!", "احنا مش موافقين على الأوفر ده!" (Schoolz), "في الاخر شركتك" (Bar & Jar), "خيال وبيت السعد قدروا يخلوا الـ 5 شاركس يتنافسوا" (Bayt El Saad).
+- Search of founders' social posts and startup news sites (LinkedIn, Instagram, Wamda, Disrupt Africa, Daily News Egypt, Al Mal): no explicit outcome. Close but not explicit: Tayar ("التقييم المرتفع شكل عقبة رئيسية أمام إتمام الصفقة", youm7.com/7177610).
