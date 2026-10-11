@@ -3,6 +3,7 @@
 // Usage: node scripts/fetch-clips.mjs <out.json>
 import { writeFileSync } from 'node:fs';
 import { get, meta } from './harvest.mjs';
+import { textOf } from './enrich.mjs';
 
 const ROOT = 'https://sharktankarabi.com';
 // WordPress sitemaps (core or Yoast): an index of post sitemaps, each listing post URLs.
@@ -21,7 +22,9 @@ for (let i = 0; i < urls.length; i += 4)
     try {
       const { html } = await get(url);
       const date = html.match(/"datePublished":"([^"]+)"/)?.[1] ?? meta(html, 'article:published_time');
-      return { url, title: meta(html, 'og:title'), description: meta(html, 'og:description'), date };
+      // og:description stops at ~200 characters; the post body carries the full clip description.
+      const body = html.match(/<div[^>]+class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*<(?:footer|div[^>]+class="[^"]*(?:post-bottom|entry-footer|share))/i)?.[1];
+      return { url, title: meta(html, 'og:title'), description: meta(html, 'og:description'), text: body ? textOf(body, 2000) : textOf(html, 4000), date };
     } catch (e) { return { url, error: String(e.message ?? e) }; }
   })));
 writeFileSync(process.argv[2], JSON.stringify(out, null, 1));
