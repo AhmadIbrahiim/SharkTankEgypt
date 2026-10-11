@@ -19,7 +19,9 @@ if (!leadsOnly) for (const u of ['https://sharktank-egypt.com/en/deals', 'https:
 const out = [];
 for (let i = 0; i < jobs.length; i += 6) // a few at a time: polite to the news sites
   out.push(...await Promise.all(jobs.slice(i, i + 6).map(async (j) => {
-    try { const { html, url } = await get(j.url); return { ...j, final: url, text: textOf(html, 12000) }; }
+    // A hard cap per page: a site that never finishes sending must not stall the whole job.
+    const cap = new Promise((_, no) => setTimeout(() => no(new Error('timeout 30s')), 30000));
+    try { const { html, url } = await Promise.race([get(j.url), cap]); return { ...j, final: url, text: textOf(html, 12000) }; }
     catch (e) { return { ...j, error: String(e.message ?? e) }; }
   })));
 // YouTube titles and descriptions of the pitch videos often name the shark and the outcome.
@@ -37,3 +39,4 @@ for (const [v, id] of leadsOnly ? [] : vids) {
 }
 writeFileSync(process.argv[2], JSON.stringify(out, null, 1));
 console.log(`${out.filter((x) => x.text).length}/${out.length} fetched for ${open.length} startups`);
+process.exit(0); // don't wait on sockets left open by timed-out pages
