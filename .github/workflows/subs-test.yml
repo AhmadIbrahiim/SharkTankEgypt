@@ -7,6 +7,7 @@ jobs:
     steps:
       - run: pip install -q -U yt-dlp youtube-transcript-api
       - name: yt-dlp (default, then alternative clients)
+        continue-on-error: true
         run: |
           for c in default "youtube:player_client=web_embedded" "youtube:player_client=tv" "youtube:player_client=ios" "youtube:player_client=mweb"; do
             echo "== $c"
@@ -15,6 +16,7 @@ jobs:
             ls /tmp/t_* 2>/dev/null && head -c 600 /tmp/t_*.vtt && rm -f /tmp/t_*
           done
       - name: youtube-transcript-api
+        continue-on-error: true
         run: |
           python - <<'PY'
           from youtube_transcript_api import YouTubeTranscriptApi as Y
@@ -27,6 +29,6 @@ jobs:
           PY
       - name: Piped / Invidious
         run: |
-          for u in "https://pipedapi.kavin.rocks/streams/Sid8lwO-2LQ" "https://inv.nadeko.net/api/v1/captions/Sid8lwO-2LQ"; do
+          for u in "https://pipedapi.kavin.rocks/streams/Sid8lwO-2LQ" "https://api.piped.private.coffee/streams/Sid8lwO-2LQ" "https://inv.nadeko.net/api/v1/captions/Sid8lwO-2LQ" "https://invidious.nerdvpn.de/api/v1/captions/Sid8lwO-2LQ" "https://yewtu.be/api/v1/captions/Sid8lwO-2LQ"; do
             echo "== $u"; curl -s -m 20 "$u" | head -c 400; echo
           done
