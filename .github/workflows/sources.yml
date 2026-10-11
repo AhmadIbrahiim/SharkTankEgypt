@@ -1,7 +1,13 @@
 name: Fetch source articles
 # Saves the text of the articles cited for startups with an unknown pitch outcome to
 # `automation/sources/` on main, for review. The site never reads it.
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      leads_only:
+        description: Only fetch automation/sources/leads.json (fast)
+        type: boolean
+        default: true
 permissions:
   contents: write
 jobs:
@@ -11,11 +17,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - run: node scripts/fetch-sources.mjs /tmp/sources.json
-      - run: node scripts/fetch-clips.mjs /tmp/clips.json || echo '[]' > /tmp/clips.json
+      - run: node scripts/fetch-sources.mjs ${{ inputs.leads_only && '/tmp/leads-out.json --leads' || '/tmp/sources.json' }}
+      - if: ${{ !inputs.leads_only }}
+        run: node scripts/fetch-clips.mjs /tmp/clips.json || echo '[]' > /tmp/clips.json
       - name: Commit to main
         run: |
-          mkdir -p automation/sources && cp /tmp/sources.json automation/sources/sources.json && cp /tmp/clips.json automation/sources/clips.json
+          mkdir -p automation/sources && { [ -f /tmp/leads-out.json ] && cp /tmp/leads-out.json automation/sources/leads-out.json || cp /tmp/sources.json automation/sources/sources.json; }; [ -f /tmp/clips.json ] && cp /tmp/clips.json automation/sources/clips.json || true
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add automation/sources
