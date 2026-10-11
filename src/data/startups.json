@@ -175,8 +175,8 @@
       "ar": "يمبي"
     },
     "description": {
-      "en": "App for discovering restaurants; asked for USD 350,000.",
-      "ar": "تطبيق لاكتشاف المطاعم، وطلب 350 ألف دولار."
+      "en": "App for discovering restaurants; asked for USD 350,000. It did not get an investment from the sharks.",
+      "ar": "تطبيق لاكتشاف المطاعم، وطلب 350 ألف دولار. ولم تحصل على استثمار من الشاركس."
     },
     "category": "Tech",
     "founders": [],
@@ -185,9 +185,15 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
-      "https://www.dostor.org/5142244"
+      "https://www.dostor.org/5142244",
+      "https://sharktankarabi.com/4138/"
     ],
     "links": {
       "facebook": "https://www.facebook.com/people/Yumby/61565138105372/",
@@ -3321,8 +3327,8 @@
       "ar": "شغلني"
     },
     "description": {
-      "en": "Shaghalny, whose name means \"hire me\", is an online jobs platform for blue- and grey-collar workers and candidates with intermediate qualifications. Founder Omar Khalifa came up with it at university, and it took seed funding from Naguib Sawiris's Gemini Holding in 2016; it has since built a database of more than 1.7 million jobseekers and thousands of hiring companies. On Shark Tank he closed a deal for EGP 5 million in exchange for 35%, and the company later opened physical hiring centres, starting in Sohag and then Greater Cairo, where jobseekers are interviewed on the spot.",
-      "ar": "شغلني منصة توظيف إلكترونية تخدم العمالة الحرفية والفنية وأصحاب المؤهلات المتوسطة وتربطهم بفرص العمل في الشركات. بدأت فكرتها مع مؤسسها عمر خليفة أثناء دراسته الجامعية، وحصلت على تمويلها الأول من شركة جيميناي القابضة المملوكة لنجيب ساويرس عام 2016، وتضم قاعدة بياناتها أكثر من 1.7 مليون باحث عن عمل وآلاف الشركات. حصل خليفة في شارك تانك على صفقة بخمسة ملايين جنيه مقابل 35%، ثم افتتحت المنصة مراكز توظيف على أرض الواقع بدءاً من سوهاج ثم القاهرة الكبرى، تُجرى فيها المقابلات فوراً."
+      "en": "Shaghalny, whose name means \"hire me\", is an online jobs platform for blue- and grey-collar workers and candidates with intermediate qualifications. Founder Omar Khalifa came up with it at university, and it took seed funding from Naguib Sawiris's Gemini Holding in 2016; it has since built a database of more than 1.7 million jobseekers and thousands of hiring companies. On Shark Tank he closed a deal for EGP 5 million in exchange for 35%, and the company later opened physical hiring centres, starting in Sohag and then Greater Cairo, where jobseekers are interviewed on the spot. The show lists it among Ayman Abbas's first three investments on Shark Tank Egypt.",
+      "ar": "شغلني منصة توظيف إلكترونية تخدم العمالة الحرفية والفنية وأصحاب المؤهلات المتوسطة وتربطهم بفرص العمل في الشركات. بدأت فكرتها مع مؤسسها عمر خليفة أثناء دراسته الجامعية، وحصلت على تمويلها الأول من شركة جيميناي القابضة المملوكة لنجيب ساويرس عام 2016، وتضم قاعدة بياناتها أكثر من 1.7 مليون باحث عن عمل وآلاف الشركات. حصل خليفة في شارك تانك على صفقة بخمسة ملايين جنيه مقابل 35%، ثم افتتحت المنصة مراكز توظيف على أرض الواقع بدءاً من سوهاج ثم القاهرة الكبرى، تُجرى فيها المقابلات فوراً. ويذكرها البرنامج ضمن أول ثلاثة مشروعات استثمر فيها أيمن عباس."
     },
     "category": "Services",
     "founders": [
@@ -3335,7 +3341,9 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ayman Abbas"
+      ],
       "amountEGP": 5000000,
       "equityPct": 35
     },
@@ -3347,7 +3355,8 @@
       "https://www.youtube.com/watch?v=JSMbFSI6oZY",
       "https://www.zawya.com/en/economy/north-africa/shaghalni-bridging-egypts-job-gap-from-online-to-on-site-success-rucbgkde",
       "https://www.wamda.com/en/2016/02/shaghalni-jobs-for-egypts-blue-grey-collars",
-      "https://www.wamda.com/en/2020/08/shaghalni-raises-figure-investment-pre-series"
+      "https://www.wamda.com/en/2020/08/shaghalni-raises-figure-investment-pre-series",
+      "https://sharktankarabi.com/2398/"
     ],
     "video": "p8jSiqmdH_4",
     "links": {
@@ -3744,8 +3753,8 @@
       "ar": "كونتري هاوس"
     },
     "description": {
-      "en": "Country House is an Egyptian maker of chalk-finish paints, founded by Sara Helal. It produces locally made decorative paints designed to rival imported chalk paints, giving Egyptian DIY lovers, furniture upcyclers and decorators a home-grown option for matte, vintage-style finishes. The brand sells through its Instagram presence and reported about EGP 614K in sales in its last year before appearing on Shark Tank Egypt.",
-      "ar": "كونتري هاوس علامة مصرية لتصنيع دهانات الطباشير (تشوك بينت)، أسستها سارة هلال. تنتج الشركة دهانات ديكور محلية الصنع تنافس دهانات الطباشير المستوردة، لتمنح هواة الأعمال اليدوية ومجددي الأثاث ومصممي الديكور في مصر بديلاً محلياً للحصول على لمسات مطفية بطابع كلاسيكي. تبيع العلامة عبر حسابها على إنستغرام، وحققت مبيعات بلغت نحو 614 ألف جنيه في عامها الأخير قبل ظهورها في برنامج شارك تانك مصر."
+      "en": "Country House is an Egyptian maker of chalk-finish paints, founded by Sara Helal. It produces locally made decorative paints designed to rival imported chalk paints, giving Egyptian DIY lovers, furniture upcyclers and decorators a home-grown option for matte, vintage-style finishes. The brand sells through its Instagram presence and reported about EGP 614K in sales in its last year before appearing on Shark Tank Egypt. She accepted Ahmed Tarek's offer for 50% of the company.",
+      "ar": "كونتري هاوس علامة مصرية لتصنيع دهانات الطباشير (تشوك بينت)، أسستها سارة هلال. تنتج الشركة دهانات ديكور محلية الصنع تنافس دهانات الطباشير المستوردة، لتمنح هواة الأعمال اليدوية ومجددي الأثاث ومصممي الديكور في مصر بديلاً محلياً للحصول على لمسات مطفية بطابع كلاسيكي. تبيع العلامة عبر حسابها على إنستغرام، وحققت مبيعات بلغت نحو 614 ألف جنيه في عامها الأخير قبل ظهورها في برنامج شارك تانك مصر. ووافقت على عرض أحمد طارق مقابل 50% من الشركة."
     },
     "category": "Manufacturing",
     "founders": [
@@ -3756,10 +3765,18 @@
       "amountEGP": 1500000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6376335",
-      "https://www.dostor.org/4551879"
+      "https://www.dostor.org/4551879",
+      "https://sharktankarabi.com/1032/"
     ],
     "links": {
       "instagram": "https://www.instagram.com/countryhouse.sh/"
@@ -5480,8 +5497,8 @@
       "ar": "بيكأب"
     },
     "description": {
-      "en": "Piccup is an Egyptian app that offers families an alternative to the traditional school bus: safe, door-to-door transport for students, paid as a monthly subscription. It aims to make the daily school run easier and more affordable for parents, at more than 30% less than typical school bus fees. Parents can follow their children's ride in real time from pickup to drop-off. Founder Khaled Bakr pitched it on Shark Tank Egypt in season 2.",
-      "ar": "بيكأب تطبيق مصري يقدّم للأسر بديلاً عن باص المدرسة التقليدي، إذ يوفّر توصيلاً آمناً للطلاب من باب المنزل إلى باب المدرسة باشتراك شهري. ويهدف إلى تخفيف عبء المشوار اليومي إلى المدرسة على أولياء الأمور بتكلفة تقل بأكثر من 30% عن رسوم باصات المدارس المعتادة. ويستطيع الأهل متابعة رحلة أبنائهم لحظة بلحظة من الاستلام حتى الوصول. وقد عرض المؤسس خالد بكر المشروع على المستثمرين في الموسم الثاني من برنامج شارك تانك مصر."
+      "en": "Piccup is an Egyptian app that offers families an alternative to the traditional school bus: safe, door-to-door transport for students, paid as a monthly subscription. It aims to make the daily school run easier and more affordable for parents, at more than 30% less than typical school bus fees. Parents can follow their children's ride in real time from pickup to drop-off. Founder Khaled Bakr pitched it on Shark Tank Egypt in season 2. On the show it closed a deal.",
+      "ar": "بيكأب تطبيق مصري يقدّم للأسر بديلاً عن باص المدرسة التقليدي، إذ يوفّر توصيلاً آمناً للطلاب من باب المنزل إلى باب المدرسة باشتراك شهري. ويهدف إلى تخفيف عبء المشوار اليومي إلى المدرسة على أولياء الأمور بتكلفة تقل بأكثر من 30% عن رسوم باصات المدارس المعتادة. ويستطيع الأهل متابعة رحلة أبنائهم لحظة بلحظة من الاستلام حتى الوصول. وقد عرض المؤسس خالد بكر المشروع على المستثمرين في الموسم الثاني من برنامج شارك تانك مصر. وفي البرنامج أبرمت صفقة."
     },
     "category": "Services",
     "founders": [
@@ -5492,10 +5509,16 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6473181",
-      "https://www.youtube.com/watch?v=9elMGLcphnw"
+      "https://www.youtube.com/watch?v=9elMGLcphnw",
+      "https://sharktankarabi.com/836/"
     ],
     "video": "9elMGLcphnw",
     "links": {
@@ -6024,8 +6047,8 @@
       "ar": "نسيج"
     },
     "description": {
-      "en": "Naseej is a family-owned Egyptian home-textiles company that designs, specifies and distributes fabrics, about 95% of them made in Egypt. Founded in 2016 and based in Giza, it supplies fabrics and cushions to homeowners and to hospitality clients such as hotels and cafés, and has exported to Croatia, Oman, Saudi Arabia and Jordan. Its designs offer a modern take on Egyptian décor, mixing tribal motifs, classic shapes and minimalist styling. Founder Mohamed Mardini, grandson of one of Egypt's oldest textile makers, asked the sharks for EGP 18 million for 15%.",
-      "ar": "نسيج شركة عائلية مصرية للمنسوجات المنزلية تصمّم الأقمشة وتوصّفها وتوزّعها، ويُصنع نحو 95% منها في مصر. تأسست عام 2016 ومقرها الجيزة، وتورّد الأقمشة والوسائد للمنازل ولعملاء الضيافة مثل الفنادق والمقاهي، وصدّرت منتجاتها إلى كرواتيا وعُمان والسعودية والأردن. وتقدم تصميماتها رؤية عصرية للديكور المصري تمزج بين الزخارف القبلية والأشكال الكلاسيكية والطابع البسيط. وطلب مؤسسها محمد مارديني، حفيد أحد أقدم صنّاع المنسوجات في مصر، 18 مليون جنيه مقابل 15%."
+      "en": "Naseej is a family-owned Egyptian home-textiles company that designs, specifies and distributes fabrics, about 95% of them made in Egypt. Founded in 2016 and based in Giza, it supplies fabrics and cushions to homeowners and to hospitality clients such as hotels and cafés, and has exported to Croatia, Oman, Saudi Arabia and Jordan. Its designs offer a modern take on Egyptian décor, mixing tribal motifs, classic shapes and minimalist styling. Founder Mohamed Mardini, grandson of one of Egypt's oldest textile makers, asked the sharks for EGP 18 million for 15%. On the show it closed a deal with Mohamed Farouk for 45%.",
+      "ar": "نسيج شركة عائلية مصرية للمنسوجات المنزلية تصمّم الأقمشة وتوصّفها وتوزّعها، ويُصنع نحو 95% منها في مصر. تأسست عام 2016 ومقرها الجيزة، وتورّد الأقمشة والوسائد للمنازل ولعملاء الضيافة مثل الفنادق والمقاهي، وصدّرت منتجاتها إلى كرواتيا وعُمان والسعودية والأردن. وتقدم تصميماتها رؤية عصرية للديكور المصري تمزج بين الزخارف القبلية والأشكال الكلاسيكية والطابع البسيط. وطلب مؤسسها محمد مارديني، حفيد أحد أقدم صنّاع المنسوجات في مصر، 18 مليون جنيه مقابل 15%. وفي البرنامج أبرمت صفقة مع محمد فاروق مقابل 45%."
     },
     "category": "Manufacturing",
     "founders": [
@@ -6036,12 +6059,20 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": null,
+      "equityPct": 45
+    },
     "sources": [
       "https://www.youm7.com/6495135",
       "https://www.youtube.com/watch?v=00saxqSHcq0",
       "https://app.dealroom.co/companies/naseej",
-      "https://cairoscene.com/lifestyle/naseej-textiles"
+      "https://cairoscene.com/lifestyle/naseej-textiles",
+      "https://sharktankarabi.com/584/"
     ],
     "video": "00saxqSHcq0",
     "links": {
@@ -6221,8 +6252,8 @@
       "ar": "بذور"
     },
     "description": {
-      "en": "Bzour (Arabic for \"seeds\") is an Egyptian food brand that sells natural seeds and nuts in a range of different flavours. It launched in May 2023 and offers flavoured versions of a snack that is already popular across Egypt. The founders brought the brand to Shark Tank Egypt in Season 2, Episode 20. Public details about its founders, prices and sales channels could not be confirmed.",
-      "ar": "بذور علامة تجارية مصرية للأغذية تقدّم البذور والمكسرات الطبيعية بنكهات متنوعة. انطلقت العلامة في مايو 2023، وتقدّم نسخاً بنكهات مختلفة من وجبة خفيفة منتشرة في مصر. عرض المؤسسون العلامة في برنامج شارك تانك مصر، في الحلقة العشرين من الموسم الثاني. ولم يتسنَّ التحقق من التفاصيل المتاحة للعامة عن مؤسسيها أو أسعارها أو قنوات بيعها."
+      "en": "Bzour (Arabic for \"seeds\") is an Egyptian food brand that sells natural seeds and nuts in a range of different flavours. It launched in May 2023 and offers flavoured versions of a snack that is already popular across Egypt. The founders brought the brand to Shark Tank Egypt in Season 2, Episode 20. Public details about its founders, prices and sales channels could not be confirmed. On the show it closed a deal with Ahmed Tarek Khalil and Ahmed El Sewedy for EGP 2 million for 50%.",
+      "ar": "بذور علامة تجارية مصرية للأغذية تقدّم البذور والمكسرات الطبيعية بنكهات متنوعة. انطلقت العلامة في مايو 2023، وتقدّم نسخاً بنكهات مختلفة من وجبة خفيفة منتشرة في مصر. عرض المؤسسون العلامة في برنامج شارك تانك مصر، في الحلقة العشرين من الموسم الثاني. ولم يتسنَّ التحقق من التفاصيل المتاحة للعامة عن مؤسسيها أو أسعارها أو قنوات بيعها. وفي البرنامج أبرمت صفقة مع أحمد طارق وأحمد السويدي بقيمة 2 مليون جنيه مقابل 50%."
     },
     "category": "Food",
     "founders": [],
@@ -6231,9 +6262,18 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": 2000000,
+      "equityPct": 50
+    },
     "sources": [
-      "https://www.youm7.com/6502200"
+      "https://www.youm7.com/6502200",
+      "https://sharktankarabi.com/870/"
     ],
     "services": {
       "en": [
@@ -6286,8 +6326,8 @@
       "ar": "يايا"
     },
     "description": {
-      "en": "YAYA Shakes is a milkshake brand that founder Yahia Zaky started in London at 18 before bringing it back to Egypt. Its New Cairo home is a three-storey shop at ChillOut N90 built around build-your-own milkshakes made on a thick, mostly ice-cream base, alongside smoothies, waffles and ice cream. The brand also gives many young Egyptians their first job experience. On the show he asked for EGP 10 million for 10%, and Mohamed Mansour offered the full amount for 25%.",
-      "ar": "يايا شيكس علامة ميلك شيك أسسها يحيى زكي في لندن وهو في الثامنة عشرة، ثم عاد بها إلى مصر. يقع فرعها في القاهرة الجديدة داخل محطة ChillOut في شارع التسعين، في مبنى من ثلاثة طوابق يقدّم ميلك شيك يصممه الزبون بنفسه على قاعدة كثيفة معظمها من الآيس كريم، إلى جانب السموذي والوافل والآيس كريم. كما توفر العلامة لكثير من الشباب المصريين أول تجربة عمل لهم. في البرنامج طلب 10 ملايين جنيه مقابل 10%، فعرض عليه محمد منصور المبلغ كاملاً مقابل 25%."
+      "en": "YAYA Shakes is a milkshake brand that founder Yahia Zaky started in London at 18 before bringing it back to Egypt. Its New Cairo home is a three-storey shop at ChillOut N90 built around build-your-own milkshakes made on a thick, mostly ice-cream base, alongside smoothies, waffles and ice cream. The brand also gives many young Egyptians their first job experience. On the show he asked for EGP 10 million for 10%, and Mohamed Mansour offered the full amount for 25%. On the show it closed a deal for 25%.",
+      "ar": "يايا شيكس علامة ميلك شيك أسسها يحيى زكي في لندن وهو في الثامنة عشرة، ثم عاد بها إلى مصر. يقع فرعها في القاهرة الجديدة داخل محطة ChillOut في شارع التسعين، في مبنى من ثلاثة طوابق يقدّم ميلك شيك يصممه الزبون بنفسه على قاعدة كثيفة معظمها من الآيس كريم، إلى جانب السموذي والوافل والآيس كريم. كما توفر العلامة لكثير من الشباب المصريين أول تجربة عمل لهم. في البرنامج طلب 10 ملايين جنيه مقابل 10%، فعرض عليه محمد منصور المبلغ كاملاً مقابل 25%. وفي البرنامج أبرمت صفقة مقابل 25%."
     },
     "category": "Food",
     "founders": [
@@ -6298,7 +6338,12 @@
       "amountEGP": 10000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": 25
+    },
     "sources": [
       "https://www.youm7.com/6502200",
       "https://www.youm7.com/6502539",
@@ -6306,7 +6351,8 @@
       "https://www.youtube.com/shorts/Ih0pRGjErEA",
       "https://cairoscene.com/Eats/London-s-Yaya-Milkshakes-Opens-in-New-Cairo",
       "https://cairoscene.com/Eats/A-Day-at-Yaya-s-Means-Swirls-of-Joy-and-Existentialist-Milkshakes",
-      "https://sceneeats.com/Guides/Cairo-s-Most-Magical-Milkshakes-A-SceneEats-Guide"
+      "https://sceneeats.com/Guides/Cairo-s-Most-Magical-Milkshakes-A-SceneEats-Guide",
+      "https://sharktankarabi.com/1571/"
     ],
     "video": "p9SW7SNd0sk",
     "links": {
@@ -6665,8 +6711,8 @@
       "ar": "إيجايك"
     },
     "description": {
-      "en": "EGIKE is an Egyptian startup that designs and manufactures smart electric bikes in Egypt for the Egyptian market, and uses artificial intelligence in making their batteries. It describes itself as the first Egyptian brand of smart e-bikes and offers them both for sale and through rental-sharing in cities, with pre-orders open to customers. It pitched the bikes to the sharks as a green-mobility answer to everyday transport problems.",
-      "ar": "إيجايك شركة مصرية ناشئة تصمّم دراجات كهربائية ذكية وتصنعها في مصر لتناسب السوق المصري، وتستخدم الذكاء الاصطناعي في تصنيع بطارياتها. وتقدّم نفسها كأول علامة مصرية للدراجات الكهربائية الذكية، وتتيحها للبيع وللتأجير والمشاركة داخل المدن، مع فتح باب الحجز المسبق للعملاء. وعرضت دراجاتها على الشاركس كحل للتنقل الأخضر ولمشكلات المواصلات اليومية."
+      "en": "EGIKE is an Egyptian startup that designs and manufactures smart electric bikes in Egypt for the Egyptian market, and uses artificial intelligence in making their batteries. It describes itself as the first Egyptian brand of smart e-bikes and offers them both for sale and through rental-sharing in cities, with pre-orders open to customers. It pitched the bikes to the sharks as a green-mobility answer to everyday transport problems. On the show it closed a deal with Ahmed El Sewedy.",
+      "ar": "إيجايك شركة مصرية ناشئة تصمّم دراجات كهربائية ذكية وتصنعها في مصر لتناسب السوق المصري، وتستخدم الذكاء الاصطناعي في تصنيع بطارياتها. وتقدّم نفسها كأول علامة مصرية للدراجات الكهربائية الذكية، وتتيحها للبيع وللتأجير والمشاركة داخل المدن، مع فتح باب الحجز المسبق للعملاء. وعرضت دراجاتها على الشاركس كحل للتنقل الأخضر ولمشكلات المواصلات اليومية. وفي البرنامج أبرمت صفقة مع أحمد السويدي."
     },
     "category": "Tech",
     "founders": [],
@@ -6675,13 +6721,21 @@
       "amountEGP": 5000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed El Sewedy"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4843743",
       "https://www.elwatannews.com/news/details/7632333",
       "https://www.youtube.com/watch?v=BX-Awd-en_w",
       "https://www.youtube.com/watch?v=kVjJq9AvxUo",
-      "https://brandfetch.com/egike.com"
+      "https://brandfetch.com/egike.com",
+      "https://sharktankarabi.com/2676/"
     ],
     "links": {
       "instagram": "https://www.instagram.com/egike.ev/",
@@ -6713,8 +6767,8 @@
       "ar": "المتحدة"
     },
     "description": {
-      "en": "El Motaheda is an Egyptian manufacturer that makes motorcycle brake pads entirely in Egypt. Its focus on local production offers riders, mechanics and parts dealers a domestically made option in a market that has long relied on imported spare parts. The company brought its locally made brake pads to Shark Tank Egypt in Season 3, looking for investment to grow its manufacturing.",
-      "ar": "المتحدة شركة مصرية تصنع تيل فرامل الدراجات النارية بالكامل داخل مصر. ويقدّم تركيزها على التصنيع المحلي خيارًا مصريًا لراكبي الدراجات النارية والميكانيكيين وتجار قطع الغيار، في سوق اعتمد طويلًا على قطع الغيار المستوردة. وعرضت الشركة منتجها المحلي في الموسم الثالث من برنامج شارك تانك مصر، بحثًا عن استثمار يساعدها على التوسع في التصنيع."
+      "en": "El Motaheda is an Egyptian manufacturer that makes motorcycle brake pads entirely in Egypt. Its focus on local production offers riders, mechanics and parts dealers a domestically made option in a market that has long relied on imported spare parts. The company brought its locally made brake pads to Shark Tank Egypt in Season 3, looking for investment to grow its manufacturing. It left the tank without a deal.",
+      "ar": "المتحدة شركة مصرية تصنع تيل فرامل الدراجات النارية بالكامل داخل مصر. ويقدّم تركيزها على التصنيع المحلي خيارًا مصريًا لراكبي الدراجات النارية والميكانيكيين وتجار قطع الغيار، في سوق اعتمد طويلًا على قطع الغيار المستوردة. وعرضت الشركة منتجها المحلي في الموسم الثالث من برنامج شارك تانك مصر، بحثًا عن استثمار يساعدها على التوسع في التصنيع. وخرجت من التانك دون صفقة."
     },
     "category": "Manufacturing",
     "founders": [],
@@ -6723,11 +6777,17 @@
       "amountEGP": 10000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4843743",
       "https://www.elwatannews.com/news/details/7632333",
-      "https://www.youm7.com/6752357"
+      "https://www.youm7.com/6752357",
+      "https://sharktankarabi.com/308/"
     ],
     "pitch": {
       "en": "In Season 3, Episode 2, El Motaheda pitched its Egyptian-made motorcycle brake pads, presenting local manufacturing as an alternative to imported parts. The company asked for EGP 10 million in exchange for 25% equity. No deal is recorded for the company.",
@@ -6869,14 +6929,15 @@
     "deal": {
       "made": true,
       "sharks": [],
-      "amountEGP": 5000000,
+      "amountEGP": 6250000,
       "equityPct": 50
     },
     "sources": [
       "https://www.youm7.com/6759051",
       "https://vcfoconsulting.com/shark-tank-season-3-ep-3/",
       "https://www.youtube.com/watch?v=NHvBuQ627rg",
-      "https://www.youtube.com/watch?v=SUgcuSNWFD4"
+      "https://www.youtube.com/watch?v=SUgcuSNWFD4",
+      "https://sharktankarabi.com/172/"
     ],
     "video": "SUgcuSNWFD4",
     "links": {
@@ -6919,8 +6980,8 @@
       ]
     },
     "pitch": {
-      "en": "El Fares pitched its tissue-culture approach to producing disease-free seedlings at scale and asked for EGP 5 million for 15% of the company. The episode ended with a deal: EGP 5 million, but for 50% equity, more than three times the stake the founders first offered.",
-      "ar": "عرض الفارس فكرته في إنتاج شتلات خالية من الأمراض على نطاق واسع بتقنية زراعة الأنسجة، وطلب 5 ملايين جنيه مقابل 15% من الشركة. انتهت الحلقة باتفاق على 5 ملايين جنيه، لكن مقابل 50% من الحصة، أي أكثر من ثلاثة أضعاف النسبة التي عرضها المؤسسون في البداية."
+      "en": "El Fares pitched its tissue-culture approach to producing disease-free seedlings at scale and asked for EGP 5 million for 15% of the company. The episode ended with all five sharks joining one deal: EGP 6.25 million for 50%, more than three times the stake the founders first offered.",
+      "ar": "عرض الفارس فكرته في إنتاج شتلات خالية من الأمراض على نطاق واسع بتقنية زراعة الأنسجة، وطلب 5 ملايين جنيه مقابل 15% من الشركة. انتهت الحلقة بانضمام الشاركس الخمسة إلى صفقة واحدة بقيمة 6.25 مليون جنيه مقابل 50% من الحصة، أي أكثر من ثلاثة أضعاف النسبة التي عرضها المؤسسون في البداية."
     },
     "about": {
       "highlights": {
@@ -6948,8 +7009,8 @@
       "ar": "ميتادوك"
     },
     "description": {
-      "en": "A primary-care app pitched as a full medical centre on your phone, combining telemedicine and home-doctor visits; it operates in the US, Qatar, Saudi Arabia and Egypt. The founders asked for 15 million for 30% of the Egyptian company and 2.5% of the US holding company.",
-      "ar": "تطبيق للرعاية الصحية الأولية يُقدَّم بوصفه مركزاً طبياً متكاملاً على الهاتف، يجمع بين الاستشارات عن بُعد وزيارات الطبيب المنزلية، ويعمل في الولايات المتحدة وقطر والسعودية ومصر. وطلب مؤسسوه 15 مليوناً مقابل 30% من الشركة المصرية و2.5% من الشركة القابضة الأمريكية."
+      "en": "A primary-care app pitched as a full medical centre on your phone, combining telemedicine and home-doctor visits; it operates in the US, Qatar, Saudi Arabia and Egypt. The founders asked for 15 million for 30% of the Egyptian company and 2.5% of the US holding company. On the show it closed a deal.",
+      "ar": "تطبيق للرعاية الصحية الأولية يُقدَّم بوصفه مركزاً طبياً متكاملاً على الهاتف، يجمع بين الاستشارات عن بُعد وزيارات الطبيب المنزلية، ويعمل في الولايات المتحدة وقطر والسعودية ومصر. وطلب مؤسسوه 15 مليوناً مقابل 30% من الشركة المصرية و2.5% من الشركة القابضة الأمريكية. وفي البرنامج أبرمت صفقة."
     },
     "category": "Health",
     "founders": [],
@@ -6958,12 +7019,18 @@
       "amountEGP": 15000000,
       "equityPct": 30
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6768595",
       "https://www.youm7.com/6767092",
       "https://www.youtube.com/watch?v=pScwobM9jYk",
-      "https://www.youtube.com/watch?v=WxKKflnNxCE"
+      "https://www.youtube.com/watch?v=WxKKflnNxCE",
+      "https://sharktankarabi.com/2744/"
     ],
     "video": "pScwobM9jYk",
     "links": {
@@ -7010,8 +7077,8 @@
       "ar": "رايت هوم"
     },
     "description": {
-      "en": "Right Home is a Giza-based furniture factory, founded in 1998, that helped bring rattan manufacturing into Egypt rather than relying on imports. It makes rattan outdoor furniture for hotels and resorts, giving hospitality buyers a local source for pieces that suit terraces, pools and gardens. Making the furniture in Egypt means production happens close to the customer. Its founder came to Shark Tank Egypt to raise capital to grow the business.",
-      "ar": "رايت هوم مصنع أثاث في الجيزة تأسس عام 1998، وأسهم في توطين صناعة الراتان في مصر بدلاً من الاعتماد على الاستيراد. ينتج المصنع أثاثاً خارجياً من الراتان للفنادق والمنتجعات، فيوفر لقطاع الضيافة مصدراً محلياً لقطع تناسب التراسات وحمامات السباحة والحدائق. ويعني التصنيع داخل مصر أن الإنتاج يجري بالقرب من العميل. وقد جاء مؤسسه إلى برنامج شارك تانك مصر سعياً إلى تمويل يساعد على توسيع النشاط."
+      "en": "Right Home is a Giza-based furniture factory, founded in 1998, that helped bring rattan manufacturing into Egypt rather than relying on imports. It makes rattan outdoor furniture for hotels and resorts, giving hospitality buyers a local source for pieces that suit terraces, pools and gardens. Making the furniture in Egypt means production happens close to the customer. Its founder came to Shark Tank Egypt to raise capital to grow the business. On the show it closed a deal with Ahmed Tarek Khalil and Ayman Abbas.",
+      "ar": "رايت هوم مصنع أثاث في الجيزة تأسس عام 1998، وأسهم في توطين صناعة الراتان في مصر بدلاً من الاعتماد على الاستيراد. ينتج المصنع أثاثاً خارجياً من الراتان للفنادق والمنتجعات، فيوفر لقطاع الضيافة مصدراً محلياً لقطع تناسب التراسات وحمامات السباحة والحدائق. ويعني التصنيع داخل مصر أن الإنتاج يجري بالقرب من العميل. وقد جاء مؤسسه إلى برنامج شارك تانك مصر سعياً إلى تمويل يساعد على توسيع النشاط. وفي البرنامج أبرمت صفقة مع أحمد طارق وأيمن عباس."
     },
     "category": "Manufacturing",
     "founders": [],
@@ -7020,11 +7087,20 @@
       "amountEGP": 10000000,
       "equityPct": 50
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6768645",
       "https://www.youm7.com/6767092",
-      "https://www.youtube.com/watch?v=BuYpWa7kRcE"
+      "https://www.youtube.com/watch?v=BuYpWa7kRcE",
+      "https://sharktankarabi.com/296/"
     ],
     "links": {
       "instagram": "https://www.instagram.com/right.home/"
@@ -7186,8 +7262,8 @@
       "ar": "أوستريتش لاند"
     },
     "description": {
-      "en": "An Egyptian ostrich farm that raises its birds on organic feed and sells premium ostrich meat.",
-      "ar": "مزرعة نعام مصرية تربي طيورها على أعلاف عضوية، وتبيع لحم نعام فاخراً."
+      "en": "An Egyptian ostrich farm that raises its birds on organic feed and sells premium ostrich meat. On the show it closed a deal with Ahmed Tarek Khalil for EGP 9 million for 45%.",
+      "ar": "مزرعة نعام مصرية تربي طيورها على أعلاف عضوية، وتبيع لحم نعام فاخراً. وفي البرنامج أبرمت صفقة مع أحمد طارق بقيمة 9 مليون جنيه مقابل 45%."
     },
     "category": "Agriculture",
     "founders": [],
@@ -7196,10 +7272,18 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 9000000,
+      "equityPct": 45
+    },
     "sources": [
       "https://www.youm7.com/6775318",
-      "https://www.dostor.org/4863356"
+      "https://www.dostor.org/4863356",
+      "https://sharktankarabi.com/606/"
     ],
     "links": {
       "facebook": "https://www.facebook.com/p/Ostrich-land-Egypt-61558782500696/",
@@ -7269,8 +7353,8 @@
       "ar": "هاليت إيجيبت"
     },
     "description": {
-      "en": "Halite Egypt is a salt works based in the Siwa Oasis, an area known for its natural rock salt (halite) deposits. The company extracts and supplies rock salt to industrial buyers, including for de-icing roads and for other industries that use salt as a raw material. It came to Shark Tank Egypt in season three looking for capital to grow production. Its ask of EGP 75 million for 25% was one of the two largest of that season.",
-      "ar": "هاليت إيجيبت شركة لإنتاج الملح مقرها واحة سيوة، المعروفة برواسب الملح الصخري الطبيعي (الهاليت). تستخرج الشركة الملح الصخري وتوفّره للعملاء الصناعيين، ومن استخداماته إذابة الجليد على الطرق، إلى جانب صناعات أخرى تعتمد على الملح كمادة خام. شاركت في الموسم الثالث من شارك تانك مصر سعيًا وراء تمويل لتوسيع إنتاجها. وكان طلبها البالغ 75 مليون جنيه مقابل 25% من أكبر طلبين في ذلك الموسم."
+      "en": "Halite Egypt is a salt works based in the Siwa Oasis, an area known for its natural rock salt (halite) deposits. The company extracts and supplies rock salt to industrial buyers, including for de-icing roads and for other industries that use salt as a raw material. It came to Shark Tank Egypt in season three looking for capital to grow production. Its ask of EGP 75 million for 25% was one of the two largest of that season. It left the tank without a deal.",
+      "ar": "هاليت إيجيبت شركة لإنتاج الملح مقرها واحة سيوة، المعروفة برواسب الملح الصخري الطبيعي (الهاليت). تستخرج الشركة الملح الصخري وتوفّره للعملاء الصناعيين، ومن استخداماته إذابة الجليد على الطرق، إلى جانب صناعات أخرى تعتمد على الملح كمادة خام. شاركت في الموسم الثالث من شارك تانك مصر سعيًا وراء تمويل لتوسيع إنتاجها. وكان طلبها البالغ 75 مليون جنيه مقابل 25% من أكبر طلبين في ذلك الموسم. وخرجت من التانك دون صفقة."
     },
     "category": "Food",
     "founders": [],
@@ -7279,11 +7363,17 @@
       "amountEGP": 75000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6776511",
       "https://www.youtube.com/watch?v=2E4tXi4-bA4",
-      "https://www.youtube.com/watch?v=e3o4RxH1hwU"
+      "https://www.youtube.com/watch?v=e3o4RxH1hwU",
+      "https://sharktankarabi.com/191/"
     ],
     "video": "2E4tXi4-bA4",
     "links": {
@@ -8244,8 +8334,8 @@
       "ar": "ذا بيبي جراچ"
     },
     "description": {
-      "en": "The Baby Garage is a marketplace where parents can buy, sell or donate new and used children's gear, aimed at new mothers unsure what to buy or where to buy it. Farah Ahmed launched it in 2015 as a volunteer-run community, and it has grown into a business based in 6th of October City that earns from merchant subscriptions, sales commissions, a discount card and ad campaigns for baby brands. Its \"Mompreneur\" initiative has helped more than a thousand mothers start reselling from home, and the company says its community counts more than 520,000 mothers. A TIEC incubator graduate and winner of the Al-Forsa TV competition, it asked the sharks for EGP 9 million for 10%.",
-      "ar": "ذا بيبي جراچ منصة يشتري فيها الآباء والأمهات مستلزمات الأطفال الجديدة والمستعملة ويبيعونها أو يتبرعون بها، وتستهدف الأمهات الجدد اللواتي لا يعرفن ماذا يشترين أو من أين. أطلقتها فرح أحمد عام 2015 مجتمعاً يعتمد على المتطوعين، ثم تحولت إلى شركة مقرها مدينة السادس من أكتوبر تربح من اشتراكات التجار والعمولات وبطاقة الخصم والحملات الإعلانية لعلامات منتجات الأطفال. وساعدت مبادرتها \"مامبرونير\" أكثر من ألف أم على بدء مشروع لإعادة البيع من المنزل، وتقول الشركة إن مجتمعها يضم أكثر من 520 ألف أم. وهي من خريجي حاضنة TIEC وفازت بمسابقة برنامج \"الفرصة\"، وطلبت في شارك تانك 9 ملايين جنيه مقابل 10%."
+      "en": "The Baby Garage is a marketplace where parents can buy, sell or donate new and used children's gear, aimed at new mothers unsure what to buy or where to buy it. Farah Ahmed launched it in 2015 as a volunteer-run community, and it has grown into a business based in 6th of October City that earns from merchant subscriptions, sales commissions, a discount card and ad campaigns for baby brands. Its \"Mompreneur\" initiative has helped more than a thousand mothers start reselling from home, and the company says its community counts more than 520,000 mothers. A TIEC incubator graduate and winner of the Al-Forsa TV competition, it asked the sharks for EGP 9 million for 10%. On the show it closed a deal.",
+      "ar": "ذا بيبي جراچ منصة يشتري فيها الآباء والأمهات مستلزمات الأطفال الجديدة والمستعملة ويبيعونها أو يتبرعون بها، وتستهدف الأمهات الجدد اللواتي لا يعرفن ماذا يشترين أو من أين. أطلقتها فرح أحمد عام 2015 مجتمعاً يعتمد على المتطوعين، ثم تحولت إلى شركة مقرها مدينة السادس من أكتوبر تربح من اشتراكات التجار والعمولات وبطاقة الخصم والحملات الإعلانية لعلامات منتجات الأطفال. وساعدت مبادرتها \"مامبرونير\" أكثر من ألف أم على بدء مشروع لإعادة البيع من المنزل، وتقول الشركة إن مجتمعها يضم أكثر من 520 ألف أم. وهي من خريجي حاضنة TIEC وفازت بمسابقة برنامج \"الفرصة\"، وطلبت في شارك تانك 9 ملايين جنيه مقابل 10%. وفي البرنامج أبرمت صفقة."
     },
     "category": "Retail",
     "founders": [
@@ -8256,7 +8346,12 @@
       "amountEGP": 9000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6823046",
       "https://www.facebook.com/thebabygarage/",
@@ -8266,7 +8361,8 @@
       "https://vc4a.com/ventures/the-baby-garage",
       "https://www.startuplist.africa/startups/the-baby-garage",
       "https://misrconnect.com/en/news/egypt-news/the-baby-garage-egyptian-platform-redefines-baby-essentials-exchange",
-      "https://www.youm7.com/6824383"
+      "https://www.youm7.com/6824383",
+      "https://sharktankarabi.com/1698/"
     ],
     "links": {
       "linkedin": "https://www.linkedin.com/company/the-baby-garage",
@@ -8571,8 +8667,8 @@
       "ar": "دنتولايز"
     },
     "description": {
-      "en": "Dentolize is practice-management software that lets dentists run their clinics through an app while patients book appointments, aiming to raise clinic income and cut costs. It began in 2018 when co-founder Dr. Abdelrahman El Shafiey, a Cairo dentist, grew frustrated juggling patient records; today it offers a mobile app, automated patient reminders, performance analytics and customisable billing, and says it powers about 1,350 clinics. It was one of three season-three health-tech projects the sharks put money into.",
-      "ar": "دنتولايز نظام لإدارة عيادات الأسنان يتيح للأطباء إدارة عياداتهم عبر تطبيق، ويمكّن المرضى من حجز المواعيد، بهدف زيادة دخل العيادة وخفض تكاليفها. بدأت الفكرة عام 2018 حين ضاق الشريك المؤسس الدكتور عبد الرحمن الشافعي، وهو طبيب أسنان في القاهرة، بفوضى سجلات المرضى، ويقدم النظام اليوم تطبيقاً للهاتف وتذكيرات تلقائية للمرضى وتحليلات للأداء ونظام فواتير قابلاً للتخصيص، وتقول الشركة إنه يعمل في نحو 1350 عيادة. وكان من ثلاثة مشاريع للتكنولوجيا الصحية استثمر فيها الشاركس في الموسم الثالث."
+      "en": "Dentolize is practice-management software that lets dentists run their clinics through an app while patients book appointments, aiming to raise clinic income and cut costs. It began in 2018 when co-founder Dr. Abdelrahman El Shafiey, a Cairo dentist, grew frustrated juggling patient records; today it offers a mobile app, automated patient reminders, performance analytics and customisable billing, and says it powers about 1,350 clinics. It was one of three season-three health-tech projects the sharks put money into. On the show it closed a deal with Ahmed Tarek Khalil and Ahmed El Sewedy.",
+      "ar": "دنتولايز نظام لإدارة عيادات الأسنان يتيح للأطباء إدارة عياداتهم عبر تطبيق، ويمكّن المرضى من حجز المواعيد، بهدف زيادة دخل العيادة وخفض تكاليفها. بدأت الفكرة عام 2018 حين ضاق الشريك المؤسس الدكتور عبد الرحمن الشافعي، وهو طبيب أسنان في القاهرة، بفوضى سجلات المرضى، ويقدم النظام اليوم تطبيقاً للهاتف وتذكيرات تلقائية للمرضى وتحليلات للأداء ونظام فواتير قابلاً للتخصيص، وتقول الشركة إنه يعمل في نحو 1350 عيادة. وكان من ثلاثة مشاريع للتكنولوجيا الصحية استثمر فيها الشاركس في الموسم الثالث. وفي البرنامج أبرمت صفقة مع أحمد طارق وأحمد السويدي."
     },
     "category": "Health",
     "founders": [
@@ -8587,7 +8683,10 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Ahmed El Sewedy"
+      ],
       "amountEGP": null,
       "equityPct": null
     },
@@ -8599,7 +8698,8 @@
       "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
       "https://vc4a.com/ventures/dentolize/team",
       "https://www.capterra.co.za/software/1045474/dentolize",
-      "https://www.youtube.com/watch?v=pScwobM9jYk"
+      "https://www.youtube.com/watch?v=pScwobM9jYk",
+      "https://sharktankarabi.com/1810/"
     ],
     "video": "Zozntdgiv5A",
     "links": {
@@ -8781,8 +8881,8 @@
       "ar": "سبير مارت"
     },
     "description": {
-      "en": "Spare Mart is a Cairo-based online marketplace for car spare parts that delivers orders to the customer's location. Founded in 2023, it aims to spare drivers the hunt through parts shops by letting them order what they need online. During the pitch, shark Ahmed Tarek challenged the founder on how he would manage all of it in practice.",
-      "ar": "سبير مارت سوق إلكتروني لقطع غيار السيارات مقره القاهرة، يوصّل الطلبات إلى مكان العميل. تأسس عام 2023 بهدف إعفاء أصحاب السيارات من عناء البحث في محلات قطع الغيار عبر طلب ما يحتاجونه أونلاين. وخلال العرض تحدّى الشارك أحمد طارق المؤسس متسائلاً عن كيفية تنفيذ كل ذلك على أرض الواقع."
+      "en": "Spare Mart is a Cairo-based online marketplace for car spare parts that delivers orders to the customer's location. Founded in 2023, it aims to spare drivers the hunt through parts shops by letting them order what they need online. During the pitch, shark Ahmed Tarek challenged the founder on how he would manage all of it in practice. It left the tank without a deal.",
+      "ar": "سبير مارت سوق إلكتروني لقطع غيار السيارات مقره القاهرة، يوصّل الطلبات إلى مكان العميل. تأسس عام 2023 بهدف إعفاء أصحاب السيارات من عناء البحث في محلات قطع الغيار عبر طلب ما يحتاجونه أونلاين. وخلال العرض تحدّى الشارك أحمد طارق المؤسس متسائلاً عن كيفية تنفيذ كل ذلك على أرض الواقع. وخرجت من التانك دون صفقة."
     },
     "category": "Other",
     "founders": [],
@@ -8791,12 +8891,18 @@
       "amountEGP": 7000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6830874",
       "https://www.youtube.com/watch?v=y-46S-TbODw",
       "https://datacommons.dealroom.co/companies/sparemart",
-      "https://www.premieralts.com/companies/sparemart"
+      "https://www.premieralts.com/companies/sparemart",
+      "https://sharktankarabi.com/1793/"
     ],
     "video": "y-46S-TbODw",
     "links": {
@@ -8831,8 +8937,8 @@
       "ar": "مونسترز تيبل"
     },
     "description": {
-      "en": "Monster's Table is a homegrown Egyptian frozen-food brand making healthy, vegetable-rich meals for babies and young children. It started as a passion project when co-founder Farah Aly wanted to give her own daughter the healthiest start with wholesome homemade food. Its range covers nutrient-dense purees, finger foods, mini meals and sauces, each matched to a stage of development. Most meals are ready in about five minutes, so busy parents get a quick and nutritious option. A team of eight, including three chefs, delivers across Cairo and has expanded to Sahel.",
-      "ar": "مونسترز تيبل علامة مصرية للأطعمة المجمدة تقدّم وجبات صحية غنية بالخضروات للرضّع والأطفال الصغار. بدأت كمشروع شغف عندما أرادت الشريكة المؤسسة فرح علي أن تمنح ابنتها أفضل بداية صحية بوجبات منزلية مغذية. تشمل منتجاتها بيوريه غنياً بالعناصر الغذائية وأطعمة تؤكل باليد ووجبات صغيرة وصلصات، وكل منها يناسب مرحلة نمو معينة. تجهز معظم الوجبات في نحو خمس دقائق، فيحصل الآباء المشغولون على خيار سريع ومغذٍّ. يعمل في الشركة فريق من ثمانية أفراد، منهم ثلاثة طهاة، وتوصّل طلباتها في أنحاء القاهرة وتوسعت إلى الساحل الشمالي."
+      "en": "Monster's Table is a homegrown Egyptian frozen-food brand making healthy, vegetable-rich meals for babies and young children. It started as a passion project when co-founder Farah Aly wanted to give her own daughter the healthiest start with wholesome homemade food. Its range covers nutrient-dense purees, finger foods, mini meals and sauces, each matched to a stage of development. Most meals are ready in about five minutes, so busy parents get a quick and nutritious option. A team of eight, including three chefs, delivers across Cairo and has expanded to Sahel. On the show it closed a deal with Abdallah Sallam for EGP 3 million for 30%.",
+      "ar": "مونسترز تيبل علامة مصرية للأطعمة المجمدة تقدّم وجبات صحية غنية بالخضروات للرضّع والأطفال الصغار. بدأت كمشروع شغف عندما أرادت الشريكة المؤسسة فرح علي أن تمنح ابنتها أفضل بداية صحية بوجبات منزلية مغذية. تشمل منتجاتها بيوريه غنياً بالعناصر الغذائية وأطعمة تؤكل باليد ووجبات صغيرة وصلصات، وكل منها يناسب مرحلة نمو معينة. تجهز معظم الوجبات في نحو خمس دقائق، فيحصل الآباء المشغولون على خيار سريع ومغذٍّ. يعمل في الشركة فريق من ثمانية أفراد، منهم ثلاثة طهاة، وتوصّل طلباتها في أنحاء القاهرة وتوسعت إلى الساحل الشمالي. وفي البرنامج أبرمت صفقة مع عبدالله سلام بقيمة 3 مليون جنيه مقابل 30%."
     },
     "category": "Food",
     "founders": [
@@ -8844,13 +8950,21 @@
       "amountEGP": 3000000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": 3000000,
+      "equityPct": 30
+    },
     "sources": [
       "https://www.youm7.com/6839755",
       "https://www.youm7.com/6839509",
       "https://www.facebook.com/themonsterstable/",
       "https://www.youtube.com/watch?v=YXs6JRhoQbg",
-      "https://cairoscene.com/LifeStyle/This-Homegrown-Frozen-Food-Brand-Is-All-About-Keeping-Toddlers-Healthy"
+      "https://cairoscene.com/LifeStyle/This-Homegrown-Frozen-Food-Brand-Is-All-About-Keeping-Toddlers-Healthy",
+      "https://sharktankarabi.com/1866/"
     ],
     "links": {
       "facebook": "https://www.facebook.com/themonsterstable/",
@@ -9202,8 +9316,8 @@
       "ar": "زوري"
     },
     "description": {
-      "en": "ZURI is an Egyptian bag brand whose name means \"beautiful\" in an African language. It designs light, practical everyday bags for people who want something stylish that is also easy to carry all day. Every piece is produced in local Egyptian workshops, which supports local craftsmanship. The brand is led by its founder, an engineer who is also its designer, and sells through its Cairo-based Instagram and Facebook pages.",
-      "ar": "زوري علامة تجارية مصرية للحقائب، ويعني اسمها \"الجميلة\" بإحدى اللغات الأفريقية. تصمم العلامة حقائب يومية خفيفة وعملية لمن يبحث عن قطعة أنيقة يسهل حملها طوال اليوم. تُصنع كل القطع في ورش مصرية محلية، دعمًا للحرفية المحلية. تقود العلامة مؤسستها، وهي مهندسة تتولى التصميم بنفسها، وتبيع منتجاتها عبر صفحتيها على إنستغرام وفيسبوك من القاهرة."
+      "en": "ZURI is an Egyptian bag brand whose name means \"beautiful\" in an African language. It designs light, practical everyday bags for people who want something stylish that is also easy to carry all day. Every piece is produced in local Egyptian workshops, which supports local craftsmanship. The brand is led by its founder, an engineer who is also its designer, and sells through its Cairo-based Instagram and Facebook pages. On the show it closed a deal with Ayman Abbas.",
+      "ar": "زوري علامة تجارية مصرية للحقائب، ويعني اسمها \"الجميلة\" بإحدى اللغات الأفريقية. تصمم العلامة حقائب يومية خفيفة وعملية لمن يبحث عن قطعة أنيقة يسهل حملها طوال اليوم. تُصنع كل القطع في ورش مصرية محلية، دعمًا للحرفية المحلية. تقود العلامة مؤسستها، وهي مهندسة تتولى التصميم بنفسها، وتبيع منتجاتها عبر صفحتيها على إنستغرام وفيسبوك من القاهرة. وفي البرنامج أبرمت صفقة مع أيمن عباس."
     },
     "category": "Fashion",
     "founders": [],
@@ -9212,11 +9326,19 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "http://www.soutalomma.com/Article/1150031",
       "https://www.youtube.com/watch?v=AM5_-mijE5M",
-      "https://www.youtube.com/watch?v=suzwo2c00bI"
+      "https://www.youtube.com/watch?v=suzwo2c00bI",
+      "https://sharktankarabi.com/1940/"
     ],
     "video": "AM5_-mijE5M",
     "links": {
@@ -9415,8 +9537,8 @@
       "ar": "كليو فودز"
     },
     "description": {
-      "en": "Cleo Foods makes rice-cake snacks as a healthy alternative to bread, adapted to Egyptian tastes. Its range spans plain, salted, cinnamon, cheese and chili rice cakes plus a gluten-free Cleo Minis line, sold through supermarkets such as Carrefour and Metro and on Talabat's grocery service. It had 36 products and EGP 15 million in 2024 sales. Founder Ahmed Ismail asked for EGP 5 million for 15% and held firm as the sharks pressed to invest.",
-      "ar": "كليو فودز تصنع وجبات خفيفة من كعك الأرز كبديل صحي للخبز بنكهات تناسب الذوق المصري. تشمل منتجاتها كعك الأرز السادة والمملح وبالقرفة والجبن والشطة، إلى جانب خط كليو ميني الخالي من الجلوتين، وتُباع في سلاسل مثل كارفور ومترو وعبر خدمة البقالة في طلبات. ولديها 36 منتجاً وحققت مبيعات 15 مليون جنيه في 2024. وطلب مؤسسها أحمد إسماعيل 5 ملايين جنيه مقابل 15%، وتمسّك بموقفه بينما أصرّ الشاركس على الاستثمار."
+      "en": "Cleo Foods makes rice-cake snacks as a healthy alternative to bread, adapted to Egyptian tastes. Its range spans plain, salted, cinnamon, cheese and chili rice cakes plus a gluten-free Cleo Minis line, sold through supermarkets such as Carrefour and Metro and on Talabat's grocery service. It had 36 products and EGP 15 million in 2024 sales. Founder Ahmed Ismail asked for EGP 5 million for 15% and held firm as the sharks pressed to invest. It left the tank without a deal.",
+      "ar": "كليو فودز تصنع وجبات خفيفة من كعك الأرز كبديل صحي للخبز بنكهات تناسب الذوق المصري. تشمل منتجاتها كعك الأرز السادة والمملح وبالقرفة والجبن والشطة، إلى جانب خط كليو ميني الخالي من الجلوتين، وتُباع في سلاسل مثل كارفور ومترو وعبر خدمة البقالة في طلبات. ولديها 36 منتجاً وحققت مبيعات 15 مليون جنيه في 2024. وطلب مؤسسها أحمد إسماعيل 5 ملايين جنيه مقابل 15%، وتمسّك بموقفه بينما أصرّ الشاركس على الاستثمار. وخرجت من التانك دون صفقة."
     },
     "category": "Food",
     "founders": [
@@ -9427,7 +9549,12 @@
       "amountEGP": 5000000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6864960",
       "https://www.youm7.com/6864691",
@@ -9436,7 +9563,8 @@
       "https://www.youtube.com/watch?v=WmWszP6V7UA",
       "https://www.youtube.com/watch?v=Sid8lwO-2LQ",
       "https://www.talabat.com/egypt/grocery/743105/carrefour-down-town-new-cairo/snacks-chocolate/rice-cakes-others?aid=10094",
-      "https://www.talabat.com/ar/egypt/grocery/711721/metro-market-maadi-corniche-m003/snacks-chocolate/rice-cakes-others?aid=7969"
+      "https://www.talabat.com/ar/egypt/grocery/711721/metro-market-maadi-corniche-m003/snacks-chocolate/rice-cakes-others?aid=7969",
+      "https://sharktankarabi.com/2089/"
     ],
     "video": "WmWszP6V7UA",
     "links": {
@@ -9471,8 +9599,8 @@
       "ar": "هيلث تاج"
     },
     "description": {
-      "en": "Health Tag is an Egyptian app that works as a marketplace for discounted healthcare services, with more than 3,500 providers and over 520,000 users. Founder Andrew Saad asked the sharks for EGP 20 million for 15% of the company.",
-      "ar": "هيلث تاج تطبيق مصري يعمل كسوق لخدمات الرعاية الصحية بأسعار مخفضة، ويضم أكثر من 3500 مقدم خدمة وما يزيد على 520 ألف مستخدم. وطلب مؤسسه أندرو سعد من الشاركس 20 مليون جنيه مقابل 15% من الشركة."
+      "en": "Health Tag is an Egyptian app that works as a marketplace for discounted healthcare services, with more than 3,500 providers and over 520,000 users. Founder Andrew Saad asked the sharks for EGP 20 million for 15% of the company. On the show it closed a deal with Ahmed Tarek Khalil and Mohamed Farouk for EGP 20 million for 60%.",
+      "ar": "هيلث تاج تطبيق مصري يعمل كسوق لخدمات الرعاية الصحية بأسعار مخفضة، ويضم أكثر من 3500 مقدم خدمة وما يزيد على 520 ألف مستخدم. وطلب مؤسسه أندرو سعد من الشاركس 20 مليون جنيه مقابل 15% من الشركة. وفي البرنامج أبرمت صفقة مع أحمد طارق ومحمد فاروق بقيمة 20 مليون جنيه مقابل 60%."
     },
     "category": "Health",
     "founders": [
@@ -9483,9 +9611,18 @@
       "amountEGP": 20000000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 20000000,
+      "equityPct": 60
+    },
     "sources": [
-      "https://www.youm7.com/story/2025/1/29/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-Health-Tag-%D9%84%D8%AF%D9%8A%D9%86%D8%A7-520-%D8%A3%D9%84%D9%81-%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85-%D9%88%D9%86%D8%B3%D8%AA%D9%87%D8%AF%D9%81-60/6864968"
+      "https://www.youm7.com/story/2025/1/29/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-Health-Tag-%D9%84%D8%AF%D9%8A%D9%86%D8%A7-520-%D8%A3%D9%84%D9%81-%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85-%D9%88%D9%86%D8%B3%D8%AA%D9%87%D8%AF%D9%81-60/6864968",
+      "https://sharktankarabi.com/2079/"
     ]
   },
   {
@@ -9598,8 +9735,8 @@
       "ar": "مانديسا"
     },
     "description": {
-      "en": "Mandisa Naturals is an Egyptian home-living brand that brings Egypt's natural resources to international shoppers, starting with the traditional Egyptian loofah. Founder Mohamed Hebala, who lived in Korea for over nine years, launched it after his Korean wife, who has sensitive skin, found the loofah gentle. Products sourced from Siwa and Sohag, like loofahs, towels and soap, avoid the chlorine bleaching common in the market. The brand sells online, has offices in Egypt and South Korea and a UK representative, and reached its first 2,000 customers in Korea.",
-      "ar": "مانديسا ناتشورالز علامة مصرية لمنتجات المنزل تقدّم موارد مصر الطبيعية للمستهلكين حول العالم، وبدأت بالليفة المصرية التقليدية. أسسها محمد حبالة الذي عاش في كوريا أكثر من تسع سنوات، بعد أن وجدت زوجته الكورية ذات البشرة الحساسة الليفة لطيفة على جلدها. تأتي منتجاتها من سيوة وسوهاج، مثل الليف والمناشف والصابون، وتتجنب التبييض بالكلور الشائع في السوق. تبيع العلامة عبر الإنترنت، ولها مكاتب في مصر وكوريا الجنوبية وممثل في المملكة المتحدة، ووصلت إلى أول ألفي عميل في كوريا."
+      "en": "Mandisa Naturals is an Egyptian home-living brand that brings Egypt's natural resources to international shoppers, starting with the traditional Egyptian loofah. Founder Mohamed Hebala, who lived in Korea for over nine years, launched it after his Korean wife, who has sensitive skin, found the loofah gentle. Products sourced from Siwa and Sohag, like loofahs, towels and soap, avoid the chlorine bleaching common in the market. The brand sells online, has offices in Egypt and South Korea and a UK representative, and reached its first 2,000 customers in Korea. On the show it closed a deal with Mohamed Farouk.",
+      "ar": "مانديسا ناتشورالز علامة مصرية لمنتجات المنزل تقدّم موارد مصر الطبيعية للمستهلكين حول العالم، وبدأت بالليفة المصرية التقليدية. أسسها محمد حبالة الذي عاش في كوريا أكثر من تسع سنوات، بعد أن وجدت زوجته الكورية ذات البشرة الحساسة الليفة لطيفة على جلدها. تأتي منتجاتها من سيوة وسوهاج، مثل الليف والمناشف والصابون، وتتجنب التبييض بالكلور الشائع في السوق. تبيع العلامة عبر الإنترنت، ولها مكاتب في مصر وكوريا الجنوبية وممثل في المملكة المتحدة، ووصلت إلى أول ألفي عميل في كوريا. وفي البرنامج أبرمت صفقة مع محمد فاروق."
     },
     "category": "Home",
     "founders": [
@@ -9610,13 +9747,21 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4952899",
       "https://www.youtube.com/watch?v=K6C26xq56fI",
       "https://www.youtube.com/watch?v=GEaxnzldntk",
       "https://app.dealroom.co/companies/mandisa_naturals",
-      "https://makercenter.wadiz.kr/en/board/card/260"
+      "https://makercenter.wadiz.kr/en/board/card/260",
+      "https://sharktankarabi.com/2153/"
     ],
     "video": "K6C26xq56fI",
     "about": {
@@ -9872,8 +10017,8 @@
       "ar": "ثري داينر"
     },
     "description": {
-      "en": "Three Diner (3 Diner) is a 100% Egyptian brand of American comfort food from Chef Studios, made with local ingredients. Instead of joining Cairo's crowded burger scene, it serves classic American sandwiches, led by a Philly cheesesteak billed as Egypt's most expensive sandwich. It started as a food truck at The Drive by the Waterway in New Cairo. The menu has grown to include chicken and steak Phillys, loaded fries, a slow-cooked short rib sandwich and a breakfast menu.",
-      "ar": "ثري داينر علامة مصرية مئة بالمئة لأكلات الراحة الأمريكية من Chef Studios، تعتمد على مكونات محلية. وبدلًا من منافسة مطاعم البرجر الكثيرة في القاهرة، تقدّم ساندويتشات أمريكية كلاسيكية أشهرها الفيلي تشيز ستيك، الذي تصفه العلامة بأنه أغلى ساندويتش في مصر. بدأت كعربة طعام في ذا درايف باي ذا ووترواي بالقاهرة الجديدة، ثم توسعت قائمتها لتشمل فيلي الدجاج والستيك والبطاطس المحمّلة وساندويتش الضلوع المطهوة ببطء وقائمة إفطار."
+      "en": "Three Diner (3 Diner) is a 100% Egyptian brand of American comfort food from Chef Studios, made with local ingredients. Instead of joining Cairo's crowded burger scene, it serves classic American sandwiches, led by a Philly cheesesteak billed as Egypt's most expensive sandwich. It started as a food truck at The Drive by the Waterway in New Cairo. The menu has grown to include chicken and steak Phillys, loaded fries, a slow-cooked short rib sandwich and a breakfast menu. It left the tank without a deal.",
+      "ar": "ثري داينر علامة مصرية مئة بالمئة لأكلات الراحة الأمريكية من Chef Studios، تعتمد على مكونات محلية. وبدلًا من منافسة مطاعم البرجر الكثيرة في القاهرة، تقدّم ساندويتشات أمريكية كلاسيكية أشهرها الفيلي تشيز ستيك، الذي تصفه العلامة بأنه أغلى ساندويتش في مصر. بدأت كعربة طعام في ذا درايف باي ذا ووترواي بالقاهرة الجديدة، ثم توسعت قائمتها لتشمل فيلي الدجاج والستيك والبطاطس المحمّلة وساندويتش الضلوع المطهوة ببطء وقائمة إفطار. وخرجت من التانك دون صفقة."
     },
     "category": "Food",
     "founders": [],
@@ -9882,14 +10027,20 @@
       "amountEGP": 15000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.mobtada.com/culture/1481470",
       "https://www.youtube.com/watch?v=k9Smsla6LXY",
       "https://www.youtube.com/watch?v=gE7fZq7fwXs",
       "https://cairo360.com/?p=1705030",
       "https://cairo360.com/?p=1657933",
-      "https://enterpriseam.com/egypt/?p=610171"
+      "https://enterpriseam.com/egypt/?p=610171",
+      "https://sharktankarabi.com/2212/"
     ],
     "video": "k9Smsla6LXY",
     "about": {
@@ -9974,8 +10125,8 @@
       "ar": "أب فيوز"
     },
     "description": {
-      "en": "UP FUSE (Up-Fuse) is a Cairo brand that upcycles waste such as plastic bags, bottles and car tyres into bags, backpacks and fashion pieces, putting environmental awareness at its core. Founded in 2013 by Rana Rafie and Yara Yassin, it works with an NGO in Manshiet Nasser and trains refugee women and mothers, giving them flexible income. It has upcycled millions of plastic bags and bottles, with each backpack using 20–25 bags. The sharks were impressed by the quality and design of its products.",
-      "ar": "أب فيوز علامة قاهرية تعيد تدوير المخلفات مثل الأكياس والزجاجات البلاستيكية وإطارات السيارات وتحوّلها إلى حقائب وشنط ظهر وقطع أزياء، وتضع الوعي البيئي في صميم عملها. أسستها رنا رافعي ويارا ياسين عام 2013، وتتعاون مع جمعية أهلية في منشية ناصر، وتدرّب لاجئات وأمهات وتوفر لهن دخلاً بساعات عمل مرنة. وأعادت تدوير ملايين الأكياس والزجاجات البلاستيكية، إذ تستخدم كل شنطة ظهر ما بين 20 و25 كيساً. وأبدى الشاركس إعجابهم بجودة منتجاتها وتصميمها."
+      "en": "UP FUSE (Up-Fuse) is a Cairo brand that upcycles waste such as plastic bags, bottles and car tyres into bags, backpacks and fashion pieces, putting environmental awareness at its core. Founded in 2013 by Rana Rafie and Yara Yassin, it works with an NGO in Manshiet Nasser and trains refugee women and mothers, giving them flexible income. It has upcycled millions of plastic bags and bottles, with each backpack using 20–25 bags. The sharks were impressed by the quality and design of its products. On the show it closed a deal with Ayman Abbas and Nour Swid.",
+      "ar": "أب فيوز علامة قاهرية تعيد تدوير المخلفات مثل الأكياس والزجاجات البلاستيكية وإطارات السيارات وتحوّلها إلى حقائب وشنط ظهر وقطع أزياء، وتضع الوعي البيئي في صميم عملها. أسستها رنا رافعي ويارا ياسين عام 2013، وتتعاون مع جمعية أهلية في منشية ناصر، وتدرّب لاجئات وأمهات وتوفر لهن دخلاً بساعات عمل مرنة. وأعادت تدوير ملايين الأكياس والزجاجات البلاستيكية، إذ تستخدم كل شنطة ظهر ما بين 20 و25 كيساً. وأبدى الشاركس إعجابهم بجودة منتجاتها وتصميمها. وفي البرنامج أبرمت صفقة مع أيمن عباس ونور سويد."
     },
     "category": "Fashion",
     "founders": [
@@ -9987,7 +10138,15 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Nour Swid"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6888715",
       "https://sharktank-egypt.com/en/deals/fashion",
@@ -9995,7 +10154,8 @@
       "https://rpra.ca/?p=87345",
       "https://www.designboom.com/design/women-refugees-upcycle-plastic-waste-apparel-egyptian-fashion-up-fuse-cairo-design-week-03-13-2024/",
       "https://twyg.co.za/qa-how-up-fuse-is-repurposing-the-waste-of-cairos-garbage-city/",
-      "https://www.madamasr.com/en/?p=224832"
+      "https://www.madamasr.com/en/?p=224832",
+      "https://sharktankarabi.com/2272/"
     ],
     "video": "uBjrb9UwWjI",
     "links": {
@@ -10035,8 +10195,8 @@
       "ar": "بابل ستور"
     },
     "description": {
-      "en": "Bubble Store is an Egyptian retail chain selling eco-friendly cleaning and detergent products through in-store refill machines. Instead of buying a new plastic bottle every time, shoppers bring their own containers and refill them with the product they need. The brand says this saves customers about 40% compared with buying packaged products and cuts down on single-use plastic waste, which makes greener cleaning cheaper for households.",
-      "ar": "بابل ستور سلسلة متاجر مصرية تبيع منتجات تنظيف ومنظفات صديقة للبيئة عبر ماكينات تعبئة داخل الفروع. فبدلًا من شراء عبوة بلاستيكية جديدة في كل مرة، يُحضر العملاء عبواتهم ويعيدون تعبئتها بالمنتج الذي يحتاجونه. وتقول العلامة إن ذلك يوفّر للعملاء نحو 40% مقارنةً بالمنتجات المعبأة، ويقلل من مخلفات البلاستيك أحادي الاستخدام، فيصبح التنظيف الصديق للبيئة أوفر للأسر."
+      "en": "Bubble Store is an Egyptian retail chain selling eco-friendly cleaning and detergent products through in-store refill machines. Instead of buying a new plastic bottle every time, shoppers bring their own containers and refill them with the product they need. The brand says this saves customers about 40% compared with buying packaged products and cuts down on single-use plastic waste, which makes greener cleaning cheaper for households. It left the tank without a deal.",
+      "ar": "بابل ستور سلسلة متاجر مصرية تبيع منتجات تنظيف ومنظفات صديقة للبيئة عبر ماكينات تعبئة داخل الفروع. فبدلًا من شراء عبوة بلاستيكية جديدة في كل مرة، يُحضر العملاء عبواتهم ويعيدون تعبئتها بالمنتج الذي يحتاجونه. وتقول العلامة إن ذلك يوفّر للعملاء نحو 40% مقارنةً بالمنتجات المعبأة، ويقلل من مخلفات البلاستيك أحادي الاستخدام، فيصبح التنظيف الصديق للبيئة أوفر للأسر. وخرجت من التانك دون صفقة."
     },
     "category": "Retail",
     "founders": [],
@@ -10045,12 +10205,18 @@
       "amountEGP": 12000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6890385",
       "https://www.youm7.com/6888715",
       "https://www.youtube.com/watch?v=qqmmsOGLZaA",
-      "https://www.youtube.com/watch?v=GzZ-YXN3tLc"
+      "https://www.youtube.com/watch?v=GzZ-YXN3tLc",
+      "https://sharktankarabi.com/2280/"
     ],
     "video": "qqmmsOGLZaA",
     "links": {
@@ -10093,8 +10259,8 @@
       "ar": "رصيدي"
     },
     "description": {
-      "en": "Raseedi is an Egyptian fintech app that began by helping users save on mobile bundles and grew into instant financing for craftspeople and small businesses. In 2021 it raised an $850,000 pre-Series A round led by Samurai Incubate, with existing investors 500 Global, EFG-EV and Falak Startups. In January 2025 it acquired nano-finance provider Kashat and its subsidiary Pharos Microfinance, adding loans of up to EGP 3,000 for small-business owners, disbursed within five minutes. Founder Ahmed Attallah asked the sharks for EGP 50 million for 5%, a valuation Ahmed El Sewedy said he could not believe.",
-      "ar": "رصيدي تطبيق مصري للتكنولوجيا المالية بدأ بمساعدة المستخدمين على توفير باقات الاتصالات، ثم توسّع لتقديم تمويل فوري لأصحاب الحرف والمشروعات الصغيرة. وفي 2021 جمع 850 ألف دولار في جولة ما قبل السلسلة A بقيادة Samurai Incubate، بمشاركة مستثمريه 500 Global وEFG-EV وفلك. وفي يناير 2025 استحوذ على شركة التمويل متناهي الصغر كاشات وشركتها التابعة فاروس، ليضيف قروضاً تصل إلى 3000 جنيه لأصحاب المشروعات الصغيرة تُصرف خلال خمس دقائق. وطلب مؤسسه أحمد عطا الله 50 مليون جنيه مقابل 5%، وهو تقييم قال أحمد السويدي إنه لا يصدّقه."
+      "en": "Raseedi is an Egyptian fintech app that began by helping users save on mobile bundles and grew into instant financing for craftspeople and small businesses. In 2021 it raised an $850,000 pre-Series A round led by Samurai Incubate, with existing investors 500 Global, EFG-EV and Falak Startups. In January 2025 it acquired nano-finance provider Kashat and its subsidiary Pharos Microfinance, adding loans of up to EGP 3,000 for small-business owners, disbursed within five minutes. Founder Ahmed Attallah asked the sharks for EGP 50 million for 5%, a valuation Ahmed El Sewedy said he could not believe. It left the tank without a deal.",
+      "ar": "رصيدي تطبيق مصري للتكنولوجيا المالية بدأ بمساعدة المستخدمين على توفير باقات الاتصالات، ثم توسّع لتقديم تمويل فوري لأصحاب الحرف والمشروعات الصغيرة. وفي 2021 جمع 850 ألف دولار في جولة ما قبل السلسلة A بقيادة Samurai Incubate، بمشاركة مستثمريه 500 Global وEFG-EV وفلك. وفي يناير 2025 استحوذ على شركة التمويل متناهي الصغر كاشات وشركتها التابعة فاروس، ليضيف قروضاً تصل إلى 3000 جنيه لأصحاب المشروعات الصغيرة تُصرف خلال خمس دقائق. وطلب مؤسسه أحمد عطا الله 50 مليون جنيه مقابل 5%، وهو تقييم قال أحمد السويدي إنه لا يصدّقه. وخرجت من التانك دون صفقة."
     },
     "category": "Fintech",
     "founders": [
@@ -10105,13 +10271,19 @@
       "amountEGP": 50000000,
       "equityPct": 5
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6890325",
       "https://www.youm7.com/6888715",
       "https://www.youtube.com/watch?v=oCXBeyzBRHA",
       "https://www.wamda.com/en/2021/11/raseedi-raises-850000-pre-series",
-      "https://launchbaseafrica.com/2025/01/14/egyptian-fintech-raseedi-to-offer-5-minute-loans-after-kashat-acquisition-deal"
+      "https://launchbaseafrica.com/2025/01/14/egyptian-fintech-raseedi-to-offer-5-minute-loans-after-kashat-acquisition-deal",
+      "https://sharktankarabi.com/2266/"
     ],
     "video": "oCXBeyzBRHA",
     "links": {
@@ -10147,8 +10319,8 @@
       "ar": "لوب"
     },
     "description": {
-      "en": "Loop is a platform for launching light-mobility services and e-scooter rentals, adapted to the Egyptian market to fill the gap in short-distance transport. Through the loop Scooter Egypt app, riders sign up with a phone number and unlock shared electric scooters for first- and last-mile trips, with a free trial ride to start. Founders Moataz El-Wasimy and Mohamed El-Sheikh asked for EGP 6 million for 20%.",
-      "ar": "لوب منصة لإطلاق خدمات التنقل الخفيف وتأجير السكوترات الكهربائية، طوّرت نموذجها ليناسب السوق المصري ويسد فجوة المواصلات للمسافات القصيرة. ومن خلال تطبيق loop Scooter Egypt يسجّل المستخدم برقم هاتفه ويفتح سكوتراً كهربائياً مشتركاً لرحلات الميل الأول والأخير، مع رحلة تجريبية مجانية للبداية. وطلب مؤسساها معتز الوسيمي ومحمد الشيخ 6 ملايين جنيه مقابل 20%."
+      "en": "Loop is a platform for launching light-mobility services and e-scooter rentals, adapted to the Egyptian market to fill the gap in short-distance transport. Through the loop Scooter Egypt app, riders sign up with a phone number and unlock shared electric scooters for first- and last-mile trips, with a free trial ride to start. Founders Moataz El-Wasimy and Mohamed El-Sheikh asked for EGP 6 million for 20%. On the show it closed a deal with Abdallah Sallam and Mohamed Farouk for EGP 10 million for 45%.",
+      "ar": "لوب منصة لإطلاق خدمات التنقل الخفيف وتأجير السكوترات الكهربائية، طوّرت نموذجها ليناسب السوق المصري ويسد فجوة المواصلات للمسافات القصيرة. ومن خلال تطبيق loop Scooter Egypt يسجّل المستخدم برقم هاتفه ويفتح سكوتراً كهربائياً مشتركاً لرحلات الميل الأول والأخير، مع رحلة تجريبية مجانية للبداية. وطلب مؤسساها معتز الوسيمي ومحمد الشيخ 6 ملايين جنيه مقابل 20%. وفي البرنامج أبرمت صفقة مع عبدالله سلام ومحمد فاروق بقيمة 10 مليون جنيه مقابل 45%."
     },
     "category": "Tech",
     "founders": [
@@ -10160,12 +10332,21 @@
       "amountEGP": 6000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 10000000,
+      "equityPct": 45
+    },
     "sources": [
       "https://www.youm7.com/6890343",
       "https://www.youm7.com/6888715",
       "https://www.youtube.com/watch?v=eCKivFRUTR0",
-      "https://apps.apple.com/app/id1619635091"
+      "https://apps.apple.com/app/id1619635091",
+      "https://sharktankarabi.com/2274/"
     ],
     "video": "eCKivFRUTR0",
     "links": {
@@ -10196,8 +10377,8 @@
       "ar": "أمانليك"
     },
     "description": {
-      "en": "Amanleek is an online insurance broker that lets customers compare medical and car insurance quotes from different insurers from home in three steps, serving both individuals and businesses. Founded in 2019 and based in New Cairo, it is described as the first Egyptian insurtech to hold a digital brokerage licence and offers its own medical plans such as Secure Plus. It has 30,000+ clients and EGP 185 million in sales. Founder Mohab Abou Eita asked for EGP 40 million for 10%.",
-      "ar": "أمانليك وسيط تأمين إلكتروني يتيح للأفراد والشركات مقارنة عروض التأمين الطبي وتأمين السيارات من شركات مختلفة من المنزل في ثلاث خطوات. تأسست عام 2019 ومقرها القاهرة الجديدة، وتوصف بأنها أول شركة تكنولوجيا تأمين مصرية تحصل على ترخيص وساطة رقمية، وتقدم برامج طبية خاصة مثل «سيكيور بلس». ولديها أكثر من 30 ألف عميل ومبيعات بلغت 185 مليون جنيه. وطلب مؤسسها مهاب أبو عيطة 40 مليون جنيه مقابل 10%."
+      "en": "Amanleek is an online insurance broker that lets customers compare medical and car insurance quotes from different insurers from home in three steps, serving both individuals and businesses. Founded in 2019 and based in New Cairo, it is described as the first Egyptian insurtech to hold a digital brokerage licence and offers its own medical plans such as Secure Plus. It has 30,000+ clients and EGP 185 million in sales. Founder Mohab Abou Eita asked for EGP 40 million for 10%. It left the tank without a deal.",
+      "ar": "أمانليك وسيط تأمين إلكتروني يتيح للأفراد والشركات مقارنة عروض التأمين الطبي وتأمين السيارات من شركات مختلفة من المنزل في ثلاث خطوات. تأسست عام 2019 ومقرها القاهرة الجديدة، وتوصف بأنها أول شركة تكنولوجيا تأمين مصرية تحصل على ترخيص وساطة رقمية، وتقدم برامج طبية خاصة مثل «سيكيور بلس». ولديها أكثر من 30 ألف عميل ومبيعات بلغت 185 مليون جنيه. وطلب مؤسسها مهاب أبو عيطة 40 مليون جنيه مقابل 10%. وخرجت من التانك دون صفقة."
     },
     "category": "Fintech",
     "founders": [
@@ -10209,14 +10390,20 @@
       "amountEGP": 40000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6898829",
       "https://www.youm7.com/6897404",
       "https://www.startuplist.africa/startups/amanleek",
       "https://www.youtube.com/watch?v=3oF5c9e6mQQ",
       "https://launchafrica.vc/amanleek",
-      "https://www.cbinsights.com/company/amanleek"
+      "https://www.cbinsights.com/company/amanleek",
+      "https://sharktankarabi.com/2326/"
     ],
     "video": "3oF5c9e6mQQ",
     "links": {
@@ -10259,8 +10446,8 @@
       "ar": "بريذ"
     },
     "description": {
-      "en": "Breathe is an Egyptian hijab-friendly clothing brand built around a simple idea: the cover under a scarf should look after the hair beneath it. Its signature product is a bandana head cover made from bamboo fibre, a soft and breathable fabric chosen to protect hair. It is aimed at women who wear the hijab every day and struggle with the heat, friction and discomfort of ordinary scarf fabrics.",
-      "ar": "بريذ علامة أزياء مصرية مناسبة للمحجبات، تقوم على فكرة بسيطة: أن الغطاء الذي يُلبس تحت الحجاب ينبغي أن يحافظ على الشعر. منتجها الأساسي باندانا لتغطية الرأس مصنوعة من ألياف البامبو، وهو قماش ناعم يسمح بمرور الهواء ويحمي الشعر. وتستهدف العلامة النساء اللواتي يرتدين الحجاب يوميًا ويعانين من الحرارة والاحتكاك وعدم الراحة مع أقمشة الطرح المعتادة."
+      "en": "Breathe is an Egyptian hijab-friendly clothing brand built around a simple idea: the cover under a scarf should look after the hair beneath it. Its signature product is a bandana head cover made from bamboo fibre, a soft and breathable fabric chosen to protect hair. It is aimed at women who wear the hijab every day and struggle with the heat, friction and discomfort of ordinary scarf fabrics. It left the tank without a deal.",
+      "ar": "بريذ علامة أزياء مصرية مناسبة للمحجبات، تقوم على فكرة بسيطة: أن الغطاء الذي يُلبس تحت الحجاب ينبغي أن يحافظ على الشعر. منتجها الأساسي باندانا لتغطية الرأس مصنوعة من ألياف البامبو، وهو قماش ناعم يسمح بمرور الهواء ويحمي الشعر. وتستهدف العلامة النساء اللواتي يرتدين الحجاب يوميًا ويعانين من الحرارة والاحتكاك وعدم الراحة مع أقمشة الطرح المعتادة. وخرجت من التانك دون صفقة."
     },
     "category": "Fashion",
     "founders": [
@@ -10271,14 +10458,20 @@
       "amountEGP": 20000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4979257",
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://www.youm7.com/6898813",
       "https://www.youm7.com/6897404",
       "https://www.youtube.com/watch?v=eEX0GWXnB14",
-      "https://www.youtube.com/watch?v=O1Agu2TT4FA"
+      "https://www.youtube.com/watch?v=O1Agu2TT4FA",
+      "https://sharktankarabi.com/2328/"
     ],
     "video": "eEX0GWXnB14",
     "links": {
@@ -10320,8 +10513,8 @@
       "ar": "باسك"
     },
     "description": {
-      "en": "BASQ is a dessert brand from founders Mohamed Hamama and Mariam Taha with a single item on its menu: San Sebastián (Basque burnt) cheesecake. It sells the cake in three sizes, 12 cm, 20 cm and 24 cm. The business started in the founders' home kitchen and grew into a shop after restaurants began ordering in bulk. In Season 3 they asked the sharks for EGP 3 million for 10%.",
-      "ar": "باسك علامة حلويات أسسها محمد حمامة ومريم طه، وتضم قائمتها صنفاً واحداً فقط: تشيز كيك سان سيباستيان (الباسك المحروق). وتبيع الكيكة بثلاثة أحجام: 12 و20 و24 سنتيمتراً. انطلق المشروع من مطبخ المنزل ثم تحول إلى محل بعدما بدأت المطاعم تطلب منتجاته بكميات كبيرة. وفي الموسم الثالث طلب المؤسسان من المستثمرين 3 ملايين جنيه مقابل 10%."
+      "en": "BASQ is a dessert brand from founders Mohamed Hamama and Mariam Taha with a single item on its menu: San Sebastián (Basque burnt) cheesecake. It sells the cake in three sizes, 12 cm, 20 cm and 24 cm. The business started in the founders' home kitchen and grew into a shop after restaurants began ordering in bulk. In Season 3 they asked the sharks for EGP 3 million for 10%. On the show it closed a deal with Nour Swid and Abdallah Sallam and Mohamed Farouk for EGP 3 million for 25%.",
+      "ar": "باسك علامة حلويات أسسها محمد حمامة ومريم طه، وتضم قائمتها صنفاً واحداً فقط: تشيز كيك سان سيباستيان (الباسك المحروق). وتبيع الكيكة بثلاثة أحجام: 12 و20 و24 سنتيمتراً. انطلق المشروع من مطبخ المنزل ثم تحول إلى محل بعدما بدأت المطاعم تطلب منتجاته بكميات كبيرة. وفي الموسم الثالث طلب المؤسسان من المستثمرين 3 ملايين جنيه مقابل 10%. وفي البرنامج أبرمت صفقة مع نور سويد وعبدالله سلام ومحمد فاروق بقيمة 3 مليون جنيه مقابل 25%."
     },
     "category": "Food",
     "founders": [
@@ -10333,14 +10526,24 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Nour Swid",
+        "Abdallah Sallam",
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 3000000,
+      "equityPct": 25
+    },
     "sources": [
       "https://www.dostor.org/4979257",
       "https://www.youm7.com/6898849",
       "https://www.youtube.com/watch?v=302xv8mAydM",
       "https://www.youtube.com/watch?v=9BT9e9ztpAc",
       "https://www.youtube.com/watch?v=Lwa5215_H24",
-      "https://enterpriseam.com/egypt/?p=614387"
+      "https://enterpriseam.com/egypt/?p=614387",
+      "https://sharktankarabi.com/2318/"
     ],
     "video": "302xv8mAydM",
     "links": {
@@ -12265,8 +12468,8 @@
       "ar": "إيزاك أوتوميشن"
     },
     "description": {
-      "en": "EISAC Automation is a Cairo-based industrial-automation partner for factories, founded in 2009 and led by Raymond Kamal. It helps plants keep production lines running by supplying, programming and maintaining PLC, HMI, SCADA and servo systems, repairing industrial electronics, and installing and commissioning machines. Its clients include pharmaceutical, food and plastics manufacturers across Africa, the Middle East and Europe. The company offers Egyptian engineering expertise at roughly a third of the cost of bringing in a foreign expert.",
-      "ar": "إيزاك أوتوميشن شريك متخصص في الأتمتة الصناعية للمصانع، مقره القاهرة، تأسس عام 2009 ويقوده ريمون كمال. تساعد الشركة المصانع على إبقاء خطوط إنتاجها تعمل، إذ توفّر أنظمة PLC وHMI وSCADA والسيرفو وتبرمجها وتصونها، وتصلح الإلكترونيات الصناعية، وتتولى تركيب الماكينات وتشغيلها. ويضم عملاؤها مصانع أدوية وأغذية وبلاستيك في أفريقيا والشرق الأوسط وأوروبا. وتقدّم الشركة خبرة هندسية مصرية بنحو ثلث تكلفة الاستعانة بخبير أجنبي."
+      "en": "EISAC Automation is a Cairo-based industrial-automation partner for factories, founded in 2009 and led by Raymond Kamal. It helps plants keep production lines running by supplying, programming and maintaining PLC, HMI, SCADA and servo systems, repairing industrial electronics, and installing and commissioning machines. Its clients include pharmaceutical, food and plastics manufacturers across Africa, the Middle East and Europe. The company offers Egyptian engineering expertise at roughly a third of the cost of bringing in a foreign expert. It did not get an investment from the sharks.",
+      "ar": "إيزاك أوتوميشن شريك متخصص في الأتمتة الصناعية للمصانع، مقره القاهرة، تأسس عام 2009 ويقوده ريمون كمال. تساعد الشركة المصانع على إبقاء خطوط إنتاجها تعمل، إذ توفّر أنظمة PLC وHMI وSCADA والسيرفو وتبرمجها وتصونها، وتصلح الإلكترونيات الصناعية، وتتولى تركيب الماكينات وتشغيلها. ويضم عملاؤها مصانع أدوية وأغذية وبلاستيك في أفريقيا والشرق الأوسط وأوروبا. وتقدّم الشركة خبرة هندسية مصرية بنحو ثلث تكلفة الاستعانة بخبير أجنبي. ولم تحصل على استثمار من الشاركس."
     },
     "category": "Tech",
     "founders": [
@@ -12291,7 +12494,8 @@
       "https://www.youtube.com/watch?v=Sd-s2YrMZ44",
       "https://www.figlobal.com/africa/en/exhibitor-list/exhibitor-detail.eisac-automation-automatic-and-electromechanical-control-systems.html",
       "https://www.ebay.com/str/eisacautomationegypt",
-      "https://visitor.figlobal.com/event/fi-africa-and-propak-mena-5/exhibitor/RXhoaWJpdG9yXzI0NDg2ODI="
+      "https://visitor.figlobal.com/event/fi-africa-and-propak-mena-5/exhibitor/RXhoaWJpdG9yXzI0NDg2ODI=",
+      "https://sharktankarabi.com/4138/"
     ],
     "video": "j2XH8FpdFek",
     "links": {
@@ -12913,8 +13117,8 @@
       "ar": "بلوم"
     },
     "description": {
-      "en": "Plume is an Egyptian sleep brand that brings the five-star hotel bedroom home. It began as a small family workshop and grew into a supplier of bedding to some of Egypt's biggest hotels. It now sells the same hotel-grade mattresses and sleep products straight to households through its online store. Its materials are imported from Germany, from Hanseatic Bedding, a leading hospitality bedding maker, so families can get the hotel experience every night. Its tagline is 'Rest Assured'.",
-      "ar": "بلوم علامة مصرية متخصصة في منتجات النوم، تنقل تجربة غرف فنادق الخمس نجوم إلى المنازل. بدأت كورشة عائلية صغيرة، ثم أصبحت موردًا لمفروشات النوم لعدد من أكبر الفنادق في مصر. وتبيع اليوم المراتب ومنتجات النوم نفسها بالجودة الفندقية مباشرة إلى الأسر عبر متجرها الإلكتروني. وتستورد خاماتها من ألمانيا من شركة Hanseatic Bedding، إحدى أبرز الشركات العالمية في مفروشات الفنادق، لتمنح العملاء تجربة الفندق كل ليلة تحت شعار «Rest Assured»."
+      "en": "Plume is an Egyptian sleep brand that brings the five-star hotel bedroom home. It began as a small family workshop and grew into a supplier of bedding to some of Egypt's biggest hotels. It now sells the same hotel-grade mattresses and sleep products straight to households through its online store. Its materials are imported from Germany, from Hanseatic Bedding, a leading hospitality bedding maker, so families can get the hotel experience every night. Its tagline is 'Rest Assured'. The founders held their ground in negotiations and closed a deal.",
+      "ar": "بلوم علامة مصرية متخصصة في منتجات النوم، تنقل تجربة غرف فنادق الخمس نجوم إلى المنازل. بدأت كورشة عائلية صغيرة، ثم أصبحت موردًا لمفروشات النوم لعدد من أكبر الفنادق في مصر. وتبيع اليوم المراتب ومنتجات النوم نفسها بالجودة الفندقية مباشرة إلى الأسر عبر متجرها الإلكتروني. وتستورد خاماتها من ألمانيا من شركة Hanseatic Bedding، إحدى أبرز الشركات العالمية في مفروشات الفنادق، لتمنح العملاء تجربة الفندق كل ليلة تحت شعار «Rest Assured». وتمسّك المؤسسون بموقفهم في التفاوض حتى أبرموا صفقة."
     },
     "category": "Home",
     "founders": [],
@@ -12923,12 +13127,18 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.elwatannews.com/news/details/8219208",
       "https://www.dostor.org/5407960",
       "https://www.youtube.com/watch?v=Ls0pel2WgnQ",
-      "https://plume-eg.com/"
+      "https://plume-eg.com/",
+      "https://sharktankarabi.com/4730/"
     ],
     "video": "Ls0pel2WgnQ",
     "links": {
@@ -13038,8 +13248,8 @@
       "ar": "ذا ناينز"
     },
     "description": {
-      "en": "The Nines is an Egyptian fashion brand that makes designer luggage covers. Each cover pulls over a suitcase to show off its owner's personality, and it also solves a common travel problem: spotting your own bag among dozens of look-alike suitcases at baggage claim. The brand has built real traction, reporting EGP 14 million in sales from its covers, and pitched on Shark Tank Egypt in Season 4.",
-      "ar": "ذا ناينز علامة أزياء مصرية تصمم أغطية حقائب سفر مميزة. يُلبَس الغطاء فوق الحقيبة ليعبّر عن شخصية صاحبها، ويحل في الوقت نفسه مشكلة شائعة لدى المسافرين، وهي صعوبة التعرف على حقيبتك وسط عشرات الحقائب المتشابهة عند استلام الأمتعة. حققت العلامة نجاحاً ملموساً، إذ بلغت مبيعات أغطيتها 14 مليون جنيه مصري، وقد عرضت مشروعها في الموسم الرابع من شارك تانك مصر."
+      "en": "The Nines is an Egyptian fashion brand that makes designer luggage covers. Each cover pulls over a suitcase to show off its owner's personality, and it also solves a common travel problem: spotting your own bag among dozens of look-alike suitcases at baggage claim. The brand has built real traction, reporting EGP 14 million in sales from its covers, and pitched on Shark Tank Egypt in Season 4. All the sharks went out, so it left without a deal.",
+      "ar": "ذا ناينز علامة أزياء مصرية تصمم أغطية حقائب سفر مميزة. يُلبَس الغطاء فوق الحقيبة ليعبّر عن شخصية صاحبها، ويحل في الوقت نفسه مشكلة شائعة لدى المسافرين، وهي صعوبة التعرف على حقيبتك وسط عشرات الحقائب المتشابهة عند استلام الأمتعة. حققت العلامة نجاحاً ملموساً، إذ بلغت مبيعات أغطيتها 14 مليون جنيه مصري، وقد عرضت مشروعها في الموسم الرابع من شارك تانك مصر. وانسحب كل الشاركس، فخرجت دون صفقة."
     },
     "category": "Fashion",
     "founders": [],
@@ -13048,11 +13258,17 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youtube.com/watch?v=HtNe0hgjDqw",
       "https://www.youtube.com/watch?v=VLEX9zG0aZY",
-      "https://www.youtube.com/watch?v=0aU3409kogA"
+      "https://www.youtube.com/watch?v=0aU3409kogA",
+      "https://sharktankarabi.com/3704/"
     ],
     "video": "HtNe0hgjDqw",
     "links": {

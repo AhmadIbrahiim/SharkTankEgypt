@@ -156,3 +156,45 @@ Held back: Health Tag (search summaries describe a 20M for 60% deal with Ahmed T
 | Drip Yourself | Deal with Dina Ghabbour + Ayman Abbas | YouTube 0r8SGKtcHcI "استثمارات دينا غبور وأيمن عباس خلال ال٤ مواسم": "Driftech، Drip Yourself، وMobikya جمعوا دينا غبور وأيمن عباس في نفس الـ Deal" |
 | Mobikya | Sharks named: Dina Ghabbour + Ayman Abbas (deal already recorded) | same clip |
 | NNO Home, Re-Blocks | Deal for the amount asked (EGP 2M and 1M); sharks and equity not stated | YouTube N8POze0VTas "مشروعين عرفوا يخرجوا بنفس الاستثمار اللي طلبوه — NNO وReblox" |
+
+## Ninth pass: the show's full clip archive
+
+Actions indexed all 2,785 official Shark Tank Egypt clips reposted on sharktankarabi.com (title, description, date). Four subagents read the clips matched to each open startup; each change below quotes a clip that states the outcome, re-checked against the clip text.
+
+| Startup | Result | Clip |
+|---|---|---|
+| Yumby | No deal | https://sharktankarabi.com/4138/ |
+| EISAC Automation | No deal | https://sharktankarabi.com/4138/ |
+| Shaghalny | Deal: Ayman Abbas, EGP 5M for 35% | https://sharktankarabi.com/2398/ |
+| Country House | Deal: Ahmed Tarek Khalil for 50% | https://sharktankarabi.com/1032/ |
+| Plume | Deal (sharks not named) | https://sharktankarabi.com/4730/ |
+| The Nines | No deal | https://sharktankarabi.com/3704/ |
+| Dentolize | Deal: Ahmed Tarek Khalil + Ahmed El Sewedy | https://sharktankarabi.com/1810/ |
+| The Baby Garage | Deal (sharks not named) | https://sharktankarabi.com/1698/ |
+| Sparemart | No deal | https://sharktankarabi.com/1793/ |
+| Monster's Table | Deal: Abdallah Sallam, EGP 3M for 30% | https://sharktankarabi.com/1866/ |
+| ZURI | Deal: Ayman Abbas | https://sharktankarabi.com/1940/ |
+| Cleo Foods | No deal | https://sharktankarabi.com/2089/ |
+| Health Tag | Deal: Ahmed Tarek Khalil + Mohamed Farouk, EGP 20M for 60% | https://sharktankarabi.com/2079/ |
+| Mandisa | Deal: Mohamed Farouk | https://sharktankarabi.com/2153/ |
+| 3 DINER | No deal | https://sharktankarabi.com/2212/ |
+| UP FUSE | Deal: Ayman Abbas + Nour Swid | https://sharktankarabi.com/2272/ |
+| Bubble Store | No deal | https://sharktankarabi.com/2280/ |
+| Raseedi | No deal | https://sharktankarabi.com/2266/ |
+| Loop | Deal: Abdallah Sallam + Mohamed Farouk, EGP 10M for 45% | https://sharktankarabi.com/2274/ |
+| Amanleek | No deal | https://sharktankarabi.com/2326/ |
+| Breathe | No deal | https://sharktankarabi.com/2328/ |
+| BASQ | Deal: Nour Swid + Abdallah Sallam + Mohamed Farouk, EGP 3M for 25% | https://sharktankarabi.com/2318/ |
+| Naseej | Deal: Mohamed Farouk for 45% | https://sharktankarabi.com/584/ |
+| Bzour | Deal: Ahmed Tarek Khalil + Ahmed El Sewedy, EGP 2M for 50% | https://sharktankarabi.com/870/ |
+| YAYA | Deal (sharks not named) for 25% | https://sharktankarabi.com/1571/ |
+| Piccup | Deal (sharks not named) | https://sharktankarabi.com/836/ |
+| EGIKE | Deal: Ahmed El Sewedy | https://sharktankarabi.com/2676/ |
+| El Motaheda | No deal | https://sharktankarabi.com/308/ |
+| El Fares | Deal (sharks not named), EGP 6.25M for 50% | https://sharktankarabi.com/172/ |
+| METADOC | Deal (sharks not named) | https://sharktankarabi.com/2744/ |
+| Right Home | Deal: Ahmed Tarek Khalil + Ayman Abbas | https://sharktankarabi.com/296/ |
+| Ostrich Land | Deal: Ahmed Tarek Khalil, EGP 9M for 45% | https://sharktankarabi.com/606/ |
+| Halite Egypt | No deal | https://sharktankarabi.com/191/ |
+
+Also: El Fares's amount corrected from EGP 5M to 6.25M (all five sharks, 50%); Health Tag recorded at EGP 20M for 60% with Ahmed Tarek and Mohamed Farouk; Shaghalny's shark named (Ayman Abbas, among his first three investments). Sadu Designs: a clip says all the sharks joined its deal, but only Mohamed Farouk is named, so it stays as recorded.
