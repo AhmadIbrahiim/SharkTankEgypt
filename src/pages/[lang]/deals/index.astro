@@ -81,11 +81,11 @@ const jsonld = {
     <section>
       <h2>{ar ? 'أرقام الصفقات في سطور' : 'Deals in numbers'}</h2>
       <dl class="kpis">
-        <div><dt>{ar ? 'متوسط الصفقة' : 'Average deal'}</dt><dd>{money(mean(amounts), lang)}</dd><span>{ar ? `${num(amounts.length, lang)} صفقة بمبلغ معلن` : `${amounts.length} deals with a disclosed amount`}</span></div>
-        <div><dt>{ar ? 'الصفقة الوسيطة' : 'Median deal'}</dt><dd>{money(median(amounts), lang)}</dd><span>{ar ? 'نصف الصفقات أقل منها' : 'half the deals are smaller'}</span></div>
-        <div><dt>{ar ? 'التقييم الوسيط' : 'Median valuation'}</dt><dd>{money(median(vals), lang)}</dd><span>{ar ? `${num(vals.length, lang)} صفقة بمبلغ ونسبة` : `${vals.length} deals with amount and equity`}</span></div>
-        <div><dt>{ar ? 'المبلغ المتفق عليه ÷ المطلوب' : 'Agreed ÷ asked amount'}</dt><dd>{ratio != null ? `${fx(ratio, 2)}×` : '—'}</dd><span>{ar ? `الوسيط، ${num(both.length, lang)} صفقة` : `median, ${both.length} deals`}</span></div>
-        <div><dt>{ar ? 'الحصة: المعروضة ← المتفق عليها' : 'Equity: offered → agreed'}</dt><dd>{eqAsk != null && eqGot != null ? `${fx(eqAsk)}% ${ar ? '←' : '→'} ${fx(eqGot)}%` : '—'}</dd><span>{ar ? `المتوسط، ${num(eqBoth.length, lang)} صفقة` : `average, ${eqBoth.length} deals`}</span></div>
+        <div><dt>{ar ? 'متوسط الصفقة' : 'Average deal'}</dt><dd>{money(mean(amounts), lang)}<small>{ar ? `${num(amounts.length, lang)} صفقة بمبلغ معلن` : `${amounts.length} deals with a disclosed amount`}</small></dd></div>
+        <div><dt>{ar ? 'الصفقة الوسيطة' : 'Median deal'}</dt><dd>{money(median(amounts), lang)}<small>{ar ? 'نصف الصفقات أقل منها' : 'half the deals are smaller'}</small></dd></div>
+        <div><dt>{ar ? 'التقييم الوسيط' : 'Median valuation'}</dt><dd>{money(median(vals), lang)}<small>{ar ? `${num(vals.length, lang)} صفقة بمبلغ ونسبة` : `${vals.length} deals with amount and equity`}</small></dd></div>
+        <div><dt>{ar ? 'المبلغ المتفق عليه ÷ المطلوب' : 'Agreed ÷ asked amount'}</dt><dd>{ratio != null ? `${fx(ratio, 2)}×` : '—'}<small>{ar ? `الوسيط، ${num(both.length, lang)} صفقة` : `median, ${both.length} deals`}</small></dd></div>
+        <div><dt>{ar ? 'الحصة: المعروضة ← المتفق عليها' : 'Equity: offered → agreed'}</dt><dd>{eqAsk != null && eqGot != null ? `${fx(eqAsk)}% ${ar ? '←' : '→'} ${fx(eqGot)}%` : '—'}<small>{ar ? `المتوسط، ${num(eqBoth.length, lang)} صفقة` : `average, ${eqBoth.length} deals`}</small></dd></div>
       </dl>
     </section>
 
@@ -176,8 +176,8 @@ const jsonld = {
   .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; margin: 0; }
   .kpis div { padding: 14px 16px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
   .kpis dt { color: var(--ink-2); font-size: .85rem; }
-  .kpis dd { margin: 4px 0 2px; font-size: 1.35rem; font-weight: 650; }
-  .kpis span { color: var(--ink-2); font-size: .8rem; }
+  .kpis dd { margin: 4px 0 0; font-size: 1.35rem; font-weight: 650; }
+  .kpis small { display: block; margin-top: 2px; color: var(--ink-2); font-size: .8rem; font-weight: 400; }
   .method ul { margin: 0; padding-inline-start: 20px; color: var(--ink-2); max-width: 75ch; }
   .calc { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: end; padding: 16px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
   .calc label { display: flex; flex-direction: column; gap: 4px; font-size: .88rem; color: var(--ink-2); }
