@@ -10,15 +10,17 @@ const abs = (path: string) => new URL(`${base}${path}`, Astro.site).href;
 const url = new URL(Astro.url.pathname, Astro.site).href;
 const altUrl = abs(altPath);
 const [arUrl, enUrl] = lang === 'ar' ? [url, altUrl] : [altUrl, url];
-const fullTitle = title ? `${title} | ${s.title}` : `${s.title} | ${t[other].title}`;
+const fullTitle = title ? `${title} | ${s.short}` : `${s.title} | ${t[other].title}`;
 const desc = description ?? s.tagline;
+// Search results show ~155 characters: cut at a word boundary (structured data keeps the full text).
+const metaDesc = desc.length <= 158 ? desc : `${desc.slice(0, 157).replace(/[\s,،.؛;:–-]+\S*$/, '')}…`;
 // Every page gets its own share image at /og/<path>.jpg, rendered from `og` after the build (scripts/og.mjs).
 const og = card ?? { kind: 'page', title: title ?? s.title, sub: description ?? s.tagline, photo: image };
 const ogPath = `/og/${Astro.url.pathname.slice(base.length).replace(/^\/|\/$/g, '') || 'index'}.jpg`;
 // One @graph per page: site + publisher + show, this WebPage, its breadcrumb trail and the page's own entity.
 const segs = Astro.url.pathname.slice(base.length).split('/').filter(Boolean);
 const label = (k: string, prev?: string, prev2?: string): string | null => {
-  if (!prev) return ({ sharks: s.navSharks, founders: s.navFounders, faq: s.navFaq } as Record<string, string>)[k] ?? startups.find((x) => x.id === k)?.name[lang] ?? null;
+  if (!prev) return ({ sharks: s.navSharks, founders: s.navFounders, faq: s.navFaq, deals: s.navDeals } as Record<string, string>)[k] ?? startups.find((x) => x.id === k)?.name[lang] ?? null;
   if (prev === 'season') return seasonLabel(Number(k), lang);
   if (prev === 'episode') return lang === 'ar' ? `الحلقة ${num(Number(k), lang)}` : `Episode ${k}`;
   if (prev === 'category' || prev === 'sector') { const c = categories.find((c) => catSlug(c) === k); return c ? category(c, lang) : null; }
@@ -61,7 +63,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <meta name="application-name" content={s.brandName} />
     <meta name="theme-color" content="#17120F" media="(prefers-color-scheme: dark)" />
     <title>{fullTitle}</title>
-    <meta name="description" content={desc} />
+    <meta name="description" content={metaDesc} />
     <link rel="canonical" href={url} />
     <link rel="alternate" hreflang="ar" href={arUrl} />
     <link rel="alternate" hreflang="en" href={enUrl} />
@@ -71,7 +73,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <meta property="og:type" content={title ? 'article' : 'website'} />
     <meta property="og:site_name" content={s.title} />
     <meta property="og:title" content={fullTitle} />
-    <meta property="og:description" content={desc} />
+    <meta property="og:description" content={metaDesc} />
     <meta property="og:url" content={url} />
     <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
     <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
