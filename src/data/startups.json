@@ -3412,15 +3412,21 @@
     ],
     "website": null,
     "ask": {
+      "amountEGP": 4000000,
+      "equityPct": 30
+    },
+    "deal": {
+      "made": false,
+      "sharks": [],
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
     "sources": [
       "https://www.youm7.com/6360429",
       "https://www.youm7.com/6360475",
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
-      "https://cairoscene.com/Eats/Say-Goodbye-To-Your-Stomach-NOTs-With-These-Plant-Based-Products"
+      "https://cairoscene.com/Eats/Say-Goodbye-To-Your-Stomach-NOTs-With-These-Plant-Based-Products",
+      "https://fintechgate.net/2023/11/02/%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D8%B1%D9%81%D8%B6-%D9%81%D8%B1%D9%8A%D9%82-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%B9%D8%B1%D8%B6-%D8%B4%D8%B1%D9%83%D8%A9-%D9%86%D9%88/"
     ],
     "links": {
       "instagram": "https://www.instagram.com/notfoodseg/",
@@ -4098,8 +4104,8 @@
       "ar": "بار أند جار"
     },
     "description": {
-      "en": "Bar N' Jar is a Cairo healthy-food brand serving fast, wholesome meals packed in jars, including customisable salads, bowls and wraps, plus healthy dessert jars. It has branches at Mall of Arabia and New Giza Club and offers online delivery in Heliopolis and Nasr City. Founder Norhan Abaza asked the sharks for EGP 1.7 million for 15% and won them over, ending up weighing four offers before making her final choice.",
-      "ar": "بار أند جار علامة للأكل الصحي في القاهرة تقدم وجبات سريعة ومغذية معبأة في برطمانات، منها السلطات والبولز والراب التي يختار العميل مكوناتها، إلى جانب برطمانات حلويات صحية. ولها فروع في مول العرب ونادي نيو جيزة، وتوفر التوصيل أونلاين في مصر الجديدة ومدينة نصر. وطلبت مؤسستها نورهان أباظة 1.7 مليون جنيه مقابل 15%، ونجحت في إقناع المستثمرين حتى وجدت أمامها أربعة عروض قبل أن تحسم قرارها."
+      "en": "Bar N' Jar is a Cairo healthy-food brand serving fast, wholesome meals packed in jars, including customisable salads, bowls and wraps, plus healthy dessert jars. It has branches at Mall of Arabia and New Giza Club and offers online delivery in Heliopolis and Nasr City. Founder Norhan Abaza asked the sharks for EGP 1.7 million for 15% and won them over, then weighed four offers before accepting EGP 3.5 million for 51% from Ahmed El Sewedy, Mohamed Mansour and Ahmed Tarek Khalil.",
+      "ar": "بار أند جار علامة للأكل الصحي في القاهرة تقدم وجبات سريعة ومغذية معبأة في برطمانات، منها السلطات والبولز والراب التي يختار العميل مكوناتها، إلى جانب برطمانات حلويات صحية. ولها فروع في مول العرب ونادي نيو جيزة، وتوفر التوصيل أونلاين في مصر الجديدة ومدينة نصر. وطلبت مؤسستها نورهان أباظة 1.7 مليون جنيه مقابل 15%، ونجحت في إقناع المستثمرين حتى وجدت أمامها أربعة عروض، ثم قبلت 3.5 مليون جنيه مقابل 51% من أحمد السويدي ومحمد منصور وأحمد طارق خليل."
     },
     "category": "Food",
     "founders": [
@@ -4110,13 +4116,23 @@
       "amountEGP": 1700000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed El Sewedy",
+        "Mohamed Mansour",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 3500000,
+      "equityPct": 51
+    },
     "sources": [
       "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
       "https://www.dostor.org/4564943",
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
       "https://www.youtube.com/watch?v=n2X5sVh2FKg",
-      "https://scoopempire.com/?p=332891"
+      "https://scoopempire.com/?p=332891",
+      "https://fintechgate.net/2023/12/02/%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%A4%D8%B3%D8%B3%D8%A9-%D8%A8%D8%A7%D8%B1-%D8%A3%D9%86%D8%AF-%D8%AC%D8%A7%D8%B1-%D9%84%D9%84%D8%B3%D9%84%D8%B7%D8%A9-%D8%A7%D9%84/"
     ],
     "video": "n2X5sVh2FKg",
     "links": {
@@ -4128,13 +4144,13 @@
           "Customisable salads, bowls and wraps in jars",
           "Healthy dessert jars",
           "Branches at Mall of Arabia and New Giza Club",
-          "Weighed four offers from the sharks"
+          "EGP 3.5M for 51% from El Sewedy, Mansour and Ahmed Tarek"
         ],
         "ar": [
           "سلطات وبولز وراب بمكونات حسب الطلب في برطمانات",
           "برطمانات حلويات صحية",
           "فروع في مول العرب ونادي نيو جيزة",
-          "حصلت على أربعة عروض من الشاركس"
+          "3.5 مليون جنيه مقابل 51% من السويدي ومنصور وأحمد طارق"
         ]
       }
     }

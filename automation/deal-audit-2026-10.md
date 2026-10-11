@@ -228,3 +228,14 @@ Read but not conclusive: the Cairo360 "pitches that landed a deal" roundup (it d
 - sharktank-egypt.com, read in a browser (`probe-site.yml`): the deal-category pages hold 372 cards, and each card only links to the startup's official YouTube pitch video. There are no per-startup pages, no deal terms and no data API (the only JSON is the login session). Card links are in `automation/sources/site.json`.
 - Titles and descriptions of 105 pitch videos for 60 unknown startups, read without contacting YouTube (`wayback.yml`: Wayback Machine snapshots, with noembed.com for titles): every video returned a title and 10 returned a description (`automation/sources/wayback-out.json`). All are teasers ("هل الشاركس هيستثمروا؟", "ياترى هياخدوا ديل؟"). None states an outcome, so nothing was applied. Suggestive but not explicit: "The Lean Jerky وقعوا في ايد احمد طارق!", "احنا مش موافقين على الأوفر ده!" (Schoolz), "في الاخر شركتك" (Bar & Jar), "خيال وبيت السعد قدروا يخلوا الـ 5 شاركس يتنافسوا" (Bayt El Saad).
 - Search of founders' social posts and startup news sites (LinkedIn, Instagram, Wamda, Disrupt Africa, Daily News Egypt, Al Mal): no explicit outcome. Close but not explicit: Tayar ("التقييم المرتفع شكل عقبة رئيسية أمام إتمام الصفقة", youm7.com/7177610).
+
+## Thirteenth pass: reverse search ("<startup> Shark Tank deal")
+
+Searched every unknown startup by name with "Shark Tank deal" in English and Arabic, then read the hits in full (`sources.yml` leads mode). Applied:
+
+| Startup | Result | Source |
+|---|---|---|
+| Not Foods | No deal; ask EGP 4M for 30% ("رفض مستثمرو شارك تانك العرض أو المشاركة في المشروع") | fintechgate.net, 2023-11-02 |
+| Bar & Jar | Deal: Ahmed El Sewedy + Mohamed Mansour + Ahmed Tarek Khalil, EGP 3.5M for 51% ("وافقت نورهان أباظة … على عرض تقدم به رجال الأعمال أحمد السويدي ومحمد منصور وأحمد طارق بالاستحواذ على 51% من الشركة مقابل 3.5 مليون جنيه") | fintechgate.net, 2023-12-02 |
+
+Clip titles that only suggest an outcome were not applied (the owner declined inferred outcomes): The Lean Jerky, Super Abla, Fatties, Nutrifits, Ami's Bakery, Pencilight, Weddngo, Connecto, Lil Kitchen, Ketolicious, Waymoure (founder "turned down a 51% stake offer"), Choroida, Myco-Pex, Dark Solution, Shelter. Investor-side search (shark portfolios, Crunchbase, Dealroom, Wamda) found nothing for the unknowns.
