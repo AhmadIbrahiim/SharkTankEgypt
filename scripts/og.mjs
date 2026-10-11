@@ -9,6 +9,7 @@ import { dirname, join, extname } from 'node:path';
 const DIST = 'dist', FONTS = 'node_modules/@fontsource-variable/readex-pro/files';
 const only = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : '';
 const logo = readFileSync('public/favicon.svg', 'utf8');
+const siteLabel = JSON.parse(readFileSync('package.json', 'utf8')).homepage.replace(/^https?:\/\//, '').replace(/\/$/, '');
 const TYPES = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' };
 
 const esc = (s = '') => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
@@ -79,7 +80,7 @@ h1.long{font-size:54px;-webkit-line-clamp:3}[dir=rtl] h1{letter-spacing:0;line-h
 .stack img:nth-child(3){bottom:20px;inset-inline-start:20px;transform:rotate(3deg)}.stack img:nth-child(4){bottom:0;inset-inline-end:20px;transform:rotate(-4deg)}
 </style></head><body><main>${body(c)}</main>
 <div class="brand">${logo}<span>${lang === 'ar' ? 'دليل شارك تانك مصر' : 'Shark Tank Egypt'} <small>${lang === 'ar' ? '· كل الشركات والصفقات' : '· Startup Directory'}</small></span></div>
-<div class="url"><bdi dir="ltr">ahmadibrahiim.github.io/SharkTankEgypt</bdi></div></body></html>`;
+<div class="url"><bdi dir="ltr">${siteLabel}</bdi></div></body></html>`;
 
 // Serve dist (so /people, /screenshots resolve) plus the fonts and the card being rendered.
 let current = '';

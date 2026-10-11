@@ -1,7 +1,10 @@
 import { defineConfig } from 'astro/config';
+import { readFileSync } from 'node:fs';
 
-// GitHub Pages project site: https://ahmadibrahiim.github.io/SharkTankEgypt/
+// The site's address lives in one place: package.json "homepage" (now the GitHub Pages project site;
+// a custom domain later is a one-line change there plus public/CNAME).
+const home = new URL(JSON.parse(readFileSync('./package.json', 'utf8')).homepage);
 export default defineConfig({
-  site: 'https://ahmadibrahiim.github.io',
-  base: '/SharkTankEgypt',
+  site: home.origin,
+  base: home.pathname.replace(/\/$/, '') || '/',
 });
