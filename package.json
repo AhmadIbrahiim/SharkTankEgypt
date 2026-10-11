@@ -28,7 +28,9 @@
     "screenshots": "node scripts/screenshots.mjs",
     "check-data": "node scripts/check-data.mjs",
     "audit-data": "node scripts/audit-data.mjs --strict",
-    "audit-seo": "node scripts/audit-seo.mjs --strict"
+    "audit-seo": "node scripts/audit-seo.mjs --strict",
+    "test": "node scripts/test.mjs",
+    "e2e": "node scripts/e2e.mjs"
   },
   "dependencies": {
     "astro": "7.3.8"
