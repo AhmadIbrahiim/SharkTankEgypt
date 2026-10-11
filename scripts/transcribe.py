@@ -11,9 +11,9 @@ for i, t in enumerate(targets):
         continue
     r = dict(t)
     try:
-        subprocess.run(['yt-dlp', '--impersonate', 'chrome', '-x', '--audio-format', 'mp3', '-o', '/tmp/clip.%(ext)s', '--force-overwrites', t['url']],
+        subprocess.run(['yt-dlp', '--impersonate', 'chrome', '-f', 'bestaudio/best', '-o', '/tmp/clip.media', '--force-overwrites', t['url']]  # no ffmpeg on the runner: Whisper decodes the video itself,
                        check=True, capture_output=True, timeout=120)
-        segs, _ = model.transcribe('/tmp/clip.mp3', language='ar', vad_filter=True)
+        segs, _ = model.transcribe('/tmp/clip.media', language='ar', vad_filter=True)
         r['text'] = ' '.join(s.text.strip() for s in segs)
     except subprocess.CalledProcessError as e:
         r['error'] = (e.stderr or b'').decode(errors='replace')[-400:]
