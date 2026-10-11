@@ -1,41 +1,46 @@
-// Reads the official site (sharktank-egypt.com) in a real browser: every deal-category page, every
-// startup page linked from them, and any JSON the pages load, so pitch outcomes can be read from it.
-// Usage (in Actions): node scripts/probe-site.mjs <out.json>
+// Reads the official site (sharktank-egypt.com) in a real browser. Deal-category pages list startup
+// names without links, so each name is clicked and whatever it opens (a page, a modal, a data request)
+// is recorded, so pitch outcomes can be read from it.
+// Usage (in Actions): node scripts/probe-site.mjs <out.json> [maxCategories]
 import { chromium } from 'playwright';
 import { writeFileSync } from 'node:fs';
 
 const ROOT = 'https://sharktank-egypt.com';
+const CATS = ['apps', 'automotive', 'health-and-beauty', 'fashion', 'entertainment-and-arts', 'food-and-beverage', 'home-and-furniture',
+  'services', 'e-commerce', 'education-', 'medical-', 'sports', 'fintech', 'agriculture', 'technology-', 'recycling-', 'manufacturing-', 'other'];
 const browser = await chromium.launch();
 const ctx = await browser.newContext({ userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' });
-const out = { pages: [], json: [] };
+const out = { startups: [], requests: [] };
+let current = null; // the startup being clicked, to tag the requests it triggers
 ctx.on('response', async (r) => {
-  if (!/json/.test(r.headers()['content-type'] ?? '') || !r.url().includes('sharktank')) return;
-  try { out.json.push({ url: r.url(), body: (await r.text()).slice(0, 200000) }); } catch {}
+  const t = r.request().resourceType();
+  if (!['fetch', 'xhr', 'document'].includes(t) || !r.url().startsWith(ROOT) || r.url().includes('/api/auth/')) return;
+  try { out.requests.push({ for: current, url: r.url(), status: r.status(), body: (await r.text()).slice(0, 30000) }); } catch {}
 });
 
-async function read(url) {
-  const page = await ctx.newPage();
-  try {
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
-    const r = await page.evaluate(() => ({ text: document.body.innerText, links: [...document.querySelectorAll('a[href]')].map((a) => a.href) }));
-    out.pages.push({ url, final: page.url(), text: r.text.slice(0, 20000) });
-    return r.links;
-  } catch (e) { out.pages.push({ url, error: String(e.message ?? e) }); return []; }
-  finally { await page.close(); }
-}
-
-const seen = new Set();
-const queue = [`${ROOT}/en/deals`, `${ROOT}/ar/deals`, `${ROOT}/en/seasons`, `${ROOT}/en`];
-// Breadth-first over the site, en+ar, capped so a link loop can't run forever.
-while (queue.length && seen.size < 700) {
-  const url = queue.shift().split('#')[0];
-  if (seen.has(url)) continue;
-  seen.add(url);
-  for (const l of await read(url)) {
-    const u = l.split('#')[0];
-    if (u.startsWith(ROOT) && !seen.has(u) && !/\.(jpg|png|pdf|webp)$|login|register|apply|contact/i.test(u)) queue.push(u);
+const page = await ctx.newPage();
+for (const cat of CATS.slice(0, +(process.argv[3] ?? 99))) {
+  const url = `${ROOT}/en/deals/${cat}`;
+  try { await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }); } catch (e) { out.startups.push({ cat, error: String(e.message) }); continue; }
+  const before = await page.evaluate(() => document.body.innerText);
+  const names = before.split('\n').map((s) => s.trim());
+  const list = names.slice(names.lastIndexOf('Special Episodes') + 1, names.findIndex((s) => s.startsWith('©'))).filter(Boolean);
+  if (cat === CATS[0]) out.html = (await page.content()).slice(0, 60000); // markup sample, to see how cards are built
+  for (const name of list) {
+    current = name;
+    const rec = { cat, name };
+    try {
+      await page.getByText(name, { exact: true }).first().click({ timeout: 5000 });
+      await page.waitForTimeout(2500);
+      rec.url = page.url();
+      const text = await page.evaluate(() => document.body.innerText);
+      rec.text = text === before ? '' : text.slice(0, 6000);
+    } catch (e) { rec.error = String(e.message).slice(0, 200); }
+    out.startups.push(rec);
+    if (page.url() !== url) await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 }).catch(() => {});
+    else await page.keyboard.press('Escape').catch(() => {});
   }
 }
 await browser.close();
 writeFileSync(process.argv[2], JSON.stringify(out, null, 1));
-console.log(`${out.pages.length} pages, ${out.json.length} json responses`);
+console.log(`${out.startups.length} clicked, ${out.startups.filter((s) => s.text).length} opened something, ${out.requests.length} requests`);
