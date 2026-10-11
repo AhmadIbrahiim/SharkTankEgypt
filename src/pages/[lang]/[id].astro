@@ -6,6 +6,7 @@ import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
+import MiniCard from '../../components/MiniCard.astro';
 import { startupFaq, summary } from '../../faq';
 import { verification, langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup, type Card } from '../../config';
 
@@ -72,6 +73,12 @@ const card: Card = { kind: 'startup', title: x.name[lang], alt: otherName, sub: 
   badge: x.deal?.made === true ? { tone: 'ok', text: [lang === 'ar' ? 'صفقة' : 'Deal', [x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · '), sharkNames && `${lang === 'ar' ? 'مع' : 'with'} ${sharkNames}`].filter(Boolean).join(' ') }
     : x.deal?.made === false ? { tone: 'no', text: lang === 'ar' ? 'بدون صفقة' : 'No deal' }
     : x.ask?.amountEGP != null ? { tone: 'ask', text: `${lang === 'ar' ? 'طلب' : 'Asked'} ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` · ${pct(x.ask.equityPct, lang)}` : ''}` } : undefined };
+// Same episode first, then same sector in the same season, then same sector anywhere: up to 4.
+const related = [...new Set([
+  ...startups.filter((o) => o !== x && o.season === x.season && o.episode != null && o.episode === x.episode),
+  ...startups.filter((o) => o !== x && o.season === x.season && o.category === x.category),
+  ...startups.filter((o) => o !== x && o.category === x.category),
+])].slice(0, 4);
 const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '→' : '←');
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} card={card} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/${x.id}/`}>
@@ -233,6 +240,13 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
     </section>
     )}
 
+    {related.length > 0 && (
+      <section class="sec related" aria-labelledby="related">
+        <h2 id="related">{s.related}</h2>
+        <ul class="relgrid">{related.map((o) => <li><MiniCard x={o} lang={lang} /></li>)}</ul>
+      </section>
+    )}
+
     <nav class="pager" aria-label={`${s.prev} / ${s.next}`}>
       {prev ? <a class="pg" href={`${base}/${lang}/${prev.id}/`}><small>{arrow('back')} {s.prev}</small><span>{prev.name[lang]}</span></a> : <span />}
       {next && <a class="pg next" href={`${base}/${lang}/${next.id}/`}><small>{s.next} {arrow('fwd')}</small><span>{next.name[lang]}</span></a>}
@@ -340,6 +354,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .comments h2 { font-size: 1.35rem; }
   .hint { color: var(--ink-2); margin: 8px 0 20px; }
 
+  .relgrid { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 14px; }
   .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: var(--gap-sec); }
   .pg { display: flex; flex-direction: column; padding: 14px 18px; border-radius: 16px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: border-color .2s, background .2s; }
   .pg:hover { border-color: var(--sun); background: var(--surface); }

@@ -99,15 +99,18 @@ const jsonld = {
             <div class="body">
               <div class="row">
                 <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
-                {x.deal?.made === true && <span class="badge ok">🤝 {s.deal}</span>}
+                {/* One status badge for every card: deal, no deal, or not confirmed by any source. */}
+                {x.deal?.made === true ? <span class="badge ok">🤝 {s.deal}</span> : x.deal?.made === false ? <span class="badge">{s.noDeal}</span> : <span class="badge unk">{s.unknownOutcome}</span>}
               </div>
               <h3>{x.name[lang]}</h3>
               <p class="desc">{x.description[lang]}</p>
               <div class="foot">
-                {x.deal?.made && x.deal.sharks?.length
-                  ? <><Sharks names={x.deal.sharks} lang={lang} />{x.deal.amountEGP != null && <span class="amount">{money(x.deal.amountEGP, lang)}{x.deal.equityPct != null && ` · ${pct(x.deal.equityPct, lang)}`}</span>}</>
-                  : <span class="ask">{x.deal?.made === false && <b>{s.noDeal}</b>}{x.deal?.made === false && x.ask?.amountEGP != null && ' · '}{x.ask?.amountEGP != null && <>{s.asked} {money(x.ask.amountEGP, lang)}{x.ask.equityPct != null && ` · ${pct(x.ask.equityPct, lang)}`}</>}</span>}
-                {!(x.deal?.made && x.deal.sharks?.length) && x.category && <span class="badge nile">{category(x.category, lang)}</span>}
+                {/* Requested vs agreed, always labelled the same way. */}
+                <span class="terms">
+                  {x.ask?.amountEGP != null && <span class="ask">{s.asked} {money(x.ask.amountEGP, lang)}{x.ask.equityPct != null && ` · ${pct(x.ask.equityPct, lang)}`}</span>}
+                  {x.deal?.made && (x.deal.amountEGP != null || x.deal.equityPct != null) && <span class="amount">🤝 {[x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · ')}</span>}
+                </span>
+                {x.deal?.made && x.deal.sharks?.length ? <Sharks names={x.deal.sharks} lang={lang} /> : x.category && <span class="badge nile">{category(x.category, lang)}</span>}
               </div>
             </div>
           </a>
@@ -267,8 +270,9 @@ const jsonld = {
   .desc { margin: 0; color: var(--ink-2); font-size: .93rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 14px; min-height: 42px; }
   .amount { font-weight: 600; font-size: .92rem; color: var(--ok); }
-  .ask { font-size: .88rem; color: var(--ink-2); }
-  .ask b { font-weight: 600; color: var(--ink); }
+  .terms { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .ask { font-size: .85rem; color: var(--ink-2); }
+  .badge.unk { background: none; border: 1px dashed var(--line); color: var(--ink-2); }
   .more { display: flex; justify-content: center; margin-top: 28px; }
   .more[hidden], .grid > li[hidden] { display: none; }
 
