@@ -6815,8 +6815,8 @@
       "ar": "عبد العزيز المصري"
     },
     "description": {
-      "en": "Founded in 1936 as the region's first prosthetics maker, the company makes artificial limbs, wheelchairs, walkers, mobility aids and diabetic shoes. Owner Youssef El-Masry said it halted operations between 2004 and 2012, and asked for EGP 5 million for 20% to buy modern machinery, market and hire.",
-      "ar": "تأسست الشركة عام 1936 كأول مصنع للأطراف الصناعية في المنطقة، وتنتج الأطراف الصناعية والكراسي المتحركة والمشايات وأدوات الحركة وأحذية مرضى السكري. وأوضح مالكها يوسف المصري أن نشاطها توقف بين 2004 و2012، وطلب 5 ملايين جنيه مقابل 20% لشراء آلات حديثة والتسويق والتوظيف."
+      "en": "Founded in 1936 as the region's first prosthetics maker, the company makes artificial limbs, wheelchairs, walkers, mobility aids and diabetic shoes. Owner Youssef El-Masry said it halted operations between 2004 and 2012, and asked for EGP 5 million for 20% to buy modern machinery, market and hire. Youssef left the tank without a deal.",
+      "ar": "تأسست الشركة عام 1936 كأول مصنع للأطراف الصناعية في المنطقة، وتنتج الأطراف الصناعية والكراسي المتحركة والمشايات وأدوات الحركة وأحذية مرضى السكري. وأوضح مالكها يوسف المصري أن نشاطها توقف بين 2004 و2012، وطلب 5 ملايين جنيه مقابل 20% لشراء آلات حديثة والتسويق والتوظيف. وخرج يوسف من التانك دون صفقة."
     },
     "category": "Health",
     "founders": [
@@ -6827,13 +6827,19 @@
       "amountEGP": 5000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6759051",
       "https://vcfoconsulting.com/shark-tank-season-3-ep-3/",
       "https://www.youm7.com/6760563",
       "https://www.soutalomma.com/Article/1136827/",
-      "https://www.youtube.com/watch?v=hnSq2m1MQac"
+      "https://www.youtube.com/watch?v=hnSq2m1MQac",
+      "https://www.tiktok.com/@sharktank.egypt/video/7433441987052719376"
     ],
     "video": "hnSq2m1MQac"
   },
@@ -7479,8 +7485,8 @@
       "ar": "تارجت إيجيبت"
     },
     "description": {
-      "en": "Target Egypt is an Egyptian startup that pitched on Shark Tank Egypt in season three, episode six, which aired in November 2024. The founders asked the sharks for EGP 8.5 million in exchange for a 30% stake, valuing the company at about EGP 28.3 million. Public details about its products, customers and traction are still limited, and this profile will grow as more verified information becomes available.",
-      "ar": "تارجت إيجيبت شركة ناشئة مصرية عرضت مشروعها في برنامج شارك تانك مصر، في الحلقة السادسة من الموسم الثالث التي عُرضت في نوفمبر 2024. طلب المؤسسون من المستثمرين 8.5 مليون جنيه مصري مقابل حصة قدرها 30% من الشركة، أي بتقييم يقارب 28.3 مليون جنيه. لا تزال المعلومات المتاحة للعامة عن منتجاتها وعملائها ونموها محدودة، وسيُحدَّث هذا الملف عند توفر معلومات موثقة."
+      "en": "Target Egypt is an Egyptian startup that pitched on Shark Tank Egypt in season three, episode six, which aired in November 2024. The founders asked the sharks for EGP 8.5 million in exchange for a 30% stake, valuing the company at about EGP 28.3 million. Public details about its products, customers and traction are still limited, and this profile will grow as more verified information becomes available. On the show it closed a deal with Mohamed Farouk and Mohamed Mansour for EGP 8.5 million for 50%.",
+      "ar": "تارجت إيجيبت شركة ناشئة مصرية عرضت مشروعها في برنامج شارك تانك مصر، في الحلقة السادسة من الموسم الثالث التي عُرضت في نوفمبر 2024. طلب المؤسسون من المستثمرين 8.5 مليون جنيه مصري مقابل حصة قدرها 30% من الشركة، أي بتقييم يقارب 28.3 مليون جنيه. لا تزال المعلومات المتاحة للعامة عن منتجاتها وعملائها ونموها محدودة، وسيُحدَّث هذا الملف عند توفر معلومات موثقة. وفي البرنامج أبرمت صفقة مع محمد فاروق ومحمد منصور بقيمة 8.5 مليون جنيه مقابل 50%."
     },
     "category": "Other",
     "founders": [],
@@ -7489,10 +7495,19 @@
       "amountEGP": 8500000,
       "equityPct": 30
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk",
+        "Mohamed Mansour"
+      ],
+      "amountEGP": 8500000,
+      "equityPct": 50
+    },
     "sources": [
       "https://www.youm7.com/6784654",
-      "https://www.thetvdb.com/series/shark-tank-egypt/seasons/official/3"
+      "https://www.thetvdb.com/series/shark-tank-egypt/seasons/official/3",
+      "https://www.tiktok.com/@sharktank.egypt/video/7440483757989039378"
     ],
     "pitch": {
       "en": "Target Egypt's founders came to the tank in season three, episode six, asking for EGP 8.5 million in exchange for 30% of the company, which implies a valuation of about EGP 28.3 million. Our records show no deal closed on the show.",
@@ -9048,8 +9063,8 @@
       "ar": "روبو ديسك"
     },
     "description": {
-      "en": "RoboDesk is an Egyptian software company, described as an official Meta partner, that runs an AI-powered contact-centre platform for large and small businesses. It brings customer conversations into one system and uses AI to automate replies and support. Founded in 2019 and based in Nasr City, Cairo, it came to the tank with founder Amir Ali asking for EGP 43 million for 20%.",
-      "ar": "روبو ديسك شركة برمجيات مصرية، توصف بأنها شريك رسمي لميتا، تدير منصة مراكز اتصال مدعومة بالذكاء الاصطناعي للشركات الكبيرة والصغيرة. تجمع محادثات العملاء في نظام واحد وتستخدم الذكاء الاصطناعي لأتمتة الردود وخدمة العملاء. تأسست عام 2019 ومقرها مدينة نصر بالقاهرة، وطلب مؤسسها أمير علي في التانك 43 مليون جنيه مقابل 20%."
+      "en": "RoboDesk is an Egyptian software company, described as an official Meta partner, that runs an AI-powered contact-centre platform for large and small businesses. It brings customer conversations into one system and uses AI to automate replies and support. Founded in 2019 and based in Nasr City, Cairo, it came to the tank with founder Amir Ali asking for EGP 43 million for 20%. It was one of three Season 3 pitches that brought all five sharks together in a single investment.",
+      "ar": "روبو ديسك شركة برمجيات مصرية، توصف بأنها شريك رسمي لميتا، تدير منصة مراكز اتصال مدعومة بالذكاء الاصطناعي للشركات الكبيرة والصغيرة. تجمع محادثات العملاء في نظام واحد وتستخدم الذكاء الاصطناعي لأتمتة الردود وخدمة العملاء. تأسست عام 2019 ومقرها مدينة نصر بالقاهرة، وطلب مؤسسها أمير علي في التانك 43 مليون جنيه مقابل 20%. وكان من ثلاثة مشروعات في الموسم الثالث نجحت في جمع الشاركس الخمسة في استثمار واحد."
     },
     "category": "Tech",
     "founders": [
@@ -9060,12 +9075,18 @@
       "amountEGP": 43000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6847903",
       "https://www.youm7.com/6846397",
       "https://www.youtube.com/watch?v=gC13n-oFBvQ",
-      "https://startuplist.africa/startup/robo-desk/competitors"
+      "https://startuplist.africa/startup/robo-desk/competitors",
+      "https://www.youtube.com/watch?v=NHvBuQ627rg"
     ],
     "video": "gC13n-oFBvQ",
     "links": {
@@ -9676,8 +9697,8 @@
       "ar": "استعلامي"
     },
     "description": {
-      "en": "Estealamy is an Egyptian fintech startup that helps lenders check loan applicants quickly and reliably. Verifying an applicant's data by hand can slow lending decisions down, so Estealamy uses AI to check applicant information and help financing providers approve loans in as little as 30 minutes. It also delivers field-inquiry reports to lenders through a mobile app and an online dashboard within 24 hours.",
-      "ar": "استعلامي شركة ناشئة مصرية في مجال التكنولوجيا المالية تساعد جهات الإقراض على التحقق من طالبي القروض بسرعة ودقة. فالتحقق اليدوي من بيانات المتقدمين قد يبطئ قرارات التمويل، لذا تعتمد استعلامي على الذكاء الاصطناعي في فحص بيانات المتقدمين، ما يتيح لجهات التمويل الموافقة على القروض في غضون 30 دقيقة فقط. كما تقدم الشركة تقارير الاستعلام الميداني لجهات التمويل عبر تطبيق للهاتف المحمول ولوحة تحكم إلكترونية خلال 24 ساعة."
+      "en": "Estealamy is an Egyptian fintech startup that helps lenders check loan applicants quickly and reliably. Verifying an applicant's data by hand can slow lending decisions down, so Estealamy uses AI to check applicant information and help financing providers approve loans in as little as 30 minutes. It also delivers field-inquiry reports to lenders through a mobile app and an online dashboard within 24 hours. It turned down offers from Ayman Abbas, Mohamed Farouk and Ahmed Tarek and left without a deal.",
+      "ar": "استعلامي شركة ناشئة مصرية في مجال التكنولوجيا المالية تساعد جهات الإقراض على التحقق من طالبي القروض بسرعة ودقة. فالتحقق اليدوي من بيانات المتقدمين قد يبطئ قرارات التمويل، لذا تعتمد استعلامي على الذكاء الاصطناعي في فحص بيانات المتقدمين، ما يتيح لجهات التمويل الموافقة على القروض في غضون 30 دقيقة فقط. كما تقدم الشركة تقارير الاستعلام الميداني لجهات التمويل عبر تطبيق للهاتف المحمول ولوحة تحكم إلكترونية خلال 24 ساعة. ورفض عروض أيمن عباس ومحمد فاروق وأحمد طارق وفضّل الخروج دون صفقة."
     },
     "category": "Fintech",
     "founders": [],
@@ -9686,11 +9707,17 @@
       "amountEGP": 16000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.dostor.org/4952899",
       "https://www.youtube.com/watch?v=y9b4bFexAf4",
-      "https://www.youtube.com/watch?v=7H1yzi-CH48"
+      "https://www.youtube.com/watch?v=7H1yzi-CH48",
+      "https://www.youtube.com/watch?v=TjHaV1gftAY"
     ],
     "video": "y9b4bFexAf4",
     "services": {
@@ -11082,8 +11109,8 @@
       "ar": "كينونة"
     },
     "description": {
-      "en": "Kaynuna is an Egyptian online platform that helps people choose and buy the right indoor plants for their homes and spaces. Many first-time plant owners don't know which plants suit their light, space or lifestyle, and Kaynuna tackles that by pairing guided plant selection with an online shop. The brand is active on Instagram and Facebook as kaynuna.co, and it pitched on Shark Tank Egypt Season 4.",
-      "ar": "كينونة منصة مصرية إلكترونية تساعد الناس على اختيار النباتات الداخلية المناسبة لمنازلهم وأماكنهم وشرائها. كثير ممن يقتنون النباتات لأول مرة لا يعرفون أي النباتات تناسب الإضاءة أو المساحة أو نمط حياتهم، وتعالج كينونة هذه المشكلة بالجمع بين الإرشاد في اختيار النبات ومتجر إلكتروني. تنشط العلامة على إنستغرام وفيسبوك باسم kaynuna.co، وقد عرضت مشروعها في الموسم الرابع من شارك تانك مصر."
+      "en": "Kaynuna is an Egyptian online platform that helps people choose and buy the right indoor plants for their homes and spaces. Many first-time plant owners don't know which plants suit their light, space or lifestyle, and Kaynuna tackles that by pairing guided plant selection with an online shop. The brand is active on Instagram and Facebook as kaynuna.co, and it pitched on Shark Tank Egypt Season 4. The founders turned down three offers from the sharks.",
+      "ar": "كينونة منصة مصرية إلكترونية تساعد الناس على اختيار النباتات الداخلية المناسبة لمنازلهم وأماكنهم وشرائها. كثير ممن يقتنون النباتات لأول مرة لا يعرفون أي النباتات تناسب الإضاءة أو المساحة أو نمط حياتهم، وتعالج كينونة هذه المشكلة بالجمع بين الإرشاد في اختيار النبات ومتجر إلكتروني. تنشط العلامة على إنستغرام وفيسبوك باسم kaynuna.co، وقد عرضت مشروعها في الموسم الرابع من شارك تانك مصر. ورفض المؤسسان ثلاثة عروض من الشاركس."
     },
     "category": "Retail",
     "founders": [],
@@ -11092,12 +11119,18 @@
       "amountEGP": 5000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7186643",
       "https://www.youm7.com/7185089",
       "https://www.aldawlanews.com/1306967",
-      "https://www.youtube.com/watch?v=iVPYEfYV0Bg"
+      "https://www.youtube.com/watch?v=iVPYEfYV0Bg",
+      "https://www.youtube.com/watch?v=w1Q8Myvt2ts"
     ],
     "video": "iVPYEfYV0Bg",
     "links": {
