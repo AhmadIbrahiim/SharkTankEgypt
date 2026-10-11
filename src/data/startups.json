@@ -3578,11 +3578,18 @@
       "amountEGP": 5000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6368393",
       "https://www.youtube.com/watch?v=2tCGPd1WxwY",
-      "https://www.cairo360.com/?p=1248922"
+      "https://www.cairo360.com/?p=1248922",
+      "https://www.tiktok.com/@sharktank.egypt/video/7300872228571221253",
+      "https://www.tiktok.com/@sharktank.egypt/video/7300185150447439110"
     ],
     "video": "2tCGPd1WxwY",
     "links": {
@@ -4801,7 +4808,12 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.elwatannews.com/news/details/7055299",
       "https://www.youtube.com/watch?v=B5Sm3beezFI",
@@ -4810,7 +4822,8 @@
       "https://digitalarabia.network/success-stories/mohamed-samir-abolenin",
       "https://almalnews.com/1135495/«إنتر-أكت-لابز»-توقع-شراكة-مع-«العربية/",
       "https://www.briter.co/companies/interact-labs",
-      "https://iecc.nu.edu.eg/services/university-industry-collaboration/tact/"
+      "https://iecc.nu.edu.eg/services/university-industry-collaboration/tact/",
+      "https://www.tiktok.com/@sharktank.egypt/video/7321391122981391622"
     ],
     "video": "B5Sm3beezFI",
     "services": {
@@ -4860,8 +4873,8 @@
       ]
     },
     "pitch": {
-      "en": "Interact pitched its device that makes ordinary display screens interactive as a low-cost alternative to smart boards for schools and offices. The pitch split the panel: Ayman Abbas and Mohamed Farouk clashed over the project's prospects. The episode ended without a recorded deal.",
-      "ar": "قدّمت إنتراكت جهازها الذي يحوّل شاشات العرض العادية إلى شاشات تفاعلية كبديل منخفض التكلفة للسبورات الذكية في المدارس والمكاتب. انقسمت لجنة المستثمرين حول المشروع، إذ اختلف أيمن عباس ومحمد فاروق في تقييم فرصه. وانتهت الحلقة دون تسجيل صفقة."
+      "en": "Interact pitched its device that makes ordinary display screens interactive as a low-cost alternative to smart boards for schools and offices. The pitch split the panel: Ayman Abbas and Mohamed Farouk clashed over the project's prospects. The founders left without a deal, with advice from the sharks.",
+      "ar": "قدّمت إنتراكت جهازها الذي يحوّل شاشات العرض العادية إلى شاشات تفاعلية كبديل منخفض التكلفة للسبورات الذكية في المدارس والمكاتب. انقسمت لجنة المستثمرين حول المشروع، إذ اختلف أيمن عباس ومحمد فاروق في تقييم فرصه. وخرج المؤسسون دون صفقة، لكن مع نصائح من الشاركس."
     },
     "about": {
       "city": {
@@ -6224,13 +6237,19 @@
       "amountEGP": 500000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/6502483",
       "https://www.youm7.com/6502200",
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://www.youtube.com/watch?v=pcm9UoYzkI4",
-      "https://dev.scenenoise.com/Styled/Egyptian-Bag-Label-Horra-Crafts-Functional-Art-for-Women-by-Women"
+      "https://dev.scenenoise.com/Styled/Egyptian-Bag-Label-Horra-Crafts-Functional-Art-for-Women-by-Women",
+      "https://www.tiktok.com/@sharktank.egypt/video/7344357896588692742"
     ],
     "video": "pcm9UoYzkI4",
     "links": {
@@ -11297,16 +11316,25 @@
       "amountEGP": 1000000,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7177646",
       "https://www.aldawlanews.com/1304272",
-      "https://www.youtube.com/watch?v=FR07ioda74A"
+      "https://www.youtube.com/watch?v=FR07ioda74A",
+      "https://www.tiktok.com/@sharktank.egypt/video/7567778677627424007",
+      "https://www.tiktok.com/@sharktank.egypt/video/7567015599516257543"
     ],
     "video": "FR07ioda74A",
     "pitch": {
-      "en": "Game Guru pitched in Season 4, Episode 4 of Shark Tank Egypt with modern acrylic versions of classic old-school games. The founders asked for EGP 1 million to grow the business. No deal was recorded for the pitch.",
-      "ar": "قدّمت جيم جورو عرضها في الحلقة الرابعة من الموسم الرابع لبرنامج شارك تانك مصر، بنسخ أكريليك عصرية من الألعاب الكلاسيكية القديمة. وطلب المؤسسون مليون جنيه مصري لتنمية المشروع، ولم تُسجَّل صفقة لهذا العرض."
+      "en": "Game Guru pitched in Season 4, Episode 4 of Shark Tank Egypt with modern acrylic versions of classic old-school games. The founders asked for EGP 1 million to grow the business. After three different offers, the founder chose Mohamed Farouk's.",
+      "ar": "قدّمت جيم جورو عرضها في الحلقة الرابعة من الموسم الرابع لبرنامج شارك تانك مصر، بنسخ أكريليك عصرية من الألعاب الكلاسيكية القديمة. وطلب المؤسسون مليون جنيه مصري لتنمية المشروع، وبعد ثلاثة عروض مختلفة، اختارت المؤسسة عرض محمد فاروق."
     }
   },
   {
@@ -11719,13 +11747,19 @@
       "amountEGP": 4000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7195500",
       "https://www.aldawlanews.com/1309676",
       "https://www.youtube.com/watch?v=sR1q2_1965Y",
       "https://www.youtube.com/watch?v=48333HCJkQY",
-      "https://scoopempire.com/founders-of-okhtein-take-a-seat-on-the-investors-panel-in-shark-tank-egypt/"
+      "https://scoopempire.com/founders-of-okhtein-take-a-seat-on-the-investors-panel-in-shark-tank-egypt/",
+      "https://www.tiktok.com/@sharktank.egypt/video/7572637577614740754"
     ],
     "video": "sR1q2_1965Y",
     "links": {
@@ -11755,8 +11789,8 @@
       ]
     },
     "pitch": {
-      "en": "Founders Hussein and Hamouda pitched Haxel in Season 4 as Egypt's first fully locally manufactured running shoe, built to take on global sportswear giants. They asked for EGP 4M in exchange for 20% of the company, and the brand caught the sharks' attention from the start. The episode featured OKHTEIN co-founders Aya and Mounaz Abdel Raouf as guest sharks; no deal is recorded for Haxel.",
-      "ar": "قدّم المؤسسان حسين وحمودة مشروع هاكسل في الموسم الرابع بوصفه أول حذاء جري يُصنَّع بالكامل في مصر لينافس عمالقة الملابس الرياضية العالميين. وطلبا 4 ملايين جنيه مقابل 20% من الشركة، ولفت البراند انتباه الشاركس منذ البداية. وشهدت الحلقة مشاركة مؤسستَي أختين آية ومناز عبد الرؤوف كضيفتين، ولا توجد صفقة مسجّلة لهاكسل."
+      "en": "Founders Hussein and Hamouda pitched Haxel in Season 4 as Egypt's first fully locally manufactured running shoe, built to take on global sportswear giants. They asked for EGP 4M in exchange for 20% of the company, and the brand caught the sharks' attention from the start. The episode featured OKHTEIN co-founders Aya and Mounaz Abdel Raouf as guest sharks; Haxel left with an investment from Okhtein.",
+      "ar": "قدّم المؤسسان حسين وحمودة مشروع هاكسل في الموسم الرابع بوصفه أول حذاء جري يُصنَّع بالكامل في مصر لينافس عمالقة الملابس الرياضية العالميين. وطلبا 4 ملايين جنيه مقابل 20% من الشركة، ولفت البراند انتباه الشاركس منذ البداية. وشهدت الحلقة مشاركة مؤسستَي أختين آية ومناز عبد الرؤوف كضيفتين، وخرج هاكسل باستثمار من أختين."
     },
     "about": {
       "highlights": {
@@ -12760,14 +12794,20 @@
       "amountEGP": 15000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7246022",
       "https://www.dostor.org/5353826",
       "https://www.youm7.com/story/2025/12/24/%D9%85%D8%A4%D8%B3%D8%B3%D9%88-Nutrifits-%D9%8A%D8%B3%D8%AA%D8%B9%D8%B1%D8%B6-%D8%AE%D8%B7%D8%AA%D9%87-%D9%84%D8%AA%D9%88%D8%B7%D9%8A%D9%86-%D8%B5%D9%86%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%A3%D8%BA%D8%B0%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A%D8%A9-%D9%88%D9%8A%D8%B7%D9%84%D8%A8-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D9%8B/7246022",
       "https://sharktankarabi.com/3556/",
       "https://www.youtube.com/watch?v=z7aN8DQyKxg",
-      "https://misrconnect.com/en/news/egypt-news/nutrifits-on-shark-tank-egypt-4-products-and-investment-offers-up-to-40-million-egp-amid-debate-on-brand-strategy"
+      "https://misrconnect.com/en/news/egypt-news/nutrifits-on-shark-tank-egypt-4-products-and-investment-offers-up-to-40-million-egp-amid-debate-on-brand-strategy",
+      "https://www.tiktok.com/@sharktank.egypt/video/7587784443490848008"
     ],
     "video": "z7aN8DQyKxg",
     "links": {
@@ -13283,14 +13323,20 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.elwatannews.com/news/details/8219208",
       "https://www.dostor.org/5407960",
       "https://www.youtube.com/watch?v=xJL-10a1c44",
       "https://www.youtube.com/watch?v=6Iypwc-vS9s",
       "https://www.youtube.com/watch?v=2KcXP9Z_ng0",
-      "https://www.youtube.com/shorts/XoOvpCYNG-k"
+      "https://www.youtube.com/shorts/XoOvpCYNG-k",
+      "https://www.tiktok.com/@sharktank.egypt/video/7604465741903056146"
     ],
     "video": "6Iypwc-vS9s"
   },
@@ -13611,7 +13657,14 @@
       "amountEGP": null,
       "equityPct": null
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youtube.com/watch?v=e1huH9yeMyo",
       "https://sharktankarabi.com/3698/",
@@ -13619,7 +13672,8 @@
       "https://www.carrefouregypt.com/mafegy/en/c/FEGY1710502",
       "https://www.carrefouregypt.com/mafegy/ar/wafers/didos-biscotti-wafer-rolls12p-28g/p/669344",
       "https://www.carrefouregypt.com/mafegy/ar/date-biscuits/didos-mamoul-stra-fig-choc12p-16g/p/669332",
-      "https://www.carrefouregypt.com/mafegy/ar/date-biscuits/didos-mamoul-straw-fig-stra12p-16g/p/669334"
+      "https://www.carrefouregypt.com/mafegy/ar/date-biscuits/didos-mamoul-straw-fig-stra12p-16g/p/669334",
+      "https://www.tiktok.com/@sharktank.egypt/video/7594105428661849362"
     ],
     "video": "e1huH9yeMyo",
     "links": {

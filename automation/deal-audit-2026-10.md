@@ -239,3 +239,20 @@ Searched every unknown startup by name with "Shark Tank deal" in English and Ara
 | Bar & Jar | Deal: Ahmed El Sewedy + Mohamed Mansour + Ahmed Tarek Khalil, EGP 3.5M for 51% ("وافقت نورهان أباظة … على عرض تقدم به رجال الأعمال أحمد السويدي ومحمد منصور وأحمد طارق بالاستحواذ على 51% من الشركة مقابل 3.5 مليون جنيه") | fintechgate.net, 2023-12-02 |
 
 Clip titles that only suggest an outcome were not applied (the owner declined inferred outcomes): The Lean Jerky, Super Abla, Fatties, Nutrifits, Ami's Bakery, Pencilight, Weddngo, Connecto, Lil Kitchen, Ketolicious, Waymoure (founder "turned down a 51% stake offer"), Choroida, Myco-Pex, Dark Solution, Shelter. Investor-side search (shark portfolios, Crunchbase, Dealroom, Wamda) found nothing for the unknowns.
+
+## Fourteenth pass: the show's official TikTok captions
+
+`social-test.yml` listed every clip on the official TikTok account (@sharktank.egypt) with its caption: 2,309 clips, saved in `automation/sources/tiktok.json`. Captions were matched to the unknown startups by name and founder. Applied only where the caption states the outcome:
+
+| Startup | Result | Caption (tiktok.com/@sharktank.egypt/video/…) |
+|---|---|---|
+| Interact | No deal | "أصحاب Interact خرجوا من غير ديل" (7321391122981391622) |
+| Fool Tank | No deal (Hoda refused the offers from Mohamed Farouk and Ahmed Tarek) | "تفتكروا كان صح انها ترفض الأوفر" (7300185150447439110; offers in 7300872228571221253) |
+| DIDO's Snacks | Deal: Ahmed Tarek Khalil | "مشروع Dido's خرج باستثمار مع أحمد طارق" (7594105428661849362) |
+| Game Guru | Deal: Mohamed Farouk | "صاحبة مشروع Game Guru تختار Offer محمد فاروق" (7567778677627424007) |
+| Haxel | Deal with Okhtein (Aya and Mounaz Abdel Raouf, guest sharks; not in the shark list, so sharks left empty) | "Haxel خرجوا باستثمار مع أختين" (7572637577614740754) |
+| Lil Kitchen | Deal (sharks not named) | "اخد deal من الشاركس اللي كان عايزهم" (7604465741903056146) |
+| Nutrifits | Deal (sharks not named) | "إحساس أصحاب Nutrifits بالاستثمار اللي أخدوه" (7587784443490848008) |
+| Horra | Deal (sharks not named; "she wanted 2 sharks") | "حرة خلت الشاركس ينافسوا بعض حتى بعد الديل" (7344357896588692742) |
+
+Not applied: "محمد فاروق قرر يستثمر في Olympia Football EG" (7694273009040887060). This may be a different Season 5 startup from Olympic Sports, which is a swimming academy, so the match is unconfirmed. Captions that only show offers or ask "will they take it?" were also skipped.
