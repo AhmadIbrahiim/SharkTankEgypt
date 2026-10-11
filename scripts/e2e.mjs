@@ -94,5 +94,16 @@ await test('valuation calculator: 1M for 20% is 5M post-money, 4M pre-money; rej
   await p.fill('#ce', '0'); assert.match(await p.textContent('#co'), /between 0 and 100/);
   await p.fill('#ce', '150'); assert.match(await p.textContent('#co'), /between 0 and 100/);
 });
+await test('compare: shared URL shows both startups, add by name, remove, unknowns marked', async () => {
+  const p = await page(); await p.goto(`${U}/en/compare/?ids=bar-and-jar,tutoro`);
+  const heads = await p.$$eval('#cmp thead th a', (as) => as.map((a) => a.textContent));
+  assert.deepEqual(heads, ['Bar & Jar', 'Tutoro']);
+  assert.match(await p.textContent('#cmp tbody'), /3\.5M EGP/); // Bar & Jar deal amount
+  assert.ok((await p.$$('#cmp td.unk')).length > 0, 'unknown values are marked');
+  await p.fill('#add', 'Stunning'); await p.dispatchEvent('#add', 'change');
+  assert.match(p.url(), /ids=bar-and-jar%2Ctutoro%2Cstunning|ids=bar-and-jar,tutoro,stunning/);
+  await p.click('[data-rm="tutoro"]');
+  assert.deepEqual(await p.$$eval('#cmp thead th a', (as) => as.map((a) => a.textContent)), ['Bar & Jar', 'Stunning']);
+});
 await browser.close(); server.close();
 console.log(`e2e: ${passed} passed${process.exitCode ? ', some FAILED' : ''}`);

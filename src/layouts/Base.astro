@@ -156,6 +156,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
             <a href={`${base}/${lang}/sharks/`}>{s.navSharks}</a>
             <a href={`${base}/${lang}/founders/`}>{s.navFounders}</a>
             <a href={`${base}/${lang}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
+            <a href={`${base}/${lang}/compare/`}>{lang === 'ar' ? 'قارن بين الشركات' : 'Compare startups'}</a>
             <a href={`${base}/${lang}/faq/`}>{s.navFaq}</a>
             <a href={`${base}${altPath}`} hreflang={other}>{s.switchLang}</a>
           </nav>
