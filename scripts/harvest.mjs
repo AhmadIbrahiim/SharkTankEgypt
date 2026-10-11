@@ -32,6 +32,15 @@ export const socialLinks = (html, base) => {
 };
 
 // Link-preview crawler UA: YouTube/Instagram/Facebook serve their og: tags to it instead of a bot or login wall.
+/** Visible text of a page: headings and paragraphs, scripts/styles dropped, capped for the prompt. */
+export const textOf = (html, max = 5000) => html.slice(0, 400000) // slice: these regexes go quadratic on huge pages
+
+  .replace(/<(script|style|noscript|svg)[\s\S]*?<\/\1>/gi, ' ')
+  .replace(/<\/(h[1-6]|p|li|div|section)>/gi, '\n')
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
+  .replace(/[ \t]+/g, ' ').replace(/\n\s*\n+/g, '\n').trim().slice(0, max);
+
 export const PREVIEW = 'facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)';
 export async function get(url, ua = UA) {
   const res = await fetch(url, { headers: { 'user-agent': ua, 'accept-language': 'ar,en;q=0.8', cookie: 'CONSENT=YES+1; SOCS=CAI' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });

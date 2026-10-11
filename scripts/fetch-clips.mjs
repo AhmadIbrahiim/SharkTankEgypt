@@ -3,7 +3,7 @@
 // Usage: node scripts/fetch-clips.mjs <out.json>
 import { writeFileSync } from 'node:fs';
 import { get, meta } from './harvest.mjs';
-import { textOf } from './enrich.mjs';
+import { textOf } from './harvest.mjs';
 
 const ROOT = 'https://sharktankarabi.com';
 // WordPress sitemaps (core or Yoast): an index of post sitemaps, each listing post URLs.
