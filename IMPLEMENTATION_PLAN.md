@@ -6,10 +6,11 @@ Status of the October 2026 audit. Everything marked done is on branch `claude/sh
 
 - [x] `scripts/audit-data.mjs`: checks prose against the deal field, sharks against the season lineup, figure sanity, duplicates and phantom records, and gaps. Writes `DATA_QUALITY_REPORT.md`. Runs in CI with `--strict`.
 - [x] 33 contradictions fixed. The outcome sentence is now generated from the `deal` field.
-- [x] Derived verification status, plus a `checked` date on all 218 records, shown on pages and included in the data exports.
+- [x] Derived verification status, plus a `checked` date on all records, shown on pages and included in the data exports.
 - [x] 17 more outcomes settled from sources that state them, from 71 unknown down to 54, quoted in `automation/deal-audit-2026-10.md`.
-- [ ] **Owner:** keep or delete `brazilian-picole`, a suspected phantom duplicate of `gelato-on-the-wheel`.
-- [ ] Remaining 54 unknown outcomes. They need a source that states the outcome; no new automated source is left to try.
+- [x] `brazilian-picole` removed: a sourced product of Gelato On Wheelz, not a startup. Old URLs redirect.
+- [x] Haxel's investors named: Aya and Mounaz Abdel Raouf (OKHTEIN), added as Season 4 guest sharks from sources.
+- [ ] Remaining 53 unknown outcomes. They need a source that states the outcome; no new automated source is left to try.
 
 ## P0: technical SEO. Done.
 
@@ -27,7 +28,7 @@ Status of the October 2026 audit. Everything marked done is on branch `claude/sh
 - [x] Self-hosted font and a lighter home page. Mobile Lighthouse is 97–100.
 - [x] One site-address setting; shared search module.
 - [x] Unit tests, 10 Playwright end-to-end tests, all gating the deploy.
-- [ ] Optional: preload the font to remove CLS 0.055 on `/en/`.
+- [x] Font preload: layout shift 0 on the home pages.
 
 ## P2: features. Done where data allows.
 

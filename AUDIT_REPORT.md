@@ -15,9 +15,9 @@ Severity: **P0** wrong or misleading output, or a blocker for search engines; **
 |---|---|---|---|---|
 | D1 | P0 | 33 pitch summaries claimed an outcome (deal or no deal) that the `deal` field did not record, or the reverse. | `src/data/startups.json`; the regex checks in `scripts/audit-data.mjs` | Fixed. The outcome sentence is now written from the `deal` field, and CI fails on any contradiction (`audit-data --strict`). |
 | D2 | P0 | Pages gave no sign of how solid a record was. | `src/pages/[lang]/[id].astro` | Fixed. A derived status (verified, partially verified, unverified) and a last-checked date appear on every startup page, in the CSV and in the JSON. |
-| D3 | P0 | 71 deal outcomes were unknown. | `automation/deal-audit-2026-10.md` | Down to 54. Each new outcome was taken only from a source that states it, quoted in the deal audit. Outcomes inferred from search titles were not applied. |
-| D4 | P1 | `brazilian-picole` has no source and shares Season 2 Episode 18 and its sector with `gelato-on-the-wheel`: possibly a phantom record. | DATA_QUALITY_REPORT.md, Warnings | **Open: owner decision.** Not deleted. |
-| D5 | P1 | The Haxel deal names Okhtein, who is not on the shark list, so its `deal.sharks` is empty. | `src/data/startups.json` (`haxel`) | Open. A guest investor needs a people entry and a source. |
+| D3 | P0 | 71 deal outcomes were unknown. | `automation/deal-audit-2026-10.md` | Down to 54, and 53 after the Brazilian Picolé record was removed (D4). Each new outcome was taken only from a source that states it, quoted in the deal audit. Outcomes inferred from search titles were not applied. |
+| D4 | P1 | `brazilian-picole` has no source and shares Season 2 Episode 18 and its sector with `gelato-on-the-wheel`: possibly a phantom record. | DATA_QUALITY_REPORT.md, Warnings | Fixed. Youm7 (youm7.com/6486350, already a Gelato source) says Gelato On Wheelz makes "Brazilian Picolé": a product, not a startup. Record removed, its two URLs redirect to Gelato on the Wheel, and the product is listed there. |
+| D5 | P1 | The Haxel deal names Okhtein, who is not on the shark list, so its `deal.sharks` was empty. | `src/data/startups.json` (`haxel`) | Fixed. Aya and Mounaz Abdel Raouf, OKHTEIN's founders, added as Season 4 guest sharks from Scoop Empire and Youm7 (youm7.com/7195500, 7202688), with bios limited to what those sources say. No photos: none with a clear credit was available. |
 | D6 | P2 | 300 gaps remain: 81 records without founders, 69 without an ask, 48 deals without terms, 26 deals without named sharks, 22 without an episode. | DATA_QUALITY_REPORT.md, Gaps | Open. These are left empty rather than guessed. |
 | D7 | P2 | Whether on-air deals later closed is not tracked, because almost no source reports it. | Methodology on `/deals/` | Documented. Deal figures are labelled as on-air agreements. |
 
@@ -36,7 +36,7 @@ Severity: **P0** wrong or misleading output, or a blocker for search engines; **
 
 ## Technical SEO: see SEO_AUDIT.md
 
-The check found 0 broken internal links across 77,022, 0 hreflang errors and 0 JSON-LD parse errors. 309 warnings are accepted: 301 of them are long titles caused by long startup names, and 8 are descriptions.
+The check found 0 broken internal links across 80,192, 0 hreflang errors and 0 JSON-LD parse errors. 361 warnings are accepted: 353 of them are long titles caused by long startup names, and 8 are descriptions.
 
 ## Performance, architecture and tests: see PERFORMANCE_REPORT.md
 

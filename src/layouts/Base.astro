@@ -3,6 +3,8 @@ import { t, goatcounter, googleVerification, categories, catSlug, category, seas
 import { siteNodes, ID } from '../schema';
 // Self-hosted variable font (Arabic + Latin subsets load on demand): no render-blocking third-party CSS.
 import '@fontsource-variable/readex-pro/wght.css';
+import fontAr from '@fontsource-variable/readex-pro/files/readex-pro-arabic-wght-normal.woff2?url';
+import fontLatin from '@fontsource-variable/readex-pro/files/readex-pro-latin-wght-normal.woff2?url';
 interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card }
 const { lang, title, description, altPath, image, jsonld, card } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -61,6 +63,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href={lang === 'ar' ? fontAr : fontLatin} as="font" type="font/woff2" crossorigin />
     <meta name="theme-color" content="#FBF6EE" media="(prefers-color-scheme: light)" />
     <meta name="application-name" content={s.brandName} />
     <meta name="theme-color" content="#17120F" media="(prefers-color-scheme: dark)" />
