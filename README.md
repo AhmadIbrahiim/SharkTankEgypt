@@ -1,17 +1,18 @@
 <div align="center">
 
+**English** · [العربية](README.ar.md)
+
 <a href="https://sharktank.ahmed-ibrahim.com/"><img src=".github/social-preview.jpg" alt="Shark Tank Egypt Directory: every startup that pitched on Shark Tank Egypt" width="760"></a>
 
-# Shark Tank Egypt Directory · دليل شارك تانك مصر
+# Shark Tank Egypt Directory
 
-**Every startup, shark, founder and deal from Shark Tank Egypt, in Arabic and English.**<br>
-**كل الشركات والمستثمرين والمؤسسين والصفقات في شارك تانك مصر، بالعربية والإنجليزية.**
+**Every startup, shark, founder and deal from Shark Tank Egypt, in Arabic and English.**
 
 [![Deploy](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml/badge.svg)](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml)
 [![Website](https://img.shields.io/badge/site-sharktank.ahmed--ibrahim.com-8E1B1B)](https://sharktank.ahmed-ibrahim.com/)
 [![Built with Astro](https://img.shields.io/badge/built%20with-Astro-FF5D01?logo=astro&logoColor=white)](https://astro.build)
 
-**[العربية](https://sharktank.ahmed-ibrahim.com/)** · **[English](https://sharktank.ahmed-ibrahim.com/en/)** · **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)**
+**[Website (Arabic)](https://sharktank.ahmed-ibrahim.com/)** · **[Website (English)](https://sharktank.ahmed-ibrahim.com/en/)** · **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)**
 
 </div>
 
@@ -43,7 +44,7 @@ An unofficial, community-run directory of every startup that pitched on *Shark T
 | Screenshots | `.github/workflows/screenshots.yml` captures each startup's website weekly and whenever the data changes. |
 | Research helpers | The `harvest`, `photos` and `enrich` workflows collect raw material into `automation/`. Nothing there reaches the site until a person reviews it. |
 | Checks | Unit tests (`npm test`), an SEO and link audit (`npm run audit-seo`) and Playwright end-to-end tests (`npm run e2e`) gate every deploy. |
-| Ratings and comments | [giscus](https://giscus.app): one GitHub Discussion per startup. |
+| Comments and reactions | [giscus](https://giscus.app): one GitHub Discussion per startup, shared by both languages. |
 | SEO | Arabic at the root and English under `/en/`, with `hreflang` (old `/ar/` links redirect), a sitemap, one linked JSON-LD graph per page (WebSite, Organization, Person/ProfilePage, TVSeries/TVSeason/TVEpisode, BreadcrumbList, FAQPage). |
 
 ## Contributing
