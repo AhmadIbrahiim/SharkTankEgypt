@@ -283,16 +283,16 @@ const jsonld = {
 <style>
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
   /* The stage: a pitch still behind the title, darkened towards the text. */
-  .stage { position: relative; overflow: hidden; min-height: 560px; display: flex; align-items: flex-end; background: var(--navy); }
+  .stage { position: relative; overflow: hidden; min-height: 560px; display: flex; align-items: flex-end; background: #2a1a14; }
   .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
-  .stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #062a4f 0%, rgb(6 42 79 / .8) 45%, rgb(6 42 79 / .2) 80%), linear-gradient(0deg, #062a4f 0%, transparent 40%); }
-  :global([dir='rtl']) .stage::after { background: linear-gradient(-90deg, #062a4f 0%, rgb(6 42 79 / .8) 45%, rgb(6 42 79 / .2) 80%), linear-gradient(0deg, #062a4f 0%, transparent 40%); }
+  .stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #2a1a14 0%, rgb(42 26 20 / .82) 45%, rgb(42 26 20 / .2) 80%), linear-gradient(0deg, #2a1a14 0%, transparent 40%); }
+  :global([dir='rtl']) .stage::after { background: linear-gradient(-90deg, #2a1a14 0%, rgb(42 26 20 / .82) 45%, rgb(42 26 20 / .2) 80%), linear-gradient(0deg, #2a1a14 0%, transparent 40%); }
   .stage-in { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: end; padding-block: 72px 40px; }
   .kicker { margin: 0 0 12px; color: var(--gold); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
   :global([dir='rtl']) .kicker { text-transform: none; letter-spacing: 0; font-size: .95rem; }
   .stage h1 { color: #fff; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1; text-transform: uppercase; }
   :global([dir='rtl']) .stage h1 { text-transform: none; line-height: 1.25; }
-  .sub { max-width: 54ch; margin: 16px 0 24px; color: #d5e3f1; font-size: 1.05rem; }
+  .sub { max-width: 54ch; margin: 16px 0 24px; color: #e8ddcf; font-size: 1.05rem; }
   .search { display: flex; align-items: center; gap: 10px; max-width: 600px; padding-inline: 14px 8px; background: #fff; border: 2px solid #fff; border-radius: var(--radius); color: var(--ink-2); }
   .search:focus-within { border-color: var(--gold); }
   .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 13px 0; }
@@ -300,14 +300,14 @@ const jsonld = {
   @media (hover: none) { kbd { display: none; } }
   .feat { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; border-radius: var(--radius); background: rgb(255 255 255 / .1); backdrop-filter: blur(8px); border: 1px solid rgb(255 255 255 / .25); color: #fff; text-decoration: none; }
   .feat:hover { border-color: var(--gold); }
-  .flag { align-self: flex-start; background: var(--gold); color: var(--navy); font-size: .72rem; font-weight: 800; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: .08em; }
+  .flag { align-self: flex-start; background: var(--gold); color: #2a1a14; font-size: .72rem; font-weight: 800; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: .08em; }
   :global([dir='rtl']) .flag { text-transform: none; letter-spacing: 0; }
   .feat strong { font-size: 1.9rem; font-weight: 800; line-height: 1.1; }
   .fterms { display: flex; flex-wrap: wrap; gap: 8px 26px; }
   .fterms b { display: block; font-size: 1.25rem; }
-  .fterms small { color: #b9cde3; font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
+  .fterms small { color: #cdbfb0; font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
   .watch { color: var(--gold); font-weight: 600; font-size: .92rem; }
-  @media (max-width: 860px) { .stage { min-height: 0; } .stage .bg { opacity: .3; height: 60%; } .stage::after { background: linear-gradient(0deg, #062a4f 45%, rgb(6 42 79 / .6) 100%) !important; } .stage-in { grid-template-columns: 1fr; gap: 22px; padding-block: 120px 28px; } }
+  @media (max-width: 860px) { .stage { min-height: 0; } .stage .bg { opacity: .3; height: 60%; } .stage::after { background: linear-gradient(0deg, #2a1a14 45%, rgb(42 26 20 / .6) 100%) !important; } .stage-in { grid-template-columns: 1fr; gap: 22px; padding-block: 120px 28px; } }
 
   .stats { display: flex; flex-wrap: wrap; gap: 10px 0; margin: 26px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
   .stats div { display: flex; flex-direction: column-reverse; padding-inline-end: 28px; margin-inline-end: 28px; border-inline-end: 1px solid var(--line); }
@@ -323,21 +323,21 @@ const jsonld = {
   .sechead a:hover { text-decoration: underline; }
 
   /* Who's buying: the panel of sharks, like the chairs on set. */
-  .panel { margin-top: var(--gap-sec); padding: 26px 24px 22px; border-radius: 10px; background: linear-gradient(180deg, #0b63c1, #062a4f); color: #fff; --ink: #fff; --ink-2: #c9dbee; --sun-ink: var(--gold); }
+  .panel { margin-top: var(--gap-sec); padding: 26px 24px 22px; border-radius: 10px; background: var(--crimson); color: #f4efe6; --ink: #f4efe6; --ink-2: #ecd3cc; --sun-ink: #f4efe6; }
   .panel .sechead { margin-bottom: 2px; }
   .hint { margin: 0 0 18px; color: var(--ink-2); }
   .chairs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(8, minmax(96px, 1fr)); gap: 14px; overflow-x: auto; scrollbar-width: none; }
   .chairs a { display: flex; flex-direction: column; align-items: center; text-align: center; color: var(--ink); text-decoration: none; }
-  .chairs a :global(.person-avatar) { width: 100%; height: auto; max-width: 112px; aspect-ratio: 1; border: 3px solid rgb(255 255 255 / .5); transition: border-color .2s; }
+  .chairs a :global(.person-avatar) { width: 100%; height: auto; max-width: 112px; aspect-ratio: 1; border: 3px solid rgb(244 239 230 / .45); transition: border-color .2s; }
   .chairs a:hover :global(.person-avatar) { border-color: var(--gold); }
   .chairs strong { margin-top: 10px; font-size: .9rem; font-weight: 600; line-height: 1.25; }
-  .chairs em { font-style: normal; font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: var(--gold); line-height: 1.1; margin-top: 4px; }
+  .chairs em { font-style: normal; font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: #f6cf73; line-height: 1.1; margin-top: 4px; }
   .chairs small { color: var(--ink-2); font-size: .78rem; }
   @media (max-width: 860px) { .chairs { grid-template-columns: repeat(8, 104px); } .panel { padding: 20px 16px; } }
 
   /* Season rails: a row of pitch stills per season. */
   .rail { margin-top: var(--gap-sec); }
-  .strip { list-style: none; margin: 0; padding: 0 0 6px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(230px, 1fr); gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #b9cde3 transparent; }
+  .strip { list-style: none; margin: 0; padding: 0 0 6px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(230px, 1fr); gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #d6c7b2 transparent; }
   .strip li { scroll-snap-align: start; }
   @media (min-width: 1100px) { .strip { grid-auto-columns: calc((100% - 48px) / 5); } }
   .poster { display: flex; flex-direction: column; gap: 2px; color: var(--ink); text-decoration: none; }
@@ -347,10 +347,10 @@ const jsonld = {
   .pic { position: relative; display: block; }
   .pic :global(.frame) { transition: outline-color .2s; outline: 2px solid transparent; outline-offset: 0; }
   .poster:hover .pic :global(.frame), .card:hover .pic :global(.frame) { outline-color: var(--sun); }
-  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .7rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: #4b6178; }
+  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .7rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: #6b5b4f; }
   :global([dir='rtl']) .pic i { text-transform: none; letter-spacing: 0; font-size: .76rem; }
   .pic i.ok { background: var(--ok); }
-  .pic i.unk { background: var(--gold); color: var(--navy); }
+  .pic i.unk { background: var(--gold); color: #2a1a14; }
 
   #all { scroll-margin-top: 80px; }
   section[aria-labelledby='all'] { margin-top: var(--gap-sec); }
@@ -358,7 +358,7 @@ const jsonld = {
   .chips { display: flex; gap: 4px; flex-wrap: wrap; }
   .chip { font: inherit; font-size: .88rem; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink-2); cursor: pointer; }
   .chip:hover { color: var(--ink); border-color: var(--sun); }
-  .chip[aria-pressed='true'] { background: var(--sun); border-color: var(--sun); color: #fff; font-weight: 600; }
+  .chip[aria-pressed='true'] { background: var(--crimson); border-color: var(--crimson); color: #f4efe6; font-weight: 600; }
   .selects { display: flex; gap: 8px; margin-inline-start: auto; }
   select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); cursor: pointer; }
   @media (max-width: 720px) { .chips { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; } .chip { white-space: nowrap; flex: none; } }

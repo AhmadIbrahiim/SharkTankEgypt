@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0B63C1"/>
-  <path d="M15 46C26 41 35 28 42 10c-4 15-3 27 8 36Z" fill="#FFFFFF"/>
-  <rect x="9" y="49" width="46" height="4" rx="2" fill="#F5B100"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><mask id="b"><rect x="-10" y="-10" width="120" height="120" fill="#fff"/><circle cx="100" cy="0" r="30" fill="#000"/><circle cx="98.95" cy="29.98" r="8" fill="#000"/><circle cx="88.04" cy="27.51" r="8" fill="#000"/><circle cx="78.79" cy="21.21" r="8" fill="#000"/><circle cx="72.49" cy="11.96" r="8" fill="#000"/><circle cx="70.02" cy="1.05" r="8" fill="#000"/></mask></defs><rect x="4" y="4" width="92" height="92" rx="8" fill="#8E1B1B" mask="url(#b)"/><path transform="translate(12 36) scale(1.75)" d="M0 30C11 26 19 15 25 0c2 0 3 1 2.5 3-2 9-1 18 8.5 27Z" fill="#F4EFE6"/></svg>

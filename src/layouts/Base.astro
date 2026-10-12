@@ -69,9 +69,9 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preload" href={lang === 'ar' ? fontAr : fontLatin} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={lang === 'ar' ? serifAr : serifLatin} as="font" type="font/woff2" crossorigin />
-    <meta name="theme-color" content="#062A4F" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#FBF8F2" media="(prefers-color-scheme: light)" />
     <meta name="application-name" content={s.brandName} />
-    <meta name="theme-color" content="#062A4F" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FBF8F2" media="(prefers-color-scheme: dark)" />
     <title>{fullTitle}</title>
     <meta name="description" content={metaDesc} />
     <link rel="canonical" href={url} />
@@ -150,8 +150,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
         <div class="foot-grid">
           <div class="foot-brand">
             <a class="brand big" href={`${base}/${lang}/`}>
-              <img class="mark" src={`${base}/favicon.svg`} alt="" width="52" height="52" loading="lazy" />
-              <span class="word"><b>{s.brandName}</b><small>{s.brandSub}</small></span>
+              <img class="mark" src={`${base}/logo-reversed.svg`} alt={`${s.brandName} – ${s.brandSub}`} width="150" height="108" loading="lazy" />
             </a>
             <p>{s.footerTagline}</p>
             <a class="gh" href="https://github.com/AhmadIbrahiim/SharkTankEgypt">
@@ -185,17 +184,17 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
 </html>
 
 <style is:global>
-  /* One bright theme in the show's colours: ocean navy, sea blue, white, and gold for highlights. */
+  /* Bite Stamp palette: crimson and cream like an archive stamp, sea teal for the water, green for deals, gold for highlights. One theme. */
   :root {
-    --bg: #f4f8fc; --surface: #ffffff; --surface-2: #e6eef7; --line: #d3e0ec; --rule: #062a4f;
-    --ink: #0a1f35; --ink-2: #4b6178;
-    --navy: #062a4f; --sun: #0b63c1; --sun-ink: #0a54a3; --sun-soft: #e3effb;
-    --gold: #f5b100; --gold-ink: #8a6100;
-    --nile: #0b7c8a; --nile-soft: #dff3f5;
-    --ok: #12804f; --ok-soft: #e1f4ea;
-    --shadow: 0 1px 2px rgb(6 42 79 / .06), 0 6px 18px -8px rgb(6 42 79 / .18);
-    --shadow-lift: 0 2px 4px rgb(6 42 79 / .08), 0 14px 30px -12px rgb(6 42 79 / .3);
-    --radius: 8px;
+    --bg: #f4efe6; --surface: #fbf8f2; --surface-2: #ece4d6; --line: #e3d7c3; --rule: #8e1b1b;
+    --ink: #2a1a14; --ink-2: #6b5b4f;
+    --crimson: #8e1b1b; --sun: #8e1b1b; --sun-ink: #8e1b1b; --sun-soft: #f3e1dc;
+    --navy: #2a1a14; --gold: #c8962e; --gold-ink: #6e4f0f;
+    --nile: #1f5f66; --nile-soft: #dbe9ea;
+    --ok: #2f6b3a; --ok-soft: #e2eee3;
+    --shadow: 0 1px 2px rgb(42 26 20 / .06), 0 6px 18px -8px rgb(42 26 20 / .18);
+    --shadow-lift: 0 2px 4px rgb(42 26 20 / .08), 0 14px 30px -12px rgb(42 26 20 / .28);
+    --radius: 6px;
     --gap-sec: 48px;
     --serif: 'Source Serif 4 Variable', 'Noto Naskh Arabic Variable', Georgia, serif;
     color-scheme: light;
@@ -224,17 +223,17 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   .skip:focus { top: 12px; }
 
   /* Masthead: solid paper, a heavy rule under it. */
-  .site-header { position: sticky; top: 0; z-index: 20; background: var(--navy); border-bottom: 3px solid var(--gold); }
-  .site-header .brand, .site-header .nav a[aria-current='page'], .site-header .nav a:hover { color: #fff; }
-  .site-header .nav a { color: #b9cde3; }
-  .site-header .word small { color: #b9cde3; }
-  .site-header .search-btn, .site-header .lang { color: #fff; border-color: rgb(255 255 255 / .3); }
-  .site-header .search-btn:hover, .site-header .lang:hover { border-color: var(--gold); }
+  .site-header { position: sticky; top: 0; z-index: 20; background: var(--surface); border-bottom: 3px solid var(--crimson); }
+  .site-header .word b { color: var(--crimson); }
+  .site-header .nav a { color: var(--ink-2); }
+  .site-header .nav a[aria-current='page'], .site-header .nav a:hover { color: var(--crimson); }
+  .site-header .search-btn, .site-header .lang { color: var(--ink); border-color: var(--line); }
+  .site-header .search-btn:hover, .site-header .lang:hover { border-color: var(--crimson); }
   .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
-  .mark { width: 34px; height: 34px; display: block; }
+  .mark { width: 38px; height: 38px; display: block; }
   .word { display: flex; flex-direction: column; line-height: 1.1; }
-  .word b { font-weight: 800; font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; }
+  .word b { font-weight: 900; font-size: 1.05rem; letter-spacing: .03em; text-transform: uppercase; }
   [dir='rtl'] .word b { letter-spacing: 0; font-size: 1.15rem; }
   .word small { font-size: .68rem; font-weight: 500; color: var(--ink-2); margin-top: 3px; text-transform: uppercase; letter-spacing: .14em; }
   [dir='rtl'] .word small { text-transform: none; letter-spacing: 0; font-size: .74rem; }
@@ -243,7 +242,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   .nav { display: flex; gap: 22px; margin-inline: auto 22px; }
   .nav a { display: inline-flex; align-items: center; min-height: 40px; color: var(--ink-2); text-decoration: none; font-size: .93rem; white-space: nowrap; border-bottom: 2px solid transparent; }
   .nav a:hover { color: var(--ink); }
-  .nav a[aria-current='page'] { font-weight: 600; border-bottom-color: var(--gold); }
+  .nav a[aria-current='page'] { font-weight: 600; border-bottom-color: var(--crimson); }
   .search-btn { display: inline-grid; place-items: center; width: 36px; height: 36px; margin-inline-end: 8px; color: var(--ink); border: 1px solid var(--line); }
   .search-btn:hover { border-color: var(--ink); }
   .site-header { transition: transform .25s ease; }
@@ -255,7 +254,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
 
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 18px; border-radius: 0; font: inherit; font-weight: 500; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; white-space: nowrap; }
   .btn-primary { background: var(--sun); color: #fff; font-weight: 600; border-radius: var(--radius); }
-  .btn-primary:hover { background: var(--navy); }
+  .btn-primary:hover { background: var(--ink); }
   .btn-ghost { background: var(--surface); color: var(--sun-ink); border: 1px solid var(--line); border-radius: var(--radius); }
   .btn-ghost:hover { border-color: var(--sun); }
 
@@ -273,13 +272,14 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   .play { position: absolute; inset-inline-start: 10px; bottom: 10px; width: 34px; height: 34px; border-radius: 50%; background: rgb(0 0 0 / .65); border: 1.5px solid rgb(255 255 255 / .85); }
   .play::after { content: ''; position: absolute; inset: 0; margin: auto; translate: 2px 0; width: 0; height: 0; border-block: 7px solid transparent; border-left: 11px solid #fff; }
   a:hover .play, button:hover .play { background: var(--sun); }
-  .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.2rem, 2.6vw, 1.6rem); font-weight: 800; line-height: 1.2; color: #fff; background: linear-gradient(135deg, #062a4f, #0b63c1); position: relative; }
+  .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.2rem, 2.6vw, 1.6rem); font-weight: 800; line-height: 1.2; color: var(--bg); background: linear-gradient(135deg, #1f5f66, #2a1a14); position: relative; }
   .ph .og { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
   .avatar { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; font-size: .72rem; font-weight: 600; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); }
 
-  .site-footer { margin-top: 72px; padding-block: 36px 28px; background: var(--navy); color: #dbe7f3; --ink: #fff; --ink-2: #a9c0d8; --line: rgb(255 255 255 / .16); --surface: rgb(255 255 255 / .06); --sun-ink: var(--gold); }
-  .site-footer .btn-primary { background: var(--gold); color: var(--navy); }
+  .site-footer { margin-top: 72px; padding-block: 36px 28px; background: #2a1a14; color: #e8ddcf; --ink: #f4efe6; --ink-2: #bfae9d; --line: rgb(244 239 230 / .16); --surface: rgb(244 239 230 / .06); --sun-ink: var(--gold); }
+  .site-footer .btn-primary { background: var(--crimson); color: #f4efe6; }
+  .site-footer .brand.big .mark { width: 150px; height: auto; }
   .contribute { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
   .contribute h2 { font-size: 1.35rem; }
   .contribute p { margin: 6px 0 0; color: var(--ink-2); }
