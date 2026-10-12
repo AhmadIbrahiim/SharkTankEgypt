@@ -1,6 +1,6 @@
 # AI-assistant visibility check
 
-Ask these in ChatGPT (with search), Perplexity, Gemini and Claude once a month, in a fresh chat, and record in the table whether the answer cites this directory (ahmadibrahiim.github.io/SharkTankEgypt) and whether it is correct.
+Ask these in ChatGPT (with search), Perplexity, Gemini and Claude once a month, in a fresh chat, and record in the table whether the answer cites this directory (sharktank.ahmed-ibrahim.com) and whether it is correct.
 
 | # | Question |
 |---|---|

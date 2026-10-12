@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://ahmadibrahiim.github.io/SharkTankEgypt/"><img src=".github/social-preview.jpg" alt="Shark Tank Egypt Directory: every startup that pitched on Shark Tank Egypt" width="760"></a>
+<a href="https://sharktank.ahmed-ibrahim.com/"><img src=".github/social-preview.jpg" alt="Shark Tank Egypt Directory: every startup that pitched on Shark Tank Egypt" width="760"></a>
 
 # Shark Tank Egypt Directory · دليل شارك تانك مصر
 
@@ -8,10 +8,10 @@
 **كل الشركات والمستثمرين والمؤسسين والصفقات في شارك تانك مصر، بالعربية والإنجليزية.**
 
 [![Deploy](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml/badge.svg)](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml)
-[![Website](https://img.shields.io/badge/site-ahmadibrahiim.github.io%2FSharkTankEgypt-E0562F)](https://ahmadibrahiim.github.io/SharkTankEgypt/)
+[![Website](https://img.shields.io/badge/site-sharktank.ahmed--ibrahim.com-E0562F)](https://sharktank.ahmed-ibrahim.com/)
 [![Built with Astro](https://img.shields.io/badge/built%20with-Astro-FF5D01?logo=astro&logoColor=white)](https://astro.build)
 
-**[العربية](https://ahmadibrahiim.github.io/SharkTankEgypt/ar/)** · **[English](https://ahmadibrahiim.github.io/SharkTankEgypt/en/)** · **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)**
+**[العربية](https://sharktank.ahmed-ibrahim.com/ar/)** · **[English](https://sharktank.ahmed-ibrahim.com/en/)** · **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)**
 
 </div>
 
@@ -30,7 +30,7 @@ An unofficial, community-run directory of every startup that pitched on *Shark T
 - **All deals** with analytics (average and median deal, valuations, deals by sector), a methodology note and a valuation calculator.
 - **Compare startups** side by side, and related startups on every page.
 - A **verification status** and last-checked date on every startup, derived from its sources.
-- **Open data**: [CSV](https://ahmadibrahiim.github.io/SharkTankEgypt/data/deals.csv), [JSON](https://ahmadibrahiim.github.io/SharkTankEgypt/data/startups.json) and [llms.txt](https://ahmadibrahiim.github.io/SharkTankEgypt/llms.txt).
+- **Open data**: [CSV](https://sharktank.ahmed-ibrahim.com/data/deals.csv), [JSON](https://sharktank.ahmed-ibrahim.com/data/startups.json) and [llms.txt](https://sharktank.ahmed-ibrahim.com/llms.txt).
 - A generated **share image** for every page, and full **schema.org** structured data.
 
 ## How it works
@@ -54,7 +54,7 @@ Corrections and new information are very welcome, especially deal outcomes, foun
 
 ```sh
 npm install
-npm run dev          # http://localhost:4321/SharkTankEgypt/
+npm run dev          # http://localhost:4321/
 npm run check-data   # validate src/data
 npm run audit-data   # contradictions and gaps -> DATA_QUALITY_REPORT.md
 npm test             # unit tests
