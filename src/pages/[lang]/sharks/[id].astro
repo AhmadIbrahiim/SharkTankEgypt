@@ -3,10 +3,10 @@ import Base from '../../../layouts/Base.astro';
 import { ID, photo } from '../../../schema';
 import Avatar from '../../../components/Avatar.astro';
 import Links from '../../../components/Links.astro';
-import MiniCard from '../../../components/MiniCard.astro';
 import Faq from '../../../components/Faq.astro';
 import { sharkFaq, sharkSeasons, sharkPairs, sharkSectors } from '../../../faq';
 import Chips from '../../../components/Chips.astro';
+import Shot from '../../../components/Shot.astro';
 import { langs, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, catSlug, suggestUrl, type Lang } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => sharks.map((p) => ({ params: { lang, id: p.id }, props: { p } })));
@@ -89,7 +89,15 @@ const jsonld = {
 
     <section>
       <h2 class="h2">{s.portfolio}</h2>
-      {p.deals.length ? <ul class="grid">{p.deals.map((x) => <li><MiniCard x={x} lang={lang} /></li>)}</ul> : <p class="muted">{s.noDeals}</p>}
+      {/* One row per deal, biggest first: what, when, with whom, how much. */}
+      {p.deals.length ? <ol class="ticker">{[...p.deals].sort((a, b) => (b.deal?.amountEGP ?? -1) - (a.deal?.amountEGP ?? -1)).map((x) => {
+        const co = (x.deal?.sharks ?? []).filter((n) => n !== p.key).map((n) => sharkByKey.get(n)?.name[lang] ?? n);
+        return <li><a href={`${base}/${lang}/${x.id}/`}>
+          <span class="th"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} /></span>
+          <span class="tx"><strong>{x.name[lang]}</strong><small>{seasonLabel(x.season, lang)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}{x.category && ` · ${category(x.category, lang)}`}{co.length > 0 && ` · ${lang === 'ar' ? 'مع' : 'with'} ${co.join(lang === 'ar' ? ' و' : ', ')}`}</small></span>
+          <span class="amt">{x.deal?.amountEGP != null ? money(x.deal.amountEGP, lang) : '—'}<small>{x.deal?.equityPct != null ? `${lang === 'ar' ? 'مقابل' : 'for'} ${pct(x.deal.equityPct, lang)}` : (lang === 'ar' ? 'الشروط غير معلنة' : 'terms not disclosed')}</small></span>
+        </a></li>;
+      })}</ol> : <p class="muted">{s.noDeals}</p>}
     </section>
 
     <Chips title={lang === 'ar' ? `صفقات ${p.name[lang]} حسب الموسم` : `${p.name[lang]}'s deals by season`}
@@ -109,26 +117,27 @@ const jsonld = {
   figure { margin: 0; text-align: center; }
   figcaption { margin-top: 8px; font-size: .75rem; color: var(--ink-2); }
   figcaption a { color: inherit; }
-  h1 { font-size: clamp(2rem, 4.5vw, 2.8rem); }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); text-transform: uppercase; line-height: 1.05; }
+  :global([dir='rtl']) h1 { text-transform: none; }
+  figure :global(.person-avatar) { border: 4px solid var(--gold); }
   .alt { margin: 2px 0 0; color: var(--ink-2); }
-  .title { margin: 10px 0 0; font-weight: 500; color: var(--ink); font-style: italic; }
+  .title { margin: 10px 0 0; font-weight: 500; color: var(--sun-ink); }
   .seasons { margin: 8px 0 0; color: var(--ink-2); font-size: .92rem; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .hero .seasons { justify-content: inherit; }
-  .seasons a { color: var(--ink); font-size: .88rem; }
+  .seasons a { padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .82rem; }
   .bio { font-size: 1.05rem; margin: 16px 0 0; max-width: 70ch; }
   .muted { color: var(--ink-2); }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0 26px; }
-  .stats div { padding: 10px 0 4px; border-top: 2px solid var(--ink); display: flex; flex-direction: column; }
-  .stats b { font-family: var(--serif); font-size: 1.8rem; font-weight: 700; line-height: 1.2; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .stats div { padding: 14px 18px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .stats b { font-family: var(--serif); font-size: 2.2rem; font-weight: 700; line-height: 1.15; color: var(--sun); }
   .stats span { color: var(--ink-2); font-size: .88rem; }
   .insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px 36px; margin-top: 28px; }
-  .card { padding-top: 10px; border-top: 1px solid var(--ink); }
+  .card { padding: 18px 20px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
   .card h2, .h2 { font-size: 1.25rem; margin-bottom: 12px; }
   .h2 { margin-top: var(--gap-sec); }
   .bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   .bars li { display: grid; grid-template-columns: 9rem 1fr 2rem; align-items: center; gap: 10px; font-size: .9rem; }
-  .bars i { display: block; height: 8px; width: var(--w); background: var(--ink); }
-  .bars li:first-child i { background: var(--sun); }
+  .bars i { display: block; height: 8px; width: var(--w); border-radius: 4px; background: var(--sun); }
   .bars b { text-align: end; color: var(--ink-2); font-weight: 500; }
   .partners { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   .partners a { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
@@ -136,4 +145,14 @@ const jsonld = {
   .partners b { margin-inline-start: auto; color: var(--ink-2); font-weight: 500; }
   .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
   @media (max-width: 560px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+  .ticker { list-style: none; margin: 0; padding: 0; }
+  .ticker a { display: grid; grid-template-columns: 120px 1fr auto; gap: 16px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  .ticker li:last-child a { border-bottom: 1px solid var(--line); }
+  .ticker a:hover strong { color: var(--sun-ink); }
+  .ticker .th :global(.ph) { font-size: .8rem; }
+  .ticker strong { display: block; font-size: 1.05rem; }
+  .ticker .tx small { color: var(--ink-2); font-size: .85rem; }
+  .amt { text-align: end; font-family: var(--serif); font-size: 1.35rem; font-weight: 700; white-space: nowrap; }
+  .amt small { display: block; font-family: 'Readex Pro Variable', sans-serif; font-size: .78rem; font-weight: 400; color: var(--ink-2); }
+  @media (max-width: 560px) { .ticker a { grid-template-columns: 76px 1fr; } .amt { grid-column: 2; text-align: start; font-size: 1.1rem; } }
 </style>

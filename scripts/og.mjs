@@ -40,45 +40,45 @@ const page = (c, lang) => `<!doctype html><html lang="${lang}" dir="${lang === '
 @font-face{font-family:S;font-weight:200 900;src:url(/__fonts/noto-naskh-arabic/files/noto-naskh-arabic-arabic-wght-normal.woff2) format('woff2');unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+0660-0669}
 @font-face{font-family:S;font-weight:200 900;src:url(/__fonts/source-serif-4/files/source-serif-4-latin-wght-normal.woff2) format('woff2')}
 *{margin:0;box-sizing:border-box}
-body{width:1200px;height:630px;overflow:hidden;font-family:R,sans-serif;color:#1A1714;position:relative;background:#F6F3EC}
-body::before{content:'';position:absolute;inset:40px 64px auto;height:7px;border-block:2px solid #1A1714}
+body{width:1200px;height:630px;overflow:hidden;font-family:R,sans-serif;color:#F4F4F6;position:relative;background:#062A4F}
+body::before{content:'';position:absolute;inset:40px 64px auto;height:7px;border-block:2px solid #F4F4F6}
 main{position:absolute;inset:82px 64px 100px}
 .brand{position:absolute;inset-inline-start:64px;bottom:32px;display:flex;align-items:center;gap:12px;font-family:S,serif;font-weight:800;font-size:24px}
-.brand svg{width:36px;height:36px}.brand small{font-family:R,sans-serif;color:#5D564D;font-weight:500;font-size:17px;letter-spacing:2px;text-transform:uppercase}
+.brand svg{width:36px;height:36px}.brand small{font-family:R,sans-serif;color:#B9CDE3;font-weight:500;font-size:17px;letter-spacing:2px;text-transform:uppercase}
 [dir=rtl] .brand small{letter-spacing:0;text-transform:none;font-size:19px}
-.url{position:absolute;inset-inline-end:64px;bottom:38px;color:#5D564D;font-size:18px}
-body::after{content:'';position:absolute;inset:auto 64px 86px;border-top:1px solid #D6CFC1}
+.url{position:absolute;inset-inline-end:64px;bottom:38px;color:#B9CDE3;font-size:18px}
+body::after{content:'';position:absolute;inset:auto 64px 86px;border-top:1px solid #2A5480}
 .split{display:flex;align-items:center;gap:52px;height:100%}.text{flex:1;min-width:0}
-.eyebrow{color:#B3261E;font-size:20px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.eyebrow{color:#F5B100;font-size:20px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
 [dir=rtl] .eyebrow{letter-spacing:0;text-transform:none;font-size:24px}
 .eyebrow.center{text-align:center}
 h1{font-family:S,serif;font-size:80px;line-height:1.04;font-weight:700;letter-spacing:-1.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 h1.long{font-size:58px;-webkit-line-clamp:3}[dir=rtl] h1{letter-spacing:0;line-height:1.4}
-.alt{font-size:28px;color:#5D564D;margin-top:8px;font-weight:400}
-.sub{font-size:25px;color:#3d3832;margin-top:16px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.alt{font-size:28px;color:#B9CDE3;margin-top:8px;font-weight:400}
+.sub{font-size:25px;color:#DCE8F4;margin-top:16px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .badge{display:inline-block;margin-top:22px;padding:6px 16px;font-size:24px;font-weight:600;border:2px solid currentColor}
-.badge.ok{color:#1D6440}.badge.no{color:#5D564D}.badge.ask{color:#B3261E}
-.stats{display:flex;margin-top:26px;border-top:2px solid #1A1714}.stats div{padding:10px 30px 0 0;margin-inline-end:30px;border-inline-end:1px solid #D6CFC1}
+.badge.ok{color:#5EE3A1}.badge.no{color:#B9CDE3}.badge.ask{color:#F5B100}
+.stats{display:flex;margin-top:26px;border-top:2px solid #F4F4F6}.stats div{padding:10px 30px 0 0;margin-inline-end:30px;border-inline-end:1px solid #2A5480}
 [dir=rtl] .stats div{padding:10px 0 0 30px}.stats div:last-child{border:0}
-.stats b{display:block;font-family:S,serif;font-size:40px;font-weight:700;white-space:nowrap}.stats span{font-size:18px;color:#5D564D;white-space:nowrap}
-.device{width:500px;flex:none;position:relative;border:1px solid #1A1714;padding:8px;background:#FBF9F4}
-.device img{width:100%;height:300px;object-fit:cover;object-position:top;display:block;background:#ECE7DC}
+.stats b{display:block;font-family:S,serif;font-size:40px;font-weight:700;white-space:nowrap}.stats span{font-size:18px;color:#B9CDE3;white-space:nowrap}
+.device{width:500px;flex:none;position:relative;border:1px solid #F4F4F6;padding:8px;background:#0A3766}
+.device img{width:100%;height:300px;object-fit:cover;object-position:top;display:block;background:#0D4278}
 .play{position:absolute;inset-inline-start:24px;bottom:24px;width:64px;height:64px;background:rgba(0,0,0,.78)}
 .play::after{content:'';position:absolute;inset:0;margin:auto;translate:3px 0;width:0;height:0;border-block:13px solid transparent;border-left:20px solid #fff}
 .monogram{width:260px;height:260px;flex:none;display:grid;place-items:center}
 .monogram svg{width:220px;height:220px}[hidden]{display:none!important}
-.ring{position:relative;flex:none;border:1px solid #1A1714;padding:8px;background:#FBF9F4}
-.face{width:320px;height:360px;object-fit:cover;object-position:center 25%;display:block;background:#ECE7DC}
-.face.init{display:grid;place-items:center;font-family:S,serif;font-size:120px;font-weight:700;color:#1A1714}
+.ring{position:relative;flex:none;border:1px solid #F4F4F6;padding:8px;background:#0A3766}
+.face{width:320px;height:360px;object-fit:cover;object-position:center 25%;display:block;background:#0D4278}
+.face.init{display:grid;place-items:center;font-family:S,serif;font-size:120px;font-weight:700;color:#F4F4F6}
 .person .text{padding-inline-start:4px}
 .vs{display:flex;align-items:center;justify-content:center;gap:40px;height:92%}
-.side{text-align:center;width:420px}.side .face{width:230px;height:260px;margin:0 auto;border:1px solid #1A1714;padding:6px;background:#FBF9F4}
-.side h2{font-family:S,serif;font-size:42px;margin-top:16px;line-height:1.15}.side p{font-size:24px;color:#3d3832;margin-top:6px}
-.vsb{flex:none;font-family:S,serif;font-style:italic;font-size:56px;font-weight:700;color:#B3261E}
-.faces{display:grid;grid-template-columns:repeat(3,116px);gap:10px;flex:none}.faces .face{width:116px;height:132px;border:1px solid #D6CFC1}
+.side{text-align:center;width:420px}.side .face{width:230px;height:260px;margin:0 auto;border:1px solid #F4F4F6;padding:6px;background:#0A3766}
+.side h2{font-family:S,serif;font-size:42px;margin-top:16px;line-height:1.15}.side p{font-size:24px;color:#DCE8F4;margin-top:6px}
+.vsb{flex:none;font-family:S,serif;font-style:italic;font-size:56px;font-weight:700;color:#F5B100}
+.faces{display:grid;grid-template-columns:repeat(3,116px);gap:10px;flex:none}.faces .face{width:116px;height:132px;border:1px solid #2A5480}
 .faces .face.init{font-size:40px}
 .stack{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:440px;flex:none}
-.stack img{width:100%;height:150px;object-fit:cover;object-position:top;border:1px solid #1A1714;background:#ECE7DC}
+.stack img{width:100%;height:150px;object-fit:cover;object-position:top;border:1px solid #F4F4F6;background:#0D4278}
 </style></head><body><main>${body(c)}</main>
 <div class="brand">${logo}<span>${lang === 'ar' ? 'دليل شارك تانك مصر' : 'Shark Tank Egypt'}</span><small>${lang === 'ar' ? 'كل الشركات والصفقات' : 'Startup Directory'}</small></div>
 <div class="url"><bdi dir="ltr">${siteLabel}</bdi></div></body></html>`;

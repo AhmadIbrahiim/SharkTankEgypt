@@ -3,7 +3,8 @@ import Base from '../../layouts/Base.astro';
 import { ID, ROOT } from '../../schema';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
-import { langs, listCard, startups, seasons, sharks, founders, founderId, t, num, money, pct, category, seasonLabel, shark, suggestUrl, type Lang } from '../../config';
+import Avatar from '../../components/Avatar.astro';
+import { langs, listCard, startups, seasons, sharks, founders, founderId, t, num, money, pct, category, seasonLabel, shark, suggestUrl, thumb, type Lang } from '../../config';
 import { norm } from '../../search.mjs';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
@@ -13,6 +14,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categories = [...new Set(startups.map((x) => x.category).filter(Boolean))].sort() as string[];
 const deals = startups.filter((x) => x.deal?.made);
 const invested = deals.reduce((sum, x) => sum + (x.deal?.amountEGP ?? 0), 0);
+// The stage: the biggest disclosed deal that has a pitch video.
+const feat = deals.filter((x) => x.video && x.deal?.amountEGP).sort((a, b) => b.deal!.amountEGP! - a.deal!.amountEGP!)[0];
+const panel = sharks.filter((p) => p.deals.length).sort((a, b) => b.deals.length - a.deals.length).slice(0, 8);
+const rails = [...seasons].map((x) => x.season).filter((n) => n > 0).sort((a, b) => b - a)
+  .map((n) => ({ n, items: startups.filter((x) => x.season === n).sort((a, b) => (b.video ? 1 : 0) - (a.video ? 1 : 0)).slice(0, 12) })).filter((r) => r.items.length);
+const tag = (x: (typeof startups)[number]) => x.deal?.made === true ? ['ok', s.deal] : x.deal?.made === false ? ['no', s.noDeal] : ['unk', ar ? 'غير مؤكدة' : 'Unconfirmed'];
+const ar = lang === 'ar';
 const first = (t: string) => t.split(/(?<=[.!?؟])\s/)[0];
 const arName = new Map(founders.map((f) => [f.id, f.name.ar]));
 // Search index per card: names, sector, founders and sharks in both languages, plus the first sentence of each description.
@@ -28,28 +36,76 @@ const jsonld = {
 };
 ---
 <Base lang={lang} jsonld={jsonld} card={listCard(s.title, s.tagline, startups, lang, lang === 'ar' ? 'كل المواسم والحلقات' : 'Every season and episode')} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
-  <section class="hero">
-    <div class="container">
-      <p class="kicker">{s.heroKicker}</p>
-      <h1>{s.heroTitle}</h1>
-      <p class="sub">{s.heroSub}</p>
-      <label class="search">
-        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <span class="sr">{s.search}</span>
-        <input id="q" type="search" placeholder={s.search} autocomplete="off" enterkeyhint="search" />
-        <kbd aria-hidden="true">/</kbd>
-      </label>
-      <dl class="stats">
-        <div><dt>{s.statStartups}</dt><dd>{num(startups.length, lang)}</dd></div>
-        <div><dt>{s.statSeasons}</dt><dd>{num(seasons.length, lang)}</dd></div>
-        <div><dt>{s.statDeals}</dt><dd>{num(deals.length, lang)}</dd></div>
-        {invested > 0 && <div><dt>{s.statInvested}</dt><dd>{money(invested, lang)}</dd></div>}
-      </dl>
+  <section class="stage">
+    {feat && <img class="bg" src={`https://i.ytimg.com/vi/${feat.video}/maxresdefault.jpg`} alt="" width="1280" height="720" fetchpriority="high" onerror={`this.onerror=null;this.src='${thumb(feat.video!)}'`} />}
+    <div class="container stage-in">
+      <div class="lead">
+        <p class="kicker">{s.heroKicker}</p>
+        <h1>{s.heroTitle}</h1>
+        <p class="sub">{s.heroSub}</p>
+        <label class="search">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="sr">{s.search}</span>
+          <input id="q" type="search" placeholder={s.search} autocomplete="off" enterkeyhint="search" />
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+      </div>
+      {feat && (
+        <a class="feat" href={`${base}/${lang}/${feat.id}/`}>
+          <span class="flag">{ar ? 'صفقة كبيرة' : 'Big deal'} · {seasonLabel(feat.season, lang)}</span>
+          <strong>{feat.name[lang]}</strong>
+          <span class="fterms">
+            <span><b>{money(feat.deal!.amountEGP!, lang)}</b><small>{s.deal}</small></span>
+            {feat.deal!.equityPct != null && <span><b>{pct(feat.deal!.equityPct, lang)}</b><small>{ar ? 'الحصة' : 'Equity'}</small></span>}
+            {feat.episode != null && <span><b>{s.episode} {num(feat.episode, lang)}</b><small>{seasonLabel(feat.season, lang)}</small></span>}
+          </span>
+          <span class="watch">{ar ? 'شاهد العرض والتفاصيل' : 'Watch the pitch and the full story'}</span>
+        </a>
+      )}
     </div>
   </section>
 
+  <div class="container">
+    <dl class="stats">
+      <div><dt>{s.statStartups}</dt><dd>{num(startups.length, lang)}</dd></div>
+      <div><dt>{s.statSeasons}</dt><dd>{num(seasons.length, lang)}</dd></div>
+      <div><dt>{s.statDeals}</dt><dd>{num(deals.length, lang)}</dd></div>
+      {invested > 0 && <div><dt>{s.statInvested}</dt><dd>{money(invested, lang)}</dd></div>}
+    </dl>
+
+    <section class="panel" aria-labelledby="buying">
+      <div class="sechead"><h2 id="buying">{ar ? 'مين بيستثمر؟' : "Who's buying?"}</h2><a href={`${base}/${lang}/sharks/`}>{ar ? 'كل المستثمرين' : 'All sharks'}</a></div>
+      <p class="hint">{ar ? 'اختر مستثمرًا لترى كل شركة استثمر فيها.' : 'Pick a shark to see every startup they backed.'}</p>
+      <ul class="chairs">
+        {panel.map((p) => (
+          <li><a href={`${base}/${lang}/sharks/${p.id}/`}>
+            <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} />
+            <strong>{p.name[lang]}</strong>
+            <em>{num(p.deals.length, lang)}</em>
+            <small>{ar ? 'صفقة' : p.deals.length === 1 ? 'deal' : 'deals'}</small>
+          </a></li>
+        ))}
+      </ul>
+    </section>
+
+    {rails.map((r) => (
+      <section class="rail" aria-labelledby={`r${r.n}`}>
+        <div class="sechead"><h2 id={`r${r.n}`}>{seasonLabel(r.n, lang)} <small>{num(startups.filter((x) => x.season === r.n).length, lang)} {ar ? 'عرض' : 'pitches'}</small></h2><a href={`${base}/${lang}/season/${r.n}/`}>{ar ? 'الكل' : 'See all'}</a></div>
+        <ul class="strip">
+          {r.items.map((x) => (
+            <li><a class="poster" href={`${base}/${lang}/${x.id}/`}>
+              <span class="pic"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} /><i class={tag(x)[0]}>{tag(x)[1]}</i></span>
+              <strong>{x.name[lang]}</strong>
+              <small>{x.episode != null ? `${s.episode} ${num(x.episode, lang)}` : seasonLabel(x.season, lang)}{x.category && ` · ${category(x.category, lang)}`}</small>
+            </a></li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+
   <section class="container" aria-labelledby="all">
-    <h2 id="all" class="sr">{s.allStartups}</h2>
+    <div class="sechead"><h2 id="all">{s.allStartups}</h2></div>
     <div class="toolbar">
       <div class="chips" role="group" aria-label={s.season} data-key="s">
         <button type="button" class="chip" data-v="" aria-pressed="true">{s.all}</button>
@@ -95,12 +151,10 @@ const jsonld = {
           data-text={indexText(x)}
         >
           <a class="card" href={`${base}/${lang}/${x.id}/`}>
-            <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager={i < 6} />
+            <span class="pic"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} />{x.deal?.made === true ? <i class="ok">{s.deal}</i> : x.deal?.made === false ? <i class="no">{s.noDeal}</i> : <i class="unk">{lang === 'ar' ? 'غير مؤكدة' : 'Unconfirmed'}</i>}</span>
             <div class="body">
               <div class="row">
                 <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
-                {/* One status badge for every card: deal, no deal, or not confirmed by any source. */}
-                {x.deal?.made === true ? <span class="badge ok">{s.deal}</span> : x.deal?.made === false ? <span class="badge">{s.noDeal}</span> : <span class="badge unk">{s.unknownOutcome}</span>}
               </div>
               <h3>{x.name[lang]}</h3>
               <p class="desc">{x.description[lang]}</p>
@@ -228,62 +282,111 @@ const jsonld = {
 
 <style>
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .hero { padding-block: 36px 30px; border-bottom: 1px solid var(--line); }
-  .kicker { margin: 0 0 10px; color: var(--sun-ink); font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; }
-  :global([dir='rtl']) .kicker { text-transform: none; letter-spacing: 0; font-size: .9rem; }
-  .hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); max-width: 20ch; letter-spacing: -.02em; }
-  :global([dir='rtl']) .hero h1 { letter-spacing: 0; }
-  .sub { max-width: 60ch; margin: 12px 0 24px; color: var(--ink-2); font-size: 1.08rem; }
-  .search { position: relative; display: flex; align-items: center; gap: 10px; max-width: 680px; padding-inline: 14px 8px;
-    background: var(--surface); border: 1px solid var(--ink); color: var(--ink-2); }
-  .search:focus-within { outline: 2px solid var(--sun); outline-offset: 1px; }
-  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 12px 0; }
-  .search input::-webkit-search-cancel-button { cursor: pointer; }
-  kbd { font: inherit; font-size: .78rem; padding: 0 7px; border: 1px solid var(--line); color: var(--ink-2); margin-inline-end: 6px; }
+  /* The stage: a pitch still behind the title, darkened towards the text. */
+  .stage { position: relative; overflow: hidden; min-height: 560px; display: flex; align-items: flex-end; background: var(--navy); }
+  .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
+  .stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #062a4f 0%, rgb(6 42 79 / .8) 45%, rgb(6 42 79 / .2) 80%), linear-gradient(0deg, #062a4f 0%, transparent 40%); }
+  :global([dir='rtl']) .stage::after { background: linear-gradient(-90deg, #062a4f 0%, rgb(6 42 79 / .8) 45%, rgb(6 42 79 / .2) 80%), linear-gradient(0deg, #062a4f 0%, transparent 40%); }
+  .stage-in { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: end; padding-block: 72px 40px; }
+  .kicker { margin: 0 0 12px; color: var(--gold); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
+  :global([dir='rtl']) .kicker { text-transform: none; letter-spacing: 0; font-size: .95rem; }
+  .stage h1 { color: #fff; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1; text-transform: uppercase; }
+  :global([dir='rtl']) .stage h1 { text-transform: none; line-height: 1.25; }
+  .sub { max-width: 54ch; margin: 16px 0 24px; color: #d5e3f1; font-size: 1.05rem; }
+  .search { display: flex; align-items: center; gap: 10px; max-width: 600px; padding-inline: 14px 8px; background: #fff; border: 2px solid #fff; border-radius: var(--radius); color: var(--ink-2); }
+  .search:focus-within { border-color: var(--gold); }
+  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 13px 0; }
+  kbd { font: inherit; font-size: .78rem; padding: 0 7px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink-2); margin-inline-end: 6px; }
   @media (hover: none) { kbd { display: none; } }
-  /* Figures read like a stats box in print: ruled columns, no cards. */
-  .stats { display: flex; flex-wrap: wrap; margin: 26px 0 0; border-top: 1px solid var(--ink); }
-  .stats div { display: flex; flex-direction: column-reverse; padding: 10px 28px 0 0; margin-inline-end: 28px; border-inline-end: 1px solid var(--line); }
-  :global([dir='rtl']) .stats div { padding: 10px 0 0 28px; }
-  .stats div:last-child { border: 0; }
-  .stats dt { color: var(--ink-2); font-size: .82rem; }
-  .stats dd { margin: 0; font-family: var(--serif); font-size: 1.75rem; font-weight: 700; color: var(--ink); line-height: 1.2; }
-  @media (max-width: 560px) { .stats div { padding-inline-end: 16px; margin-inline-end: 16px; } :global([dir='rtl']) .stats div { padding: 10px 0 0 16px; } .stats dd { font-size: 1.35rem; } }
+  .feat { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; border-radius: var(--radius); background: rgb(255 255 255 / .1); backdrop-filter: blur(8px); border: 1px solid rgb(255 255 255 / .25); color: #fff; text-decoration: none; }
+  .feat:hover { border-color: var(--gold); }
+  .flag { align-self: flex-start; background: var(--gold); color: var(--navy); font-size: .72rem; font-weight: 800; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: .08em; }
+  :global([dir='rtl']) .flag { text-transform: none; letter-spacing: 0; }
+  .feat strong { font-size: 1.9rem; font-weight: 800; line-height: 1.1; }
+  .fterms { display: flex; flex-wrap: wrap; gap: 8px 26px; }
+  .fterms b { display: block; font-size: 1.25rem; }
+  .fterms small { color: #b9cde3; font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
+  .watch { color: var(--gold); font-weight: 600; font-size: .92rem; }
+  @media (max-width: 860px) { .stage { min-height: 0; } .stage .bg { opacity: .3; height: 60%; } .stage::after { background: linear-gradient(0deg, #062a4f 45%, rgb(6 42 79 / .6) 100%) !important; } .stage-in { grid-template-columns: 1fr; gap: 22px; padding-block: 120px 28px; } }
 
-  .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 10px; padding-top: 12px; }
-  .chips { display: flex; gap: 0; flex-wrap: wrap; border: 1px solid var(--line); }
-  .chip { font: inherit; font-size: .88rem; padding: 5px 11px; border: 0; border-inline-end: 1px solid var(--line); background: none; color: var(--ink-2); cursor: pointer; }
-  .chip:last-child { border-inline-end: 0; }
-  .chip:hover { color: var(--ink); }
-  .chip[aria-pressed='true'] { background: var(--ink); color: var(--bg); font-weight: 600; }
+  .stats { display: flex; flex-wrap: wrap; gap: 10px 0; margin: 26px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .stats div { display: flex; flex-direction: column-reverse; padding-inline-end: 28px; margin-inline-end: 28px; border-inline-end: 1px solid var(--line); }
+  .stats div:last-child { border: 0; }
+  .stats dt { color: var(--ink-2); font-size: .8rem; }
+  .stats dd { margin: 0; font-size: 1.7rem; font-weight: 800; line-height: 1.15; }
+  @media (max-width: 560px) { .stats div { padding-inline-end: 14px; margin-inline-end: 14px; } .stats dd { font-size: 1.3rem; } }
+
+  .sechead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .sechead h2 { font-size: 1.6rem; }
+  .sechead h2 small { font-family: 'Readex Pro Variable', sans-serif; font-size: .85rem; font-weight: 400; color: var(--ink-2); margin-inline-start: 8px; }
+  .sechead a { color: var(--sun-ink); font-size: .92rem; text-decoration: none; }
+  .sechead a:hover { text-decoration: underline; }
+
+  /* Who's buying: the panel of sharks, like the chairs on set. */
+  .panel { margin-top: var(--gap-sec); padding: 26px 24px 22px; border-radius: 10px; background: linear-gradient(180deg, #0b63c1, #062a4f); color: #fff; --ink: #fff; --ink-2: #c9dbee; --sun-ink: var(--gold); }
+  .panel .sechead { margin-bottom: 2px; }
+  .hint { margin: 0 0 18px; color: var(--ink-2); }
+  .chairs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(8, minmax(96px, 1fr)); gap: 14px; overflow-x: auto; scrollbar-width: none; }
+  .chairs a { display: flex; flex-direction: column; align-items: center; text-align: center; color: var(--ink); text-decoration: none; }
+  .chairs a :global(.person-avatar) { width: 100%; height: auto; max-width: 112px; aspect-ratio: 1; border: 3px solid rgb(255 255 255 / .5); transition: border-color .2s; }
+  .chairs a:hover :global(.person-avatar) { border-color: var(--gold); }
+  .chairs strong { margin-top: 10px; font-size: .9rem; font-weight: 600; line-height: 1.25; }
+  .chairs em { font-style: normal; font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: var(--gold); line-height: 1.1; margin-top: 4px; }
+  .chairs small { color: var(--ink-2); font-size: .78rem; }
+  @media (max-width: 860px) { .chairs { grid-template-columns: repeat(8, 104px); } .panel { padding: 20px 16px; } }
+
+  /* Season rails: a row of pitch stills per season. */
+  .rail { margin-top: var(--gap-sec); }
+  .strip { list-style: none; margin: 0; padding: 0 0 6px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(230px, 1fr); gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #b9cde3 transparent; }
+  .strip li { scroll-snap-align: start; }
+  @media (min-width: 1100px) { .strip { grid-auto-columns: calc((100% - 48px) / 5); } }
+  .poster { display: flex; flex-direction: column; gap: 2px; color: var(--ink); text-decoration: none; }
+  .poster strong { margin-top: 8px; font-weight: 600; }
+  .poster small { color: var(--ink-2); font-size: .82rem; }
+  .poster:hover strong { color: var(--sun-ink); }
+  .pic { position: relative; display: block; }
+  .pic :global(.frame) { transition: outline-color .2s; outline: 2px solid transparent; outline-offset: 0; }
+  .poster:hover .pic :global(.frame), .card:hover .pic :global(.frame) { outline-color: var(--sun); }
+  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .7rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: #4b6178; }
+  :global([dir='rtl']) .pic i { text-transform: none; letter-spacing: 0; font-size: .76rem; }
+  .pic i.ok { background: var(--ok); }
+  .pic i.unk { background: var(--gold); color: var(--navy); }
+
+  #all { scroll-margin-top: 80px; }
+  section[aria-labelledby='all'] { margin-top: var(--gap-sec); }
+  .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 10px; }
+  .chips { display: flex; gap: 4px; flex-wrap: wrap; }
+  .chip { font: inherit; font-size: .88rem; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink-2); cursor: pointer; }
+  .chip:hover { color: var(--ink); border-color: var(--sun); }
+  .chip[aria-pressed='true'] { background: var(--sun); border-color: var(--sun); color: #fff; font-weight: 600; }
   .selects { display: flex; gap: 8px; margin-inline-start: auto; }
-  select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: 0; background: var(--surface); color: var(--ink); cursor: pointer; }
+  select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); cursor: pointer; }
   @media (max-width: 720px) { .chips { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; } .chip { white-space: nowrap; flex: none; } }
   @media (max-width: 720px) { .selects { margin-inline-start: 0; width: 100%; } .selects select { flex: 1; min-width: 0; } }
   .count { color: var(--ink-2); font-size: .9rem; margin: 18px 0 14px; }
   .count strong { color: var(--ink); }
 
-  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 34px 26px; }
-  .card { display: flex; flex-direction: column; height: 100%; padding-top: 14px; border-top: 2px solid var(--ink); color: inherit; text-decoration: none; }
-  .card:hover h3 { color: var(--sun-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
-  .body { display: flex; flex-direction: column; flex: 1; padding: 12px 0 4px; }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 28px 16px; }
+  .card { display: flex; flex-direction: column; height: 100%; color: inherit; text-decoration: none; }
+  .card:hover h3 { color: var(--sun-ink); }
+  .card .pic :global(.frame), .poster .pic :global(.frame) { box-shadow: var(--shadow); }
+  .body { display: flex; flex-direction: column; flex: 1; padding: 10px 0 0; }
   .row { display: flex; gap: 6px; flex-wrap: wrap; }
-  .body h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; margin: 8px 0 4px; }
-  .desc { margin: 0; color: var(--ink-2); font-size: .93rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 10px; min-height: 40px; border-top: 1px solid var(--line); }
-  .amount { font-weight: 600; font-size: .92rem; color: var(--ok); }
+  .body h3 { font-size: 1.1rem; font-weight: 700; margin: 8px 0 4px; }
+  .desc { margin: 0; color: var(--ink-2); font-size: .9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 10px; min-height: 40px; }
+  .amount { font-weight: 700; font-size: .92rem; color: var(--ok); }
   .terms { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-  .ask { font-size: .85rem; color: var(--ink-2); }
-  .badge.unk { border-style: dashed; font-style: italic; }
+  .ask { font-size: .84rem; color: var(--ink-2); }
   .more { display: flex; justify-content: center; margin-top: 28px; }
   .more[hidden], .grid > li[hidden] { display: none; }
 
   .empty { text-align: center; padding: 48px 20px; }
-    .empty p { color: var(--ink-2); }
+  .empty p { color: var(--ink-2); }
   .empty-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-  .missing { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: var(--gap-sec); padding: 18px 0; border-block: 1px solid var(--ink); }
+  .missing { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: var(--gap-sec); padding: 20px 22px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
   .missing[hidden] { display: none; }
   .missing div { flex: 1 1 260px; }
-  .missing h2 { font-size: 1.15rem; }
+  .missing h2 { font-size: 1.2rem; }
   .missing p { margin: 4px 0 0; color: var(--ink-2); }
 </style>

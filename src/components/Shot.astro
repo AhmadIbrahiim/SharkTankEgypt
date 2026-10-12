@@ -8,20 +8,17 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // A dead screenshot or a removed video falls back to the page's share card.
 const fallback = `this.onerror=null;this.src='${base}/og/${lang}/${id}.jpg'`;
 ---
-{src ? (
-  <div class="frame">
-    <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
-    <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={loading} decoding="async" onerror={fallback} />
-  </div>
-) : video ? (
+{video ? (
   <div class="frame video">
-    <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
     <img class="shot" src={thumb(video)} alt={name} width="480" height="360" loading={loading} decoding="async" onerror={fallback} onload="if(this.naturalWidth<=120)this.onerror()" />
     <span class="play" aria-hidden="true"></span>
   </div>
+) : src ? (
+  <div class="frame">
+    <img class="shot" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}${src}`} alt={name} width="1280" height="800" loading={loading} decoding="async" onerror={fallback} />
+  </div>
 ) : (
   <div class="frame">
-    <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
     {/* No screenshot or video: show the page's share card (rendered after the build); the name tile stays behind it as a fallback. */}
     <div class="shot ph" style={`--h:${hue(id)}`}><span>{name}</span>
       <img class="og" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/og/${lang}/${id}.jpg`} alt={name} width="1200" height="630" loading={loading} decoding="async" onerror="this.remove()" /></div>
