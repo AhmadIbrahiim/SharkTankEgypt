@@ -86,6 +86,10 @@ await test('startup page shows summary, verification and sources', async () => {
   assert.match(await p.textContent('.answer'), /deal with Ahmed El Sewedy/);
   assert.match(await p.textContent('.verify'), /Verified/);
   assert.ok(await p.isVisible('details.sources'));
+  // The pitch video loads on click and must keep the thumbnail's size (it once fell back to 300×150).
+  const size = (s) => p.$eval(s, (e) => Math.round(e.getBoundingClientRect().width));
+  const w = await size('.player button'); await p.click('.player button');
+  assert.equal(await size('.player iframe'), w);
 });
 await test('valuation calculator: 1M for 20% is 5M post-money, 4M pre-money; rejects bad input', async () => {
   const p = await page(); await p.goto(`${U}/en/deals/`);

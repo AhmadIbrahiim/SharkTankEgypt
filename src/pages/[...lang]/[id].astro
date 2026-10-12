@@ -316,7 +316,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .sec p { margin: 0 0 10px; max-width: 75ch; }
   .player { margin-bottom: 12px; max-width: 640px; }
   .player button { display: block; width: 100%; padding: 0; border: 0; cursor: pointer; }
-  .player iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: var(--radius); }
+  .player :global(iframe) { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: var(--radius); }
   .player .play { width: 56px; height: 56px; inset: 0; margin: auto; background: var(--crimson); border: 0; }
   .player .play::after { border-block-width: 10px; border-left-width: 16px; }
   .services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; }
