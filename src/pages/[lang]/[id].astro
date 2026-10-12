@@ -1,14 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { ID, ROOT, founderRef, sharkRef, seasonRef } from '../../schema';
-import Shot from '../../components/Shot.astro';
-import Sharks from '../../components/Sharks.astro';
 import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
 import MiniCard from '../../components/MiniCard.astro';
 import { startupFaq, summary } from '../../faq';
-import { verification, langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, type Lang, type Startup, type Card } from '../../config';
+import { verification, langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, sharkByKey, type Lang, type Startup, type Card } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -24,17 +22,8 @@ const otherName = x.name[lang === 'ar' ? 'en' : 'ar'];
 const pageTitle = `${x.name[lang]} (${otherName}) – ${seasonLabel(x.season, lang)}`;
 const image = screenshot(x.id) ?? (x.video ? thumb(x.video) : undefined);
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
-const host = x.website?.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
-const terms = [
-  { label: s.ask, amount: x.ask?.amountEGP, equity: x.ask?.equityPct, tone: '' },
-  ...(x.deal?.made ? [{ label: s.finalDeal, amount: x.deal.amountEGP, equity: x.deal.equityPct, tone: 'ok' }] : []),
-].filter((d) => d.amount != null || d.equity != null);
 // Every known profile, so search engines can tie them to this startup.
 const sameAs = [x.website, ...Object.entries(x.links ?? {}).flatMap(([k, v]) => (k === 'other' ? (v as { url: string }[]).map((o) => o.url) : [v as string]))].filter(Boolean);
-const missing = Object.entries({
-  founders: !x.founders?.length, ask: x.ask?.amountEGP == null, deal: x.deal?.made == null,
-  links: !x.website && !Object.keys(x.links ?? {}).length, video: !x.video,
-}).filter(([, m]) => m).map(([k]) => s.missingLabels[k as keyof typeof s.missingLabels]);
 // GitHub issue forms prefill fields from query params named after their ids.
 const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}`)}&name_en=${encodeURIComponent(x.name.en)}&name_ar=${encodeURIComponent(x.name.ar)}${x.episode != null ? `&episode=${x.episode}` : ''}`;
 const services = (x as any).services as { en: { name: string; desc: string }[]; ar: { name: string; desc: string }[] } | undefined;
@@ -67,7 +56,6 @@ const jsonld = {
   subjectOf: x.episode != null ? { '@type': 'TVEpisode', '@id': ID.episode(x.season, x.episode), episodeNumber: x.episode, partOfSeason: seasonRef(x.season), partOfSeries: { '@id': ID.series } }
     : seasonRef(x.season),
 };
-const rest = x.description[lang].split(/(?<=[.!?؟])\s+/).slice(1).join(' ');
 const card: Card = { kind: 'startup', title: x.name[lang], alt: otherName, sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
   eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '), shot: image, play: !screenshot(x.id) && !!x.video,
   badge: x.deal?.made === true ? { tone: 'ok', text: [lang === 'ar' ? 'صفقة' : 'Deal', [x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · '), sharkNames && `${lang === 'ar' ? 'مع' : 'with'} ${sharkNames}`].filter(Boolean).join(' ') }
@@ -79,173 +67,167 @@ const related = [...new Set([
   ...startups.filter((o) => o !== x && o.season === x.season && o.category === x.category),
   ...startups.filter((o) => o !== x && o.category === x.category),
 ])].slice(0, 4);
+// Recap hero + score card.
+const ar = lang === 'ar';
+const outcome = x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no' : 'unk';
+const askVal = valuation(x.ask?.amountEGP, x.ask?.equityPct);
+const investors = (x.deal?.made ? x.deal.sharks ?? [] : []).map((n) => sharkByKey.get(n)).filter(Boolean) as any[];
+const lead = x.description[lang].split(/(?<=[.!?؟])\s+/)[0];
+const heroImg = x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : screenshot(x.id) ? `${base}${screenshot(x.id)}` : null;
+const heroFallback = x.video ? `this.onerror=null;this.src='${thumb(x.video)}'` : 'this.remove()';
+const faqs = startupFaq(x, lang);
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faqs.map((q) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: q.a } })) };
 const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '→' : '←');
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} card={card} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/${x.id}/`}>
+  <header class:list={['stage', !heroImg && 'noimg']}>
+    {heroImg && <img class:list={['bg', !x.video && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror={heroFallback} />}
+    <div class="container stage-in">
+      <nav class="crumbs" aria-label="breadcrumb">
+        <a href={`${base}/${lang}/`}>{s.home}</a><span aria-hidden="true">/</span>
+        <a href={`${base}/${lang}/season/${x.season}/`}>{seasonLabel(x.season, lang)}</a><span aria-hidden="true">/</span>
+        <span aria-current="page">{x.name[lang]}</span>
+      </nav>
+      <p class="ep">{where}</p>
+      <h1>{x.name[lang]}</h1>
+      {otherName !== x.name[lang] && <p class="alt" lang={ar ? 'en' : 'ar'}>{otherName}</p>}
+      <p class="lead">{lead}</p>
+      <p class="tags">
+        {x.category && <a href={`${base}/${lang}/category/${catSlug(x.category)}/`}>{category(x.category, lang)}</a>}
+        {about?.city && <span>{about.city[lang]}</span>}
+        {about?.founded && <span>{s.founded} {num(about.founded, lang).replace(/[٬,]/g, '')}</span>}
+      </p>
+      {x.video && <a class="watch" href="#pitch">{s.watch}</a>}
+    </div>
+  </header>
+
   <div class="container">
-    <nav class="crumbs" aria-label="breadcrumb">
-      <a href={`${base}/${lang}/`}>{s.home}</a>
-      <span aria-hidden="true">/</span>
-      <a href={`${base}/${lang}/season/${x.season}/`}>{seasonLabel(x.season, lang)}</a>
-      <span aria-hidden="true">/</span>
-      <span aria-current="page">{x.name[lang]}</span>
-    </nav>
-
-    <article class="hero">
-      <div class="info">
-        <div class="row">
-          <span class="badge">{seasonLabel(x.season, lang)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
-          {x.category && <a class="badge nile" href={`${base}/${lang}/category/${catSlug(x.category)}/`}>{category(x.category, lang)}</a>}
-          {x.deal?.made === true && <span class="badge ok">{s.deal}</span>}
-          {x.deal?.made === false && <span class="badge">{s.noDeal}</span>}
-        </div>
-        <h1>{x.name[lang]}</h1>
-        {otherName !== x.name[lang] && <p class="alt" lang={lang === 'ar' ? 'en' : 'ar'}>{otherName}</p>}
-        {(about?.founded || about?.city) && (
-          <p class="facts">
-            {about.city && <span>{s.basedIn}: {about.city[lang]}</span>}
-            {about.founded && <span>{s.founded} {num(about.founded, lang).replace(/[٬,]/g, '')}</span>}
-          </p>
-        )}
-        <p class="lead">{x.description[lang].split(/(?<=[.!?؟])\s+/)[0]}</p>
-        <p class="answer"><strong>{lang === 'ar' ? 'باختصار:' : 'In short:'}</strong> {autoPitch}</p>
-        {(x.website || commentsOn) && <div class="actions">
-          {x.website && (
-            <a class="btn btn-primary" href={x.website} target="_blank" rel="noopener">
-              {s.visit}
-              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" class="ext"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          )}
-          {commentsOn && <a class="btn btn-ghost" href="#comments">{s.comments}</a>}
-        </div>}
+    {/* The result first: asked → outcome → final. */}
+    <section class:list={['score', outcome]} aria-label={ar ? 'نتيجة العرض' : 'Pitch result'}>
+      <div class="side">
+        <p class="k">{ar ? 'طلب المؤسسون' : 'The founders asked'}</p>
+        <p class="v">{x.ask?.amountEGP != null ? money(x.ask.amountEGP, lang) : (ar ? 'غير معروف' : 'Unknown')}</p>
+        <p class="s">{x.ask?.equityPct != null && <>{s.forEquity} {pct(x.ask.equityPct, lang)}</>}{askVal && <> · {s.valuation} {money(askVal, lang)}</>}</p>
       </div>
-      <div class="visual">
-        {x.video ? (
-          <div class="player" data-video={x.video} data-title={`${s.watch}: ${x.name[lang]}`}>
-            <button type="button" class="frame video" aria-label={`${s.watch}: ${x.name[lang]}`}>
-              <img class="shot" src={thumb(x.video)} alt="" width="480" height="360" />
-              <span class="play" aria-hidden="true"></span>
-            </button>
-          </div>
-        ) : x.website ? (
-          <a href={x.website} target="_blank" rel="noopener" aria-label={`${s.visit}: ${host}`}><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager /></a>
-        ) : <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} eager />}
-        {x.video ? <p class="cap">{s.watch}</p> : host && <p class="host">{host}</p>}
+      <span class="arr" aria-hidden="true">{ar ? '←' : '→'}</span>
+      <div class="verdict">
+        <strong>{outcome === 'deal' ? s.deal : outcome === 'no' ? s.noDeal : s.unknownOutcome}</strong>
+        <small>{outcome === 'deal' ? (ar ? 'على الهواء' : 'on air') : outcome === 'no' ? (ar ? 'خرجوا دون اتفاق' : 'no agreement on air') : (ar ? 'لم يذكرها أي مصدر بعد' : 'no source states it yet')}</small>
       </div>
-    </article>
-
-    <nav class="secnav" aria-label={x.name[lang]}>
-      <a href="#overview">{s.secOverview}</a>
-      {services?.[lang]?.length > 0 && <a href="#services">{s.secServices}</a>}
-      <a href="#pitch">{s.secPitch}</a>
-      {team.length > 0 && <a href="#team">{s.secTeam}</a>}
-      {hasLinks && <a href="#online">{s.secOnline}</a>}
-      <a href="#faq">{s.navFaq}</a>
-    </nav>
-
-    <section id="overview" class="sec">
-      <h2>{s.secOverview}</h2>
-      {/* The hero already shows the first sentence. */}
-      {rest && <p class="overview">{rest}</p>}
-      {about?.highlights?.[lang]?.length > 0 && (
-        <div class="glance">
-          <h3>{s.glance}</h3>
-          <ul>{about.highlights[lang].map((h) => <li>{h}</li>)}</ul>
-        </div>
-      )}
+      <span class="arr" aria-hidden="true">{ar ? '←' : '→'}</span>
+      <div class="side">
+        {outcome === 'deal' ? <>
+          <p class="k">{s.finalDeal}</p>
+          <p class="v ok">{x.deal!.amountEGP != null ? money(x.deal!.amountEGP, lang) : s.deal}</p>
+          {investors.length > 0 ? (
+            <p class="who">{investors.map((q) => <a href={`${base}/${lang}/sharks/${q.id}/`}><Avatar name={q.name.en} seed={q.id} photo={q.photo} size={40} /></a>)}
+              <span><b>{list(investors.map((q) => q.name[lang]))}</b><small>{ar ? 'الحصة' : 'Equity'}: {x.deal!.equityPct != null ? pct(x.deal!.equityPct, lang) : (ar ? 'غير معلنة' : 'not disclosed')}</small></span></p>
+          ) : <p class="s">{x.deal!.equityPct != null ? <>{s.forEquity} {pct(x.deal!.equityPct, lang)} · </> : ''}{ar ? 'المستثمر غير مذكور في المصادر' : 'Investor not named in sources'}</p>}
+        </> : outcome === 'no' ? <>
+          <p class="k">{ar ? 'النتيجة' : 'Result'}</p><p class="v muted">{ar ? 'لا استثمار' : 'No investment'}</p><p class="s">{ar ? 'لم يحصلوا على اتفاق في الحلقة' : 'They left without a deal'}</p>
+        </> : <>
+          <p class="k">{s.finalDeal}</p><p class="v gold">?</p><p class="s">{ar ? 'تعرف ماذا حدث؟' : 'Know what happened?'} <a href={helpUrl} target="_blank" rel="noopener">{ar ? 'أضف المصدر' : 'Add the source'}</a></p>
+        </>}
+      </div>
     </section>
 
-    {services?.[lang]?.length > 0 && (
-      <section id="services" class="sec">
-        <h2>{s.secServices}</h2>
-        <ul class="services">
-          {services[lang].map((it, i) => <li><span class="num">{num(i + 1, lang)}</span><h3>{it.name}</h3><p>{it.desc}</p></li>)}
-        </ul>
-      </section>
-    )}
+    <div class="cols">
+      <div class="main">
+        <p class="answer"><strong>{ar ? 'باختصار:' : 'In short:'}</strong> {autoPitch}</p>
 
-    <section id="pitch" class="sec">
-      <h2>{s.secPitch}</h2>
-      {/* Without a written pitch the summary is already at the top; the cards below carry the terms. */}
-      {(pitchText?.[lang] || !terms.length) && <p class="pitchtext">{pitchText?.[lang] ?? autoPitch}</p>}
-      {terms.length > 0 && (
-      <section class="terms">
-        {terms.map((d) => {
-          const v = valuation(d.amount, d.equity);
-          return (
-            <div class:list={['term', d.tone]}>
-              <h2>{d.label}</h2>
-              <p class="big">{money(d.amount, lang) ?? '—'}</p>
-              <p class="small">
-                {d.equity != null && <>{s.forEquity} <strong>{pct(d.equity, lang)}</strong></>}
-                {v && <> · {s.valuation} {money(v, lang)}</>}
-              </p>
+        <section id="overview" class="sec">
+          <h2>{s.secOverview}</h2>
+          <p>{x.description[lang]}</p>
+        </section>
+
+        {(x.video || pitchText?.[lang]) && <section id="pitch" class="sec">
+          <h2>{s.secPitch}</h2>
+          {x.video && (
+            <div class="player" data-video={x.video} data-title={`${s.watch}: ${x.name[lang]}`}>
+              <button type="button" class="frame video" aria-label={`${s.watch}: ${x.name[lang]}`}>
+                <img class="shot" src={thumb(x.video)} alt="" width="480" height="360" loading="lazy" />
+                <span class="play" aria-hidden="true"></span>
+              </button>
             </div>
-          );
-        })}
-        {x.deal?.sharks?.length > 0 && (
-          <div class="term sharks">
-            <h2>{s.sharks}</h2>
-            <Sharks names={x.deal.sharks} lang={lang} labels />
-          </div>
+          )}
+          {pitchText?.[lang] && <p>{pitchText[lang]}</p>}
+        </section>}
+
+        {services?.[lang]?.length > 0 && (
+          <section id="services" class="sec">
+            <h2>{s.secServices}</h2>
+            <ul class="services">{services[lang].map((it) => <li><b>{it.name}</b><span>{it.desc}</span></li>)}</ul>
+          </section>
         )}
-      </section>
-    )}
 
-    </section>
+        <section id="team" class="sec">
+          <h2>{investors.length ? (ar ? 'الفريق والمستثمرون' : 'Team and investors') : s.secTeam}</h2>
+          {team.length + investors.length > 0 ? (
+            <ul class="people">
+              {team.map((f) => <li><a href={`${base}/${lang}/founders/${f.id}/`}><Avatar name={f.name.en} seed={f.id} photo={f.photo} size={48} /><span><b>{f.name[lang]}</b><small>{f.title?.[lang] ?? (ar ? 'مؤسس' : 'Founder')}</small></span></a></li>)}
+              {investors.map((q) => <li><a href={`${base}/${lang}/sharks/${q.id}/`}><Avatar name={q.name.en} seed={q.id} photo={q.photo} size={48} /><span><b>{q.name[lang]}</b><small>{ar ? 'المستثمر' : 'Investor'} · {num(q.deals.length, lang)} {s.dealsCount}</small></span></a></li>)}
+            </ul>
+          ) : <p class="ask-help">{ar ? 'لا نعرف أسماء المؤسسين بعد.' : "We don't know the founders yet."} <a href={helpUrl} target="_blank" rel="noopener">{ar ? 'تعرفهم؟ أضفهم مع مصدر.' : 'Know them? Add them with a source.'}</a></p>}
+        </section>
 
-    {team.length > 0 && (
-      <section id="team" class="sec">
-        <h2>{s.secTeam}</h2>
-        <ul class="team">
-          {team.map((f) => (
-            <li><a href={`${base}/${lang}/founders/${f.id}/`}>
-              <Avatar name={f.name.en} seed={f.id} photo={f.photo} size={56} />
-              <span><strong>{f.name[lang]}</strong>{f.title && <small>{f.title[lang]}</small>}</span>
-            </a></li>
-          ))}
-        </ul>
-      </section>
-    )}
-
-    {hasLinks && (
-      <section id="online" class="sec">
-        <Links website={x.website} links={x.links} lang={lang} label={s.secOnline} />
-      </section>
-    )}
-
-    <Faq lang={lang} items={startupFaq(x, lang)} />
-
-    <aside class="help">
-      <div>
-        <h2>{s.helpTitle}</h2>
-        <p>{s.helpText}</p>
-        {missing.length > 0 && <p class="miss"><strong>{s.helpMissing}</strong> {missing.join(lang === 'ar' ? '، ' : ', ')}</p>}
+        <section class="sec" aria-labelledby="updates">
+          <h2 id="updates">{ar ? 'بعد البرنامج' : 'After the show'}</h2>
+          {(x as any).updates?.length > 0 ? (
+            <ol class="timeline">{[...(x as any).updates].sort((p: any, q: any) => q.date.localeCompare(p.date)).map((u: any) => (
+              <li><time datetime={u.date}>{u.date}</time> <span>{u[lang]}</span> <a href={u.source} target="_blank" rel="noopener nofollow">{ar ? 'المصدر' : 'Source'}</a></li>
+            ))}</ol>
+          ) : <p class="upd">{ar ? 'لا توجد أخبار موثقة بعد الحلقة.' : 'No sourced news since the episode.'} <a href={helpUrl} target="_blank" rel="noopener">{ar ? 'تعرف خبرًا؟ أضفه مع مصدره.' : 'Know something? Add it with a source.'}</a></p>}
+        </section>
       </div>
-      <a class="btn btn-primary" href={helpUrl} target="_blank" rel="noopener">{s.helpBtn}</a>
-    </aside>
+
+      <aside class="aside">
+        {x.video && <a class="btn btn-primary wide" href="#pitch">{s.watch}</a>}
+        {x.website && <a class="btn btn-ghost wide" href={x.website} target="_blank" rel="noopener">{s.visit}</a>}
+        <div class="box kv">
+          <h3>{ar ? 'معلومات سريعة' : 'Quick facts'}</h3>
+          <dl>
+            <div><dt>{ar ? 'الظهور' : 'Appeared'}</dt><dd>{where}</dd></div>
+            {about?.founded && <div><dt>{s.founded}</dt><dd>{num(about.founded, lang).replace(/[٬,]/g, '')}</dd></div>}
+            {about?.city && <div><dt>{s.basedIn}</dt><dd>{about.city[lang]}</dd></div>}
+            {x.category && <div><dt>{s.category}</dt><dd><a href={`${base}/${lang}/category/${catSlug(x.category)}/`}>{category(x.category, lang)}</a></dd></div>}
+            {askVal && <div><dt>{ar ? 'تقييم الطلب' : 'Asking valuation'}</dt><dd>{money(askVal, lang)}</dd></div>}
+          </dl>
+        </div>
+        {hasLinks && <div class="box"><Links website={x.website} links={x.links} lang={lang} label={ar ? 'أين تجدهم' : 'Where to find them'} /></div>}
+        <div class="box">
+          <h3>{s.sources}</h3>
+          <p class:list={['verify', verification(x)]}>{s.verify[verification(x)]}</p>
+          {x.checked && <p class="small">{s.checked} <time datetime={x.checked}>{x.checked}</time> · <a href={helpUrl} target="_blank" rel="noopener">{ar ? 'أبلغ عن خطأ' : 'Report an error'}</a></p>}
+          {x.sources?.length > 0 && (
+            <details class="sources">
+              <summary>{s.sources} ({num(x.sources.length, lang)})</summary>
+              <ul>{x.sources.map((u) => <li><a href={u} target="_blank" rel="noopener nofollow" dir="ltr">{u.replace(/^https?:\/\/(www\.)?/, '')}</a></li>)}</ul>
+            </details>
+          )}
+        </div>
+      </aside>
+    </div>
+
+    {/* Five questions open to view; the rest folded. Search engines get all of them in one FAQPage. */}
+    <Faq lang={lang} items={faqs.slice(0, 5)} ld={false} />
+    {faqs.length > 5 && (
+      <details class="morefaq">
+        <summary>{ar ? `أسئلة أخرى (${num(faqs.length - 5, lang)})` : `More questions (${faqs.length - 5})`}</summary>
+        <Faq lang={lang} items={faqs.slice(5)} ld={false} title="" id="faq-more" />
+      </details>
+    )}
+    <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 
     {commentsOn && (
-    <section id="comments" class="comments">
-      <h2>{s.comments}</h2>
-      <>
-          <p class="hint">{s.rateHint}</p>
-          {/* One discussion per startup, shared by both languages. */}
-          <script src="https://giscus.app/client.js" data-repo={giscus.repo} data-repo-id={giscus.repoId}
-            data-category={giscus.category} data-category-id={giscus.categoryId}
-            data-mapping="specific" data-term={x.id} data-strict="1" data-reactions-enabled="1"
-            data-emit-metadata="0" data-input-position="top" data-theme="preferred_color_scheme"
-            data-lang={lang} data-loading="lazy" crossorigin="anonymous" async></script>
-      </>
-    </section>
-    )}
-
-    {(x as any).updates?.length > 0 && (
-      <section class="sec" aria-labelledby="updates">
-        <h2 id="updates">{s.updates}</h2>
-        <ol class="timeline">{[...(x as any).updates].sort((p: any, q: any) => q.date.localeCompare(p.date)).map((u: any) => (
-          <li><time datetime={u.date}>{u.date}</time> <span>{u[lang]}</span> <a href={u.source} target="_blank" rel="noopener nofollow">{lang === 'ar' ? 'المصدر' : 'Source'}</a></li>
-        ))}</ol>
+      <section id="comments" class="comments">
+        <h2>{s.comments}</h2>
+        <p class="hint">{s.rateHint}</p>
+        {/* One discussion per startup, shared by both languages. */}
+        <script src="https://giscus.app/client.js" data-repo={giscus.repo} data-repo-id={giscus.repoId}
+          data-category={giscus.category} data-category-id={giscus.categoryId}
+          data-mapping="specific" data-term={x.id} data-strict="1" data-reactions-enabled="1"
+          data-emit-metadata="0" data-input-position="top" data-theme="light"
+          data-lang={lang} data-loading="lazy" crossorigin="anonymous" async></script>
       </section>
     )}
 
@@ -260,17 +242,6 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       {prev ? <a class="pg" href={`${base}/${lang}/${prev.id}/`}><small>{arrow('back')} {s.prev}</small><span>{prev.name[lang]}</span></a> : <span />}
       {next && <a class="pg next" href={`${base}/${lang}/${next.id}/`}><small>{s.next} {arrow('fwd')}</small><span>{next.name[lang]}</span></a>}
     </nav>
-
-    <p class:list={['verify', verification(x)]}>
-      {s.verify[verification(x)]}
-      {x.checked && <> · {s.checked} <time datetime={x.checked}>{x.checked}</time></>}
-    </p>
-    {x.sources?.length > 0 && (
-      <details class="sources">
-        <summary>{s.sources} ({num(x.sources.length, lang)})</summary>
-        <ul>{x.sources.map((u) => <li><a href={u} target="_blank" rel="noopener nofollow" dir="ltr">{u}</a></li>)}</ul>
-      </details>
-    )}
   </div>
 </Base>
 
@@ -289,97 +260,102 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 </script>
 
 <style>
-  .crumbs { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 22px; font-size: .9rem; color: var(--ink-2); }
-  .crumbs a { color: var(--ink-2); text-decoration: none; }
-  .crumbs a:hover { color: var(--sun-ink); }
-  .crumbs [aria-current] { color: var(--ink); }
+  /* Recap hero: the pitch still (or website screenshot) under a warm dark overlay. */
+  .stage { position: relative; overflow: hidden; background: #2a1a14; min-height: 400px; display: flex; align-items: flex-end; }
+  .stage.noimg { background: linear-gradient(135deg, #1f5f66, #2a1a14 70%); }
+  .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
+  .stage .bg.site { opacity: .22; filter: blur(2px); }
+  .stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, #2a1a14 8%, rgb(42 26 20 / .55) 60%, rgb(42 26 20 / .35)); }
+  .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: #f4efe6; }
+  .crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: .85rem; color: #d6c7b2; margin-bottom: 70px; }
+  .crumbs a { color: #d6c7b2; text-decoration: none; } .crumbs a:hover { color: #fff; }
+  .crumbs [aria-current] { color: #f4efe6; }
+  .ep { margin: 0; color: #f6cf73; font-weight: 700; font-size: .85rem; }
+  .stage h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.2; }
+  .alt { margin: 2px 0 0; color: #d6c7b2; }
+  .lead { margin: 8px 0 0; max-width: 62ch; color: #e8ddcf; font-size: 1.05rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+  .tags > * { font-size: .8rem; padding: 1px 10px; border-radius: 3px; background: rgb(255 255 255 / .14); color: #f4efe6; text-decoration: none; }
+  .watch { position: absolute; inset-inline-end: 20px; bottom: 80px; background: var(--crimson); color: #fff; padding: 10px 18px 10px 16px; border-radius: 30px; font-weight: 700; font-size: .92rem; text-decoration: none; }
+  .watch::before { content: '▶ '; }
+  @media (max-width: 760px) { .stage { min-height: 360px; } .crumbs { margin-bottom: 48px; } .watch { position: static; display: inline-block; margin-top: 14px; } .stage-in { padding-bottom: 64px; } }
 
-  .hero { display: grid; grid-template-columns: 1fr 1.05fr; gap: 40px; align-items: center; padding-block: 28px 16px; }
-  @media (max-width: 860px) { .hero { grid-template-columns: 1fr; gap: 24px; } .visual { order: -1; } }
-  .row { display: flex; gap: 6px; flex-wrap: wrap; }
-  a.badge { text-decoration: none; }
-  h1 { font-size: clamp(2rem, 4.5vw, 3rem); margin-top: 14px; letter-spacing: -.02em; }
-  :global([dir='rtl']) h1 { letter-spacing: 0; }
-  .alt { margin: 4px 0 0; color: var(--ink-2); font-size: 1.1rem; }
-  .facts { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 12px 0 0; color: var(--ink-2); font-size: .95rem; }
-  .secnav { position: sticky; top: var(--hdr, 64px); transition: top .25s ease; z-index: 5; display: flex; gap: 22px; overflow-x: auto; margin: 8px 0 4px; background: var(--bg); border-bottom: 1px solid var(--ink); scrollbar-width: none; }
-  .secnav a { flex: none; padding: 10px 0 8px; color: var(--ink-2); text-decoration: none; font-size: .9rem; border-bottom: 2px solid transparent; margin-bottom: -1px; }
-  .secnav a:hover { color: var(--ink); border-bottom-color: var(--sun); }
-  .sec { margin-top: var(--gap-sec); scroll-margin-top: calc(var(--hdr, 64px) + 70px); }
-  #online :global(.online h2) { font-size: 1.55rem; color: var(--ink); margin-bottom: 14px; }
-  #online :global(.online) { margin-top: 0; }
-  .sec > h2 { font-size: 1.55rem; margin-bottom: 14px; }
-  .overview { font-size: 1.08rem; max-width: 75ch; margin: 0 0 18px; }
-  .pitchtext { font-size: 1.05rem; max-width: 75ch; margin: 0 0 18px; padding-inline-start: 16px; border-inline-start: 3px solid var(--sun); }
-  .services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 22px 26px; }
-  .services li { position: relative; padding: 12px 0 6px; border-top: 2px solid var(--ink); }
-  .services .num { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; color: var(--sun-ink); line-height: 1; }
-  .services h3 { font-size: 1.02rem; margin: 8px 0 4px; }
-  .services p { margin: 0; color: var(--ink-2); font-size: .93rem; }
-  .team { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; }
-  .team a { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-top: 1px solid var(--line); color: inherit; text-decoration: none; }
-  .team a:hover b, .team a:hover strong { color: var(--sun-ink); text-decoration: underline; }
-  .team span { display: flex; flex-direction: column; }
-  .team small { color: var(--ink-2); font-size: .85rem; }
-  .glance h3 { font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-2); margin-bottom: 10px; }
-  :global([dir='rtl']) .glance h3 { text-transform: none; letter-spacing: 0; font-size: .9rem; }
-  .glance { margin-bottom: 16px; padding: 14px 0 4px; border-block: 1px solid var(--line); }
-  .glance h2 { font-size: 1.1rem; margin-bottom: 12px; }
-  .glance ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 28px; }
-  .glance li { position: relative; padding-inline-start: 18px; }
-  .glance li::before { content: ''; position: absolute; inset-inline-start: 0; top: .7em; width: 7px; height: 7px; background: var(--sun); }
-  .lead { font-size: 1.12rem; margin: 18px 0 12px; }
-  .answer { margin: 0; padding: 10px 0; border-block: 1px solid var(--line); color: var(--ink); font-size: .98rem; }
-  .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-  :global([dir='rtl']) .ext { transform: scaleX(-1); }
-  .founders { margin: 22px 0 0; color: var(--ink-2); }
-  .founders span { font-weight: 500; color: var(--ink); margin-inline-end: 6px; }
-  .visual { margin: 0; }
-  .visual a { text-decoration: none; }
-  .visual :global(.ph) { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+  /* Score card: asked → outcome → final, overlapping the hero. */
+  .score { position: relative; z-index: 2; margin-top: -46px; display: grid; grid-template-columns: 1fr auto minmax(180px, .8fr) auto 1fr; align-items: center; gap: 18px; padding: 20px 24px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-lift); }
+  .score p { margin: 0; }
+  .k { font-size: .8rem; color: var(--ink-2); font-weight: 600; }
+  .v { font-family: var(--serif); font-size: 1.85rem; font-weight: 700; line-height: 1.25; }
+  .v.ok { color: var(--ok); } .v.muted { color: var(--ink-2); } .v.gold { color: var(--gold-ink); }
+  .s { font-size: .85rem; color: var(--ink-2); }
+  .arr { font-size: 1.5rem; color: var(--gold); }
+  .verdict { border-radius: 10px; padding: 12px 14px; text-align: center; color: #fff; background: var(--ok); }
+  .verdict strong { display: block; font-size: 1.1rem; font-weight: 800; }
+  .verdict small { font-size: .78rem; opacity: .9; }
+  .no .verdict { background: var(--ink-2); }
+  .unk .verdict { background: var(--gold); color: var(--ink); }
+  .who { display: flex; align-items: center; gap: 8px; margin-top: 6px !important; }
+  .who a { display: flex; } .who :global(.person-avatar) { border: 2px solid var(--gold); }
+  .who b { display: block; font-size: .92rem; } .who small { color: var(--ink-2); font-size: .8rem; }
+  @media (max-width: 760px) { .score { grid-template-columns: 1fr 1fr; gap: 14px; padding: 16px; } .arr { display: none; } .verdict { grid-column: 1 / -1; order: -1; } .v { font-size: 1.4rem; } }
+
+  /* Body: story on the main side, facts in the sidebar (which comes first on phones). */
+  .cols { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 34px; margin-top: 30px; }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; } .aside { order: -1; } }
+  .answer { margin: 0 0 22px; padding: 12px 16px; border-radius: 8px; background: var(--surface); border-inline-start: 4px solid var(--ok); }
+  .no ~ .cols .answer { border-color: var(--ink-2); }
+  .unk ~ .cols .answer { border-color: var(--gold); }
+  .sec { margin-bottom: 30px; scroll-margin-top: 90px; }
+  .sec > h2 { font-size: 1.45rem; margin-bottom: 10px; }
+  .sec p { margin: 0 0 10px; max-width: 75ch; }
+  .player { margin-bottom: 12px; max-width: 640px; }
   .player button { display: block; width: 100%; padding: 0; border: 0; cursor: pointer; }
-  .player iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 2px; }
-  .player .play { width: 52px; height: 52px; inset-inline-start: 14px; bottom: 14px; }
+  .player iframe { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: var(--radius); }
+  .player .play { width: 56px; height: 56px; inset: 0; margin: auto; background: var(--crimson); border: 0; }
   .player .play::after { border-block-width: 10px; border-left-width: 16px; }
-  .cap { margin: 8px 0 0; padding-top: 6px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink-2); }
-  .host { margin: 8px 0 0; padding-top: 6px; border-top: 1px solid var(--line); font-size: .82rem; color: var(--ink-2); direction: ltr; text-align: start; }
+  .services { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; }
+  .services li { padding: 12px 14px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+  .services b { display: block; } .services span { color: var(--ink-2); font-size: .92rem; }
+  .people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; }
+  .people a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); color: inherit; text-decoration: none; }
+  .people a:hover { border-color: var(--crimson); }
+  .people b { display: block; } .people small { color: var(--ink-2); font-size: .82rem; }
+  .ask-help { padding: 12px 14px; border-radius: 10px; background: var(--sun-soft); border: 1px dashed #c98e85; }
+  .upd { padding: 4px 14px; border-inline-start: 3px dashed #d6c7b2; color: var(--ink-2); }
+  .ask-help a, .upd a { color: var(--crimson); font-weight: 700; }
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .timeline li { padding: 4px 14px; border-inline-start: 3px solid var(--crimson); }
+  .timeline time { font-weight: 600; margin-inline-end: 8px; }
 
-  .terms { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
-  .term { padding: 12px 0 4px; border-top: 2px solid var(--ink); }
-  .term.ok { border-top-color: var(--ok); }
-  .term h2 { font-family: inherit; font-size: .78rem; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: .1em; }
-  :global([dir='rtl']) .term h2 { text-transform: none; letter-spacing: 0; font-size: .9rem; }
-  .term.ok h2, .term.ok .big { color: var(--ok); }
-  .big { font-family: var(--serif); font-size: 2.1rem; font-weight: 700; margin: 4px 0 2px; }
-  .small { margin: 0; color: var(--ink-2); font-size: .92rem; }
-  .small strong { color: var(--ink); font-weight: 600; }
-  .sharks h2 { margin-bottom: 12px; }
+  .aside .wide { display: flex; width: 100%; margin-bottom: 10px; }
+  .box { padding: 14px 16px; margin-bottom: 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+  .box h3 { font-size: .85rem; font-weight: 800; margin-bottom: 6px; }
+  .box :global(.online) { margin: 0; }
+  .box :global(.online h2) { font-size: .85rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; }
+  .kv dl { margin: 0; }
+  .kv dl div { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--surface-2); font-size: .92rem; }
+  .kv dl div:last-child { border: 0; }
+  .kv dt { color: var(--ink-2); } .kv dd { margin: 0; font-weight: 600; text-align: end; }
+  .kv dd a { color: inherit; }
+  .verify { margin: 0; font-weight: 700; font-size: .9rem; color: var(--gold-ink); }
+  .verify.verified { color: var(--ok); }
+  .small { margin: 4px 0 0; font-size: .8rem; color: var(--ink-2); }
+  .small a { color: var(--crimson); }
+  .sources { margin-top: 8px; font-size: .85rem; color: var(--ink-2); }
+  .sources summary { cursor: pointer; }
+  .sources ul { margin: 6px 0 0; padding-inline-start: 18px; }
+  .sources a { overflow-wrap: anywhere; color: var(--nile); }
 
-  .help { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; margin-top: var(--gap-sec); padding: 18px 0; border-block: 1px solid var(--ink); }
-  .help div { flex: 1 1 280px; }
-  .help h2 { font-size: 1.1rem; }
-  .help p { margin: 4px 0 0; color: var(--ink-2); }
-  .help .miss strong { color: var(--sun-ink); font-weight: 600; }
+  .morefaq { margin-top: 6px; }
+  .morefaq > summary { cursor: pointer; padding: 10px 0; color: var(--crimson); font-weight: 700; }
+  .morefaq :global(.faq) { margin-top: 0; }
   .comments { margin-top: var(--gap-sec); padding-top: 20px; border-top: 2px solid var(--ink); scroll-margin-top: 80px; }
   .comments h2 { font-size: 1.35rem; }
   .hint { color: var(--ink-2); margin: 8px 0 20px; }
-
-  .timeline { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; }
-  .timeline li { padding: 4px 14px; border-inline-start: 3px solid var(--sun); }
-  .timeline time { font-weight: 600; margin-inline-end: 8px; }
+  .related { margin-top: var(--gap-sec); }
   .relgrid { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 14px; }
   .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: var(--gap-sec); }
   .pg { display: flex; flex-direction: column; padding: 12px 0; border-top: 1px solid var(--ink); color: var(--ink); text-decoration: none; }
-  .pg:hover span { color: var(--sun-ink); text-decoration: underline; }
-  .pg small { color: var(--ink-2); }
-  .pg span { font-weight: 500; }
+  .pg:hover span { color: var(--crimson); text-decoration: underline; }
+  .pg small { color: var(--ink-2); } .pg span { font-weight: 500; }
   .pg.next { text-align: end; grid-column: 2; }
-
-  .verify { margin: var(--gap-sec) 0 0; font-size: .9rem; color: var(--ink-2); }
-  .verify.verified { color: var(--ok); }
-  .verify + .sources { margin-top: 8px; }
-  .sources { margin-top: 28px; color: var(--ink-2); font-size: .9rem; }
-  .sources summary { cursor: pointer; }
-  .sources ul { padding-inline-start: 20px; }
-  .sources a { overflow-wrap: anywhere; color: var(--ink-2); }
 </style>
