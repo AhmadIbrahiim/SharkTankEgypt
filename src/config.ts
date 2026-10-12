@@ -36,8 +36,8 @@ export const dataUpdated = (() => {
 export const giscus = {
   repo: 'AhmadIbrahiim/SharkTankEgypt',
   repoId: 'R_kgDOVDn6JQ',
-  category: 'Startups',
-  categoryId: '',
+  category: 'Announcements',
+  categoryId: 'DIC_kwDOVDn6Jc4DIG9o',
 };
 
 // Google Search Console → HTML tag verification → paste the content="…" value here.
