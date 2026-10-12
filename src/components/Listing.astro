@@ -56,31 +56,35 @@ const PAGE = 24;
     });
 </script>
 <style>
-  .intro { padding: 40px 0 8px; text-align: center; }
-  .intro h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); }
-  .intro p { color: var(--ink-2); max-width: 70ch; margin: 12px auto 0; font-size: 1.05rem; }
-  .kpis { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 22px 0; }
-  .kpis div { min-width: 150px; padding: 14px 20px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; text-align: center; }
-  .kpis b { font-size: 1.5rem; font-weight: 650; }
+  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); max-width: 26ch; }
+  .intro p { color: var(--ink-2); max-width: 70ch; margin: 12px 0 0; font-size: 1.05rem; }
+  .kpis { display: flex; flex-wrap: wrap; margin: 22px 0 0; border-top: 1px solid var(--ink); }
+  .kpis div { padding: 10px 24px 0 0; margin-inline-end: 24px; border-inline-end: 1px solid var(--line); display: flex; flex-direction: column; }
+  .kpis div:last-child { border: 0; }
+  :global([dir='rtl']) .kpis div { padding: 10px 0 0 24px; }
+  .kpis b { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
   .kpis span { color: var(--ink-2); font-size: .85rem; }
-  .top { margin-bottom: 24px; text-align: center; }
-  .top h2 { font-size: 1rem; color: var(--ink-2); font-weight: 500; margin-bottom: 10px; }
-  .top ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-  .top a { display: inline-flex; align-items: center; gap: 8px; padding: 4px 14px 4px 4px; padding-inline: 4px 14px; border-radius: 999px; background: var(--surface); box-shadow: var(--shadow); color: var(--ink); text-decoration: none; }
+  .top { margin-bottom: 26px; }
+  .top h2 { font-family: inherit; font-size: .78rem; color: var(--ink-2); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; }
+  :global([dir='rtl']) .top h2 { text-transform: none; letter-spacing: 0; font-size: .9rem; }
+  .top ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .top a { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; }
+  .top a:hover span { color: var(--sun-ink); text-decoration: underline; }
   .top b { color: var(--ok); }
-  .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+  .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 28px 22px; }
   .grid > li[hidden] { display: none; }
   .ranked > li { position: relative; }
-  .ranked > li::before { content: '#' attr(data-n); position: absolute; z-index: 1; inset-block-start: 14px; inset-inline-start: 14px; padding: 2px 10px; border-radius: 999px; background: var(--ink); color: var(--surface); font-weight: 700; font-size: .85rem; }
+  .ranked > li::before { content: attr(data-n); position: absolute; z-index: 1; inset-block-start: 22px; inset-inline-start: 0; padding: 0 8px; background: var(--ink); color: var(--bg); font-family: var(--serif); font-weight: 700; font-size: .95rem; }
   .group + .group { margin-top: var(--gap-sec); }
-  .ep { font-size: 1.1rem; margin-bottom: 12px; }
+  .ep { font-size: 1.2rem; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); }
   .ep a { color: inherit; }
   .more { display: flex; justify-content: center; margin-top: 24px; }
   @media (max-width: 560px) {
     .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
     .kpis { flex-wrap: nowrap; gap: 8px; }
-    .kpis div { min-width: 0; flex: 1; padding: 10px 6px; }
-    .kpis b { font-size: 1.1rem; }
+    .kpis div { min-width: 0; flex: 1; padding-inline-end: 10px; margin-inline-end: 10px; }
+    .kpis b { font-size: 1.15rem; }
     .top ul { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; scrollbar-width: none; padding: 4px 2px 8px; }
     .top li { flex: none; }
   }

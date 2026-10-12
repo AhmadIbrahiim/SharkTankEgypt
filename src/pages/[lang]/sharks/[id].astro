@@ -111,23 +111,24 @@ const jsonld = {
   figcaption a { color: inherit; }
   h1 { font-size: clamp(2rem, 4.5vw, 2.8rem); }
   .alt { margin: 2px 0 0; color: var(--ink-2); }
-  .title { margin: 10px 0 0; font-weight: 500; color: var(--sun-ink); }
+  .title { margin: 10px 0 0; font-weight: 500; color: var(--ink); font-style: italic; }
   .seasons { margin: 8px 0 0; color: var(--ink-2); font-size: .92rem; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .hero .seasons { justify-content: inherit; }
-  .seasons a { padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .82rem; }
+  .seasons a { color: var(--ink); font-size: .88rem; }
   .bio { font-size: 1.05rem; margin: 16px 0 0; max-width: 70ch; }
   .muted { color: var(--ink-2); }
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
-  .stats div { padding: 18px 20px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); display: flex; flex-direction: column; }
-  .stats b { font-size: 1.6rem; font-weight: 650; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0 26px; }
+  .stats div { padding: 10px 0 4px; border-top: 2px solid var(--ink); display: flex; flex-direction: column; }
+  .stats b { font-family: var(--serif); font-size: 1.8rem; font-weight: 700; line-height: 1.2; }
   .stats span { color: var(--ink-2); font-size: .88rem; }
-  .insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; margin-top: 14px; }
-  .card { padding: 20px 22px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
-  .card h2, .h2 { font-size: 1.1rem; margin-bottom: 12px; }
+  .insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px 36px; margin-top: 28px; }
+  .card { padding-top: 10px; border-top: 1px solid var(--ink); }
+  .card h2, .h2 { font-size: 1.25rem; margin-bottom: 12px; }
   .h2 { margin-top: var(--gap-sec); }
   .bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   .bars li { display: grid; grid-template-columns: 9rem 1fr 2rem; align-items: center; gap: 10px; font-size: .9rem; }
-  .bars i { display: block; height: 10px; width: var(--w); border-radius: 999px; background: linear-gradient(90deg, var(--sun), color-mix(in srgb, var(--sun) 60%, var(--nile))); }
+  .bars i { display: block; height: 8px; width: var(--w); background: var(--ink); }
+  .bars li:first-child i { background: var(--sun); }
   .bars b { text-align: end; color: var(--ink-2); font-weight: 500; }
   .partners { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   .partners a { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }

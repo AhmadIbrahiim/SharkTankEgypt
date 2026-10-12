@@ -30,7 +30,7 @@ const jsonld = {
 <Base lang={lang} jsonld={jsonld} card={listCard(s.title, s.tagline, startups, lang, lang === 'ar' ? 'كل المواسم والحلقات' : 'Every season and episode')} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
   <section class="hero">
     <div class="container">
-      <p class="kicker">🦈 {s.heroKicker}</p>
+      <p class="kicker">{s.heroKicker}</p>
       <h1>{s.heroTitle}</h1>
       <p class="sub">{s.heroSub}</p>
       <label class="search">
@@ -57,7 +57,7 @@ const jsonld = {
       </div>
       <div class="chips" role="group" aria-label={s.finalDeal} data-key="d">
         <button type="button" class="chip" data-v="" aria-pressed="true">{s.all}</button>
-        <button type="button" class="chip" data-v="1" aria-pressed="false">🤝 {s.deal}</button>
+        <button type="button" class="chip" data-v="1" aria-pressed="false">{s.deal}</button>
         <button type="button" class="chip" data-v="0" aria-pressed="false">{s.noDeal}</button>
       </div>
       <div class="selects">
@@ -100,7 +100,7 @@ const jsonld = {
               <div class="row">
                 <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
                 {/* One status badge for every card: deal, no deal, or not confirmed by any source. */}
-                {x.deal?.made === true ? <span class="badge ok">🤝 {s.deal}</span> : x.deal?.made === false ? <span class="badge">{s.noDeal}</span> : <span class="badge unk">{s.unknownOutcome}</span>}
+                {x.deal?.made === true ? <span class="badge ok">{s.deal}</span> : x.deal?.made === false ? <span class="badge">{s.noDeal}</span> : <span class="badge unk">{s.unknownOutcome}</span>}
               </div>
               <h3>{x.name[lang]}</h3>
               <p class="desc">{x.description[lang]}</p>
@@ -108,7 +108,7 @@ const jsonld = {
                 {/* Requested vs agreed, always labelled the same way. */}
                 <span class="terms">
                   {x.ask?.amountEGP != null && <span class="ask">{s.asked} {money(x.ask.amountEGP, lang)}{x.ask.equityPct != null && ` · ${pct(x.ask.equityPct, lang)}`}</span>}
-                  {x.deal?.made && (x.deal.amountEGP != null || x.deal.equityPct != null) && <span class="amount">🤝 {[x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · ')}</span>}
+                  {x.deal?.made && (x.deal.amountEGP != null || x.deal.equityPct != null) && <span class="amount">{s.deal}: {[x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · ')}</span>}
                 </span>
                 {x.deal?.made && x.deal.sharks?.length ? <Sharks names={x.deal.sharks} lang={lang} /> : x.category && <span class="badge nile">{category(x.category, lang)}</span>}
               </div>
@@ -121,19 +121,17 @@ const jsonld = {
     <div class="more" id="more-wrap"><button type="button" class="btn btn-ghost" id="more">{s.showMore}</button></div>
 
     <div class="empty" id="empty" hidden>
-      <div class="empty-fin" aria-hidden="true">🫧</div>
       <h2>{s.emptyTitle}</h2>
       <p>{s.emptyText}</p>
       <div class="empty-actions">
         <button type="button" class="btn btn-ghost" id="reset">{s.reset}</button>
-        <a class="btn btn-primary" href={suggestUrl}>＋ {s.suggest}</a>
+        <a class="btn btn-primary" href={suggestUrl}>{s.suggest}</a>
       </div>
     </div>
 
     <aside class="missing" id="missing">
-      <span class="missing-icon" aria-hidden="true">🔎</span>
       <div><h2>{s.missingTitle}</h2><p>{s.missingText}</p></div>
-      <a class="btn btn-primary" href={suggestUrl}>＋ {s.suggest}</a>
+      <a class="btn btn-primary" href={suggestUrl}>{s.suggest}</a>
     </aside>
   </section>
 </Base>
@@ -230,63 +228,61 @@ const jsonld = {
 
 <style>
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .hero { position: relative; overflow: hidden; padding-block: 40px 28px; text-align: center;
-    background:
-      radial-gradient(700px 320px at 85% -10%, color-mix(in srgb, var(--sun) 22%, transparent), transparent 70%),
-      radial-gradient(600px 300px at 10% 110%, color-mix(in srgb, var(--nile) 16%, transparent), transparent 70%); }
-  .kicker { display: inline-block; margin: 0 0 14px; padding: 5px 14px; border-radius: 999px; background: var(--sun-soft); color: var(--sun-ink); font-size: .9rem; font-weight: 500; }
-  .hero h1 { font-size: clamp(1.9rem, 4.2vw, 2.9rem); max-width: 24ch; margin-inline: auto; letter-spacing: -.02em; }
+  .hero { padding-block: 36px 30px; border-bottom: 1px solid var(--line); }
+  .kicker { margin: 0 0 10px; color: var(--sun-ink); font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; }
+  :global([dir='rtl']) .kicker { text-transform: none; letter-spacing: 0; font-size: .9rem; }
+  .hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); max-width: 20ch; letter-spacing: -.02em; }
   :global([dir='rtl']) .hero h1 { letter-spacing: 0; }
-  .sub { max-width: 56ch; margin: 12px auto 22px; color: var(--ink-2); font-size: 1.08rem; }
-  .search { position: relative; display: flex; align-items: center; gap: 10px; max-width: 640px; margin-inline: auto; padding-block: 6px; padding-inline: 18px 8px;
-    background: var(--surface); border: 1.5px solid var(--line); border-radius: 999px; box-shadow: var(--shadow); color: var(--ink-2); transition: border-color .2s, box-shadow .2s; }
-  .search:focus-within { border-color: var(--sun); box-shadow: 0 0 0 4px color-mix(in srgb, var(--sun) 18%, transparent), var(--shadow); }
-  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 10px 0; }
+  .sub { max-width: 60ch; margin: 12px 0 24px; color: var(--ink-2); font-size: 1.08rem; }
+  .search { position: relative; display: flex; align-items: center; gap: 10px; max-width: 680px; padding-inline: 14px 8px;
+    background: var(--surface); border: 1px solid var(--ink); color: var(--ink-2); }
+  .search:focus-within { outline: 2px solid var(--sun); outline-offset: 1px; }
+  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 12px 0; }
   .search input::-webkit-search-cancel-button { cursor: pointer; }
-  kbd { font: inherit; font-size: .8rem; padding: 2px 9px; border-radius: 8px; background: var(--surface-2); color: var(--ink-2); margin-inline-end: 6px; }
+  kbd { font: inherit; font-size: .78rem; padding: 0 7px; border: 1px solid var(--line); color: var(--ink-2); margin-inline-end: 6px; }
   @media (hover: none) { kbd { display: none; } }
-  .stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 40px; margin: 22px 0 0; }
-  .stats div { display: flex; flex-direction: column-reverse; }
-  .stats dt { color: var(--ink-2); font-size: .88rem; }
-  .stats dd { margin: 0; font-size: 1.6rem; font-weight: 650; color: var(--ink); }
+  /* Figures read like a stats box in print: ruled columns, no cards. */
+  .stats { display: flex; flex-wrap: wrap; margin: 26px 0 0; border-top: 1px solid var(--ink); }
+  .stats div { display: flex; flex-direction: column-reverse; padding: 10px 28px 0 0; margin-inline-end: 28px; border-inline-end: 1px solid var(--line); }
+  :global([dir='rtl']) .stats div { padding: 10px 0 0 28px; }
+  .stats div:last-child { border: 0; }
+  .stats dt { color: var(--ink-2); font-size: .82rem; }
+  .stats dd { margin: 0; font-family: var(--serif); font-size: 1.75rem; font-weight: 700; color: var(--ink); line-height: 1.2; }
+  @media (max-width: 560px) { .stats div { padding-inline-end: 16px; margin-inline-end: 16px; } :global([dir='rtl']) .stats div { padding: 10px 0 0 16px; } .stats dd { font-size: 1.35rem; } }
 
   .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 10px; padding-top: 12px; }
-  .chips { display: flex; gap: 2px; flex-wrap: wrap; padding: 4px; background: var(--surface-2); border-radius: 999px; }
-  .chip { font: inherit; font-size: .9rem; padding: 6px 10px; border: 0; border-radius: 999px; background: none; color: var(--ink-2); cursor: pointer; transition: background .2s, color .2s; }
+  .chips { display: flex; gap: 0; flex-wrap: wrap; border: 1px solid var(--line); }
+  .chip { font: inherit; font-size: .88rem; padding: 5px 11px; border: 0; border-inline-end: 1px solid var(--line); background: none; color: var(--ink-2); cursor: pointer; }
+  .chip:last-child { border-inline-end: 0; }
   .chip:hover { color: var(--ink); }
-  .chip[aria-pressed='true'] { background: var(--surface); color: var(--sun-ink); font-weight: 650; box-shadow: 0 1px 3px rgb(60 35 15 / .14), inset 0 0 0 1px var(--line); }
-  @media (prefers-color-scheme: dark) { .chip[aria-pressed='true'] { background: #40342b; box-shadow: inset 0 0 0 1px #57483c; } }
+  .chip[aria-pressed='true'] { background: var(--ink); color: var(--bg); font-weight: 600; }
   .selects { display: flex; gap: 8px; margin-inline-start: auto; }
-  select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); cursor: pointer; }
+  select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: 0; background: var(--surface); color: var(--ink); cursor: pointer; }
   @media (max-width: 720px) { .chips { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; } .chip { white-space: nowrap; flex: none; } }
   @media (max-width: 720px) { .selects { margin-inline-start: 0; width: 100%; } .selects select { flex: 1; min-width: 0; } }
   .count { color: var(--ink-2); font-size: .9rem; margin: 18px 0 14px; }
   .count strong { color: var(--ink); }
 
-  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 22px; }
-  .card { display: flex; flex-direction: column; height: 100%; padding: 10px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); color: inherit; text-decoration: none; transition: transform .25s cubic-bezier(.2,.8,.2,1), box-shadow .25s; }
-  .card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
-  .card :global(.shot) { transition: transform .5s cubic-bezier(.2,.8,.2,1); }
-  .card:hover :global(.shot) { transform: scale(1.03); }
-  .body { display: flex; flex-direction: column; flex: 1; padding: 14px 8px 6px; }
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 34px 26px; }
+  .card { display: flex; flex-direction: column; height: 100%; padding-top: 14px; border-top: 2px solid var(--ink); color: inherit; text-decoration: none; }
+  .card:hover h3 { color: var(--sun-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .body { display: flex; flex-direction: column; flex: 1; padding: 12px 0 4px; }
   .row { display: flex; gap: 6px; flex-wrap: wrap; }
-  .body h3 { font-size: 1.15rem; margin: 10px 0 4px; }
+  .body h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; margin: 8px 0 4px; }
   .desc { margin: 0; color: var(--ink-2); font-size: .93rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 14px; min-height: 42px; }
+  .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 10px; min-height: 40px; border-top: 1px solid var(--line); }
   .amount { font-weight: 600; font-size: .92rem; color: var(--ok); }
   .terms { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .ask { font-size: .85rem; color: var(--ink-2); }
-  .badge.unk { background: none; border: 1px dashed var(--line); color: var(--ink-2); }
+  .badge.unk { border-style: dashed; font-style: italic; }
   .more { display: flex; justify-content: center; margin-top: 28px; }
   .more[hidden], .grid > li[hidden] { display: none; }
 
   .empty { text-align: center; padding: 48px 20px; }
-  .empty-fin { font-size: 2.6rem; }
-  .empty p { color: var(--ink-2); }
+    .empty p { color: var(--ink-2); }
   .empty-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-  .missing { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: var(--gap-sec); padding: 22px 26px; border-radius: var(--radius); border: 2px dashed color-mix(in srgb, var(--sun) 45%, var(--line)); background: color-mix(in srgb, var(--sun-soft) 55%, transparent); }
+  .missing { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-top: var(--gap-sec); padding: 18px 0; border-block: 1px solid var(--ink); }
   .missing[hidden] { display: none; }
-  .missing-icon { font-size: 2rem; }
   .missing div { flex: 1 1 260px; }
   .missing h2 { font-size: 1.15rem; }
   .missing p { margin: 4px 0 0; color: var(--ink-2); }

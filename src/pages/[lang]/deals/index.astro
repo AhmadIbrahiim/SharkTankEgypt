@@ -52,12 +52,12 @@ const jsonld = {
 <Base lang={lang} title={title} description={intro} jsonld={jsonld} altPath={`/${ar ? 'en' : 'ar'}/deals/`}>
   <div class="container">
     <header class="intro">
-      <h1>🤝 {title}</h1>
+      <h1>{title}</h1>
       <p>{intro}</p>
       <p class="dl">
         <a href={`${base}/data/deals.csv`} download>⬇ CSV</a>
         <a href={`${base}/data/startups.json`}>⬇ JSON</a>
-        <a href={`${base}/${lang}/compare/?ids=${deals.slice(0, 2).map((x) => x.id).join(',')}`}>⚖️ {ar ? 'قارن بين الشركات' : 'Compare startups'}</a>
+        <a href={`${base}/${lang}/compare/?ids=${deals.slice(0, 2).map((x) => x.id).join(',')}`}>{ar ? 'قارن بين الشركات' : 'Compare startups'}</a>
         <span>{ar ? 'آخر تحديث للبيانات' : 'Data updated'}: <time datetime={dataUpdated}>{dataUpdated}</time></span>
       </p>
     </header>
@@ -162,25 +162,25 @@ const jsonld = {
 </script>
 <style>
   .intro { margin: 28px 0 8px; }
-  .intro h1 { font-size: clamp(1.6rem, 4vw, 2.3rem); }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
   .dl { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; color: var(--ink-2); font-size: .92rem; }
   .dl a { font-weight: 600; }
   section { margin-top: var(--gap-sec); }
   h2 { font-size: 1.2rem; margin-bottom: 10px; }
-  .scroll { overflow-x: auto; background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); }
+  .scroll { overflow-x: auto; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); }
   table { width: 100%; border-collapse: collapse; font-size: .93rem; }
   th, td { padding: 9px 12px; border-top: 1px solid var(--line); text-align: start; white-space: nowrap; }
   thead th { border-top: 0; color: var(--ink-2); font-weight: 500; font-size: .85rem; }
   table.all td:nth-child(3) { white-space: normal; min-width: 12rem; }
   .note { color: var(--ink-2); font-size: .88rem; margin-top: 8px; }
   .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; margin: 0; }
-  .kpis div { padding: 14px 16px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+  .kpis div { padding: 10px 0 4px; border-top: 2px solid var(--ink); }
   .kpis dt { color: var(--ink-2); font-size: .85rem; }
   .kpis dd { margin: 4px 0 0; font-size: 1.35rem; font-weight: 650; }
   .kpis small { display: block; margin-top: 2px; color: var(--ink-2); font-size: .8rem; font-weight: 400; }
   .method ul { margin: 0; padding-inline-start: 20px; color: var(--ink-2); max-width: 75ch; }
-  .calc { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: end; padding: 16px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
+  .calc { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: end; padding: 16px 0; border-block: 1px solid var(--ink); }
   .calc label { display: flex; flex-direction: column; gap: 4px; font-size: .88rem; color: var(--ink-2); }
-  .calc input { font: inherit; width: 11rem; padding: 8px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); }
+  .calc input { font: inherit; width: 11rem; padding: 8px 12px; border: 1px solid var(--line); border-radius: 2px; background: var(--bg); color: var(--ink); }
   .calc output { flex: 1 1 260px; font-weight: 600; color: var(--ink); }
 </style>

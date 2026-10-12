@@ -12,7 +12,7 @@ const total = (d: typeof sharks[number]['deals']) => d.reduce((a, x) => a + (x.d
 <Base lang={lang} title={s.sharksTitle} description={s.sharksIntro} card={{ kind: 'list', title: s.sharksTitle, sub: s.sharksIntro, faces: sharks.map((p) => p.photo?.url).filter((u): u is string => !!u) }} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/sharks/`}>
   <div class="container">
     <header class="intro">
-      <h1>🦈 {s.sharksTitle}</h1>
+      <h1>{s.sharksTitle}</h1>
       <p>{s.sharksIntro}</p>
     </header>
     <ul class="people">
@@ -34,15 +34,16 @@ const total = (d: typeof sharks[number]['deals']) => d.reduce((a, x) => a + (x.d
   </div>
 </Base>
 <style>
-  .intro { padding: 40px 0 8px; text-align: center; }
-  .intro h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
-  .intro p { color: var(--ink-2); max-width: 60ch; margin: 10px auto 0; }
-  .people { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 18px; }
-  .people a { display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; padding: 24px 16px 18px; text-align: center; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); color: inherit; text-decoration: none; transition: transform .2s, box-shadow .2s; }
-  .people a:hover { transform: translateY(-4px); box-shadow: var(--shadow-lift); }
-  strong { font-size: 1.1rem; font-weight: 650; margin-top: 8px; }
+  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
+  .intro p { color: var(--ink-2); max-width: 60ch; margin: 10px 0 0; }
+  .people { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 30px 26px; }
+  .people a { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto auto 1fr; column-gap: 14px; align-items: start; height: 100%; padding-top: 14px; border-top: 2px solid var(--ink); color: inherit; text-decoration: none; }
+  .people a > :global(:first-child) { grid-row: 1 / span 4; }
+  .people a:hover strong { color: var(--sun-ink); text-decoration: underline; text-decoration-thickness: 1px; }
+  strong { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
   small { color: var(--ink-2); font-size: .85rem; line-height: 1.4; }
-  .stats { color: var(--ok); font-size: .9rem; margin-top: 4px; }
-  .seasons { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: auto; padding-top: 8px; }
-  .seasons i { font-style: normal; font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
+  .stats { color: var(--ink); font-size: .88rem; margin-top: 4px; font-weight: 500; }
+  .seasons { display: flex; flex-wrap: wrap; gap: 4px 8px; padding-top: 4px; }
+  .seasons i { font-style: normal; font-size: .74rem; color: var(--ink-2); }
 </style>
