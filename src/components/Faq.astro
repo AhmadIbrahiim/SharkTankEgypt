@@ -22,14 +22,16 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
 )}
 <style>
   .faq { margin-top: var(--gap-sec); }
-  .faq h2 { font-size: 1.25rem; margin-bottom: 12px; }
-  details { background: var(--surface); border-radius: 14px; box-shadow: var(--shadow); margin-bottom: 10px; }
-  summary { cursor: pointer; list-style: none; padding: 14px 18px; display: flex; gap: 12px; align-items: center; }
+  .faq h2 { font-size: 1.55rem; margin-bottom: 8px; }
+  details { border-bottom: 1px solid var(--line); }
+  details:first-of-type { border-top: 2px solid var(--ink); }
+  summary { cursor: pointer; list-style: none; padding: 13px 0; display: flex; gap: 12px; align-items: center; }
+  summary:hover h3 { color: var(--sun-ink); }
   summary::-webkit-details-marker { display: none; }
   summary::after { content: '+'; margin-inline-start: auto; font-size: 1.3rem; line-height: 1; color: var(--sun-ink); transition: transform .2s; }
   details[open] summary::after { transform: rotate(45deg); }
   summary h3 { font-size: 1rem; font-weight: 600; margin: 0; }
-  details p { margin: 0; padding: 0 18px 16px; color: var(--ink-2); line-height: 1.7; }
+  details p { margin: 0; padding: 0 0 16px; color: var(--ink-2); line-height: 1.7; max-width: 75ch; }
   details p a { display: inline-block; padding-block: 4px; }
   details a { color: var(--sun-ink); font-weight: 500; white-space: nowrap; }
 </style>

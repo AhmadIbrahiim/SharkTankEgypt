@@ -20,9 +20,10 @@ const Tag = labels ? 'a' : 'span';
   .sharks { display: inline-flex; align-items: center; }
   .sharks:not(.labels) .shark + .shark { margin-inline-start: -8px; }
   .sharks.labels { flex-wrap: wrap; gap: 8px; }
-  .labels .shark { display: inline-flex; align-items: center; gap: 8px; padding-block: 4px; padding-inline: 4px 12px; border-radius: 999px; background: var(--surface-2); font-size: .9rem; }
+  .labels .shark { display: inline-flex; align-items: center; gap: 8px; padding: 2px 0; font-size: .95rem; }
+  .sharks.labels { gap: 6px 18px; }
   a.shark { color: var(--ink); text-decoration: none; transition: background .2s; }
-  a.shark:hover { background: var(--sun-soft); }
+  a.shark:hover { color: var(--sun-ink); text-decoration: underline; }
   img.avatar { object-fit: cover; padding: 0; }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 </style>
