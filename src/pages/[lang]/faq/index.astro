@@ -25,7 +25,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
         <a href="#rankings">{lang === 'ar' ? 'القوائم' : 'Rankings'}</a><a href="#general">{s.faqGeneral}</a><a href="#sharks">{s.navSharks}</a><a href="#seasons">{s.faqBySeason}</a><a href="#sectors">{s.faqBySector}</a>
       </nav>
       <label class="fsearch"><span class="sr">{lang === 'ar' ? 'ابحث في الأسئلة' : 'Search the questions'}</span>
-        <input id="fq" dir="auto" type="search" autocomplete="off" placeholder={lang === 'ar' ? 'ابحث في الأسئلة… مثلاً: أيمن عباس' : 'Search questions… e.g. Ayman Abbas'} /></label>
+        <input id="fq" type="search" autocomplete="off" placeholder={lang === 'ar' ? 'ابحث في الأسئلة… مثلاً: أيمن عباس' : 'Search questions… e.g. Ayman Abbas'} /></label>
       <p class="fcount" id="fcount" aria-live="polite" hidden></p>
     </header>
 

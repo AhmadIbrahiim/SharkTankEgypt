@@ -13,7 +13,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <header class="intro">
       <h1>{s.foundersTitle}</h1>
       <p>{s.foundersIntro}</p>
-      <input id="fq" dir="auto" type="search" placeholder={s.searchPeople} aria-label={s.searchPeople} />
+      <input id="fq" type="search" placeholder={s.searchPeople} aria-label={s.searchPeople} />
       <div class="filters">
         <select id="fs" aria-label={s.season}><option value="">{lang === 'ar' ? 'كل المواسم' : 'All seasons'}</option>
           {[...seasons].sort((a, b) => (a.season || 99) - (b.season || 99)).map((x) => <option value={x.season}>{seasonLabel(x.season, lang)}</option>)}</select>

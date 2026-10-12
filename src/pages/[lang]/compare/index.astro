@@ -24,7 +24,7 @@ const L = ar
     <header class="intro"><h1>{L.title}</h1><p>{L.intro}</p></header>
     <form class="pick" id="pick" onsubmit="return false">
       <label class="sr" for="add">{L.add}</label>
-      <input id="add" dir="auto" list="names" placeholder={L.pick} autocomplete="off" />
+      <input id="add" list="names" placeholder={L.pick} autocomplete="off" />
       <datalist id="names">{data.map((x) => <option value={x.n} />)}</datalist>
     </form>
     <div class="scroll"><table id="cmp"></table></div>
