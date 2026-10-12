@@ -12,9 +12,9 @@ export function GET({ site }: APIContext) {
   <url>
     <loc>${root}${dir(lang)}${p}</loc>
     <lastmod>${dataUpdated}</lastmod>
-    <xhtml:link rel="alternate" hreflang="ar" href="${root}ar/${p}"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="${root}${p}"/>
     <xhtml:link rel="alternate" hreflang="en" href="${root}en/${p}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="${root}ar/${p}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${root}${p}"/>
   </url>`));
   return new Response(
     `<?xml version="1.0" encoding="UTF-8"?>

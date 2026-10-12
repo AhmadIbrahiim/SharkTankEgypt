@@ -56,6 +56,9 @@ for (const [d, us] of descs) if (us.length > 1) warns.push(`duplicate descriptio
 // Sitemap: every URL exists; every indexable page is listed.
 const sm = [...readFileSync('dist/sitemap.xml', 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 for (const u of sm) if (!existsSync(fileFor(u))) errors.push(`sitemap lists missing page ${u}`);
+// Language alternates in the sitemap must be real pages, not redirect stubs.
+for (const [, u] of readFileSync('dist/sitemap.xml', 'utf8').matchAll(/<xhtml:link [^>]*href="([^"]+)"/g))
+  if (!existsSync(fileFor(u)) || stubs.has(u)) errors.push(`sitemap hreflang points to a redirect or missing page ${u}`);
 const smSet = new Set(sm);
 const unlisted = pages.map(urlOf).filter((u) => !smSet.has(u) && !stubs.has(u));
 for (const u of unlisted) warns.push(`page not in sitemap: ${u}`);
