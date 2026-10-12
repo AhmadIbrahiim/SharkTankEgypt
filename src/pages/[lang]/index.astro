@@ -23,9 +23,9 @@ const tag = (x: (typeof startups)[number]) => x.deal?.made === true ? ['ok', s.d
 const ar = lang === 'ar';
 const first = (t: string) => t.split(/(?<=[.!?؟])\s/)[0];
 const arName = new Map(founders.map((f) => [f.id, f.name.ar]));
-// Search index per card: names, sector, founders and sharks in both languages, plus the first sentence of each description.
+// Search index per card: names, sector, founders, sharks, full description and product names, in both languages.
 const indexText = (x: (typeof startups)[number]) => norm([x.name.en, x.name.ar, x.category, x.category && category(x.category, 'ar'),
-  ...(x.founders ?? []).flatMap((n) => [n, arName.get(founderId(n))]), ...(x.deal?.sharks ?? []).flatMap((n) => [n, shark(n, 'ar')]), first(x.description.en), first(x.description.ar)].join(' '));
+  ...(x.founders ?? []).flatMap((n) => [n, arName.get(founderId(n))]), ...(x.deal?.sharks ?? []).flatMap((n) => [n, shark(n, 'ar')]), x.description.en, x.description.ar, ...((x as any).services?.en ?? []).map((v: any) => v.name), ...((x as any).services?.ar ?? []).map((v: any) => v.name)].join(' '));
 
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 const jsonld = {
@@ -245,6 +245,8 @@ const jsonld = {
     const url = new URL(location.href);
     url.search = new URLSearchParams(Object.entries(state).filter(([, v]) => v)).toString();
     history.replaceState(null, '', url);
+    // While searching or filtering, hide the browse sections so results sit right under the search box.
+    document.body.classList.toggle('searching', !!(state.q || state.s || state.d || state.c || state.sh));
   }
 
   q.value = params.get('q') ?? '';
@@ -261,6 +263,7 @@ const jsonld = {
   const filter = () => { limit = PAGE; apply(); };
   document.getElementById('more')!.addEventListener('click', () => { limit += PAGE * 2; apply(); });
   q.addEventListener('input', filter);
+  q.addEventListener('keydown', (e) => { if (e.key === 'Enter') document.getElementById('all')!.scrollIntoView({ behavior: 'smooth' }); });
   c.addEventListener('change', filter);
   sort.addEventListener('change', filter);
   sh.addEventListener('change', filter);
@@ -285,14 +288,19 @@ const jsonld = {
   /* The stage: a pitch still behind the title, darkened towards the text. */
   .stage { position: relative; overflow: hidden; min-height: 560px; display: flex; align-items: flex-end; background: #2a1a14; }
   .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
-  .stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #2a1a14 0%, rgb(42 26 20 / .82) 45%, rgb(42 26 20 / .2) 80%), linear-gradient(0deg, #2a1a14 0%, transparent 40%); }
-  :global([dir='rtl']) .stage::after { background: linear-gradient(-90deg, #2a1a14 0%, rgb(42 26 20 / .82) 45%, rgb(42 26 20 / .2) 80%), linear-gradient(0deg, #2a1a14 0%, transparent 40%); }
-  .stage-in { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: end; padding-block: 72px 40px; }
+  .stage::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgb(42 26 20 / .55), rgb(42 26 20 / .85) 75%), linear-gradient(0deg, #2a1a14 0%, transparent 40%); }
+    .stage-in { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 26px; text-align: center; padding-block: 72px 40px; }
+  .lead { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 760px; }
+  .lead .search { width: 100%; }
+  .feat { width: min(100%, 560px); align-items: center; text-align: center; }
+  .feat .flag { align-self: center; }
+  .fterms { justify-content: center; }
+  :global(body.searching) .panel, :global(body.searching) .rail, :global(body.searching) .stats { display: none; }
   .kicker { margin: 0 0 12px; color: var(--gold); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
   :global([dir='rtl']) .kicker { text-transform: none; letter-spacing: 0; font-size: .95rem; }
   .stage h1 { color: #fff; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1; text-transform: uppercase; }
   :global([dir='rtl']) .stage h1 { text-transform: none; line-height: 1.25; }
-  .sub { max-width: 54ch; margin: 16px 0 24px; color: #e8ddcf; font-size: 1.05rem; }
+  .sub { max-width: 54ch; margin: 16px auto 24px; color: #e8ddcf; font-size: 1.05rem; }
   .search { display: flex; align-items: center; gap: 10px; max-width: 600px; padding-inline: 14px 8px; background: #fff; border: 2px solid #fff; border-radius: var(--radius); color: var(--ink-2); }
   .search:focus-within { border-color: var(--gold); }
   .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 13px 0; }
@@ -307,7 +315,7 @@ const jsonld = {
   .fterms b { display: block; font-size: 1.25rem; }
   .fterms small { color: #cdbfb0; font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
   .watch { color: var(--gold); font-weight: 600; font-size: .92rem; }
-  @media (max-width: 860px) { .stage { min-height: 0; } .stage .bg { opacity: .3; height: 60%; } .stage::after { background: linear-gradient(0deg, #2a1a14 45%, rgb(42 26 20 / .6) 100%) !important; } .stage-in { grid-template-columns: 1fr; gap: 22px; padding-block: 120px 28px; } }
+  @media (max-width: 860px) { .stage { min-height: 0; } .stage .bg { opacity: .3; height: 60%; } .stage::after { background: linear-gradient(0deg, #2a1a14 45%, rgb(42 26 20 / .6) 100%) !important; } .stage-in { gap: 22px; padding-block: 56px 28px; } }
 
   .stats { display: flex; flex-wrap: wrap; gap: 10px 0; margin: 26px 0 0; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
   .stats div { display: flex; flex-direction: column-reverse; padding-inline-end: 28px; margin-inline-end: 28px; border-inline-end: 1px solid var(--line); }
