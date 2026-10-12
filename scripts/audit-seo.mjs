@@ -23,9 +23,11 @@ const fileFor = (href) => {
   return join('dist', p.endsWith('/') ? p + 'index.html' : p);
 };
 let links = 0;
+const stubs = new Set();
 for (const f of pages) {
   const html = readFileSync(f, 'utf8'), url = urlOf(f);
-  if (/<meta http-equiv="refresh"/.test(html)) continue; // redirect stubs
+  const to = pick(html, /<meta http-equiv="refresh" content="\d+;url=([^"]+)"/);
+  if (to) { stubs.add(url); const t = fileFor(to); if (t !== undefined && (!t || !existsSync(t))) errors.push(`${url}: redirects to missing page ${to}`); continue; } // redirect stubs
   const title = decode(pick(html, /<title>([^<]*)<\/title>/)), desc = decode(pick(html, /<meta name="description" content="([^"]*)"/));
   const canon = pick(html, /<link rel="canonical" href="([^"]*)"/);
   const alt = Object.fromEntries([...html.matchAll(/<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"/g)].map((m) => [m[1], m[2]]));
@@ -55,7 +57,7 @@ for (const [d, us] of descs) if (us.length > 1) warns.push(`duplicate descriptio
 const sm = [...readFileSync('dist/sitemap.xml', 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 for (const u of sm) if (!existsSync(fileFor(u))) errors.push(`sitemap lists missing page ${u}`);
 const smSet = new Set(sm);
-const unlisted = pages.map(urlOf).filter((u) => !smSet.has(u) && u !== `${home.origin}${BASE}/`);
+const unlisted = pages.map(urlOf).filter((u) => !smSet.has(u) && !stubs.has(u));
 for (const u of unlisted) warns.push(`page not in sitemap: ${u}`);
 const robots = readFileSync('dist/robots.txt', 'utf8');
 if (/Disallow:\s*\/\s*$/m.test(robots)) errors.push('robots.txt disallows everything');

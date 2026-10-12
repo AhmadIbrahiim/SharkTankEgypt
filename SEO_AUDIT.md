@@ -2,24 +2,24 @@
 
 Run with `npm run build && npm run audit-seo`; CI runs it with `--strict`, which fails on any error. `--verbose` lists every warning.
 
-## Latest result (2026-10-11)
+## Latest result (2026-10-12)
 
 | Check | Result |
 |---|---|
-| Pages crawled in `dist/` | 1,423 |
-| URLs in the sitemap | 1,422. The one page left out is the root language redirect. |
-| Internal links checked | 77,022, with 0 broken |
+| Pages crawled in `dist/` | 1,481 |
+| URLs in the sitemap | 1,478. The pages left out are redirects: the root language redirect and the two old Brazilian Picolé URLs. |
+| Internal links checked | 80,192, with 0 broken |
 | Title present and unique, canonical present and self-referencing | 0 errors |
 | Reciprocal `hreflang` between ar and en, plus `x-default` | 0 errors |
 | Open Graph title, description, image and URL | 0 errors |
 | JSON-LD blocks parse | 0 errors |
 | robots.txt allows crawling and points to the sitemap | OK |
-| Warnings | 309: 301 titles over 70 characters, 8 descriptions outside 70–160 characters |
+| Warnings | 361: 353 titles over 70 characters, 8 descriptions outside 70–160 characters |
 
 ## Fixed in this audit
 
 - **Meta descriptions:** cut at a word boundary to 158 characters at most. Before, many were 300+ characters and search engines truncated them mid-word.
-- **Titles:** shortened by using the short site name. The 301 that are still long are startup and founder pages whose own names are long. Cutting them further would remove the name, so they stay.
+- **Titles:** shortened by using the short site name. The 353 that are still long are startup, founder and shark-vs-shark pages whose own names are long. Cutting them further would remove the name, so they stay.
 - **Founder pages:** those without a bio now get a factual description, "X is a founder of Y" plus a one-line summary, instead of an empty one.
 - **`dateModified`:** added to page JSON-LD, and `lastmod` added to the sitemap, both taken from git history.
 - **robots.txt:** now generated from the site address. It names the AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended and others) and allows them.

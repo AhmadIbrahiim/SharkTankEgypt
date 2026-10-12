@@ -6060,7 +6060,7 @@
       "https://cairoscene.com/Eats/Gelato-On-Wheelz-Egypt-s-First-Ice-Cream-Truck",
       "https://www.cairo360.com/article/cafes/ice-cream-in-sahel-heres-where-you-can-find-your-favourite-scoop/"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "links": {
       "facebook": "https://www.facebook.com/GelatoOnWheelz"
     },
@@ -6070,43 +6070,18 @@
         "en": [
           "Described as Egypt's first ice-cream truck",
           "Natural ice cream made since 2015",
+          "Also makes Brazilian picolé ice pops",
           "Summer stops across North Coast compounds",
           "Also in Ain Sokhna, Soma Bay, El Gouna and Cairo"
         ],
         "ar": [
           "توصف بأنها أول عربة آيس كريم في مصر",
           "آيس كريم من مكونات طبيعية منذ 2015",
+          "تصنع أيضاً مصاصات «بيكوليه» البرازيلية",
           "محطات صيفية في قرى الساحل الشمالي",
           "تتواجد أيضاً في السخنة وسوما باي والجونة والقاهرة"
         ]
       }
-    }
-  },
-  {
-    "id": "brazilian-picole",
-    "season": 2,
-    "episode": 18,
-    "name": {
-      "en": "Brazilian Picolé",
-      "ar": "برازيليان بيكوليه"
-    },
-    "description": {
-      "en": "Brazilian Picolé is an Egyptian food startup that makes Brazilian-style ice pops, known in Brazil as picolé. The brand brings this frozen street treat from Brazil to Egyptian customers. It pitched on Shark Tank Egypt in Season 2, Episode 18. Public details on its flavours, sales channels and traction are limited.",
-      "ar": "برازيليان بيكوليه شركة ناشئة مصرية في مجال الأغذية، تقدّم مصاصات مثلجة على الطريقة البرازيلية تُعرف في البرازيل باسم «بيكوليه». تهدف العلامة إلى تعريف المستهلك المصري بهذه الحلوى المثلجة الشعبية في البرازيل. ظهرت الشركة في برنامج شارك تانك مصر في الموسم الثاني، الحلقة الثامنة عشرة. المعلومات المتاحة علنًا عن نكهاتها وقنوات بيعها وحجم نموها لا تزال محدودة."
-    },
-    "category": "Food",
-    "founders": [],
-    "website": null,
-    "ask": {
-      "amountEGP": null,
-      "equityPct": null
-    },
-    "deal": null,
-    "sources": [],
-    "checked": "2026-10-10",
-    "pitch": {
-      "en": "The founders presented their Brazilian-style ice-pop brand to the sharks in Season 2, Episode 18 of Shark Tank Egypt. No public source we found records the amount or equity they asked for, or whether they closed a deal.",
-      "ar": "عرض المؤسسون علامتهم للمصاصات المثلجة على الطريقة البرازيلية أمام المستثمرين في الحلقة الثامنة عشرة من الموسم الثاني لبرنامج شارك تانك مصر. لم نجد مصدرًا علنيًا يذكر المبلغ أو النسبة المطلوبة، أو ما إذا تم إبرام صفقة."
     }
   },
   {
@@ -11961,7 +11936,10 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Aya Abdel Raouf",
+        "Mounaz Abdel Raouf"
+      ],
       "amountEGP": null,
       "equityPct": null
     },
@@ -11973,7 +11951,7 @@
       "https://scoopempire.com/founders-of-okhtein-take-a-seat-on-the-investors-panel-in-shark-tank-egypt/",
       "https://www.tiktok.com/@sharktank.egypt/video/7572637577614740754"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-10-12",
     "video": "sR1q2_1965Y",
     "links": {
       "instagram": "https://www.instagram.com/haxel.me/",

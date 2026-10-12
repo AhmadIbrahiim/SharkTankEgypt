@@ -327,6 +327,7 @@ const sharkAr: Record<string, string> = {
   'Ahmed Tarek Khalil': 'أحمد طارق خليل', 'Dina Ghabbour': 'دينا غبور', 'Mohamed Farouk': 'محمد فاروق',
   'Hilda Louca': 'هيلدا لوقا', 'Mohamed Mansour': 'محمد منصور', 'Hend Sabry': 'هند صبري', 'Yassin Mansour': 'ياسين منصور',
   'Mona Ataya': 'منى عطايا', 'Bishoy Azmy': 'بيشوي عزمي', 'Robert Herjavec': 'روبرت هيرجافيك',
+  'Aya Abdel Raouf': 'آية عبد الرؤوف', 'Mounaz Abdel Raouf': 'موناز عبد الرؤوف',
 };
 export const shark = (n: string, lang: Lang) => (lang === 'ar' ? sharkAr[n] ?? n : n);
 

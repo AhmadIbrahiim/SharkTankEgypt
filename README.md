@@ -17,7 +17,7 @@
 
 ---
 
-An unofficial, community-run directory of every startup that pitched on *Shark Tank Egypt* (شارك تانك مصر): 218 startups, 116 recorded deals, 15 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
+An unofficial, community-run directory of every startup that pitched on *Shark Tank Egypt* (شارك تانك مصر): 217 startups, 116 recorded deals, 17 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
 
 ## What's inside
 
@@ -38,7 +38,7 @@ An unofficial, community-run directory of every startup that pitched on *Shark T
 | Piece | Where |
 |---|---|
 | Data | `src/data/*.json`: startups, people (sharks and founders), seasons, Arabic names. Validated by `npm run check-data` and audited by `npm run audit-data` (see [DATA_QUALITY_REPORT.md](DATA_QUALITY_REPORT.md)) on every deploy. |
-| Site | [Astro](https://astro.build) static build (about 1,420 pages), published to the `gh-pages` branch by `.github/workflows/deploy.yml`. |
+| Site | [Astro](https://astro.build) static build (about 1,480 pages), published to the `gh-pages` branch by `.github/workflows/deploy.yml`. |
 | Share images | `scripts/og.mjs` renders a 1200×630 card per page with Playwright after each build. |
 | Screenshots | `.github/workflows/screenshots.yml` captures each startup's website weekly and whenever the data changes. |
 | Research helpers | The `harvest`, `photos` and `enrich` workflows collect raw material into `automation/`. Nothing there reaches the site until a person reviews it. |
