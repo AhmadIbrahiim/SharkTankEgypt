@@ -296,7 +296,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .who { display: flex; align-items: center; gap: 8px; margin-top: 6px !important; }
   .who a { display: flex; } .who :global(.person-avatar) { border: 2px solid var(--gold); }
   .who b { display: block; font-size: .92rem; } .who small { color: var(--ink-2); font-size: .8rem; }
-  @media (max-width: 760px) { .score { grid-template-columns: 1fr 1fr; gap: 14px; padding: 16px; } .arr { display: none; } .verdict { grid-column: 1 / -1; order: -1; } .v { font-size: 1.4rem; } }
+  @media (max-width: 760px) { .score { grid-template-columns: 1fr 1fr; gap: 14px; padding: 16px; } .arr { display: none; } .verdict { grid-column: 1 / -1; order: -1; } .who { flex-wrap: wrap; } .who > span { flex-basis: 100%; } .v { font-size: 1.4rem; } }
 
   /* Body: story on the main side, facts in the sidebar (which comes first on phones). */
   .cols { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 34px; margin-top: 30px; }

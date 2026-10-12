@@ -17,7 +17,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
   mainEntity: all.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
 ---
 <Base lang={lang} title={s.faqHubTitle} description={s.faqHubIntro} jsonld={jsonld} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/faq/`}>
-  <div class="container narrow">
+  <div class="container">
     <header class="intro">
       <h1>{s.faqHubTitle}</h1>
       <p>{s.faqHubIntro}</p>
@@ -85,7 +85,6 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
   .fcount { color: var(--ink-2); font-size: .9rem; margin: 10px 0 0; }
   [hidden] { display: none !important; }
   @media (min-width: 721px) { .fsearch { position: sticky; top: 76px; } }
-  .narrow { max-width: 860px; }
   .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); text-align: center; }
   .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); margin-inline: auto; }
   .intro p { color: var(--ink-2); max-width: 62ch; margin: 10px auto 0; }
