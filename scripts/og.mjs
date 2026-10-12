@@ -44,12 +44,12 @@ body{width:1200px;height:630px;overflow:hidden;font-family:R,sans-serif;color:#2
 body::before{content:'';position:absolute;inset:40px 64px auto;height:7px;border-block:2px solid #2A1A14}
 main{position:absolute;inset:82px 64px 100px}
 .brand{position:absolute;inset-inline-start:64px;bottom:32px;display:flex;align-items:center;gap:12px;font-family:S,serif;font-weight:800;font-size:24px}
-.brand svg{width:36px;height:36px}.brand small{font-family:R,sans-serif;color:#6B5B4F;font-weight:500;font-size:17px;letter-spacing:2px;text-transform:uppercase}
+.brand svg{width:36px;height:36px}.brand small{font-family:R,sans-serif;color:#6B5B4F;font-weight:500;font-size:17px}
 [dir=rtl] .brand small{letter-spacing:0;text-transform:none;font-size:19px}
 .url{position:absolute;inset-inline-end:64px;bottom:38px;color:#6B5B4F;font-size:18px}
 body::after{content:'';position:absolute;inset:auto 64px 86px;border-top:1px solid #E3D7C3}
 .split{display:flex;align-items:center;gap:52px;height:100%}.text{flex:1;min-width:0}
-.eyebrow{color:#8E1B1B;font-size:20px;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.eyebrow{color:#8E1B1B;font-size:20px;font-weight:600;margin-bottom:14px}
 [dir=rtl] .eyebrow{letter-spacing:0;text-transform:none;font-size:24px}
 .eyebrow.center{text-align:center}
 h1{font-family:S,serif;font-size:80px;line-height:1.04;font-weight:700;letter-spacing:-1.5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
