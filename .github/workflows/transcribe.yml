@@ -1,5 +1,14 @@
-name: Transcribe official TikTok clips
-on: workflow_dispatch
+name: Transcribe pitch videos
+# Speech-to-text (Whisper) for videos with no captions: the show's TikTok clips, or the YouTube pitch
+# videos in automation/sources/youtube-targets.json. Output lands in automation/sources/ for review.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Which videos to transcribe
+        type: choice
+        options: [youtube, tiktok]
+        default: youtube
 permissions:
   contents: write
 jobs:
@@ -8,17 +17,29 @@ jobs:
     timeout-minutes: 90
     strategy:
       fail-fast: false
-      matrix: { shard: [0, 1, 2, 3] }
+      matrix: { shard: [0, 1, 2, 3, 4, 5, 6, 7] }
+    env:
+      TARGETS: automation/sources/${{ inputs.source == 'tiktok' && 'transcribe-targets' || 'youtube-targets' }}.json
+      OUT: automation/sources/${{ inputs.source == 'tiktok' && 'transcripts' || 'youtube-transcripts' }}-${{ matrix.shard }}.json
     steps:
       - uses: actions/checkout@v4
+      # yt-dlp needs a JavaScript runtime (Deno) to solve YouTube's player challenge.
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null && pip install -q "yt-dlp[default,curl-cffi]" faster-whisper numpy
-      - run: timeout 80m python3 scripts/transcribe.py automation/sources/transcribe-targets.json automation/sources/transcripts-${{ matrix.shard }}.json ${{ matrix.shard }} 4
+      - name: Transcribe
+        env:
+          COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+        run: |
+          [ -n "$COOKIES" ] && printf '%s' "$COOKIES" > /tmp/cookies.txt
+          timeout 80m python3 scripts/transcribe.py "$TARGETS" "$OUT" ${{ matrix.shard }} 8 || true
+          rm -f /tmp/cookies.txt
       - name: Commit
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add automation/sources/transcripts-${{ matrix.shard }}.json 2>/dev/null || true
+          git add "$OUT" 2>/dev/null || true
           git diff --cached --quiet && exit 0
-          git commit -m "chore: clip transcripts (shard ${{ matrix.shard }})"
+          git commit -m "chore: transcripts (${{ inputs.source }}, shard ${{ matrix.shard }})"
           for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push origin HEAD:main && break; sleep $((i*5)); done

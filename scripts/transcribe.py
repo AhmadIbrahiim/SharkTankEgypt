@@ -1,4 +1,4 @@
-# Transcribes the show's official TikTok clips (Arabic) so pitch outcomes can be read from what the
+# Transcribes the show's official TikTok clips and YouTube pitch videos (Arabic) so pitch outcomes can be read from what the
 # sharks say on air. Usage (in Actions): python3 scripts/transcribe.py <targets.json> <out.json> <shard> <shards>
 import json, subprocess, sys, os, time
 import numpy as np
@@ -12,7 +12,9 @@ for i, t in enumerate(targets):
         continue
     r = dict(t)
     try:
-        subprocess.run(['yt-dlp', '--impersonate', 'chrome', '-f', 'bestaudio/best', '-o', '/tmp/clip.media', '--force-overwrites', t['url']],
+        # YouTube blocks GitHub's servers unless signed in (YOUTUBE_COOKIES secret, written to /tmp/cookies.txt).
+        auth = ['--cookies', '/tmp/cookies.txt'] if os.path.exists('/tmp/cookies.txt') else []
+        subprocess.run(['yt-dlp', *auth, '--impersonate', 'chrome', '-f', 'bestaudio/best', '-o', '/tmp/clip.media', '--force-overwrites', t['url']],
                        check=True, capture_output=True, timeout=120)
         # Decode with ffmpeg to 16 kHz mono floats; faster-whisper's own decoder breaks on mismatched PyAV versions.
         pcm = subprocess.run(['ffmpeg', '-v', 'error', '-i', '/tmp/clip.media', '-f', 'f32le', '-ac', '1', '-ar', '16000', '-'],
