@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -q -U yt-dlp
+      # yt-dlp needs a JavaScript runtime (Deno) and its challenge solver for YouTube's player.
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x }
+      - run: pip install -q -U "yt-dlp[default]"
       - name: Download captions
         env:
           COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
@@ -20,7 +23,7 @@ jobs:
           printf '%s' "$COOKIES" > /tmp/cookies.txt
           mkdir -p automation/captions
           for v in $(node -e 'for (const x of require("./automation/sources/caption-targets.json")) for (const v of x.v) console.log(v)' | sort -u); do
-            yt-dlp --cookies /tmp/cookies.txt --skip-download --write-auto-subs --write-subs --sub-langs "ar.*,ar" \
+            yt-dlp --cookies /tmp/cookies.txt --skip-download --ignore-no-formats-error --write-auto-subs --write-subs --sub-langs "ar.*,ar" \
               --sub-format vtt -o "automation/captions/%(id)s" "https://www.youtube.com/watch?v=$v" || true
             sleep 3
           done
