@@ -55,8 +55,8 @@ const jsonld = {
       <h1>{title}</h1>
       <p>{intro}</p>
       <p class="dl">
-        <a href={`${base}/data/deals.csv`} download>⬇ CSV</a>
-        <a href={`${base}/data/startups.json`}>⬇ JSON</a>
+        <a href={`${base}/data/deals.csv`} download lang="en">⬇ CSV</a>
+        <a href={`${base}/data/startups.json`} lang="en">⬇ JSON</a>
         <a href={`${base}/${lang}/compare/?ids=${deals.slice(0, 2).map((x) => x.id).join(',')}`}>{ar ? 'قارن بين الشركات' : 'Compare startups'}</a>
         <span>{ar ? 'آخر تحديث للبيانات' : 'Data updated'}: <time datetime={dataUpdated}>{dataUpdated}</time></span>
       </p>
@@ -161,9 +161,10 @@ const jsonld = {
   a.addEventListener('input', run); e.addEventListener('input', run); run();
 </script>
 <style>
-  .intro { margin: 28px 0 8px; }
-  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
-  .dl { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; color: var(--ink-2); font-size: .92rem; }
+  .intro { margin: 28px 0 8px; text-align: center; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); margin-inline: auto; }
+  .intro p { max-width: 75ch; margin-inline: auto; }
+  .dl { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; align-items: center; color: var(--ink-2); font-size: .92rem; }
   .dl a { font-weight: 600; }
   section { margin-top: var(--gap-sec); }
   h2 { font-size: 1.2rem; margin-bottom: 10px; }

@@ -24,7 +24,7 @@ const L = ar
     <header class="intro"><h1>{L.title}</h1><p>{L.intro}</p></header>
     <form class="pick" id="pick" onsubmit="return false">
       <label class="sr" for="add">{L.add}</label>
-      <input id="add" list="names" placeholder={L.pick} autocomplete="off" />
+      <input id="add" dir="auto" list="names" placeholder={L.pick} autocomplete="off" />
       <datalist id="names">{data.map((x) => <option value={x.n} />)}</datalist>
     </form>
     <div class="scroll"><table id="cmp"></table></div>
@@ -62,9 +62,10 @@ const L = ar
   render();
 </script>
 <style>
-  .intro { margin: 28px 0 16px; }
-  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
-  .intro p { color: var(--ink-2); max-width: 70ch; }
+  .intro { margin: 28px 0 16px; text-align: center; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); margin-inline: auto; }
+  .intro p { color: var(--ink-2); max-width: 70ch; margin-inline: auto; }
+  .pick { text-align: center; }
   .pick input { font: inherit; width: min(100%, 420px); padding: 10px 14px; border: 1px solid var(--line); border-radius: 0; background: var(--surface); color: var(--ink); }
   .scroll { overflow-x: auto; margin-top: 16px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); }
   .scroll:has(table:empty) { display: none; }

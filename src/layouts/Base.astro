@@ -166,7 +166,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
             <a href={`${base}/${lang}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
             <a href={`${base}/${lang}/compare/`}>{lang === 'ar' ? 'قارن بين الشركات' : 'Compare startups'}</a>
             <a href={`${base}/${lang}/faq/`}>{s.navFaq}</a>
-            <a href={`${base}${altPath}`} hreflang={other}>{s.switchLang}</a>
+            <a href={`${base}${altPath}`} hreflang={other} lang={other}>{s.switchLang}</a>
           </nav>
           <nav aria-label={s.browseSeasons}>
             <h3>{s.browseSeasons}</h3>
@@ -177,7 +177,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
             <p>{categories.map((c) => <a href={`${base}/${lang}/category/${catSlug(c)}/`}>{category(c, lang)}</a>)}</p>
           </nav>
         </div>
-        <p class="fine">© {new Date().getFullYear()} {s.brandName} · {s.madeWith} · {lang === 'ar' ? 'آخر تحديث للبيانات' : 'Data updated'} <time datetime={dataUpdated}>{dataUpdated}</time> · <a href={`${base}/data/deals.csv`}>CSV</a> · <a href={`${base}/llms.txt`}>llms.txt</a></p>
+        <p class="fine">© {num(new Date().getFullYear(), lang).replace(/[٬,]/g, '')} {s.brandName} · {s.madeWith} · {lang === 'ar' ? 'آخر تحديث للبيانات' : 'Data updated'} <time datetime={dataUpdated}>{dataUpdated}</time> · <a href={`${base}/data/deals.csv`} lang="en">CSV</a> · <a href={`${base}/llms.txt`} lang="en">llms.txt</a></p>
       </div>
     </footer>
   </body>

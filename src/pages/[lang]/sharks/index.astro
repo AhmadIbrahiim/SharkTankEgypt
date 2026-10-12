@@ -1,7 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Avatar from '../../../components/Avatar.astro';
-import { langs, sharks, t, num, money, seasonLabel, type Lang } from '../../../config';
+import { langs, sharks, t, num, money, seasonLabel, type Lang, digits } from '../../../config';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
 const lang = Astro.params.lang as Lang;
@@ -21,7 +21,7 @@ const total = (d: typeof sharks[number]['deals']) => d.reduce((a, x) => a + (x.d
           <a href={`${base}/${lang}/sharks/${p.id}/`}>
             <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={132} />
             <strong>{p.name[lang]}</strong>
-            {p.title && <small>{p.title[lang]}</small>}
+            {p.title && <small>{digits(p.title[lang], lang)}</small>}
             <span class="stats">
               <b>{num(p.deals.length, lang)}</b> {lang === 'en' && p.deals.length === 1 ? 'deal' : s.dealsCount}
               {total(p.deals) > 0 && <> · {money(total(p.deals), lang)}</>}
@@ -34,9 +34,9 @@ const total = (d: typeof sharks[number]['deals']) => d.reduce((a, x) => a + (x.d
   </div>
 </Base>
 <style>
-  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); }
-  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
-  .intro p { color: var(--ink-2); max-width: 60ch; margin: 10px 0 0; }
+  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); text-align: center; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); margin-inline: auto; }
+  .intro p { color: var(--ink-2); max-width: 60ch; margin: 10px auto 0; }
   .people { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 30px 18px; }
   .people a { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; height: 100%; color: inherit; text-decoration: none; }
   .people a :global(.person-avatar) { border: 3px solid var(--line); margin-bottom: 8px; transition: border-color .2s; }

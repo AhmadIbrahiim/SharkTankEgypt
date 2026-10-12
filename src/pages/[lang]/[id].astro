@@ -6,7 +6,7 @@ import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
 import MiniCard from '../../components/MiniCard.astro';
 import { startupFaq, summary } from '../../faq';
-import { verification, langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, sharkByKey, type Lang, type Startup, type Card } from '../../config';
+import { verification, langs, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, sharkByKey, type Lang, type Startup, type Card, digits } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang, id: x.id }, props: { i } })));
@@ -72,7 +72,7 @@ const ar = lang === 'ar';
 const outcome = x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no' : 'unk';
 const askVal = valuation(x.ask?.amountEGP, x.ask?.equityPct);
 const investors = (x.deal?.made ? x.deal.sharks ?? [] : []).map((n) => sharkByKey.get(n)).filter(Boolean) as any[];
-const lead = x.description[lang].split(/(?<=[.!?؟])\s+/)[0];
+const lead = digits(x.description[lang].split(/(?<=[.!?؟])\s+/)[0], lang);
 const heroImg = x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : screenshot(x.id) ? `${base}${screenshot(x.id)}` : null;
 const heroFallback = x.video ? `this.onerror=null;this.src='${thumb(x.video)}'` : 'this.remove()';
 const faqs = startupFaq(x, lang);
@@ -90,7 +90,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       </nav>
       <p class="ep">{where}</p>
       <h1>{x.name[lang]}</h1>
-      {otherName !== x.name[lang] && <p class="alt" lang={ar ? 'en' : 'ar'}>{otherName}</p>}
+      {otherName !== x.name[lang] && <p class="alt" lang={ar ? 'en' : 'ar'} dir="auto">{otherName}</p>}
       <p class="lead">{lead}</p>
       <p class="tags">
         {x.category && <a href={`${base}/${lang}/category/${catSlug(x.category)}/`}>{category(x.category, lang)}</a>}
@@ -137,7 +137,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 
         <section id="overview" class="sec">
           <h2>{s.secOverview}</h2>
-          <p>{x.description[lang]}</p>
+          <p>{digits(x.description[lang], lang)}</p>
         </section>
 
         {(x.video || pitchText?.[lang]) && <section id="pitch" class="sec">
@@ -150,13 +150,13 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
               </button>
             </div>
           )}
-          {pitchText?.[lang] && <p>{pitchText[lang]}</p>}
+          {pitchText?.[lang] && <p>{digits(pitchText[lang], lang)}</p>}
         </section>}
 
         {services?.[lang]?.length > 0 && (
           <section id="services" class="sec">
             <h2>{s.secServices}</h2>
-            <ul class="services">{services[lang].map((it) => <li><b>{it.name}</b><span>{it.desc}</span></li>)}</ul>
+            <ul class="services">{services[lang].map((it) => <li><b>{digits(it.name, lang)}</b><span>{digits(it.desc, lang)}</span></li>)}</ul>
           </section>
         )}
 
@@ -265,20 +265,20 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .stage.noimg { background: linear-gradient(135deg, #1f5f66, #2a1a14 70%); }
   .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
   .stage .bg.site { opacity: .22; filter: blur(2px); }
-  .stage::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, #2a1a14 8%, rgb(42 26 20 / .55) 60%, rgb(42 26 20 / .35)); }
-  .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: #f4efe6; }
-  .crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: .85rem; color: #d6c7b2; margin-bottom: 70px; }
+  .stage::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgb(42 26 20 / .62), rgb(42 26 20 / .85) 80%), linear-gradient(0deg, #2a1a14 8%, transparent 50%); }
+  .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: #f4efe6; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .crumbs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; font-size: .85rem; color: #d6c7b2; margin-bottom: 56px; }
   .crumbs a { color: #d6c7b2; text-decoration: none; } .crumbs a:hover { color: #fff; }
   .crumbs [aria-current] { color: #f4efe6; }
   .ep { margin: 0; color: #f6cf73; font-weight: 700; font-size: .85rem; }
   .stage h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.2; }
   .alt { margin: 2px 0 0; color: #d6c7b2; }
   .lead { margin: 8px 0 0; max-width: 62ch; color: #e8ddcf; font-size: 1.05rem; }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0; }
+  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 12px 0 0; }
   .tags > * { font-size: .8rem; padding: 1px 10px; border-radius: 3px; background: rgb(255 255 255 / .14); color: #f4efe6; text-decoration: none; }
-  .watch { position: absolute; inset-inline-end: 20px; bottom: 80px; background: var(--crimson); color: #fff; padding: 10px 18px 10px 16px; border-radius: 30px; font-weight: 700; font-size: .92rem; text-decoration: none; }
+  .watch { margin-top: 16px; background: var(--crimson); color: #fff; padding: 10px 18px 10px 16px; border-radius: 30px; font-weight: 700; font-size: .92rem; text-decoration: none; }
   .watch::before { content: '▶ '; }
-  @media (max-width: 760px) { .stage { min-height: 360px; } .crumbs { margin-bottom: 48px; } .watch { position: static; display: inline-block; margin-top: 14px; } .stage-in { padding-bottom: 64px; } }
+  @media (max-width: 760px) { .stage { min-height: 360px; } .crumbs { margin-bottom: 48px; } .stage-in { padding-bottom: 64px; } }
 
   /* Score card: asked → outcome → final, overlapping the hero. */
   .score { position: relative; z-index: 2; margin-top: -46px; display: grid; grid-template-columns: 1fr auto minmax(180px, .8fr) auto 1fr; align-items: center; gap: 18px; padding: 20px 24px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-lift); }

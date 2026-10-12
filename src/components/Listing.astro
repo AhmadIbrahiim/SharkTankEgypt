@@ -56,19 +56,18 @@ const PAGE = 24;
     });
 </script>
 <style>
-  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); margin-bottom: 24px; }
-  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); max-width: 26ch; }
-  .intro p { color: var(--ink-2); max-width: 70ch; margin: 12px 0 0; font-size: 1.05rem; }
-  .kpis { display: flex; flex-wrap: wrap; margin: 22px 0 0; border-top: 1px solid var(--ink); }
-  .kpis div { padding: 10px 24px 0 0; margin-inline-end: 24px; border-inline-end: 1px solid var(--line); display: flex; flex-direction: column; }
+  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); margin-bottom: 24px; text-align: center; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); max-width: 26ch; margin-inline: auto; }
+  .intro p { color: var(--ink-2); max-width: 70ch; margin: 12px auto 0; font-size: 1.05rem; }
+  .kpis { display: flex; flex-wrap: wrap; justify-content: center; margin: 22px 0 0; border-top: 1px solid var(--ink); }
+  .kpis div { padding-block-start: 10px; padding-inline: 12px; margin-inline-end: 12px; border-inline-end: 1px solid var(--line); display: flex; flex-direction: column; }
   .kpis div:last-child { border: 0; }
-  :global([dir='rtl']) .kpis div { padding: 10px 0 0 24px; }
   .kpis b { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; line-height: 1.2; }
   .kpis span { color: var(--ink-2); font-size: .85rem; }
-  .top { margin-bottom: 26px; }
+  .top { margin-bottom: 26px; text-align: center; }
   .top h2 { font-family: inherit; font-size: .78rem; color: var(--ink-2); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px; }
   :global([dir='rtl']) .top h2 { text-transform: none; letter-spacing: 0; font-size: .9rem; }
-  .top ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .top ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; }
   .top a { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none; }
   .top a:hover span { color: var(--sun-ink); text-decoration: underline; }
   .top b { color: var(--ok); }

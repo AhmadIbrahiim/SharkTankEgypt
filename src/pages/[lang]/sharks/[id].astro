@@ -7,7 +7,7 @@ import Faq from '../../../components/Faq.astro';
 import { sharkFaq, sharkSeasons, sharkPairs, sharkSectors } from '../../../faq';
 import Chips from '../../../components/Chips.astro';
 import Shot from '../../../components/Shot.astro';
-import { langs, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, catSlug, suggestUrl, type Lang } from '../../../config';
+import { langs, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, catSlug, suggestUrl, type Lang, digits } from '../../../config';
 
 export const getStaticPaths = () => langs.flatMap((lang) => sharks.map((p) => ({ params: { lang, id: p.id }, props: { p } })));
 const lang = Astro.params.lang as Lang;
@@ -46,10 +46,10 @@ const jsonld = {
       </figure>
       <div>
         <h1>{p.name[lang]}</h1>
-        <p class="alt">{p.name[lang === 'ar' ? 'en' : 'ar']}</p>
-        {p.title && <p class="title">{p.title[lang]}</p>}
+        <p class="alt" lang={lang === 'ar' ? 'en' : 'ar'}>{p.name[lang === 'ar' ? 'en' : 'ar']}</p>
+        {p.title && <p class="title">{digits(p.title[lang], lang)}</p>}
         <p class="seasons">{s.appearedIn}: {p.seasons.map((n) => <a href={`${base}/${lang}/season/${n}/`}>{seasonLabel(n, lang)}</a>)}</p>
-        {p.bio ? <p class="bio">{p.bio[lang]}</p> : <p class="bio muted">{s.profileThin} <a href={suggestUrl}>{s.helpBtn}</a></p>}
+        {p.bio ? <p class="bio">{digits(p.bio[lang], lang)}</p> : <p class="bio muted">{s.profileThin} <a href={suggestUrl}>{s.helpBtn}</a></p>}
         <Links website={website} links={{ ...social, other }} lang={lang} label={s.online} />
       </div>
     </article>
@@ -110,10 +110,11 @@ const jsonld = {
   </div>
 </Base>
 <style>
-  .crumbs { display: flex; gap: 8px; padding-top: 22px; font-size: .9rem; color: var(--ink-2); }
+  .crumbs { display: flex; justify-content: center; gap: 8px; padding-top: 22px; font-size: .9rem; color: var(--ink-2); }
   .crumbs a { color: var(--ink-2); text-decoration: none; }
-  .hero { display: grid; grid-template-columns: auto 1fr; gap: 36px; align-items: start; padding: 28px 0; }
-  @media (max-width: 720px) { .hero { grid-template-columns: 1fr; justify-items: center; text-align: center; } .hero :global(.online ul) { justify-content: center; } }
+  .hero { display: grid; grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 18px; padding: 28px 0; }
+  .hero :global(.online ul) { justify-content: center; }
+  .hero .bio { margin-inline: auto; }
   figure { margin: 0; text-align: center; }
   figcaption { margin-top: 8px; font-size: .75rem; color: var(--ink-2); }
   figcaption a { color: inherit; }
@@ -122,8 +123,7 @@ const jsonld = {
   figure :global(.person-avatar) { border: 4px solid var(--gold); }
   .alt { margin: 2px 0 0; color: var(--ink-2); }
   .title { margin: 10px 0 0; font-weight: 500; color: var(--sun-ink); }
-  .seasons { margin: 8px 0 0; color: var(--ink-2); font-size: .92rem; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
-  .hero .seasons { justify-content: inherit; }
+  .seasons { margin: 8px 0 0; color: var(--ink-2); font-size: .92rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; align-items: center; }
   .seasons a { padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .82rem; }
   .bio { font-size: 1.05rem; margin: 16px 0 0; max-width: 70ch; }
   .muted { color: var(--ink-2); }

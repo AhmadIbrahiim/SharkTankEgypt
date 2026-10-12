@@ -25,7 +25,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
         <a href="#rankings">{lang === 'ar' ? 'القوائم' : 'Rankings'}</a><a href="#general">{s.faqGeneral}</a><a href="#sharks">{s.navSharks}</a><a href="#seasons">{s.faqBySeason}</a><a href="#sectors">{s.faqBySector}</a>
       </nav>
       <label class="fsearch"><span class="sr">{lang === 'ar' ? 'ابحث في الأسئلة' : 'Search the questions'}</span>
-        <input id="fq" type="search" autocomplete="off" placeholder={lang === 'ar' ? 'ابحث في الأسئلة… مثلاً: أيمن عباس' : 'Search questions… e.g. Ayman Abbas'} /></label>
+        <input id="fq" dir="auto" type="search" autocomplete="off" placeholder={lang === 'ar' ? 'ابحث في الأسئلة… مثلاً: أيمن عباس' : 'Search questions… e.g. Ayman Abbas'} /></label>
       <p class="fcount" id="fcount" aria-live="polite" hidden></p>
     </header>
 
@@ -79,16 +79,16 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
 </script>
 <style>
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  .fsearch { display: block; z-index: 5; margin: 20px 0 0; max-width: 560px; }
+  .fsearch { display: block; z-index: 5; margin: 20px auto 0; max-width: 560px; }
   .fsearch input { width: 100%; font: inherit; font-size: 1rem; padding: 11px 14px; border: 1px solid var(--ink); background: var(--surface); color: var(--ink); }
   .fsearch input:focus { outline: none; border-color: var(--sun); }
   .fcount { color: var(--ink-2); font-size: .9rem; margin: 10px 0 0; }
   [hidden] { display: none !important; }
   @media (min-width: 721px) { .fsearch { position: sticky; top: 76px; } }
   .narrow { max-width: 860px; }
-  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); }
-  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
-  .intro p { color: var(--ink-2); max-width: 62ch; margin: 10px 0 0; }
+  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); text-align: center; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); margin-inline: auto; }
+  .intro p { color: var(--ink-2); max-width: 62ch; margin: 10px auto 0; }
   .jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 20px; }
   .jump a { padding: 10px 16px; border-radius: 0; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .9rem; }
   .group { font-size: 1.5rem; margin: 48px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }

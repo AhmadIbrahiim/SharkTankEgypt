@@ -4,7 +4,7 @@ import { ID, ROOT } from '../../schema';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Avatar from '../../components/Avatar.astro';
-import { langs, listCard, startups, seasons, sharks, founders, founderId, t, num, money, pct, category, seasonLabel, shark, suggestUrl, thumb, type Lang } from '../../config';
+import { langs, listCard, startups, seasons, sharks, founders, founderId, t, num, money, pct, category, seasonLabel, shark, suggestUrl, thumb, type Lang, digits } from '../../config';
 import { norm } from '../../search.mjs';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang } }));
@@ -46,7 +46,7 @@ const jsonld = {
         <label class="search">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           <span class="sr">{s.search}</span>
-          <input id="q" type="search" placeholder={s.search} autocomplete="off" enterkeyhint="search" />
+          <input id="q" dir="auto" type="search" placeholder={s.search} autocomplete="off" enterkeyhint="search" />
           <kbd aria-hidden="true">/</kbd>
         </label>
       </div>
@@ -157,7 +157,7 @@ const jsonld = {
                 <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
               </div>
               <h3>{x.name[lang]}</h3>
-              <p class="desc">{x.description[lang]}</p>
+              <p class="desc">{digits(x.description[lang], lang)}</p>
               <div class="foot">
                 {/* Requested vs agreed, always labelled the same way. */}
                 <span class="terms">

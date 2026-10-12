@@ -329,7 +329,11 @@ const sharkAr: Record<string, string> = {
   'Mona Ataya': 'منى عطايا', 'Bishoy Azmy': 'بيشوي عزمي', 'Robert Herjavec': 'روبرت هيرجافيك',
   'Aya Abdel Raouf': 'آية عبد الرؤوف', 'Mounaz Abdel Raouf': 'موناز عبد الرؤوف',
 };
-export const shark = (n: string, lang: Lang) => (lang === 'ar' ? sharkAr[n] ?? n : n);
+// Arabic name: the table above, else the shark's profile, so no shark shows in English on Arabic pages.
+// sharkByKey is keyed by the name the data uses, which can differ from the profile's display name (e.g. "Nour Swid").
+export const shark = (n: string, lang: Lang) => (lang === 'ar' ? sharkAr[n] ?? sharkByKey.get(n)?.name.ar ?? n : n);
+/** Arabic pages show Arabic-Indic digits in prose too (data text is stored with 0-9). */
+export const digits = (text: string, lang: Lang) => (lang === 'ar' ? text.replace(/[0-9]/g, (d) => '٠١٢٣٤٥٦٧٨٩'[+d]) : text);
 
 /** URL slug for a person's name. */
 export const slug = (name: string) => name.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
