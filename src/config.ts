@@ -35,7 +35,7 @@ export const dataUpdated = (() => {
 // Comments stay hidden until repoId and categoryId are set.
 export const giscus = {
   repo: 'AhmadIbrahiim/SharkTankEgypt',
-  repoId: '',
+  repoId: 'R_kgDOVDn6JQ',
   category: 'Startups',
   categoryId: '',
 };
