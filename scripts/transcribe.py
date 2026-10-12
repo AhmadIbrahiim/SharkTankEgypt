@@ -6,9 +6,11 @@ from faster_whisper import WhisperModel
 
 targets, out_path, shard, shards = json.load(open(sys.argv[1])), sys.argv[2], int(sys.argv[3]), int(sys.argv[4])
 model = WhisperModel('small', compute_type='int8')
-out = []
+# Resume: keep what an earlier run already transcribed and skip those videos.
+out = [r for r in json.load(open(out_path)) if r.get('text')] if os.path.exists(out_path) else []
+done = {r['url'] for r in out}
 for i, t in enumerate(targets):
-    if i % shards != shard:
+    if i % shards != shard or t['url'] in done:
         continue
     r = dict(t)
     try:
