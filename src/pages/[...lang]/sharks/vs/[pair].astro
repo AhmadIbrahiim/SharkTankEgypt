@@ -1,0 +1,70 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Listing from '../../../../components/Listing.astro';
+import Faq from '../../../../components/Faq.astro';
+import Chips from '../../../../components/Chips.astro';
+import Avatar from '../../../../components/Avatar.astro';
+import { langs, seg, pre, num, money, pct, category, type Lang } from '../../../../config';
+import { sharkPairs, pairFaq } from '../../../../faq';
+
+export const getStaticPaths = () => langs.flatMap((lang) => sharkPairs.map((x) => ({ params: { lang: seg(lang), pair: x.id }, props: x })));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const { a, b } = Astro.props as (typeof sharkPairs)[number];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const A = a.name[lang], B = b.name[lang];
+// Joint deals first, then each shark's other deals.
+const items = [...new Set([...a.deals.filter((x) => b.deals.includes(x)), ...a.deals, ...b.deals])];
+const joint = a.deals.filter((x) => b.deals.includes(x)).length;
+const side = (p: typeof a) => {
+  const amounts = p.deals.map((x) => x.deal?.amountEGP).filter((v): v is number => v != null);
+  const eq = p.deals.map((x) => x.deal?.equityPct).filter((v): v is number => v != null);
+  const sectors = [...p.deals.reduce((m, x) => x.category ? m.set(x.category, (m.get(x.category) ?? 0) + 1) : m, new Map<string, number>())].sort((x, y) => y[1] - x[1]).slice(0, 2);
+  return { p, deals: p.deals.length, invested: amounts.reduce((t, v) => t + v, 0), eq: eq.length ? eq.reduce((t, v) => t + v, 0) / eq.length : null,
+    biggest: Math.max(0, ...amounts), sectors: sectors.map(([c]) => category(c, lang)).join(lang === 'ar' ? '، ' : ', ') };
+};
+const [L, R] = [side(a), side(b)];
+const rows: [string, (x: typeof L) => string, (x: typeof L) => number][] = [
+  [lang === 'ar' ? 'الصفقات' : 'Deals', (x) => num(x.deals, lang), (x) => x.deals],
+  [lang === 'ar' ? 'الاستثمارات المعلنة' : 'Announced investment', (x) => (x.invested ? money(x.invested, lang)! : '—'), (x) => x.invested],
+  [lang === 'ar' ? 'أكبر صفقة' : 'Biggest deal', (x) => (x.biggest ? money(x.biggest, lang)! : '—'), (x) => x.biggest],
+  [lang === 'ar' ? 'متوسط الحصة' : 'Average equity', (x) => (x.eq != null ? pct(Math.round(x.eq), lang) : '—'), () => 0],
+  [lang === 'ar' ? 'أكثر القطاعات' : 'Top sectors', (x) => x.sectors || '—', () => 0],
+];
+const title = lang === 'ar' ? `${A} أم ${B}: مقارنة صفقات شارك تانك مصر` : `${A} vs ${B}: Shark Tank Egypt deals compared`;
+const intro = lang === 'ar' ? `مقارنة بين ${A} و${B} في شارك تانك مصر: عدد الصفقات، وحجم الاستثمارات، والحصص، والقطاعات، والصفقات المشتركة.` : `${A} vs ${B} on Shark Tank Egypt: number of deals, money invested, equity taken, sectors and the deals they did together.`;
+---
+<Base lang={lang} title={title} description={intro} card={{ kind: 'vs', title, eyebrow: lang === 'ar' ? 'مقارنة مستثمري شارك تانك مصر' : 'Shark Tank Egypt · Shark vs Shark',
+  vs: [a, b].map((p) => { const v = p.deals.reduce((t, x) => t + (x.deal?.amountEGP ?? 0), 0); return { name: p.name[lang], photo: p.photo?.url, stats: [`${num(p.deals.length, lang)} ${lang === 'ar' ? 'صفقة' : 'deals'}`, ...(v ? [money(v, lang)!] : [])] }; }) }} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/vs/${a.id}-vs-${b.id}/`}>
+  <Listing lang={lang} title={title} intro={intro} items={items} hideTop>
+    <section class="vs" aria-label={title}>
+      <div class="who">
+        {[L, R].map((x, i) => <>{i === 1 && <span class="v">VS</span>}<a href={`${base}${pre(lang)}/sharks/${x.p.id}/`}><Avatar name={x.p.name[lang]} seed={x.p.id} photo={x.p.photo} size={72} /><b>{x.p.name[lang]}</b></a></>)}
+      </div>
+      <table>
+        <tbody>
+          {rows.map(([label, show, score]) => { const [l, r] = [score(L), score(R)]; return (
+            <tr><td class={l > r ? 'win' : ''}>{show(L)}</td><th scope="row">{label}</th><td class={r > l ? 'win' : ''}>{show(R)}</td></tr>
+          ); })}
+          <tr><td colspan="3" class="joint">{lang === 'ar' ? `صفقات مشتركة: ${num(joint, lang)}` : `Deals together: ${joint}`}</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </Listing>
+  <div class="container">
+    <Faq lang={lang} items={pairFaq(a, b, lang)} />
+    <Chips title={lang === 'ar' ? 'الملفات الكاملة' : 'Full profiles'} links={[a, b].map((p) => ({ href: `${base}${pre(lang)}/sharks/${p.id}/`, label: p.name[lang] }))} />
+  </div>
+</Base>
+
+<style>
+  .vs { max-width: 720px; margin: 0 auto 28px; padding: 16px 0; border-block: 2px solid var(--ink); }
+  .who { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; text-align: center; margin-bottom: 12px; }
+  .who a { display: flex; flex-direction: column; align-items: center; gap: 8px; color: inherit; text-decoration: none; }
+  .v { font-weight: 800; color: var(--sun-ink); }
+  table { width: 100%; border-collapse: collapse; }
+  td, th { padding: 10px 6px; border-top: 1px solid var(--line); text-align: center; }
+  th { color: var(--ink-2); font-weight: 500; font-size: .88rem; }
+  td { font-weight: 600; width: 38%; }
+  td.win { color: var(--ok); }
+  .joint { color: var(--ink-2); font-weight: 500; }
+</style>

@@ -1,5 +1,5 @@
 ---
-import { t, goatcounter, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card } from '../config';
+import { t, goatcounter, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card, pre } from '../config';
 import { siteNodes, ID } from '../schema';
 // Self-hosted variable font (Arabic + Latin subsets load on demand): no render-blocking third-party CSS.
 import '@fontsource-variable/readex-pro/wght.css';
@@ -26,7 +26,8 @@ const metaDesc = desc.length <= 158 ? desc : `${desc.slice(0, 157).replace(/[\s,
 const og = card ?? { kind: 'page', title: title ?? s.title, sub: description ?? s.tagline, photo: image };
 const ogPath = `/og/${Astro.url.pathname.slice(base.length).replace(/^\/|\/$/g, '') || 'index'}.jpg`;
 // One @graph per page: site + publisher + show, this WebPage, its breadcrumb trail and the page's own entity.
-const segs = Astro.url.pathname.slice(base.length).split('/').filter(Boolean);
+// Path segments after the language prefix (Arabic has none).
+const segs = Astro.url.pathname.slice(base.length).split('/').filter(Boolean).slice(lang === 'ar' ? 0 : 1);
 const label = (k: string, prev?: string, prev2?: string): string | null => {
   if (!prev) return ({ sharks: s.navSharks, founders: s.navFounders, faq: s.navFaq, deals: s.navDeals } as Record<string, string>)[k] ?? startups.find((x) => x.id === k)?.name[lang] ?? null;
   if (prev === 'season') return seasonLabel(Number(k), lang);
@@ -36,20 +37,20 @@ const label = (k: string, prev?: string, prev2?: string): string | null => {
   if (prev === 'founders' && !prev2) return founders.find((p) => p.id === k)?.name[lang] ?? null;
   return null; // "season", "category", "vs", "top"…: path levels with no page of their own
 };
-const crumbs = [{ name: s.home, url: abs(`/${lang}/`) }];
-const startup = segs.length === 2 ? startups.find((x) => x.id === segs[1]) : undefined;
+const crumbs = [{ name: s.home, url: abs(`${pre(lang)}/`) }];
+const startup = segs.length === 1 ? startups.find((x) => x.id === segs[0]) : undefined;
 // Startup pages sit under their season, as in the visible breadcrumb.
-if (startup) crumbs.push({ name: seasonLabel(startup.season, lang), url: abs(`/${lang}/season/${startup.season}/`) });
-segs.slice(1).forEach((k, i, a) => {
+if (startup) crumbs.push({ name: seasonLabel(startup.season, lang), url: abs(`${pre(lang)}/season/${startup.season}/`) });
+segs.forEach((k, i, a) => {
   const name = label(k, a[i - 1], a[i - 2]) ?? (i === a.length - 1 ? title : null);
-  if (name) crumbs.push({ name, url: abs(`/${segs.slice(0, i + 2).join('/')}/`) });
+  if (name) crumbs.push({ name, url: abs(`${pre(lang)}/${segs.slice(0, i + 1).join('/')}/`) });
 });
 const { '@context': _ctx, ...entity } = (jsonld ?? {}) as Record<string, any>;
 const pageTypes = ['FAQPage', 'CollectionPage', 'ProfilePage', 'WebPage'];
 const isPage = pageTypes.includes(entity['@type']);
 const isPerson = entity['@type'] === 'Person';
 const page = {
-  '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : segs.length <= 1 ? 'CollectionPage' : 'WebPage',
+  '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : !segs.length ? 'CollectionPage' : 'WebPage',
   '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site }, dateModified: dataUpdated,
   primaryImageOfPage: { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 },
   ...(crumbs.length > 1 && { breadcrumb: { '@id': `${url}#breadcrumb` } }),
@@ -105,18 +106,18 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <a class="skip" href="#main">{lang === 'ar' ? 'تخطَّ إلى المحتوى' : 'Skip to content'}</a>
     <header class="site-header">
       <div class="container bar">
-        <a class="brand" href={`${base}/${lang}/`} aria-label={`${s.brandName} – ${s.brandSub}`}>
+        <a class="brand" href={`${base}${pre(lang)}/`} aria-label={`${s.brandName} – ${s.brandSub}`}>
           <img class="mark" src={`${base}/favicon.svg`} alt="" width="40" height="40" />
           <span class="word"><b>{s.brandName}</b><small>{s.brandSub}</small></span>
         </a>
         <nav class="nav" aria-label={s.navMain}>
-          <a href={`${base}/${lang}/`} aria-current={section === 'startups' ? 'page' : undefined}>{s.navStartups}</a>
-          <a href={`${base}/${lang}/sharks/`} aria-current={section === 'sharks' ? 'page' : undefined}>{s.navSharks}</a>
-          <a href={`${base}/${lang}/founders/`} aria-current={section === 'founders' ? 'page' : undefined}>{s.navFounders}</a>
-          <a href={`${base}/${lang}/deals/`} aria-current={section === 'deals' ? 'page' : undefined}>{s.navDeals}</a>
-          <a href={`${base}/${lang}/faq/`} aria-current={section === 'faq' ? 'page' : undefined}>{s.navFaqTab}</a>
+          <a href={`${base}${pre(lang)}/`} aria-current={section === 'startups' ? 'page' : undefined}>{s.navStartups}</a>
+          <a href={`${base}${pre(lang)}/sharks/`} aria-current={section === 'sharks' ? 'page' : undefined}>{s.navSharks}</a>
+          <a href={`${base}${pre(lang)}/founders/`} aria-current={section === 'founders' ? 'page' : undefined}>{s.navFounders}</a>
+          <a href={`${base}${pre(lang)}/deals/`} aria-current={section === 'deals' ? 'page' : undefined}>{s.navDeals}</a>
+          <a href={`${base}${pre(lang)}/faq/`} aria-current={section === 'faq' ? 'page' : undefined}>{s.navFaqTab}</a>
         </nav>
-        <a class="search-btn" href={`${base}/${lang}/#q`} aria-label={s.search} title={s.search}>
+        <a class="search-btn" href={`${base}${pre(lang)}/#q`} aria-label={s.search} title={s.search}>
           <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m20 20-4.2-4.2M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/></svg>
         </a>
         <a class="lang" href={`${base}${altPath}`} hreflang={other} lang={other}>
@@ -149,7 +150,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
         </div>
         <div class="foot-grid">
           <div class="foot-brand">
-            <a class="brand big" href={`${base}/${lang}/`}>
+            <a class="brand big" href={`${base}${pre(lang)}/`}>
               <img class="mark" src={`${base}/logo-reversed.svg`} alt={`${s.brandName} – ${s.brandSub}`} width="150" height="108" loading="lazy" />
             </a>
             <p>{s.footerTagline}</p>
@@ -160,21 +161,21 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
           </div>
           <nav aria-label={s.explore}>
             <h3>{s.explore}</h3>
-            <a href={`${base}/${lang}/`}>{s.navStartups}</a>
-            <a href={`${base}/${lang}/sharks/`}>{s.navSharks}</a>
-            <a href={`${base}/${lang}/founders/`}>{s.navFounders}</a>
-            <a href={`${base}/${lang}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
-            <a href={`${base}/${lang}/compare/`}>{lang === 'ar' ? 'قارن بين الشركات' : 'Compare startups'}</a>
-            <a href={`${base}/${lang}/faq/`}>{s.navFaq}</a>
+            <a href={`${base}${pre(lang)}/`}>{s.navStartups}</a>
+            <a href={`${base}${pre(lang)}/sharks/`}>{s.navSharks}</a>
+            <a href={`${base}${pre(lang)}/founders/`}>{s.navFounders}</a>
+            <a href={`${base}${pre(lang)}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
+            <a href={`${base}${pre(lang)}/compare/`}>{lang === 'ar' ? 'قارن بين الشركات' : 'Compare startups'}</a>
+            <a href={`${base}${pre(lang)}/faq/`}>{s.navFaq}</a>
             <a href={`${base}${altPath}`} hreflang={other} lang={other}>{s.switchLang}</a>
           </nav>
           <nav aria-label={s.browseSeasons}>
             <h3>{s.browseSeasons}</h3>
-            {[...seasons].sort((a, b) => (a.season || 3.5) - (b.season || 3.5)).map((x) => <a href={`${base}/${lang}/season/${x.season}/`}>{seasonLabel(x.season, lang)}</a>)}
+            {[...seasons].sort((a, b) => (a.season || 3.5) - (b.season || 3.5)).map((x) => <a href={`${base}${pre(lang)}/season/${x.season}/`}>{seasonLabel(x.season, lang)}</a>)}
           </nav>
           <nav aria-label={s.browseSectors} class="sectors">
             <h3>{s.browseSectors}</h3>
-            <p>{categories.map((c) => <a href={`${base}/${lang}/category/${catSlug(c)}/`}>{category(c, lang)}</a>)}</p>
+            <p>{categories.map((c) => <a href={`${base}${pre(lang)}/category/${catSlug(c)}/`}>{category(c, lang)}</a>)}</p>
           </nav>
         </div>
         <p class="fine">© {num(new Date().getFullYear(), lang).replace(/[٬,]/g, '')} {s.brandName} · {s.madeWith} · {lang === 'ar' ? 'آخر تحديث للبيانات' : 'Data updated'} <time datetime={dataUpdated}>{dataUpdated}</time> · <a href={`${base}/data/deals.csv`} lang="en">CSV</a> · <a href={`${base}/llms.txt`} lang="en">llms.txt</a></p>

@@ -18,7 +18,7 @@ Every outcome is recorded only when a public source states it (news articles, th
 - [deals.csv](${ROOT}data/deals.csv): one row per startup (CSV)
 - [Source code and audit log](https://github.com/AhmadIbrahiim/SharkTankEgypt)
 
-## Main pages (English; Arabic at /ar/ with the same paths)
+## Main pages (English, under /en/; Arabic is the default, at the same paths without /en/)
 - [All startups](${ROOT}en/)
 - [Sharks](${ROOT}en/sharks/): each shark's deals, sectors and seasons
 - [Founders](${ROOT}en/founders/)

@@ -1,5 +1,5 @@
 ---
-import { hue, initials, shark, sharkByKey, type Lang } from '../config';
+import { hue, initials, shark, sharkByKey, type Lang, pre } from '../config';
 interface Props { names: string[]; lang: Lang; labels?: boolean }
 const { names, lang, labels } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -8,7 +8,7 @@ const Tag = labels ? 'a' : 'span';
 ---
 <span class:list={['sharks', { labels }]}>
   {names.map((n) => (
-    <Tag class="shark" title={shark(n, lang)} href={labels && sharkByKey.get(n) ? `${base}/${lang}/sharks/${sharkByKey.get(n)!.id}/` : undefined}>
+    <Tag class="shark" title={shark(n, lang)} href={labels && sharkByKey.get(n) ? `${base}${pre(lang)}/sharks/${sharkByKey.get(n)!.id}/` : undefined}>
       {sharkByKey.get(n)?.photo
         ? <img class="avatar" src={((u) => u.startsWith('/') ? `${base}${u}` : u)(sharkByKey.get(n)!.photo!.url)} alt="" width="28" height="28" loading="lazy" />
         : <span class="avatar" style={`--h:${hue(n)}`} aria-hidden="true">{initials(n)}</span>}

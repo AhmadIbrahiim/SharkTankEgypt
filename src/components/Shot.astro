@@ -1,12 +1,12 @@
 ---
-import { screenshot, thumb, hue } from '../config';
+import { screenshot, thumb, hue, pre } from '../config';
 interface Props { id: string; name: string; lang: string; video?: string | null; eager?: boolean }
 const { id, name, lang, video, eager } = Astro.props;
 const src = screenshot(id);
 const loading = eager ? 'eager' : 'lazy';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // A dead screenshot or a removed video falls back to the page's share card.
-const fallback = `this.onerror=null;this.src='${base}/og/${lang}/${id}.jpg'`;
+const fallback = `this.onerror=null;this.src='${base}/og${pre(lang)}/${id}.jpg'`;
 ---
 {video ? (
   <div class="frame video">
@@ -21,6 +21,6 @@ const fallback = `this.onerror=null;this.src='${base}/og/${lang}/${id}.jpg'`;
   <div class="frame">
     {/* No screenshot or video: show the page's share card (rendered after the build); the name tile stays behind it as a fallback. */}
     <div class="shot ph" style={`--h:${hue(id)}`}><span>{name}</span>
-      <img class="og" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/og/${lang}/${id}.jpg`} alt={name} width="1200" height="630" loading={loading} decoding="async" onerror="this.remove()" /></div>
+      <img class="og" src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/og${pre(lang)}/${id}.jpg`} alt={name} width="1200" height="630" loading={loading} decoding="async" onerror="this.remove()" /></div>
   </div>
 )}

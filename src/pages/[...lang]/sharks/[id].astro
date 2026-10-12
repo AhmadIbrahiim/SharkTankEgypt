@@ -1,0 +1,158 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { ID, photo } from '../../../schema';
+import Avatar from '../../../components/Avatar.astro';
+import Links from '../../../components/Links.astro';
+import Faq from '../../../components/Faq.astro';
+import { sharkFaq, sharkSeasons, sharkPairs, sharkSectors } from '../../../faq';
+import Chips from '../../../components/Chips.astro';
+import Shot from '../../../components/Shot.astro';
+import { langs, seg, pre, sharks, sharkByKey, t, num, money, pct, seasonLabel, category, catSlug, suggestUrl, type Lang, digits } from '../../../config';
+
+export const getStaticPaths = () => langs.flatMap((lang) => sharks.map((p) => ({ params: { lang: seg(lang), id: p.id }, props: { p } })));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const { p } = Astro.props as { p: typeof sharks[number] };
+const s = t[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const amounts = p.deals.map((x) => x.deal?.amountEGP).filter((n): n is number => n != null);
+const equities = p.deals.map((x) => x.deal?.equityPct).filter((n): n is number => n != null);
+const total = amounts.reduce((a, b) => a + b, 0);
+const avgEq = equities.length ? equities.reduce((a, b) => a + b, 0) / equities.length : null;
+const count = <T,>(xs: T[]) => [...xs.reduce((m, k) => m.set(k, (m.get(k) ?? 0) + 1), new Map<T, number>())].sort((a, b) => b[1] - a[1]);
+const sectors = count(p.deals.map((x) => x.category).filter(Boolean) as string[]);
+const partners = count(p.deals.flatMap((x) => (x.deal?.sharks ?? []).filter((n) => n !== p.key))).slice(0, 6);
+const maxSector = sectors[0]?.[1] ?? 1;
+const { wikipedia, wikipediaAr, ...links } = (p.links ?? {}) as Record<string, string>;
+const other = [wikipedia && { name: 'Wikipedia', url: wikipedia }, wikipediaAr && { name: 'ويكيبيديا', url: wikipediaAr }, ...(p.companies ?? []).filter((c) => c.url).map((c) => ({ name: c.name, url: c.url! }))].filter(Boolean);
+const { website, ...social } = links;
+const jsonld = {
+  '@context': 'https://schema.org', '@type': 'Person', '@id': ID.shark(p.id), url: new URL(`${base}${pre(lang)}/sharks/${p.id}/`, Astro.site).href, name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'],
+  ...(p.title && { jobTitle: p.title[lang] }), ...(p.bio && { description: p.bio[lang] }), ...(p.photo && { image: photo(p.photo) }),
+  ...(sectors.length && { knowsAbout: sectors.map(([c]) => c) }),
+  sameAs: Object.values(p.links ?? {}),
+};
+---
+<Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']})`} description={p.bio?.[lang] ?? `${p.name[lang]} – ${s.sharksTitle}`}
+  card={{ kind: 'person', title: p.name[lang], alt: p.name[lang === 'ar' ? 'en' : 'ar'], photo: p.photo?.url, eyebrow: `${lang === 'ar' ? 'مستثمر' : 'Shark'} · ${p.seasons.map((n) => seasonLabel(n, lang, true)).join(' ')}`, sub: p.title?.[lang],
+    stats: [[num(p.deals.length, lang), s.dealsCount], ...(total ? [[money(total, lang)!, s.invested] as [string, string]] : []), ...(avgEq != null ? [[pct(Math.round(avgEq), lang), s.avgEquity] as [string, string]] : [])] }} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/${p.id}/`}>
+  <div class="container">
+    <nav class="crumbs"><a href={`${base}${pre(lang)}/sharks/`}>{s.navSharks}</a> <span>/</span> <span aria-current="page">{p.name[lang]}</span></nav>
+
+    <article class="hero">
+      <figure>
+        <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={168} />
+        {p.photo?.credit && <figcaption>{s.photoBy} {p.photo.creditUrl ? <a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}</figcaption>}
+      </figure>
+      <div>
+        <h1>{p.name[lang]}</h1>
+        <p class="alt" lang={lang === 'ar' ? 'en' : 'ar'}>{p.name[lang === 'ar' ? 'en' : 'ar']}</p>
+        {p.title && <p class="title">{digits(p.title[lang], lang)}</p>}
+        <p class="seasons">{s.appearedIn}: {p.seasons.map((n) => <a href={`${base}${pre(lang)}/season/${n}/`}>{seasonLabel(n, lang)}</a>)}</p>
+        {p.bio ? <p class="bio">{digits(p.bio[lang], lang)}</p> : <p class="bio muted">{s.profileThin} <a href={suggestUrl}>{s.helpBtn}</a></p>}
+        <Links website={website} links={{ ...social, other }} lang={lang} label={s.online} />
+      </div>
+    </article>
+
+    <section class="stats">
+      <div><b>{num(p.deals.length, lang)}</b><span>{s.dealsCount}</span></div>
+      <div><b>{total ? money(total, lang) : '—'}</b><span>{s.invested}</span></div>
+      <div><b>{avgEq != null ? pct(Math.round(avgEq), lang) : '—'}</b><span>{s.avgEquity}</span></div>
+      <div><b>{num(p.seasons.length, lang)}</b><span>{s.appearedIn}</span></div>
+    </section>
+
+    {(sectors.length > 0 || partners.length > 0) && (
+      <section class="insights">
+        {sectors.length > 0 && (
+          <div class="card">
+            <h2>{s.sectors}</h2>
+            <ul class="bars">
+              {sectors.map(([c, n]) => (
+                <li><span>{category(c, lang)}</span><i style={`--w:${(n / maxSector) * 100}%`}></i><b>{num(n, lang)}</b></li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {partners.length > 0 && (
+          <div class="card">
+            <h2>{s.coInvestors}</h2>
+            <ul class="partners">
+              {partners.map(([n, c]) => {
+                const q = sharkByKey.get(n);
+                return <li><a href={q ? `${base}${pre(lang)}/sharks/${q.id}/` : undefined}><Avatar name={n} seed={q?.id ?? n} photo={q?.photo} size={40} /><span>{q?.name[lang] ?? n}</span><b>×{num(c, lang)}</b></a></li>;
+              })}
+            </ul>
+          </div>
+        )}
+      </section>
+    )}
+
+    <section>
+      <h2 class="h2">{s.portfolio}</h2>
+      {/* One row per deal, biggest first: what, when, with whom, how much. */}
+      {p.deals.length ? <ol class="ticker">{[...p.deals].sort((a, b) => (b.deal?.amountEGP ?? -1) - (a.deal?.amountEGP ?? -1)).map((x) => {
+        const co = (x.deal?.sharks ?? []).filter((n) => n !== p.key).map((n) => sharkByKey.get(n)?.name[lang] ?? n);
+        return <li><a href={`${base}${pre(lang)}/${x.id}/`}>
+          <span class="th"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} /></span>
+          <span class="tx"><strong>{x.name[lang]}</strong><small>{seasonLabel(x.season, lang)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}{x.category && ` · ${category(x.category, lang)}`}{co.length > 0 && ` · ${lang === 'ar' ? 'مع' : 'with'} ${co.join(lang === 'ar' ? ' و' : ', ')}`}</small></span>
+          <span class="amt">{x.deal?.amountEGP != null ? money(x.deal.amountEGP, lang) : '—'}<small>{x.deal?.equityPct != null ? `${lang === 'ar' ? 'مقابل' : 'for'} ${pct(x.deal.equityPct, lang)}` : (lang === 'ar' ? 'الشروط غير معلنة' : 'terms not disclosed')}</small></span>
+        </a></li>;
+      })}</ol> : <p class="muted">{s.noDeals}</p>}
+    </section>
+
+    <Chips title={lang === 'ar' ? `صفقات ${p.name[lang]} حسب الموسم` : `${p.name[lang]}'s deals by season`}
+      links={sharkSeasons.filter((x) => x.p.id === p.id).map((x) => ({ href: `${base}${pre(lang)}/sharks/${p.id}/season/${x.n}/`, label: seasonLabel(x.n, lang) }))} />
+    <Chips title={lang === 'ar' ? `استثمارات ${p.name[lang]} حسب القطاع` : `${p.name[lang]}'s investments by sector`}
+      links={sharkSectors.filter((x) => x.p.id === p.id).map((x) => ({ href: `${base}${pre(lang)}/sharks/${p.id}/sector/${catSlug(x.c)}/`, label: category(x.c, lang) }))} />
+    <Chips title={lang === 'ar' ? `قارن ${p.name[lang]} مع` : `Compare ${p.name[lang]} with`}
+      links={sharkPairs.filter((x) => x.a.id === p.id || x.b.id === p.id).map((x) => ({ href: `${base}${pre(lang)}/sharks/vs/${x.id}/`, label: (x.a.id === p.id ? x.b : x.a).name[lang] }))} />
+    <Faq lang={lang} items={sharkFaq(p, lang)} />
+  </div>
+</Base>
+<style>
+  .crumbs { display: flex; justify-content: center; gap: 8px; padding-top: 22px; font-size: .9rem; color: var(--ink-2); }
+  .crumbs a { color: var(--ink-2); text-decoration: none; }
+  .hero { display: grid; grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 18px; padding: 28px 0; }
+  .hero :global(.online ul) { justify-content: center; }
+  .hero .bio { margin-inline: auto; }
+  figure { margin: 0; text-align: center; }
+  figcaption { margin-top: 8px; font-size: .75rem; color: var(--ink-2); }
+  figcaption a { color: inherit; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.05; }
+  :global([dir='rtl']) h1 { text-transform: none; }
+  figure :global(.person-avatar) { border: 4px solid var(--gold); }
+  .alt { margin: 2px 0 0; color: var(--ink-2); }
+  .title { margin: 10px 0 0; font-weight: 500; color: var(--sun-ink); }
+  .seasons { margin: 8px 0 0; color: var(--ink-2); font-size: .92rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .seasons a { padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .82rem; }
+  .bio { font-size: 1.05rem; margin: 16px 0 0; max-width: 70ch; }
+  .muted { color: var(--ink-2); }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .stats div { padding: 14px 18px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .stats b { font-family: var(--serif); font-size: 2.2rem; font-weight: 700; line-height: 1.15; color: var(--sun); }
+  .stats span { color: var(--ink-2); font-size: .88rem; }
+  .insights { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px 36px; margin-top: 28px; }
+  .card { padding: 18px 20px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+  .card h2, .h2 { font-size: 1.25rem; margin-bottom: 12px; }
+  .h2 { margin-top: var(--gap-sec); }
+  .bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .bars li { display: grid; grid-template-columns: 9rem 1fr 2rem; align-items: center; gap: 10px; font-size: .9rem; }
+  .bars i { display: block; height: 8px; width: var(--w); border-radius: 4px; background: var(--sun); }
+  .bars b { text-align: end; color: var(--ink-2); font-weight: 500; }
+  .partners { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .partners a { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+  .partners a:hover span { color: var(--sun-ink); }
+  .partners b { margin-inline-start: auto; color: var(--ink-2); font-weight: 500; }
+  .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+  @media (max-width: 560px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+  .ticker { list-style: none; margin: 0; padding: 0; }
+  .ticker a { display: grid; grid-template-columns: 120px 1fr auto; gap: 16px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  .ticker li:last-child a { border-bottom: 1px solid var(--line); }
+  .ticker a:hover strong { color: var(--sun-ink); }
+  .ticker .th :global(.ph) { font-size: .8rem; }
+  .ticker strong { display: block; font-size: 1.05rem; }
+  .ticker .tx small { color: var(--ink-2); font-size: .85rem; }
+  .amt { text-align: end; font-family: var(--serif); font-size: 1.35rem; font-weight: 700; white-space: nowrap; }
+  .amt small { display: block; font-family: 'Readex Pro Variable', sans-serif; font-size: .78rem; font-weight: 400; color: var(--ink-2); }
+  @media (max-width: 560px) { .ticker a { grid-template-columns: 76px 1fr; } .amt { grid-column: 2; text-align: start; font-size: 1.1rem; } }
+</style>

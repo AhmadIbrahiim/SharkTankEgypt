@@ -1,0 +1,29 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { ID, ROOT } from '../../../schema';
+import Listing from '../../../components/Listing.astro';
+import Faq from '../../../components/Faq.astro';
+import { categoryFaq, sectorSeasons } from '../../../faq';
+import Chips from '../../../components/Chips.astro';
+import { langs, seg, pre, listCard, startups, categories, catSlug, category, seasonLabel, stats, t, num, money, type Lang, dir } from '../../../config';
+
+export const getStaticPaths = () => langs.flatMap((lang) => categories.map((c) => ({ params: { lang: seg(lang), slug: catSlug(c) }, props: { c } })));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const { c } = Astro.props as { c: string };
+const s = t[lang];
+const items = startups.filter((x) => x.category === c);
+const st = stats(items);
+const name = category(c, lang);
+const title = s.catTitle(name);
+const intro = s.catIntro(name, num(st.count, lang), num(st.deals, lang), st.invested ? money(st.invested, lang) : null);
+const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
+const jsonld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description: intro,
+  mainEntity: { '@type': 'ItemList', itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name[lang], url: `${ROOT}${dir(lang)}${x.id}/`, item: { '@id': ID.startup(x.id) } })) } };
+---
+<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, name)} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/category/${catSlug(c)}/`}>
+  <Listing lang={lang} title={title} intro={intro} items={items} />
+  <div class="container">
+    <Chips title={lang === 'ar' ? `${name} حسب الموسم` : `${name} by season`} links={sectorSeasons.filter((x) => x.c === c).map((x) => ({ href: `${import.meta.env.BASE_URL.replace(/\/$/, '')}${pre(lang)}/category/${catSlug(c)}/season/${x.n}/`, label: seasonLabel(x.n, lang) }))} />
+    <Faq lang={lang} items={categoryFaq(c, lang)} />
+  </div>
+</Base>

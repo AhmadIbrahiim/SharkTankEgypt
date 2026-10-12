@@ -1,7 +1,7 @@
 {
   "name": "Shark Tank Egypt Directory · دليل شارك تانك مصر",
   "short_name": "Shark Tank EG",
-  "start_url": "./ar/",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#F4EFE6",

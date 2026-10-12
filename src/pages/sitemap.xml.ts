@@ -1,5 +1,5 @@
 import type { APIContext } from 'astro';
-import { startups, sharks, founders, categories, catSlug, seasons, dataUpdated } from '../config';
+import { startups, sharks, founders, categories, catSlug, seasons, dataUpdated, dir } from '../config';
 import { episodes, sharkSeasons, sharkPairs, rankings, sectorSeasons, sharkSectors } from '../faq';
 
 // Each URL lists its Arabic/English twin so Google serves the right language.
@@ -10,7 +10,7 @@ export function GET({ site }: APIContext) {
     ...sectorSeasons.map((x) => `category/${catSlug(x.c)}/season/${x.n}/`), ...sharkSectors.map((x) => `sharks/${x.p.id}/sector/${catSlug(x.c)}/`)];
   const urls = paths.flatMap((p) => ['ar', 'en'].map((lang) => `
   <url>
-    <loc>${root}${lang}/${p}</loc>
+    <loc>${root}${dir(lang)}${p}</loc>
     <lastmod>${dataUpdated}</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="${root}ar/${p}"/>
     <xhtml:link rel="alternate" hreflang="en" href="${root}en/${p}"/>

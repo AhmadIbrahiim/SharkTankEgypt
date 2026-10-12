@@ -42,7 +42,7 @@ await shot(1200, 630, `<div style="width:1200px;height:630px;background:#F4EFE6;
 await b.close();
 writeFileSync('public/site.webmanifest', JSON.stringify({
   name: 'Shark Tank Egypt Directory · دليل شارك تانك مصر', short_name: 'Shark Tank EG',
-  start_url: './ar/', scope: './', display: 'standalone',
+  start_url: './', scope: './', display: 'standalone',
   background_color: '#F4EFE6', theme_color: '#8E1B1B',
   icons: [{ src: 'icon-192.png', sizes: '192x192', type: 'image/png' }, { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
     { src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml' }],

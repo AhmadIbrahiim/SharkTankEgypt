@@ -1,0 +1,98 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Faq from '../../../components/Faq.astro';
+import Avatar from '../../../components/Avatar.astro';
+import { langs, seg, pre, t, category, catSlug, seasonLabel, num, type Lang } from '../../../config';
+import { programFaq, rankings, sharkPairs, episodes } from '../../../faq';
+import Chips from '../../../components/Chips.astro';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang: seg(lang) } }));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const s = t[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const f = programFaq(lang);
+const all = [...f.general, ...f.sharks.flatMap((x) => x.qa), ...f.seasons.flatMap((x) => x.qa), ...f.categories.flatMap((x) => x.qa)];
+// One FAQPage for the whole page (Google reads a single FAQPage per URL).
+const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, name: s.faqHubTitle,
+  mainEntity: all.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
+---
+<Base lang={lang} title={s.faqHubTitle} description={s.faqHubIntro} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/faq/`}>
+  <div class="container">
+    <header class="intro">
+      <h1>{s.faqHubTitle}</h1>
+      <p>{s.faqHubIntro}</p>
+      <nav class="jump">
+        <a href="#rankings">{lang === 'ar' ? 'القوائم' : 'Rankings'}</a><a href="#general">{s.faqGeneral}</a><a href="#sharks">{s.navSharks}</a><a href="#seasons">{s.faqBySeason}</a><a href="#sectors">{s.faqBySector}</a>
+      </nav>
+      <label class="fsearch"><span class="sr">{lang === 'ar' ? 'ابحث في الأسئلة' : 'Search the questions'}</span>
+        <input id="fq" type="search" autocomplete="off" placeholder={lang === 'ar' ? 'ابحث في الأسئلة… مثلاً: أيمن عباس' : 'Search questions… e.g. Ayman Abbas'} /></label>
+      <p class="fcount" id="fcount" aria-live="polite" hidden></p>
+    </header>
+
+    <div id="rankings"><Chips title={lang === 'ar' ? 'القوائم والترتيب' : 'Rankings'} links={rankings.map((r) => ({ href: `${base}${pre(lang)}/top/${r.id}/`, label: r.title[lang] }))} /></div>
+
+    <Faq lang={lang} items={f.general} title={s.faqGeneral} id="general" ld={false} />
+
+    <h2 class="group" id="sharks">{s.navSharks}</h2>
+    {f.sharks.map(({ p, qa }) => (
+      <div class="block">
+        <a class="who" href={`${base}${pre(lang)}/sharks/${p.id}/`}><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={40} /><span>{p.name[lang]}</span></a>
+        <Faq lang={lang} items={qa} title="" id={`shark-${p.id}`} ld={false} />
+      </div>
+    ))}
+
+    <Chips title={lang === 'ar' ? 'مقارنات بين المستثمرين' : 'Shark vs shark'} links={sharkPairs.map((x) => ({ href: `${base}${pre(lang)}/sharks/vs/${x.id}/`, label: `${x.a.name[lang]} ${lang === 'ar' ? 'أم' : 'vs'} ${x.b.name[lang]}` }))} />
+
+    <h2 class="group" id="seasons">{s.faqBySeason}</h2>
+    <Chips title={lang === 'ar' ? 'كل الحلقات' : 'Every episode'} links={episodes.map(([n, e]) => ({ href: `${base}${pre(lang)}/season/${n}/episode/${e}/`, label: lang === 'ar' ? `${seasonLabel(n, lang, true)} · ح${num(e, lang)}` : `${seasonLabel(n, lang, true)} · E${e}` }))} />
+    {f.seasons.map(({ n, qa }) => (
+      <div class="block">
+        <a class="who" href={`${base}${pre(lang)}/season/${n}/`}><span>{seasonLabel(n, lang)}</span></a>
+        <Faq lang={lang} items={qa} title="" id={`season-${n}`} ld={false} />
+      </div>
+    ))}
+
+    <h2 class="group" id="sectors">{s.faqBySector}</h2>
+    {f.categories.map(({ c, qa }) => (
+      <div class="block">
+        <a class="who" href={`${base}${pre(lang)}/category/${catSlug(c)}/`}><span>{category(c, lang)}</span></a>
+        <Faq lang={lang} items={qa} title="" id={`sector-${catSlug(c)}`} ld={false} />
+      </div>
+    ))}
+  </div>
+</Base>
+<script>
+  // Filters the accordions as you type; matching answers open so the answer is visible.
+  const q = document.getElementById('fq') as HTMLInputElement;
+  const count = document.getElementById('fcount')!;
+  const items = [...document.querySelectorAll<HTMLDetailsElement>('.faq details')];
+  const blocks = [...document.querySelectorAll<HTMLElement>('.block, .faq, .group, .chips, #rankings')];
+  const text = items.map((d) => d.textContent!.toLowerCase());
+  q.addEventListener('input', () => {
+    const v = q.value.trim().toLowerCase();
+    let n = 0;
+    items.forEach((d, i) => { const hit = !v || text[i].includes(v); d.hidden = !hit; d.open = !!v && hit; if (hit) n++; });
+    for (const b of blocks) b.hidden = !!v && !b.querySelector('details:not([hidden])');
+    count.hidden = !v;
+    count.textContent = document.documentElement.lang === 'ar' ? `${n.toLocaleString('ar-EG')} سؤال` : `${n} questions`;
+  });
+</script>
+<style>
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .fsearch { display: block; z-index: 5; margin: 20px auto 0; max-width: 560px; }
+  .fsearch input { width: 100%; font: inherit; font-size: 1rem; padding: 11px 14px; border: 1px solid var(--ink); background: var(--surface); color: var(--ink); }
+  .fsearch input:focus { outline: none; border-color: var(--sun); }
+  .fcount { color: var(--ink-2); font-size: .9rem; margin: 10px 0 0; }
+  [hidden] { display: none !important; }
+  @media (min-width: 721px) { .fsearch { position: sticky; top: 76px; } }
+  .intro { padding: 36px 0 18px; border-bottom: 1px solid var(--line); text-align: center; }
+  .intro h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); margin-inline: auto; }
+  .intro p { color: var(--ink-2); max-width: 62ch; margin: 10px auto 0; }
+  .jump { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 20px; }
+  .jump a { padding: 10px 16px; border-radius: 0; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .9rem; }
+  .group { font-size: 1.5rem; margin: 48px 0 0; padding-top: 12px; border-top: 1px solid var(--line); }
+  .block { margin-top: 24px; }
+  .block :global(.faq) { margin-top: 10px; }
+  .who { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.1rem; }
+  .who:hover span { color: var(--sun-ink); }
+</style>

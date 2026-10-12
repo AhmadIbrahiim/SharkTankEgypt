@@ -1,0 +1,25 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import Listing from '../../../../../components/Listing.astro';
+import Faq from '../../../../../components/Faq.astro';
+import Chips from '../../../../../components/Chips.astro';
+import { langs, seg, pre, listCard, category, catSlug, type Lang } from '../../../../../config';
+import { sharkSectors, sharkSectorFaq } from '../../../../../faq';
+
+export const getStaticPaths = () => langs.flatMap((lang) => sharkSectors.map((x) => ({ params: { lang: seg(lang), id: x.p.id, slug: catSlug(x.c) }, props: x })));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const { p, c, items } = Astro.props as (typeof sharkSectors)[number];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const nm = p.name[lang], cat = category(c, lang);
+const title = lang === 'ar' ? `استثمارات ${nm} في قطاع ${cat} – شارك تانك مصر` : `${nm}'s ${cat} investments on Shark Tank Egypt`;
+const intro = lang === 'ar' ? `كل شركات قطاع ${cat} التي استثمر فيها ${nm} (${p.name.en}) في شارك تانك مصر، مع قيمة كل صفقة والحصة.` : `Every ${cat.toLowerCase()} startup ${nm} (${p.name.ar}) backed on Shark Tank Egypt, with the amount and equity of each deal.`;
+const links = [{ href: `${base}${pre(lang)}/sharks/${p.id}/`, label: nm }, { href: `${base}${pre(lang)}/category/${catSlug(c)}/`, label: lang === 'ar' ? `كل شركات ${cat}` : `All ${cat} startups` },
+  ...sharkSectors.filter((x) => x.p.id === p.id && x.c !== c).map((x) => ({ href: `${base}${pre(lang)}/sharks/${p.id}/sector/${catSlug(x.c)}/`, label: category(x.c, lang) }))];
+---
+<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, cat)} image={p.photo?.url} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/${p.id}/sector/${catSlug(c)}/`}>
+  <Listing lang={lang} title={title} intro={intro} items={items} />
+  <div class="container">
+    <Faq lang={lang} items={sharkSectorFaq(p, c, lang)} />
+    <Chips title={lang === 'ar' ? 'روابط ذات صلة' : 'Related'} links={links} />
+  </div>
+</Base>

@@ -1,12 +1,12 @@
 ---
 import Shot from './Shot.astro';
-import { t, money, pct, seasonLabel, category, type Lang, type Startup } from '../config';
+import { t, money, pct, seasonLabel, category, type Lang, type Startup, pre } from '../config';
 interface Props { x: Startup; lang: Lang }
 const { x, lang } = Astro.props;
 const s = t[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
-<a class="mini" href={`${base}/${lang}/${x.id}/`}>
+<a class="mini" href={`${base}${pre(lang)}/${x.id}/`}>
   <Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} />
   <span class="mb">
     <strong>{x.name[lang]}</strong>

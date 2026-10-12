@@ -1,6 +1,6 @@
 ---
 // FAQ accordion + its FAQPage structured data. `ld={false}` when the page emits one combined FAQPage itself.
-import { t, type Lang } from '../config';
+import { t, type Lang, pre } from '../config';
 import type { QA } from '../faq';
 interface Props { lang: Lang; items: QA[]; title?: string; id?: string; ld?: boolean }
 const { lang, items, title = t[lang].faqTitle, id = 'faq', ld = true } = Astro.props;
@@ -14,7 +14,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
     {items.map((x, i) => (
       <details>
         <summary><h3>{x.q}</h3></summary>
-        <p>{x.a}{x.href != null && <> <a href={`${base}/${lang}/${x.href}`}>{t[lang].faqMore}</a></>}</p>
+        <p>{x.a}{x.href != null && <> <a href={`${base}${pre(lang)}/${x.href}`}>{t[lang].faqMore}</a></>}</p>
       </details>
     ))}
     {ld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}

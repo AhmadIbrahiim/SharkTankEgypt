@@ -1,0 +1,152 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { ID, photo, startupRef } from '../../../schema';
+import Avatar from '../../../components/Avatar.astro';
+import Links from '../../../components/Links.astro';
+import MiniCard from '../../../components/MiniCard.astro';
+import Faq from '../../../components/Faq.astro';
+import { founderFaq, summary, list } from '../../../faq';
+import { langs, seg, pre, founders, t, founderId, suggestUrl, seasonLabel, num, money, pct, valuation, screenshot, category, catSlug, sharkByKey, type Lang, digits } from '../../../config';
+
+export const getStaticPaths = () => langs.flatMap((lang) => founders.map((p) => ({ params: { lang: seg(lang), id: p.id }, props: { p } })));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const { p } = Astro.props as { p: typeof founders[number] };
+const s = t[lang];
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const partners = [...new Set(p.startups.flatMap((x) => x.founders ?? []))].filter((n) => founderId(n) !== p.id);
+const byId = new Map(founders.map((f) => [f.id, f]));
+const { website, ...links } = (p.links ?? {}) as Record<string, string>;
+const title = p.title?.[lang] ?? p.startups.map((x) => x.name[lang]).join(lang === 'ar' ? '، ' : ', ');
+const ar = lang === 'ar';
+// The pitch this founder is best known for: the first one with a known outcome, else the first.
+const x = p.startups.find((y) => y.deal?.made != null) ?? p.startups[0];
+const outcome = x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no' : 'unk';
+const askVal = valuation(x.ask?.amountEGP, x.ask?.equityPct);
+const investors = [...new Set(p.startups.flatMap((y) => (y.deal?.made ? y.deal.sharks ?? [] : [])))].map((n) => sharkByKey.get(n)).filter(Boolean) as any[];
+const xInv = (x.deal?.made ? x.deal.sharks ?? [] : []).map((n) => sharkByKey.get(n)).filter(Boolean) as any[];
+const where = `${seasonLabel(x.season, lang)}${x.episode != null ? (ar ? `، الحلقة ${num(x.episode, lang)}` : `, episode ${x.episode}`) : ''}`;
+const heroImg = x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : screenshot(x.id) ? `${base}${screenshot(x.id)}` : null;
+const jsonld = {
+  '@context': 'https://schema.org', '@type': 'Person', '@id': ID.founder(p.id), url: new URL(`${base}${pre(lang)}/founders/${p.id}/`, Astro.site).href, name: p.name[lang], alternateName: p.name[lang === 'ar' ? 'en' : 'ar'], ...(p.title && { jobTitle: p.title.en }),
+  ...(p.bio && { description: p.bio[lang] }), sameAs: Object.values(p.links ?? {}),
+  worksFor: p.startups.map(startupRef), ...(p.photo && { image: photo(p.photo) }),
+};
+---
+<Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']}) – ${title}`} description={p.bio?.[lang] ?? `${lang === 'ar' ? `${p.name.ar} من مؤسسي ${list(p.startups.map((x) => x.name.ar), lang)}.` : `${p.name.en} is a founder of ${list(p.startups.map((x) => x.name.en), lang)}.`} ${summary(p.startups[0], lang)}`} jsonld={jsonld}
+  card={{ kind: 'person', title: p.name[lang], alt: p.name.ar !== p.name.en ? p.name[lang === 'ar' ? 'en' : 'ar'] : undefined, photo: p.photo?.url, sub: title,
+    eyebrow: `${lang === 'ar' ? 'مؤسس في شارك تانك مصر' : 'Founder on Shark Tank Egypt'} · ${seasonLabel(p.startups[0].season, lang)}`,
+    badge: p.startups.some((x) => x.deal?.made) ? { tone: 'ok', text: lang === 'ar' ? 'حصل على صفقة' : 'Got a deal' } : p.startups.every((x) => x.deal?.made === false) ? { tone: 'no', text: lang === 'ar' ? 'بدون صفقة' : 'No deal' } : undefined }}
+  altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/founders/${p.id}/`}>
+  <header class:list={['stage', !heroImg && 'noimg']}>
+    {heroImg && <img class:list={['bg', !x.video && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror="this.remove()" />}
+    <div class="container stage-in">
+      <nav class="crumbs" aria-label="breadcrumb"><a href={`${base}${pre(lang)}/founders/`}>{s.navFounders}</a><span aria-hidden="true">/</span><span aria-current="page">{p.name[lang]}</span></nav>
+      <figure class="pic"><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} />{p.photo?.credit && <figcaption><a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a></figcaption>}</figure>
+      <p class="ep">{ar ? 'مؤسس' : 'Founder'} · {where}</p>
+      <h1>{p.name[lang]}</h1>
+      {p.name.ar !== p.name.en && <p class="alt" lang={ar ? 'en' : 'ar'}>{p.name[ar ? 'en' : 'ar']}</p>}
+      <p class="lead">{digits(title, lang)}</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class:list={['score', outcome]} aria-label={ar ? 'نتيجة العرض' : 'Pitch result'}>
+      <div class="side">
+        <p class="k">{ar ? `طلب ${x.name.ar}` : `${x.name.en} asked`}</p>
+        <p class="v">{x.ask?.amountEGP != null ? money(x.ask.amountEGP, lang) : (ar ? 'غير معروف' : 'Unknown')}</p>
+        <p class="s">{x.ask?.equityPct != null && <>{s.forEquity} {pct(x.ask.equityPct, lang)}</>}{askVal && <> · {s.valuation} {money(askVal, lang)}</>}</p>
+      </div>
+      <span class="arr" aria-hidden="true">{ar ? '←' : '→'}</span>
+      <div class="verdict"><strong>{outcome === 'deal' ? s.deal : outcome === 'no' ? s.noDeal : s.unknownOutcome}</strong><small>{outcome === 'deal' ? (ar ? 'على الهواء' : 'on air') : outcome === 'no' ? (ar ? 'خرجوا دون اتفاق' : 'no agreement on air') : (ar ? 'لم يذكرها أي مصدر بعد' : 'no source states it yet')}</small></div>
+      <span class="arr" aria-hidden="true">{ar ? '←' : '→'}</span>
+      <div class="side">
+        {outcome === 'deal' ? <>
+          <p class="k">{s.finalDeal}</p>
+          <p class="v ok">{x.deal!.amountEGP != null ? money(x.deal!.amountEGP, lang) : s.deal}</p>
+          {xInv.length > 0 && <p class="who">{xInv.map((q) => <a href={`${base}${pre(lang)}/sharks/${q.id}/`}><Avatar name={q.name.en} seed={q.id} photo={q.photo} size={36} /></a>)}<span><b>{list(xInv.map((q) => q.name[lang]), lang)}</b></span></p>}
+        </> : outcome === 'no' ? <>
+          <p class="k">{ar ? 'النتيجة' : 'Result'}</p><p class="v muted">{ar ? 'لا استثمار' : 'No investment'}</p>
+        </> : <>
+          <p class="k">{s.finalDeal}</p><p class="v gold">?</p><p class="s"><a href={suggestUrl} target="_blank" rel="noopener">{ar ? 'أضف المصدر' : 'Add the source'}</a></p>
+        </>}
+      </div>
+    </section>
+
+    <div class="cols">
+      <div class="main">
+        <section class="sec">
+          <h2>{ar ? 'نبذة' : 'About'}</h2>
+          {p.bio ? <p>{digits(p.bio[lang], lang)}</p> : <p class="ask-help">{s.profileThin} <a href={suggestUrl} target="_blank" rel="noopener">{s.helpBtn}</a></p>}
+        </section>
+        <section class="sec">
+          <h2>{s.theirStartups}</h2>
+          <ul class="grid">{p.startups.map((y) => <li><MiniCard x={y} lang={lang} /></li>)}</ul>
+        </section>
+        {investors.length > 0 && (
+          <section class="sec">
+            <h2>{ar ? 'المستثمرون' : 'Investors'}</h2>
+            <ul class="people">{investors.map((q) => <li><a href={`${base}${pre(lang)}/sharks/${q.id}/`}><Avatar name={q.name.en} seed={q.id} photo={q.photo} size={48} /><span><b>{q.name[lang]}</b><small>{num(q.deals.length, lang)} {s.dealsCount}</small></span></a></li>)}</ul>
+          </section>
+        )}
+      </div>
+      <aside class="aside">
+        <a class="btn btn-primary wide" href={`${base}${pre(lang)}/${x.id}/`}>{ar ? `صفحة ${x.name.ar}` : `${x.name.en} page`}</a>
+        <div class="box kv">
+          <h3>{ar ? 'معلومات سريعة' : 'Quick facts'}</h3>
+          <dl>
+            <div><dt>{ar ? 'الظهور' : 'Appeared'}</dt><dd>{where}</dd></div>
+            <div><dt>{ar ? 'الشركات' : 'Startups'}</dt><dd>{num(p.startups.length, lang)}</dd></div>
+            {x.category && <div><dt>{s.category}</dt><dd><a href={`${base}${pre(lang)}/category/${catSlug(x.category)}/`}>{category(x.category, lang)}</a></dd></div>}
+            {partners.length > 0 && <div><dt>{s.coFounders}</dt><dd>{partners.map((n, i) => <>{i > 0 && (ar ? '، ' : ', ')}<a href={`${base}${pre(lang)}/founders/${founderId(n)}/`}>{byId.get(founderId(n))?.name[lang] ?? n}</a></>)}</dd></div>}
+          </dl>
+        </div>
+        {(website || Object.keys(links).length > 0) && <div class="box"><Links website={website} links={links} lang={lang} label={s.online} /></div>}
+      </aside>
+    </div>
+
+    <Faq lang={lang} items={founderFaq(p, lang)} />
+  </div>
+</Base>
+<style>
+  /* Same pattern as the startup page: recap hero, score card, two-column body. */
+  .stage { position: relative; overflow: hidden; background: #2a1a14; min-height: 400px; display: flex; align-items: flex-end; }
+  .stage.noimg { background: #24403f; }
+  .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .45; }
+  .stage .bg.site { opacity: .18; }
+  .stage::after { content: ''; position: absolute; inset: 0; background: rgb(42 26 20 / .72); }
+  .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: #f4efe6; display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .crumbs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; font-size: .85rem; color: #d6c7b2; margin-bottom: 28px; }
+  .crumbs a { color: #d6c7b2; text-decoration: none; } .crumbs [aria-current] { color: #f4efe6; }
+  .pic { margin: 0 0 10px; } .pic :global(.person-avatar) { border: 3px solid var(--gold); }
+  .pic figcaption { margin-top: 4px; font-size: .7rem; } .pic figcaption a { color: #bfae9d; }
+  .ep { margin: 0; color: #f6cf73; font-weight: 700; font-size: .85rem; }
+  .stage h1 { color: #fff; font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.2; }
+  .alt { margin: 2px 0 0; color: #d6c7b2; }
+  .lead { margin: 8px 0 0; max-width: 62ch; color: #e8ddcf; font-size: 1.05rem; }
+  .score { position: relative; z-index: 2; margin-top: -46px; display: grid; grid-template-columns: 1fr auto minmax(180px, .8fr) auto 1fr; align-items: center; gap: 18px; padding: 20px 24px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+  .score p { margin: 0; }
+  .k { font-size: .8rem; color: var(--ink-2); font-weight: 600; }
+  .v { font-family: var(--serif); font-size: 1.85rem; font-weight: 700; line-height: 1.25; }
+  .v.ok { color: var(--ok); } .v.muted { color: var(--ink-2); } .v.gold { color: var(--gold-ink); }
+  .s { font-size: .85rem; color: var(--ink-2); } .s a { color: var(--crimson); }
+  .arr { font-size: 1.5rem; color: var(--gold); }
+  .verdict { border-radius: 10px; padding: 12px 14px; text-align: center; color: #fff; background: var(--ok); }
+  .verdict strong { display: block; font-size: 1.1rem; font-weight: 800; } .verdict small { font-size: .78rem; opacity: .9; }
+  .no .verdict { background: var(--ink-2); } .unk .verdict { background: var(--gold); color: var(--ink); }
+  .who { display: flex; align-items: center; gap: 8px; margin-top: 6px !important; } .who a { display: flex; } .who b { font-size: .92rem; }
+  @media (max-width: 760px) { .stage { min-height: 360px; } .score { grid-template-columns: 1fr 1fr; gap: 14px; padding: 16px; } .arr { display: none; } .verdict { grid-column: 1 / -1; order: -1; } .who { flex-wrap: wrap; } .who > span { flex-basis: 100%; } .v { font-size: 1.4rem; } }
+  .cols { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 34px; margin-top: 30px; }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; } .aside { order: -1; } }
+  .sec { margin-bottom: 30px; } .sec > h2 { font-size: 1.45rem; margin-bottom: 10px; } .sec p { margin: 0 0 10px; max-width: 75ch; }
+  .ask-help { padding: 12px 14px; border-radius: 10px; background: var(--sun-soft); border: 1px dashed #c98e85; } .ask-help a { color: var(--crimson); font-weight: 700; }
+  .grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+  .people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 10px; }
+  .people a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); color: inherit; text-decoration: none; }
+  .people a:hover { border-color: var(--crimson); } .people b { display: block; } .people small { color: var(--ink-2); font-size: .82rem; }
+  .aside .wide { display: flex; width: 100%; margin-bottom: 10px; }
+  .box { padding: 14px 16px; margin-bottom: 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+  .box h3 { font-size: .85rem; font-weight: 800; margin-bottom: 6px; }
+  .box :global(.online) { margin: 0; } .box :global(.online h2) { font-size: .85rem; font-weight: 800; color: var(--ink); margin-bottom: 8px; }
+  .kv dl { margin: 0; } .kv dl div { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--surface-2); font-size: .92rem; }
+  .kv dl div:last-child { border: 0; } .kv dt { color: var(--ink-2); } .kv dd { margin: 0; font-weight: 600; text-align: end; } .kv dd a { color: inherit; }
+</style>

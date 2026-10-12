@@ -32,7 +32,7 @@ await test('home lists startups, 24 per page, show more adds more', async () => 
   await p.click('#more'); assert.ok((await visibleNames(p)).length > 24);
 });
 await test('search: English, Arabic with spelling variants, typo, multi-word', async () => {
-  const p = await page(); await p.goto(`${U}/ar/`);
+  const p = await page(); await p.goto(`${U}/`);
   for (const q of ['bar jar', 'بار اند جار', 'بار أند جار', 'jar bar', 'Bar & Jar', 'nourhan abaza', 'نورهان اباظه']) {
     await p.fill('#q', q);
     assert.ok((await visibleNames(p)).some((n) => /بار أند جار/.test(n)), `query "${q}" should find Bar & Jar`);
@@ -64,7 +64,7 @@ await test('language switch keeps the page and flips direction', async () => {
   const p = await page(); await p.goto(`${U}/en/bar-and-jar/`);
   assert.equal(await p.getAttribute('html', 'dir'), 'ltr');
   await p.click('header a.lang'); await p.waitForLoadState();
-  assert.match(p.url(), /\/ar\/bar-and-jar\/$/); assert.equal(await p.getAttribute('html', 'dir'), 'rtl');
+  assert.equal(p.url(), `${U}/bar-and-jar/`); assert.equal(await p.getAttribute('html', 'dir'), 'rtl');
 });
 await test('main nav works by keyboard and marks the current page', async () => {
   const p = await page(); await p.goto(`${U}/en/deals/`);
@@ -75,7 +75,7 @@ await test('main nav works by keyboard and marks the current page', async () => 
   await Promise.all([p.waitForURL(/\/en\/sharks\/$/), p.keyboard.press('Enter')]);
 });
 await test('phones: no sideways scroll on key pages (390px and 360px, both languages)', async () => {
-  for (const w of [390, 360]) for (const path of ['en/', 'ar/', 'en/bar-and-jar/', 'ar/bar-and-jar/', 'ar/deals/', 'ar/sharks/ayman-abbas/']) {
+  for (const w of [390, 360]) for (const path of ['en/', '', 'en/bar-and-jar/', 'bar-and-jar/', 'deals/', 'sharks/ayman-abbas/']) {
     const p = await page({ viewport: { width: w, height: 800 } }); await p.goto(`${U}/${path}`);
     const sw = await p.evaluate(() => document.documentElement.scrollWidth);
     assert.ok(sw <= w, `${path} at ${w}px scrolls sideways (${sw}px)`); await p.close();

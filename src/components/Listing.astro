@@ -4,7 +4,7 @@
 // hideTop: skip "most active sharks" (shark-vs-shark has its own comparison). A default slot renders above the grid.
 import MiniCard from './MiniCard.astro';
 import Avatar from './Avatar.astro';
-import { t, num, money, stats, sharkByKey, shark, type Lang, type Startup } from '../config';
+import { t, num, money, stats, sharkByKey, shark, type Lang, type Startup, pre } from '../config';
 interface Props { lang: Lang; title: string; intro: string; items: Startup[]; ranked?: boolean; byEpisode?: boolean; hideTop?: boolean }
 const { lang, title, intro, items, ranked, byEpisode, hideTop } = Astro.props;
 const s = t[lang];
@@ -30,7 +30,7 @@ const PAGE = 24;
       <h2>{s.topSharks}</h2>
       <ul>
         {st.topSharks.map(([n, c]) => { const q = sharkByKey.get(n); return (
-          <li><a href={q ? `${base}/${lang}/sharks/${q.id}/` : undefined}><Avatar name={n} seed={q?.id ?? n} photo={q?.photo} size={44} /><span>{shark(n, lang)}</span><b>{num(c, lang)}</b></a></li>
+          <li><a href={q ? `${base}${pre(lang)}/sharks/${q.id}/` : undefined}><Avatar name={n} seed={q?.id ?? n} photo={q?.photo} size={44} /><span>{shark(n, lang)}</span><b>{num(c, lang)}</b></a></li>
         ); })}
       </ul>
     </section>
@@ -38,7 +38,7 @@ const PAGE = 24;
   <slot />
   {groups.map(([e, xs]) => (
     <section class="group">
-      {byEpisode && <h2 class="ep">{e == null ? s.episode : <a href={`${base}/${lang}/season/${xs[0].season}/episode/${e}/`}>{s.episode} {num(e, lang)}</a>}</h2>}
+      {byEpisode && <h2 class="ep">{e == null ? s.episode : <a href={`${base}${pre(lang)}/season/${xs[0].season}/episode/${e}/`}>{s.episode} {num(e, lang)}</a>}</h2>}
       {ranked
         ? <ol class="grid ranked">{xs.map((x, i) => <li data-n={num(i + 1, lang)} hidden={i >= PAGE}><MiniCard x={x} lang={lang} /></li>)}</ol>
         : <ul class="grid">{xs.map((x, i) => <li hidden={!byEpisode && i >= PAGE}><MiniCard x={x} lang={lang} /></li>)}</ul>}

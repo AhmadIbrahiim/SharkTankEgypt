@@ -7,6 +7,13 @@ import namesAr from './data/names.json';
 
 export type Lang = 'ar' | 'en';
 export const langs: Lang[] = ['ar', 'en'];
+// Arabic is the default and lives at the site root; English is under /en/.
+/** Route param for [...lang]: undefined puts Arabic pages at the root. */
+export const seg = (l: Lang) => (l === 'ar' ? undefined : l);
+/** Path prefix for a language, without the base: '' for Arabic, '/en' for English. */
+export const pre = (l: Lang) => (l === 'ar' ? '' : `/${l}`);
+/** The same as a relative directory: '' for Arabic, 'en/' for English. */
+export const dir = (l: Lang) => (l === 'ar' ? '' : `${l}/`);
 export type Startup = (typeof data)[number];
 // Newest first; season 0 (July 2025 specials) aired between seasons 3 and 4.
 const rank = (n: number) => (n === 0 ? 3.5 : n);

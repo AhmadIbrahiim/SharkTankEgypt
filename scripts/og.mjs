@@ -111,9 +111,9 @@ let done = 0, defaults = 0;
 for (const file of pages) {
   const rel = dirname(file).slice(DIST.length).replace(/^\//, '') || 'index';
   if (only && !rel.startsWith(only)) continue;
-  const m = readFileSync(file, 'utf8').match(/<script type="application\/json" id="og-card">(.*?)<\/script>/s);
+  const html = readFileSync(file, 'utf8'), m = html.match(/<script type="application\/json" id="og-card">(.*?)<\/script>/s);
   if (!m) continue; // redirects and pages outside Base
-  const lang = rel.startsWith('ar') ? 'ar' : 'en', card = JSON.parse(m[1]);
+  const lang = /<html lang="en"/.test(html) ? 'en' : 'ar', card = JSON.parse(m[1]);
   const out = join(DIST, 'og', `${rel}.jpg`);
   mkdirSync(dirname(out), { recursive: true });
   current = page(card, lang);
