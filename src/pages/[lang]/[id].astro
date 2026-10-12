@@ -57,7 +57,15 @@ const jsonld = {
     : seasonRef(x.season),
 };
 const card: Card = { kind: 'startup', title: x.name[lang], alt: otherName, sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
-  eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '), shot: image, play: !screenshot(x.id) && !!x.video,
+  eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '),
+  // The pitch still reads best full-bleed; og.mjs falls back to hqdefault when YouTube has no maxres frame.
+  shot: x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : image,
+  stats: [
+    ...(x.ask?.amountEGP != null ? [[[money(x.ask.amountEGP, lang), x.ask.equityPct != null && pct(x.ask.equityPct, lang)].filter(Boolean).join(lang === 'ar' ? ' مقابل ' : ' for '), lang === 'ar' ? 'طلب المؤسسين' : 'Asked'] as [string, string]] : []),
+    [x.deal?.made === true ? [x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(lang === 'ar' ? ' مقابل ' : ' for ') || (lang === 'ar' ? 'تمت' : 'Done')
+      : x.deal?.made === false ? (lang === 'ar' ? 'بدون صفقة' : 'No deal') : (lang === 'ar' ? 'غير مؤكدة' : 'Unconfirmed'), lang === 'ar' ? 'الصفقة' : 'Deal'],
+    ...(sharkNames ? [[sharkNames, lang === 'ar' ? 'المستثمر' : 'With'] as [string, string]] : []),
+  ],
   badge: x.deal?.made === true ? { tone: 'ok', text: [lang === 'ar' ? 'صفقة' : 'Deal', [x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · '), sharkNames && `${lang === 'ar' ? 'مع' : 'with'} ${sharkNames}`].filter(Boolean).join(' ') }
     : x.deal?.made === false ? { tone: 'no', text: lang === 'ar' ? 'بدون صفقة' : 'No deal' }
     : x.ask?.amountEGP != null ? { tone: 'ask', text: `${lang === 'ar' ? 'طلب' : 'Asked'} ${money(x.ask.amountEGP, lang)}${x.ask.equityPct != null ? ` · ${pct(x.ask.equityPct, lang)}` : ''}` } : undefined };
