@@ -55,8 +55,8 @@ const jsonld = {
       <h1>{title}</h1>
       <p>{intro}</p>
       <p class="dl">
-        <a href={`${base}/data/deals.csv`} download lang="en">⬇ CSV</a>
-        <a href={`${base}/data/startups.json`} lang="en">⬇ JSON</a>
+        <a href={`${base}/data/deals.csv`} download lang="en">CSV</a>
+        <a href={`${base}/data/startups.json`} lang="en">JSON</a>
         <a href={`${base}/${lang}/compare/?ids=${deals.slice(0, 2).map((x) => x.id).join(',')}`}>{ar ? 'قارن بين الشركات' : 'Compare startups'}</a>
         <span>{ar ? 'آخر تحديث للبيانات' : 'Data updated'}: <time datetime={dataUpdated}>{dataUpdated}</time></span>
       </p>

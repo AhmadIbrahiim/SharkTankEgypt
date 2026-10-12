@@ -16,8 +16,11 @@ const categories = [...new Set(startups.map((x) => x.category).filter(Boolean))]
 const deals = startups.filter((x) => x.deal?.made);
 const invested = deals.reduce((sum, x) => sum + (x.deal?.amountEGP ?? 0), 0);
 const panel = sharks.filter((p) => p.deals.length).sort((a, b) => b.deals.length - a.deals.length).slice(0, 8);
-const rails = [...seasons].map((x) => x.season).filter((n) => n > 0).sort((a, b) => b - a)
-  .map((n) => ({ n, items: startups.filter((x) => x.season === n).sort((a, b) => (b.video ? 1 : 0) - (a.video ? 1 : 0)).slice(0, 12) })).filter((r) => r.items.length);
+// One tile per season: counts and money, linking to the season page (the startups themselves are in the grid below).
+const seasonTiles = [...seasons].filter((x) => x.season > 0).sort((a, b) => b.season - a.season).map((x) => {
+  const xs = startups.filter((y) => y.season === x.season), d = xs.filter((y) => y.deal?.made);
+  return { n: x.season, year: x.year, count: xs.length, deals: d.length, invested: d.reduce((t, y) => t + (y.deal?.amountEGP ?? 0), 0) };
+});
 // The record board: extremes computed from the data, each linking to its page.
 type S = (typeof startups)[number];
 const pick = (xs: S[], f: (x: S) => number | null | undefined, dir: 1 | -1) => xs.filter((x) => f(x) != null).sort((a, b) => dir * (f(b)! - f(a)!))[0];
@@ -49,9 +52,7 @@ const jsonld = {
 ---
 <Base lang={lang} jsonld={jsonld} card={listCard(s.title, s.tagline, startups, lang, lang === 'ar' ? 'كل المواسم والحلقات' : 'Every season and episode')} altPath={`/${lang === 'ar' ? 'en' : 'ar'}/`}>
   <section class="stage">
-    <div class="glow" aria-hidden="true"></div>
     <div class="container stage-in">
-      <p class="kicker">{s.heroKicker}</p>
       <h1>{s.heroTitle}</h1>
       <p class="sub">{s.heroSub}</p>
       <label class="search">
@@ -59,11 +60,12 @@ const jsonld = {
         <span class="sr">{s.search}</span>
         <input id="q" dir="auto" type="search" placeholder={s.search} autocomplete="off" enterkeyhint="search" />
         <kbd aria-hidden="true">/</kbd>
+        <div class="suggest" id="suggest" role="listbox" hidden></div>
       </label>
       <p class="totals"><span><b>{num(startups.length, lang)}</b> {s.statStartups}</span><i></i><span><b>{num(deals.length, lang)}</b> {s.statDeals}</span><i></i><span><b>{money(invested, lang)}</b> {s.statInvested}</span></p>
       <ul class="records" aria-label={ar ? 'أرقام قياسية' : 'Records'}>
         {records.map((r) => (
-          <li><a class={`rec ${r.tone}`} href={r.href}>
+          <li><a class="rec" href={r.href}>
             <span class="rk">{r.k}</span>
             <span class="rv">{r.v}</span>
             <span class="rw">{r.photo && <Avatar name={r.who} seed={r.who} photo={r.photo} size={24} />}{r.who}</span>
@@ -89,20 +91,19 @@ const jsonld = {
       </ul>
     </section>
 
-    {rails.map((r) => (
-      <section class="rail" aria-labelledby={`r${r.n}`}>
-        <div class="sechead"><h2 id={`r${r.n}`}>{seasonLabel(r.n, lang)} <small>{num(startups.filter((x) => x.season === r.n).length, lang)} {ar ? 'عرض' : 'pitches'}</small></h2><a href={`${base}/${lang}/season/${r.n}/`}>{ar ? 'الكل' : 'See all'}</a></div>
-        <ul class="strip">
-          {r.items.map((x) => (
-            <li><a class="poster" href={`${base}/${lang}/${x.id}/`}>
-              <span class="pic"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} /><i class={tag(x)[0]}>{tag(x)[1]}</i></span>
-              <strong>{x.name[lang]}</strong>
-              <small>{x.episode != null ? `${s.episode} ${num(x.episode, lang)}` : seasonLabel(x.season, lang)}{x.category && ` · ${category(x.category, lang)}`}</small>
-            </a></li>
-          ))}
-        </ul>
-      </section>
-    ))}
+    <section class="seasons" aria-labelledby="ssn">
+      <div class="sechead"><h2 id="ssn">{ar ? 'المواسم' : 'Seasons'}</h2></div>
+      <ul class="tiles">
+        {seasonTiles.map((x) => (
+          <li><a class="tile" href={`${base}/${lang}/season/${x.n}/`}>
+            <span class="tn">{seasonLabel(x.n, lang)}</span>
+            <span class="ty">{digits(x.year, lang)}</span>
+            <span class="tc"><b>{num(x.count, lang)}</b> {ar ? 'شركة' : 'startups'} · <b>{num(x.deals, lang)}</b> {ar ? 'صفقة' : 'deals'}</span>
+            {x.invested > 0 && <span class="ti">{money(x.invested, lang)}</span>}
+          </a></li>
+        ))}
+      </ul>
+    </section>
   </div>
 
   <section class="container" aria-labelledby="all">
@@ -152,22 +153,17 @@ const jsonld = {
           data-text={indexText(x)}
         >
           <a class="card" href={`${base}/${lang}/${x.id}/`}>
-            <span class="pic"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} />{x.deal?.made === true ? <i class="ok">{s.deal}</i> : x.deal?.made === false ? <i class="no">{s.noDeal}</i> : <i class="unk">{lang === 'ar' ? 'غير مؤكدة' : 'Unconfirmed'}</i>}</span>
+            <span class="pic"><Shot id={x.id} name={x.name[lang]} lang={lang} video={x.video} />{x.deal?.made === true ? <i class="ok">{s.deal}</i> : x.deal?.made === false ? <i class="no">{s.noDeal}</i> : <i class="unk">{ar ? 'غير مؤكدة' : 'Unconfirmed'}</i>}</span>
             <div class="body">
-              <div class="row">
-                <span class="badge">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}</span>
-              </div>
+              <p class="meta">{seasonLabel(x.season, lang, true)}{x.episode != null && ` · ${s.episode} ${num(x.episode, lang)}`}{x.category && ` · ${category(x.category, lang)}`}</p>
               <h3>{x.name[lang]}</h3>
-              <p class="desc">{digits(x.description[lang], lang)}</p>
-              <div class="foot">
-                {/* Requested vs agreed, always labelled the same way. */}
-                <span class="terms">
-                  {x.ask?.amountEGP != null && <span class="ask">{s.asked} {money(x.ask.amountEGP, lang)}{x.ask.equityPct != null && ` · ${pct(x.ask.equityPct, lang)}`}</span>}
-                  {x.deal?.made && (x.deal.amountEGP != null || x.deal.equityPct != null) && <span class="amount">{s.deal}: {[x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(' · ')}</span>}
-                </span>
-                {x.deal?.made && x.deal.sharks?.length ? <Sharks names={x.deal.sharks} lang={lang} /> : x.category && <span class="badge nile">{category(x.category, lang)}</span>}
-              </div>
+              <p class="desc">{digits(first(x.description[lang]), lang)}</p>
             </div>
+            <dl class="nums">
+              <div><dt>{s.asked}</dt><dd>{x.ask?.amountEGP != null ? <>{money(x.ask.amountEGP, lang)}{x.ask.equityPct != null && <small> · {pct(x.ask.equityPct, lang)}</small>}</> : '—'}</dd></div>
+              <div><dt>{s.deal}</dt><dd class:list={[x.deal?.made && 'ok']}>{x.deal?.made ? (x.deal.amountEGP != null ? <>{money(x.deal.amountEGP, lang)}{x.deal.equityPct != null && <small> · {pct(x.deal.equityPct, lang)}</small>}</> : (ar ? 'غير معلنة' : 'Undisclosed')) : x.deal?.made === false ? (ar ? 'لا' : 'None') : '—'}</dd></div>
+            </dl>
+            {x.deal?.made && x.deal.sharks?.length ? <div class="by"><Sharks names={x.deal.sharks} lang={lang} /><span>{x.deal.sharks.map((n) => shark(n, lang)).join(ar ? '، ' : ', ')}</span></div> : null}
           </a>
         </li>
       ))}
@@ -197,6 +193,7 @@ const jsonld = {
   const grid = document.getElementById('grid')!;
   const items = [...grid.children] as HTMLElement[];
   const q = document.getElementById('q') as HTMLInputElement;
+  const suggest = document.getElementById('suggest')!;
   const c = document.getElementById('c') as HTMLSelectElement;
   const sort = document.getElementById('sort') as HTMLSelectElement;
   const sh = document.getElementById('sh') as HTMLSelectElement;
@@ -248,6 +245,24 @@ const jsonld = {
     history.replaceState(null, '', url);
     // While searching or filtering, hide the browse sections so results sit right under the search box.
     document.body.classList.toggle('searching', !!(state.q || state.s || state.d || state.c || state.sh));
+    // Live suggestions under the box: the first matches, right where the visitor is looking.
+    if (state.q) {
+      const hits = sorted.filter((li) => li.dataset.match === '1').slice(0, 6);
+      suggest.replaceChildren(...hits.map((li) => {
+        const a = document.createElement('a'), c = li.querySelector<HTMLAnchorElement>('a.card')!;
+        a.href = c.href; a.setAttribute('role', 'option');
+        a.innerHTML = `<b></b><small></small>`;
+        a.querySelector('b')!.textContent = li.dataset.name!;
+        a.querySelector('small')!.textContent = li.querySelector('.meta')?.textContent ?? '';
+        return a;
+      }));
+      const all = document.createElement('button');
+      all.type = 'button'; all.className = 'all';
+      all.textContent = n ? (document.documentElement.lang === 'ar' ? `كل النتائج (${fmt.format(n)})` : `All results (${fmt.format(n)})`) : (document.documentElement.lang === 'ar' ? 'لا نتائج' : 'No results');
+      all.addEventListener('mousedown', (e) => { e.preventDefault(); suggest.hidden = true; document.getElementById('all')!.scrollIntoView({ behavior: 'smooth' }); });
+      suggest.append(all);
+      suggest.hidden = document.activeElement !== q;
+    } else suggest.hidden = true;
   }
 
   q.value = params.get('q') ?? '';
@@ -264,7 +279,19 @@ const jsonld = {
   const filter = () => { limit = PAGE; apply(); };
   document.getElementById('more')!.addEventListener('click', () => { limit += PAGE * 2; apply(); });
   q.addEventListener('input', filter);
-  q.addEventListener('keydown', (e) => { if (e.key === 'Enter') document.getElementById('all')!.scrollIntoView({ behavior: 'smooth' }); });
+  q.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { suggest.hidden = true; document.getElementById('all')!.scrollIntoView({ behavior: 'smooth' }); }
+    if (e.key === 'Escape') suggest.hidden = true;
+    if (e.key === 'ArrowDown') { e.preventDefault(); suggest.querySelector<HTMLElement>('a,button')?.focus(); }
+  });
+  suggest.addEventListener('keydown', (e) => {
+    const els = [...suggest.querySelectorAll<HTMLElement>('a,button')], i = els.indexOf(document.activeElement as HTMLElement);
+    if (e.key === 'ArrowDown') { e.preventDefault(); els[Math.min(i + 1, els.length - 1)]?.focus(); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); (i <= 0 ? q : els[i - 1]).focus(); }
+    if (e.key === 'Escape') { suggest.hidden = true; q.focus(); }
+  });
+  q.addEventListener('focus', () => { if (q.value.trim()) suggest.hidden = false; });
+  q.addEventListener('blur', () => setTimeout(() => { if (!suggest.contains(document.activeElement)) suggest.hidden = true; }, 120));
   c.addEventListener('change', filter);
   sort.addEventListener('change', filter);
   sh.addEventListener('change', filter);
@@ -286,40 +313,35 @@ const jsonld = {
 
 <style>
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  /* Hero: warm ink with crimson, teal and gold glows and a faint row of teeth; title, search, totals, then the record board. */
-  .stage { position: relative; overflow: hidden; background: #2a1a14; color: #f4efe6; }
-  .glow { position: absolute; inset: 0; background:
-      radial-gradient(60% 70% at 50% 0%, rgb(142 27 27 / .6), transparent 70%),
-      radial-gradient(40% 55% at 5% 100%, rgb(31 95 102 / .5), transparent 70%),
-      radial-gradient(40% 55% at 95% 100%, rgb(200 150 46 / .25), transparent 70%); }
-  .glow::after { content: ''; position: absolute; inset-inline: 0; bottom: 0; height: 12px; opacity: .16;
-    background: linear-gradient(135deg, transparent 50%, #f4efe6 50%) 0 0 / 24px 12px, linear-gradient(225deg, transparent 50%, #f4efe6 50%) 0 0 / 24px 12px; }
-  .stage-in { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding-block: 64px 60px; }
-  .kicker { margin: 0 0 12px; color: var(--gold); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; }
-  :global([dir='rtl']) .kicker { text-transform: none; letter-spacing: 0; font-size: .95rem; }
-  .stage h1 { color: #fff; font-size: clamp(2.4rem, 6vw, 4.4rem); line-height: 1.05; text-transform: uppercase; max-width: 16ch; }
-  :global([dir='rtl']) .stage h1 { text-transform: none; line-height: 1.3; }
-  .sub { max-width: 58ch; margin: 16px auto 26px; color: #d9cdbf; font-size: 1.05rem; }
-  .search { display: flex; align-items: center; gap: 10px; width: min(100%, 640px); padding-inline: 18px 8px; background: #fff; border: 2px solid transparent; border-radius: 999px; color: var(--ink-2); box-shadow: 0 14px 40px -12px rgb(0 0 0 / .6); }
+  /* Hero: flat ink, title, search with live suggestions, totals, records. */
+  .stage { background: #2a1a14; color: #f4efe6; }
+  .stage-in { display: flex; flex-direction: column; align-items: center; text-align: center; padding-block: 56px 48px; }
+  .stage h1 { color: #fff; font-size: clamp(2.2rem, 5.4vw, 3.8rem); line-height: 1.1; max-width: 18ch; }
+  :global([dir='rtl']) .stage h1 { line-height: 1.35; }
+  .sub { max-width: 58ch; margin: 14px auto 24px; color: #d9cdbf; font-size: 1.05rem; }
+  .search { position: relative; display: flex; align-items: center; gap: 10px; width: min(100%, 640px); padding-inline: 16px 8px; background: #fff; border: 2px solid transparent; border-radius: 10px; color: var(--ink-2); }
   .search:focus-within { border-color: var(--gold); }
-  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 14px 0; }
+  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 13px 0; }
   kbd { font: inherit; font-size: .78rem; padding: 0 7px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink-2); margin-inline-end: 6px; }
   @media (hover: none) { kbd { display: none; } }
-  .totals { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 12px; margin: 18px 0 0; color: #cdbfb0; font-size: .92rem; }
-  .totals b { color: #fff; font-size: 1.05rem; }
-  .totals i { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); }
-  .records { list-style: none; margin: 36px 0 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
-  .rec { position: relative; display: flex; flex-direction: column; gap: 4px; height: 100%; padding: 18px 14px 14px; border-radius: 14px; text-decoration: none; color: #fff; text-align: start;
-    background: rgb(255 255 255 / .06); border: 1px solid rgb(255 255 255 / .12); transition: transform .2s, background .2s, border-color .2s; overflow: hidden; }
-  .rec::before { content: ''; position: absolute; inset-inline: 0; top: 0; height: 4px; background: var(--c); }
-  .rec:hover { transform: translateY(-3px); background: rgb(255 255 255 / .1); border-color: var(--c); }
-  .rec.gold { --c: #e2b65a; } .rec.teal { --c: #6cc0c8; } .rec.crimson { --c: #ef7a72; } .rec.sand { --c: #e3d7c3; } .rec.green { --c: #6fcf8a; }
-  .rk { font-size: .78rem; color: #cdbfb0; font-weight: 600; }
-  .rv { font-family: var(--serif); font-size: 1.55rem; font-weight: 700; line-height: 1.25; color: var(--c); }
-  .rw { display: flex; align-items: center; gap: 6px; margin-top: auto; font-size: .88rem; font-weight: 600; color: #f4efe6; }
-  .rw :global(.person-avatar) { border: 1px solid var(--c); }
-  @media (max-width: 1000px) { .records { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-  @media (max-width: 640px) { .stage-in { padding-block: 40px 44px; } .records { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; width: calc(100% + 40px); margin-inline: -20px; padding-inline: 20px; } .records li { flex: 0 0 64%; scroll-snap-align: start; } .rv { font-size: 1.3rem; } }
+  .suggest { position: absolute; z-index: 30; inset-inline: -2px; top: calc(100% + 6px); padding: 6px; border-radius: 10px; background: #fff; border: 1px solid var(--line); text-align: start; box-shadow: 0 12px 28px -14px rgb(0 0 0 / .45); }
+  .suggest[hidden] { display: none; }
+  .suggest :global(a) { display: flex; flex-direction: column; padding: 8px 12px; border-radius: 6px; color: var(--ink); text-decoration: none; }
+  .suggest :global(a:hover), .suggest :global(a:focus) { background: var(--surface-2); outline: 0; }
+  .suggest :global(b) { font-weight: 600; } .suggest :global(small) { color: var(--ink-2); font-size: .8rem; }
+  .suggest :global(.all) { display: block; width: 100%; margin-top: 4px; padding: 9px 12px; border: 0; border-top: 1px solid var(--line); background: none; font: inherit; color: var(--crimson); font-weight: 700; cursor: pointer; text-align: start; }
+  .totals { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 12px; margin: 16px 0 0; color: #cdbfb0; font-size: .92rem; }
+  .totals b { color: #fff; } .totals i { width: 4px; height: 4px; border-radius: 50%; background: #8a7a6c; }
+  .records { list-style: none; margin: 34px 0 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid rgb(244 239 230 / .18); }
+  .records li + li { border-inline-start: 1px solid rgb(244 239 230 / .18); }
+  .rec { display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 16px 14px 0; color: #fff; text-decoration: none; }
+  .rk { font-size: .8rem; color: #bfae9d; }
+  .rv { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; line-height: 1.25; color: #fff; }
+  .rw { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: .88rem; color: #e2b65a; }
+  .rec:hover .rw { text-decoration: underline; }
+  @media (max-width: 1000px) { .records { grid-template-columns: repeat(3, minmax(0, 1fr)); } .records li:nth-child(4) { border-inline-start: 0; } }
+  @media (max-width: 640px) { .stage-in { padding-block: 36px 32px; } .records { grid-template-columns: 1fr 1fr; } .records li { border-inline-start: 0 !important; border-top: 1px solid rgb(244 239 230 / .12); } .records li:last-child { grid-column: 1 / -1; } .rv { font-size: 1.25rem; } }
+  :global(body.searching) .panel, :global(body.searching) .seasons, :global(body.searching) .records { display: none; }
 
   .sechead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
   .sechead h2 { font-size: 1.6rem; }
@@ -340,22 +362,18 @@ const jsonld = {
   .chairs small { color: var(--ink-2); font-size: .78rem; }
   @media (max-width: 860px) { .chairs { grid-template-columns: repeat(8, 104px); } .panel { padding: 20px 16px; } }
 
-  /* Season rails: a row of pitch stills per season. */
-  .rail { margin-top: var(--gap-sec); }
-  .strip { list-style: none; margin: 0; padding: 0 0 6px; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(230px, 1fr); gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #d6c7b2 transparent; }
-  .strip li { scroll-snap-align: start; }
-  @media (min-width: 1100px) { .strip { grid-auto-columns: calc((100% - 48px) / 5); } }
-  .poster { display: flex; flex-direction: column; gap: 2px; color: var(--ink); text-decoration: none; }
-  .poster strong { margin-top: 8px; font-weight: 600; }
-  .poster small { color: var(--ink-2); font-size: .82rem; }
-  .poster:hover strong { color: var(--sun-ink); }
+  /* Season tiles. */
+  .seasons { margin-top: var(--gap-sec); }
+  .tiles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 12px; }
+  .tile { display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 16px 18px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+  .tile:hover { border-color: var(--crimson); }
+  .tn { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; }
+  .ty { font-size: .82rem; color: var(--ink-2); }
+  .tc { margin-top: 8px; font-size: .9rem; color: var(--ink-2); } .tc b { color: var(--ink); }
+  .ti { font-weight: 700; color: var(--ok); }
   .pic { position: relative; display: block; }
-  .pic :global(.frame) { transition: outline-color .2s; outline: 2px solid transparent; outline-offset: 0; }
-  .poster:hover .pic :global(.frame), .card:hover .pic :global(.frame) { outline-color: var(--sun); }
-  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .7rem; font-weight: 800; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: #6b5b4f; }
-  :global([dir='rtl']) .pic i { text-transform: none; letter-spacing: 0; font-size: .76rem; }
-  .pic i.ok { background: var(--ok); }
-  .pic i.unk { background: var(--gold); color: #2a1a14; }
+  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; color: #fff; background: #6b5b4f; }
+  .pic i.ok { background: var(--ok); } .pic i.unk { background: var(--gold); color: #2a1a14; }
 
   #all { scroll-margin-top: 80px; }
   section[aria-labelledby='all'] { margin-top: var(--gap-sec); }
@@ -371,18 +389,23 @@ const jsonld = {
   .count { color: var(--ink-2); font-size: .9rem; margin: 18px 0 14px; }
   .count strong { color: var(--ink); }
 
-  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 28px 16px; }
-  .card { display: flex; flex-direction: column; height: 100%; color: inherit; text-decoration: none; }
-  .card:hover h3 { color: var(--sun-ink); }
-  .card .pic :global(.frame), .poster .pic :global(.frame) { box-shadow: var(--shadow); }
-  .body { display: flex; flex-direction: column; flex: 1; padding: 10px 0 0; }
-  .row { display: flex; gap: 6px; flex-wrap: wrap; }
-  .body h3 { font-size: 1.1rem; font-weight: 700; margin: 8px 0 4px; }
-  .desc { margin: 0; color: var(--ink-2); font-size: .9rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-  .foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: auto; padding-top: 10px; min-height: 40px; }
-  .amount { font-weight: 700; font-size: .92rem; color: var(--ok); }
-  .terms { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-  .ask { font-size: .84rem; color: var(--ink-2); }
+  /* Startup card: picture, meta, name, one line, then asked vs deal side by side. */
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 16px; }
+  .card { display: flex; flex-direction: column; height: 100%; overflow: hidden; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); color: inherit; text-decoration: none; transition: border-color .15s; }
+  .card:hover { border-color: var(--crimson); }
+  .card :global(.frame) { border-radius: 0; }
+  .body { display: flex; flex-direction: column; flex: 1; padding: 12px 14px 10px; }
+  .meta { margin: 0; font-size: .78rem; color: var(--ink-2); }
+  .body h3 { font-size: 1.12rem; font-weight: 700; margin: 4px 0 4px; }
+  .card:hover h3 { color: var(--crimson); }
+  .desc { margin: 0; color: var(--ink-2); font-size: .88rem; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .nums { display: grid; grid-template-columns: 1fr 1fr; margin: 0; border-top: 1px solid var(--line); }
+  .nums div { padding: 8px 14px; } .nums div + div { border-inline-start: 1px solid var(--line); }
+  .nums dt { font-size: .72rem; color: var(--ink-2); }
+  .nums dd { margin: 0; font-weight: 700; font-size: .92rem; } .nums dd small { font-weight: 500; color: var(--ink-2); }
+  .nums dd.ok { color: var(--ok); }
+  .by { display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--ink-2); min-width: 0; }
+  .by span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .more { display: flex; justify-content: center; margin-top: 28px; }
   .more[hidden], .grid > li[hidden] { display: none; }
 

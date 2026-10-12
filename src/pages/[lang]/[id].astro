@@ -262,10 +262,10 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 <style>
   /* Recap hero: the pitch still (or website screenshot) under a warm dark overlay. */
   .stage { position: relative; overflow: hidden; background: #2a1a14; min-height: 400px; display: flex; align-items: flex-end; }
-  .stage.noimg { background: linear-gradient(135deg, #1f5f66, #2a1a14 70%); }
+  .stage.noimg { background: #24403f; }
   .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
-  .stage .bg.site { opacity: .22; filter: blur(2px); }
-  .stage::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgb(42 26 20 / .62), rgb(42 26 20 / .85) 80%), linear-gradient(0deg, #2a1a14 8%, transparent 50%); }
+  .stage .bg.site { opacity: .18; }
+  .stage::after { content: ''; position: absolute; inset: 0; background: rgb(42 26 20 / .72); }
   .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: #f4efe6; display: flex; flex-direction: column; align-items: center; text-align: center; }
   .crumbs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; font-size: .85rem; color: #d6c7b2; margin-bottom: 56px; }
   .crumbs a { color: #d6c7b2; text-decoration: none; } .crumbs a:hover { color: #fff; }
@@ -277,11 +277,10 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 12px 0 0; }
   .tags > * { font-size: .8rem; padding: 1px 10px; border-radius: 3px; background: rgb(255 255 255 / .14); color: #f4efe6; text-decoration: none; }
   .watch { margin-top: 16px; background: var(--crimson); color: #fff; padding: 10px 18px 10px 16px; border-radius: 30px; font-weight: 700; font-size: .92rem; text-decoration: none; }
-  .watch::before { content: '▶ '; }
   @media (max-width: 760px) { .stage { min-height: 360px; } .crumbs { margin-bottom: 48px; } .stage-in { padding-bottom: 64px; } }
 
   /* Score card: asked → outcome → final, overlapping the hero. */
-  .score { position: relative; z-index: 2; margin-top: -46px; display: grid; grid-template-columns: 1fr auto minmax(180px, .8fr) auto 1fr; align-items: center; gap: 18px; padding: 20px 24px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-lift); }
+  .score { position: relative; z-index: 2; margin-top: -46px; display: grid; grid-template-columns: 1fr auto minmax(180px, .8fr) auto 1fr; align-items: center; gap: 18px; padding: 20px 24px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
   .score p { margin: 0; }
   .k { font-size: .8rem; color: var(--ink-2); font-weight: 600; }
   .v { font-family: var(--serif); font-size: 1.85rem; font-weight: 700; line-height: 1.25; }
