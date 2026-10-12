@@ -3690,8 +3690,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1500000,
+      "equityPct": 15
     },
     "deal": null,
     "sources": [
@@ -3703,7 +3703,7 @@
       "https://www.aljazeera.net/family/2026/8/5/21-يوما-لترسيخ-عادة-القراءة-سوبر-أبلة",
       "https://www.goethe.de/prj/ruy/ar/kul/26665172.html"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "drlTIu6hW8k",
     "links": {
       "facebook": "https://www.facebook.com/Super2bla/"
@@ -4823,14 +4823,19 @@
       "amountEGP": 15000000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 5000000,
+      "equityPct": 25
+    },
     "sources": [
       "https://gate.ahram.org.eg/News/4662165.aspx",
       "https://www.youtube.com/watch?v=ay1JPEuUwrI",
       "https://www.youtube.com/watch?v=FqykquNeTq4",
       "https://www.youtube.com/watch?v=SBLTRSbGuN8"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "ay1JPEuUwrI",
     "links": {
       "facebook": "https://www.facebook.com/Zeeshoesofficial/"
@@ -5079,7 +5084,12 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 3000000,
+      "equityPct": 20
+    },
     "sources": [
       "https://www.youm7.com/6436042",
       "https://www.elwatannews.com/news/details/7055299",
@@ -5091,7 +5101,7 @@
       "https://cairoscene.com/Eats/The-Most-Dough-licious-Donuts-in-Egypt-A-Scene-Eats-Guide",
       "https://www.slanted.de/fatis/"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "DQ65rjFpnes",
     "about": {
       "founded": 2021,
@@ -5185,8 +5195,8 @@
       "sharks": [
         "Ayman Abbas"
       ],
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 12000000,
+      "equityPct": 40
     },
     "sources": [
       "https://www.youm7.com/6441786",
@@ -5199,7 +5209,7 @@
       "https://zoominfo.com/pic/weddngo/1318755063",
       "https://www.tiktok.com/@sharktank.egypt/video/7322564779367763205"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-10-12",
     "video": "dj17yYZHoXA",
     "links": {
       "facebook": "https://www.facebook.com/WeddngoEgypt/",
@@ -5251,8 +5261,8 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 35000000,
+      "equityPct": 15
     },
     "deal": null,
     "sources": [
@@ -5263,7 +5273,7 @@
       "https://career-180.com/en/hiring/corporates/abgad",
       "https://enterpriseam.com/egypt/blackboards/where-can-parents-look-for-funding-to-cover-international-school-fees/"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "dXGGVaGcz_M",
     "links": {
       "linkedin": "https://eg.linkedin.com/company/abgad-%D8%A3%D8%A8%D8%AC%D8%AF"
@@ -5609,15 +5619,15 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 9000000,
+      "equityPct": 20
     },
     "deal": {
       "made": true,
       "sharks": [
         "Ayman Abbas"
       ],
-      "amountEGP": null,
+      "amountEGP": 10000000,
       "equityPct": 35
     },
     "sources": [
@@ -5627,7 +5637,7 @@
       "https://www.youtube.com/watch?v=-iuKvlS_LLw",
       "https://www.tiktok.com/@sharktank.egypt/video/7330393995417373958"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-10-12",
     "pitch": {
       "en": "Erada Fattah brought Era Care to Shark Tank Egypt in season 2, presenting her therapeutic skincare and cosmetics line. She told the sharks how she launched the brand from Upper Egypt with less than EGP 200 to chase a childhood dream, and her story impressed them.",
       "ar": "قدّمت إرادة فتاح علامة إيرا كير في الموسم الثاني من برنامج شارك تانك مصر، وعرضت منتجاتها العلاجية للعناية بالبشرة ومستحضرات التجميل. وروت للمستثمرين كيف أطلقت علامتها من صعيد مصر بأقل من مئتي جنيه سعيًا وراء حلم الطفولة، فنالت قصتها إعجابهم."
@@ -11243,7 +11253,12 @@
       "amountEGP": 6000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 6000000,
+      "equityPct": 40
+    },
     "sources": [
       "https://www.youm7.com/7168263",
       "https://www.youm7.com/story/2025/10/22/%D9%85%D9%8A-%D8%A7%D9%84%D8%BA%D9%86%D8%AF%D9%88%D8%B1-%D8%AA%D8%B7%D9%84%D8%A8-6-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%84%D8%A5%D8%AD%D9%8A%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A-%D9%81%D9%89/7168215",
@@ -11252,7 +11267,7 @@
       "https://scenehome.com/Furniture-Accessories/May-Elghandour-s-Love-Story-With-Light-Colour-Glass",
       "https://www.youm7.com/7168215"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "5r2c_UTeS-E",
     "services": {
       "en": [
@@ -11340,7 +11355,12 @@
       "amountEGP": 3000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7237946",
       "https://www.youm7.com/story/2025/10/22/3-%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D8%A7%D8%AA-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%AA%D8%B4%D8%A7%D8%B1%D9%83-%D8%A7%D9%84%D9%8A%D9%84%D8%A9-%D9%81%D9%89-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1-%D8%B9%D9%84%D9%89/7166493",
@@ -11350,7 +11370,7 @@
       "https://www.youm7.com/story/2025/12/17/%C2%AB%D9%83%D8%A7%D8%B1-%D9%81%D9%8A%D8%B2%D9%8A%D8%AA%D8%A7%C2%BB-%D8%AA%D8%B7%D9%84%D8%A8-3-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%C2%AB%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83%C2%BB-%D9%84%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1/7237946",
       "https://www.youtube.com/watch?v=gt_EJdt-1hU"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "gt_EJdt-1hU",
     "services": {
       "en": [
@@ -11400,7 +11420,12 @@
       "amountEGP": 15000000,
       "equityPct": 8
     },
-    "deal": null,
+    "deal": {
+      "made": false,
+      "sharks": [],
+      "amountEGP": null,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7177610",
       "https://www.youm7.com/story/2025/10/29/%D9%85%D8%A4%D8%B3%D8%B3-%D8%B7%D9%8A%D8%A7%D8%B1-%D9%8A%D8%B7%D9%84%D8%A8-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7-%D8%A8%D9%8015-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AC%D9%86%D9%8A%D9%87/7177610",
@@ -11411,7 +11436,7 @@
       "https://au-startups.com/startups/tayar",
       "https://eg.linkedin.com/in/mohey-ezzat-954a67b5"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "tDbGWmezePQ",
     "about": {
       "highlights": {
@@ -11940,8 +11965,8 @@
         "Aya Abdel Raouf",
         "Mounaz Abdel Raouf"
       ],
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 4000000,
+      "equityPct": 30
     },
     "sources": [
       "https://www.youm7.com/7195500",
@@ -13298,10 +13323,15 @@
     ],
     "website": "https://pencilight.com",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2000000,
+      "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 4000000,
+      "equityPct": 20
+    },
     "sources": [
       "https://www.youtube.com/watch?v=8NwyGw7R1ao",
       "https://www.youtube.com/watch?v=F1NkHp237TY",
@@ -13311,7 +13341,7 @@
       "https://eg.linkedin.com/in/omnia-amin",
       "https://www.cyan.boutique/projects/pencilight"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "links": {
       "facebook": "https://www.facebook.com/pencilighteg/",
       "instagram": "https://www.instagram.com/pencilight_egypt/"
@@ -13529,8 +13559,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 7500000,
+      "equityPct": 15
     },
     "deal": {
       "made": true,
@@ -13550,7 +13580,7 @@
       "https://www.youtube.com/shorts/XoOvpCYNG-k",
       "https://www.tiktok.com/@sharktank.egypt/video/7604465741903056146"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-10-12",
     "video": "6Iypwc-vS9s"
   },
   {
@@ -13872,8 +13902,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 7500000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -13893,7 +13923,7 @@
       "https://www.carrefouregypt.com/mafegy/ar/date-biscuits/didos-mamoul-straw-fig-stra12p-16g/p/669334",
       "https://www.tiktok.com/@sharktank.egypt/video/7594105428661849362"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-10-12",
     "video": "e1huH9yeMyo",
     "links": {
       "facebook": "https://www.facebook.com/dido.s.snacks/",
@@ -14078,8 +14108,8 @@
     ],
     "website": "https://stunning.so/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 10
     },
     "deal": {
       "made": true,
@@ -14101,7 +14131,7 @@
       "https://alternativeto.net/software/stunning-so/about",
       "https://neura.market/ai-tools-directory/website-builders/stunning"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-10-12",
     "links": {
       "linkedin": "https://www.linkedin.com/company/stunning-so/"
     },
@@ -14141,8 +14171,8 @@
     "founders": [],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1400000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -14150,7 +14180,7 @@
       "https://www.youtube.com/watch?v=TiZ1geUw1BU",
       "https://www.youtube.com/watch?v=CN1d9gWVwlo"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "eAk2iuJ57mA",
     "links": {
       "instagram": "https://www.instagram.com/jouzooor/"
@@ -14214,8 +14244,8 @@
     "founders": [],
     "website": "https://havanasocks.net",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 5000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -14225,7 +14255,7 @@
       "https://www.facebook.com/havanasocks.eg/",
       "https://www.youtube.com/watch?v=WwPw_meEvAY"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "MiciW6RGQzs",
     "links": {
       "instagram": "https://www.instagram.com/havanasocks.eg/",
@@ -14301,8 +14331,8 @@
     "founders": [],
     "website": "https://kaksquad.com/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 30000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
@@ -14311,7 +14341,7 @@
       "https://misrconnect.com/en/news/celebrities/kak-squad-restaurant-egyptian-success-story-spotlighted-on-shark-tank-egypt",
       "https://enterpriseam.com/egypt/2026/04/28/kak-squad-perfects-crave-worthy-fried-chicken/"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-10-12",
     "video": "vRfXxAJI7jU",
     "links": {
       "facebook": "https://www.facebook.com/KAKSquadEG/",
