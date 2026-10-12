@@ -34,5 +34,5 @@ Run with `npm run build && npm run audit-seo`; CI runs it with `--strict`, which
 ## Not done here (needs the owner)
 
 - Verify the site in Google Search Console and Bing Webmaster Tools, and submit the sitemap there.
-- Custom domain: for example, point `sharktank.ahmed-ibrahim.com` as a CNAME to `ahmadibrahiim.github.io`, then set `homepage` and add `public/CNAME`. Paths stay the same, and GitHub Pages redirects the old address.
+- Custom domain: done. The site lives at `sharktank.ahmed-ibrahim.com` (a CNAME to `ahmadibrahiim.github.io`, set in `homepage` plus `public/CNAME`); GitHub Pages redirects the old github.io address.
 - Wikidata and Wikipedia entries for the show, which LLMs and knowledge panels draw on.

@@ -8,7 +8,7 @@
 **كل الشركات والمستثمرين والمؤسسين والصفقات في شارك تانك مصر، بالعربية والإنجليزية.**
 
 [![Deploy](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml/badge.svg)](https://github.com/AhmadIbrahiim/SharkTankEgypt/actions/workflows/deploy.yml)
-[![Website](https://img.shields.io/badge/site-sharktank.ahmed--ibrahim.com-E0562F)](https://sharktank.ahmed-ibrahim.com/)
+[![Website](https://img.shields.io/badge/site-sharktank.ahmed--ibrahim.com-8E1B1B)](https://sharktank.ahmed-ibrahim.com/)
 [![Built with Astro](https://img.shields.io/badge/built%20with-Astro-FF5D01?logo=astro&logoColor=white)](https://astro.build)
 
 **[العربية](https://sharktank.ahmed-ibrahim.com/ar/)** · **[English](https://sharktank.ahmed-ibrahim.com/en/)** · **[Add or fix a startup](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?template=new-startup.yml)**

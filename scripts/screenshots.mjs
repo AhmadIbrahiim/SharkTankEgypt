@@ -34,9 +34,12 @@ async function clearOverlays(page) {
   }).catch(() => {});
 }
 
+// Sites that capture badly (raw CSS dump, blank hero, sign-up pop-up): these use the pitch video still instead.
+const SKIP = new Set(['pure-butters', 'abs-shipping', 'agricash', 'gabris-wear']);
+
 for (const s of startups) {
   const out = `public/screenshots/${s.id}.jpg`;
-  if (!s.website || (onlyMissing && existsSync(out))) continue; // website is own-domain only (social pages live in links)
+  if (!s.website || SKIP.has(s.id) || (onlyMissing && existsSync(out))) continue; // website is own-domain only (social pages live in links)
   // Fresh page per site so one failed navigation can't interrupt the next.
   const page = await browser.newPage(context);
   try {
