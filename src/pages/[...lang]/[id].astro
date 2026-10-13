@@ -18,8 +18,8 @@ const s = t[lang];
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const commentsOn = giscus.repoId && giscus.categoryId;
 const otherName = x.name[lang === 'ar' ? 'en' : 'ar'];
-// Both names in the title so the page matches Arabic and English searches.
-const pageTitle = `${x.name[lang]} (${otherName}) – ${seasonLabel(x.season, lang)}`;
+// Only this page's language is shown; the other name stays in the structured data (alternateName).
+const pageTitle = `${x.name[lang]} – ${seasonLabel(x.season, lang)}`;
 const image = screenshot(x.id) ?? (x.video ? thumb(x.video) : undefined);
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 // Every known profile, so search engines can tie them to this startup.
@@ -56,7 +56,7 @@ const jsonld = {
   subjectOf: x.episode != null ? { '@type': 'TVEpisode', '@id': ID.episode(x.season, x.episode), episodeNumber: x.episode, partOfSeason: seasonRef(x.season), partOfSeries: { '@id': ID.series } }
     : seasonRef(x.season),
 };
-const card: Card = { kind: 'startup', title: x.name[lang], alt: otherName, sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
+const card: Card = { kind: 'startup', title: x.name[lang], sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
   eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '),
   // The pitch still reads best full-bleed; og.mjs falls back to hqdefault when YouTube has no maxres frame.
   shot: x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : image,
@@ -98,7 +98,6 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       </nav>
       <p class="ep">{where}</p>
       <h1>{x.name[lang]}</h1>
-      {otherName !== x.name[lang] && <p class="alt" lang={ar ? 'en' : 'ar'} dir="auto">{otherName}</p>}
       <p class="lead">{lead}</p>
       <p class="tags">
         {x.category && <a href={`${base}${pre(lang)}/category/${catSlug(x.category)}/`}>{category(x.category, lang)}</a>}
@@ -280,7 +279,6 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .crumbs [aria-current] { color: #f4efe6; }
   .ep { margin: 0; color: #f6cf73; font-weight: 700; font-size: .85rem; }
   .stage h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.2; }
-  .alt { margin: 2px 0 0; color: #d6c7b2; }
   .lead { margin: 8px 0 0; max-width: 62ch; color: #e8ddcf; font-size: 1.05rem; }
   .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 12px 0 0; }
   .tags > * { font-size: .8rem; padding: 1px 10px; border-radius: 3px; background: rgb(255 255 255 / .14); color: #f4efe6; text-decoration: none; }

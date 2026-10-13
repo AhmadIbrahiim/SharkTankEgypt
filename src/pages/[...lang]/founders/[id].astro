@@ -32,8 +32,8 @@ const jsonld = {
   worksFor: p.startups.map(startupRef), ...(p.photo && { image: photo(p.photo) }),
 };
 ---
-<Base lang={lang} title={`${p.name[lang]} (${p.name[lang === 'ar' ? 'en' : 'ar']}) – ${title}`} description={p.bio?.[lang] ?? `${lang === 'ar' ? `${p.name.ar} من مؤسسي ${list(p.startups.map((x) => x.name.ar), lang)}.` : `${p.name.en} is a founder of ${list(p.startups.map((x) => x.name.en), lang)}.`} ${summary(p.startups[0], lang)}`} jsonld={jsonld}
-  card={{ kind: 'person', title: p.name[lang], alt: p.name.ar !== p.name.en ? p.name[lang === 'ar' ? 'en' : 'ar'] : undefined, photo: p.photo?.url, sub: title,
+<Base lang={lang} title={`${p.name[lang]} – ${title}`} description={p.bio?.[lang] ?? `${lang === 'ar' ? `${p.name.ar} من مؤسسي ${list(p.startups.map((x) => x.name.ar), lang)}.` : `${p.name.en} is a founder of ${list(p.startups.map((x) => x.name.en), lang)}.`} ${summary(p.startups[0], lang)}`} jsonld={jsonld}
+  card={{ kind: 'person', title: p.name[lang], photo: p.photo?.url, sub: title,
     eyebrow: `${lang === 'ar' ? 'مؤسس في شارك تانك مصر' : 'Founder on Shark Tank Egypt'} · ${seasonLabel(p.startups[0].season, lang)}`,
     badge: p.startups.some((x) => x.deal?.made) ? { tone: 'ok', text: lang === 'ar' ? 'حصل على صفقة' : 'Got a deal' } : p.startups.every((x) => x.deal?.made === false) ? { tone: 'no', text: lang === 'ar' ? 'بدون صفقة' : 'No deal' } : undefined }}
   altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/founders/${p.id}/`}>
@@ -44,7 +44,6 @@ const jsonld = {
       <figure class="pic"><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} />{p.photo?.credit && <figcaption><a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a></figcaption>}</figure>
       <p class="ep">{ar ? 'مؤسس' : 'Founder'} · {where}</p>
       <h1>{p.name[lang]}</h1>
-      {p.name.ar !== p.name.en && <p class="alt" lang={ar ? 'en' : 'ar'}>{p.name[ar ? 'en' : 'ar']}</p>}
       <p class="lead">{digits(title, lang)}</p>
     </div>
   </header>
@@ -121,7 +120,6 @@ const jsonld = {
   .pic figcaption { margin-top: 4px; font-size: .7rem; } .pic figcaption a { color: #bfae9d; }
   .ep { margin: 0; color: #f6cf73; font-weight: 700; font-size: .85rem; }
   .stage h1 { color: #fff; font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.2; }
-  .alt { margin: 2px 0 0; color: #d6c7b2; }
   .lead { margin: 8px 0 0; max-width: 62ch; color: #e8ddcf; font-size: 1.05rem; }
   .score { position: relative; z-index: 2; margin-top: -46px; display: grid; grid-template-columns: 1fr auto minmax(180px, .8fr) auto 1fr; align-items: center; gap: 18px; padding: 20px 24px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
   .score p { margin: 0; }
