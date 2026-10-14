@@ -43,7 +43,9 @@ for (const f of pages) {
     if (!back.some((b) => b.includes(`href="${url}"`))) errors.push(`${url}: hreflang ${l} page ${u} doesn't link back`);
   }
   for (const k of ['og:title', 'og:description', 'og:image', 'og:url']) if (!html.includes(`property="${k}"`)) errors.push(`${url}: missing ${k}`);
-  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try { JSON.parse(m[1]); } catch (e) { errors.push(`${url}: invalid JSON-LD (${e.message})`); } }
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try { JSON.parse(m[1]); } catch (e) { errors.push(`${url}: invalid JSON-LD (${e.message})`); }
+    // Google wants dates in structured data as full ISO 8601 datetimes with a timezone.
+    for (const [, d] of m[1].matchAll(/"date(?:Modified|Published)":"([^"]*)"/g)) if (!/^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:\d\d|Z)$/.test(d)) errors.push(`${url}: dateModified/datePublished "${d}" is not a full datetime`); }
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) warns.push(`${url}: ${(html.match(/<h1[\s>]/g) ?? []).length} <h1> elements`);
   // Internal links must resolve to a built file.
   for (const m of html.matchAll(/<a\s[^>]*href="([^"]+)"/g)) {

@@ -25,11 +25,13 @@ export const verification = (x: Startup): Verification =>
   !x.sources?.length ? 'unverified'
   : x.deal?.made === false || (x.deal?.made && x.deal.sharks?.length && (x.deal.amountEGP != null || x.deal.equityPct != null)) ? 'verified'
   : 'partially_verified';
-/** Date the data last changed (YYYY-MM-DD), for sitemap lastmod, dateModified and the footer. */
-export const dataUpdated = (() => {
-  try { return execSync('git log -1 --format=%cs -- src/data', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || new Date().toISOString().slice(0, 10); }
-  catch { return new Date().toISOString().slice(0, 10); }
+/** When the data last changed, as a full ISO 8601 datetime with timezone (schema.org dateModified needs it). */
+export const dataModified = (() => {
+  try { return execSync('git log -1 --format=%cI -- src/data', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || new Date().toISOString(); }
+  catch { return new Date().toISOString(); }
 })();
+/** The same as YYYY-MM-DD, for sitemap lastmod and the visible "data updated" dates. */
+export const dataUpdated = dataModified.slice(0, 10);
 
 // Fill these from https://giscus.app after enabling Discussions on the repo.
 // Comments stay hidden until repoId and categoryId are set.

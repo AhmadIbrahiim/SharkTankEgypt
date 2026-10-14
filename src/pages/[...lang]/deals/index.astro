@@ -3,7 +3,7 @@
 import Base from '../../../layouts/Base.astro';
 import Faq from '../../../components/Faq.astro';
 import { ROOT, ID } from '../../../schema';
-import { langs, seg, pre, startups, sharks, seasons, money, pct, num, seasonLabel, shark, valuation, dataUpdated, category, categories, catSlug, type Lang } from '../../../config';
+import { langs, seg, pre, startups, sharks, seasons, money, pct, num, seasonLabel, shark, valuation, dataUpdated, dataModified, category, categories, catSlug, type Lang } from '../../../config';
 import { programFaq, list } from '../../../faq';
 
 export const getStaticPaths = () => langs.map((lang) => ({ params: { lang: seg(lang) } }));
@@ -40,7 +40,7 @@ const intro = ar
 const faq = programFaq(lang).general.filter((x) => /deal|invest|صفق|استثمر|ضخ/i.test(x.q));
 const jsonld = {
   '@context': 'https://schema.org', '@type': 'Dataset', '@id': `${ROOT}en/deals/#dataset`,
-  name: title, description: intro, inLanguage: ['ar', 'en'], dateModified: dataUpdated, isAccessibleForFree: true,
+  name: title, description: intro, inLanguage: ['ar', 'en'], dateModified: dataModified, isAccessibleForFree: true,
   license: 'https://creativecommons.org/licenses/by/4.0/', creator: { '@id': ID.org }, about: { '@id': ID.series },
   keywords: ['Shark Tank Egypt', 'شارك تانك مصر', 'startups', 'investment', 'Egypt'],
   distribution: [
