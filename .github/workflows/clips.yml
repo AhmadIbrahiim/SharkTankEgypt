@@ -13,15 +13,24 @@ jobs:
         with: { node-version: 22 }
       - run: node scripts/fetch-clips.mjs /tmp/clips.json || echo '[]' > /tmp/clips.json
       # Every video title on the show's official YouTube channel (no API key needed).
+      # YouTube blocks GitHub's servers unless signed in (YOUTUBE_COOKIES) and its player needs Deno.
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x }
       - name: List the official channel's videos
+        env:
+          COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
         run: |
-          pip install -q yt-dlp
-          CH=$(yt-dlp --skip-download --print channel_url "https://www.youtube.com/watch?v=WSou-y7Y6a0" 2>/dev/null | head -1)
+          pip install -q -U "yt-dlp[default]"
+          [ -n "$COOKIES" ] && printf '%s' "$COOKIES" > /tmp/cookies.txt
+          yt() { if [ -f /tmp/cookies.txt ]; then yt-dlp --cookies /tmp/cookies.txt "$@"; else yt-dlp "$@"; fi; }
+          CH=$(yt --skip-download --ignore-no-formats-error --print channel_url "https://www.youtube.com/watch?v=WSou-y7Y6a0" 2>/dev/null | head -1)
           echo "channel: $CH"
           for tab in videos shorts streams; do
-            yt-dlp --flat-playlist --ignore-errors --print "%(id)s	%(title)s" "$CH/$tab" 2>/dev/null || true
+            yt --flat-playlist --ignore-errors --print "%(id)s	%(title)s" "$CH/$tab" 2>/dev/null || true
           done > /tmp/channel.tsv
           wc -l /tmp/channel.tsv
+          rm -f /tmp/cookies.txt
+          [ -s /tmp/channel.tsv ] || { echo "::error::Channel list is empty (YouTube blocked or cookies expired)"; exit 1; }
       - name: Commit to main
         run: |
           mkdir -p automation/sources && cp /tmp/clips.json automation/sources/clips.json && cp /tmp/channel.tsv automation/sources/channel.tsv
