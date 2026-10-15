@@ -3,10 +3,10 @@
   "summary": {
     "founders": 194,
     "bios": 194,
-    "photos": 191,
+    "photos": 192,
     "withCompanyLinks": 190,
     "missingBios": 0,
-    "missingPhotos": 3
+    "missingPhotos": 2
   },
   "notes": [
     "Research is incomplete. A missing personal link is not proof that no account exists.",
@@ -43,14 +43,15 @@
         "schoolz"
       ],
       "bio": true,
-      "photo": null,
+      "photo": "/people/abdel-monsef-ismail.jpg",
       "personalLinks": {
         "linkedin": "https://www.linkedin.com/in/abdelmunsef/"
       },
       "companyLinksAvailable": true,
       "sources": [
         "https://www.wamda.com/en/2021/08/schoolz-raises-figure-pre-seed-funding",
-        "https://www.linkedin.com/in/abdelmunsef/"
+        "https://www.linkedin.com/in/abdelmunsef/",
+        "https://www.linkedin.com/posts/abdelmunsef_devops-cybersecurity-githubactions-activity-7460871145983135747-sk_z"
       ],
       "researchComplete": false
     },
