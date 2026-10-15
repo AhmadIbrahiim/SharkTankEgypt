@@ -18,7 +18,12 @@
     "Forbes 30 Under 30 confirms Fatma and Abdelrahman Youssef for Fati’s; their portraits were cropped from the named joint profile.",
     "Design Indaba’s 2017 interview confirms Rana Rafie as co-founder of Up-Fuse; founding year omitted because sources differ.",
     "Corrected Shaimaa Mohamed, Tamiran Shalaby and Rafeek Mohamed using press and professional profiles; old founder URLs redirect to corrected names.",
-    "Named co-founders may use a complete joint photo, explicitly credited as a joint founder photo. No individual face assignment is inferred from an unlabeled group."
+    "Named co-founders may use a complete joint photo, explicitly credited as a joint founder photo. No individual face assignment is inferred from an unlabeled group.",
+    "Live audit on 2026-10-15: 388 Arabic/English founder URLs returned successfully with Person structured data and expected images; all 157 unique published local founder image assets returned image content.",
+    "Abdel Monsef Ismail portrait verified through the public Abdelmunsef Esmail LinkedIn post and Schoolz co-founder profile; committed after the first live photo audit.",
+    "Unresolved photos: Sameh Radwan (Zonta) and Mostafa El-Sehli (AgriCash). Search results include unrelated namesakes and unidentified group images; no face assignment made.",
+    "Unresolved official business links after English/Arabic name and founder searches: Flouxo, Plus Gear, Tam Leather and Serket. Similar-name shops and unrelated accounts were excluded.",
+    "Personal links are included only when identity and business affiliation are supported. Missing links are not a claim that no profile exists."
   ],
   "founders": [
     {
@@ -2348,11 +2353,14 @@
       ],
       "bio": true,
       "photo": "/people/mostafa-wahdan.jpg",
-      "personalLinks": {},
+      "personalLinks": {
+        "instagram": "https://www.instagram.com/moustafa_wahdan/"
+      },
       "companyLinksAvailable": true,
       "sources": [
         "https://www.youm7.com/6111712",
-        "https://www.youm7.com/6111663"
+        "https://www.youm7.com/6111663",
+        "https://www.instagram.com/moustafa_wahdan/"
       ],
       "researchComplete": false
     },
