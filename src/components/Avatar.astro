@@ -1,12 +1,12 @@
 ---
 import { hue, initials } from '../config';
-interface Props { name: string; seed: string; photo?: { url: string } | null; size?: number }
-const { name, seed, photo, size = 96 } = Astro.props;
+interface Props { name: string; seed: string; photo?: { url: string } | null; size?: number; loading?: 'lazy' | 'eager' }
+const { name, seed, photo, size = 96, loading = 'lazy' } = Astro.props;
 // Photos stored in the repo are site-relative ('/people/x.jpg'); others are absolute URLs.
 const src = photo && (photo.url.startsWith('/') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${photo.url}` : photo.url);
 ---
 {photo
-  ? <img class="person-avatar" src={src} alt={name} width={size} height={size} loading="lazy" style={`--s:${size}px`} />
+  ? <img class="person-avatar" src={src} alt={name} width={size} height={size} loading={loading} style={`--s:${size}px`} />
   : <span class="person-avatar ph-av" style={`--s:${size}px;--h:${hue(seed)}`} aria-hidden="true">{initials(name)}</span>}
 <style>
   .person-avatar { width: var(--s); height: var(--s); border-radius: 50%; object-fit: cover; object-position: center 30%; flex: none; background: var(--surface-2); border: 1px solid var(--line); }

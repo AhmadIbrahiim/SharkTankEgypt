@@ -43,7 +43,19 @@ for (const f of pages) {
     if (!back.some((b) => b.includes(`href="${url}"`))) errors.push(`${url}: hreflang ${l} page ${u} doesn't link back`);
   }
   for (const k of ['og:title', 'og:description', 'og:image', 'og:url']) if (!html.includes(`property="${k}"`)) errors.push(`${url}: missing ${k}`);
-  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try { JSON.parse(m[1]); } catch (e) { errors.push(`${url}: invalid JSON-LD (${e.message})`); }
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try {
+    const graph = JSON.parse(m[1])['@graph'] ?? [];
+    const profile = graph.find((n) => n['@type'] === 'ProfilePage');
+    const person = graph.find((n) => n['@type'] === 'Person' && n['@id'] === profile?.mainEntity?.['@id']);
+    if (person?.image) {
+      if (profile.primaryImageOfPage?.url !== person.image.url) errors.push(`${url}: profile primary image is not the person's portrait`);
+      const portrait = [...html.matchAll(/<img\s[^>]*>/g)].find(([tag]) => {
+        const src = decode(pick(tag, /src="([^"]+)"/));
+        return src && new URL(src, url).href === person.image.url;
+      });
+      if (!portrait || !portrait[0].includes('loading="eager"')) errors.push(`${url}: profile portrait is missing or not eagerly loaded`);
+    }
+  } catch (e) { errors.push(`${url}: invalid JSON-LD (${e.message})`); }
     // Google wants dates in structured data as full ISO 8601 datetimes with a timezone.
     for (const [, d] of m[1].matchAll(/"date(?:Modified|Published)":"([^"]*)"/g)) if (!/^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:\d\d|Z)$/.test(d)) errors.push(`${url}: dateModified/datePublished "${d}" is not a full datetime`); }
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) warns.push(`${url}: ${(html.match(/<h1[\s>]/g) ?? []).length} <h1> elements`);

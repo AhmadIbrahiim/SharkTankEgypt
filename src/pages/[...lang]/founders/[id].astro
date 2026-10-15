@@ -42,7 +42,7 @@ const jsonld = {
     {heroImg && <img class:list={['bg', !x.video && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror="this.remove()" />}
     <div class="container stage-in">
       <nav class="crumbs" aria-label="breadcrumb"><a href={`${base}${pre(lang)}/founders/`}>{s.navFounders}</a><span aria-hidden="true">/</span><span aria-current="page">{p.name[lang]}</span></nav>
-      <figure class="pic"><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} />{p.photo?.credit && <figcaption><a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a></figcaption>}</figure>
+      <figure class="pic"><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} loading="eager" />{p.photo?.credit && <figcaption><a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a></figcaption>}</figure>
       <p class="ep">{ar ? 'مؤسس' : 'Founder'} · {where}</p>
       <h1>{p.name[lang]}</h1>
       <p class="lead">{digits(title, lang)}</p>

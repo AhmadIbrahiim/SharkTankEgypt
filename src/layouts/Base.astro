@@ -52,7 +52,7 @@ const isPerson = entity['@type'] === 'Person';
 const page = {
   '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : !segs.length ? 'CollectionPage' : 'WebPage',
   '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site }, dateModified: dataModified,
-  primaryImageOfPage: { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 },
+  primaryImageOfPage: isPerson && entity.image ? entity.image : { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 },
   ...(crumbs.length > 1 && { breadcrumb: { '@id': `${url}#breadcrumb` } }),
   ...(isPage ? (({ '@type': _t, ...rest }) => rest)(entity) : jsonld ? { mainEntity: { '@id': entity['@id'] ?? `${url}#main` } } : {}),
 };

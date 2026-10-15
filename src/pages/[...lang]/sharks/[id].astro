@@ -41,7 +41,7 @@ const jsonld = {
 
     <article class="hero">
       <figure>
-        <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={168} />
+        <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={168} loading="eager" />
         {p.photo?.credit && <figcaption>{s.photoBy} {p.photo.creditUrl ? <a href={p.photo.creditUrl} rel="nofollow noopener" target="_blank">{p.photo.credit}</a> : p.photo.credit}</figcaption>}
       </figure>
       <div>
