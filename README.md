@@ -18,7 +18,7 @@
 
 ---
 
-An unofficial, community-run directory of every startup that pitched on *Shark Tank Egypt* (شارك تانك مصر): 217 startups, 116 recorded deals, 17 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
+An unofficial, community-run directory of every startup that pitched on *Shark Tank Egypt* (شارك تانك مصر): 220 startups, 121 recorded deals, 17 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
 
 ## What's inside
 

@@ -14958,5 +14958,75 @@
       "en": "Ziad El-Bessiouny opened Season 5, Episode 1 by pitching Olympic Sports, a children's sports-academy operator that has served more than 250,000 kids. He asked for EGP 36 million in exchange for 20% of the company, valuing it at EGP 180 million. No public source confirms the outcome yet.",
       "ar": "افتتح زياد البسيوني الحلقة الأولى من الموسم الخامس بعرض أوليمبيك سبورتس، الشركة التي تدير أكاديميات رياضية للأطفال وخدمت أكثر من 250 ألف طفل. طلب 36 مليون جنيه مقابل 20% من الشركة، أي بتقييم 180 مليون جنيه. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
     }
+  },
+  {
+    "id": "aqar-exit",
+    "season": 5,
+    "episode": 2,
+    "name": { "en": "Aqar Exit", "ar": "عقار إكزيت" },
+    "description": {
+      "en": "Aqar Exit is an Egyptian platform for reselling property units and transferring purchase contracts. It connects owners who need to leave installment commitments with buyers seeking units under earlier contracts. Founder Mahmoud Ammar said the platform had listed about 8,000 units in its first 40 days; this is a count of listings, not completed sales.",
+      "ar": "عقار إكزيت منصة مصرية لإعادة بيع الوحدات العقارية والتنازل عن عقود شرائها. تربط أصحاب الوحدات الراغبين في الخروج من التزامات الأقساط بمشترين يبحثون عن وحدات بتعاقدات سابقة. قال مؤسسها محمود عمار إن المنصة عرضت نحو 8 آلاف وحدة خلال أول 40 يومًا؛ وهذا عدد الوحدات المعروضة وليس صفقات بيع مكتملة."
+    },
+    "category": "Real Estate",
+    "founders": ["Mahmoud Ammar"],
+    "website": null,
+    "ask": { "amountEGP": 10000000, "equityPct": 5 },
+    "deal": { "made": true, "amountEGP": 10000000, "equityPct": 10, "sharks": ["Ayman Abbas"] },
+    "sources": [
+      "https://www.youm7.com/7580188",
+      "https://thepropertystats.com/%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%83-%D8%A3%D9%8A%D9%85%D9%86-%D8%B9%D8%A8%D8%A7%D8%B3-%D9%8A%D9%82%D8%AA%D9%86%D8%B5-10-%D9%85%D9%86-%D8%B9%D9%82%D8%A7%D8%B1-%D8%A5%D9%83%D8%B2%D8%AA/"
+    ],
+    "checked": "2026-10-15",
+    "pitch": {
+      "en": "In Season 5, Episode 2, Mahmoud Ammar asked for EGP 10 million for 5%, implying a EGP 200 million valuation. A post-air report says Ayman Abbas agreed to EGP 10 million for 10%, split into EGP 7 million in 2026 and EGP 3 million in 2027. That implies a EGP 100 million valuation on the reported terms. The report describes an on-air agreement; completion of the investment has not been independently confirmed.",
+      "ar": "في الحلقة الثانية من الموسم الخامس، طلب محمود عمار 10 ملايين جنيه مقابل 5%، بما يعني تقييمًا قدره 200 مليون جنيه. وذكر تقرير نُشر بعد الحلقة أن أيمن عباس وافق على استثمار 10 ملايين جنيه مقابل 10%، تُدفع منها 7 ملايين في 2026 و3 ملايين في 2027. ويعني ذلك تقييمًا قدره 100 مليون جنيه وفق الشروط المذكورة. التقرير يصف اتفاقًا على الهواء؛ ولم يُؤكد إتمام الاستثمار بعد العرض من مصدر مستقل."
+    }
+  },
+  {
+    "id": "solar-sector",
+    "season": 5,
+    "episode": 2,
+    "name": { "en": "Solar Sector", "ar": "سولار سيكتور" },
+    "description": {
+      "en": "Solar Sector is an Egyptian solar-energy platform founded by Mohamed Youssef and Osama Mohamed. Its app estimates a customer's equipment needs and installation cost from electricity use, connects customers with suppliers, and offers maintenance support. The founders said the company also runs an installation team and focuses strongly on agricultural customers.",
+      "ar": "سولار سيكتور منصة مصرية للطاقة الشمسية أسسها محمد يوسف وأسامة محمد. يقدّر تطبيقها احتياجات العميل من المعدات وتكلفة التركيب بناءً على استهلاك الكهرباء، ويربطه بالموردين ويوفر دعم الصيانة. وقال المؤسسان إن الشركة لديها فريق للتركيب وتركز بدرجة كبيرة على العملاء في القطاع الزراعي."
+    },
+    "category": "Environment",
+    "founders": ["Mohamed Youssef", "Osama Mohamed"],
+    "website": null,
+    "ask": { "amountEGP": 1000000, "equityPct": 10 },
+    "deal": null,
+    "sources": ["https://www.youm7.com/7580274", "https://www.youm7.com/7580277"],
+    "checked": "2026-10-15",
+    "pitch": {
+      "en": "In Season 5, Episode 2, Mohamed Youssef and Osama Mohamed asked for EGP 1 million for 10%, implying a EGP 10 million valuation. They described an app for sizing, buying and maintaining solar systems, and discussed installation costs and expansion with the sharks. The available post-air coverage does not establish whether they reached a deal.",
+      "ar": "في الحلقة الثانية من الموسم الخامس، طلب محمد يوسف وأسامة محمد مليون جنيه مقابل 10%، بما يعني تقييمًا قدره 10 ملايين جنيه. عرضا تطبيقًا لتحديد حجم أنظمة الطاقة الشمسية وشرائها وصيانتها، وناقشا تكاليف التركيب والتوسع مع الشاركس. ولا تؤكد التغطية المتاحة بعد العرض ما إذا توصلا إلى صفقة."
+    }
+  },
+  {
+    "id": "godly-pride",
+    "season": 5,
+    "episode": 2,
+    "name": { "en": "Godly Pride", "ar": "جودلي برايد" },
+    "description": {
+      "en": "Godly Pride is an Egyptian beauty brand founded by Maryam Elleithy. It combines skincare and makeup in products such as facial cleansers and cosmetics. Maryam said the business sold 48,000 units and generated more than EGP 14 million in sales over three and a half years before its Shark Tank Egypt pitch.",
+      "ar": "جودلي برايد علامة تجميل مصرية أسستها مريم الليثي، وتجمع بين العناية بالبشرة والمكياج في منتجات مثل غسول الوجه ومستحضرات التجميل. قالت مريم إن الشركة باعت 48 ألف وحدة وحققت مبيعات تجاوزت 14 مليون جنيه خلال ثلاث سنوات ونصف قبل عرضها في شارك تانك مصر."
+    },
+    "category": "Beauty",
+    "founders": ["Maryam Elleithy"],
+    "website": "https://godlypride.com/",
+    "ask": { "amountEGP": 3000000, "equityPct": 10 },
+    "deal": null,
+    "sources": [
+      "https://www.youm7.com/7580279",
+      "https://scenenow.com/Styled/Dazzle-Like-a-Deity-With-Local-Skincare-Makeup-Brand-Godly-Pride",
+      "https://godlypride.com/pages/about"
+    ],
+    "checked": "2026-10-15",
+    "pitch": {
+      "en": "In Season 5, Episode 2, Maryam Elleithy asked for EGP 3 million for 10%, implying a EGP 30 million valuation. She described the brand's skincare-infused makeup, 48,000 units sold and more than EGP 14 million in cumulative sales. Post-air reporting records praise for its products and packaging but does not confirm a final investment outcome.",
+      "ar": "في الحلقة الثانية من الموسم الخامس، طلبت مريم الليثي 3 ملايين جنيه مقابل 10%، بما يعني تقييمًا قدره 30 مليون جنيه. عرضت مستحضرات تجميل تجمع بين المكياج والعناية بالبشرة، وذكرت بيع 48 ألف وحدة وتحقيق مبيعات تراكمية تزيد على 14 مليون جنيه. وسجلت التغطية إشادة بالمنتجات والعبوات دون تأكيد نتيجة استثمارية نهائية."
+    }
   }
 ]
