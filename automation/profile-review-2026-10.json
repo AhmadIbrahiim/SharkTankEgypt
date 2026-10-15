@@ -1,0 +1,4250 @@
+{
+  "reviewDate": "2026-10-15",
+  "status": "in_progress",
+  "scope": "All 220 records: names in both languages, websites, social accounts, business information and genuine images. A partial review entry does not mean the whole record is verified.",
+  "baseline": {
+    "startups": 220,
+    "missingWebsites": 157,
+    "missingSocialLinks": 75,
+    "withoutScreenshotOrVideo": 53
+  },
+  "records": [
+    {
+      "id": "life-snacks",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Life Snacks",
+          "ar": "لايف سناكس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "tern-icecream",
+      "status": "partially_reviewed",
+      "notes": "Official website, product description, social profiles and screenshot. Founder identity still needs reconciliation with on-air name.",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "TERN",
+          "ar": "تيرن"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "mothernaked",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Mother Naked",
+          "ar": "ماذر ناكيد"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/health-and-beauty",
+          "https://sharktank-egypt.com/ar/deals/health-and-beauty"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "y-studio",
+      "status": "partially_reviewed",
+      "notes": "Official website ystudios.net confirmed by supplier case study, plus linked Instagram and TikTok.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Y Studios",
+          "ar": "واي ستوديوز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      },
+      "changedFields": [
+        "episode",
+        "name",
+        "description",
+        "founders",
+        "website",
+        "sources",
+        "video",
+        "links"
+      ]
+    },
+    {
+      "id": "yumby",
+      "status": "partially_reviewed",
+      "notes": "Official site matches existing Instagram. Apps and services added; Arabic name from show captions.",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Yumby",
+          "ar": "يَمبي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "countrys",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Country’s",
+          "ar": "كانتريز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "habu-arts",
+      "status": "partially_reviewed",
+      "notes": "Published pitch still visually checked and source added; own website unavailable.",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "stepinside",
+      "status": "partially_reviewed",
+      "notes": "Reviewed official homepage social links; source appended.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Step Inside",
+          "ar": "ستيب إنسايد"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video",
+        "links"
+      ]
+    },
+    {
+      "id": "dajin",
+      "status": "partially_reviewed",
+      "notes": "Listed domain is parked for sale; removed website.",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Dagen",
+          "ar": "داجن"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/apps"
+        ]
+      },
+      "changedFields": [
+        "website"
+      ]
+    },
+    {
+      "id": "cut-x",
+      "status": "partially_reviewed",
+      "notes": "Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Cut X",
+          "ar": "كت إكس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "mawared",
+      "status": "partially_reviewed",
+      "notes": "MaWard official catalog spelling. Listed mowardeg.com could not be reached.",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "pitch"
+      ]
+    },
+    {
+      "id": "akoub",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Akoub",
+          "ar": "عقوب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/agriculture",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "serket",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Serket",
+          "ar": "سيركيت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/medical-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "grif",
+      "status": "partially_reviewed",
+      "notes": "Official site explicitly describes its Shark Tank appearance; footer social profiles added.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Grif",
+          "ar": "جريف"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "website",
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "tilestic",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Tilestic",
+          "ar": "تيلستك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "masroufi",
+      "status": "partially_reviewed",
+      "notes": "Masroofi official LinkedIn and app listing. masroofi.net returns HTTP 500; unrelated masroufi.org excluded. Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Masroofi",
+          "ar": "مصروفي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fintech",
+          "https://sharktank-egypt.com/ar/deals/fintech"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "services",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "agrcology",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Agrcology",
+          "ar": "اجروكولجي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "fairclo",
+      "status": "partially_reviewed",
+      "notes": "Virclo official catalog spelling and app listing. virclo.net returned an nginx error; omitted website.",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "pitch",
+        "links"
+      ]
+    },
+    {
+      "id": "scoopy-scooters",
+      "status": "partially_reviewed",
+      "notes": "Scooby official site, LinkedIn and developer listing match founder Bemen Wagdy; corrected English name.",
+      "missing": [],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "pitch",
+        "links"
+      ]
+    },
+    {
+      "id": "amwal",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Amwal",
+          "ar": "أموال"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fintech",
+          "https://sharktank-egypt.com/ar/deals/fintech"
+        ]
+      }
+    },
+    {
+      "id": "mandoobak-smart",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Mandoubak Smart",
+          "ar": "مندوبك سمارت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "tutoro",
+      "status": "partially_reviewed",
+      "notes": "Tutoruu official site, app listings and Forbes founder list; unrelated Tutoro education startup excluded. Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Tutoruu",
+          "ar": "توتورو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/education-",
+          "https://sharktank-egypt.com/ar/deals/education-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "founders",
+        "website",
+        "sources",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "plus-gear",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Gear +",
+          "ar": "جير بلاص"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/sports",
+          "https://sharktank-egypt.com/ar/deals/sports"
+        ]
+      }
+    },
+    {
+      "id": "tap-tag",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Tap Tag",
+          "ar": "تاب تاج"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "jojos-ranch",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Jojo’s Ranch",
+          "ar": "جوجوز رانش"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "relaxant",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "choroida",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Choroida",
+          "ar": "كورويدا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "bikado",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "calmy",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Calmy",
+          "ar": "كالمي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/health-and-beauty",
+          "https://sharktank-egypt.com/ar/deals/health-and-beauty"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "tam-leather",
+      "status": "partially_reviewed",
+      "notes": "Published pitch still visually checked; founder and products sourced from the accompanying article.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "description",
+        "founders",
+        "sources"
+      ]
+    },
+    {
+      "id": "creative-art",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Creative Art",
+          "ar": "كرييتف أرت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "chef-me",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "ChefMe.com",
+          "ar": "شيف مي دوت كوم"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "sporty-pro",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Sporty Pro",
+          "ar": "سبورتي برو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "evica",
+      "status": "partially_reviewed",
+      "notes": "Corrected Efika spelling using existing company and manufacturer sources; reconciled pitch with recorded ask.",
+      "missing": [
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Efika",
+          "ar": "افيكا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "pitch"
+      ]
+    },
+    {
+      "id": "cosmos-bionics",
+      "status": "partially_reviewed",
+      "notes": "Official site describes matching founders and Shark Tank pitch. Placeholder phone number excluded.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "website",
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "peacock-designs",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Peacock Designs",
+          "ar": "بيكوك ديزاينز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "career-180",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Career 180",
+          "ar": "كارير 180"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/education-"
+        ]
+      }
+    },
+    {
+      "id": "kids-kit",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "skoolix",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Skoolix",
+          "ar": "سكولكس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/education-"
+        ]
+      }
+    },
+    {
+      "id": "chefs-house",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Chef's House",
+          "ar": "شيفس هاوس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "can-bank",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Can Bank",
+          "ar": "كان بنك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "tomatiki",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Tomatiki",
+          "ar": "توماتيكي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/agriculture",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "portal",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Portal",
+          "ar": "بورتال"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "i-ape",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "IAPE",
+          "ar": "آي أي بي إي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "pitch",
+        "video"
+      ]
+    },
+    {
+      "id": "labtronic",
+      "status": "partially_reviewed",
+      "notes": "Official engineering-training equipment website added. Excluded unrelated medical-lab supplier labtronic-eg.com.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Labtronic",
+          "ar": "لابترونيك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/other"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "pitch"
+      ]
+    },
+    {
+      "id": "schoolz",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Schoolz",
+          "ar": "سكولز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "asfoura",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Asfoura",
+          "ar": "عصفورة"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/entertainment-and-arts",
+          "https://sharktank-egypt.com/ar/deals/education-"
+        ]
+      }
+    },
+    {
+      "id": "blooms-egypt",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Blooms",
+          "ar": "بلومز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "crazy-tuna",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Crazy Tuna",
+          "ar": "كريزي تونة"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      }
+    },
+    {
+      "id": "simple",
+      "status": "partially_reviewed",
+      "notes": "Sympl official website and FAQ verified. Removed stale flat-fee claims.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Sympl",
+          "ar": "سيمبل"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "services",
+        "pitch",
+        "about",
+        "video",
+        "links"
+      ]
+    },
+    {
+      "id": "shaghalny",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Shaghalni",
+          "ar": "شغلنى"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "not-foods",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Not Food",
+          "ar": "نوت فوود"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "supply-list",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "The Supply List",
+          "ar": "ذا سبلاي لست"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "mobikya",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Mobikeya",
+          "ar": "موبيكيا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "fool-tank",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Fool Tank",
+          "ar": "فول تانك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "super-abla",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Super Abla",
+          "ar": "سوبر ابله"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/education-",
+          "https://sharktank-egypt.com/ar/deals/education-"
+        ]
+      }
+    },
+    {
+      "id": "lelu",
+      "status": "partially_reviewed",
+      "notes": "Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Lelu",
+          "ar": "ليلو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "country-house",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Country House",
+          "ar": "كونتري هاوس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "simplex",
+      "status": "partially_reviewed",
+      "notes": "Official company site and linked profiles added. Incomplete Snapchat URL excluded.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Simplex",
+          "ar": "سيمبلكس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "website",
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "shelter",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Shelter",
+          "ar": "شلتر"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "dr-joy",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Dr.Joy",
+          "ar": "دكتور جوي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "pov",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "POV",
+          "ar": "بي أو في"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "engine",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "bar-and-jar",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Bar & Jar",
+          "ar": "بار اند جار"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "rawmart",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "RawMart",
+          "ar": "رومارت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      }
+    },
+    {
+      "id": "soccer-hub",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Soccer Hub",
+          "ar": "سوكر هاب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/entertainment-and-arts",
+          "https://sharktank-egypt.com/ar/deals/entertainment-and-arts"
+        ]
+      }
+    },
+    {
+      "id": "rnkl",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Rnkl",
+          "ar": "رنكل"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/recycling-",
+          "https://sharktank-egypt.com/ar/deals/recycling-"
+        ]
+      }
+    },
+    {
+      "id": "agricash",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "AgriCash",
+          "ar": "أجري كاش"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/fintech"
+        ]
+      }
+    },
+    {
+      "id": "creative-wrap",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Creative Wrap",
+          "ar": "كرييتف راب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      }
+    },
+    {
+      "id": "the-lean-jerky",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "The Lean Jerky",
+          "ar": "ذي لين جيركي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      }
+    },
+    {
+      "id": "myco-pex",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Mico Pex",
+          "ar": "ميكو بيكس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "pitch",
+        "video"
+      ]
+    },
+    {
+      "id": "the-potcast",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "gammbaz",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Gammbaz",
+          "ar": "جامباز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      }
+    },
+    {
+      "id": "loriental",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Loriental",
+          "ar": "لورينتال"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "zee-shoes",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Zee",
+          "ar": "زي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "interact",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Interact",
+          "ar": "إنتراكت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/education-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "zat",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Zat",
+          "ar": "ذات"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/health-and-beauty",
+          "https://sharktank-egypt.com/ar/deals/health-and-beauty"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "fatties",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Fati's",
+          "ar": "فاتيز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "weddngo",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Weddngo",
+          "ar": "وِدنجو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/fintech"
+        ]
+      }
+    },
+    {
+      "id": "abgad",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Abgad",
+          "ar": "ابجد"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/fintech"
+        ]
+      }
+    },
+    {
+      "id": "dark-solution",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Dark Solution",
+          "ar": "دارك سوليوشن"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "salhly",
+      "status": "partially_reviewed",
+      "notes": "Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Salhly",
+          "ar": "صلحلي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "flouxo",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "agrikemet",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Agrikemet",
+          "ar": "اجري كيميت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/agriculture",
+          "https://sharktank-egypt.com/ar/deals/agriculture"
+        ]
+      }
+    },
+    {
+      "id": "era-care",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Era Care",
+          "ar": "ايرا كير"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/health-and-beauty",
+          "https://sharktank-egypt.com/ar/deals/health-and-beauty"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "piccup",
+      "status": "pending",
+      "notes": "",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Piccup",
+          "ar": "بيك أب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "abs-shipping",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Abs",
+          "ar": "إيه بي إس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/other"
+        ]
+      }
+    },
+    {
+      "id": "super-fanni",
+      "status": "partially_reviewed",
+      "notes": "Official LinkedIn added. superfny.com could not be reached.",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Super Fny",
+          "ar": "سوبر فني"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/education-",
+          "https://sharktank-egypt.com/ar/deals/education-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "cover-spore",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Cover Spore",
+          "ar": "كوفر سبور"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/automotive",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "zero-sugar",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Zero Sugar",
+          "ar": "زيرو شوجر"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "the-maker",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "The Maker",
+          "ar": "ذا ميكر"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/sports"
+        ]
+      }
+    },
+    {
+      "id": "gelato-on-the-wheel",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Gelato on Wheelz",
+          "ar": "جيلاتو أون ويلز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "becom",
+      "status": "partially_reviewed",
+      "notes": "Official website matches existing company handles; collection services and screenshot. Placeholder WhatsApp excluded.",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Becom",
+          "ar": "بيكُم"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "description",
+        "website",
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "masafa",
+      "status": "partially_reviewed",
+      "notes": "Website screenshot revealed unrelated music page; removed website and rejected screenshot. Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Masafa",
+          "ar": "مسافه"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "website",
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "naseej",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Naseej",
+          "ar": "بنسيچ"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      }
+    },
+    {
+      "id": "the-box",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "The Box",
+          "ar": "ذا بوكس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/entertainment-and-arts",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "horra",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Horra",
+          "ar": "حرة"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "pharmabill",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "bzour",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Bzour",
+          "ar": "بذور"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "yaya",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Yaya",
+          "ar": "يايا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "al-ahram-cookware",
+      "status": "pending",
+      "notes": "",
+      "missing": [],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "duaya",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Duaya",
+          "ar": "دوايــا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "curlit",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Curlit",
+          "ar": "كيرلت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/health-and-beauty",
+          "https://sharktank-egypt.com/ar/deals/health-and-beauty"
+        ]
+      }
+    },
+    {
+      "id": "carpetivity",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Carpetivity",
+          "ar": "كاربتيفيتي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      }
+    },
+    {
+      "id": "egike",
+      "status": "partially_reviewed",
+      "notes": "Reviewed official homepage social links; source appended. Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "EGike",
+          "ar": "إي جايك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "el-motaheda",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Al Motaheda",
+          "ar": "المتحدة"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "fit-and-fresh",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Fit & Fresh",
+          "ar": "فيت آند فريش"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "abdelaziz-elmasry",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Abd Elaziz El Masry",
+          "ar": "عبد العزيز المصري"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "el-fares",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Elfares",
+          "ar": "الفارس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "metadoc",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "MetaDoc",
+          "ar": "ميتا دوك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/medical-",
+          "https://sharktank-egypt.com/ar/deals/medical-"
+        ]
+      }
+    },
+    {
+      "id": "outdated",
+      "status": "partially_reviewed",
+      "notes": "Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Outdated",
+          "ar": "أوتديتد"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "right-home",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Right Home",
+          "ar": "رايت هوم"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "on-board",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "On Board",
+          "ar": "أون بورد"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "ostrich-land",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Ostrich Land",
+          "ar": "أوستريتش لاند"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "minimelts",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Mini Melts",
+          "ar": "ميني ميلتس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "halite-egypt",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Halite Egypt",
+          "ar": "هالايت ايجبت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "nuit-fragrances",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "tekton",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Tekton",
+          "ar": "تيكتون"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "target-egypt",
+      "status": "partially_reviewed",
+      "notes": "Targetech identity confirmed by official pitch caption, matching ask and security products; official website added.",
+      "missing": [
+        "socialLinks",
+        "services"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Targetech",
+          "ar": "تارجِتيك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "founders",
+        "website",
+        "sources",
+        "video",
+        "links"
+      ]
+    },
+    {
+      "id": "damj",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Dameg",
+          "ar": "دامج"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/medical-",
+          "https://sharktank-egypt.com/ar/deals/medical-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "sadu-designs",
+      "status": "pending",
+      "notes": "",
+      "missing": [],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Sadu Designs",
+          "ar": "سادو ديزاينز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/home-and-furniture",
+          "https://sharktank-egypt.com/ar/deals/home-and-furniture"
+        ]
+      }
+    },
+    {
+      "id": "zink",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Zink",
+          "ar": "زينك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "cippo",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Cippo",
+          "ar": "كيبو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "dxwand",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "DXwand",
+          "ar": "دي إكس واند"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "renile",
+      "status": "partially_reviewed",
+      "notes": "Official website matches company LinkedIn; site profiles added.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "ReNile",
+          "ar": "رينايل"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "website",
+        "sources",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "pavo",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Pavo",
+          "ar": "بافو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "whip-up",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Whip Up",
+          "ar": "ويب أب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "tab",
+      "status": "partially_reviewed",
+      "notes": "Tap website, app listings and founder identity. Removed unrelated personal source and undated app-rating claims. Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Tap",
+          "ar": "تاب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "founders",
+        "sources",
+        "services",
+        "pitch",
+        "about",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "euphoria-denims",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Euphoria Denims",
+          "ar": "يوفوريا دينم"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "the-baby-garage",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "The Baby Garage",
+          "ar": "ذا بيبي جاراج"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "irnova",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "ooaps",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Ooaaps",
+          "ar": "اووبس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "gabris-wear",
+      "status": "partially_reviewed",
+      "notes": "Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Gabri’s wear",
+          "ar": "جابرز وير"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "dentolize",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Dentolize",
+          "ar": "دنتولايز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "hawy",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Hawy",
+          "ar": "حاوي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "sparemart",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "SpareMart",
+          "ar": "سبيرمارت"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/automotive",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      }
+    },
+    {
+      "id": "monsters-table",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "The Monster's Table",
+          "ar": "ذا مونسترز تيبل"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "right-temp",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "RighTemp",
+          "ar": "رايت تيمب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      }
+    },
+    {
+      "id": "lakanto",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Lakanto",
+          "ar": "لاكانتو"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "robo-desk",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "RoboDesk",
+          "ar": "روبو ديسك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "anf",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "ANF",
+          "ar": "اي ان اف"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/manufacturing-",
+          "https://sharktank-egypt.com/ar/deals/manufacturing-"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "zuri",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Zuri",
+          "ar": "زوري"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "srv",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "SRV",
+          "ar": "إس آر ڤي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "roufys",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Roufy’s",
+          "ar": "روفيس"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "hoods",
+      "status": "partially_reviewed",
+      "notes": " Official catalog pitch video confirmed through YouTube metadata.",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Hoods",
+          "ar": "هودز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/e-commerce",
+          "https://sharktank-egypt.com/ar/deals/e-commerce"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "cleo-foods",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Cleo Foods",
+          "ar": "كليو فودز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "health-tag",
+      "status": "partially_reviewed",
+      "notes": "Official website and app listing; brand spelling, services, profiles and screenshot.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "‏Health Tag",
+          "ar": "هيلث تاج"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "video",
+        "links"
+      ]
+    },
+    {
+      "id": "cognify",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Cognify",
+          "ar": "كوجنيفاي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/apps",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "mandisa",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Mandisa",
+          "ar": "مانديسا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/health-and-beauty",
+          "https://sharktank-egypt.com/ar/deals/health-and-beauty"
+        ]
+      }
+    },
+    {
+      "id": "estealamy",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Estelamy",
+          "ar": "استعلامي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "snugglez",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Snugglez",
+          "ar": "سنجِلز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "zonta",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Zonta",
+          "ar": "زونتا"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "three-diner",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "3 Diner",
+          "ar": "ثري دينر"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      }
+    },
+    {
+      "id": "upfuse",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "UP FUSE",
+          "ar": "أب فيوز"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/recycling-",
+          "https://sharktank-egypt.com/ar/deals/recycling-"
+        ]
+      }
+    },
+    {
+      "id": "bubble-store",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Bubble store",
+          "ar": "بابـل ستور"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/recycling-",
+          "https://sharktank-egypt.com/ar/deals/recycling-"
+        ]
+      }
+    },
+    {
+      "id": "raseedi",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Raseedi",
+          "ar": "رصيدي"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fintech",
+          "https://sharktank-egypt.com/ar/deals/fintech"
+        ]
+      }
+    },
+    {
+      "id": "loop",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Loop",
+          "ar": "لوب"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/services",
+          "https://sharktank-egypt.com/ar/deals/services"
+        ]
+      }
+    },
+    {
+      "id": "amanleek",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "matches_official_catalog",
+        "catalogName": {
+          "en": "Amanleek",
+          "ar": "أمانليك"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/technology-",
+          "https://sharktank-egypt.com/ar/deals/technology-"
+        ]
+      }
+    },
+    {
+      "id": "breathe",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Breathe",
+          "ar": "بريث"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/fashion",
+          "https://sharktank-egypt.com/ar/deals/fashion"
+        ]
+      }
+    },
+    {
+      "id": "basq",
+      "status": "partially_reviewed",
+      "notes": "Reviewed official homepage social links; source appended.",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "spelling_difference_to_review",
+        "catalogName": {
+          "en": "Basq",
+          "ar": "باسق"
+        },
+        "sources": [
+          "https://sharktank-egypt.com/en/deals/food-and-beverage",
+          "https://sharktank-egypt.com/ar/deals/food-and-beverage"
+        ]
+      },
+      "changedFields": [
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "waymoure",
+      "status": "pending",
+      "notes": "",
+      "missing": [],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "khayai",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "tronsta",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "helpoo",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "mystery-bag",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "bayt-el-saad",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "carvizita",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "tayar",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "game-guru",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "good-steel-chute",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "kaynuna",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "pure-butters",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "goldabikia",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "mavericks",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "baby-star",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "haxel",
+      "status": "pending",
+      "notes": "",
+      "missing": [],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "yalla-hagz",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "fino",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "ketolicious",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "somaia-aboelezz",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "churreto",
+      "status": "partially_reviewed",
+      "notes": "Churrito English spelling confirmed by pitch coverage and retailer listing. Published pitch still saved with attribution.",
+      "missing": [
+        "website",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "pitch",
+        "links"
+      ]
+    },
+    {
+      "id": "nile-naturals",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "kick-snacks",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "think-tree",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "runners-delivery",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "eisac-automation",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "the-mat-homes",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "camli-beauty",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "nutrifits",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "nno-home",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "re-blocks",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "pencilight",
+      "status": "partially_reviewed",
+      "notes": "Reviewed official homepage social links; source appended.",
+      "missing": [],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "chug-up",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "plume",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "lil-kitchen",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "the-nines",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "gorilla-fits",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "wrap-and-roll",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "lamarckii",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "callista",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "didos-snacks",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "frupops",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "sphinx-safety",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "stunning",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "jouzoor",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "havana-socks",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "kak-squad",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "boka-home",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "og-bees",
+      "status": "partially_reviewed",
+      "notes": "Official website and LinkedIn match UGC business. Official pitch clip added.",
+      "missing": [
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "website",
+        "sources",
+        "links",
+        "video"
+      ]
+    },
+    {
+      "id": "iron-mist",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "bohome",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "drip-yourself",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "founders"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "amis-bakery",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "naydin",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "founders",
+        "services",
+        "pitch"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "aftah-topic",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "connecto",
+      "status": "pending",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      }
+    },
+    {
+      "id": "olympic-sports",
+      "status": "partially_reviewed",
+      "notes": "",
+      "missing": [
+        "website",
+        "socialLinks",
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "video"
+      ]
+    },
+    {
+      "id": "aqar-exit",
+      "status": "partially_reviewed",
+      "notes": "Official website/app spelling عقار إكزت, app links, WhatsApp and screenshot.",
+      "missing": [
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "links"
+      ]
+    },
+    {
+      "id": "solar-sector",
+      "status": "partially_reviewed",
+      "notes": "Official website and LinkedIn; brand spelling, services, app, contact and screenshot.",
+      "missing": [],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "name",
+        "description",
+        "website",
+        "sources",
+        "links",
+        "services"
+      ]
+    },
+    {
+      "id": "godly-pride",
+      "status": "partially_reviewed",
+      "notes": "Official site social links and screenshot.",
+      "missing": [
+        "services"
+      ],
+      "nameReview": {
+        "status": "not_matched_to_catalog"
+      },
+      "changedFields": [
+        "sources",
+        "links"
+      ]
+    }
+  ],
+  "nameComparisonSummary": {
+    "matches_official_catalog": 81,
+    "spelling_difference_to_review": 63,
+    "not_matched_to_catalog": 76
+  },
+  "currentCoverage": {
+    "startups": 220,
+    "missingWebsites": 142,
+    "missingSocialLinks": 62,
+    "withoutScreenshotOrVideo": 0
+  }
+}

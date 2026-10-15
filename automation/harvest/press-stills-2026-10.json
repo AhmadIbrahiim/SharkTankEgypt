@@ -1,0 +1,20 @@
+{
+  "note": "Published Shark Tank pitch stills, visually checked against the cited business article; these are not website captures.",
+  "images": [
+    {
+      "id": "habu-arts",
+      "source": "https://www.youm7.com/6038891",
+      "image": "https://img.youm7.com/xlarge/202301081134483448.jpg"
+    },
+    {
+      "id": "tam-leather",
+      "source": "https://www.youm7.com/6088556",
+      "image": "https://img.youm7.com/xlarge/20230218100047047.jpg"
+    },
+    {
+      "id": "churreto",
+      "source": "https://www.youm7.com/7212967",
+      "image": "https://img.youm7.com/xlarge/202511261112391239.jpg"
+    }
+  ]
+}
