@@ -4,7 +4,7 @@
     "founders": 194,
     "bios": 194,
     "photos": 191,
-    "withCompanyLinks": 189,
+    "withCompanyLinks": 190,
     "missingBios": 0,
     "missingPhotos": 3
   },
@@ -2348,7 +2348,7 @@
       "bio": true,
       "photo": "/people/mostafa-wahdan.jpg",
       "personalLinks": {},
-      "companyLinksAvailable": false,
+      "companyLinksAvailable": true,
       "sources": [
         "https://www.youm7.com/6111712",
         "https://www.youm7.com/6111663"
