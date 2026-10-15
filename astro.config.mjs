@@ -31,6 +31,15 @@ export default defineConfig({
   // Removed records keep their old URLs working.
   // A product of Gelato On Wheelz, not a separate pitch (youm7.com/6486350). Astro does not prefix base on targets.
   redirects: {
+    '/founders/shaimaa-ahmed': `${base}/founders/shaimaa-mohamed/`,
+    '/ar/founders/shaimaa-ahmed': `${base}/founders/shaimaa-mohamed/`,
+    '/en/founders/shaimaa-ahmed': `${base}/en/founders/shaimaa-mohamed/`,
+    '/founders/tamer-shalaby': `${base}/founders/tamiran-shalaby/`,
+    '/ar/founders/tamer-shalaby': `${base}/founders/tamiran-shalaby/`,
+    '/en/founders/tamer-shalaby': `${base}/en/founders/tamiran-shalaby/`,
+    '/founders/refaie-mohamed': `${base}/founders/rafeek-mohamed/`,
+    '/ar/founders/refaie-mohamed': `${base}/founders/rafeek-mohamed/`,
+    '/en/founders/refaie-mohamed': `${base}/en/founders/rafeek-mohamed/`,
     '/brazilian-picole': `${base}/gelato-on-the-wheel/`,
     '/ar/brazilian-picole': `${base}/gelato-on-the-wheel/`,
     '/en/brazilian-picole': `${base}/en/gelato-on-the-wheel/`,

@@ -738,7 +738,7 @@
     },
     "category": "Health",
     "founders": [
-      "Shaimaa Ahmed"
+      "Shaimaa Mohamed"
     ],
     "website": null,
     "ask": {
@@ -1079,7 +1079,7 @@
     "founders": [
       "Hisham El Banna"
     ],
-    "website": null,
+    "website": "https://agrcology.com/",
     "ask": {
       "amountEGP": 5000000,
       "equityPct": 25
@@ -1099,7 +1099,9 @@
       "https://sharktank-egypt.com/en/deals/technology-",
       "https://www.dostor.org/4296282",
       "https://www.elwatannews.com/news/details/6420382",
-      "https://www.youtube.com/watch?v=C8ajkbeYNbw"
+      "https://www.youtube.com/watch?v=C8ajkbeYNbw",
+      "https://www.linkedin.com/company/agrcology/",
+      "https://agrcology.com/"
     ],
     "checked": "2026-10-10",
     "video": "C8ajkbeYNbw",
@@ -1128,6 +1130,9 @@
     "pitch": {
       "en": "Hisham El Banna asked for EGP 5 million for 25% of Agrcology to scale his smart collar for monitoring dairy cows. The sharks spotted an error in his numbers during the pitch, which hurt his position. He still closed a deal with Mohamed Farouk for EGP 5 million, but for 50% equity, double the stake he first offered.",
       "ar": "طلب هشام البنا 5 ملايين جنيه مقابل 25% من أجركولوجي للتوسع في طوقه الذكي لمراقبة أبقار الألبان. اكتشف المستثمرون خطأً في أرقامه أثناء العرض، مما أضعف موقفه. ومع ذلك أبرم صفقة مع محمد فاروق مقابل 5 ملايين جنيه، لكن بحصة 50%، أي ضعف الحصة التي عرضها في البداية."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/company/agrcology/"
     }
   },
   {
@@ -1761,7 +1766,7 @@
     "founders": [
       "Sameh Nabil"
     ],
-    "website": null,
+    "website": "https://choroida.com/",
     "ask": {
       "amountEGP": 8000000,
       "equityPct": 5
@@ -1771,7 +1776,9 @@
       "https://www.elwatannews.com/news/details/6437030",
       "https://sharktank-egypt.com/en/deals/technology-",
       "https://www.youtube.com/watch?v=N8z4_2Nu3HQ",
-      "https://www.dostor.org/4309691"
+      "https://www.dostor.org/4309691",
+      "https://www.facebook.com/Choroida.eg/",
+      "https://choroida.com/"
     ],
     "checked": "2026-10-10",
     "video": "N8z4_2Nu3HQ",
@@ -1814,6 +1821,9 @@
           "دخل المؤسس سامح نبيل في جدال مع هيلدا على الهواء"
         ]
       }
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/Choroida.eg/"
     }
   },
   {
@@ -2009,7 +2019,9 @@
       "https://www.youm7.com/6088578",
       "https://www.dostor.org/4316979",
       "https://sharktank-egypt.com/en/deals/home-and-furniture",
-      "https://www.youtube.com/watch?v=UZ8NIEzgmOI"
+      "https://www.youtube.com/watch?v=UZ8NIEzgmOI",
+      "https://www.instagram.com/creativeartegypt/",
+      "https://www.facebook.com/creative.art.alex/"
     ],
     "checked": "2026-10-10",
     "services": {
@@ -2038,7 +2050,11 @@
       "en": "Founder Hany Bahaa brought Creative Art to Shark Tank Egypt in Season 1, Episode 7, presenting the brand's water-resistant designer tables. The ask, the sharks' reactions and the outcome were not found in available sources, and no deal is on record.",
       "ar": "قدّم المؤسس هاني بهاء علامة كرييتف آرت في الحلقة السابعة من الموسم الأول لبرنامج شارك تانك مصر، وعرض طاولات العلامة المصممة والمقاومة للماء. ولم تتوفر في المصادر المتاحة تفاصيل المبلغ المطلوب أو ردود فعل المستثمرين أو النتيجة، ولا توجد صفقة مسجلة."
     },
-    "video": "UZ8NIEzgmOI"
+    "video": "UZ8NIEzgmOI",
+    "links": {
+      "instagram": "https://www.instagram.com/creativeartegypt/",
+      "facebook": "https://www.facebook.com/creative.art.alex/"
+    }
   },
   {
     "id": "chef-me",
@@ -2118,7 +2134,7 @@
     "category": "Retail",
     "founders": [
       "Sherif Zahran",
-      "Tamer Shalaby"
+      "Tamiran Shalaby"
     ],
     "website": "https://sportypro.com/",
     "ask": {
@@ -2731,7 +2747,8 @@
       "https://www.gistnetwork.org/zeroprime-technologies",
       "https://www.egypttoday.com/Article/1/148014/New-Administrative-Capital-welcomes-first-Reverse-Vending-Machines",
       "https://sharktank-egypt.com/en/deals/services",
-      "https://www.youtube.com/watch?v=RCMvac6hGXw"
+      "https://www.youtube.com/watch?v=RCMvac6hGXw",
+      "https://www.facebook.com/zeroprime.tech/"
     ],
     "checked": "2026-10-10",
     "about": {
@@ -2807,7 +2824,10 @@
       "en": "Islam El Refaey brought CanBank to the first season of Shark Tank Egypt in 2023, asking for EGP 1.5 million for 5% of the company. He pitched it as a way to grow recycling in Egypt by paying ordinary people back for their bottles and cans, an idea that came from watching informal waste collectors earn a living by sorting rubbish. He left the tank without a deal.",
       "ar": "قدّم إسلام الرفاعي مشروع كان بنك في الموسم الأول من برنامج شارك تانك مصر عام 2023، وطلب 1.5 مليون جنيه مقابل 5% من الشركة. عرض فكرته كوسيلة لنشر ثقافة إعادة التدوير في مصر من خلال مكافأة الناس على الزجاجات والعلب التي يعيدونها، وهي فكرة استلهمها من مشاهدة جامعي القمامة يكسبون رزقهم من فرز النفايات. وغادر البرنامج دون الحصول على صفقة."
     },
-    "video": "RCMvac6hGXw"
+    "video": "RCMvac6hGXw",
+    "links": {
+      "facebook": "https://www.facebook.com/zeroprime.tech/"
+    }
   },
   {
     "id": "tomatiki",
@@ -3890,7 +3910,8 @@
       "https://www.dostor.org/4551879",
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://scoopempire.com/round-up-of-the-coolest-local-egyptian-brands-standing-in-solidarity-with-palestine",
-      "https://www.youtube.com/watch?v=y_YsTRv6vxQ"
+      "https://www.youtube.com/watch?v=y_YsTRv6vxQ",
+      "https://www.instagram.com/lelu_storee/"
     ],
     "checked": "2026-10-10",
     "services": {
@@ -3954,7 +3975,10 @@
         ]
       }
     },
-    "video": "y_YsTRv6vxQ"
+    "video": "y_YsTRv6vxQ",
+    "links": {
+      "instagram": "https://www.instagram.com/lelu_storee/"
+    }
   },
   {
     "id": "country-house",
@@ -4456,13 +4480,19 @@
       "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
       "https://www.dostor.org/4571301",
       "https://www.youtube.com/watch?v=dGLyN2qnSqc",
-      "https://www.youtube.com/watch?v=FrLrSZoVcWs"
+      "https://www.youtube.com/watch?v=FrLrSZoVcWs",
+      "https://www.facebook.com/SoccerHubeg/",
+      "https://www.instagram.com/soccerhubeg/"
     ],
     "checked": "2026-10-10",
     "video": "dGLyN2qnSqc",
     "pitch": {
       "en": "Founder Mohamed Said pitched Soccer Hub, his football-simulation game concept, in Season 2 of Shark Tank Egypt. He asked for EGP 2,000,000 in exchange for 20% of the company. He left the tank without a deal.",
       "ar": "عرض المؤسس محمد سعيد مشروع سوكر هب، القائم على لعبة تحاكي كرة القدم، في الموسم الثاني من برنامج شارك تانك مصر. وطلب مليوني جنيه مصري مقابل 20% من الشركة، لكنه غادر البرنامج دون الحصول على صفقة."
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/SoccerHubeg/",
+      "instagram": "https://www.instagram.com/soccerhubeg/"
     }
   },
   {
@@ -5030,7 +5060,7 @@
     "founders": [
       "Mohamed Samir Abolenin"
     ],
-    "website": null,
+    "website": "https://interact-labs.com/",
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -5050,7 +5080,10 @@
       "https://almalnews.com/1135495/«إنتر-أكت-لابز»-توقع-شراكة-مع-«العربية/",
       "https://www.briter.co/companies/interact-labs",
       "https://iecc.nu.edu.eg/services/university-industry-collaboration/tact/",
-      "https://www.tiktok.com/@sharktank.egypt/video/7321391122981391622"
+      "https://www.tiktok.com/@sharktank.egypt/video/7321391122981391622",
+      "https://interact-labs.com/",
+      "https://www.facebook.com/TACTdevice/",
+      "https://www.instagram.com/interactlabs_/"
     ],
     "checked": "2026-10-11",
     "video": "B5Sm3beezFI",
@@ -5125,6 +5158,10 @@
           "مديرها التنفيذي ضمن نهائيي تحدي الابتكار MENA 2020"
         ]
       }
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/TACTdevice/",
+      "instagram": "https://www.instagram.com/interactlabs_/"
     }
   },
   {
@@ -5161,7 +5198,9 @@
       "https://cairoscene.com/Business/StartupScene-Madinet-Masr-Present-Tank-Tales-Episode-2-Zat",
       "https://thestartupscene.me/MenaEcosystems/StartupScene-Madinet-Masr-Present-Tank-Tales-Episode-2-Zat",
       "https://sharktank-egypt.com/en/deals/health-and-beauty",
-      "https://www.youtube.com/watch?v=MNvPnsGcDBo"
+      "https://www.youtube.com/watch?v=MNvPnsGcDBo",
+      "https://www.instagram.com/zatcare/",
+      "https://www.facebook.com/zatcare/"
     ],
     "checked": "2026-10-10",
     "services": {
@@ -5210,7 +5249,11 @@
         ]
       }
     },
-    "video": "MNvPnsGcDBo"
+    "video": "MNvPnsGcDBo",
+    "links": {
+      "instagram": "https://www.instagram.com/zatcare/",
+      "facebook": "https://www.facebook.com/zatcare/"
+    }
   },
   {
     "id": "fatties",
@@ -5249,7 +5292,8 @@
       "https://sceneeats.com/Spots/The-Most-Dough-licious-Donuts-in-Egypt-A-Scene-Eats-Guide",
       "https://cairoscene.com/Eats/Fati-s-Bakery-is-Now-Officially-Open-at-New-Cairo-s-U-Venues",
       "https://cairoscene.com/Eats/The-Most-Dough-licious-Donuts-in-Egypt-A-Scene-Eats-Guide",
-      "https://www.slanted.de/fatis/"
+      "https://www.slanted.de/fatis/",
+      "https://www.instagram.com/fatis.eg/"
     ],
     "checked": "2026-10-12",
     "video": "DQ65rjFpnes",
@@ -5317,6 +5361,9 @@
     "pitch": {
       "en": "Siblings Fatma and Abdelrahman Youssef pitched Fati's in Season 2, asking for EGP 3 million for 10% of the business, which valued it at EGP 30 million. They told the story of a doughnut brand that grew from a home stove to a two-floor facility and 100,000 doughnuts sold in 2023. No public source confirms the outcome yet.",
       "ar": "قدّم الشقيقان فاطمة وعبد الرحمن يوسف علامة فاتيس في الموسم الثاني، وطلبا 3 ملايين جنيه مقابل 10% من الشركة، أي بتقييم 30 مليون جنيه. وعرضا قصة علامة دونتس بدأت على موقد منزلي حتى وصلت إلى منشأة من طابقين وبيع 100 ألف قطعة في 2023. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/fatis.eg/"
     }
   },
   {
@@ -5521,7 +5568,7 @@
     },
     "category": "Services",
     "founders": [
-      "Refaie Mohamed"
+      "Rafeek Mohamed"
     ],
     "website": "https://sal7lyy.net/",
     "ask": {
@@ -5790,14 +5837,20 @@
       "https://www.youtube.com/watch?v=-iuKvlS_LLw",
       "https://www.tiktok.com/@sharktank.egypt/video/7330393995417373958",
       "https://sharktank-egypt.com/en/deals/health-and-beauty",
-      "https://www.youtube.com/watch?v=4AAcOSexYTg"
+      "https://www.youtube.com/watch?v=4AAcOSexYTg",
+      "https://www.instagram.com/eracare21/",
+      "https://www.facebook.com/Eracaresohag/"
     ],
     "checked": "2026-10-12",
     "pitch": {
       "en": "Erada Fattah brought Era Care to Shark Tank Egypt in season 2, presenting her therapeutic skincare and cosmetics line. She told the sharks how she launched the brand from Upper Egypt with less than EGP 200 to chase a childhood dream, and her story impressed them.",
       "ar": "قدّمت إرادة فتاح علامة إيرا كير في الموسم الثاني من برنامج شارك تانك مصر، وعرضت منتجاتها العلاجية للعناية بالبشرة ومستحضرات التجميل. وروت للمستثمرين كيف أطلقت علامتها من صعيد مصر بأقل من مئتي جنيه سعيًا وراء حلم الطفولة، فنالت قصتها إعجابهم."
     },
-    "video": "4AAcOSexYTg"
+    "video": "4AAcOSexYTg",
+    "links": {
+      "instagram": "https://www.instagram.com/eracare21/",
+      "facebook": "https://www.facebook.com/Eracaresohag/"
+    }
   },
   {
     "id": "piccup",
@@ -6100,7 +6153,9 @@
       "https://www.youtube.com/watch?v=GEs2mAWUxSQ",
       "https://www.youtube.com/watch?v=v29urrjjCFE",
       "https://www.youtube.com/watch?v=oxn2lvCyvwc",
-      "https://www.youtube.com/watch?v=s-qOTWwq9Fs"
+      "https://www.youtube.com/watch?v=s-qOTWwq9Fs",
+      "https://www.facebook.com/Zerosugar.eg/",
+      "https://www.instagram.com/zerosugar.eg/"
     ],
     "checked": "2026-10-10",
     "video": "GEs2mAWUxSQ",
@@ -6137,6 +6192,10 @@
     "pitch": {
       "en": "Founders Norhan Salah and Mohamed Essam pitched their sugar-free ice cream and traditional sweets in Season 2, Episode 17 of Shark Tank Egypt. They asked for EGP 4 million for 10% of the company. They closed a deal with Ahmed Tarek Khalil and Mohamed Farouk, but the final terms have not been reported.",
       "ar": "عرض المؤسسان نورهان صلاح ومحمد عصام الآيس كريم والحلويات التقليدية الخالية من السكر في الحلقة 17 من الموسم الثاني من شارك تانك مصر. وطلبا 4 ملايين جنيه مقابل 10% من الشركة. وأبرما صفقة مع أحمد طارق خليل ومحمد فاروق، لكن الشروط النهائية للصفقة لم تُعلن."
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/Zerosugar.eg/",
+      "instagram": "https://www.instagram.com/zerosugar.eg/"
     }
   },
   {
@@ -7237,7 +7296,7 @@
     "founders": [
       "Youssef El-Masry"
     ],
-    "website": null,
+    "website": "https://www.aelmasry.com/",
     "ask": {
       "amountEGP": 5000000,
       "equityPct": 20
@@ -7254,7 +7313,8 @@
       "https://www.youm7.com/6760563",
       "https://www.soutalomma.com/Article/1136827/",
       "https://www.youtube.com/watch?v=hnSq2m1MQac",
-      "https://www.tiktok.com/@sharktank.egypt/video/7433441987052719376"
+      "https://www.tiktok.com/@sharktank.egypt/video/7433441987052719376",
+      "https://www.aelmasry.com/"
     ],
     "checked": "2026-10-11",
     "video": "hnSq2m1MQac"
@@ -8845,7 +8905,7 @@
     "founders": [
       "Mohamed Amer"
     ],
-    "website": null,
+    "website": "https://lrnova.com/",
     "ask": {
       "amountEGP": 15000000,
       "equityPct": 10
@@ -8866,7 +8926,8 @@
       "https://gate.ahram.org.eg/News/5288048.aspx",
       "https://www.itedgenews.africa/edventures-invests-in-ai-startup-lrnova-to-transform-digital-learning-content-creation/",
       "https://startuplist.africa/startup/lrnova",
-      "https://www.youm7.com/6824402"
+      "https://www.youm7.com/6824402",
+      "https://lrnova.com/"
     ],
     "checked": "2026-10-10",
     "video": "43DrM3Ca2m0",
@@ -8960,7 +9021,7 @@
     "founders": [
       "Moamen Ragab"
     ],
-    "website": null,
+    "website": "https://ooaaps.com/",
     "ask": {
       "amountEGP": 7000000,
       "equityPct": 20
@@ -8970,7 +9031,10 @@
       "https://www.youm7.com/6824424",
       "https://www.youm7.com/6823046",
       "https://www.youtube.com/watch?v=_RSqERON5xY",
-      "https://enterpriseam.com/logistics/2025/09/11/egypts-ooaaps-eyes-usd-2-5-mn-in-funding-by-1h-2026/"
+      "https://enterpriseam.com/logistics/2025/09/11/egypts-ooaaps-eyes-usd-2-5-mn-in-funding-by-1h-2026/",
+      "https://www.facebook.com/ooaapssoftware/",
+      "https://www.linkedin.com/company/ooaaps/",
+      "https://ooaaps.com/"
     ],
     "checked": "2026-10-10",
     "video": "_RSqERON5xY",
@@ -9042,6 +9106,10 @@
           "تستهدف تمويلًا بنحو 2.5 مليون دولار بحلول النصف الأول من 2026"
         ]
       }
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/ooaapssoftware/",
+      "linkedin": "https://www.linkedin.com/company/ooaaps/"
     }
   },
   {
@@ -9249,7 +9317,7 @@
       "Abdullah",
       "Alex"
     ],
-    "website": null,
+    "website": "https://hawy-eg.com/",
     "ask": {
       "amountEGP": 100000,
       "equityPct": 20
@@ -9266,7 +9334,9 @@
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://www.youtube.com/shorts/xNapynx_Khw",
       "https://www.youtube.com/watch?v=kLFlZ3Bhu6Q",
-      "https://filgamaa.com/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%ad%d8%a7%d9%88%d9%8a-%d8%a5%d9%8a%d9%87-%d8%a7%d9%84%d9%84%d9%8a-%d8%a8%d9%8a%d8%a8%d9%8a%d8%b9%d9%88%d9%87-%d8%a3%d8%b7%d9%81%d8%a7%d9%84-%d8%a7%d9%84shark-%d9%8a/"
+      "https://filgamaa.com/%d9%85%d8%b4%d8%b1%d9%88%d8%b9-%d8%ad%d8%a7%d9%88%d9%8a-%d8%a5%d9%8a%d9%87-%d8%a7%d9%84%d9%84%d9%8a-%d8%a8%d9%8a%d8%a8%d9%8a%d8%b9%d9%88%d9%87-%d8%a3%d8%b7%d9%81%d8%a7%d9%84-%d8%a7%d9%84shark-%d9%8a/",
+      "https://www.instagram.com/hawy.eg/",
+      "https://hawy-eg.com/"
     ],
     "checked": "2026-10-10",
     "video": "xNapynx_Khw",
@@ -9321,6 +9391,9 @@
           "انتشر بقوة على مواقع التواصل بعد عرض الحلقة"
         ]
       }
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/hawy.eg/"
     }
   },
   {
@@ -10255,7 +10328,8 @@
       "https://www.youtube.com/watch?v=GEaxnzldntk",
       "https://app.dealroom.co/companies/mandisa_naturals",
       "https://makercenter.wadiz.kr/en/board/card/260",
-      "https://sharktankarabi.com/2153/"
+      "https://sharktankarabi.com/2153/",
+      "https://www.instagram.com/mandisa_eg/"
     ],
     "checked": "2026-10-11",
     "video": "K6C26xq56fI",
@@ -10330,6 +10404,9 @@
     "pitch": {
       "en": "Mandisa Naturals pitched its natural Egyptian loofahs, towels and soaps, which it sources from Siwa and Sohag and exports to Korea and Japan. The founder told the story of discovering Korean demand through his wife and stressed that the loofahs are not bleached with chlorine. The sharks debated how much competition the brand faces and argued that the state should help promote Egyptian-made goods abroad.",
       "ar": "قدّمت مانديسا ناتشورالز منتجاتها من الليف والمناشف والصابون الطبيعي، التي تأتي من سيوة وسوهاج وتُصدَّر إلى كوريا واليابان. روى المؤسس كيف اكتشف الطلب الكوري على الليفة من خلال زوجته، وأكد أن منتجاته لا تُبيَّض بالكلور. ناقش الشركاء حجم المنافسة التي تواجهها العلامة، ورأوا أن الدولة يجب أن تدعم الترويج للمنتجات المصرية في الخارج."
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/mandisa_eg/"
     }
   },
   {
@@ -11517,7 +11594,9 @@
       "https://www.youtube.com/watch?v=5r2c_UTeS-E",
       "https://www.youtube.com/watch?v=Hud3oFFJW38",
       "https://scenehome.com/Furniture-Accessories/May-Elghandour-s-Love-Story-With-Light-Colour-Glass",
-      "https://www.youm7.com/7168215"
+      "https://www.youm7.com/7168215",
+      "https://www.instagram.com/beit.el.saad/",
+      "https://www.facebook.com/beitelsaad/"
     ],
     "checked": "2026-10-12",
     "video": "5r2c_UTeS-E",
@@ -11584,6 +11663,10 @@
           "تنافس القروش الخمسة جميعًا على الاستثمار في شارك تانك مصر"
         ]
       }
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/beit.el.saad/",
+      "facebook": "https://www.facebook.com/beitelsaad/"
     }
   },
   {
@@ -11620,7 +11703,8 @@
       "https://sharktankarabi.com/3154/",
       "https://www.youm7.com/story/2025/10/22/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-CarViseta-%D9%84%D9%80-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%86%D9%82%D8%AF%D9%85-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%85%D8%AA%D9%86%D9%82%D9%84%D8%A9/7168172",
       "https://www.youm7.com/story/2025/12/17/%C2%AB%D9%83%D8%A7%D8%B1-%D9%81%D9%8A%D8%B2%D9%8A%D8%AA%D8%A7%C2%BB-%D8%AA%D8%B7%D9%84%D8%A8-3-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%C2%AB%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83%C2%BB-%D9%84%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1/7237946",
-      "https://www.youtube.com/watch?v=gt_EJdt-1hU"
+      "https://www.youtube.com/watch?v=gt_EJdt-1hU",
+      "https://www.facebook.com/Carviseta/"
     ],
     "checked": "2026-10-12",
     "video": "gt_EJdt-1hU",
@@ -11649,6 +11733,9 @@
     "pitch": {
       "en": "In Season 4, Episode 3, founder Gamal Badr pitched CarVizita as a way to bring car maintenance to the customer's doorstep through an app. He asked for EGP 3 million in exchange for 10% of the company, which valued it at EGP 30 million. No public source confirms the outcome yet.",
       "ar": "في الحلقة الثالثة من الموسم الرابع، عرض المؤسس جمال بدر مشروع كار فيزيتا باعتباره وسيلة لتوصيل صيانة السيارات إلى باب العميل عبر تطبيق. وطلب 3 ملايين جنيه مقابل 10% من الشركة، أي بتقييم 30 مليون جنيه. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/Carviseta/"
     }
   },
   {
@@ -12094,7 +12181,8 @@
       "https://www.youtube.com/watch?v=ziok9Nxm7F0",
       "https://nu.edu.eg/nilepreneurs-incubation-pillar/creative-incubator-funnel",
       "https://nu.edu.eg/creative-incubator-funnel-0",
-      "https://www.novinky.cz/clanek/muzi-dva-nadsenci-pretvareji-obycejne-predmety-na-umelecka-dila-40045638"
+      "https://www.novinky.cz/clanek/muzi-dva-nadsenci-pretvareji-obycejne-predmety-na-umelecka-dila-40045638",
+      "https://www.linkedin.com/company/mavericks-nr/"
     ],
     "checked": "2026-10-10",
     "video": "ziok9Nxm7F0",
@@ -12155,6 +12243,9 @@
     "pitch": {
       "en": "Founder Maged Yehia brought Mavericks to Shark Tank Egypt in Season 4, Episode 6, pitching a studio that turns scrap metal into lighting, furniture and art. He asked for EGP 1,000,000 in exchange for 10% equity, valuing the business at EGP 10 million. No public source confirms the outcome yet.",
       "ar": "قدّم المؤسس ماجد يحيى مشروع مافريكس في الحلقة السادسة من الموسم الرابع لبرنامج شارك تانك مصر، وعرض استوديو يحوّل خردة المعادن إلى وحدات إضاءة وأثاث وقطع فنية. وطلب مليون جنيه مصري مقابل 10% من الشركة، أي بتقييم 10 ملايين جنيه. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/company/mavericks-nr/"
     }
   },
   {
@@ -12701,7 +12792,12 @@
       "ar": "قدّمت المؤسِّسة نورهان هاني علامتها تشوريتو المتخصصة في حلوى التشوروز الإسبانية في الحلقة الثامنة من الموسم الرابع لبرنامج شارك تانك مصر. وطلبت من المستثمرين 3 ملايين جنيه مصري لتمويل توسّع العلامة. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
     },
     "links": {
-      "other": [{"name": "Talabat", "url": "https://www.talabat.com/egypt/churrito"}]
+      "other": [
+        {
+          "name": "Talabat",
+          "url": "https://www.talabat.com/egypt/churrito"
+        }
+      ]
     }
   },
   {
@@ -12900,7 +12996,9 @@
       "https://www.youm7.com/story/2025/12/3/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B9%D8%AF%D9%84%D9%8A-%D9%8A%D8%AE%D8%B7%D9%81-%D9%82%D9%84%D9%88%D8%A8-%D8%A7%D9%84%D8%B4%D8%A7%D8%B1%D9%83%D8%B3-%D8%A8%D9%82%D8%B5%D8%A9-%D8%B9%D9%85%D8%B1-%D9%88%D9%8A%D9%82%D8%AA%D9%86%D8%B5-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D9%8B%D8%A7-%D9%85%D9%86/7221327",
       "https://www.youtube.com/watch?v=dkh90lT6zII",
       "https://edtechimpact.com/products/online-chess-training-for-kids,-to-develop-their-characters/",
-      "https://www.youm7.com/7221327"
+      "https://www.youm7.com/7221327",
+      "https://www.instagram.com/thinktree_chess/",
+      "https://www.linkedin.com/company/thinktree146/"
     ],
     "checked": "2026-10-10",
     "video": "dkh90lT6zII",
@@ -12964,6 +13062,10 @@
     "pitch": {
       "en": "Ahmed El-Adly pitched ThinkTree on Season 4 of Shark Tank Egypt. He presented chess as a way to build children's thinking skills and character, and showed the platform's live online classes and its students from several countries. He closed a deal with Mohamed Mansour and Dina Ghabbour for EGP 2 million in exchange for 30% of the company.",
       "ar": "قدّم أحمد العدلي مشروع ثينك تري في الموسم الرابع من برنامج شارك تانك مصر. وعرض الشطرنج وسيلةً لتنمية مهارات التفكير لدى الأطفال وبناء شخصياتهم، واستعرض الحصص المباشرة عبر الإنترنت وطلاب المنصة من عدة دول. وأغلق صفقة مع محمد منصور ودينا غبور بقيمة مليوني جنيه مقابل 30% من الشركة."
+    },
+    "links": {
+      "instagram": "https://www.instagram.com/thinktree_chess/",
+      "linkedin": "https://www.linkedin.com/company/thinktree146/"
     }
   },
   {
@@ -13931,7 +14033,7 @@
     "founders": [
       "Mohamed Hamad"
     ],
-    "website": null,
+    "website": "https://gorillaoutfit.com/",
     "ask": {
       "amountEGP": null,
       "equityPct": null
@@ -13947,7 +14049,8 @@
     "sources": [
       "https://www.youtube.com/watch?v=KrGjoVJzQuI",
       "https://www.youtube.com/watch?v=TLuMEzkj18A",
-      "https://www.youtube.com/watch?v=1ToJvdjwrEY"
+      "https://www.youtube.com/watch?v=1ToJvdjwrEY",
+      "https://gorillaoutfit.com/"
     ],
     "checked": "2026-10-10",
     "video": "TLuMEzkj18A",
@@ -15050,10 +15153,16 @@
     "deal": null,
     "sources": [
       "https://sharktankarabi.com/3632/",
-      "https://www.youtube.com/watch?v=W-O4_C9Qzgo"
+      "https://www.youtube.com/watch?v=W-O4_C9Qzgo",
+      "https://www.instagram.com/amisbakery_/",
+      "https://www.facebook.com/Amisbakery.eg/"
     ],
     "checked": "2026-10-10",
-    "video": "W-O4_C9Qzgo"
+    "video": "W-O4_C9Qzgo",
+    "links": {
+      "instagram": "https://www.instagram.com/amisbakery_/",
+      "facebook": "https://www.facebook.com/Amisbakery.eg/"
+    }
   },
   {
     "id": "naydin",
@@ -15146,7 +15255,7 @@
     "founders": [
       "Mahmoud Abu Harga"
     ],
-    "website": null,
+    "website": "https://www.connecto-me.com/",
     "ask": {
       "amountEGP": 5000000,
       "equityPct": 10
@@ -15155,7 +15264,9 @@
     "sources": [
       "https://arabic.pressbee.net/show11036386.html",
       "https://www.youm7.com/story/2026/10/7/%C2%AB%D9%83%D9%88%D9%86%D9%83%D8%AA%D9%88%C2%BB-%D8%AA%D8%AC%D9%85%D8%B9-%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D9%83%D8%A7%D9%86/7571719",
-      "https://www.youtube.com/watch?v=cjOIbCLcDKY"
+      "https://www.youtube.com/watch?v=cjOIbCLcDKY",
+      "https://www.facebook.com/connecto.business/",
+      "https://www.connecto-me.com/"
     ],
     "checked": "2026-10-10",
     "video": "cjOIbCLcDKY",
@@ -15198,6 +15309,9 @@
           "ظهرت في الحلقة الأولى من الموسم الخامس لشارك تانك مصر"
         ]
       }
+    },
+    "links": {
+      "facebook": "https://www.facebook.com/connecto.business/"
     }
   },
   {

@@ -18,6 +18,7 @@ const byId = new Map(founders.map((f) => [f.id, f]));
 const { website, ...links } = (p.links ?? {}) as Record<string, string>;
 const title = p.title?.[lang] ?? p.startups.map((x) => x.name[lang]).join(lang === 'ar' ? '، ' : ', ');
 const ar = lang === 'ar';
+const sources = [...new Set([...(p.sources ?? []), ...p.startups.flatMap((y) => y.sources ?? [])])];
 // The pitch this founder is best known for: the first one with a known outcome, else the first.
 const x = p.startups.find((y) => y.deal?.made != null) ?? p.startups[0];
 const outcome = x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no' : 'unk';
@@ -99,7 +100,17 @@ const jsonld = {
             {partners.length > 0 && <div><dt>{s.coFounders}</dt><dd>{partners.map((n, i) => <>{i > 0 && (ar ? '، ' : ', ')}<a href={`${base}${pre(lang)}/founders/${founderId(n)}/`}>{byId.get(founderId(n))?.name[lang] ?? n}</a></>)}</dd></div>}
           </dl>
         </div>
-        {(website || Object.keys(links).length > 0) && <div class="box"><Links website={website} links={links} lang={lang} label={s.online} /></div>}
+        {(website || Object.keys(links).length > 0) && <div class="box"><Links website={website} links={links} lang={lang} label={ar ? 'حسابات شخصية' : 'Personal profiles'} /></div>}
+        {p.startups.filter((y) => y.website || Object.keys(y.links ?? {}).length > 0).map((y) => (
+          <div class="box"><Links website={y.website} links={y.links} lang={lang} label={ar ? `روابط الشركة: ${y.name.ar}` : `Company links: ${y.name.en}`} /></div>
+        ))}
+        {(p.companies ?? []).filter((c) => c.url).map((c) => (
+          <div class="box"><Links website={c.url} lang={lang} label={ar ? `روابط الشركة: ${c.name}` : `Company links: ${c.name}`} /></div>
+        ))}
+        {sources.length > 0 && <div class="box">
+          <h3>{ar ? 'المصادر' : 'Sources'}</h3>
+          <ul>{sources.map((url) => <li><a href={url} target="_blank" rel="noopener nofollow">{new URL(url).hostname.replace(/^www\./, '')}</a></li>)}</ul>
+        </div>}
       </aside>
     </div>
 

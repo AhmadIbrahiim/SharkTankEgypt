@@ -101,13 +101,31 @@ await test('valuation calculator: 1M for 20% is 5M post-money, 4M pre-money; rej
 await test('compare: shared URL shows both startups, add by name, remove, unknowns marked', async () => {
   const p = await page(); await p.goto(`${U}/en/compare/?ids=bar-and-jar,tutoro`);
   const heads = await p.$$eval('#cmp thead th a', (as) => as.map((a) => a.textContent));
-  assert.deepEqual(heads, ['Bar & Jar', 'Tutoro']);
+  assert.deepEqual(heads, ['Bar & Jar', 'Tutoruu']);
   assert.match(await p.textContent('#cmp tbody'), /3\.5M EGP/); // Bar & Jar deal amount
   assert.ok((await p.$$('#cmp td.unk')).length > 0, 'unknown values are marked');
   await p.fill('#add', 'Stunning'); await p.dispatchEvent('#add', 'change');
   assert.match(p.url(), /ids=bar-and-jar%2Ctutoro%2Cstunning|ids=bar-and-jar,tutoro,stunning/);
   await p.click('[data-rm="tutoro"]');
   assert.deepEqual(await p.$$eval('#cmp thead th a', (as) => as.map((a) => a.textContent)), ['Bar & Jar', 'Stunning']);
+});
+await test('founder profiles distinguish personal and company links in both languages', async () => {
+  for (const prefix of ['en/', '']) {
+    const p = await page(); await p.goto(`${U}/${prefix}founders/shorouk-alaa/`);
+    const personal = p.getByRole('region', { name: prefix ? 'Personal profiles' : 'حسابات شخصية', exact: true });
+    assert.equal(await personal.locator('a').getAttribute('href'), 'https://www.linkedin.com/in/shrouk-alaa-eldin/');
+    const company = p.getByRole('region', { name: prefix ? 'Company links: Career 180' : 'روابط الشركة: كارير 180', exact: true });
+    assert.ok(await company.locator('a[href="https://career-180.com/"]').isVisible());
+    assert.ok(await p.locator('a[href="https://career-180.com/en/qualifying/experts/shrouk-alaa-2"]').count());
+    const people = await p.locator('script[type="application/ld+json"]').evaluateAll((scripts) => scripts.flatMap((s) => {
+      const data = JSON.parse(s.textContent); return data['@graph'] ?? [data];
+    }).filter((n) => n['@type'] === 'Person'));
+    assert.ok(people.some((n) => n.sameAs?.includes('https://www.linkedin.com/in/shrouk-alaa-eldin/')));
+    assert.ok(people.every((n) => !n.sameAs?.includes('https://career-180.com/')));
+    await p.locator('.pic img').scrollIntoViewIfNeeded();
+    await p.waitForFunction(() => document.querySelector('.pic img')?.naturalWidth > 0);
+    await p.close();
+  }
 });
 await browser.close(); server.close();
 console.log(`e2e: ${passed} passed${process.exitCode ? ', some FAILED' : ''}`);

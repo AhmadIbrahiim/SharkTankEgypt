@@ -64,6 +64,8 @@ for (const p of people) {
     if (k in platforms) assert.equal(platformOf(u), k, `${where}: links.${k} points to another site`);
   }
   if (p.photo) assert.ok(p.photo.url.startsWith('/people/') ? existsSync(`public${p.photo.url}`) : new URL(p.photo.url).protocol === 'https:', `${where}: photo must be https or an existing /people/ file`);
+  for (const source of p.sources ?? []) assert.equal(new URL(source).protocol, 'https:', `${where}: source must be https`);
+  for (const company of p.companies ?? []) if (company.url) assert.equal(new URL(company.url).protocol, 'https:', `${where}: company URL must be https`);
 }
 // Every person shown on the site needs an Arabic name (bilingual search).
 const namesAr = JSON.parse(readFileSync('src/data/names.json', 'utf8'));

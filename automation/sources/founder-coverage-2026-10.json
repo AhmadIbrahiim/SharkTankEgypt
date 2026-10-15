@@ -1,0 +1,3129 @@
+{
+  "checked": "2026-10-15",
+  "summary": {
+    "founders": 194,
+    "bios": 194,
+    "photos": 191,
+    "withCompanyLinks": 182,
+    "missingBios": 0,
+    "missingPhotos": 3
+  },
+  "notes": [
+    "Research is incomplete. A missing personal link is not proof that no account exists.",
+    "Youm7 6898829 names Mohab Abou Eita, not Mohamed Mansour; do not assign its image to Mohamed Mansour.",
+    "Youm7 6064143 names Hisham El Banna; it does not establish the identity of Mohamed El Kholy.",
+    "Startup/name/screenshot edits from concurrent work were preserved.",
+    "Mostafa Abdel-Khabeer is verified by FinDev Gateway’s 2025 interview, including portrait and personal LinkedIn.",
+    "Nourhan Hany is verified by the dedicated Churrito article Youm7 7212967.",
+    "Forbes 30 Under 30 confirms Fatma and Abdelrahman Youssef for Fati’s; their portraits were cropped from the named joint profile.",
+    "Design Indaba’s 2017 interview confirms Rana Rafie as co-founder of Up-Fuse; founding year omitted because sources differ.",
+    "Corrected Shaimaa Mohamed, Tamiran Shalaby and Rafeek Mohamed using press and professional profiles; old founder URLs redirect to corrected names.",
+    "Named co-founders may use a complete joint photo, explicitly credited as a joint founder photo. No individual face assignment is inferred from an unlabeled group."
+  ],
+  "founders": [
+    {
+      "id": "abanoub-ramzy",
+      "name": "Abanoub Ramzy",
+      "startups": [
+        "tayar"
+      ],
+      "bio": true,
+      "photo": "/people/abanoub-ramzy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7177610"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "abdel-monsef-ismail",
+      "name": "Abdel Monsef Ismail",
+      "startups": [
+        "schoolz"
+      ],
+      "bio": true,
+      "photo": null,
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/abdelmunsef/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/en/2021/08/schoolz-raises-figure-pre-seed-funding",
+        "https://www.linkedin.com/in/abdelmunsef/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "abdelrahman-el-shafiey",
+      "name": "Abdelrahman El Shafiey",
+      "startups": [
+        "dentolize"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-Zozntdgiv5A.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://thestartupscene.me/In-Depth/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+        "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+        "https://www.youtube.com/watch?v=Zozntdgiv5A"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "abdelrahman-youssef",
+      "name": "Abdelrahman Youssef",
+      "startups": [
+        "fatties"
+      ],
+      "bio": true,
+      "photo": "/people/abdelrahman-youssef.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/lists/?p=47581"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "abdullah",
+      "name": "Abdullah",
+      "startups": [
+        "hawy"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6832114.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6832114"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-abdel-rasoul",
+      "name": "Ahmed Abdel Rasoul",
+      "startups": [
+        "sadu-designs"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-Gl87kU0gFOQ.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/ahmed-abdelrasoul-b77795105/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.soutalomma.com/Article/1142218/صاحبا-مشروع-Sadu-Designs-ندمج-الحرف-اليدوية-والمهن-التراثية-لصناعة",
+        "https://www.linkedin.com/in/ahmed-abdelrasoul-b77795105/",
+        "https://www.youtube.com/watch?v=Gl87kU0gFOQ"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-abu-gendy",
+      "name": "Ahmed Abu Gendy",
+      "startups": [
+        "mobikya"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6368392.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6368392"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-anwar",
+      "name": "Ahmed Anwar",
+      "startups": [
+        "super-fanni"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-anwar.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6480371"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-ashraf",
+      "name": "Ahmed Ashraf",
+      "startups": [
+        "cut-x"
+      ],
+      "bio": true,
+      "photo": "/people/joint-cutx.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6048990",
+        "https://www.youtube.com/watch?v=WxiApsJmmVg&t=20s"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-attallah",
+      "name": "Ahmed Attallah",
+      "startups": [
+        "raseedi"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-oCXBeyzBRHA.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.startuplist.africa/people/ahmed-atalla"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-el-adly",
+      "name": "Ahmed El-Adly",
+      "startups": [
+        "think-tree"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-el-adly.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7221327"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-el-bably",
+      "name": "Ahmed El-Bably",
+      "startups": [
+        "re-blocks"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7246018.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://scenehome.com/Design-Leaders/Reblox-Crafts-Spaces-Designed-to-Come-Apart-Without-Being-Tossed-Out",
+        "https://www.youm7.com/7246018"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-el-dabbash",
+      "name": "Ahmed El-Dabbash",
+      "startups": [
+        "runners-delivery"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-el-dabbash.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7221324"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-el-hefny",
+      "name": "Ahmed El Hefny",
+      "startups": [
+        "zonta"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-el-hefny.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6881971"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-elmallahy",
+      "name": "Ahmed Elmallahy",
+      "startups": [
+        "cognify"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-elmallahy.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/ahmed-el-mallahy/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://egyptinnovate.com/en/news/education-for-employment-and-cognify-partner-to-empower-youth-and-persons-with-disabilities",
+        "https://www.linkedin.com/in/ahmed-el-mallahy/",
+        "https://egyptinnovate.com/en/success-stories/from-an-education-gap-to-a-startup-ahmed-elmallahy-builds-cognify-for-children-with-disabilities"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-fazara",
+      "name": "Ahmed Fazara",
+      "startups": [
+        "duaya"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-fazara.jpg",
+      "personalLinks": {
+        "youtube": "https://www.youtube.com/@ahmed-fazara"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6744133",
+        "https://www.youtube.com/@ahmed-fazara",
+        "https://www.youtube.com/watch?v=P7mX2IJJqIU"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-hafez",
+      "name": "Ahmed Hafez",
+      "startups": [
+        "gelato-on-the-wheel"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-ev8z2yZS9tc.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://cairowestonline.com/ice-cream-all-the-way/",
+        "https://www.youtube.com/watch?v=ev8z2yZS9tc"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-hossam-mido",
+      "name": "Ahmed Hossam Mido",
+      "startups": [
+        "the-maker"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-hossam-mido.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6487646"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-ismail",
+      "name": "Ahmed Ismail",
+      "startups": [
+        "cleo-foods"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-ismail.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6864960"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-mahfouz",
+      "name": "Ahmed Mahfouz",
+      "startups": [
+        "portal"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-mahfouz.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.elwatannews.com/news/details/6471194",
+        "https://www.youm7.com/story/2023/3/12/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A8%D9%88%D8%B1%D8%AA%D8%A7%D9%84-%D9%84%D9%80Shark-Tank-%D9%8A%D9%82%D8%AF%D9%85-%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7-%D9%85%D8%AA%D8%B7%D9%88%D8%B1%D8%A9-%D8%A8%D8%B3%D8%B9%D8%B1-%D9%85%D9%86%D8%A7%D8%B3%D8%A8/6111708"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-mahmoud",
+      "name": "Ahmed Mahmoud",
+      "startups": [
+        "dxwand"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-mahmoud.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://techpoint.africa/2024/01/25/egypt-dxwand-secures-seriesa/",
+        "https://www.wamda.com/index.php/2024/01/dxwand-secures-4-million-series-fuel-regional-expansion",
+        "https://dfdf.vc/insights/from-niche-tech-to-global-trend-lessons-about-ai-from-dxwand/",
+        "https://www.setupinsaudi.com/news/saudi-expansion-announcements/conversational-ai-company-dxwand-expands-to-saudi-arabia-with-astrolabs",
+        "https://www.youm7.com/6800540"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-mamdouh",
+      "name": "Ahmed Mamdouh",
+      "startups": [
+        "masafa"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6495137.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/ahmed-mamdouh99/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6495137",
+        "https://www.linkedin.com/in/ahmed-mamdouh99/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-nassar",
+      "name": "Ahmed Nassar",
+      "startups": [
+        "labtronic"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-nassar.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/lists/30-under-30-2024/ahmed-nassar/",
+        "https://aboutmsr.com/لابترونيك-شركة-مصرية-تكنولوجية-تُلهم/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ahmed-shaaban",
+      "name": "Ahmed Shaaban",
+      "startups": [
+        "simplex"
+      ],
+      "bio": true,
+      "photo": "/people/ahmed-shaaban.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://egyptinnovate.com/en/news/an-egyptian-industrial-success-story-simplex-advances-to-the-africas-business-heroes-grand-finale",
+        "https://www.wamda.com/2026/07/simplex-inaugurates-second-factory-50-million-investment",
+        "https://allafrica.com/stories/202607290663.html",
+        "https://www.youm7.com/6385100"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "alaa-abdel-moghny",
+      "name": "Alaa Abdel Moghny",
+      "startups": [
+        "habu-arts"
+      ],
+      "bio": true,
+      "photo": "/people/alaa-abdel-moghny.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6038891"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "alaa-mahfouz",
+      "name": "Alaa Mahfouz",
+      "startups": [
+        "zat"
+      ],
+      "bio": true,
+      "photo": "/people/alaa-mahfouz-interview.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.f6s.com/member/alaa-mahfouz",
+        "https://thestartupscene.me/MenaEcosystems/StartupScene-Madinet-Masr-Present-Tank-Tales-Episode-2-Zat"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "alex",
+      "name": "Alex",
+      "startups": [
+        "hawy"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6832114.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6832114"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ali-abdallah",
+      "name": "Ali Abdallah",
+      "startups": [
+        "cut-x"
+      ],
+      "bio": true,
+      "photo": "/people/joint-cutx.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6048990",
+        "https://www.youtube.com/watch?v=WxiApsJmmVg&t=20s"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ali-ayman",
+      "name": "Ali Ayman",
+      "startups": [
+        "aftah-topic"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7571713.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7571670",
+        "https://www.youm7.com/7571713"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ali-mohamed",
+      "name": "Ali Mohamed",
+      "startups": [
+        "target-egypt"
+      ],
+      "bio": true,
+      "photo": "/people/ali-mohamed.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6784654"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "alia",
+      "name": "Alia",
+      "startups": [
+        "gammbaz"
+      ],
+      "bio": true,
+      "photo": "/people/alia.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6429004"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "alia-osman",
+      "name": "Alia Osman",
+      "startups": [
+        "curlit"
+      ],
+      "bio": true,
+      "photo": "/people/alia-osman.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://cairo360.com/?p=1772872"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "amir-abboud",
+      "name": "Amir Abboud",
+      "startups": [
+        "not-foods"
+      ],
+      "bio": true,
+      "photo": "/people/amir-abboud.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6360429"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "amir-ali",
+      "name": "Amir Ali",
+      "startups": [
+        "robo-desk"
+      ],
+      "bio": true,
+      "photo": "/people/amir-ali.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6847903"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "amira-abaza",
+      "name": "Amira Abaza",
+      "startups": [
+        "amis-bakery"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-W-O4_C9Qzgo.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://sharktankarabi.com/3632/",
+        "https://www.youtube.com/watch?v=W-O4_C9Qzgo"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ammar-mamdouh",
+      "name": "Ammar Mamdouh",
+      "startups": [
+        "shelter"
+      ],
+      "bio": true,
+      "photo": "/people/ammar-mamdouh.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6385123"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "amr-salama",
+      "name": "Amr Salama",
+      "startups": [
+        "zink"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6792652.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6792652"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "andrew-saad",
+      "name": "Andrew Saad",
+      "startups": [
+        "health-tag"
+      ],
+      "bio": true,
+      "photo": "/people/andrew-saad.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6864968"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ayman-hamza",
+      "name": "Ayman Hamza",
+      "startups": [
+        "schoolz"
+      ],
+      "bio": true,
+      "photo": "/people/ayman-hamza-interview.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/en/2021/08/schoolz-raises-figure-pre-seed-funding",
+        "https://www.youtube.com/watch?v=Yvasg7riy2Y"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "bemen-wagdy",
+      "name": "Bemen Wagdy",
+      "startups": [
+        "scoopy-scooters"
+      ],
+      "bio": true,
+      "photo": "/people/bemen-wagdy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6064101"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "dalia-salem",
+      "name": "Dalia Salem",
+      "startups": [
+        "peacock-designs"
+      ],
+      "bio": true,
+      "photo": "/people/dalia-salem.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/dahlia-salem-2772534/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://scenehome.com/Projects/Peacock-Designs-Turns-Palm-Leaves-Into-Eco-friendly-Products",
+        "https://www.youm7.com/6103943"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "diaa-youssef",
+      "name": "Diaa Youssef",
+      "startups": [
+        "agricash"
+      ],
+      "bio": true,
+      "photo": "/people/diaa-youssef.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/diaayousef/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/2025/06/agricash-raises-seed-round-drive-inclusive-agri-fintech-innovation-egypt",
+        "https://bridgemena.com/news/egypts-agricash-secures-pre-seed-funding-to-scale-digital-financial-inclusion-in-agriculture",
+        "https://www.aaaid.org/en/news/aaaid-and-agri-cash-explore-opportunities-in-digital-agricultural-finance-and-support-for-smallholder-farmers/",
+        "https://www.linkedin.com/in/diaayousef/",
+        "https://egyptinnovate.com/en/success-stories/diaa-youssef-targets-agricultural-digitalization-and-agritech-growth-through-agricash"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "dina-soliman",
+      "name": "Dina Soliman",
+      "startups": [
+        "re-blocks"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7246018.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://scenehome.com/Design-Leaders/Reblox-Crafts-Spaces-Designed-to-Come-Apart-Without-Being-Tossed-Out",
+        "https://www.youm7.com/7246018"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ehsan-hamdy",
+      "name": "Ehsan Hamdy",
+      "startups": [
+        "super-fanni"
+      ],
+      "bio": true,
+      "photo": "/people/ehsan-hamdy.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/ehsan-hamdy-181350168/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.f6s.com/member/ehsanhamdy",
+        "https://www.linkedin.com/posts/ehsan-hamdy-181350168_super-fny-in-aswan-derived-from-our-belief-activity-6992852662421450752-TWQ8",
+        "https://www.linkedin.com/posts/magedharby_%D8%B3%D9%88%D8%A8%D8%B1-%D9%81%D9%86%D9%8A-super-fny-ahmed-anwar-ehsan-activity-7072085486458011649-nOT8"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "erada-fattah",
+      "name": "Erada Fattah",
+      "startups": [
+        "era-care"
+      ],
+      "bio": true,
+      "photo": "/people/erada-fattah.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6465758"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "fady-osama",
+      "name": "Fady Osama",
+      "startups": [
+        "skoolix"
+      ],
+      "bio": true,
+      "photo": "/people/fady-osama.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/fadi-ossama"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://eg.linkedin.com/in/fadi-ossama"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "farah",
+      "name": "Farah",
+      "startups": [
+        "monsters-table"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-YXs6JRhoQbg.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6839755",
+        "https://www.youtube.com/watch?v=YXs6JRhoQbg"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "farah-ahmed",
+      "name": "Farah Ahmed",
+      "startups": [
+        "the-baby-garage"
+      ],
+      "bio": true,
+      "photo": "/people/farah-ahmed.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6824383"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "farah-alaa",
+      "name": "Farah Alaa",
+      "startups": [
+        "the-mat-homes"
+      ],
+      "bio": true,
+      "photo": "/people/farah-alaa.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7229888"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "farida",
+      "name": "Farida",
+      "startups": [
+        "monsters-table"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-YXs6JRhoQbg.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6839755",
+        "https://www.youtube.com/watch?v=YXs6JRhoQbg"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "fatma-wagdy",
+      "name": "Fatma Wagdy",
+      "startups": [
+        "sadu-designs"
+      ],
+      "bio": true,
+      "photo": "/people/fatma-wagdy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.soutalomma.com/Article/1142218/صاحبا-مشروع-Sadu-Designs-ندمج-الحرف-اليدوية-والمهن-التراثية-لصناعة"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "fatma-youssef",
+      "name": "Fatma Youssef",
+      "startups": [
+        "fatties"
+      ],
+      "bio": true,
+      "photo": "/people/fatma-youssef.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/lists/?p=47581"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "gamal-badr",
+      "name": "Gamal Badr",
+      "startups": [
+        "carvizita"
+      ],
+      "bio": true,
+      "photo": "/people/gamal-badr.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7168172"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "germine-abboud",
+      "name": "Germine Abboud",
+      "startups": [
+        "not-foods"
+      ],
+      "bio": true,
+      "photo": "/people/germine-abboud.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6360429"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "gihan-abdallah",
+      "name": "Gihan Abdallah",
+      "startups": [
+        "cosmos-bionics"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6096442.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6096442"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hamouda",
+      "name": "Hamouda",
+      "startups": [
+        "haxel"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7195500.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7195500"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hany-bahaa",
+      "name": "Hany Bahaa",
+      "startups": [
+        "creative-art"
+      ],
+      "bio": true,
+      "photo": "/people/hany-bahaa.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6088578",
+        "https://www.elwatannews.com/news/details/6445496"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hany-el-tamamy",
+      "name": "Hany El-Tamamy",
+      "startups": [
+        "life-snacks"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7050255.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://sceneeats.com/Fresh/Scrunch-Is-the-New-Local-Brand-Providing-High-End-Chocolate-Barks-and-Nut-Clusters",
+        "https://www.youm7.com/7050255"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hassan-ayman",
+      "name": "Hassan Ayman",
+      "startups": [
+        "aftah-topic"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7571713.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7571670",
+        "https://www.youm7.com/7571713"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hazem-el-tawab",
+      "name": "Hazem El Tawab",
+      "startups": [
+        "renile"
+      ],
+      "bio": true,
+      "photo": "/people/hazem-el-tawab.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2023/hazem-eltawab-ibrahim-elzayat-2/",
+        "https://www.wamda.com/2025/01/egypt-renile-secures-450000-investment",
+        "https://aficta.africa/Download/2025Awards/Mr%20Hazem%20Eltawab.pdf",
+        "https://www.youm7.com/6800561"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hazem-salem",
+      "name": "Hazem Salem",
+      "startups": [
+        "damj"
+      ],
+      "bio": true,
+      "photo": "/people/hazem-salem.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6792620"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "heba-mohamed",
+      "name": "Heba Mohamed",
+      "startups": [
+        "calmy"
+      ],
+      "bio": true,
+      "photo": "/people/heba-mohamed.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6088535"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hind-el-yamany",
+      "name": "Hind El Yamany",
+      "startups": [
+        "countrys"
+      ],
+      "bio": true,
+      "photo": "/people/hind-el-yamany.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6038888"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hisham-el-banna",
+      "name": "Hisham El Banna",
+      "startups": [
+        "agrcology"
+      ],
+      "bio": true,
+      "photo": "/people/hisham-el-banna.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6064143",
+        "https://www.youm7.com/story/2023/1/28/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B7%D9%88%D9%82-%D8%A7%D9%84%D8%A3%D8%A8%D9%82%D8%A7%D8%B1-%D9%84%D9%80-Shark-Tank-%D9%8A%D9%82%D9%8A%D8%B3-%D8%A7%D9%84%D9%85%D8%A4%D8%B4%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B1%D9%83%D9%8A%D8%A9/6064090"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hisham-hany",
+      "name": "Hisham Hany",
+      "startups": [
+        "flouxo"
+      ],
+      "bio": true,
+      "photo": "/people/hisham-hany.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6458158"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hoda-hosny",
+      "name": "Hoda Hosny",
+      "startups": [
+        "fool-tank"
+      ],
+      "bio": true,
+      "photo": "/people/hoda-hosny.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6368393",
+        "https://www.youm7.com/story/2023/11/8/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A9-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%81%D9%88%D9%84-%D8%AA%D8%A7%D9%86%D9%83-%D9%84%D9%80Shark-Tank-%D9%86%D9%82%D8%AF%D9%85-%D9%81%D8%B7%D8%A7%D8%B1-%D9%85%D8%B5%D8%B1%D9%89-%D9%81%D9%88%D9%84/6368304"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hosny-ahmed",
+      "name": "Hosny Ahmed",
+      "startups": [
+        "schoolz"
+      ],
+      "bio": true,
+      "photo": "/people/hosny-ahmed.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/hosni-ahmed/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/en/2021/08/schoolz-raises-figure-pre-seed-funding",
+        "https://thestartupscene.me/INVESTMENTS/Egyptian-Transport-App-Schoolz-Raises-Six-Figure-Fund-Ahead-of-Launch",
+        "https://www.genglobal.org/user/hosni"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hossam-el-maraghy",
+      "name": "Hossam El Maraghy",
+      "startups": [
+        "mawared"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-IPa2ZhTKgt4.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6048990"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hossam-sami",
+      "name": "Hossam Sami",
+      "startups": [
+        "stepinside"
+      ],
+      "bio": true,
+      "photo": "/people/hossam-sami.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6038927",
+        "https://www.youtube.com/watch?v=r7MF82JK5lA"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "hussein",
+      "name": "Hussein",
+      "startups": [
+        "haxel"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7195500.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7195500"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ibrahim-abu-gendy",
+      "name": "Ibrahim Abu Gendy",
+      "startups": [
+        "mobikya"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6368392.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6368392"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ibrahim-arafa",
+      "name": "Ibrahim Arafa",
+      "startups": [
+        "roufys"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6856439.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6856439"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ibrahim-elzayat",
+      "name": "Ibrahim Elzayat",
+      "startups": [
+        "renile"
+      ],
+      "bio": true,
+      "photo": "/people/joint-ibrahim-elzayat.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2023/hazem-eltawab-ibrahim-elzayat-2/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "islam-adel",
+      "name": "Islam Adel",
+      "startups": [
+        "the-potcast"
+      ],
+      "bio": true,
+      "photo": "/people/islam-adel.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6428980"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "islam-el-refaey",
+      "name": "Islam El Refaey",
+      "startups": [
+        "can-bank"
+      ],
+      "bio": true,
+      "photo": "/people/islam-el-refaey.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6111712",
+        "https://www.elwatannews.com/news/details/6471130"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "israa-saleh",
+      "name": "Israa Saleh",
+      "startups": [
+        "super-abla"
+      ],
+      "bio": true,
+      "photo": "/people/israa-saleh.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.aljazeera.net/family/2026/8/5/21-يوما-لترسيخ-عادة-القراءة-سوبر-أبلة"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "kamal-abu-el-kheir",
+      "name": "Kamal Abu El Kheir",
+      "startups": [
+        "plus-gear"
+      ],
+      "bio": true,
+      "photo": "/people/kamal-abu-el-kheir.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6072838"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "karim-taha",
+      "name": "Karim Taha",
+      "startups": [
+        "right-temp"
+      ],
+      "bio": true,
+      "photo": "/people/karim-taha.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6839729"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "karim-tawfik",
+      "name": "Karim Tawfik",
+      "startups": [
+        "simple"
+      ],
+      "bio": true,
+      "photo": "/people/karim-tawfik.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://techcrunch.com/2021/12/09/egyptian-fintech-sympl-raises-6m-for-its-save-now-pay-later-service/",
+        "https://sympl.ai/about-us/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "khaled-abdel-ghaffar",
+      "name": "Khaled Abdel Ghaffar",
+      "startups": [
+        "the-lean-jerky"
+      ],
+      "bio": true,
+      "photo": "/people/joint-lean-jerky.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.dostor.org/4579540",
+        "https://www.youtube.com/watch?v=ePT0RdxytyE"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "khaled-bakr",
+      "name": "Khaled Bakr",
+      "startups": [
+        "piccup"
+      ],
+      "bio": true,
+      "photo": "/people/khaled-bakr.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6473181"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "khaled-baraey",
+      "name": "Khaled Baraey",
+      "startups": [
+        "pavo"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6808721.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://cairoscene.com/Styled/We-re-Totes-in-Love-with-This-Egyptian-Bag-Bran",
+        "https://cairo360.com/?p=1693704",
+        "https://www.youm7.com/6808721"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "laila-hazem",
+      "name": "Laila Hazem",
+      "startups": [
+        "horra"
+      ],
+      "bio": true,
+      "photo": "/people/laila-hazem.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6502483"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "lilian-ghobrial",
+      "name": "Lilian Ghobrial",
+      "startups": [
+        "gabris-wear"
+      ],
+      "bio": true,
+      "photo": "/people/lilian-ghobrial.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6832074"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "magd",
+      "name": "Mohamed Majd Ayman",
+      "startups": [
+        "weddngo"
+      ],
+      "bio": true,
+      "photo": "/people/magd-signing.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youtube.com/watch?v=gQ8zqzxkX2Y",
+        "https://www.aljoud-ngo.com/ar/blog/16",
+        "https://www.f6s.com/member/mohamed-majd-ayman"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "maged-yehia",
+      "name": "Maged Yehia",
+      "startups": [
+        "mavericks"
+      ],
+      "bio": true,
+      "photo": "/people/maged-yehia.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7195538"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mahmoud-abu-harga",
+      "name": "Mahmoud Abu Harga",
+      "startups": [
+        "connecto"
+      ],
+      "bio": true,
+      "photo": "/people/mahmoud-abu-harga.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7571719"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mahmoud-ammar",
+      "name": "Mahmoud Ammar",
+      "startups": [
+        "aqar-exit"
+      ],
+      "bio": true,
+      "photo": "/people/mahmoud-ammar.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7580188"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mahmoud-gomaa",
+      "name": "Mahmoud Gomaa",
+      "startups": [
+        "dxwand"
+      ],
+      "bio": true,
+      "photo": "/people/joint-mahmoud-gomaa.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/index.php/2024/01/dxwand-secures-4-million-series-fuel-regional-expansion"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mai-el-ghandour",
+      "name": "Mai El-Ghandour",
+      "startups": [
+        "bayt-el-saad"
+      ],
+      "bio": true,
+      "photo": "/people/mai-el-ghandour.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7168215"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mai-razeek",
+      "name": "Mai Razeek",
+      "startups": [
+        "tam-leather"
+      ],
+      "bio": true,
+      "photo": "/people/mai-razeek.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6088556"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "maram-khamis",
+      "name": "Maram Khamis",
+      "startups": [
+        "asfoura"
+      ],
+      "bio": true,
+      "photo": "/people/maram-khamis.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6120280",
+        "https://www.youtube.com/watch?v=vZrF0yBaJAk"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mariam-amer",
+      "name": "Mariam Amer",
+      "startups": [
+        "tutoro"
+      ],
+      "bio": true,
+      "photo": "/people/joint-seif-amr-kassem.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2024/seif-amr-kassem-mariam-amer-youssef-abdelhamid-mohamed-samer/",
+        "https://www.youm7.com/6072837"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mariam-el-shabakshy",
+      "name": "Mariam El Shabakshy",
+      "startups": [
+        "kids-kit"
+      ],
+      "bio": true,
+      "photo": "/people/mariam-el-shabakshy-interview.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6103992",
+        "https://www.youtube.com/watch?v=85CjeT9tCLk"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mariam-taha",
+      "name": "Mariam Taha",
+      "startups": [
+        "basq"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6898849.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6898849"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "marwan-doghem",
+      "name": "Marwan Doghem",
+      "startups": [
+        "dentolize"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-Zozntdgiv5A.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://thestartupscene.me/In-Depth/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+        "https://cairoscene.com/Business/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+        "https://www.youtube.com/watch?v=Zozntdgiv5A"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "marwan-naeem",
+      "name": "Marwan Naeem",
+      "startups": [
+        "life-snacks"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7050255.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7050255"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "marwan-ramadan",
+      "name": "Marwan Ramadan",
+      "startups": [
+        "tab"
+      ],
+      "bio": true,
+      "photo": "/people/marwan-ramadan.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6816756"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "maryam-elleithy",
+      "name": "Maryam Elleithy",
+      "startups": [
+        "godly-pride"
+      ],
+      "bio": true,
+      "photo": "/people/maryam-elleithy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7580279"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mazen-moussa",
+      "name": "Mazen Moussa",
+      "startups": [
+        "rnkl"
+      ],
+      "bio": true,
+      "photo": "/people/joint-rnkl.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://scenehome.com/Furniture-Accessories/Unfold-Unwind-on-These-Origami-Furniture-by-Homegrown-Brand-Rnkl",
+        "https://www.youtube.com/watch?v=zHx_Bf_Gdq0"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mina-ashraf",
+      "name": "Mina Ashraf",
+      "startups": [
+        "cosmos-bionics"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6096442.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://exoskeletonreport.com/2023/03/exoskeleton-startup-cosmos-bionics-strikes-a-deal-on-shark-tank-egypt/",
+        "https://www.timeslive.co.za/news/sci-tech/2023-07-19-watch-egyptian-company-creates-lightweight-exoskeleton",
+        "https://exoskeletonreport.com/brand/cosmos-bionics/",
+        "https://www.youm7.com/6096442"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mina-fayez",
+      "name": "Mina Fayez",
+      "startups": [
+        "lelu"
+      ],
+      "bio": true,
+      "photo": "/people/mina-fayez.jpg",
+      "personalLinks": {
+        "instagram": "https://www.instagram.com/minafayezz/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6376335",
+        "https://www.youtube.com/watch?v=y_YsTRv6vxQ"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mina-mandaloun",
+      "name": "Mina Mandaloun",
+      "startups": [
+        "pavo"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6808721.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://cairoscene.com/Styled/We-re-Totes-in-Love-with-This-Egyptian-Bag-Bran",
+        "https://cairo360.com/?p=1792367",
+        "https://www.youm7.com/6808721"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "moamen-ragab",
+      "name": "Moamen Ragab",
+      "startups": [
+        "ooaps"
+      ],
+      "bio": true,
+      "photo": "/people/moamen-ragab.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6824424"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "moataz-el-wasimy",
+      "name": "Moataz El-Wasimy",
+      "startups": [
+        "loop"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6890343.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6890343"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohab-abou-eita",
+      "name": "Mohab Abou Eita",
+      "startups": [
+        "amanleek"
+      ],
+      "bio": true,
+      "photo": "/people/mohab-abou-eita.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/maboueita/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wearetech.africa/fr/fils/tech-stars/mohab-aboueita-democratise-l-assurance-numerique-en-egypte",
+        "https://www.startuplist.africa/startups/amanleek",
+        "https://launchafrica.vc/amanleek"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-abu-kelila",
+      "name": "Mohamed Abu Kelila",
+      "startups": [
+        "tilestic"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-abu-kelila.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6056701"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-akmal",
+      "name": "Mohamed Akmal",
+      "startups": [
+        "career-180"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-akmal.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://egyptinnovate.com/en/node/9882",
+        "https://www.wamda.com/2025/05/career-180-launches-saudi-operations-backed-vms-partnership-fresh-funding",
+        "https://www.youm7.com/6103941"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-amer",
+      "name": "Mohamed Amer",
+      "startups": [
+        "irnova"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-amer.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6824402"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-arafa",
+      "name": "Mohamed Arafa",
+      "startups": [
+        "roufys"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6856439.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6856439"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-attya",
+      "name": "Mohamed Attya",
+      "startups": [
+        "curlit"
+      ],
+      "bio": true,
+      "photo": "/people/joint-curlit.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://assets.cairo360.com/article/shopping/cairo-360s-local-selects-curlit-reshaping-the-egyptian-hair-care-scene/",
+        "https://www.youtube.com/watch?v=8h-lcDd97jw"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-ayman",
+      "name": "Mohamed Ayman",
+      "startups": [
+        "srv"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-ayman.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6856392"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-bakry",
+      "name": "Mohamed Bakry",
+      "startups": [
+        "breathe"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-bakry.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6898813"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-barakat",
+      "name": "Mohamed Barakat",
+      "startups": [
+        "tomatiki"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-barakat.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6111650"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-dargham",
+      "name": "Mohamed Dargham",
+      "startups": [
+        "zink"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6792652.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6792652"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-el-ashmawy",
+      "name": "Mohamed El-Ashmawy",
+      "startups": [
+        "al-ahram-cookware"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6744130.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6744130"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-el-demerdash",
+      "name": "Mohamed El Demerdash",
+      "startups": [
+        "abs-shipping"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-el-demerdash.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6473188"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-el-feky",
+      "name": "Mohamed El-Feky",
+      "startups": [
+        "simple"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-el-feky.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://techcrunch.com/2021/12/09/egyptian-fintech-sympl-raises-6m-for-its-save-now-pay-later-service/",
+        "https://www.youm7.com/6352516"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-el-hafez",
+      "name": "Mohamed El Hafez",
+      "startups": [
+        "mandoobak-smart"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6072803.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6072803"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-el-kholy",
+      "name": "Mohamed El Kholy",
+      "startups": [
+        "fairclo"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-el-kholy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6064143",
+        "https://www.elwatannews.com/news/details/6420438"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-el-sheikh",
+      "name": "Mohamed El-Sheikh",
+      "startups": [
+        "loop"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6890343.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6890343"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-essam",
+      "name": "Mohamed Essam",
+      "startups": [
+        "zero-sugar"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6480343.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6480371",
+        "https://besraha.com/117373",
+        "https://www.youm7.com/story/2024/2/14/%D9%86%D9%88%D8%B1%D9%87%D8%A7%D9%86-%D8%B5%D9%84%D8%A7%D8%AD-%D9%88%D9%85%D8%AD%D9%85%D8%AF-%D8%B9%D8%B5%D8%A7%D9%85-%D9%8A%D8%B9%D8%B1%D8%B6%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-4-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%82%D8%A7%D8%A8%D9%84/6480343"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-ghaith",
+      "name": "Mohamed Ghaith",
+      "startups": [
+        "stunning"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-ghaith.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.websiteplanet.com/blog/interview-stunning/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-hamad",
+      "name": "Mohamed Hamad",
+      "startups": [
+        "gorilla-fits"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-hamad.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/muhammed-hammad-447354229/",
+        "instagram": "https://www.instagram.com/muhammad_hammadcf/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.facebook.com/muhammad.hammad.574851/",
+        "https://www.linkedin.com/in/muhammed-hammad-447354229/",
+        "https://www.youtube.com/watch?v=TLuMEzkj18A",
+        "https://www.instagram.com/muhammad_hammadcf/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-hamama",
+      "name": "Mohamed Hamama",
+      "startups": [
+        "basq"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6898849.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6898849"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-hebala",
+      "name": "Mohamed Hebala",
+      "startups": [
+        "mandisa"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-hebala.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/mohamed-hebala-5b5371140/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6873328",
+        "https://www.linkedin.com/in/mohamed-hebala-5b5371140/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-hesham",
+      "name": "Mohamed Hesham",
+      "startups": [
+        "dajin"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-hesham.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://mentors.vc4a.com/profiles/mohamed-hisham",
+        "https://vc4a.com/ventures/dajin-platform-3/team",
+        "https://cairo360.com/?p=1725815",
+        "https://mentors.vc4a.com/profiles/mohamed-hisham/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-mabrouk",
+      "name": "Mohamed Mabrouk",
+      "startups": [
+        "pencilight"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-mabrouk.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youtube.com/watch?v=8NwyGw7R1ao"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-mahmoud",
+      "name": "Mohamed Mahmoud",
+      "startups": [
+        "evica"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-mahmoud.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6096409"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-mansour",
+      "name": "Mohamed Mansour",
+      "startups": [
+        "amanleek"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-mansour-amanleek.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/drmohamed/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://launchafrica.vc/amanleek",
+        "https://cairo2026.aio-events.org/speaker/mr-mohamed-mansour/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-mardini",
+      "name": "Mohamed Mardini",
+      "startups": [
+        "naseej"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-mardini.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/mohamed-mardini-886a7664/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://app.dealroom.co/companies/naseej",
+        "https://cairoscene.com/lifestyle/naseej-textiles",
+        "https://www.youm7.com/6495135"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-nowair",
+      "name": "Mohamed Nowair",
+      "startups": [
+        "the-mat-homes"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-nowair.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7229888"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-ragab",
+      "name": "Mohamed Ragab",
+      "startups": [
+        "mystery-bag"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-ragab.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/ragaboli"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://solve.mit.edu/solutions/95387",
+        "https://apps.apple.com/app/id6740414751",
+        "https://www.briter.co/companies/mystery-bag",
+        "https://www.youm7.com/7168263"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-said",
+      "name": "Mohamed Said",
+      "startups": [
+        "soccer-hub"
+      ],
+      "bio": true,
+      "photo": "/people/mohamed-said.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://entarabi.com/en/2023/12/exceptional-projects-shine-in-the-new-episode-of-shark-tank-egypt/",
+        "https://www.youtube.com/watch?v=dGLyN2qnSqc"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-samer",
+      "name": "Mohamed Samer",
+      "startups": [
+        "tutoro"
+      ],
+      "bio": true,
+      "photo": "/people/joint-seif-amr-kassem.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2024/seif-amr-kassem-mariam-amer-youssef-abdelhamid-mohamed-samer/",
+        "https://www.youm7.com/6072837"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-samir-abolenin",
+      "name": "Mohamed Samir Abolenin",
+      "startups": [
+        "interact"
+      ],
+      "bio": true,
+      "photo": "/people/joint-interact.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/abolenin/",
+        "facebook": "https://www.facebook.com/mohamed.samir.abolenin/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.linkedin.com/in/abolenin/",
+        "https://www.techinafrica.com/17031-2/",
+        "https://www.youtube.com/watch?v=B5Sm3beezFI"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-youssef",
+      "name": "Mohamed Youssef",
+      "startups": [
+        "solar-sector"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7580274.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7580274"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mohamed-zahran",
+      "name": "Mohamed Zahran",
+      "startups": [
+        "khayai"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7149977.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/7149977"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-abdel-khabeer",
+      "name": "Mostafa Abdel-Khabeer",
+      "startups": [
+        "masroufi"
+      ],
+      "bio": true,
+      "photo": "/people/mostafa-abdel-khabeer.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/mostafa-abd-elkhabir-899515171/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.findevgateway.org/ar/interview/2025/02/hl-tsthq-althqaft-almalyt-kl-hdha-aljdl"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-dawoud",
+      "name": "Mostafa Dawoud",
+      "startups": [
+        "dentolize"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-Zozntdgiv5A.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://founderslivepodcast.buzzsprout.com/653182/13889887",
+        "https://thestartupscene.me/In-Depth/How-Egypt-s-Dentolize-is-Quietly-Reshaping-Healthcare-SaaS-Worldwide",
+        "https://www.youtube.com/watch?v=Zozntdgiv5A"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-el-ashmawy",
+      "name": "Mostafa El-Ashmawy",
+      "startups": [
+        "al-ahram-cookware"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6744130.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6744130"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-el-sayed",
+      "name": "Mostafa El-Sayed",
+      "startups": [
+        "peacock-designs"
+      ],
+      "bio": true,
+      "photo": "/people/mostafa-el-sayed.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6103943"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-el-sehli",
+      "name": "Mostafa El-Sehli",
+      "startups": [
+        "agricash"
+      ],
+      "bio": true,
+      "photo": null,
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/index.php/2025/06/agricash-raises-seed-round-drive-inclusive-agri-fintech-innovation-egypt"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-elewa",
+      "name": "Mostafa Elewa",
+      "startups": [
+        "labtronic"
+      ],
+      "bio": true,
+      "photo": "/people/joint-labtronic.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/mustafa-eliwa-784209a1/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/lists/30-under-30-2024/ahmed-nassar/",
+        "https://www.youm7.com/story/2023/3/18/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%84%D8%A7%D8%A8%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D9%83-%D9%84%D9%80Shark-Tank-%D9%86%D8%B5%D9%85%D9%85-%D9%88%D9%86%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D9%85%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D9%8A%D8%A9/6120238"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-hanafy",
+      "name": "Mostafa Hanafy",
+      "startups": [
+        "hoods"
+      ],
+      "bio": true,
+      "photo": "/people/mostafa-hanafy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://dailynewsegypt.com/2022/08/02/hoods-the-first-live-entertainment-shopping-platform-in-the-middle-east/",
+        "https://www.youm7.com/6865009"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-wahdan",
+      "name": "Mostafa Wahdan",
+      "startups": [
+        "chefs-house"
+      ],
+      "bio": true,
+      "photo": "/people/mostafa-wahdan.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6111712",
+        "https://www.youm7.com/6111663"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mostafa-wasfy",
+      "name": "Mostafa Wasfy",
+      "startups": [
+        "mandoobak-smart"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6072803.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6072803"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "mounir-abdel-shahid",
+      "name": "Mounir Abdel Shahid",
+      "startups": [
+        "dark-solution"
+      ],
+      "bio": true,
+      "photo": "/people/mounir-abdel-shahid.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6443112"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nada-amin",
+      "name": "Nada Amin",
+      "startups": [
+        "euphoria-denims"
+      ],
+      "bio": true,
+      "photo": "/people/nada-amin.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6816735"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nada-khroub",
+      "name": "Nada Khroub",
+      "startups": [
+        "mothernaked"
+      ],
+      "bio": true,
+      "photo": "/people/nada-khroub.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/nada-khroub-822653116/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://enterpriseam.com/egypt/2026/08/05/why-egypts-newest-beauty-brands-arent-rushing-to-the-market-but-playing-the-long-game/",
+        "https://www.youtube.com/watch?v=GDHYJM3aE7A"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nadine-samy",
+      "name": "Nadine Samy",
+      "startups": [
+        "khayai"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7149977.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/7149977"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nehal-kamal",
+      "name": "Nehal Kamal",
+      "startups": [
+        "the-box"
+      ],
+      "bio": true,
+      "photo": "/people/nehal-kamal.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6495136"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nehal-osama",
+      "name": "Nehal Osama",
+      "startups": [
+        "nno-home"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7246003.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://nno-home.daftra.com",
+        "https://www.youm7.com/7246003"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "norhan-abaza",
+      "name": "Norhan Abaza",
+      "startups": [
+        "bar-and-jar"
+      ],
+      "bio": true,
+      "photo": "/people/norhan-abaza.jpg",
+      "personalLinks": {
+        "instagram": "https://www.instagram.com/norhanabazza/",
+        "linkedin": "https://www.linkedin.com/in/norhan-abaza-754457440/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
+        "https://www.youtube.com/watch?v=EZD5qtVsIm8"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "norhan-salah",
+      "name": "Norhan Salah",
+      "startups": [
+        "zero-sugar"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6480343.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6480371",
+        "https://besraha.com/117373",
+        "https://www.youm7.com/story/2024/2/14/%D9%86%D9%88%D8%B1%D9%87%D8%A7%D9%86-%D8%B5%D9%84%D8%A7%D8%AD-%D9%88%D9%85%D8%AD%D9%85%D8%AF-%D8%B9%D8%B5%D8%A7%D9%85-%D9%8A%D8%B9%D8%B1%D8%B6%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-4-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%82%D8%A7%D8%A8%D9%84/6480343"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nour-zanati",
+      "name": "Nour Zanati",
+      "startups": [
+        "relaxant"
+      ],
+      "bio": true,
+      "photo": "/people/nour-zanati.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://followict.news/%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D9%84%D9%82%D8%A9-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3%D8%A9-%D9%85%D9%86-shark-tank-egypt-%D8%AC%D9%88%D8%AC%D9%88%D8%B2-%D8%B1%D8%A7%D9%86%D8%B4-%D8%AA%D8%AD%D8%B5/",
+        "https://www.elwatannews.com/news/details/6437018"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nouran-osama",
+      "name": "Nouran Osama",
+      "startups": [
+        "nno-home"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7246003.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7246003"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nourhan-hany",
+      "name": "Nourhan Hany",
+      "startups": [
+        "churreto"
+      ],
+      "bio": true,
+      "photo": "/people/nourhan-hany.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7212967",
+        "https://www.youm7.com/story/2025/11/26/%D8%AA%D8%B4%D9%88%D8%B1%D9%8A%D8%AA%D9%88-%D8%AA%D8%B7%D9%84%D8%A8-3-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D9%86-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%84%D9%84%D8%AA%D9%88%D8%B3%D8%B9-%D9%81%D9%8A/7212967"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "nourhan-massoud",
+      "name": "Nourhan Massoud",
+      "startups": [
+        "agrikemet"
+      ],
+      "bio": true,
+      "photo": "/people/nourhan-massoud.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6458160"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "omar-abdelsalam",
+      "name": "Omar Abdelsalam",
+      "startups": [
+        "pov"
+      ],
+      "bio": true,
+      "photo": "/people/pov-founders.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://entarabi.com/en/2023/11/a-new-episode-of-shark-tank-egypt-promising-investments-and-decision-making-riddled-with-challenges/",
+        "https://www.youm7.com/story/2023/11/29/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-pov-%D9%84%D9%80shark-tank-%D9%85%D9%86%D8%AA%D8%AC%D9%86%D8%A7-%D9%8A%D9%85%D9%83%D9%86%D9%87-%D9%84%D8%B5%D9%82%D9%87-%D8%A8%D8%A3%D9%89-%D9%85%D8%B9%D8%AF%D9%86/6393441"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "omar-al-tawansy",
+      "name": "Omar Al-Tawansy",
+      "startups": [
+        "rnkl"
+      ],
+      "bio": true,
+      "photo": "/people/joint-rnkl.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/omar-al-tawansy-691a86107/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://scenehome.com/Furniture-Accessories/Unfold-Unwind-on-These-Origami-Furniture-by-Homegrown-Brand-Rnkl",
+        "https://www.linkedin.com/in/omar-al-tawansy-691a86107/",
+        "https://www.youtube.com/watch?v=zHx_Bf_Gdq0"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "omar-el-gabaly",
+      "name": "Omar El-Gabaly",
+      "startups": [
+        "waymoure"
+      ],
+      "bio": true,
+      "photo": "/people/omar-el-gabaly.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7149952"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "omar-khalifa",
+      "name": "Omar Khalifa",
+      "startups": [
+        "shaghalny"
+      ],
+      "bio": true,
+      "photo": "/people/omar-khalifa.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://waya.media/how-one-tweet-made-shaghalni/",
+        "https://enterpriseam.com/egypt/2023/01/12/my-morning-routine-omar-khalifa-founder-and-ceo-of-shaghalni/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "osama-mohamed",
+      "name": "Osama Mohamed",
+      "startups": [
+        "solar-sector"
+      ],
+      "bio": true,
+      "photo": "/people/joint-7580274.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7580274"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "rana-rafie",
+      "name": "Rana Rafie",
+      "startups": [
+        "upfuse"
+      ],
+      "bio": true,
+      "photo": "/people/rana-rafie.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/rania-rafie-14663788/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.designindaba.com/articles/creative-work/egyptian-upcycling-startup-creates-fashionable-accessories-trash",
+        "https://www.linkedin.com/in/rania-rafie-14663788/",
+        "https://www.wef.org.in/rania-refai/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "raymond-kamal",
+      "name": "Raymond Kamal",
+      "startups": [
+        "eisac-automation"
+      ],
+      "bio": true,
+      "photo": "/people/raymond-kamal.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7229893"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "rafeek-mohamed",
+      "name": "Rafeek Mohamed",
+      "startups": [
+        "salhly"
+      ],
+      "bio": true,
+      "photo": "/people/salhly-pitch.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/rafeek-mohamed-rafeek-13151414b/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6450706"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "sameh-nabil",
+      "name": "Sameh Nabil",
+      "startups": [
+        "choroida"
+      ],
+      "bio": true,
+      "photo": "/people/sameh-nabil.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.elwatannews.com/news/details/6437030"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "sameh-radwan",
+      "name": "Sameh Radwan",
+      "startups": [
+        "zonta"
+      ],
+      "bio": true,
+      "photo": null,
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://cairoscene.com/Styled/Egyptian-Streetwear-Label-Zonta-Debuts-First-Ever-Arabic-Sneakers",
+        "https://www.instagram.com/p/DGAptqHNy7H/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "sara-helal",
+      "name": "Sara Helal",
+      "startups": [
+        "country-house"
+      ],
+      "bio": true,
+      "photo": "/people/sara-helal.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6376335",
+        "https://www.youm7.com/story/2023/11/15/%D8%B5%D8%A7%D8%AD%D8%A8-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%83%D9%88%D9%86%D8%AA%D8%B1%D9%89-%D9%87%D8%A7%D9%88%D8%B3-%D9%84%D9%80Shark-Tank-%D8%AD%D9%82%D9%82%D9%86%D8%A7-%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-614-%D8%A3%D9%84%D9%81/6376323"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "sayed-hosni",
+      "name": "Sayed Hosni",
+      "startups": [
+        "masroufi"
+      ],
+      "bio": true,
+      "photo": "/people/masroofi-pitch.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6056713",
+        "https://www.wamda.com/en/2023/07/egypt-masroofi-raises-1-5-million"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "seif-amr-kassem",
+      "name": "Seif Amr Kassem",
+      "startups": [
+        "tutoro"
+      ],
+      "bio": true,
+      "photo": "/people/joint-seif-amr-kassem.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2024/seif-amr-kassem-mariam-amer-youssef-abdelhamid-mohamed-samer/",
+        "https://www.youm7.com/6072837"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "seif-ramadan",
+      "name": "Seif Ramadan",
+      "startups": [
+        "blooms-egypt"
+      ],
+      "bio": true,
+      "photo": "/people/seif-ramadan.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/saif-ramadan-20042029/",
+        "instagram": "https://www.instagram.com/saiframadan1/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6352489",
+        "https://www.linkedin.com/in/saif-ramadan-20042029/",
+        "https://bloomsegypt.com/about-us/about-blooms"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "shaimaa-mohamed",
+      "name": "Shaimaa Mohamed",
+      "startups": [
+        "serket"
+      ],
+      "bio": true,
+      "photo": "/people/shaimaa-mohamed.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/shimaa-mohamed5000/"
+      },
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/6048986",
+        "https://www.elwatannews.com/news/details/6405240"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "sherif-abdallah",
+      "name": "Sherif Abdallah",
+      "startups": [
+        "cover-spore"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-EkViGBR_zZA.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6480371"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "sherif-zahran",
+      "name": "Sherif Zahran",
+      "startups": [
+        "sporty-pro"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6096400.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6096443",
+        "https://www.youm7.com/story/2023/2/25/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D9%89-%D8%A8%D8%B1%D9%88-%D9%84%D9%80Shark-Tank-%D9%86%D8%A8%D9%8A%D8%B9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9/6096400"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "shorouk-alaa",
+      "name": "Shorouk Alaa",
+      "startups": [
+        "career-180"
+      ],
+      "bio": true,
+      "photo": "/people/shorouk-alaa.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/shrouk-alaa-eldin/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://career-180.com/en/qualifying/experts/shrouk-alaa-2",
+        "https://depi.career-180.com/en/coaches/shrouk-alaa-eldin-1742133873"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "soha-abaza",
+      "name": "Soha Abaza",
+      "startups": [
+        "amis-bakery"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-group-W-O4_C9Qzgo.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://sharktankarabi.com/3632/",
+        "https://www.youtube.com/watch?v=W-O4_C9Qzgo"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "somaia-aboelezz",
+      "name": "Somaia Aboelezz",
+      "startups": [
+        "somaia-aboelezz"
+      ],
+      "bio": true,
+      "photo": "/people/somaia-aboelezz.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/somaia-abolezz-7121b5b9/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://nahdetelmahrousa.org/?p=91767",
+        "https://www.enigma-mag.com/somaia-abolezz-art-identity-and-the-journey-behind-the-brand/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "tamer-el-kharrat",
+      "name": "Tamer El-Kharrat",
+      "startups": [
+        "cippo"
+      ],
+      "bio": true,
+      "photo": "/people/tamer-el-kharrat.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6800514"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "tamiran-shalaby",
+      "name": "Tamiran Shalaby",
+      "startups": [
+        "sporty-pro"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6096400.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.elwatannews.com/news/details/6453822",
+        "https://www.youm7.com/6096443",
+        "https://www.youm7.com/story/2023/2/25/%D8%B5%D8%A7%D8%AD%D8%A8%D8%A7-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D9%89-%D8%A8%D8%B1%D9%88-%D9%84%D9%80Shark-Tank-%D9%86%D8%A8%D9%8A%D8%B9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D8%A3%D8%AD%D8%B0%D9%8A%D8%A9-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9/6096400"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "tarek-amir",
+      "name": "Tarek Amir",
+      "startups": [
+        "whip-up"
+      ],
+      "bio": true,
+      "photo": "/people/tarek-amir.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6808749"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "waleed-ghalwash",
+      "name": "Waleed Ghalwash",
+      "startups": [
+        "hoods"
+      ],
+      "bio": true,
+      "photo": "/people/waleed-ghalwash.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/waleedghalwash/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.wamda.com/en/2022/11/valu-invests-live-e-commerce-platform-hoods",
+        "https://disruptafrica.com/2019/06/10/egyptian-startup-merq-wants-to-widen-applications-of-ai-within-fintech/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "yahia-zaky",
+      "name": "Yahia Zaky",
+      "startups": [
+        "yaya"
+      ],
+      "bio": true,
+      "photo": "/people/yahia-zaky.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6502539"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "yara-yassin",
+      "name": "Yara Yassin",
+      "startups": [
+        "upfuse"
+      ],
+      "bio": true,
+      "photo": "/people/yara-yassin.jpg",
+      "personalLinks": {
+        "linkedin": "https://www.linkedin.com/in/iamyarafromup-fuse/"
+      },
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://twyg.co.za/qa-how-up-fuse-is-repurposing-the-waste-of-cairos-garbage-city/",
+        "https://www.linkedin.com/in/iamyarafromup-fuse/",
+        "https://forbesmiddleeastevents.com/team-members/yara-yassin/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "yasmin-mowafy",
+      "name": "Yasmin Mowafy",
+      "startups": [
+        "abgad"
+      ],
+      "bio": true,
+      "photo": "/people/yasmin-mowafy.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6443094"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "yasmine-henna",
+      "name": "Yasmine Henna",
+      "startups": [
+        "simple"
+      ],
+      "bio": true,
+      "photo": "/people/yasmine-henna.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://techcrunch.com/2021/12/09/egyptian-fintech-sympl-raises-6m-for-its-save-now-pay-later-service/",
+        "https://sympl.ai/about-us/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "yassin",
+      "name": "Yassin",
+      "startups": [
+        "hawy"
+      ],
+      "bio": true,
+      "photo": "/people/joint-6832114.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6832114"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "youssef-abdelhamid",
+      "name": "Youssef Abdelhamid",
+      "startups": [
+        "tutoro"
+      ],
+      "bio": true,
+      "photo": "/people/joint-seif-amr-kassem.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.forbesmiddleeast.com/ar/lists/30-under-30-2024/seif-amr-kassem-mariam-amer-youssef-abdelhamid-mohamed-samer/"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "youssef-el-masry",
+      "name": "Youssef El-Masry",
+      "startups": [
+        "abdelaziz-elmasry"
+      ],
+      "bio": true,
+      "photo": "/people/youssef-el-masry.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6760563"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "youssef-el-rayan",
+      "name": "Youssef El Rayan",
+      "startups": [
+        "grif"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-RcLKQ0NYSBw.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://cairoscene.com/lifestyle/set-in-stone-grif-cookware-s-legacy-of-sustainability-style"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "youssef-el-sherif",
+      "name": "Youssef El Sherif",
+      "startups": [
+        "y-studio"
+      ],
+      "bio": true,
+      "photo": "/people/youssef-el-sherif.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/7057703"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "youssef-samir",
+      "name": "Youssef Samir",
+      "startups": [
+        "tap-tag"
+      ],
+      "bio": true,
+      "photo": "/people/pitch-fPsKVizmRwU.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": true,
+      "sources": [
+        "https://www.youm7.com/6072839"
+      ],
+      "researchComplete": false
+    },
+    {
+      "id": "ziad-el-bessiouny",
+      "name": "Ziad El-Bessiouny",
+      "startups": [
+        "olympic-sports"
+      ],
+      "bio": true,
+      "photo": "/people/ziad-el-bessiouny.jpg",
+      "personalLinks": {},
+      "companyLinksAvailable": false,
+      "sources": [
+        "https://www.youm7.com/7571708"
+      ],
+      "researchComplete": false
+    }
+  ]
+}
