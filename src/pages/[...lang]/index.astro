@@ -4,6 +4,7 @@ import { ID, ROOT } from '../../schema';
 import Shot from '../../components/Shot.astro';
 import Sharks from '../../components/Sharks.astro';
 import Avatar from '../../components/Avatar.astro';
+import EpisodePreview from '../../components/EpisodePreview.astro';
 import { langs, seg, pre, listCard, startups, seasons, sharks, founders, founderId, t, num, money, pct, category, seasonLabel, shark, suggestUrl, thumb, valuation, digits, type Lang, dir } from '../../config';
 import { norm } from '../../search.mjs';
 
@@ -88,6 +89,8 @@ const jsonld = {
       </div>
     </div>
   </section>
+
+  <div class="container episode-notice"><EpisodePreview lang={lang} compact /></div>
 
   <section class="container" aria-labelledby="all">
     <div class="sechead"><h2 id="all">{s.allStartups}</h2></div>
@@ -446,6 +449,7 @@ const jsonld = {
 
   #all { scroll-margin-top: 80px; }
   section[aria-labelledby='all'] { margin-top: var(--gap-sec); }
+  .episode-notice:has(:global(.episode-preview)) + section[aria-labelledby='all'] { margin-top: 8px; }
   .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 10px; }
   .chips { display: flex; gap: 4px; flex-wrap: wrap; }
   .chip { font: inherit; font-size: .88rem; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink-2); cursor: pointer; }

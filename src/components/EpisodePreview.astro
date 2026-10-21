@@ -1,0 +1,47 @@
+---
+import previews from '../data/episode-previews.json';
+import { digits, num, pre, seasonLabel, type Lang } from '../config';
+interface Props { lang: Lang; season?: number; compact?: boolean }
+const { lang, season, compact } = Astro.props;
+const ar = lang === 'ar';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+{previews.filter((p) => season == null || p.season === season).map((p) => (
+  <section class:list={['episode-preview', { compact }]} id={`episode-${p.season}-${p.episode}-preview`} aria-labelledby={`preview-${p.season}-${p.episode}-title`}>
+    {compact ? <a id={`preview-${p.season}-${p.episode}-title`} href={`${base}${pre(lang)}/season/${p.season}/#episode-${p.season}-${p.episode}-preview`}>{ar ? `الحلقة ${num(p.episode, lang)} تأجلت` : `Episode ${p.episode} rescheduled`} · <time datetime={p.scheduledAt}>{new Intl.DateTimeFormat(ar ? 'ar-EG' : 'en-GB', { timeZone: 'Africa/Cairo', weekday: 'short', hour: 'numeric', hour12: true }).format(new Date(p.scheduledAt))}</time> {ar ? '←' : '→'}</a> : <>
+    <header>
+      <div>
+        <p class="eyebrow">{ar ? 'قبل العرض' : 'Episode preview'}</p>
+        <h2 id={`preview-${p.season}-${p.episode}-title`}><a href={`${base}${pre(lang)}/season/${p.season}/#episode-${p.season}-${p.episode}-preview`}>{seasonLabel(p.season, lang)} · {ar ? 'الحلقة' : 'Episode'} {num(p.episode, lang)}</a></h2>
+      </div>
+      <p class="schedule"><span>{ar ? 'موعد العرض الجديد' : 'Rescheduled broadcast'}</span><time datetime={p.scheduledAt}>{new Intl.DateTimeFormat(ar ? 'ar-EG' : 'en-GB', { timeZone: 'Africa/Cairo', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }).format(new Date(p.scheduledAt))}</time><small>{ar ? 'بتوقيت القاهرة' : 'Cairo time'}</small></p>
+    </header>
+    <p class="note">{digits(p.scheduleNote[lang], lang)}</p>
+    <ul>
+      {p.startups.map((x) => <li><h3><a href={x.url}>{x.name[lang]}</a></h3><p>{x.description[lang]}</p><a class="source" href={x.source}>{ar ? 'إعلان المشاركة' : 'Appearance announcement'}</a></li>)}
+    </ul>
+    <footer><span>{ar ? 'المصادر الرسمية:' : 'Official sources:'}</span> <a href={p.announcement}>{ar ? 'شركات الحلقة' : 'Episode lineup'}</a><span aria-hidden="true"> · </span><a href={p.scheduleSource}>{ar ? 'تغيير الموعد' : 'Schedule change'}</a><p>{ar ? 'هذه معاينة للحلقة؛ الشركات الثلاث غير محسوبة ضمن إحصاءات العروض والصفقات المسجلة.' : 'This is an episode preview. These three businesses are not included in the recorded pitch and deal totals.'}</p></footer>
+    </>}
+  </section>
+))}
+<style>
+  .episode-preview { margin-block: 32px; padding-block: 20px; border-block: 1px solid var(--line); border-top: 3px solid var(--crimson); scroll-margin-top: 100px; }
+  .compact { margin: 0; padding-block: 6px; border: 0; font-size: .78rem; line-height: 1.4; }
+  header { display: flex; justify-content: space-between; gap: 24px; align-items: start; }
+  .eyebrow { margin: 0 0 6px; color: var(--crimson); font-weight: 600; font-size: .78rem; }
+  h2 { font-size: clamp(1.25rem, 3vw, 1.7rem); }
+  h2 a { color: var(--ink); text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .schedule { display: grid; gap: 2px; margin: 0; font-size: .88rem; }
+  .schedule span, .schedule small, .note, li p, footer { color: var(--ink-2); }
+  time { font-weight: 600; }
+  .note { margin-block: 16px 20px; max-width: 90ch; font-size: .92rem; }
+  ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 0; margin: 0; list-style: none; }
+  li { border-top: 1px solid var(--line); padding-top: 14px; }
+  h3 { font-family: var(--serif); font-size: 1.2rem; }
+  li p { font-size: .9rem; margin: 8px 0; }
+  .source, footer { font-size: .78rem; }
+  footer { margin-top: 20px; }
+  footer p { margin: 4px 0 0; }
+  @media (max-width: 640px) { header { flex-direction: column; gap: 14px; } ul { grid-template-columns: 1fr; gap: 16px; } }
+</style>

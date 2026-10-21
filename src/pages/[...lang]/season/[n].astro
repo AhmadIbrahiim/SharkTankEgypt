@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { ID, sharkRef } from '../../../schema';
 import Listing from '../../../components/Listing.astro';
+import EpisodePreview from '../../../components/EpisodePreview.astro';
 import Faq from '../../../components/Faq.astro';
 import { seasonFaq, episodes, sectorSeasons } from '../../../faq';
 import Chips from '../../../components/Chips.astro';
@@ -24,7 +25,9 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'TVSeason', '@id': I
   ...(episodes.some(([k]) => k === n) && { numberOfEpisodes: episodes.filter(([k]) => k === n).length }) };
 ---
 <Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, seasonLabel(n, lang))} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/season/${n}/`}>
-  <Listing lang={lang} title={title} intro={intro} items={items} byEpisode />
+  <Listing lang={lang} title={title} intro={intro} items={items} byEpisode>
+    <EpisodePreview lang={lang} season={n} />
+  </Listing>
   <div class="container">
     <Chips title={lang === 'ar' ? `حلقات ${label}` : `${label} episodes`} links={episodes.filter(([k]) => k === n).map(([, e]) => ({ href: `${import.meta.env.BASE_URL.replace(/\/$/, '')}${pre(lang)}/season/${n}/episode/${e}/`, label: lang === 'ar' ? `الحلقة ${num(e, lang)}` : `Episode ${e}` }))} />
     <Chips title={lang === 'ar' ? `قطاعات ${label}` : `${label} by sector`} links={sectorSeasons.filter((x) => x.n === n).map((x) => ({ href: `${import.meta.env.BASE_URL.replace(/\/$/, '')}${pre(lang)}/category/${catSlug(x.c)}/season/${n}/`, label: category(x.c, lang) }))} />

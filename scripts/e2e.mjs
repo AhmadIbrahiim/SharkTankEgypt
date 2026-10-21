@@ -31,6 +31,33 @@ await test('home lists startups, 24 per page, show more adds more', async () => 
   assert.equal((await visibleNames(p)).length, 24);
   await p.click('#more'); assert.ok((await visibleNames(p)).length > 24);
 });
+await test('episode previews show the announced lineup without adding unbroadcast pitches to totals', async () => {
+  const previews = JSON.parse(readFileSync('src/data/episode-previews.json', 'utf8'));
+  const aired = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
+  const exported = JSON.parse(readFileSync('dist/data/startups.json', 'utf8')).startups;
+  assert.equal(exported.length, aired.length);
+  for (const prefix of ['en/', '']) {
+    const p = await page({ viewport: { width: 375, height: 812 } });
+    await p.goto(`${U}/${prefix}`);
+    assert.equal(await count(p), aired.length);
+    for (const preview of previews) {
+      const section = p.locator(`#episode-${preview.season}-${preview.episode}-preview`);
+      assert.equal(await section.locator('time').getAttribute('datetime'), preview.scheduledAt);
+      for (const startup of preview.startups) assert.ok(!exported.some((x) => x.id === startup.id));
+      assert.ok(await section.evaluate((el) => el.getBoundingClientRect().right <= innerWidth && el.scrollWidth <= el.clientWidth), 'preview fits a phone');
+      await section.locator('a').click();
+      assert.ok(new URL(p.url()).pathname.endsWith(`/season/${preview.season}/`));
+      const full = p.locator(`#episode-${preview.season}-${preview.episode}-preview`);
+      assert.ok(await full.isVisible());
+      assert.equal(await full.locator('li').count(), preview.startups.length);
+      assert.equal(await full.locator('a').last().getAttribute('href'), preview.scheduleSource);
+      await p.goto(`${U}/${prefix}`);
+    }
+    await p.goto(`${U}/${prefix}season/1/`);
+    assert.equal(await p.locator('.episode-preview').count(), previews.filter((x) => x.season === 1).length);
+    await p.close();
+  }
+});
 await test('search: English, Arabic with spelling variants, typo, multi-word', async () => {
   const p = await page(); await p.goto(`${U}/`);
   for (const q of ['bar jar', 'بار اند جار', 'بار أند جار', 'jar bar', 'Bar & Jar', 'nourhan abaza', 'نورهان اباظه']) {
