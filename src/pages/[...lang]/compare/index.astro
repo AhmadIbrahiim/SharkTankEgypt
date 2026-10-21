@@ -72,6 +72,8 @@ const L = ar
   :global(#cmp) { width: 100%; border-collapse: collapse; font-size: .93rem; }
   :global(#cmp th), :global(#cmp td) { padding: 9px 12px; border-top: 1px solid var(--line); text-align: start; white-space: nowrap; }
   :global(#cmp thead th) { border-top: 0; font-weight: 650; }
+  :global(#cmp td), :global(#cmp thead th:not(:first-child)) { text-align: end; }
+  :global(#cmp td) { font-family: var(--serif); font-size: 1rem; }
   :global(#cmp tbody th) { color: var(--ink-2); font-weight: 500; font-size: .86rem; }
   :global(#cmp td.unk) { color: var(--ink-2); font-style: italic; }
   :global(#cmp button) { border: 0; background: none; color: var(--ink-2); cursor: pointer; font-size: 1rem; padding: 0 4px; }

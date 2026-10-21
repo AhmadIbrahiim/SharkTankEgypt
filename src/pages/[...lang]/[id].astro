@@ -268,21 +268,21 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 
 <style>
   /* Recap hero: the pitch still (or website screenshot) under a warm dark overlay. */
-  .stage { position: relative; overflow: hidden; background: #2a1a14; min-height: 400px; display: flex; align-items: flex-end; }
-  .stage.noimg { background: #24403f; }
+  .stage { --focus: var(--focus-inverse); position: relative; overflow: hidden; background: var(--navy); min-height: 400px; display: flex; align-items: flex-end; }
+  .stage.noimg { background: var(--media-bg); }
   .stage .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; opacity: .5; }
   .stage .bg.site { opacity: .18; }
-  .stage::after { content: ''; position: absolute; inset: 0; background: rgb(42 26 20 / .72); }
-  .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: #f4efe6; display: flex; flex-direction: column; align-items: center; text-align: center; }
-  .crumbs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; font-size: .85rem; color: #d6c7b2; margin-bottom: 56px; }
-  .crumbs a { color: #d6c7b2; text-decoration: none; } .crumbs a:hover { color: #fff; }
-  .crumbs [aria-current] { color: #f4efe6; }
-  .ep { margin: 0; color: #f6cf73; font-weight: 700; font-size: .85rem; }
-  .stage h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.2; }
-  .lead { margin: 8px 0 0; max-width: 62ch; color: #e8ddcf; font-size: 1.05rem; }
+  .stage::after { content: ''; position: absolute; inset: 0; background: var(--hero-overlay); }
+  .stage-in { position: relative; z-index: 1; width: 100%; padding-block: 18px 72px; color: var(--on-dark); display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .crumbs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; font-size: .85rem; color: var(--on-dark-muted); margin-bottom: 56px; }
+  .crumbs a { color: var(--on-dark-muted); text-decoration: none; } .crumbs a:hover { color: var(--on-dark); }
+  .crumbs [aria-current] { color: var(--on-dark); }
+  .ep { margin: 0; color: var(--gold-light); font-weight: 700; font-size: .85rem; }
+  .stage h1 { color: var(--on-dark); font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.2; }
+  .lead { margin: 8px 0 0; max-width: 62ch; color: var(--on-dark-muted); font-size: 1.05rem; }
   .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 12px 0 0; }
-  .tags > * { font-size: .8rem; padding: 1px 10px; border-radius: 3px; background: rgb(255 255 255 / .14); color: #f4efe6; text-decoration: none; }
-  .watch { margin-top: 16px; background: var(--crimson); color: #fff; padding: 10px 18px 10px 16px; border-radius: 30px; font-weight: 700; font-size: .92rem; text-decoration: none; }
+  .tags > * { font-size: .8rem; padding: 1px 10px; border-radius: 3px; background: var(--dark-surface); color: var(--on-dark); text-decoration: none; }
+  .watch { margin-top: 16px; background: var(--crimson); color: var(--on-dark); padding: 10px 18px 10px 16px; border-radius: 30px; font-weight: 700; font-size: .92rem; text-decoration: none; }
   @media (max-width: 760px) { .stage { min-height: 360px; } .crumbs { margin-bottom: 48px; } .stage-in { padding-bottom: 64px; } }
 
   /* Score card: asked → outcome → final, overlapping the hero. */
@@ -293,7 +293,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .v.ok { color: var(--ok); } .v.muted { color: var(--ink-2); } .v.gold { color: var(--gold-ink); }
   .s { font-size: .85rem; color: var(--ink-2); }
   .arr { font-size: 1.5rem; color: var(--gold); }
-  .verdict { border-radius: 10px; padding: 12px 14px; text-align: center; color: #fff; background: var(--ok); }
+  .verdict { border-radius: 10px; padding: 12px 14px; text-align: center; color: var(--on-dark); background: var(--ok); }
   .verdict strong { display: block; font-size: 1.1rem; font-weight: 800; }
   .verdict small { font-size: .78rem; opacity: .9; }
   .no .verdict { background: var(--ink-2); }
@@ -306,9 +306,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   /* Body: story on the main side, facts in the sidebar (which comes first on phones). */
   .cols { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 34px; margin-top: 30px; }
   @media (max-width: 860px) { .cols { grid-template-columns: 1fr; } .aside { order: -1; } }
-  .answer { margin: 0 0 22px; padding: 12px 16px; border-radius: 8px; background: var(--surface); border-inline-start: 4px solid var(--ok); }
-  .no ~ .cols .answer { border-color: var(--ink-2); }
-  .unk ~ .cols .answer { border-color: var(--gold); }
+  .answer { margin: 0 0 22px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
   .sec { margin-bottom: 30px; scroll-margin-top: 90px; }
   .sec > h2 { font-size: 1.45rem; margin-bottom: 10px; }
   .sec p { margin: 0 0 10px; max-width: 75ch; }
@@ -324,8 +322,8 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .people a { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); color: inherit; text-decoration: none; }
   .people a:hover { border-color: var(--crimson); }
   .people b { display: block; } .people small { color: var(--ink-2); font-size: .82rem; }
-  .ask-help { padding: 12px 14px; border-radius: 10px; background: var(--sun-soft); border: 1px dashed #c98e85; }
-  .upd { padding: 4px 14px; border-inline-start: 3px dashed #d6c7b2; color: var(--ink-2); }
+  .ask-help { padding: 12px 14px; border-radius: 10px; background: var(--sun-soft); border: 1px dashed var(--help-line); }
+  .upd { padding: 4px 14px; border-inline-start: 3px dashed var(--on-dark-muted); color: var(--ink-2); }
   .ask-help a, .upd a { color: var(--crimson); font-weight: 700; }
   .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
   .timeline li { padding: 4px 14px; border-inline-start: 3px solid var(--crimson); }

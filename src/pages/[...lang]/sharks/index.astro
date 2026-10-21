@@ -85,6 +85,8 @@ const sharkQs = programFaq(lang).general.filter((q) => /shark|مستثمر/i.tes
   table { width: 100%; border-collapse: collapse; font-size: .93rem; }
   th, td { padding: 10px 14px; text-align: start; white-space: nowrap; border-top: 1px solid var(--line); }
   thead th { border-top: 0; font-size: .8rem; color: var(--ink-2); font-weight: 600; background: var(--surface-2); }
+  :is(th, td):is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(6)) { text-align: end; }
+  td:is(:nth-child(2), :nth-child(3), :nth-child(4), :nth-child(6)) { font-family: var(--serif); font-size: 1rem; }
   .nm { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; text-decoration: none; }
   .nm:hover { color: var(--crimson); }
   td a { color: var(--nile); }

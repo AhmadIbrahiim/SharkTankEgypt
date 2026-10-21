@@ -15,6 +15,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categories = [...new Set(startups.map((x) => x.category).filter(Boolean))].sort() as string[];
 const deals = startups.filter((x) => x.deal?.made);
 const invested = deals.reduce((sum, x) => sum + (x.deal?.amountEGP ?? 0), 0);
+const featured = startups.find((x) => x.id === 'al-ahram-cookware');
 const panel = sharks.filter((p) => p.deals.length).sort((a, b) => b.deals.length - a.deals.length).slice(0, 8);
 // One tile per season: counts and money, linking to the season page (the startups themselves are in the grid below).
 const seasonTiles = [...seasons].filter((x) => x.season > 0).sort((a, b) => b.season - a.season).map((x) => {
@@ -51,60 +52,42 @@ const jsonld = {
 };
 ---
 <Base lang={lang} jsonld={jsonld} card={listCard(s.title, s.tagline, startups, lang, lang === 'ar' ? 'كل المواسم والحلقات' : 'Every season and episode')} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/`}>
-  <section class="stage">
+  <section class="stage" aria-labelledby="hero-title">
     <div class="container stage-in">
-      <h1>{s.heroTitle}</h1>
-      <p class="sub">{s.heroSub}</p>
-      <label class="search">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <span class="sr">{s.search}</span>
-        <input id="q" type="search" placeholder={s.search} autocomplete="off" enterkeyhint="search" />
-        <kbd aria-hidden="true">/</kbd>
-        <div class="suggest" id="suggest" role="listbox" hidden></div>
-      </label>
-      <p class="totals"><span><b>{num(startups.length, lang)}</b> {s.statStartups}</span><i></i><span><b>{num(deals.length, lang)}</b> {s.statDeals}</span><i></i><span><b>{money(invested, lang)}</b> {s.statInvested}</span></p>
-      <ul class="records" aria-label={ar ? 'أرقام قياسية' : 'Records'}>
-        {records.map((r) => (
-          <li><a class="rec" href={r.href}>
-            <span class="rk">{r.k}</span>
-            <span class="rv">{r.v}</span>
-            <span class="rw">{r.photo && <Avatar name={r.who} seed={r.who} photo={r.photo} size={24} />}{r.who}</span>
-          </a></li>
-        ))}
-      </ul>
+      <div class="hero-copy">
+        <h1 id="hero-title">{s.heroTitle.split(/(?<=،|\.)\s+/).map((line) => <span>{line}{' '}</span>)}</h1>
+        <p class="sub">{s.heroSub}</p>
+      </div>
+      {featured && <figure class="hero-feature">
+        <img class="hero-photo" src={`${base}/hero/al-ahram-cookware.webp`} width="640" height="720" alt={featured.founders?.map((n) => founders.find((f) => f.key === n)?.name[lang] ?? n).join(ar ? ' و' : ' and ')} loading="eager" fetchpriority="high" />
+        <figcaption>
+          <a class="feature-source" href={`https://www.youtube.com/watch?v=${featured.video}`}>CBC · {seasonLabel(featured.season, lang)}</a>
+          <a class="feature-link" href={`${base}${pre(lang)}/${featured.id}/`}>
+            <span><strong>{featured.name[lang]}</strong><small>{s.finalDeal} · {money(featured.deal?.amountEGP, lang)}</small></span>
+            <svg class="feature-arrow" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" /></svg>
+          </a>
+        </figcaption>
+      </figure>}
+    </div>
+    <div class="hero-tools">
+      <div class="container tools-in">
+        <div class="hero-search">
+          <label class="search-label" for="q">{ar ? 'ابحث في الدليل' : 'Search the directory'}</label>
+          <div class="search">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="q" type="search" placeholder={ar ? 'ابحث في التانك…' : 'Search the tank…'} autocomplete="off" enterkeyhint="search" />
+            <kbd aria-hidden="true">/</kbd>
+            <div class="suggest" id="suggest" role="listbox" hidden></div>
+          </div>
+        </div>
+        <dl class="totals">
+          <div><dt>{s.statStartups}</dt><dd>{num(startups.length, lang)}</dd></div>
+          <div><dt>{s.statDeals}</dt><dd>{num(deals.length, lang)}</dd></div>
+          <div><dt>{s.statInvested}</dt><dd>{money(invested, lang)}</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
-
-  <div class="container">
-    <section class="panel" aria-labelledby="buying">
-      <div class="sechead"><h2 id="buying">{ar ? 'مين بيستثمر؟' : "Who's buying?"}</h2><a href={`${base}${pre(lang)}/sharks/`}>{ar ? 'كل المستثمرين' : 'All sharks'}</a></div>
-      <p class="hint">{ar ? 'اختر مستثمرًا لترى كل شركة استثمر فيها.' : 'Pick a shark to see every startup they backed.'}</p>
-      <ul class="chairs">
-        {panel.map((p) => (
-          <li><a href={`${base}${pre(lang)}/sharks/${p.id}/`}>
-            <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} />
-            <strong>{p.name[lang]}</strong>
-            <em>{num(p.deals.length, lang)}</em>
-            <small>{ar ? 'صفقة' : p.deals.length === 1 ? 'deal' : 'deals'}</small>
-          </a></li>
-        ))}
-      </ul>
-    </section>
-
-    <section class="seasons" aria-labelledby="ssn">
-      <div class="sechead"><h2 id="ssn">{ar ? 'المواسم' : 'Seasons'}</h2></div>
-      <ul class="tiles">
-        {seasonTiles.map((x) => (
-          <li><a class="tile" href={`${base}${pre(lang)}/season/${x.n}/`}>
-            <span class="tn">{seasonLabel(x.n, lang)}</span>
-            <span class="ty">{digits(x.year, lang)}</span>
-            <span class="tc"><b>{num(x.count, lang)}</b> {ar ? 'شركة' : 'startups'} · <b>{num(x.deals, lang)}</b> {ar ? 'صفقة' : 'deals'}</span>
-            {x.invested > 0 && <span class="ti">{money(x.invested, lang)}</span>}
-          </a></li>
-        ))}
-      </ul>
-    </section>
-  </div>
 
   <section class="container" aria-labelledby="all">
     <div class="sechead"><h2 id="all">{s.allStartups}</h2></div>
@@ -185,6 +168,50 @@ const jsonld = {
       <a class="btn btn-primary" href={suggestUrl}>{s.suggest}</a>
     </aside>
   </section>
+
+  <div class="container">
+    <section class="panel" aria-labelledby="buying">
+      <div class="sechead"><h2 id="buying">{ar ? 'مين بيستثمر؟' : "Who's buying?"}</h2><a href={`${base}${pre(lang)}/sharks/`}>{ar ? 'كل المستثمرين' : 'All sharks'}</a></div>
+      <p class="hint">{ar ? 'اختر مستثمرًا لترى كل شركة استثمر فيها.' : 'Pick a shark to see every startup they backed.'}</p>
+      <ul class="chairs">
+        {panel.map((p) => (
+          <li><a href={`${base}${pre(lang)}/sharks/${p.id}/`}>
+            <Avatar name={p.name.en} seed={p.id} photo={p.photo} size={112} />
+            <strong>{p.name[lang]}</strong>
+            <em>{num(p.deals.length, lang)}</em>
+            <small>{ar ? 'صفقة' : p.deals.length === 1 ? 'deal' : 'deals'}</small>
+          </a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="seasons" aria-labelledby="ssn">
+      <div class="sechead"><h2 id="ssn">{ar ? 'المواسم' : 'Seasons'}</h2></div>
+      <ul class="tiles">
+        {seasonTiles.map((x) => (
+          <li><a class="tile" href={`${base}${pre(lang)}/season/${x.n}/`}>
+            <span class="tn">{seasonLabel(x.n, lang)}</span>
+            <span class="ty">{digits(x.year, lang)}</span>
+            <span class="tc"><b>{num(x.count, lang)}</b> {ar ? 'شركة' : 'startups'} · <b>{num(x.deals, lang)}</b> {ar ? 'صفقة' : 'deals'}</span>
+            {x.invested > 0 && <span class="ti">{money(x.invested, lang)}</span>}
+          </a></li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="records-section" aria-labelledby="records">
+      <div class="sechead"><h2 id="records">{ar ? 'أرقام قياسية' : 'Record figures'}</h2></div>
+      <ul class="records">
+        {records.map((r) => (
+          <li><a class="rec" href={r.href}>
+            <span class="rk">{r.k}</span>
+            <span class="rv">{r.v}</span>
+            <span class="rw">{r.photo && <Avatar name={r.who} seed={r.who} photo={r.photo} size={24} />}{r.who}</span>
+          </a></li>
+        ))}
+      </ul>
+    </section>
+  </div>
 </Base>
 
 <script>
@@ -243,7 +270,7 @@ const jsonld = {
     const url = new URL(location.href);
     url.search = new URLSearchParams(Object.entries(state).filter(([, v]) => v)).toString();
     history.replaceState(null, '', url);
-    // While searching or filtering, hide the browse sections so results sit right under the search box.
+    // Keep the page focused on matching results while searching or filtering.
     document.body.classList.toggle('searching', !!(state.q || state.s || state.d || state.c || state.sh));
     // Live suggestions under the box: the first matches, right where the visitor is looking.
     if (state.q) {
@@ -312,53 +339,95 @@ const jsonld = {
 </script>
 
 <style>
-  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-  /* Hero: flat ink, title, search with live suggestions, totals, records. */
-  .stage { background: #2a1a14; color: #f4efe6; }
-  .stage-in { display: flex; flex-direction: column; align-items: center; text-align: center; padding-block: 56px 48px; }
-  .stage h1 { color: #fff; font-size: clamp(2.2rem, 5.4vw, 3.8rem); line-height: 1.1; max-width: 18ch; }
-  :global([dir='rtl']) .stage h1 { line-height: 1.35; }
-  .sub { max-width: 58ch; margin: 14px auto 24px; color: #d9cdbf; font-size: 1.05rem; }
-  .search { position: relative; display: flex; align-items: center; gap: 10px; width: min(100%, 640px); padding-inline: 16px 8px; background: #fff; border: 2px solid transparent; border-radius: 10px; color: var(--ink-2); }
-  .search:focus-within { border-color: var(--gold); }
-  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1.05rem; color: var(--ink); padding: 13px 0; }
+  .stage { background: var(--navy); color: var(--on-dark); --focus: var(--focus-inverse); }
+  .stage-in { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 24px; padding-block: 24px 32px; }
+  .stage h1 { color: var(--on-dark); font-family: var(--serif); font-weight: 700; font-style: normal; font-size: clamp(2.75rem, 5.8vw, 5.25rem); line-height: 1.02; }
+  .stage h1 span { display: block; }
+  .stage h1 span + span { color: var(--gold-light); }
+  :global([dir='rtl']) .stage h1 { line-height: 1.3; }
+  :global([dir='rtl']) .stage h1 span:first-child { font-size: .68em; }
+  .sub { max-width: 48ch; margin: 20px 0 0; color: var(--on-dark-muted); font-size: .9375rem; line-height: 1.7; }
+  .hero-feature { display: grid; grid-template-columns: 88px minmax(0, 1fr); align-items: center; gap: 20px; min-width: 0; margin: 0; }
+  .hero-photo { display: block; width: 88px; height: 88px; object-fit: cover; object-position: center 25%; filter: grayscale(1); }
+  .hero-feature figcaption { min-width: 0; }
+  .feature-source { display: inline-flex; align-items: center; min-height: 44px; color: var(--on-dark-muted); font-size: .75rem; text-decoration: none; white-space: nowrap; }
+  .feature-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 48px; color: var(--on-dark); text-decoration: none; }
+  .feature-link strong { display: block; font-family: var(--serif); font-size: 1.15rem; line-height: 1.4; white-space: nowrap; }
+  .feature-link small { display: block; color: var(--gold-light); font-family: var(--serif); font-size: .95rem; margin-top: 4px; white-space: nowrap; }
+  .feature-arrow { flex: none; color: var(--gold-light); }
+  :global([dir='rtl']) .feature-arrow { transform: scaleX(-1); }
+  @media (hover: hover) { .feature-link:hover strong, .feature-source:hover { text-decoration: underline; text-underline-offset: 4px; } }
+  .feature-link:active { color: var(--gold-light); }
+  @media (max-width: 370px) {
+    .hero-feature { grid-template-columns: 64px minmax(0, 1fr); gap: 16px; }
+    .hero-photo { width: 64px; height: 80px; }
+    .feature-link { gap: 8px; }
+    .feature-link strong { font-size: 1rem; }
+    .feature-arrow { width: 16px; height: 16px; }
+  }
+  .hero-tools { background: var(--surface); color: var(--ink); border-bottom: 1px solid var(--line); --focus: var(--crimson); }
+  .tools-in { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 24px; padding-block: 24px; }
+  .hero-search { min-width: 0; }
+  .search-label { display: block; margin-bottom: 8px; color: var(--ink-2); font-weight: 500; font-size: .8rem; }
+  .search { position: relative; display: flex; align-items: center; gap: 12px; width: 100%; padding-inline: 16px 8px; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); color: var(--crimson); }
+  @media (hover: hover) { .search:hover { background: var(--surface-2); } }
+  .search:focus-within { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .search input { flex: 1; min-width: 0; border: 0; outline: 0; background: none; font: inherit; font-size: 1rem; color: var(--ink); padding: 16px 0; }
   kbd { font: inherit; font-size: .78rem; padding: 0 7px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink-2); margin-inline-end: 6px; }
   @media (hover: none) { kbd { display: none; } }
-  .suggest { position: absolute; z-index: 30; inset-inline: -2px; top: calc(100% + 6px); padding: 6px; border-radius: 10px; background: #fff; border: 1px solid var(--line); text-align: start; box-shadow: 0 12px 28px -14px rgb(0 0 0 / .45); }
+  .suggest { position: absolute; z-index: 30; inset-inline: -1px; top: calc(100% + 6px); padding: 6px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); text-align: start; box-shadow: var(--shadow-lift); }
   .suggest[hidden] { display: none; }
   .suggest :global(a) { display: flex; flex-direction: column; padding: 8px 12px; border-radius: 6px; color: var(--ink); text-decoration: none; }
-  .suggest :global(a:hover), .suggest :global(a:focus) { background: var(--surface-2); outline: 0; }
+  .suggest :global(a:hover), .suggest :global(a:focus) { background: var(--surface-2); }
   .suggest :global(b) { font-weight: 600; } .suggest :global(small) { color: var(--ink-2); font-size: .8rem; }
   .suggest :global(.all) { display: block; width: 100%; margin-top: 4px; padding: 9px 12px; border: 0; border-top: 1px solid var(--line); background: none; font: inherit; color: var(--crimson); font-weight: 700; cursor: pointer; text-align: start; }
-  .totals { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px 12px; margin: 16px 0 0; color: #cdbfb0; font-size: .92rem; }
-  .totals b { color: #fff; } .totals i { width: 4px; height: 4px; border-radius: 50%; background: #8a7a6c; }
-  .records { list-style: none; margin: 34px 0 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid rgb(244 239 230 / .18); }
-  .records li + li { border-inline-start: 1px solid rgb(244 239 230 / .18); }
-  .rec { display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 16px 14px 0; color: #fff; text-decoration: none; }
-  .rk { font-size: .8rem; color: #bfae9d; }
-  .rv { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; line-height: 1.25; color: #fff; }
-  .rw { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: .88rem; color: #e2b65a; }
+  .totals { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr); gap: 12px; margin: 0; }
+  .totals > div { display: flex; flex-direction: column; min-width: 0; }
+  .totals > div + div { padding-inline-start: 12px; border-inline-start: 1px solid var(--line); }
+  .totals dt { color: var(--ink-2); font-size: .75rem; line-height: 1.4; }
+  .totals dd { order: -1; margin: 0 0 6px; font-family: var(--serif); font-weight: 700; font-size: clamp(1.1rem, 1.9vw, 1.6rem); line-height: 1.3; white-space: nowrap; }
+  @media (min-width: 768px) {
+    .stage-in { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; padding-block: 0; }
+    .hero-copy { padding-block: 48px 64px; }
+    .sub { font-size: 1rem; }
+    .hero-feature { position: relative; display: block; align-self: stretch; min-height: 360px; background: var(--navy); }
+    .hero-photo { width: 100%; height: 100%; position: absolute; inset: 0; object-position: center top; mix-blend-mode: luminosity; mask-image: linear-gradient(to right, transparent, var(--ink) 12%, var(--ink) 84%, transparent); }
+    .hero-feature figcaption { position: absolute; inset-inline: 0; bottom: 0; padding: 32px 24px 20px; background: linear-gradient(transparent, var(--navy) 32px); }
+    .feature-link strong { font-size: clamp(1.15rem, 1.8vw, 1.5rem); }
+    .feature-link small { font-size: 1.1rem; }
+    .tools-in { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; padding-block: 24px 32px; }
+    .totals { padding-top: 28px; }
+  }
+  @media (min-width: 1100px) { .stage-in, .tools-in { gap: 64px; } .hero-feature { min-height: 400px; } }
+  .records-section { margin-top: var(--gap-sec); }
+  .records { list-style: none; margin: 0; padding: 0; width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+  .records li + li { border-inline-start: 1px solid var(--line); }
+  .rec { display: flex; flex-direction: column; gap: 2px; height: 100%; padding: 16px 14px; color: var(--ink); text-decoration: none; }
+  .rk { font-size: .8rem; color: var(--ink-2); }
+  .rv { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; line-height: 1.25; }
+  .rw { display: flex; align-items: center; gap: 6px; font-size: .88rem; color: var(--sun-ink); }
   .rec:hover .rw { text-decoration: underline; }
   @media (max-width: 1000px) { .records { grid-template-columns: repeat(3, minmax(0, 1fr)); } .records li:nth-child(4) { border-inline-start: 0; } }
-  @media (max-width: 640px) { .stage-in { padding-block: 36px 32px; } .records { grid-template-columns: 1fr 1fr; } .records li { border-inline-start: 0 !important; border-top: 1px solid rgb(244 239 230 / .12); } .records li:last-child { grid-column: 1 / -1; } .rv { font-size: 1.25rem; } }
-  :global(body.searching) .panel, :global(body.searching) .seasons, :global(body.searching) .records { display: none; }
+  @media (max-width: 640px) { .records { grid-template-columns: repeat(2, minmax(0, 1fr)); } .records li { border-inline-start: 0 !important; border-top: 1px solid var(--line); } .records li:last-child { grid-column: 1 / -1; } .rv { font-size: 1.25rem; } }
+  :global(body.searching) .panel, :global(body.searching) .seasons, :global(body.searching) .records-section { display: none; }
 
   .sechead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
   .sechead h2 { font-size: 1.6rem; }
-  .sechead h2 small { font-family: 'Readex Pro Variable', sans-serif; font-size: .85rem; font-weight: 400; color: var(--ink-2); margin-inline-start: 8px; }
-  .sechead a { color: var(--sun-ink); font-size: .92rem; text-decoration: none; }
+  .sechead h2 small { font-family: var(--font-body); font-size: .85rem; font-weight: 400; color: var(--ink-2); margin-inline-start: 8px; }
+  .sechead a { color: var(--sun-ink); font-size: .92rem; text-decoration: none; white-space: nowrap; }
   .sechead a:hover { text-decoration: underline; }
+  @media (max-width: 640px) { .sechead { flex-direction: column; align-items: flex-start; gap: 8px; } }
 
   /* Who's buying: the panel of sharks, like the chairs on set. */
-  .panel { margin-top: var(--gap-sec); padding: 26px 24px 22px; border-radius: 10px; background: var(--crimson); color: #f4efe6; --ink: #f4efe6; --ink-2: #ecd3cc; --sun-ink: #f4efe6; }
+  .panel { margin-top: var(--gap-sec); padding: 26px 24px 22px; border-radius: 10px; background: var(--crimson); color: var(--on-dark); --ink: var(--on-dark); --ink-2: var(--on-accent-muted); --sun-ink: var(--on-dark); --focus: var(--focus-inverse); }
   .panel .sechead { margin-bottom: 2px; }
   .hint { margin: 0 0 18px; color: var(--ink-2); }
-  .chairs { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(8, minmax(96px, 1fr)); gap: 14px; overflow-x: auto; scrollbar-width: none; }
+  .chairs { list-style: none; margin: 0; padding: 4px; display: grid; grid-template-columns: repeat(8, minmax(96px, 1fr)); gap: 14px; overflow-x: auto; scrollbar-width: none; }
   .chairs a { display: flex; flex-direction: column; align-items: center; text-align: center; color: var(--ink); text-decoration: none; }
-  .chairs a :global(.person-avatar) { width: 100%; height: auto; max-width: 112px; aspect-ratio: 1; border: 3px solid rgb(244 239 230 / .45); transition: border-color .2s; }
+  .chairs a :global(.person-avatar) { width: 100%; height: auto; max-width: 112px; aspect-ratio: 1; border: 3px solid var(--on-accent-muted); transition: border-color .2s; }
   .chairs a:hover :global(.person-avatar) { border-color: var(--gold); }
   .chairs strong { margin-top: 10px; font-size: .9rem; font-weight: 600; line-height: 1.25; }
-  .chairs em { font-style: normal; font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: #f6cf73; line-height: 1.1; margin-top: 4px; }
+  .chairs em { font-style: normal; font-family: var(--serif); font-size: 1.9rem; font-weight: 700; color: var(--gold-light); line-height: 1.1; margin-top: 4px; }
   .chairs small { color: var(--ink-2); font-size: .78rem; }
   @media (max-width: 860px) { .chairs { grid-template-columns: repeat(8, 104px); } .panel { padding: 20px 16px; } }
 
@@ -369,11 +438,11 @@ const jsonld = {
   .tile:hover { border-color: var(--crimson); }
   .tn { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; }
   .ty { font-size: .82rem; color: var(--ink-2); }
-  .tc { margin-top: 8px; font-size: .9rem; color: var(--ink-2); } .tc b { color: var(--ink); }
-  .ti { font-weight: 700; color: var(--ok); }
+  .tc { margin-top: 8px; font-size: .9rem; color: var(--ink-2); } .tc b { color: var(--ink); font-family: var(--serif); }
+  .ti { font-family: var(--serif); font-weight: 700; color: var(--ok); }
   .pic { position: relative; display: block; }
-  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; color: #fff; background: #6b5b4f; }
-  .pic i.ok { background: var(--ok); } .pic i.unk { background: var(--gold); color: #2a1a14; }
+  .pic i { position: absolute; top: 8px; inset-inline-start: 8px; font-style: normal; font-size: .72rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; color: var(--on-dark); background: var(--ink-2); }
+  .pic i.ok { background: var(--ok); } .pic i.unk { background: var(--gold); color: var(--ink); }
 
   #all { scroll-margin-top: 80px; }
   section[aria-labelledby='all'] { margin-top: var(--gap-sec); }
@@ -381,11 +450,11 @@ const jsonld = {
   .chips { display: flex; gap: 4px; flex-wrap: wrap; }
   .chip { font: inherit; font-size: .88rem; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink-2); cursor: pointer; }
   .chip:hover { color: var(--ink); border-color: var(--sun); }
-  .chip[aria-pressed='true'] { background: var(--crimson); border-color: var(--crimson); color: #f4efe6; font-weight: 600; }
+  .chip[aria-pressed='true'] { background: var(--crimson); border-color: var(--crimson); color: var(--on-dark); font-weight: 600; }
   .selects { display: flex; gap: 8px; margin-inline-start: auto; }
   select { font: inherit; font-size: .9rem; padding: 8px 10px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--ink); cursor: pointer; }
   @media (max-width: 720px) { .chips { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; scrollbar-width: none; } .chip { white-space: nowrap; flex: none; } }
-  @media (max-width: 720px) { .selects { margin-inline-start: 0; width: 100%; } .selects select { flex: 1; min-width: 0; } }
+  @media (max-width: 720px) { .selects { margin-inline-start: 0; width: 100%; flex-wrap: wrap; } .selects select { flex: 1 1 160px; min-width: 0; } }
   .count { color: var(--ink-2); font-size: .9rem; margin: 18px 0 14px; }
   .count strong { color: var(--ink); }
 
@@ -402,7 +471,7 @@ const jsonld = {
   .nums { display: grid; grid-template-columns: 1fr 1fr; margin: 0; border-top: 1px solid var(--line); }
   .nums div { padding: 8px 14px; } .nums div + div { border-inline-start: 1px solid var(--line); }
   .nums dt { font-size: .72rem; color: var(--ink-2); }
-  .nums dd { margin: 0; font-weight: 700; font-size: .92rem; } .nums dd small { font-weight: 500; color: var(--ink-2); }
+  .nums dd { margin: 0; font-family: var(--serif); font-weight: 700; font-size: 1rem; } .nums dd small { font-weight: 500; color: var(--ink-2); }
   .nums dd.ok { color: var(--ok); }
   .by { display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-top: 1px solid var(--line); font-size: .8rem; color: var(--ink-2); min-width: 0; }
   .by span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

@@ -7,7 +7,7 @@ import { extname, join } from 'node:path';
 import assert from 'node:assert/strict';
 
 const BASE = new URL(JSON.parse(readFileSync('package.json', 'utf8')).homepage).pathname.replace(/\/$/, '');
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.jpg': 'image/jpeg', '.png': 'image/png', '.txt': 'text/plain', '.xml': 'application/xml' };
+const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.jpg': 'image/jpeg', '.png': 'image/png', '.webp': 'image/webp', '.txt': 'text/plain', '.xml': 'application/xml' };
 const server = createServer((req, res) => {
   let p = decodeURIComponent(new URL(req.url, 'http://x').pathname);
   if (!p.startsWith(BASE)) { res.writeHead(404).end(); return; }
@@ -39,6 +39,33 @@ await test('search: English, Arabic with spelling variants, typo, multi-word', a
   }
   await p.fill('#q', 'qqqzzz'); assert.equal(await count(p), 0);
   assert.equal(await p.isVisible('#empty'), true, 'empty state shows');
+});
+await test('hero loads its local photograph, links to the featured deal, and keeps keyboard search usable', async () => {
+  for (const prefix of ['en/', '']) {
+    const p = await page({ viewport: { width: 1280, height: 800 } }); await p.goto(`${U}/${prefix}`);
+    await p.evaluate(() => document.fonts.ready);
+    assert.ok(await p.locator('.hero-photo').evaluate((img) => img.complete && img.naturalWidth > 600 && !!img.alt), 'hero photograph loads without a third-party request and has alt text');
+    assert.ok((await p.locator('.hero-tools').boundingBox()).y + (await p.locator('.hero-tools').boundingBox()).height < 800, 'search fits the laptop fold');
+    for (const width of [320, 375, 414, 768, 1280]) {
+      await p.setViewportSize({ width, height: 800 });
+      const clipped = await p.locator('.stage').evaluate((hero) => [...hero.querySelectorAll('h1 span, .sub, .feature-link strong, .feature-link small, .totals dd')].filter((e) => {
+        const r = e.getBoundingClientRect();
+        return r.left < 0 || r.right > innerWidth || e.scrollWidth > e.clientWidth + 1;
+      }).map((e) => e.textContent));
+      assert.deepEqual(clipped, [], `${prefix || 'ar'} hero at ${width}px`);
+    }
+    await p.keyboard.press('/');
+    assert.ok(await p.locator('#q').evaluate((e) => e === document.activeElement));
+    await p.fill('#q', 'bar jar');
+    await p.locator('#suggest a').first().waitFor({ state: 'visible' });
+    await p.keyboard.press('ArrowDown');
+    assert.ok(await p.locator('#suggest').evaluate((e) => e.contains(document.activeElement)));
+    await p.keyboard.press('Escape');
+    assert.ok(await p.locator('#q').evaluate((e) => e === document.activeElement));
+    await p.locator('.feature-link').focus();
+    await Promise.all([p.waitForURL(`${U}/${prefix}al-ahram-cookware/`), p.keyboard.press('Enter')]);
+    await p.close();
+  }
 });
 await test('filters combine and live in the URL; back button restores them', async () => {
   const p = await page(); await p.goto(`${U}/en/`);
@@ -74,11 +101,70 @@ await test('main nav works by keyboard and marks the current page', async () => 
   await p.focus('.nav a[href$="/sharks/"]');
   await Promise.all([p.waitForURL(/\/en\/sharks\/$/), p.keyboard.press('Enter')]);
 });
-await test('phones: no sideways scroll on key pages (390px and 360px, both languages)', async () => {
-  for (const w of [390, 360]) for (const path of ['en/', '', 'en/bar-and-jar/', 'bar-and-jar/', 'deals/', 'sharks/ayman-abbas/']) {
+await test('responsive: no sideways scroll at 320, 375, 414, 768 and 1440px', async () => {
+  for (const w of [320, 375, 414, 768, 1440]) for (const path of ['en/', '', 'en/bar-and-jar/', 'bar-and-jar/', 'deals/', 'sharks/ayman-abbas/']) {
     const p = await page({ viewport: { width: w, height: 800 } }); await p.goto(`${U}/${path}`);
     const sw = await p.evaluate(() => document.documentElement.scrollWidth);
     assert.ok(sw <= w, `${path} at ${w}px scrolls sideways (${sw}px)`); await p.close();
+  }
+});
+await test('mobile directory puts results first and keeps navigation labels on one line', async () => {
+  for (const prefix of ['en/', '']) for (const width of [320, 375]) {
+    const p = await page({ viewport: { width, height: 900 } }); await p.goto(`${U}/${prefix}`);
+    await p.evaluate(() => document.fonts.ready);
+    const layout = await p.evaluate(() => {
+      const grid = document.getElementById('grid');
+      const labels = [...document.querySelectorAll('.panel .sechead a, .foot-grid nav > a')];
+      return {
+        headerHeight: document.querySelector('.site-header').getBoundingClientRect().height,
+        gridTop: grid.getBoundingClientRect().top,
+        panelTop: document.querySelector('.panel').getBoundingClientRect().top,
+        wrapped: labels.filter((e) => {
+          const r = document.createRange(); r.selectNodeContents(e);
+          return new Set([...r.getClientRects()].map((rect) => Math.round(rect.top))).size > 1;
+        }).map((e) => e.textContent),
+      };
+    });
+    assert.ok(layout.gridTop < 1100, `results start too far down at ${width}px: ${layout.gridTop}`);
+    assert.ok(layout.headerHeight <= 100, `header gained an extra row at ${width}px`);
+    assert.ok(layout.gridTop < layout.panelTop, 'startup results precede investor discovery');
+    assert.deepEqual(layout.wrapped, [], `wrapped navigation at ${width}px`);
+    await p.close();
+  }
+});
+await test('keyboard focus contrasts with both dark and crimson panels', async () => {
+  const luminance = (color) => color.match(/[\d.]+/g).slice(0, 3).map(Number).map((c) => {
+    c /= 255; return c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4;
+  }).reduce((sum, c, i) => sum + c * [.2126, .7152, .0722][i], 0);
+  for (const prefix of ['en/', '']) {
+    const p = await page(); await p.goto(`${U}/${prefix}`);
+    for (const [target, surface] of [['.panel .sechead a', '.panel'], ['.chairs a', '.panel'], ['.site-footer .gh', '.site-footer']]) {
+      await p.locator(target).first().focus();
+      const colors = await p.locator(target).first().evaluate((e, surface) => ({
+        visible: e.matches(':focus-visible'), outline: getComputedStyle(e).outlineStyle,
+        width: parseFloat(getComputedStyle(e).outlineWidth), ring: getComputedStyle(e).outlineColor,
+        bg: getComputedStyle(e.closest(surface)).backgroundColor,
+      }), surface);
+      assert.ok(colors.visible && colors.outline !== 'none' && colors.width >= 2);
+      const [dark, light] = [luminance(colors.ring), luminance(colors.bg)].sort((a, b) => a - b);
+      assert.ok((light + .05) / (dark + .05) >= 3, `${target} focus contrast must be at least 3:1`);
+    }
+    await p.close();
+  }
+});
+await test('financial figures use equal-width digits and aligned columns in both languages', async () => {
+  for (const prefix of ['en/', '']) {
+    const p = await page(); await p.goto(`${U}/${prefix}deals/`); await p.evaluate(() => document.fonts.ready);
+    const result = await p.locator('table.all td:nth-child(4)').first().evaluate((e) => {
+      const span = document.createElement('span'); e.append(span);
+      const widths = (digits) => [...digits].map((digit) => { span.textContent = digit.repeat(5); return span.getBoundingClientRect().width; });
+      const values = widths(document.documentElement.lang === 'ar' ? '٠١٢٣٤٥٦٧٨٩' : '0123456789');
+      span.remove();
+      return { spread: Math.max(...values) - Math.min(...values), alignment: getComputedStyle(e).textAlign };
+    });
+    assert.ok(result.spread < .1, `digits differ in width by ${result.spread}px`);
+    assert.equal(result.alignment, 'end');
+    await p.close();
   }
 });
 await test('startup page shows summary, verification and sources', async () => {

@@ -167,7 +167,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
             <a href={`${base}${pre(lang)}/sharks/`}>{s.navSharks}</a>
             <a href={`${base}${pre(lang)}/founders/`}>{s.navFounders}</a>
             <a href={`${base}${pre(lang)}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
-            <a href={`${base}${pre(lang)}/compare/`}>{lang === 'ar' ? 'قارن بين الشركات' : 'Compare startups'}</a>
+            <a href={`${base}${pre(lang)}/compare/`}>{lang === 'ar' ? 'قارن الشركات' : 'Compare'}</a>
             <a href={`${base}${pre(lang)}/faq/`}>{s.navFaq}</a>
             <a href={`${base}${altPath}`} hreflang={other} lang={other}>{s.switchLang}</a>
           </nav>
@@ -195,23 +195,30 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     --navy: #2a1a14; --gold: #c8962e; --gold-ink: #6e4f0f;
     --nile: #1f5f66; --nile-soft: #dbe9ea;
     --ok: #2f6b3a; --ok-soft: #e2eee3;
+    --on-dark: var(--bg); --on-dark-muted: #d6c7b2; --on-accent-muted: #ecd3cc;
+    --gold-light: #f6cf73; --media-bg: #24403f; --help-line: #c98e85;
+    --dark-line: rgb(244 239 230 / .18); --dark-surface: rgb(244 239 230 / .14);
+    --hero-overlay: rgb(42 26 20 / .72); --play-overlay: rgb(42 26 20 / .65);
+    --focus: var(--crimson); --focus-inverse: var(--gold-light);
     --shadow: 0 1px 2px rgb(42 26 20 / .06), 0 6px 18px -8px rgb(42 26 20 / .18);
     --shadow-lift: 0 2px 4px rgb(42 26 20 / .08), 0 14px 30px -12px rgb(42 26 20 / .28);
     --radius: 6px;
     --gap-sec: 48px;
     --serif: 'Source Serif 4 Variable', 'Noto Naskh Arabic Variable', Georgia, serif;
+    --font-body: 'Readex Pro Variable', system-ui, sans-serif;
     color-scheme: light;
   }
   [dir='rtl'] { --serif: 'Noto Naskh Arabic Variable', 'Source Serif 4 Variable', serif; }
   *, *::before, *::after { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
+  html, body { overflow-x: clip; }
   body {
     margin: 0; min-height: 100vh; display: flex; flex-direction: column;
-    font-family: 'Readex Pro Variable', system-ui, sans-serif; font-weight: 350; line-height: 1.65;
+    font-family: var(--font-body); font-weight: 350; line-height: 1.65; font-variant-numeric: tabular-nums;
     background: var(--bg); color: var(--ink);
   }
   main { flex: 1; }
-  h1, h2, h3 { line-height: 1.2; font-weight: 650; margin: 0; text-wrap: balance; }
+  h1, h2, h3 { line-height: 1.2; font-weight: 650; margin: 0; text-wrap: balance; overflow-wrap: anywhere; min-width: 0; }
   h1 { font-weight: 800; letter-spacing: -.02em; }
   h2 { font-family: var(--serif); font-weight: 700; letter-spacing: -.01em; }
   [dir='rtl'] h1, [dir='rtl'] h2 { letter-spacing: 0; }
@@ -220,7 +227,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   p { text-wrap: pretty; }
   a { color: var(--sun-ink); text-underline-offset: 3px; }
   img { max-width: 100%; display: block; }
-  :focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
   .container { width: 100%; max-width: 1180px; margin-inline: auto; padding-inline: 20px; }
   .skip { position: absolute; inset-inline-start: 12px; top: -60px; background: var(--ink); color: var(--bg); padding: 8px 14px; z-index: 50; }
   .skip:focus { top: 12px; }
@@ -251,43 +258,42 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   .site-header { transition: transform .25s ease; }
   @media (max-width: 640px) { .site-header.away { transform: translateY(-100%); } }
   @media (max-width: 640px) { .bar { flex-wrap: wrap; height: auto; padding-block: 6px 0; gap: 6px; } .brand { margin-inline-end: auto; } .site-header .mark { width: 30px; height: 30px; } .nav { order: 3; width: 100%; gap: 0; justify-content: safe center; margin: 0; overflow-x: auto; scrollbar-width: none; border-top: 1px solid var(--line); } .nav a { flex: 1 1 auto; justify-content: center; min-height: 40px; padding: 0 6px; font-size: .82rem; } .site-header .word small { display: none; } .site-header .word b { font-size: .9rem; letter-spacing: .03em; } .lang { padding: 6px 10px; } .lang svg { display: none; } .search-btn { width: 34px; height: 34px; margin-inline-end: 6px; } }
-  @media (max-width: 370px) { .nav a { padding: 0 4px; font-size: .76rem; } .site-header .word b { font-size: .98rem; } }
+  @media (max-width: 370px) { .bar { column-gap: 4px; } .brand { gap: 6px; } .nav a { padding: 0 4px; font-size: .76rem; } .site-header .word b { font-size: .78rem; letter-spacing: 0; } .site-header .mark { width: 26px; height: 26px; } .site-header .lang { padding-inline: 8px; } .site-header .search-btn { width: 30px; margin-inline-end: 0; } }
   .lang { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: .9rem; }
   .lang:hover { border-color: var(--ink); }
 
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 18px; border-radius: 0; font: inherit; font-weight: 500; text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s; white-space: nowrap; }
-  .btn-primary { background: var(--sun); color: #fff; font-weight: 600; border-radius: var(--radius); }
-  .btn-primary:hover { background: var(--ink); }
+  .btn-primary { background: var(--sun); color: var(--on-dark); font-weight: 600; border-radius: var(--radius); }
+  .btn-primary:hover { background: var(--navy); }
   .btn-ghost { background: var(--surface); color: var(--sun-ink); border: 1px solid var(--line); border-radius: var(--radius); }
   .btn-ghost:hover { border-color: var(--sun); }
 
   /* Labels: small, ruled, no pills. */
   .badge { display: inline-flex; align-items: center; gap: 5px; font-size: .72rem; font-weight: 600; padding: 2px 7px; border-radius: 3px; background: var(--surface-2); color: var(--ink-2); white-space: nowrap; letter-spacing: .03em; }
-  .badge.ok { background: var(--ok); color: #fff; }
+  .badge.ok { background: var(--ok); color: var(--on-dark); }
   .badge.nile { background: var(--nile-soft); color: var(--nile); }
 
   /* Screenshot or pitch still, framed like a photo in print. */
   .frame { background: var(--surface-2); overflow: hidden; border-radius: var(--radius); }
   .frame-bar { display: none; }
   .shot { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; background: var(--surface); }
-  .frame.video { position: relative; background: #000; }
+  .frame.video { position: relative; background: var(--navy); }
   .frame.video .shot { object-position: center; }
-  .play { position: absolute; inset-inline-start: 10px; bottom: 10px; width: 34px; height: 34px; border-radius: 50%; background: rgb(0 0 0 / .65); border: 1.5px solid rgb(255 255 255 / .85); }
-  .play::after { content: ''; position: absolute; inset: 0; margin: auto; translate: 2px 0; width: 0; height: 0; border-block: 7px solid transparent; border-left: 11px solid #fff; }
+  .play { position: absolute; inset-inline-start: 10px; bottom: 10px; width: 34px; height: 34px; border-radius: 50%; background: var(--play-overlay); border: 1.5px solid var(--on-dark); }
+  .play::after { content: ''; position: absolute; inset: 0; margin: auto; translate: 2px 0; width: 0; height: 0; border-block: 7px solid transparent; border-left: 11px solid var(--on-dark); }
   a:hover .play, button:hover .play { background: var(--sun); }
-  .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.2rem, 2.6vw, 1.6rem); font-weight: 800; line-height: 1.2; color: var(--bg); background: #24403f; position: relative; }
+  .ph { display: grid; place-items: center; padding: 16px; text-align: center; font-size: clamp(1.2rem, 2.6vw, 1.6rem); font-weight: 800; line-height: 1.2; color: var(--bg); background: var(--media-bg); position: relative; }
   .ph .og { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
   .avatar { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; font-size: .72rem; font-weight: 600; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); }
 
-  .site-footer { margin-top: 72px; padding-block: 36px 28px; background: #2a1a14; color: #e8ddcf; --ink: #f4efe6; --ink-2: #bfae9d; --line: rgb(244 239 230 / .16); --surface: rgb(244 239 230 / .06); --sun-ink: var(--gold); }
-  .site-footer .btn-primary { background: var(--crimson); color: #f4efe6; }
+  .site-footer { margin-top: 72px; padding-block: 36px 28px; background: var(--navy); color: var(--on-dark); --ink: var(--on-dark); --ink-2: var(--on-dark-muted); --line: var(--dark-line); --surface: var(--dark-surface); --sun-ink: var(--gold-light); --focus: var(--focus-inverse); }
   .site-footer .brand.big .mark { width: 150px; height: auto; }
   .contribute { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
   .contribute h2 { font-size: 1.35rem; }
   .contribute p { margin: 6px 0 0; color: var(--ink-2); }
-  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.6fr; gap: 28px 36px; margin-top: 32px; }
-  @media (max-width: 900px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand, .sectors { grid-column: 1 / -1; } }
+  .foot-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.6fr); gap: 28px 36px; margin-top: 32px; }
+  @media (max-width: 900px) { .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .foot-brand, .sectors { grid-column: 1 / -1; } }
   .foot-brand p { color: var(--ink-2); margin: 14px 0 12px; max-width: 42ch; font-size: .95rem; }
   .gh { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); font-size: .9rem; text-decoration: none; padding: 5px 12px; border: 1px solid var(--line); }
   .gh:hover { border-color: var(--ink); }
@@ -295,6 +301,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
   .foot-grid h3 { font-size: .85rem; color: var(--ink-2); font-weight: 600; margin-bottom: 4px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
   [dir='rtl'] .foot-grid h3 { letter-spacing: 0; font-size: .82rem; }
   .foot-grid nav > a { color: var(--ink); text-decoration: none; font-size: .95rem; width: fit-content; }
+  .site-footer a, .crumbs a { white-space: nowrap; }
   .foot-grid nav > a:hover { color: var(--sun-ink); text-decoration: underline; }
   .sectors p { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; }
   .sectors p a { color: var(--ink); text-decoration: none; font-size: .92rem; }

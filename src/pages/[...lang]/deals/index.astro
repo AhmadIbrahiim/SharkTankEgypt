@@ -85,7 +85,7 @@ const jsonld = {
         <div><dt>{ar ? 'الصفقة الوسيطة' : 'Median deal'}</dt><dd>{money(median(amounts), lang)}<small>{ar ? 'نصف الصفقات أقل منها' : 'half the deals are smaller'}</small></dd></div>
         <div><dt>{ar ? 'التقييم الوسيط' : 'Median valuation'}</dt><dd>{money(median(vals), lang)}<small>{ar ? `${num(vals.length, lang)} صفقة بمبلغ ونسبة` : `${vals.length} deals with amount and equity`}</small></dd></div>
         <div><dt>{ar ? 'المبلغ المتفق عليه ÷ المطلوب' : 'Agreed ÷ asked amount'}</dt><dd>{ratio != null ? `${fx(ratio, 2)}×` : '—'}<small>{ar ? `الوسيط، ${num(both.length, lang)} صفقة` : `median, ${both.length} deals`}</small></dd></div>
-        <div><dt>{ar ? 'الحصة: المعروضة ← المتفق عليها' : 'Equity: offered → agreed'}</dt><dd>{eqAsk != null && eqGot != null ? `${fx(eqAsk)}% ${ar ? '←' : '→'} ${fx(eqGot)}%` : '—'}<small>{ar ? `المتوسط، ${num(eqBoth.length, lang)} صفقة` : `average, ${eqBoth.length} deals`}</small></dd></div>
+        <div><dt>{ar ? 'الحصة: المعروضة ← المتفق عليها' : 'Equity: offered → agreed'}</dt><dd>{eqAsk != null && eqGot != null ? `${pct(eqAsk, lang)} ${ar ? '←' : '→'} ${pct(eqGot, lang)}` : '—'}<small>{ar ? `المتوسط، ${num(eqBoth.length, lang)} صفقة` : `average, ${eqBoth.length} deals`}</small></dd></div>
       </dl>
     </section>
 
@@ -172,16 +172,19 @@ const jsonld = {
   table { width: 100%; border-collapse: collapse; font-size: .93rem; }
   th, td { padding: 9px 12px; border-top: 1px solid var(--line); text-align: start; white-space: nowrap; }
   thead th { border-top: 0; color: var(--ink-2); font-weight: 500; font-size: .85rem; }
+  table:not(.all) :is(th, td):not(:first-child), table.all :is(th, td):nth-child(n + 4) { text-align: end; }
+  /* Readex Pro lacks tabular digits; the existing serif pair supports both numeral sets. */
+  table:not(.all) td:not(:first-child), table.all td:nth-child(n + 4) { font-family: var(--serif); font-size: 1rem; }
   table.all td:nth-child(3) { white-space: normal; min-width: 12rem; }
   .note { color: var(--ink-2); font-size: .88rem; margin-top: 8px; }
   .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 12px; margin: 0; }
   .kpis div { padding: 10px 0 4px; border-top: 2px solid var(--ink); }
   .kpis dt { color: var(--ink-2); font-size: .85rem; }
-  .kpis dd { margin: 4px 0 0; font-size: 1.35rem; font-weight: 650; }
-  .kpis small { display: block; margin-top: 2px; color: var(--ink-2); font-size: .8rem; font-weight: 400; }
+  .kpis dd { margin: 4px 0 0; font-family: var(--serif); font-size: 1.35rem; font-weight: 650; }
+  .kpis small { display: block; margin-top: 2px; color: var(--ink-2); font-family: var(--font-body); font-size: .8rem; font-weight: 400; }
   .method ul { margin: 0; padding-inline-start: 20px; color: var(--ink-2); max-width: 75ch; }
   .calc { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: end; padding: 16px 0; border-block: 1px solid var(--ink); }
   .calc label { display: flex; flex-direction: column; gap: 4px; font-size: .88rem; color: var(--ink-2); }
   .calc input { font: inherit; width: 11rem; padding: 8px 12px; border: 1px solid var(--line); border-radius: 2px; background: var(--bg); color: var(--ink); }
-  .calc output { flex: 1 1 260px; font-weight: 600; color: var(--ink); }
+  .calc output { flex: 1 1 260px; font-family: var(--serif); font-weight: 600; color: var(--ink); }
 </style>
