@@ -1,7 +1,7 @@
 // FAQ built from the data, in both languages, phrased the way people search
 // ("How much did Ayman Abbas invest on Shark Tank Egypt?", "كم استثمر أيمن عباس في شارك تانك مصر؟").
 // Every answer states only what the data records; unknowns are said plainly, never guessed.
-import { startups, seasons, sharks, founders, sharkByKey, categories, category, money, pct, num, valuation, seasonLabel, shark, founderId, stats, type Lang, type Startup } from './config';
+import { scheduledAppearance, startups, seasons, sharks, founders, sharkByKey, categories, category, money, pct, num, valuation, seasonLabel, shark, founderId, stats, type Lang, type Startup } from './config';
 
 export type QA = { q: string; a: string; href?: string };
 type Shark = (typeof sharks)[number];
@@ -35,6 +35,8 @@ const byDealValuation = (xs: Startup[]) => xs.filter((x) => x.deal?.made && deal
 const lastSeason = Math.max(...seasons.map((s) => s.season));
 /** One factual sentence per startup, from the data only: the line LLMs and readers can lift as the answer. */
 export const summary = (x: Startup, lang: Lang) => {
+  const scheduled = scheduledAppearance(x);
+  if (scheduled) return L(lang, `${x.name.en} is announced for ${where(x, lang)}.`, `أُعلنت مشاركة ${x.name.ar} في ${where(x, lang)}.`) + ' ' + scheduled.scheduleNote[lang];
   const names = list((x.deal?.sharks ?? []).map((n) => sharkName(n, lang)), lang);
   const askV = valuation(x.ask?.amountEGP, x.ask?.equityPct);
   return lang === 'ar'
@@ -110,7 +112,7 @@ export const sharkFaq = (p: Shark, lang: Lang): QA[] => {
 };
 
 export const startupFaq = (x: Startup, lang: Lang): QA[] => {
-  const n = x.name[lang], d = x.deal;
+  const n = x.name[lang], d = x.deal, scheduled = scheduledAppearance(x);
   const fs = (x.founders ?? []).map((f) => founderName(f, lang));
   const askV = valuation(x.ask?.amountEGP, x.ask?.equityPct), dealV = valuation(d?.amountEGP, d?.equityPct);
   const ds = list((d?.sharks ?? []).map((k) => sharkName(k, lang)), lang);
@@ -124,13 +126,13 @@ export const startupFaq = (x: Startup, lang: Lang): QA[] => {
   const qa: (QA | false)[] = [
     { q: L(lang, `What is ${n}?`, `ما هي ${n}؟`), a: x.description[lang] },
     fs.length > 0 && { q: L(lang, `Who founded ${n}?`, `من مؤسس ${n}؟`),
-      a: L(lang, `${n} was founded by ${list(fs, lang)}, who pitched it on ${ST.en}.`, `أسس ${n} ${list(fs, lang)}، وعُرضت في ${ST.ar}.`) },
-    { q: L(lang, `When did ${n} appear on ${ST.en}?`, `متى ظهرت ${n} في ${ST.ar}؟`),
-      a: L(lang, `In ${where(x, lang)}${y ? ` (${y})` : ''}.`, `في ${where(x, lang)}${y ? ` (${y})` : ''}.`) },
+      a: L(lang, `${n} was founded by ${list(fs, lang)}.`, `أسس ${n} ${list(fs, lang)}.`) },
+    { q: L(lang, scheduled ? `When is ${n} scheduled on ${ST.en}?` : `When did ${n} appear on ${ST.en}?`, scheduled ? `متى موعد مشاركة ${n} في ${ST.ar}؟` : `متى ظهرت ${n} في ${ST.ar}؟`),
+      a: scheduled ? summary(x, lang) : L(lang, `In ${where(x, lang)}${y ? ` (${y})` : ''}.`, `في ${where(x, lang)}${y ? ` (${y})` : ''}.`) },
     x.ask?.amountEGP != null && { q: L(lang, `How much did ${n} ask for on ${ST.en}?`, `كم طلبت ${n} في ${ST.ar}؟`),
       a: L(lang, `${terms(x.ask.amountEGP, x.ask.equityPct, lang)}${askV ? `, valuing the company at ${money(askV, lang)}` : ''}.`, `${terms(x.ask.amountEGP, x.ask.equityPct, lang)}${askV ? `، أي بتقييم ${money(askV, lang)}` : ''}.`) },
     { q: L(lang, `Did ${n} get a deal on ${ST.en}?`, `هل حصلت ${n} على صفقة في ${ST.ar}؟`),
-      a: d?.made === true ? L(lang, `Yes${ds ? `, with ${ds}` : ''}${terms(d.amountEGP, d.equityPct, lang) ? `: ${terms(d.amountEGP, d.equityPct, lang)}` : ''}.`, `نعم${ds ? `، مع ${ds}` : ''}${terms(d.amountEGP, d.equityPct, lang) ? `: ${terms(d.amountEGP, d.equityPct, lang)}` : ''}.`)
+      a: scheduled ? scheduled.scheduleNote[lang] : d?.made === true ? L(lang, `Yes${ds ? `, with ${ds}` : ''}${terms(d.amountEGP, d.equityPct, lang) ? `: ${terms(d.amountEGP, d.equityPct, lang)}` : ''}.`, `نعم${ds ? `، مع ${ds}` : ''}${terms(d.amountEGP, d.equityPct, lang) ? `: ${terms(d.amountEGP, d.equityPct, lang)}` : ''}.`)
         : d?.made === false ? L(lang, `No. ${n} left the tank without a deal.`, `لا، غادرت ${n} البرنامج دون صفقة.`)
         : L(lang, `The outcome of the pitch isn't recorded in this directory yet.`, `لم تُسجَّل نتيجة العرض في هذا الدليل بعد.`) },
     d?.made === true && !!ds && { q: L(lang, `Which shark invested in ${n}?`, `من المستثمر الذي استثمر في ${n}؟`),
@@ -151,14 +153,14 @@ export const startupFaq = (x: Startup, lang: Lang): QA[] => {
       a: d.amountEGP === x.ask.amountEGP && d.equityPct === x.ask.equityPct ? L(lang, `Yes, the deal closed on the original terms: ${terms(d.amountEGP, d.equityPct, lang)}.`, `نعم، أُغلقت الصفقة بالشروط الأصلية: ${terms(d.amountEGP, d.equityPct, lang)}.`)
         : L(lang, `It asked for ${terms(x.ask.amountEGP, x.ask.equityPct, lang)} and closed at ${terms(d.amountEGP, d.equityPct, lang)}${askV && dealV ? `, so the valuation went from ${money(askV, lang)} to ${money(dealV, lang)}` : ''}.`,
             `طلبت ${terms(x.ask.amountEGP, x.ask.equityPct, lang)} وأُغلقت الصفقة على ${terms(d.amountEGP, d.equityPct, lang)}${askV && dealV ? `، فتغيّر التقييم من ${money(askV, lang)} إلى ${money(dealV, lang)}` : ''}.`) },
-    x.episode != null && { q: L(lang, `Which episode of ${ST.en} was ${n} in?`, `في أي حلقة من ${ST.ar} ظهرت ${n}؟`),
+    !scheduled && x.episode != null && { q: L(lang, `Which episode of ${ST.en} was ${n} in?`, `في أي حلقة من ${ST.ar} ظهرت ${n}؟`),
       a: L(lang, `${where(x, lang)}.${mates.length ? ` Also in that episode: ${list(mates.map((y) => y.name.en), lang)}.` : ''}`, `${where(x, lang)}.${mates.length ? ` وفي الحلقة نفسها: ${list(mates.map((y) => y.name.ar), lang)}.` : ''}`), href: `season/${x.season}/episode/${x.episode}/` },
-    !!seasonInfo && { q: L(lang, `Which sharks did ${n} pitch to?`, `أمام أي مستثمرين عرضت ${n} مشروعها؟`),
+    !scheduled && !!seasonInfo && { q: L(lang, `Which sharks did ${n} pitch to?`, `أمام أي مستثمرين عرضت ${n} مشروعها؟`),
       a: L(lang, `The ${seasonLabel(x.season, lang)} panel: ${list(seasonInfo.sharks.map((k) => sharkName(k, lang)), lang)}.`, `لجنة ${seasonLabel(x.season, lang)}: ${list(seasonInfo.sharks.map((k) => sharkName(k, lang)), lang)}.`) },
-    lang === 'ar' && { q: `${n} خدت كام من شارك تانك؟`,
+    !scheduled && lang === 'ar' && { q: `${n} خدت كام من شارك تانك؟`,
       a: d?.made === true ? (terms(d.amountEGP, d.equityPct, lang) ? `${terms(d.amountEGP, d.equityPct, lang)}${ds ? ` من ${ds}` : ''}.` : `أبرمت صفقة${ds ? ` مع ${ds}` : ''} لكن الشروط غير معلنة.`) : d?.made === false ? 'لم تحصل على صفقة.' : 'لم تُسجَّل النتيجة بعد.' },
     !!x.category && { q: L(lang, `What sector is ${n} in?`, `في أي قطاع تعمل ${n}؟`),
-      a: L(lang, `${category(x.category, lang)}. ${same} other ${category(x.category, lang)} startup${same === 1 ? '' : 's'} pitched on the show.`, `${category(x.category, lang)}. ${same ? `ظهرت ${nAr(same, 'شركة', 'شركتان', 'شركات')} أخرى من القطاع نفسه في البرنامج.` : ''}`), href: `category/${x.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/` },
+      a: L(lang, `${category(x.category, lang)}. ${same} other ${category(x.category, lang)} startup${same === 1 ? '' : 's'} in this directory.`, `${category(x.category, lang)}. ${same ? `يضم الدليل ${nAr(same, 'شركة', 'شركتين', 'شركات')} أخرى من القطاع نفسه.` : ''}`), href: `category/${x.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/` },
   ];
   return qa.filter(Boolean) as QA[];
 };
@@ -203,7 +205,7 @@ export const seasonFaq = (n: number, lang: Lang): QA[] => {
     !!info && { q: L(lang, `When did ${ST.en} ${label} air?`, `متى عُرض ${label} من ${ST.ar}؟`),
       a: L(lang, `${label} aired in ${info.year} on ${info.channel}.`, `عُرض ${label} في ${info.year} على ${info.channel.replace('special episodes', 'حلقات خاصة')}.`) },
     !!info && { q: L(lang, `Who are the sharks in ${ST.en} ${label}?`, `من هم المستثمرون في ${label} من ${ST.ar}؟`), a: list(info.sharks.map((k) => sharkName(k, lang)), lang) + '.' },
-    { q: L(lang, `How many startups pitched in ${ST.en} ${label}?`, `كم شركة ناشئة عُرضت في ${label} من ${ST.ar}؟`),
+    { q: L(lang, `How many startups are listed for ${ST.en} ${label}?`, `كم شركة ناشئة في دليل ${label} من ${ST.ar}؟`),
       a: L(lang, `${st.count} startups are listed for ${label}.`, `يضم الدليل ${nAr(st.count, 'شركة', 'شركتين', 'شركات')} من ${label}.`) },
     { q: L(lang, `How many deals were made in ${ST.en} ${label}?`, `كم صفقة أُبرمت في ${label} من ${ST.ar}؟`),
       a: L(lang, `${st.deals} recorded deals${st.invested ? `, worth ${money(st.invested, lang)} in disclosed investment` : ''}. ${NOTE.en}`, `${dealsAr(st.deals)} مسجلة${st.invested ? ` بقيمة استثمارات معلنة ${money(st.invested, lang)}` : ''}. ${NOTE.ar}`) },
@@ -216,7 +218,7 @@ export const seasonFaq = (n: number, lang: Lang): QA[] => {
     noDeal.length > 0 && { q: L(lang, `Which startups got no deal in ${label}?`, `ما الشركات التي لم تحصل على صفقة في ${label}؟`), a: list(noDeal.map((x) => x.name[lang]), lang) + '.' },
     topV && { q: L(lang, `Which startup got the highest valuation in ${label}?`, `أي شركة حصلت على أعلى تقييم في ${label}؟`),
       a: L(lang, `${topV.name.en}, valued at ${money(valuation(topV.deal!.amountEGP, topV.deal!.equityPct), lang)} in the final deal.`, `${topV.name.ar}، بتقييم ${money(valuation(topV.deal!.amountEGP, topV.deal!.equityPct), lang)} في الصفقة النهائية.`), href: `${topV.id}/` },
-    sectors.length > 0 && { q: L(lang, `What kinds of startups pitched in ${label}?`, `ما نوع الشركات التي عُرضت في ${label}؟`),
+    sectors.length > 0 && { q: L(lang, `What kinds of startups are listed for ${label}?`, `ما قطاعات الشركات المسجلة في ${label}؟`),
       a: L(lang, `Mostly ${list(sectors.slice(0, 4).map(([c, k]) => `${category(c, lang)} (${k})`), lang)}.`, `غالباً ${list(sectors.slice(0, 4).map(([c, k]) => `${category(c, lang)} (${num(k, lang)})`), lang)}.`) },
   ];
   return qa.filter(Boolean) as QA[];
@@ -228,7 +230,7 @@ export const categoryFaq = (c: string, lang: Lang): QA[] => {
   const bySeason = count(xs.map((x) => x.season));
   const asks = xs.map((x) => x.ask?.amountEGP).filter((v): v is number => v != null), med = median(asks);
   const qa: (QA | false)[] = [
-    { q: L(lang, `Which ${cat} startups appeared on ${ST.en}?`, `ما شركات قطاع ${cat} التي ظهرت في ${ST.ar}؟`),
+    { q: L(lang, `Which ${cat} startups are listed for ${ST.en}?`, `ما شركات قطاع ${cat} في دليل ${ST.ar}؟`),
       a: L(lang, `${xs.length}: ${list(xs.map((x) => x.name.en), lang)}.`, `${nAr(xs.length, 'شركة', 'شركتان', 'شركات')}: ${list(xs.map((x) => x.name.ar), lang)}.`) },
     { q: L(lang, `How many ${cat} startups got a deal on ${ST.en}?`, `كم شركة في قطاع ${cat} حصلت على صفقة في ${ST.ar}؟`),
       a: L(lang, `${st.deals} of ${st.count}${st.invested ? `, with ${money(st.invested, lang)} in disclosed investment` : ''}. ${NOTE.en}`, `${num(st.deals, lang)} من ${num(st.count, lang)}${st.invested ? `، باستثمارات معلنة ${money(st.invested, lang)}` : ''}. ${NOTE.ar}`) },
@@ -272,7 +274,7 @@ export const programFaq = (lang: Lang) => {
     everySeason.length > 0 && { q: L(lang, `Which sharks have appeared in every season?`, `من المستثمرون الذين ظهروا في كل المواسم؟`), a: list(everySeason.map((p) => p.name[lang]), lang) + '.' },
     newest.length > 0 && { q: L(lang, `Who are the newest sharks on ${ST.en}?`, `من أحدث المستثمرين في ${ST.ar}؟`),
       a: L(lang, `${list(newest.map((p) => p.name.en), lang)}, who joined in ${seasonLabel(firstIn(newest[0]), lang)}.`, `${list(newest.map((p) => p.name.ar), lang)}، وانضموا في ${seasonLabel(firstIn(newest[0]), lang)}.`) },
-    { q: L(lang, `How many startups have pitched on ${ST.en}?`, `كم شركة ناشئة عُرضت في ${ST.ar}؟`),
+    { q: L(lang, `How many startups are listed for ${ST.en}?`, `كم شركة ناشئة في دليل ${ST.ar}؟`),
       a: L(lang, `This directory lists ${st.count} startups across all seasons and specials.`, `يضم هذا الدليل ${nAr(st.count, 'شركة', 'شركتين', 'شركات')} من كل المواسم والحلقات الخاصة.`), href: '' },
     { q: L(lang, `How many deals have been made on ${ST.en}?`, `كم صفقة أُبرمت في ${ST.ar}؟`),
       a: L(lang, `${st.deals} recorded deals, worth ${money(st.invested, lang)} in disclosed investment. ${NOTE.en}`, `${dealsAr(st.deals)} مسجلة بقيمة استثمارات معلنة ${money(st.invested, lang)}. ${NOTE.ar}`) },
@@ -314,6 +316,12 @@ const avgEq = (xs: Startup[]) => { const e = xs.map((x) => x.deal?.equityPct).fi
 
 export const episodeFaq = (n: number, e: number, lang: Lang): QA[] => {
   const xs = episodeItems(n, e), st = stats(xs), info = seasons.find((s) => s.season === n);
+  const scheduled = xs.length ? scheduledAppearance(xs[0]) : undefined;
+  if (scheduled) return [
+    { q: L(lang, 'Which startups are announced for this episode?', 'ما الشركات المُعلنة لهذه الحلقة؟'), a: list(xs.map((x) => x.name[lang]), lang) + '.' },
+    { q: L(lang, 'When is the episode scheduled?', 'متى موعد عرض الحلقة؟'), a: scheduled.scheduleNote[lang] },
+    { q: L(lang, 'Are the investment terms confirmed?', 'هل تأكدت شروط الاستثمار؟'), a: L(lang, 'Asks and deal outcomes have not yet been verified.', 'لم تُوثَّق طلبات الاستثمار أو نتائج الصفقات بعد.') },
+  ];
   const label = `${seasonLabel(n, lang)}${L(lang, `, episode ${e}`, `، الحلقة ${num(e, lang)}`)}`;
   const won = xs.filter((x) => x.deal?.made), asks = xs.filter((x) => x.ask?.amountEGP != null).sort((a, b) => b.ask!.amountEGP! - a.ask!.amountEGP!);
   const qa: (QA | false)[] = [
@@ -443,7 +451,7 @@ export const sectorSeasonFaq = (c: string, n: number, lang: Lang): QA[] => {
   const xs = startups.filter((x) => x.category === c && x.season === n), st = stats(xs), cat = category(c, lang), label = seasonLabel(n, lang);
   const asks = xs.filter((x) => x.ask?.amountEGP != null).sort((a, b) => b.ask!.amountEGP! - a.ask!.amountEGP!), won = xs.filter((x) => x.deal?.made);
   const qa: (QA | false)[] = [
-    { q: L(lang, `Which ${cat} startups pitched in ${ST.en} ${label}?`, `ما شركات قطاع ${cat} في ${ST.ar} ${label}؟`), a: list(xs.map((x) => x.name[lang]), lang) + '.' },
+    { q: L(lang, `Which ${cat} startups are listed for ${ST.en} ${label}?`, `ما شركات قطاع ${cat} في ${ST.ar} ${label}؟`), a: list(xs.map((x) => x.name[lang]), lang) + '.' },
     { q: L(lang, `How many ${cat} startups got a deal in ${label}?`, `كم شركة من قطاع ${cat} حصلت على صفقة في ${label}؟`),
       a: won.length ? L(lang, `${won.length} of ${xs.length}: ${list(won.map((x) => dealLine(x, lang)), lang)}.`, `${num(won.length, lang)} من ${num(xs.length, lang)}: ${list(won.map((x) => dealLine(x, lang)), lang)}.`)
         : L(lang, `None recorded among the ${xs.length} startups.`, `لا توجد صفقات مسجلة بين ${nAr(xs.length, 'شركة', 'شركتين', 'شركات')}.`) },

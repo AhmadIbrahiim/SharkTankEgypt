@@ -31,7 +31,7 @@ await test('home lists startups, 24 per page, show more adds more', async () => 
   assert.equal((await visibleNames(p)).length, 24);
   await p.click('#more'); assert.ok((await visibleNames(p)).length > 24);
 });
-await test('episode previews show the announced lineup without adding unbroadcast pitches to totals', async () => {
+await test('announced startups have searchable bilingual profiles without unverified deals', async () => {
   const previews = JSON.parse(readFileSync('src/data/episode-previews.json', 'utf8'));
   const aired = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
   const exported = JSON.parse(readFileSync('dist/data/startups.json', 'utf8')).startups;
@@ -43,7 +43,12 @@ await test('episode previews show the announced lineup without adding unbroadcas
     for (const preview of previews) {
       const section = p.locator(`#episode-${preview.season}-${preview.episode}-preview`);
       assert.equal(await section.locator('time').getAttribute('datetime'), preview.scheduledAt);
-      for (const startup of preview.startups) assert.ok(!exported.some((x) => x.id === startup.id));
+      for (const startup of preview.startups) {
+        const record = exported.find((x) => x.id === startup.id);
+        assert.equal(record?.appearanceStatus, 'announced');
+        assert.equal(record.deal, null);
+        assert.deepEqual(record.ask, { amountEGP: null, equityPct: null });
+      }
       assert.ok(await section.evaluate((el) => el.getBoundingClientRect().right <= innerWidth && el.scrollWidth <= el.clientWidth), 'preview fits a phone');
       await section.locator('a').click();
       assert.ok(new URL(p.url()).pathname.endsWith(`/season/${preview.season}/`));
@@ -51,6 +56,21 @@ await test('episode previews show the announced lineup without adding unbroadcas
       assert.ok(await full.isVisible());
       assert.equal(await full.locator('li').count(), preview.startups.length);
       assert.equal(await full.locator('a').last().getAttribute('href'), preview.scheduleSource);
+      for (const startup of preview.startups) {
+        const href = `/${prefix}${startup.id}/`;
+        assert.equal(await full.locator(`h3 a[href="${href}"]`).count(), 1);
+        await p.goto(`${U}${href}`);
+        assert.equal(await p.locator('h1').innerText(), startup.name[prefix ? 'en' : 'ar']);
+        assert.equal(await p.locator('.scheduled time').getAttribute('datetime'), preview.scheduledAt);
+        assert.equal(await p.locator('.score').count(), 0);
+        assert.ok(await p.locator('#services li').count() >= 2);
+        assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'profile fits a phone');
+        await p.goto(`${U}/${prefix}?q=${encodeURIComponent(startup.name.en)}`);
+        assert.ok(await p.locator(`#grid a[href="${href}"]`).isVisible(), 'profile is searchable');
+        await p.goto(`${U}/${prefix}season/${preview.season}/`);
+      }
+      await p.goto(`${U}/${prefix}season/${preview.season}/episode/${preview.episode}/`);
+      assert.equal(await p.locator('.mini').count(), preview.startups.length);
       await p.goto(`${U}/${prefix}`);
     }
     await p.goto(`${U}/${prefix}season/1/`);

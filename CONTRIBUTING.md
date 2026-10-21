@@ -46,7 +46,7 @@ Rules:
 - `updates` ("Where are they now?") is optional: dated milestones after the show (funding, expansion, closure), each with its own source. Leave it out rather than add an unsourced claim.
 - Sharks in `deal.sharks` must be on that season's lineup in `seasons.json`.
 - **Never change an existing `id`**: comments and links are keyed to it.
-- Episode previews do not count toward startup or deal totals. Keep their official announcement and schedule sources; remove a preview when adding its verified aired pitches to `startups.json`. A scheduled date passing does not itself verify a broadcast or outcome.
+- Announced businesses have full `startups.json` profiles with `appearanceStatus: "announced"`, null asks/deals and an entry in `episode-previews.json`. They count as directory profiles; their investment terms stay blank. Keep official business, announcement and schedule sources. After verifying the broadcast, remove the appearance status and episode preview when recording the aired pitches. A scheduled date passing does not itself verify a broadcast or outcome.
 - Founder information stays public and professional. No personal details.
 - Photos must clearly show the right person and carry a credit.
 

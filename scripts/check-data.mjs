@@ -48,7 +48,7 @@ for (const s of startups) {
     assert.equal(platformOf(url), key, `${where}: links.${key} points to another site (${url})`);
   }
 }
-// Announced episodes stay outside the aired-pitch dataset until their broadcast is verified.
+// Announced businesses have profiles, but investment terms require a verified broadcast.
 const previews = JSON.parse(readFileSync('src/data/episode-previews.json', 'utf8'));
 const previewKeys = new Set();
 for (const p of previews) {
@@ -56,7 +56,6 @@ for (const p of previews) {
   assert.ok(seasons.has(p.season) && Number.isInteger(p.episode) && p.episode > 0, `preview ${key}: invalid episode`);
   assert.ok(!previewKeys.has(key), `preview ${key}: duplicate episode`);
   previewKeys.add(key);
-  assert.ok(!startups.some((s) => s.season === p.season && s.episode === p.episode), `preview ${key}: remove the preview when adding aired pitches`);
   assert.match(p.scheduledAt ?? '', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}$/);
   assert.ok(Number.isFinite(Date.parse(p.scheduledAt)), `preview ${key}: invalid broadcast date`);
   assert.match(p.checked ?? '', /^\d{4}-\d{2}-\d{2}$/);
@@ -65,12 +64,19 @@ for (const p of previews) {
   for (const lang of ['en', 'ar']) assert.ok(p.scheduleNote?.[lang]?.trim());
   for (const x of p.startups) {
     assert.match(x.id ?? '', /^[a-z0-9]+(-[a-z0-9]+)*$/);
-    assert.ok(!ids.has(x.id), `preview ${key}: duplicate startup ${x.id}`);
-    ids.add(x.id);
+    assert.equal(p.startups.filter((s) => s.id === x.id).length, 1, `preview ${key}: duplicate startup ${x.id}`);
+    const profile = startups.find((s) => s.id === x.id);
+    assert.ok(profile?.appearanceStatus === 'announced' && profile.season === p.season && profile.episode === p.episode, `preview ${key}: missing announced profile ${x.id}`);
     for (const field of ['name', 'description']) for (const lang of ['en', 'ar']) assert.ok(x[field]?.[lang]?.trim());
     for (const url of [x.url, x.source]) assert.equal(new URL(url).protocol, 'https:');
     assert.ok(!('deal' in x) && !('ask' in x), `preview ${key}: unbroadcast pitches cannot have investment terms`);
   }
+}
+for (const s of startups) {
+  assert.ok(s.appearanceStatus == null || s.appearanceStatus === 'announced', `${s.id}: unknown appearance status`);
+  if (s.appearanceStatus !== 'announced') continue;
+  assert.ok(previews.some((p) => p.season === s.season && p.episode === s.episode && p.startups.some((x) => x.id === s.id)), `${s.id}: missing announcement`);
+  assert.ok(s.deal === null && s.ask?.amountEGP === null && s.ask?.equityPct === null && !s.video, `${s.id}: announced profiles cannot have unverified pitch terms or video`);
 }
 // People: profiles for sharks and founders.
 const people = JSON.parse(readFileSync('src/data/people.json', 'utf8'));

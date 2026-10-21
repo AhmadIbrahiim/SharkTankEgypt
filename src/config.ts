@@ -4,6 +4,7 @@ import data from './data/startups.json';
 import seasons from './data/seasons.json';
 import peopleData from './data/people.json';
 import namesAr from './data/names.json';
+import previews from './data/episode-previews.json';
 
 export type Lang = 'ar' | 'en';
 export const langs: Lang[] = ['ar', 'en'];
@@ -15,6 +16,8 @@ export const pre = (l: Lang) => (l === 'ar' ? '' : `/${l}`);
 /** The same as a relative directory: '' for Arabic, 'en/' for English. */
 export const dir = (l: Lang) => (l === 'ar' ? '' : `${l}/`);
 export type Startup = (typeof data)[number];
+export const scheduledAppearance = (x: Startup) => x.appearanceStatus === 'announced'
+  ? previews.find((p) => p.season === x.season && p.episode === x.episode) : undefined;
 // Newest first; season 0 (July 2025 specials) aired between seasons 3 and 4.
 const rank = (n: number) => (n === 0 ? 3.5 : n);
 export const startups = [...data].sort((a, b) => rank(b.season) - rank(a.season) || (a.episode ?? 99) - (b.episode ?? 99));
@@ -76,6 +79,7 @@ export const t = {
     sortDeal: 'الأكبر استثمارًا',
     sortOldest: 'الأقدم أولًا',
     unknownOutcome: 'النتيجة غير مؤكدة',
+    announced: 'المشاركة مُعلنة',
     updates: 'أين هم الآن؟',
     related: 'شركات أخرى من نفس الحلقة والمجال',
     sortAsk: 'الأعلى طلبًا',
@@ -100,9 +104,9 @@ export const t = {
     browseSectors: 'تصفح حسب المجال',
     browseSeasons: 'تصفح حسب الموسم',
     catTitle: (c: string) => `شركات ${c} في شارك تانك مصر`,
-    catIntro: (c: string, n: string, d: string, m: string | null) => `${n} شركة ناشئة في مجال ${c} عرضت مشروعها أمام المستثمرين في شارك تانك مصر، وحصلت ${d} منها على صفقة${m ? ` باستثمارات معلنة تبلغ ${m}` : ''}. تعرّف على كل شركة وخدماتها ومؤسسيها ونتيجة عرضها.`,
+    catIntro: (c: string, n: string, d: string, m: string | null) => `${n} شركة ناشئة في مجال ${c} مسجلة في دليل شارك تانك مصر، وحصلت ${d} منها على صفقة${m ? ` باستثمارات معلنة تبلغ ${m}` : ''}. تعرّف على كل شركة وخدماتها ومؤسسيها ونتيجة عرضها.`,
     seasonTitle: (n: string) => `شارك تانك مصر ${n}: كل الشركات والصفقات`,
-    seasonIntro: (n: string, c: string, d: string, m: string | null) => `كل الشركات الناشئة التي ظهرت في ${n} من شارك تانك مصر: ${c} شركة، منها ${d} حصلت على صفقة${m ? ` بإجمالي استثمارات معلنة ${m}` : ''}، مع تفاصيل العروض والمستثمرين.`,
+    seasonIntro: (n: string, c: string, d: string, m: string | null) => `دليل شركات ${n} من شارك تانك مصر: ${c} شركة، منها ${d} حصلت على صفقة${m ? ` بإجمالي استثمارات معلنة ${m}` : ''}، مع تفاصيل العروض والمستثمرين.`,
     topSharks: 'أكثر المستثمرين نشاطًا هنا',
     secOverview: 'نظرة عامة',
     secServices: 'الخدمات والمنتجات',
@@ -199,6 +203,7 @@ export const t = {
     sortDeal: 'Biggest deal',
     sortOldest: 'Oldest first',
     unknownOutcome: 'Outcome unconfirmed',
+    announced: 'Appearance announced',
     updates: 'Where are they now?',
     related: 'More from the same episode and sector',
     sortAsk: 'Biggest ask',
@@ -223,9 +228,9 @@ export const t = {
     browseSectors: 'Browse by sector',
     browseSeasons: 'Browse by season',
     catTitle: (c: string) => `${c} startups on Shark Tank Egypt`,
-    catIntro: (c: string, n: string, d: string, m: string | null) => `${n} ${c.toLowerCase()} startups pitched to the sharks on Shark Tank Egypt, and ${d} walked away with a deal${m ? `, with ${m} in announced investment` : ''}. Explore each company, its services, founders and how the pitch went.`,
+    catIntro: (c: string, n: string, d: string, m: string | null) => `${n} ${c.toLowerCase()} startups in the Shark Tank Egypt directory, and ${d} walked away with a deal${m ? `, with ${m} in announced investment` : ''}. Explore each company, its services, founders and how the pitch went.`,
     seasonTitle: (n: string) => `Shark Tank Egypt ${n}: every startup and deal`,
-    seasonIntro: (n: string, c: string, d: string, m: string | null) => `Every startup that pitched in Shark Tank Egypt ${n}: ${c} companies, ${d} of them closed a deal${m ? ` totalling ${m} in announced investment` : ''} — with pitch details and the sharks who invested.`,
+    seasonIntro: (n: string, c: string, d: string, m: string | null) => `Shark Tank Egypt ${n} directory: ${c} companies, ${d} of them closed a deal${m ? ` totalling ${m} in announced investment` : ''} — with pitch details and the sharks who invested.`,
     topSharks: 'Most active sharks here',
     secOverview: 'Overview',
     secServices: 'Services & products',

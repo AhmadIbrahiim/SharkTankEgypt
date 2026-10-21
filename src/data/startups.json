@@ -15616,5 +15616,215 @@
       "instagram": "https://www.instagram.com/godlypride_/",
       "tiktok": "https://www.tiktok.com/@godly.pride/"
     }
+  },
+  {
+    "id": "gutty",
+    "season": 5,
+    "episode": 3,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Gutty",
+      "ar": "جاتي"
+    },
+    "description": {
+      "en": "Gutty is a Cairo-based healthy food company offering prepared meals and monthly meal subscriptions. Customers can choose meals from its menu for a diet package. Its official posts also describe sugar-free options and seasonal Ramadan meal packages.",
+      "ar": "جاتي شركة أكل صحي في القاهرة تقدم وجبات جاهزة واشتراكات وجبات شهرية. يختار العملاء وجباتهم من المنيو ضمن باقة الدايت، وتذكر منشورات الشركة خيارات خالية من السكر وباقات وجبات موسمية لرمضان."
+    },
+    "category": "Food",
+    "founders": null,
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02cPNKmaGTGCnD3kpqMofiW8wb2p8kqNyKKGBxdGBmASsoSp7xjTsv3U5oQpaR4A99l",
+      "https://www.facebook.com/photo.php?fbid=1092222536906190",
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid021NPTkZTiNZqHW3FQpCPs5vQG2ZYsueXjWurqwp3Ak1EmRCxKGWEtffj3KxV3JLfRl",
+      "https://www.facebook.com/GuttyEg",
+      "https://www.facebook.com/GuttyEg/posts/pfbid0d4o2RxdFqHEvyToEPdaWgJNSK2pEYhLM4nxyTng3MigFGBmCfxsNkytmjgrCtjfhl",
+      "https://www.facebook.com/GuttyEg/posts/pfbid02T9UUM5nMkcyNw7adUfK5b2tTjWTdRcKwAyYphaEYLAAMfrvRjoqciPcPD9hJKeBPl"
+    ],
+    "checked": "2026-10-21",
+    "links": {
+      "facebook": "https://www.facebook.com/GuttyEg"
+    },
+    "about": {
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Prepared healthy meals",
+          "desc": "Ready-prepared meals from the Gutty menu for everyday eating."
+        },
+        {
+          "name": "Monthly meal subscriptions",
+          "desc": "Diet meal packages with a choice of meals from the menu."
+        },
+        {
+          "name": "Seasonal meal packages",
+          "desc": "Ramadan packages advertised by the company, with customers choosing their meals."
+        }
+      ],
+      "ar": [
+        {
+          "name": "وجبات صحية جاهزة",
+          "desc": "وجبات مجهزة من منيو جاتي للأكل اليومي."
+        },
+        {
+          "name": "اشتراكات وجبات شهرية",
+          "desc": "باقات وجبات دايت يختار فيها العميل وجباته من المنيو."
+        },
+        {
+          "name": "باقات وجبات موسمية",
+          "desc": "باقات لرمضان أعلنت عنها الشركة مع إتاحة اختيار الوجبات."
+        }
+      ]
+    }
+  },
+  {
+    "id": "polygon-ev",
+    "season": 5,
+    "episode": 3,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Polygon EV",
+      "ar": "بوليجون إي في"
+    },
+    "description": {
+      "en": "Polygon EV is an Egyptian electric vehicle charging company based in New Cairo. Its Manta charger provides up to 22 kW of AC charging for homes and businesses, with wall or stand mounting for indoor or outdoor use. The PolygonEV app connects over Bluetooth to monitor charging and adjust the current. The company also offers charging solutions for communities, offices and fleets.",
+      "ar": "بوليجون إي في شركة مصرية لشحن السيارات الكهربائية مقرها القاهرة الجديدة. يقدم شاحن مانتا شحنًا بالتيار المتردد بقدرة تصل إلى 22 كيلوواط للمنازل والشركات، مع تركيبه على الحائط أو حامل داخل المباني أو خارجها. يتصل تطبيق PolygonEV بالشاحن عبر البلوتوث لمتابعة الشحن وضبط التيار، وتقدم الشركة أيضًا حلول شحن للتجمعات السكنية والمكاتب وأساطيل السيارات."
+    },
+    "category": "Tech",
+    "founders": null,
+    "website": "https://www.polygonev.com/",
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02cPNKmaGTGCnD3kpqMofiW8wb2p8kqNyKKGBxdGBmASsoSp7xjTsv3U5oQpaR4A99l",
+      "https://www.facebook.com/photo.php?fbid=1092222553572855",
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid021NPTkZTiNZqHW3FQpCPs5vQG2ZYsueXjWurqwp3Ak1EmRCxKGWEtffj3KxV3JLfRl",
+      "https://www.polygonev.com/",
+      "https://www.facebook.com/PolygonEV"
+    ],
+    "checked": "2026-10-21",
+    "links": {
+      "facebook": "https://www.facebook.com/PolygonEV",
+      "instagram": "https://www.instagram.com/polygonev/",
+      "linkedin": "https://eg.linkedin.com/company/polygonev",
+      "appStore": "https://apps.apple.com/eg/app/polygonev/id6504570284",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.polygonev",
+      "whatsapp": "https://wa.me/201509094642"
+    },
+    "about": {
+      "city": {
+        "en": "New Cairo",
+        "ar": "القاهرة الجديدة"
+      },
+      "highlights": {
+        "en": [
+          "Manta chargers installed in Egypt since 2023, according to the company.",
+          "Three-year warranty advertised for Manta.",
+          "Charging current adjustable from 6 to 32 amps through the app."
+        ],
+        "ar": [
+          "تذكر الشركة تركيب شواحن مانتا في مصر منذ 2023.",
+          "تعلن الشركة عن ضمان لمدة ثلاث سنوات لشاحن مانتا.",
+          "يمكن ضبط تيار الشحن من 6 إلى 32 أمبير عبر التطبيق."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Manta home charger",
+          "desc": "An AC charger rated up to 22 kW, with a stainless steel body and wall or stand mounting."
+        },
+        {
+          "name": "Business charging",
+          "desc": "Charging solutions for communities, offices and vehicle fleets."
+        },
+        {
+          "name": "PolygonEV app",
+          "desc": "Bluetooth monitoring of current, voltage and power, adjustable charging limits, phone authentication and over-the-air updates. Available on iOS and Android."
+        }
+      ],
+      "ar": [
+        {
+          "name": "شاحن مانتا المنزلي",
+          "desc": "شاحن تيار متردد بقدرة تصل إلى 22 كيلوواط، بهيكل من الفولاذ المقاوم للصدأ وتركيب على الحائط أو حامل."
+        },
+        {
+          "name": "شحن للشركات",
+          "desc": "حلول شحن للتجمعات السكنية والمكاتب وأساطيل السيارات."
+        },
+        {
+          "name": "تطبيق PolygonEV",
+          "desc": "متابعة التيار والجهد والقدرة عبر البلوتوث، وضبط حدود الشحن والتحقق بالهاتف والتحديثات اللاسلكية. متاح على آيفون وأندرويد."
+        }
+      ]
+    }
+  },
+  {
+    "id": "sahahly",
+    "season": 5,
+    "episode": 3,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Sahahly",
+      "ar": "صححلي"
+    },
+    "description": {
+      "en": "Sahahly is an education services platform for IGCSE teachers. Alongside support for teachers and their assistants, its official content describes student progress reports that help parents understand performance beyond a grade. The platform has featured its work with biology teacher Dr. Radwa.",
+      "ar": "صححلي منصة خدمات تعليمية لمعلمي الشهادة البريطانية IGCSE. تقدم دعمًا للمعلمين ومساعديهم، وتعرض في محتواها الرسمي تقارير عن تقدم الطلاب تساعد أولياء الأمور على فهم الأداء إلى جانب الدرجة. وقد عرضت المنصة تعاونها مع دكتورة رضوى، معلمة الأحياء."
+    },
+    "category": "Education",
+    "founders": null,
+    "website": null,
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02cPNKmaGTGCnD3kpqMofiW8wb2p8kqNyKKGBxdGBmASsoSp7xjTsv3U5oQpaR4A99l",
+      "https://www.facebook.com/photo.php?fbid=1092222520239525",
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid021NPTkZTiNZqHW3FQpCPs5vQG2ZYsueXjWurqwp3Ak1EmRCxKGWEtffj3KxV3JLfRl",
+      "https://www.facebook.com/Sahahlyy"
+    ],
+    "checked": "2026-10-21",
+    "links": {
+      "facebook": "https://www.facebook.com/Sahahlyy"
+    },
+    "services": {
+      "en": [
+        {
+          "name": "IGCSE teacher support",
+          "desc": "Services for IGCSE teachers and their assistant teams, as described on the official page."
+        },
+        {
+          "name": "Student progress reports",
+          "desc": "Reports explaining a student’s progress and performance to parents, featured in the platform’s work with Dr. Radwa."
+        }
+      ],
+      "ar": [
+        {
+          "name": "دعم معلمي IGCSE",
+          "desc": "خدمات لمعلمي الشهادة البريطانية وفرق مساعديهم، بحسب تعريف الصفحة الرسمية."
+        },
+        {
+          "name": "تقارير تقدم الطلاب",
+          "desc": "تقارير توضح لأولياء الأمور تقدم الطالب وأداءه، عرضتها المنصة ضمن تعاونها مع دكتورة رضوى."
+        }
+      ]
+    }
   }
 ]

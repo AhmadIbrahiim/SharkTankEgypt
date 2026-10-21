@@ -18,9 +18,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     </header>
     <p class="note">{digits(p.scheduleNote[lang], lang)}</p>
     <ul>
-      {p.startups.map((x) => <li><h3><a href={x.url}>{x.name[lang]}</a></h3><p>{x.description[lang]}</p><a class="source" href={x.source}>{ar ? 'إعلان المشاركة' : 'Appearance announcement'}</a></li>)}
+      {p.startups.map((x) => <li><h3><a href={`${base}${pre(lang)}/${x.id}/`}>{x.name[lang]}</a></h3><p>{x.description[lang]}</p><a class="source" href={x.source}>{ar ? 'إعلان المشاركة' : 'Appearance announcement'}</a></li>)}
     </ul>
-    <footer><span>{ar ? 'المصادر الرسمية:' : 'Official sources:'}</span> <a href={p.announcement}>{ar ? 'شركات الحلقة' : 'Episode lineup'}</a><span aria-hidden="true"> · </span><a href={p.scheduleSource}>{ar ? 'تغيير الموعد' : 'Schedule change'}</a><p>{ar ? 'هذه معاينة للحلقة؛ الشركات الثلاث غير محسوبة ضمن إحصاءات العروض والصفقات المسجلة.' : 'This is an episode preview. These three businesses are not included in the recorded pitch and deal totals.'}</p></footer>
+    <footer><span>{ar ? 'المصادر الرسمية:' : 'Official sources:'}</span> <a href={p.announcement}>{ar ? 'شركات الحلقة' : 'Episode lineup'}</a><span aria-hidden="true"> · </span><a href={p.scheduleSource}>{ar ? 'تغيير الموعد' : 'Schedule change'}</a><p>{ar ? 'تصفّح ملفات الشركات لمعرفة خدماتها وروابطها الرسمية. طلبات الاستثمار ونتائج الصفقات لم تُوثَّق بعد.' : 'Explore the company profiles for their services and official links. Investment asks and deal outcomes are not yet verified.'}</p></footer>
     </>}
   </section>
 ))}
