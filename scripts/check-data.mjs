@@ -22,6 +22,12 @@ for (const s of startups) {
     assert.equal(new URL(u.source).protocol, 'https:', `${where}: update needs an https source`);
   }
   if (s.video) assert.match(s.video, /^[A-Za-z0-9_-]{11}$/, `${where}: video must be a YouTube id`);
+  if (s.photo) {
+    assert.equal(s.photo.url, `/startups/${s.id}.jpg`, `${where}: photo must use its local startup path`);
+    assert.ok(existsSync(`public${s.photo.url}`), `${where}: photo file missing`);
+    assert.ok(s.photo.credit?.trim(), `${where}: photo credit required`);
+    assert.equal(new URL(s.photo.creditUrl).protocol, 'https:', `${where}: photo source must be https`);
+  }
   if (s.website) {
     assert.equal(new URL(s.website).protocol, 'https:', `${where}: website must be https`);
     assert.ok(!platformOf(s.website), `${where}: social URL belongs in links, not website`);

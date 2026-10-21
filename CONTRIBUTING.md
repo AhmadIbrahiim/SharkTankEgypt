@@ -47,6 +47,7 @@ Rules:
 - Sharks in `deal.sharks` must be on that season's lineup in `seasons.json`.
 - **Never change an existing `id`**: comments and links are keyed to it.
 - Announced businesses have full `startups.json` profiles with `appearanceStatus: "announced"`, null asks/deals and an entry in `episode-previews.json`. They count as directory profiles; their investment terms stay blank. Keep official business, announcement and schedule sources. After verifying the broadcast, remove the appearance status and episode preview when recording the aired pitches. A scheduled date passing does not itself verify a broadcast or outcome.
+- A startup's optional `photo` uses `/startups/<id>.jpg`, `credit` and `creditUrl`, following the people-photo credit format. Use a sourced business or show photo; website screenshots remain the fallback.
 - Founder information stays public and professional. No personal details.
 - Photos must clearly show the right person and carry a credit.
 

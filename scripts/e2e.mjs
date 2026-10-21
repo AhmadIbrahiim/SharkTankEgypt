@@ -58,15 +58,21 @@ await test('announced startups have searchable bilingual profiles without unveri
       assert.equal(await full.locator('a').last().getAttribute('href'), preview.scheduleSource);
       for (const startup of preview.startups) {
         const href = `/${prefix}${startup.id}/`;
+        const photo = exported.find((x) => x.id === startup.id)?.photo;
         assert.equal(await full.locator(`h3 a[href="${href}"]`).count(), 1);
         await p.goto(`${U}${href}`);
         assert.equal(await p.locator('h1').innerText(), startup.name[prefix ? 'en' : 'ar']);
         assert.equal(await p.locator('.scheduled time').getAttribute('datetime'), preview.scheduledAt);
         assert.equal(await p.locator('.score').count(), 0);
         assert.ok(await p.locator('#services li').count() >= 2);
+        if (photo) {
+          assert.equal(await p.locator('.stage img.bg').getAttribute('src'), photo.url);
+          assert.ok(await p.locator('.stage img.bg').evaluate((img) => img.complete && img.naturalWidth > 0), 'profile photo loads');
+        }
         assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'profile fits a phone');
         await p.goto(`${U}/${prefix}?q=${encodeURIComponent(startup.name.en)}`);
         assert.ok(await p.locator(`#grid a[href="${href}"]`).isVisible(), 'profile is searchable');
+        if (photo) assert.equal(await p.locator(`#grid a[href="${href}"] img.shot`).getAttribute('src'), photo.url);
         await p.goto(`${U}/${prefix}season/${preview.season}/`);
       }
       await p.goto(`${U}/${prefix}season/${preview.season}/episode/${preview.episode}/`);

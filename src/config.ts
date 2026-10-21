@@ -316,8 +316,8 @@ export const valuation = (amount?: number | null, pct?: number | null) =>
 /** YouTube thumbnail; hqdefault is 4:3 with letterbox bars, which a 16:9 object-fit crop removes. */
 export const thumb = (video: string) => `https://i.ytimg.com/vi/${video}/hqdefault.jpg`;
 
-/** Path (relative to base) of a startup's captured screenshot, or null. */
-export const screenshot = (id: string) => (existsSync(`public/screenshots/${id}.jpg`) ? `/screenshots/${id}.jpg` : null);
+/** Local startup photo or website screenshot, relative to the site base. */
+export const startupImage = (id: string) => startups.find((x) => x.id === id)?.photo?.url ?? (existsSync(`public/screenshots/${id}.jpg`) ? `/screenshots/${id}.jpg` : null);
 
 /** Stable warm hue per startup for placeholders and avatars. */
 export const hue = (s: string) => [14, 28, 38, 172, 190, 350, 262][[...s].reduce((a, c) => a + c.charCodeAt(0), 0) % 7];
@@ -419,6 +419,6 @@ export const listCard = (title: string, sub: string, items: Startup[], lang: Lan
   const st = stats(items);
   return { kind: 'list', title, sub, eyebrow,
     // Website screenshots first: they read better in a small stack than video frames.
-    thumbs: [...items.map((x) => screenshot(x.id)), ...items.map((x) => (x.video ? thumb(x.video) : null))].filter((u): u is string => !!u).slice(0, 4),
+    thumbs: [...items.map((x) => startupImage(x.id)), ...items.map((x) => (x.video ? thumb(x.video) : null))].filter((u): u is string => !!u).slice(0, 4),
     stats: [[num(st.count, lang), t[lang].statStartups], [num(st.deals, lang), t[lang].statDeals], ...(st.invested ? [[money(st.invested, lang)!, t[lang].statInvested] as [string, string]] : [])] };
 };

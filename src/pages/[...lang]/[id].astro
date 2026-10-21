@@ -1,12 +1,12 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { ID, ROOT, founderRef, sharkRef, seasonRef } from '../../schema';
+import { ID, ROOT, photo, founderRef, sharkRef, seasonRef } from '../../schema';
 import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
 import MiniCard from '../../components/MiniCard.astro';
 import { startupFaq, summary } from '../../faq';
-import { scheduledAppearance, verification, langs, seg, pre, startups, giscus, t, num, money, pct, valuation, screenshot, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, sharkByKey, type Lang, type Startup, type Card, digits, dir } from '../../config';
+import { scheduledAppearance, verification, langs, seg, pre, startups, giscus, t, num, money, pct, valuation, startupImage, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, sharkByKey, type Lang, type Startup, type Card, digits, dir } from '../../config';
 
 export const getStaticPaths = () =>
   langs.flatMap((lang) => startups.map((x, i) => ({ params: { lang: seg(lang), id: x.id }, props: { i } })));
@@ -21,7 +21,7 @@ const commentsOn = giscus.repoId && giscus.categoryId;
 const otherName = x.name[lang === 'ar' ? 'en' : 'ar'];
 // Only this page's language is shown; the other name stays in the structured data (alternateName).
 const pageTitle = `${x.name[lang]} – ${seasonLabel(x.season, lang)}`;
-const image = screenshot(x.id) ?? (x.video ? thumb(x.video) : undefined);
+const image = startupImage(x.id) ?? (x.video ? thumb(x.video) : undefined);
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 // Every known profile, so search engines can tie them to this startup.
 const sameAs = [x.website, ...Object.entries(x.links ?? {}).flatMap(([k, v]) => (k === 'other' ? (v as { url: string }[]).map((o) => o.url) : [v as string]))].filter(Boolean);
@@ -49,7 +49,7 @@ const jsonld = {
   ...(sameAs.length && { sameAs }),
   ...(about?.founded && { foundingDate: String(about.founded) }),
   ...(about?.city && { address: { '@type': 'PostalAddress', addressLocality: about.city.en, addressCountry: 'EG' } }),
-  ...(image && { image: image.startsWith('http') ? image : new URL(image.slice(1), site).href }),
+  ...(image && { image: photo(x.photo) ?? (image.startsWith('http') ? image : new URL(image.slice(1), site).href) }),
   ...(x.founders?.length && { founder: (x.founders ?? []).map(founderRef) }),
   // The sharks who invested on the show.
   ...(x.deal?.made && x.deal.sharks?.length && { funder: x.deal.sharks.map(sharkRef) }),
@@ -82,7 +82,7 @@ const outcome = x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no' :
 const askVal = valuation(x.ask?.amountEGP, x.ask?.equityPct);
 const investors = (x.deal?.made ? x.deal.sharks ?? [] : []).map((n) => sharkByKey.get(n)).filter(Boolean) as any[];
 const lead = digits(x.description[lang].split(/(?<=[.!?؟])\s+/)[0], lang);
-const heroImg = x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : screenshot(x.id) ? `${base}${screenshot(x.id)}` : null;
+const heroImg = x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : startupImage(x.id) ? `${base}${startupImage(x.id)}` : null;
 const heroFallback = x.video ? `this.onerror=null;this.src='${thumb(x.video)}'` : 'this.remove()';
 const faqs = startupFaq(x, lang);
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faqs.map((q) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: q.a } })) };
@@ -90,7 +90,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} card={card} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/${x.id}/`}>
   <header class:list={['stage', !heroImg && 'noimg']}>
-    {heroImg && <img class:list={['bg', !x.video && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror={heroFallback} />}
+    {heroImg && <img class:list={['bg', !x.video && !x.photo && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror={heroFallback} />}
     <div class="container stage-in">
       <nav class="crumbs" aria-label="breadcrumb">
         <a href={`${base}${pre(lang)}/`}>{s.home}</a><span aria-hidden="true">/</span>
@@ -209,6 +209,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         {hasLinks && <div class="box"><Links website={x.website} links={x.links} lang={lang} label={ar ? 'أين تجدهم' : 'Where to find them'} /></div>}
         <div class="box">
           <h3>{s.sources}</h3>
+          {x.photo && <p class="small">{ar ? 'الصورة:' : 'Photo:'} <a href={x.photo.creditUrl}>{x.photo.credit}</a></p>}
           <p class:list={['verify', verification(x)]}>{s.verify[verification(x)]}</p>
           {x.checked && <p class="small">{s.checked} <time datetime={x.checked}>{x.checked}</time> · <a href={helpUrl} target="_blank" rel="noopener">{ar ? 'أبلغ عن خطأ' : 'Report an error'}</a></p>}
           {x.sources?.length > 0 && (
