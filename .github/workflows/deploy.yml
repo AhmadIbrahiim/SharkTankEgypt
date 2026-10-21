@@ -24,7 +24,7 @@ jobs:
       - run: npm run build
       # Broken internal links, missing/duplicate titles, canonical and hreflang errors, sitemap gaps: fail the build.
       - run: npm run audit-seo
-      # A share image per page (dist/og/…), referenced by each page's og:image.
+      # A share image per page (dist/og/…), referenced by each page's share metadata.
       - run: npx playwright install --with-deps chromium
       # Search, filters, URL state, language switch, keyboard nav and phone layouts in a real browser.
       - run: npm run e2e

@@ -1,6 +1,6 @@
 // schema.org entity graph shared by every page. Entities get one stable @id (the English page URL + a fragment),
 // so the Arabic and English pages describe the same shark, founder, startup or season and Google can join them.
-import { seasons, sharkByKey, founderId, type Startup } from './config';
+import { seasons, sharkByKey, founderId, t, type Startup } from './config';
 
 export const ROOT = new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), import.meta.env.SITE).href;
 export const ID = {
@@ -25,12 +25,13 @@ export const photo = (p?: { url: string; credit?: string; creditUrl?: string }) 
 export const seasonRef = (n: number) => ({ '@type': 'TVSeason', '@id': ID.season(n), seasonNumber: n });
 
 /** The publisher, the site and the show: the same three nodes on every page. */
-export const siteNodes = (lang: 'ar' | 'en') => [
+export const siteNodes = () => [
   { '@type': 'Organization', '@id': ID.org, name: 'Shark Tank Egypt Directory', alternateName: ['دليل شارك تانك مصر', 'دليل شركات شارك تانك مصر'],
     url: ROOT, logo: { '@type': 'ImageObject', url: `${ROOT}icon-512.png`, width: 512, height: 512 },
     sameAs: ['https://github.com/AhmadIbrahiim/SharkTankEgypt'] },
-  { '@type': 'WebSite', '@id': ID.site, url: ROOT, name: lang === 'ar' ? 'دليل شارك تانك مصر' : 'Shark Tank Egypt Directory',
-    alternateName: lang === 'ar' ? ['Shark Tank Egypt Directory', 'شارك تانك مصر'] : ['دليل شارك تانك مصر', 'Shark Tank Egypt'],
+  // Google supports one site name per subdomain; translations and the hostname are alternatives.
+  { '@type': 'WebSite', '@id': ID.site, url: ROOT, name: t.en.title,
+    alternateName: [t.en.brandName, t.ar.title, t.ar.brandName, 'دليل شارك تانك مصر', new URL(ROOT).hostname],
     inLanguage: ['ar', 'en'], publisher: { '@id': ID.org } },
   { '@type': 'TVSeries', '@id': ID.series, name: 'Shark Tank Egypt', alternateName: 'شارك تانك مصر', inLanguage: 'ar', countryOfOrigin: { '@type': 'Country', name: 'Egypt' },
     numberOfSeasons: seasons.filter((s) => s.season > 0).length, containsSeason: seasons.map((s) => seasonRef(s.season)),

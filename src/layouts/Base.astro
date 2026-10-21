@@ -49,15 +49,17 @@ const { '@context': _ctx, ...entity } = (jsonld ?? {}) as Record<string, any>;
 const pageTypes = ['FAQPage', 'CollectionPage', 'ProfilePage', 'WebPage'];
 const isPage = pageTypes.includes(entity['@type']);
 const isPerson = entity['@type'] === 'Person';
+// Keep Google's image signals aligned; text-heavy share cards remain available to Twitter.
+const primaryImage = isPerson && entity.image ? entity.image : { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 };
 const page = {
   '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : !segs.length ? 'CollectionPage' : 'WebPage',
   '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site }, dateModified: dataModified,
-  primaryImageOfPage: isPerson && entity.image ? entity.image : { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 },
+  primaryImageOfPage: primaryImage,
   ...(crumbs.length > 1 && { breadcrumb: { '@id': `${url}#breadcrumb` } }),
   ...(isPage ? (({ '@type': _t, ...rest }) => rest)(entity) : jsonld ? { mainEntity: { '@id': entity['@id'] ?? `${url}#main` } } : {}),
 };
 const graph = { '@context': 'https://schema.org', '@graph': [
-  ...siteNodes(lang), page,
+  ...siteNodes(), page,
   ...(crumbs.length > 1 ? [{ '@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`, itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url })) }] : []),
   ...(jsonld && !isPage ? [{ '@id': `${url}#main`, ...entity, mainEntityOfPage: { '@id': `${url}#webpage` } }] : []),
 ] };
@@ -82,15 +84,15 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
     <link rel="sitemap" href={`${base}/sitemap.xml`} />
     {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
     <meta property="og:type" content={title ? 'article' : 'website'} />
-    <meta property="og:site_name" content={s.title} />
+    <meta property="og:site_name" content={t.en.title} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={metaDesc} />
     <meta property="og:url" content={url} />
     <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
     <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
-    <meta property="og:image" content={abs(ogPath)} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content={primaryImage.url} />
+    {primaryImage.width && <meta property="og:image:width" content={primaryImage.width} />}
+    {primaryImage.height && <meta property="og:image:height" content={primaryImage.height} />}
     <meta property="og:image:alt" content={fullTitle} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={abs(ogPath)} />

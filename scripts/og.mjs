@@ -1,5 +1,5 @@
 // Renders a 1200×630 share image for every built page: reads the page's #og-card JSON (set by Base.astro)
-// and writes dist/og/<path>.jpg, the URL Base.astro already put in og:image.
+// and writes dist/og/<path>.jpg, the URL Base.astro already put in share metadata.
 // Usage (after `astro build`): node scripts/og.mjs [--only <path-prefix>]
 import { chromium } from 'playwright';
 import { createServer } from 'node:http';

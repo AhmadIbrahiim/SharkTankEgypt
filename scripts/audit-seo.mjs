@@ -10,6 +10,7 @@ const pages = [];
 
 const errors = [], warns = [];
 const titles = new Map(), descs = new Map();
+const siteNames = new Set();
 const pick = (html, re) => html.match(re)?.[1];
 const decode = (s) => s?.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const urlOf = (file) => `${home.origin}${BASE}/${file.replace(/^dist\//, '').replace(/index\.html$/, '')}`;
@@ -43,12 +44,25 @@ for (const f of pages) {
     if (!back.some((b) => b.includes(`href="${url}"`))) errors.push(`${url}: hreflang ${l} page ${u} doesn't link back`);
   }
   for (const k of ['og:title', 'og:description', 'og:image', 'og:url']) if (!html.includes(`property="${k}"`)) errors.push(`${url}: missing ${k}`);
+  let hasWebsite = false;
   for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try {
     const graph = JSON.parse(m[1])['@graph'] ?? [];
+    if (graph.length) {
+      const website = graph.find((n) => n['@type'] === 'WebSite');
+      hasWebsite ||= !!website;
+      const siteName = decode(pick(html, /<meta property="og:site_name" content="([^"]*)"/));
+      if (website?.url !== home.href || website?.['@id'] !== `${home.href}#website`) errors.push(`${url}: WebSite must identify this site's root`);
+      if (!website?.name || website.name !== siteName) errors.push(`${url}: WebSite and og:site_name disagree`);
+      if (!website?.alternateName?.includes(home.hostname)) errors.push(`${url}: WebSite is missing its own hostname as a fallback name`);
+      siteNames.add(website?.name);
+    }
     const profile = graph.find((n) => n['@type'] === 'ProfilePage');
     const person = graph.find((n) => n['@type'] === 'Person' && n['@id'] === profile?.mainEntity?.['@id']);
     if (person?.image) {
       if (profile.primaryImageOfPage?.url !== person.image.url) errors.push(`${url}: profile primary image is not the person's portrait`);
+      if (decode(pick(html, /<meta property="og:image" content="([^"]*)"/)) !== person.image.url) errors.push(`${url}: profile og:image is not the person's portrait`);
+      const file = fileFor(person.image.url);
+      if (file !== undefined && (!file || !existsSync(file))) errors.push(`${url}: profile portrait file is missing`);
       const portrait = [...html.matchAll(/<img\s[^>]*>/g)].find(([tag]) => {
         const src = decode(pick(tag, /src="([^"]+)"/));
         return src && new URL(src, url).href === person.image.url;
@@ -58,6 +72,7 @@ for (const f of pages) {
   } catch (e) { errors.push(`${url}: invalid JSON-LD (${e.message})`); }
     // Google wants dates in structured data as full ISO 8601 datetimes with a timezone.
     for (const [, d] of m[1].matchAll(/"date(?:Modified|Published)":"([^"]*)"/g)) if (!/^\d{4}-\d\d-\d\dT\d\d:\d\d(:\d\d)?([+-]\d\d:\d\d|Z)$/.test(d)) errors.push(`${url}: dateModified/datePublished "${d}" is not a full datetime`); }
+  if (!hasWebsite) errors.push(`${url}: missing WebSite structured data`);
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) warns.push(`${url}: ${(html.match(/<h1[\s>]/g) ?? []).length} <h1> elements`);
   // Internal links must resolve to a built file.
   for (const m of html.matchAll(/<a\s[^>]*href="([^"]+)"/g)) {
@@ -65,6 +80,7 @@ for (const f of pages) {
     if (t === null || !existsSync(t)) errors.push(`${url}: broken link ${m[1]}`);
   }
 }
+if (siteNames.size !== 1) errors.push('WebSite name must be consistent across both languages');
 for (const [t, us] of titles) if (us.length > 1) errors.push(`duplicate title "${t}": ${us.slice(0, 3).join(', ')}${us.length > 3 ? ` +${us.length - 3}` : ''}`);
 for (const [d, us] of descs) if (us.length > 1) warns.push(`duplicate description on ${us.length} pages: "${d.slice(0, 80)}…" (${us.slice(0, 2).join(', ')})`);
 // Sitemap: every URL exists; every indexable page is listed.
