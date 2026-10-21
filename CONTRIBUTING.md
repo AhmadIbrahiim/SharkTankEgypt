@@ -51,6 +51,12 @@ Rules:
 - Founder information stays public and professional. No personal details.
 - Photos must clearly show the right person and carry a credit.
 
+## Writing
+
+All user-facing text should sound natural in English and Arabic. Give every new or edited passage a Humanizer pass before publishing: read it aloud, replace stiff or repetitive phrasing, and check that it says something useful. Write each language naturally instead of translating word for word.
+
+Use plain words and specific details. Cut filler and promotional claims. Preserve facts, financial terms, sources and uncertainty. Do not add invented quotes or personal experience. Use the `humanizer` skill when available, then read the result once more for awkward wording.
+
 Before opening a pull request run:
 
 ```sh

@@ -15627,8 +15627,8 @@
       "ar": "جاتي"
     },
     "description": {
-      "en": "Gutty is a Cairo-based healthy food company offering prepared meals and monthly meal subscriptions. Customers can choose meals from its menu for a diet package. Its official posts also describe sugar-free options and seasonal Ramadan meal packages.",
-      "ar": "جاتي شركة أكل صحي في القاهرة تقدم وجبات جاهزة واشتراكات وجبات شهرية. يختار العملاء وجباتهم من المنيو ضمن باقة الدايت، وتذكر منشورات الشركة خيارات خالية من السكر وباقات وجبات موسمية لرمضان."
+      "en": "Gutty prepares healthy meals in Cairo and offers monthly subscriptions. Customers choose their meals from the menu. The company has also advertised sugar-free options and Ramadan meal packages.",
+      "ar": "جاتي تقدم وجبات صحية جاهزة في القاهرة، مع اشتراكات شهرية يختار فيها العميل وجباته من المنيو. وقد أعلنت الشركة أيضًا عن خيارات خالية من السكر وباقات وجبات لرمضان."
     },
     "category": "Food",
     "founders": null,
@@ -15660,7 +15660,7 @@
       "en": [
         {
           "name": "Prepared healthy meals",
-          "desc": "Ready-prepared meals from the Gutty menu for everyday eating."
+          "desc": "Prepared meals from the Gutty menu."
         },
         {
           "name": "Monthly meal subscriptions",
@@ -15668,7 +15668,7 @@
         },
         {
           "name": "Seasonal meal packages",
-          "desc": "Ramadan packages advertised by the company, with customers choosing their meals."
+          "desc": "The company has advertised Ramadan packages with a choice of meals."
         }
       ],
       "ar": [
@@ -15702,8 +15702,8 @@
       "ar": "بوليجون إي في"
     },
     "description": {
-      "en": "Polygon EV is an Egyptian electric vehicle charging company based in New Cairo. Its Manta charger provides up to 22 kW of AC charging for homes and businesses, with wall or stand mounting for indoor or outdoor use. The PolygonEV app connects over Bluetooth to monitor charging and adjust the current. The company also offers charging solutions for communities, offices and fleets.",
-      "ar": "بوليجون إي في شركة مصرية لشحن السيارات الكهربائية مقرها القاهرة الجديدة. يقدم شاحن مانتا شحنًا بالتيار المتردد بقدرة تصل إلى 22 كيلوواط للمنازل والشركات، مع تركيبه على الحائط أو حامل داخل المباني أو خارجها. يتصل تطبيق PolygonEV بالشاحن عبر البلوتوث لمتابعة الشحن وضبط التيار، وتقدم الشركة أيضًا حلول شحن للتجمعات السكنية والمكاتب وأساطيل السيارات."
+      "en": "Polygon EV is an electric vehicle charging company in New Cairo. Its Manta charger supplies up to 22 kW of AC power for homes and businesses. It can go on a wall or stand, indoors or outside. Drivers can use the PolygonEV app over Bluetooth to check charging and adjust the current. The company also provides charging solutions for residential communities, offices and fleets.",
+      "ar": "بوليجون إي في شركة لشحن السيارات الكهربائية في القاهرة الجديدة. شاحنها مانتا يعمل بالتيار المتردد بقدرة تصل إلى 22 كيلوواط للمنازل والشركات. يمكن تثبيته على الحائط أو حامل، داخل المبنى أو خارجه. ومن خلال تطبيق PolygonEV والبلوتوث، يستطيع المستخدم متابعة الشحن وضبط التيار. وتقدم الشركة حلول شحن للتجمعات السكنية والمكاتب وأساطيل السيارات."
     },
     "category": "Tech",
     "founders": null,
@@ -15788,8 +15788,8 @@
       "ar": "صححلي"
     },
     "description": {
-      "en": "Sahahly is an education services platform for IGCSE teachers. Alongside support for teachers and their assistants, its official content describes student progress reports that help parents understand performance beyond a grade. The platform has featured its work with biology teacher Dr. Radwa.",
-      "ar": "صححلي منصة خدمات تعليمية لمعلمي الشهادة البريطانية IGCSE. تقدم دعمًا للمعلمين ومساعديهم، وتعرض في محتواها الرسمي تقارير عن تقدم الطلاب تساعد أولياء الأمور على فهم الأداء إلى جانب الدرجة. وقد عرضت المنصة تعاونها مع دكتورة رضوى، معلمة الأحياء."
+      "en": "Sahahly supports IGCSE teachers and their assistant teams. Its student reports help parents understand how their child is progressing, beyond the grade alone. The platform has shared examples of this work with biology teacher Dr. Radwa.",
+      "ar": "صححلي تقدم خدمات لمعلمي الشهادة البريطانية IGCSE وفرق مساعديهم. تساعد تقاريرها أولياء الأمور على فهم تقدم أبنائهم إلى جانب الدرجة، وقد عرضت المنصة أمثلة لهذا العمل مع دكتورة رضوى، معلمة الأحياء."
     },
     "category": "Education",
     "founders": null,
@@ -15813,7 +15813,7 @@
       "en": [
         {
           "name": "IGCSE teacher support",
-          "desc": "Services for IGCSE teachers and their assistant teams, as described on the official page."
+          "desc": "Support services for IGCSE teachers and their assistant teams."
         },
         {
           "name": "Student progress reports",
@@ -15823,7 +15823,7 @@
       "ar": [
         {
           "name": "دعم معلمي IGCSE",
-          "desc": "خدمات لمعلمي الشهادة البريطانية وفرق مساعديهم، بحسب تعريف الصفحة الرسمية."
+          "desc": "خدمات لمعلمي الشهادة البريطانية وفرق مساعديهم."
         },
         {
           "name": "تقارير تقدم الطلاب",

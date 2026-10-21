@@ -11,7 +11,7 @@ const s = t[lang];
 const st = stats(items);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const groups = byEpisode
-  ? [...Map.groupBy([...items].sort((a, b) => (a.episode ?? 999) - (b.episode ?? 999)), (x) => x.episode ?? null)]
+  ? [...Map.groupBy(items, (x) => x.episode ?? null)]
   : [[null, items] as const];
 const PAGE = 24;
 ---

@@ -20,7 +20,7 @@ export const scheduledAppearance = (x: Startup) => x.appearanceStatus === 'annou
   ? previews.find((p) => p.season === x.season && p.episode === x.episode) : undefined;
 // Newest first; season 0 (July 2025 specials) aired between seasons 3 and 4.
 const rank = (n: number) => (n === 0 ? 3.5 : n);
-export const startups = [...data].sort((a, b) => rank(b.season) - rank(a.season) || (a.episode ?? 99) - (b.episode ?? 99));
+export const startups = [...data].sort((a, b) => rank(b.season) - rank(a.season) || (b.episode ?? -1) - (a.episode ?? -1));
 export { seasons };
 /** How well a record is backed: sourced outcome with sharks and terms = verified; some of it missing = partial; no source = unverified. */
 export type Verification = 'verified' | 'partially_verified' | 'unverified';

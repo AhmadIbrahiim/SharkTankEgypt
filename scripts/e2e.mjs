@@ -140,6 +140,30 @@ await test('sort by biggest deal puts the largest deal first', async () => {
   const amounts = await p.$$eval('#grid > li:not([hidden])', (ls) => ls.map((l) => +l.dataset.amount));
   assert.deepEqual(amounts, [...amounts].sort((a, b) => b - a));
 });
+await test('newest episodes come first and oldest first reverses the order', async () => {
+  const records = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
+  const record = new Map(records.map((x) => [x.id, x]));
+  for (const prefix of ['en/', '']) {
+    const p = await page(); await p.goto(`${U}/${prefix}`);
+    const ids = () => p.locator('#grid a.card').evaluateAll((links) => links.map((a) => a.pathname.split('/').filter(Boolean).at(-1)));
+    const newest = await ids();
+    assert.deepEqual([...new Set(newest.map((id) => record.get(id).season))], [5, 4, 0, 3, 2, 1]);
+    for (const season of new Set(records.map((x) => x.season))) {
+      const eps = newest.map((id) => record.get(id)).filter((x) => x.season === season).map((x) => x.episode ?? -1);
+      assert.ok(eps.every((e, i) => i === 0 || eps[i - 1] >= e), `season ${season} has newest episodes first`);
+    }
+    await p.selectOption('#sort', 'oldest');
+    assert.deepEqual(await ids(), [...newest].reverse());
+    await p.reload();
+    assert.deepEqual(await ids(), [...newest].reverse(), 'oldest order survives reload');
+    await p.selectOption('#sort', '');
+    assert.deepEqual(await ids(), newest);
+    await p.goto(`${U}/${prefix}season/5/`);
+    const episodeNumbers = await p.locator('.group > .ep a').evaluateAll((links) => links.map((a) => Number(a.pathname.split('/').filter(Boolean).at(-1))));
+    assert.ok(episodeNumbers.every((e, i) => i === 0 || episodeNumbers[i - 1] > e), 'season groups have newest first');
+    await p.close();
+  }
+});
 await test('language switch keeps the page and flips direction', async () => {
   const p = await page(); await p.goto(`${U}/en/bar-and-jar/`);
   assert.equal(await p.getAttribute('html', 'dir'), 'ltr');
