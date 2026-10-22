@@ -1,0 +1,47 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { langs, seg, pre, type Lang } from '../../../config';
+
+export const getStaticPaths = () => langs.map((lang) => ({ params: { lang: seg(lang) } }));
+const lang = (Astro.params.lang ?? 'ar') as Lang;
+const ar = lang === 'ar';
+const title = ar ? 'استخدام الصور' : 'Image usage';
+const description = ar
+  ? 'شروط استخدام شعار الدليل وتصميمات صور المشاركة والصور المنشورة، وطريقة طلب الإذن بإعادة استخدامها.'
+  : "Terms for using the directory's logo, share-card artwork and credited photos, with details on requesting permission.";
+---
+<Base lang={lang} title={title} description={description} altPath={`${pre(ar ? 'en' : 'ar')}/image-usage/`}>
+  <article class="container usage">
+    <h1>{title}</h1>
+    <p>{description}</p>
+
+    <h2>{ar ? 'التصميمات الأصلية' : 'Original artwork'}</h2>
+    <p>{ar
+      ? 'حقوق شعار الدليل والتصميمات الأصلية لصور المشاركة محفوظة لدليل شارك تانك مصر. تحتاج إلى إذن لإعادة استخدام هذه التصميمات.'
+      : "The directory's logo and original share-card artwork are © Shark Tank Egypt Directory. Reusing this artwork requires permission."}</p>
+
+    <h2>{ar ? 'الصور من مصادر أخرى' : 'Images from other sources'}</h2>
+    <p>{ar
+      ? 'الصور الشخصية وصور الشركات ولقطات المواقع والبرنامج تخص أصحابها، حتى عندما تظهر ضمن صور المشاركة. اتبع رابط مصدر الصورة في صفحة الشخص أو الشركة، وتواصل مع صاحب الحقوق لمعرفة شروط استخدامها. ذكر المصدر لا يمنح إذنًا بإعادة الاستخدام، والدليل لا يملك منح هذا الإذن نيابة عن أصحاب الصور.'
+      : 'Portraits, business photos, screenshots and show stills belong to their respective owners, including when they appear inside a share card. Follow the credit link on the relevant profile to find the source, and contact the rights holder for reuse terms. A source credit does not grant permission to reuse an image. The directory cannot license these images.'}</p>
+
+    <h2 id="request">{ar ? 'طلب إذن الاستخدام' : 'Request permission'}</h2>
+    <p>{ar
+      ? 'لطلب إذن لاستخدام تصميم أصلي للدليل، افتح طلبًا على GitHub وأرفق رابط الصورة واشرح كيف تنوي استخدامها. انتظر الموافقة الكتابية قبل إعادة الاستخدام.'
+      : 'To request permission for our original artwork, open a GitHub issue with the image URL and a description of how you plan to use it. Wait for written approval before reusing the artwork.'}</p>
+    <p><a class="btn btn-primary" href="https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new?title=Image%20permission%20request">{ar ? 'طلب إذن الاستخدام على GitHub' : 'Request permission on GitHub'}</a></p>
+
+    <h2>{ar ? 'الكود والبيانات' : 'Code and data'}</h2>
+    <p>{ar ? 'كود الموقع متاح بموجب ' : 'The site code uses the '}
+      <a href="https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/LICENSE">{ar ? 'رخصة MIT' : 'MIT license'}</a>{ar ? '، وبيانات الدليل بموجب ' : ', and directory data uses '}
+      <a href="https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/src/data/LICENSE.md">CC BY 4.0</a>{ar
+        ? '. شروط الصور لا تغيّر هاتين الرخصتين أو أي أذونات سبق منحها.'
+        : '. These image terms do not change those licenses or any permissions already granted.'}</p>
+  </article>
+</Base>
+<style>
+  .usage { max-width: 760px; padding-block: 36px; }
+  h1 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); }
+  h2 { margin-top: 32px; font-size: 1.4rem; }
+  p { margin-top: 12px; }
+</style>

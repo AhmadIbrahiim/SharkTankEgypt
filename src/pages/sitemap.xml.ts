@@ -5,7 +5,7 @@ import { episodes, sharkSeasons, sharkPairs, rankings, sectorSeasons, sharkSecto
 // Each URL lists its Arabic/English twin so Google serves the right language.
 export function GET({ site }: APIContext) {
   const root = new URL(import.meta.env.BASE_URL.replace(/\/?$/, '/'), site).href;
-  const paths = ['', 'deals/', 'compare/', ...startups.map((x) => `${x.id}/`), 'sharks/', ...sharks.map((p) => `sharks/${p.id}/`), 'founders/', 'faq/', ...founders.map((p) => `founders/${p.id}/`), ...categories.map((c) => `category/${catSlug(c)}/`), ...seasons.map((x) => `season/${x.season}/`),
+  const paths = ['', 'deals/', 'compare/', 'image-usage/', ...startups.map((x) => `${x.id}/`), 'sharks/', ...sharks.map((p) => `sharks/${p.id}/`), 'founders/', 'faq/', ...founders.map((p) => `founders/${p.id}/`), ...categories.map((c) => `category/${catSlug(c)}/`), ...seasons.map((x) => `season/${x.season}/`),
     ...episodes.map(([n, e]) => `season/${n}/episode/${e}/`), ...sharkSeasons.map((x) => `sharks/${x.p.id}/season/${x.n}/`), ...sharkPairs.map((x) => `sharks/vs/${x.id}/`), ...rankings.map((r) => `top/${r.id}/`),
     ...sectorSeasons.map((x) => `category/${catSlug(x.c)}/season/${x.n}/`), ...sharkSectors.map((x) => `sharks/${x.p.id}/sector/${catSlug(x.c)}/`)];
   const urls = paths.flatMap((p) => ['ar', 'en'].map((lang) => `

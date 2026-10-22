@@ -23,6 +23,10 @@ const fileFor = (href) => {
   p = p.slice(BASE.length) || '/';
   return join('dist', p.endsWith('/') ? p + 'index.html' : p);
 };
+const images = (node) => {
+  if (!node || typeof node !== 'object') return [];
+  return [...(node['@type'] === 'ImageObject' ? [node] : []), ...Object.values(node).flatMap(images)];
+};
 let links = 0;
 const stubs = new Set();
 for (const f of pages) {
@@ -47,6 +51,17 @@ for (const f of pages) {
   let hasWebsite = false;
   for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try {
     const graph = JSON.parse(m[1])['@graph'] ?? [];
+    for (const image of images(graph)) {
+      const own = image.url === `${home.href}icon-512.png` || image.url?.startsWith(`${home.href}og/`);
+      if (!own) continue; // Photo credits alone cannot supply verified rights metadata.
+      for (const field of ['contentUrl', 'creator', 'copyrightNotice', 'license', 'acquireLicensePage'])
+        if (!image[field]) errors.push(`${url}: directory image missing ${field}`);
+      if (!['Person', 'Organization'].includes(image.creator?.['@type']) || !image.creator?.name) errors.push(`${url}: image creator needs a type and name`);
+      for (const field of ['license', 'acquireLicensePage']) {
+        const target = image[field] && fileFor(image[field]);
+        if (!target || !existsSync(target)) errors.push(`${url}: image ${field} must link to a published usage page`);
+      }
+    }
     if (graph.length) {
       const website = graph.find((n) => n['@type'] === 'WebSite');
       hasWebsite ||= !!website;

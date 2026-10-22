@@ -19,7 +19,10 @@ export const absUrl = (u: string) => (u.startsWith('http') ? u : new URL(u.repla
 export const sharkRef = (key: string) => ({ '@type': 'Person', '@id': ID.shark(sharkByKey.get(key)?.id ?? founderId(key)), name: key });
 export const founderRef = (name: string) => ({ '@type': 'Person', '@id': ID.founder(founderId(name)), name });
 export const startupRef = (x: Startup) => ({ '@type': 'Organization', '@id': ID.startup(x.id), name: x.name.en });
-/** A photo with its credit, so Google can show "Credit:" in Images. */
+const LICENSE = `${ROOT}en/image-usage/`;
+/** Rights cover our original artwork; the usage page excludes photos included in share cards. */
+export const ownImage = { creator: { '@type': 'Organization', '@id': ID.org, name: 'Shark Tank Egypt Directory' }, copyrightNotice: 'Original artwork © Shark Tank Egypt Directory. Included photos belong to their owners.', license: LICENSE, acquireLicensePage: `${LICENSE}#request` };
+/** Source credits do not establish authorship, ownership or permission to reuse a photo. */
 export const photo = (p?: { url: string; credit?: string; creditUrl?: string }) =>
   p && { '@type': 'ImageObject', contentUrl: absUrl(p.url), url: absUrl(p.url), ...(p.credit && { creditText: p.credit }) };
 export const seasonRef = (n: number) => ({ '@type': 'TVSeason', '@id': ID.season(n), seasonNumber: n });
@@ -27,7 +30,7 @@ export const seasonRef = (n: number) => ({ '@type': 'TVSeason', '@id': ID.season
 /** The publisher, the site and the show: the same three nodes on every page. */
 export const siteNodes = () => [
   { '@type': 'Organization', '@id': ID.org, name: 'Shark Tank Egypt Directory', alternateName: ['دليل شارك تانك مصر', 'دليل شركات شارك تانك مصر'],
-    url: ROOT, logo: { '@type': 'ImageObject', url: `${ROOT}icon-512.png`, width: 512, height: 512 },
+    url: ROOT, logo: { '@type': 'ImageObject', url: `${ROOT}icon-512.png`, contentUrl: `${ROOT}icon-512.png`, width: 512, height: 512, ...ownImage },
     sameAs: ['https://github.com/AhmadIbrahiim/SharkTankEgypt'] },
   // Google supports one site name per subdomain; translations and the hostname are alternatives.
   { '@type': 'WebSite', '@id': ID.site, url: ROOT, name: t.en.title,

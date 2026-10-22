@@ -71,6 +71,8 @@ Audit reports: [AUDIT_REPORT.md](AUDIT_REPORT.md) · [SEO_AUDIT.md](SEO_AUDIT.md
 
 Code: [MIT](LICENSE). Data in `src/data/`: [CC BY 4.0](src/data/LICENSE.md). Please credit the directory if you reuse it. Photos and screenshots belong to their owners.
 
+Reusing the directory's original logo and share-card artwork requires permission. See [Image usage](https://sharktank.ahmed-ibrahim.com/en/image-usage/) for the terms and how to request it. These terms do not change permissions already granted.
+
 ## Disclaimer
 
 This is an independent fan and community project. It is not affiliated with Shark Tank, Sony Pictures Television, CBC or WATCH IT. Facts come from public sources, which are listed on each startup page. Founders who would like their information changed or removed can [open an issue](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/new).

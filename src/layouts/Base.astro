@@ -1,6 +1,6 @@
 ---
 import { t, goatcounter, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, dataModified, type Lang, type Card, pre } from '../config';
-import { siteNodes, ID } from '../schema';
+import { siteNodes, ownImage, ID } from '../schema';
 // Self-hosted variable font (Arabic + Latin subsets load on demand): no render-blocking third-party CSS.
 import '@fontsource-variable/readex-pro/wght.css';
 import '@fontsource-variable/source-serif-4/wght.css';
@@ -50,7 +50,7 @@ const pageTypes = ['FAQPage', 'CollectionPage', 'ProfilePage', 'WebPage'];
 const isPage = pageTypes.includes(entity['@type']);
 const isPerson = entity['@type'] === 'Person';
 // Keep Google's image signals aligned; text-heavy share cards remain available to Twitter.
-const primaryImage = isPerson && entity.image ? entity.image : { '@type': 'ImageObject', url: abs(ogPath), width: 1200, height: 630 };
+const primaryImage = isPerson && entity.image ? entity.image : { ...ownImage, '@type': 'ImageObject', url: abs(ogPath), contentUrl: abs(ogPath), width: 1200, height: 630 };
 const page = {
   '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : !segs.length ? 'CollectionPage' : 'WebPage',
   '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site }, dateModified: dataModified,
@@ -63,7 +63,7 @@ const graph = { '@context': 'https://schema.org', '@graph': [
   ...(crumbs.length > 1 ? [{ '@type': 'BreadcrumbList', '@id': `${url}#breadcrumb`, itemListElement: crumbs.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: c.url })) }] : []),
   ...(jsonld && !isPage ? [{ '@id': `${url}#main`, ...entity, mainEntityOfPage: { '@id': `${url}#webpage` } }] : []),
 ] };
-const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] ?? 'startups';
+const section = /\/(sharks|founders|faq|deals|image-usage)\//.exec(Astro.url.pathname)?.[1] ?? 'startups';
 ---
 <!doctype html>
 <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
@@ -169,6 +169,7 @@ const section = /\/(sharks|founders|faq|deals)\//.exec(Astro.url.pathname)?.[1] 
             <a href={`${base}${pre(lang)}/deals/`}>{lang === 'ar' ? 'كل الصفقات' : 'All deals'}</a>
             <a href={`${base}${pre(lang)}/compare/`}>{lang === 'ar' ? 'قارن الشركات' : 'Compare'}</a>
             <a href={`${base}${pre(lang)}/faq/`}>{s.navFaq}</a>
+            <a href={`${base}${pre(lang)}/image-usage/`}>{lang === 'ar' ? 'استخدام الصور' : 'Image usage'}</a>
             <a href={`${base}${altPath}`} hreflang={other} lang={other}>{s.switchLang}</a>
           </nav>
           <nav aria-label={s.browseSeasons}>
