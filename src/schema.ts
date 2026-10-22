@@ -22,9 +22,12 @@ export const startupRef = (x: Startup) => ({ '@type': 'Organization', '@id': ID.
 const LICENSE = `${ROOT}en/image-usage/`;
 /** Rights cover our original artwork; the usage page excludes photos included in share cards. */
 export const ownImage = { creator: { '@type': 'Organization', '@id': ID.org, name: 'Shark Tank Egypt Directory' }, copyrightNotice: 'Original artwork © Shark Tank Egypt Directory. Included photos belong to their owners.', license: LICENSE, acquireLicensePage: `${LICENSE}#request` };
-/** Source credits do not establish authorship, ownership or permission to reuse a photo. */
+/** A third-party photo. The credit names the source, not the rights holder, so the notice says rights stay with the
+ *  owner and the licence fields point at the usage page's section on images from other sources. */
 export const photo = (p?: { url: string; credit?: string; creditUrl?: string }) =>
-  p && { '@type': 'ImageObject', contentUrl: absUrl(p.url), url: absUrl(p.url), ...(p.credit && { creditText: p.credit }) };
+  p && { '@type': 'ImageObject', contentUrl: absUrl(p.url), url: absUrl(p.url),
+    ...(p.credit && { creditText: p.credit, creator: { '@type': 'Organization', name: p.credit }, copyrightNotice: `${p.credit}. Rights remain with the image's owner.` }),
+    license: LICENSE, acquireLicensePage: `${LICENSE}#sources` };
 export const seasonRef = (n: number) => ({ '@type': 'TVSeason', '@id': ID.season(n), seasonNumber: n });
 
 /** The publisher, the site and the show: the same three nodes on every page. */
