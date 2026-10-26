@@ -15639,8 +15639,11 @@
       "amountEGP": 6000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false
+    },
     "sources": [
+      "https://www.watchit.com/watch/ar/shows/%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1/shows-170",
       "https://www.facebook.com/photo.php?fbid=1093019810159796",
       "https://www.youtube.com/watch?v=l95i6rcsyeY",
       "https://www.youtube.com/watch?v=r9-nEvXHT0c",
@@ -15720,8 +15723,8 @@
     },
     "video": "cXPw8IH4yGw",
     "pitch": {
-      "en": "In Season 5, Episode 3, Mohamed El-Boraie and Ahmed Ashraf asked for EGP 6 million for 10%, which values Gutty at EGP 60 million. Mohamed said he started the business in 2021, during the pandemic, after changing his own diet, and that Ahmed was one of the first customers before joining him. They put sales at EGP 25 million over the first four years and another EGP 25 million in the first nine months of 2026, with a target of EGP 40 million for the year, and said net profit runs at about 30% of sales. The company has around 40 staff, a factory in an industrial zone and a branch in Sheikh Zayed, with a second branch planned in New Cairo. Mohamed Farouk doubted that burgers and fries could be sold as healthy food; the founders answered that they compete with fast food rather than with salads. The clip the show has published ends before any offers, so the outcome is not yet recorded.",
-      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب محمد البرعي وأحمد أشرف 6 ملايين جنيه مقابل 10%، أي بتقييم 60 مليون جنيه لجاتي. قال محمد إنه بدأ المشروع في 2021 أثناء الجائحة بعد أن غيّر نظام أكله، وإن أحمد كان من أوائل العملاء قبل أن ينضم إليه. ذكرا مبيعات بقيمة 25 مليون جنيه في السنوات الأربع الأولى، و25 مليونًا أخرى في أول تسعة أشهر من 2026، مع هدف 40 مليونًا للعام كله، وقالا إن صافي الربح نحو 30% من المبيعات. تضم الشركة نحو 40 موظفًا ومصنعًا في منطقة صناعية وفرعًا في الشيخ زايد، ويخططان لفرع ثانٍ في التجمع. شكك محمد فاروق في تسويق البرجر والبطاطس كأكل صحي، فرد المؤسسان بأنهما ينافسان الأكل السريع لا السلطات. ينتهي المقطع الذي نشره البرنامج قبل أي عروض، فالنتيجة لم تُسجَّل بعد."
+      "en": "In Season 5, Episode 3, Mohamed El-Boraie and Ahmed Ashraf asked for EGP 6 million for 10%, which values Gutty at EGP 60 million. Mohamed said he started the business in 2021, during the pandemic, after changing his own diet, and that Ahmed was one of the first customers before joining him. They put sales at EGP 25 million over the first four years and another EGP 25 million in the first nine months of 2026, with a target of EGP 40 million for the year, and said net profit runs at about 30% of sales. The company has around 40 staff, a factory in an industrial zone and a branch in Sheikh Zayed, with a second branch planned in New Cairo. Mohamed Farouk doubted that burgers and fries could be sold as healthy food; the founders answered that they compete with fast food rather than with salads. None of the sharks invested, and the founders left without a deal.",
+      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب محمد البرعي وأحمد أشرف 6 ملايين جنيه مقابل 10%، أي بتقييم 60 مليون جنيه لجاتي. قال محمد إنه بدأ المشروع في 2021 أثناء الجائحة بعد أن غيّر نظام أكله، وإن أحمد كان من أوائل العملاء قبل أن ينضم إليه. ذكرا مبيعات بقيمة 25 مليون جنيه في السنوات الأربع الأولى، و25 مليونًا أخرى في أول تسعة أشهر من 2026، مع هدف 40 مليونًا للعام كله، وقالا إن صافي الربح نحو 30% من المبيعات. تضم الشركة نحو 40 موظفًا ومصنعًا في منطقة صناعية وفرعًا في الشيخ زايد، ويخططان لفرع ثانٍ في التجمع. شكك محمد فاروق في تسويق البرجر والبطاطس كأكل صحي، فرد المؤسسان بأنهما ينافسان الأكل السريع لا السلطات. لم يستثمر أي من الشاركس، وخرج المؤسسان دون صفقة."
     }
   },
   {

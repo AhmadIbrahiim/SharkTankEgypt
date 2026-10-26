@@ -7,7 +7,7 @@ Sources used: the official pitch videos ([Sahahly](https://www.youtube.com/watch
 | Business | Founders on air | Ask | Outcome |
 |---|---|---|---|
 | Sahahly | Abdelrahman and Youssef (first names only) | EGP 2M for 10% | Deal with Ayman Abbas: EGP 2M for 30%, falling to 25% on agreed targets, plus EGP 2M in-kind services (on-screen caption at 21:25 of the pitch video) |
-| Gutty | Mohamed El-Boraie, Ahmed Ashraf | EGP 6M for 10% | Not published: the pitch video ends before any offers |
+| Gutty | Mohamed El-Boraie, Ahmed Ashraf | EGP 6M for 10% | No deal, per the CBC/WATCH IT broadcast |
 | Polygon EV | Mostafa El-Ghandour | EGP 1.5M for 10% | No deal, per the CBC/WATCH IT broadcast; Paymob Golden Ticket awarded |
 
 Not established: surnames of the Sahahly founders (the company's LinkedIn page lists employees but no founder titles), founder portraits, and the Gutty and Polygon EV outcomes. No Youm7 or Dostor recap of the episode had been published by 26 October. The streaming listings describe a full episode of about 70 minutes, so the outcomes exist on the broadcast but not in any official clip yet.
