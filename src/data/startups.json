@@ -15745,8 +15745,11 @@
       "amountEGP": 1500000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": false
+    },
     "sources": [
+      "https://www.watchit.com/watch/ar/shows/%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B5%D8%B1/shows-170",
       "https://www.facebook.com/photo.php?fbid=1093019810159796",
       "https://x.com/CBCEgypt/status/2114081485871317077",
       "https://www.youtube.com/watch?v=SOQjezGmoi8",
@@ -15816,8 +15819,8 @@
     },
     "video": "sI-_wDaWOhk",
     "pitch": {
-      "en": "In Season 5, Episode 3, Mostafa El-Ghandour asked for EGP 1.5 million for 10%, which values Polygon EV at EGP 15 million. He said the idea came while he was researching an electric car for himself and found that most owners need a home charger, and that the imported ones were either cheap and unsupported or branded and expensive. The first Manta prototype cost about EGP 20,000 to build, and a European Union grant helped turn it into a product. He put sales at more than EGP 5 million in 14 months, through electric-car showrooms, property developers and direct orders, and said the circuit boards are the company's own design, with assembly done in Egypt. On air he quoted about EGP 24,500 for the 7 kW Manta and EGP 29,500 for the 22 kW model. Abdallah Sallam said he has one installed at home. The published clip ends during questions on pricing and competition, before any offers. Paymob gave the company its Golden Ticket award in the episode.",
-      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب مصطفى الغندور مليونًا ونصف المليون جنيه مقابل 10%، أي بتقييم 15 مليون جنيه لبوليجون إي في. قال إن الفكرة جاءته وهو يبحث عن سيارة كهربائية لنفسه، حين وجد أن معظم الملاك يحتاجون شاحنًا منزليًا، وأن الشواحن المستوردة إما رخيصة بلا دعم أو من علامات كبيرة وغالية. كلّف أول نموذج من مانتا نحو 20 ألف جنيه، وساعدت منحة من الاتحاد الأوروبي على تحويله إلى منتج. ذكر مبيعات تجاوزت 5 ملايين جنيه في 14 شهرًا عبر معارض السيارات الكهربائية والمطورين العقاريين والطلبات المباشرة، وقال إن اللوحات الإلكترونية من تصميم الشركة ويجري التجميع في مصر. على الهواء ذكر سعرًا يقارب 24,500 جنيه لمانتا 7 كيلوواط و29,500 جنيه لنسخة 22 كيلوواط. وقال عبد الله سلام إنه ركّب واحدًا في بيته. ينتهي المقطع المنشور أثناء الأسئلة عن الأسعار والمنافسة وقبل أي عروض. ومنحت Paymob الشركة جائزة Golden Ticket في الحلقة."
+      "en": "In Season 5, Episode 3, Mostafa El-Ghandour asked for EGP 1.5 million for 10%, which values Polygon EV at EGP 15 million. He said the idea came while he was researching an electric car for himself and found that most owners need a home charger, and that the imported ones were either cheap and unsupported or branded and expensive. The first Manta prototype cost about EGP 20,000 to build, and a European Union grant helped turn it into a product. He put sales at more than EGP 5 million in 14 months, through electric-car showrooms, property developers and direct orders, and said the circuit boards are the company's own design, with assembly done in Egypt. On air he quoted about EGP 24,500 for the 7 kW Manta and EGP 29,500 for the 22 kW model. Abdallah Sallam said he has one installed at home. The sharks pressed him on pricing against Chinese imports and on what the company sells beyond assembly, and none of them invested; he left without a deal. Paymob gave the company its Golden Ticket award in the episode.",
+      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب مصطفى الغندور مليونًا ونصف المليون جنيه مقابل 10%، أي بتقييم 15 مليون جنيه لبوليجون إي في. قال إن الفكرة جاءته وهو يبحث عن سيارة كهربائية لنفسه، حين وجد أن معظم الملاك يحتاجون شاحنًا منزليًا، وأن الشواحن المستوردة إما رخيصة بلا دعم أو من علامات كبيرة وغالية. كلّف أول نموذج من مانتا نحو 20 ألف جنيه، وساعدت منحة من الاتحاد الأوروبي على تحويله إلى منتج. ذكر مبيعات تجاوزت 5 ملايين جنيه في 14 شهرًا عبر معارض السيارات الكهربائية والمطورين العقاريين والطلبات المباشرة، وقال إن اللوحات الإلكترونية من تصميم الشركة ويجري التجميع في مصر. على الهواء ذكر سعرًا يقارب 24,500 جنيه لمانتا 7 كيلوواط و29,500 جنيه لنسخة 22 كيلوواط. وقال عبد الله سلام إنه ركّب واحدًا في بيته. ضغط الشاركس عليه في الأسعار مقارنة بالمستورد الصيني وفيما تبيعه الشركة غير التجميع، ولم يستثمر أي منهم، فخرج دون صفقة. ومنحت Paymob الشركة جائزة Golden Ticket في الحلقة."
     }
   },
   {
