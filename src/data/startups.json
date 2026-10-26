@@ -15621,24 +15621,30 @@
     "id": "gutty",
     "season": 5,
     "episode": 3,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Gutty",
       "ar": "جاتي"
     },
     "description": {
-      "en": "Gutty prepares healthy meals in Cairo and offers monthly subscriptions. Customers choose their meals from the menu. The company has also advertised sugar-free options and Ramadan meal packages.",
-      "ar": "جاتي تقدم وجبات صحية جاهزة في القاهرة، مع اشتراكات شهرية يختار فيها العميل وجباته من المنيو. وقد أعلنت الشركة أيضًا عن خيارات خالية من السكر وباقات وجبات لرمضان."
+      "en": "Gutty makes burgers, pizza, pasta and other fast-food dishes with natural ingredients and no hydrogenated oils, from a factory in Cairo. It sells through its app, its website, Talabat and a branch in Sheikh Zayed, and offers monthly meal subscriptions.",
+      "ar": "جاتي تقدم برجر وبيتزا وباستا وأصنافًا أخرى من الأكل السريع بمكونات طبيعية ومن غير زيوت مهدرجة، من مصنع في القاهرة. تبيع عبر تطبيقها وموقعها وطلبات وفرع في الشيخ زايد، وتوفر اشتراكات وجبات شهرية."
     },
     "category": "Food",
-    "founders": null,
+    "founders": [
+      "Mohamed El-Boraie",
+      "Ahmed Ashraf"
+    ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 6000000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
+      "https://www.facebook.com/photo.php?fbid=1093019810159796",
+      "https://www.youtube.com/watch?v=l95i6rcsyeY",
+      "https://www.youtube.com/watch?v=r9-nEvXHT0c",
+      "https://www.youtube.com/watch?v=cXPw8IH4yGw",
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid02cPNKmaGTGCnD3kpqMofiW8wb2p8kqNyKKGBxdGBmASsoSp7xjTsv3U5oQpaR4A99l",
       "https://www.facebook.com/photo.php?fbid=1092222536906190",
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid021NPTkZTiNZqHW3FQpCPs5vQG2ZYsueXjWurqwp3Ak1EmRCxKGWEtffj3KxV3JLfRl",
@@ -15646,43 +15652,64 @@
       "https://www.facebook.com/GuttyEg/posts/pfbid0d4o2RxdFqHEvyToEPdaWgJNSK2pEYhLM4nxyTng3MigFGBmCfxsNkytmjgrCtjfhl",
       "https://www.facebook.com/GuttyEg/posts/pfbid02T9UUM5nMkcyNw7adUfK5b2tTjWTdRcKwAyYphaEYLAAMfrvRjoqciPcPD9hJKeBPl"
     ],
-    "checked": "2026-10-21",
+    "checked": "2026-10-26",
     "links": {
-      "facebook": "https://www.facebook.com/GuttyEg"
+      "facebook": "https://www.facebook.com/GuttyEg",
+      "appStore": "https://apps.apple.com/eg/app/gutty-egypt/id6755917999",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.gutty.app",
+      "other": [
+        {
+          "name": "Talabat",
+          "url": "https://www.talabat.com/egypt/gutty"
+        }
+      ]
     },
     "about": {
+      "founded": 2021,
       "city": {
         "en": "Cairo",
         "ar": "القاهرة"
+      },
+      "highlights": {
+        "en": [
+          "EGP 25 million in sales over the first four years, and EGP 25 million in the first nine months of 2026, according to the founders.",
+          "About 40 staff, a factory in an industrial zone and a branch in Sheikh Zayed.",
+          "Each order carries a nutrition label, and the app totals calories and protein across the day."
+        ],
+        "ar": [
+          "مبيعات بقيمة 25 مليون جنيه في السنوات الأربع الأولى، و25 مليونًا في أول تسعة أشهر من 2026، بحسب المؤسسين.",
+          "نحو 40 موظفًا ومصنع في منطقة صناعية وفرع في الشيخ زايد.",
+          "كل طلب يحمل ملصقًا بالقيمة الغذائية، ويجمع التطبيق السعرات والبروتين على مدار اليوم."
+        ]
       }
     },
     "services": {
       "en": [
         {
-          "name": "Prepared healthy meals",
-          "desc": "Prepared meals from the Gutty menu."
+          "name": "Fast-food menu",
+          "desc": "Burgers, pizza, pasta and sides made with natural ingredients, whole grains and no hydrogenated oils."
         },
         {
           "name": "Monthly meal subscriptions",
-          "desc": "Diet meal packages with a choice of meals from the menu."
+          "desc": "Meal packages with a choice of dishes from the menu, delivered through the app and website."
         },
         {
-          "name": "Seasonal meal packages",
-          "desc": "The company has advertised Ramadan packages with a choice of meals."
+          "name": "Gutty app",
+          "desc": "Ordering, menu customisation and a daily nutrition total. Available on iOS and Android."
         }
       ],
       "ar": [
         {
-          "name": "وجبات صحية جاهزة",
-          "desc": "وجبات مجهزة من منيو جاتي للأكل اليومي."
+          "name": "منيو أكل سريع",
+          "desc": "برجر وبيتزا وباستا وأطباق جانبية بمكونات طبيعية وحبوب كاملة ومن غير زيوت مهدرجة."
         },
         {
           "name": "اشتراكات وجبات شهرية",
-          "desc": "باقات وجبات دايت يختار فيها العميل وجباته من المنيو."
+          "desc": "باقات وجبات يختار فيها العميل أطباقه من المنيو، وتُوصَّل عبر التطبيق والموقع."
         },
         {
-          "name": "باقات وجبات موسمية",
-          "desc": "باقات لرمضان أعلنت عنها الشركة مع إتاحة اختيار الوجبات."
+          "name": "تطبيق جاتي",
+          "desc": "الطلب وتخصيص المنيو وحساب إجمالي القيمة الغذائية اليومية. متاح على آيفون وأندرويد."
         }
       ]
     },
@@ -15690,13 +15717,17 @@
       "url": "/startups/gutty.jpg",
       "credit": "Shark Tank Egypt · CBC",
       "creditUrl": "https://www.facebook.com/photo.php?fbid=1092222536906190"
+    },
+    "video": "cXPw8IH4yGw",
+    "pitch": {
+      "en": "In Season 5, Episode 3, Mohamed El-Boraie and Ahmed Ashraf asked for EGP 6 million for 10%, which values Gutty at EGP 60 million. Mohamed said he started the business in 2021, during the pandemic, after changing his own diet, and that Ahmed was one of the first customers before joining him. They put sales at EGP 25 million over the first four years and another EGP 25 million in the first nine months of 2026, with a target of EGP 40 million for the year, and said net profit runs at about 30% of sales. The company has around 40 staff, a factory in an industrial zone and a branch in Sheikh Zayed, with a second branch planned in New Cairo. Mohamed Farouk doubted that burgers and fries could be sold as healthy food; the founders answered that they compete with fast food rather than with salads. The clip the show has published ends before any offers, so the outcome is not yet recorded.",
+      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب محمد البرعي وأحمد أشرف 6 ملايين جنيه مقابل 10%، أي بتقييم 60 مليون جنيه لجاتي. قال محمد إنه بدأ المشروع في 2021 أثناء الجائحة بعد أن غيّر نظام أكله، وإن أحمد كان من أوائل العملاء قبل أن ينضم إليه. ذكرا مبيعات بقيمة 25 مليون جنيه في السنوات الأربع الأولى، و25 مليونًا أخرى في أول تسعة أشهر من 2026، مع هدف 40 مليونًا للعام كله، وقالا إن صافي الربح نحو 30% من المبيعات. تضم الشركة نحو 40 موظفًا ومصنعًا في منطقة صناعية وفرعًا في الشيخ زايد، ويخططان لفرع ثانٍ في التجمع. شكك محمد فاروق في تسويق البرجر والبطاطس كأكل صحي، فرد المؤسسان بأنهما ينافسان الأكل السريع لا السلطات. ينتهي المقطع الذي نشره البرنامج قبل أي عروض، فالنتيجة لم تُسجَّل بعد."
     }
   },
   {
     "id": "polygon-ev",
     "season": 5,
     "episode": 3,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Polygon EV",
       "ar": "بوليجون إي في"
@@ -15706,21 +15737,27 @@
       "ar": "بوليجون إي في شركة لشحن السيارات الكهربائية في القاهرة الجديدة. شاحنها مانتا يعمل بالتيار المتردد بقدرة تصل إلى 22 كيلوواط للمنازل والشركات. يمكن تثبيته على الحائط أو حامل، داخل المبنى أو خارجه. ومن خلال تطبيق PolygonEV والبلوتوث، يستطيع المستخدم متابعة الشحن وضبط التيار. وتقدم الشركة حلول شحن للتجمعات السكنية والمكاتب وأساطيل السيارات."
     },
     "category": "Tech",
-    "founders": null,
+    "founders": [
+      "Mostafa El-Ghandour"
+    ],
     "website": "https://www.polygonev.com/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1500000,
+      "equityPct": 10
     },
     "deal": null,
     "sources": [
+      "https://www.facebook.com/photo.php?fbid=1093019810159796",
+      "https://x.com/CBCEgypt/status/2114081485871317077",
+      "https://www.youtube.com/watch?v=SOQjezGmoi8",
+      "https://www.youtube.com/watch?v=sI-_wDaWOhk",
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid02cPNKmaGTGCnD3kpqMofiW8wb2p8kqNyKKGBxdGBmASsoSp7xjTsv3U5oQpaR4A99l",
       "https://www.facebook.com/photo.php?fbid=1092222553572855",
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid021NPTkZTiNZqHW3FQpCPs5vQG2ZYsueXjWurqwp3Ak1EmRCxKGWEtffj3KxV3JLfRl",
       "https://www.polygonev.com/",
       "https://www.facebook.com/PolygonEV"
     ],
-    "checked": "2026-10-21",
+    "checked": "2026-10-26",
     "links": {
       "facebook": "https://www.facebook.com/PolygonEV",
       "instagram": "https://www.instagram.com/polygonev/",
@@ -15736,13 +15773,13 @@
       },
       "highlights": {
         "en": [
-          "Manta chargers installed in Egypt since 2023, according to the company.",
-          "Three-year warranty advertised for Manta.",
+          "More than EGP 5 million in sales in 14 months, according to the pitch.",
+          "Manta chargers installed in Egypt since 2023, according to the company; a three-year warranty is advertised.",
           "Charging current adjustable from 6 to 32 amps through the app."
         ],
         "ar": [
-          "تذكر الشركة تركيب شواحن مانتا في مصر منذ 2023.",
-          "تعلن الشركة عن ضمان لمدة ثلاث سنوات لشاحن مانتا.",
+          "مبيعات تجاوزت 5 ملايين جنيه في 14 شهرًا بحسب العرض.",
+          "تذكر الشركة تركيب شواحن مانتا في مصر منذ 2023، وتعلن عن ضمان ثلاث سنوات.",
           "يمكن ضبط تيار الشحن من 6 إلى 32 أمبير عبر التطبيق."
         ]
       }
@@ -15776,58 +15813,84 @@
           "desc": "متابعة التيار والجهد والقدرة عبر البلوتوث، وضبط حدود الشحن والتحقق بالهاتف والتحديثات اللاسلكية. متاح على آيفون وأندرويد."
         }
       ]
+    },
+    "video": "sI-_wDaWOhk",
+    "pitch": {
+      "en": "In Season 5, Episode 3, Mostafa El-Ghandour asked for EGP 1.5 million for 10%, which values Polygon EV at EGP 15 million. He said the idea came while he was researching an electric car for himself and found that most owners need a home charger, and that the imported ones were either cheap and unsupported or branded and expensive. The first Manta prototype cost about EGP 20,000 to build, and a European Union grant helped turn it into a product. He put sales at more than EGP 5 million in 14 months, through electric-car showrooms, property developers and direct orders, and said the circuit boards are the company's own design, with assembly done in Egypt. On air he quoted about EGP 24,500 for the 7 kW Manta and EGP 29,500 for the 22 kW model. Abdallah Sallam said he has one installed at home. The published clip ends during questions on pricing and competition, before any offers. Paymob gave the company its Golden Ticket award in the episode.",
+      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب مصطفى الغندور مليونًا ونصف المليون جنيه مقابل 10%، أي بتقييم 15 مليون جنيه لبوليجون إي في. قال إن الفكرة جاءته وهو يبحث عن سيارة كهربائية لنفسه، حين وجد أن معظم الملاك يحتاجون شاحنًا منزليًا، وأن الشواحن المستوردة إما رخيصة بلا دعم أو من علامات كبيرة وغالية. كلّف أول نموذج من مانتا نحو 20 ألف جنيه، وساعدت منحة من الاتحاد الأوروبي على تحويله إلى منتج. ذكر مبيعات تجاوزت 5 ملايين جنيه في 14 شهرًا عبر معارض السيارات الكهربائية والمطورين العقاريين والطلبات المباشرة، وقال إن اللوحات الإلكترونية من تصميم الشركة ويجري التجميع في مصر. على الهواء ذكر سعرًا يقارب 24,500 جنيه لمانتا 7 كيلوواط و29,500 جنيه لنسخة 22 كيلوواط. وقال عبد الله سلام إنه ركّب واحدًا في بيته. ينتهي المقطع المنشور أثناء الأسئلة عن الأسعار والمنافسة وقبل أي عروض. ومنحت Paymob الشركة جائزة Golden Ticket في الحلقة."
     }
   },
   {
     "id": "sahahly",
     "season": 5,
     "episode": 3,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Sahahly",
       "ar": "صححلي"
     },
     "description": {
-      "en": "Sahahly supports IGCSE teachers and their assistant teams. Its student reports help parents understand how their child is progressing, beyond the grade alone. The platform has shared examples of this work with biology teacher Dr. Radwa.",
-      "ar": "صححلي تقدم خدمات لمعلمي الشهادة البريطانية IGCSE وفرق مساعديهم. تساعد تقاريرها أولياء الأمور على فهم تقدم أبنائهم إلى جانب الدرجة، وقد عرضت المنصة أمثلة لهذا العمل مع دكتورة رضوى، معلمة الأحياء."
+      "en": "Sahahly provides grading and student-tracking services to IGCSE teachers in Egypt, Kuwait and Qatar. After five years of doing the work with teams of assistants, it introduced an AI model in December 2025 that grades essays, diagrams and equations and sends reports to teachers and parents.",
+      "ar": "صححلي تقدم خدمات التصحيح ومتابعة الطلاب لمعلمي الشهادة البريطانية IGCSE في مصر والكويت وقطر. بعد خمس سنوات من العمل بفرق من المساعدين، أدخلت في ديسمبر 2025 نموذج ذكاء اصطناعي يصحح الأسئلة المقالية والرسومات والمعادلات ويرسل تقارير للمعلمين وأولياء الأمور."
     },
     "category": "Education",
     "founders": null,
-    "website": null,
+    "website": "https://sahahly.com/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2000000,
+      "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas"
+      ],
+      "amountEGP": 2000000,
+      "equityPct": 30
+    },
     "sources": [
+      "https://www.facebook.com/photo.php?fbid=1093019810159796",
+      "https://www.linkedin.com/company/sahahly",
+      "https://www.youtube.com/watch?v=rryoGkSL3YA",
+      "https://www.youtube.com/watch?v=2ym-HvwIOpA",
+      "https://www.youtube.com/watch?v=GCfRNwkxGMc",
+      "https://www.youtube.com/watch?v=kLZsHEKuJP4",
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid02cPNKmaGTGCnD3kpqMofiW8wb2p8kqNyKKGBxdGBmASsoSp7xjTsv3U5oQpaR4A99l",
       "https://www.facebook.com/photo.php?fbid=1092222520239525",
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid021NPTkZTiNZqHW3FQpCPs5vQG2ZYsueXjWurqwp3Ak1EmRCxKGWEtffj3KxV3JLfRl",
       "https://www.facebook.com/Sahahlyy"
     ],
-    "checked": "2026-10-21",
+    "checked": "2026-10-26",
     "links": {
-      "facebook": "https://www.facebook.com/Sahahlyy"
+      "facebook": "https://www.facebook.com/Sahahlyy",
+      "linkedin": "https://www.linkedin.com/company/sahahly"
     },
     "services": {
       "en": [
         {
-          "name": "IGCSE teacher support",
-          "desc": "Support services for IGCSE teachers and their assistant teams."
+          "name": "AI grading",
+          "desc": "Teachers send students’ work as PDFs; the model grades multiple-choice, essay, diagram and equation questions and returns marked papers within a day."
         },
         {
           "name": "Student progress reports",
-          "desc": "Reports explaining a student’s progress and performance to parents, featured in the platform’s work with Dr. Radwa."
+          "desc": "Each paper is analysed by topic, and a plain-language report goes to the teacher and to parents, by integration with Google Classroom or over WhatsApp."
+        },
+        {
+          "name": "Teacher assistant services",
+          "desc": "Office hours, exam preparation and performance tracking run by Sahahly’s assistant teams, which the company says it is shifting from grading to facilitation."
         }
       ],
       "ar": [
         {
-          "name": "دعم معلمي IGCSE",
-          "desc": "خدمات لمعلمي الشهادة البريطانية وفرق مساعديهم."
+          "name": "تصحيح بالذكاء الاصطناعي",
+          "desc": "يرسل المعلم أعمال الطلاب بصيغة PDF، فيصحح النموذج أسئلة الاختيار من متعدد والمقال والرسومات والمعادلات ويعيد الأوراق مصححة خلال يوم."
         },
         {
           "name": "تقارير تقدم الطلاب",
-          "desc": "تقارير توضح لأولياء الأمور تقدم الطالب وأداءه، عرضتها المنصة ضمن تعاونها مع دكتورة رضوى."
+          "desc": "تُحلَّل كل ورقة حسب الموضوع، ويصل تقرير مبسط إلى المعلم وأولياء الأمور عبر الربط مع Google Classroom أو على واتساب."
+        },
+        {
+          "name": "خدمات مساعدي المعلم",
+          "desc": "ساعات مكتبية وتجهيز امتحانات ومتابعة أداء تديرها فرق المساعدين في صححلي، التي تقول الشركة إنها تنقلها من التصحيح إلى التيسير."
         }
       ]
     },
@@ -15835,6 +15898,30 @@
       "url": "/startups/sahahly.jpg",
       "credit": "Shark Tank Egypt · CBC",
       "creditUrl": "https://www.facebook.com/photo.php?fbid=1092222520239525"
+    },
+    "video": "kLZsHEKuJP4",
+    "about": {
+      "founded": 2020,
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "highlights": {
+        "en": [
+          "More than 75 paying teachers in Egypt, Kuwait and Qatar, and about EGP 15 million in cumulative revenue, according to the pitch.",
+          "Teachers pay EGP 50 to 250 per student per month; the founders quoted a gross margin of about 83% and a net margin of about 50%.",
+          "The AI model grades about 30,000 papers a month and feeds a progress report to each parent."
+        ],
+        "ar": [
+          "أكثر من 75 معلمًا يدفعون في مصر والكويت وقطر، ونحو 15 مليون جنيه إيرادات تراكمية بحسب العرض.",
+          "يدفع المعلم من 50 إلى 250 جنيهًا عن كل طالب شهريًا؛ وذكر المؤسسان هامش ربح إجمالي يقارب 83% وصافي يقارب 50%.",
+          "يصحح نموذج الذكاء الاصطناعي نحو 30 ألف ورقة شهريًا ويرسل تقرير تقدم لكل ولي أمر."
+        ]
+      }
+    },
+    "pitch": {
+      "en": "In Season 5, Episode 3, co-founders Abdelrahman and Youssef, who gave only their first names on air, asked for EGP 2 million for 10%, which values Sahahly at EGP 20 million. They said they started in 2020 while still at university, grading IGCSE papers by hand with teams of assistants, and switched to their own AI model in December 2025. They put cumulative revenue at about EGP 15 million, with more than 75 paying teachers in Egypt, Kuwait and Qatar. Three sharks made offers: Dina Ghabbour EGP 2 million for 20%, Ahmed Tarek Khalil EGP 2 million for 25% with placement in his schools, and Ayman Abbas EGP 2 million in cash plus EGP 2 million in engineering, software and marketing services for 30%. The founders countered Ayman at EGP 4 million for 25%. The show's on-screen caption records his final offer as EGP 2 million for 30%, falling to 25% once agreed targets are met, plus EGP 2 million in in-kind services, and the founders accepted.",
+      "ar": "في الحلقة الثالثة من الموسم الخامس، طلب المؤسسان عبد الرحمن ويوسف، اللذان ذكرا اسميهما الأولين فقط على الهواء، مليوني جنيه مقابل 10%، أي بتقييم 20 مليون جنيه لصححلي. قالا إنهما بدآ في 2020 وهما ما زالا في الجامعة بتصحيح أوراق IGCSE يدويًا بفرق من المساعدين، ثم انتقلا إلى نموذج ذكاء اصطناعي خاص بهما في ديسمبر 2025. قدّرا الإيرادات التراكمية بنحو 15 مليون جنيه، مع أكثر من 75 معلمًا يدفعون في مصر والكويت وقطر. قدّم ثلاثة شاركس عروضًا: دينا غبور مليونا جنيه مقابل 20%، وأحمد طارق خليل مليونا جنيه مقابل 25% مع إدخالهما إلى مدارسه، وأيمن عباس مليونا جنيه نقدًا ومليونان أخريان خدمات هندسة وبرمجيات وتسويق مقابل 30%. عرض المؤسسان على أيمن 4 ملايين مقابل 25%. وتسجل بطاقة البرنامج على الشاشة عرضه النهائي: مليونا جنيه مقابل 30% تنخفض إلى 25% عند تحقيق الأرقام المتفق عليها، بالإضافة إلى مليوني جنيه خدمات عينية، وقبل المؤسسان."
     }
   }
 ]

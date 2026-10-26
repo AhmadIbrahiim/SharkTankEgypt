@@ -5451,5 +5451,44 @@
       "credit": "Pitch photo · Shark Tank Egypt · CBC",
       "creditUrl": "https://www.youtube.com/watch?v=ev8z2yZS9tc"
     }
+  },
+  {
+    "id": "mohamed-el-boraie",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed El-Boraie",
+      "ar": "محمد البرعي"
+    },
+    "title": {
+      "en": "Founder of Gutty",
+      "ar": "من مؤسسي جاتي"
+    },
+    "bio": {
+      "en": "Mohamed El-Boraie founded Gutty in 2021, during the pandemic, after changing his own diet. He started by cooking out of a friend’s restaurant kitchen in Sharqia, moved to a cloud kitchen in Cairo in 2023 and, by his Shark Tank Egypt pitch, ran a factory and a branch in Sheikh Zayed.",
+      "ar": "أسس محمد البرعي جاتي في 2021 أثناء الجائحة بعد أن غيّر نظام أكله. بدأ بالطهي من مطبخ مطعم صديق في الشرقية، ثم انتقل إلى مطبخ سحابي في القاهرة في 2023، وحين عرض المشروع في شارك تانك مصر كان يدير مصنعًا وفرعًا في الشيخ زايد."
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=cXPw8IH4yGw"
+    ]
+  },
+  {
+    "id": "mostafa-el-ghandour",
+    "kind": "founder",
+    "name": {
+      "en": "Mostafa El-Ghandour",
+      "ar": "مصطفى الغندور"
+    },
+    "title": {
+      "en": "Founder of Polygon EV",
+      "ar": "مؤسس بوليجون إي في"
+    },
+    "bio": {
+      "en": "Mostafa El-Ghandour, an engineer, founded Polygon EV after researching electric cars for himself and finding no well-supported home charger on the Egyptian market. He built the first Manta prototype for about EGP 20,000 and is listed as the developer of the PolygonEV app.",
+      "ar": "أسس المهندس مصطفى الغندور بوليجون إي في بعد أن بحث عن سيارة كهربائية لنفسه ولم يجد في السوق المصرية شاحنًا منزليًا بدعم جيد. بنى أول نموذج من مانتا بنحو 20 ألف جنيه، وهو مسجل بصفته مطوّر تطبيق PolygonEV."
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=sI-_wDaWOhk",
+      "https://play.google.com/store/apps/details?id=com.polygonev"
+    ]
   }
 ]
