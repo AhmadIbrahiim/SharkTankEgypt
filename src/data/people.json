@@ -5490,5 +5490,45 @@
       "https://www.youtube.com/watch?v=sI-_wDaWOhk",
       "https://play.google.com/store/apps/details?id=com.polygonev"
     ]
+  },
+  {
+    "id": "ahmed-kadah",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Kadah",
+      "ar": "أحمد قداح"
+    },
+    "title": {
+      "en": "Founder of Lolo Kids",
+      "ar": "مؤسس لولو"
+    },
+    "bio": {
+      "en": "Ahmed Kadah started the Lolo children's app in 2023 after deciding the videos his two daughters watched online were random and full of unsuitable ads. He studied media, works in marketing outside Egypt and is listed as Lolo's developer on the App Store.",
+      "ar": "بدأ أحمد قداح تطبيق لولو للأطفال في 2023، بعد أن وجد أن ما تشاهده بنتاه على الإنترنت محتوى عشوائي وإعلانات غير مناسبة. درس الإعلام ويعمل في التسويق خارج مصر، وهو مسجل بصفته مطوّر التطبيق على متجر آبل."
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=gWJARShwOng",
+      "https://apps.apple.com/app/id6446203522"
+    ]
+  },
+  {
+    "id": "bassem-okasha",
+    "kind": "founder",
+    "name": {
+      "en": "Bassem Okasha",
+      "ar": "باسم عكاشة"
+    },
+    "title": {
+      "en": "Founder of ProTile",
+      "ar": "مؤسس بروتايل"
+    },
+    "bio": {
+      "en": "Bassem Okasha has worked in marble and granite for 24 years, eight of them in the Shaq El-Thoban stone district and 14 abroad. He developed ProTile, a facade tile made from recycled stone waste with built-in insulation, which won the MVP track of the Tatweer Misr Innovation Competition in June 2026.",
+      "ar": "يعمل باسم عكاشة في صناعة الرخام والجرانيت منذ 24 سنة، منها ثماني سنوات في منطقة شق الثعبان و14 سنة خارج مصر. طوّر بروتايل، بلاط الواجهات المصنوع من مخلفات الحجر المعاد تدويرها مع طبقة عزل، والذي فاز بمسار المنتج الأولي في مسابقة تطوير مصر للابتكار في يونيو 2026."
+    },
+    "sources": [
+      "https://www.youtube.com/watch?v=gWJARShwOng",
+      "https://invest-gate.me/news/tatweer-misr-concludes-7th-innovation-competition-honouring-egypts-next-generation-of-entrepreneurs/"
+    ]
   }
 ]
