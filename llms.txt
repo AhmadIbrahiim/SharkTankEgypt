@@ -1,0 +1,43 @@
+# Shark Tank Egypt Directory (دليل شارك تانك مصر)
+
+> An open, sourced directory of every startup that pitched on Shark Tank Egypt (شارك تانك مصر): the ask, whether a deal closed, which sharks invested and on what terms. Bilingual (Arabic and English). 227 startups, 129 recorded deals, 6 seasons including the specials. Data updated 2026-10-29.
+
+Every outcome is recorded only when a public source states it (news articles, the show's official clips and captions); 46 outcomes are still unconfirmed and are labelled as such, never guessed. Sources are listed on each startup page and in the audit log on GitHub.
+
+## Data
+- [All deals table](https://sharktank.ahmed-ibrahim.com/en/deals/): every recorded deal with sharks and terms, plus totals per season and per shark
+- [Full text digest](https://sharktank.ahmed-ibrahim.com/llms-full.txt): one line per startup with ask, outcome, sharks and sources
+- [startups.json](https://sharktank.ahmed-ibrahim.com/data/startups.json): the complete dataset (JSON)
+- [deals.csv](https://sharktank.ahmed-ibrahim.com/data/deals.csv): one row per startup (CSV)
+- [Source code and audit log](https://github.com/AhmadIbrahiim/SharkTankEgypt)
+
+## Main pages (English, under /en/; Arabic is the default, at the same paths without /en/)
+- [All startups](https://sharktank.ahmed-ibrahim.com/en/)
+- [Sharks](https://sharktank.ahmed-ibrahim.com/en/sharks/): each shark's deals, sectors and seasons
+- [Founders](https://sharktank.ahmed-ibrahim.com/en/founders/)
+- [FAQ](https://sharktank.ahmed-ibrahim.com/en/faq/)
+- [Specials](https://sharktank.ahmed-ibrahim.com/en/season/0/)
+- [Season 1](https://sharktank.ahmed-ibrahim.com/en/season/1/)
+- [Season 2](https://sharktank.ahmed-ibrahim.com/en/season/2/)
+- [Season 3](https://sharktank.ahmed-ibrahim.com/en/season/3/)
+- [Season 4](https://sharktank.ahmed-ibrahim.com/en/season/4/)
+- [Season 5](https://sharktank.ahmed-ibrahim.com/en/season/5/)
+
+## Sharks
+- [Ayman Abbas (أيمن عباس)](https://sharktank.ahmed-ibrahim.com/en/sharks/ayman-abbas/): 34 deals
+- [Mohamed Farouk (محمد فاروق)](https://sharktank.ahmed-ibrahim.com/en/sharks/mohamed-farouk/): 30 deals
+- [Ahmed Tarek Khalil (أحمد طارق خليل)](https://sharktank.ahmed-ibrahim.com/en/sharks/ahmed-tarek-khalil/): 25 deals
+- [Ahmed El Sewedy (أحمد السويدي)](https://sharktank.ahmed-ibrahim.com/en/sharks/ahmed-el-sewedy/): 18 deals
+- [Abdallah Sallam (عبد الله سلام)](https://sharktank.ahmed-ibrahim.com/en/sharks/abdallah-sallam/): 17 deals
+- [Dina Ghabbour (دينا غبور)](https://sharktank.ahmed-ibrahim.com/en/sharks/dina-ghabbour/): 8 deals
+- [Mohamed Ismail Mansour (محمد إسماعيل منصور)](https://sharktank.ahmed-ibrahim.com/en/sharks/mohamed-mansour/): 8 deals
+- [Noor Sweid (نور سويد)](https://sharktank.ahmed-ibrahim.com/en/sharks/nour-swid/): 3 deals
+- [Bishoy Azmy (بيشوي عزمي)](https://sharktank.ahmed-ibrahim.com/en/sharks/bishoy-azmy/): 2 deals
+- [Hend Sabry (هند صبري)](https://sharktank.ahmed-ibrahim.com/en/sharks/hend-sabry/): 2 deals
+- [Aya Abdel Raouf (آية عبد الرؤوف)](https://sharktank.ahmed-ibrahim.com/en/sharks/aya-abdel-raouf/): 1 deals
+- [Hala El-Kasem (هالة خالد القاسم)](https://sharktank.ahmed-ibrahim.com/en/sharks/hala-el-kasem/): 1 deals
+- [Hilda Louca (هيلدا لوقا)](https://sharktank.ahmed-ibrahim.com/en/sharks/hilda-louca/): 1 deals
+- [Mona Ataya (منى عطايا)](https://sharktank.ahmed-ibrahim.com/en/sharks/mona-ataya/): 1 deals
+- [Mounaz Abdel Raouf (موناز عبد الرؤوف)](https://sharktank.ahmed-ibrahim.com/en/sharks/mounaz-abdel-raouf/): 1 deals
+- [Yasseen Mansour (ياسين منصور)](https://sharktank.ahmed-ibrahim.com/en/sharks/yassin-mansour/): 1 deals
+- [Robert Herjavec (روبرت هيرجافيك)](https://sharktank.ahmed-ibrahim.com/en/sharks/robert-herjavec/): 0 deals
