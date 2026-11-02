@@ -850,7 +850,12 @@
     },
     "sources": [
       "https://cairoscene.com/lifestyle/set-in-stone-grif-cookware-s-legacy-of-sustainability-style"
-    ]
+    ],
+    "photo": {
+      "url": "/people/youssef-el-rayan.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=RcLKQ0NYSBw"
+    }
   },
   {
     "id": "somaia-aboelezz",
@@ -1003,7 +1008,12 @@
     },
     "sources": [
       "https://www.startuplist.africa/people/ahmed-atalla"
-    ]
+    ],
+    "photo": {
+      "url": "/people/ahmed-attallah.jpg",
+      "credit": "Raseedi",
+      "creditUrl": "https://www.raseediapp.com/people"
+    }
   },
   {
     "id": "hazem-el-tawab",
@@ -1554,7 +1564,12 @@
     },
     "sources": [
       "https://www.youm7.com/6048990"
-    ]
+    ],
+    "photo": {
+      "url": "/people/hossam-el-maraghy.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=IPa2ZhTKgt4"
+    }
   },
   {
     "id": "youssef-samir",
@@ -1573,7 +1588,12 @@
     },
     "sources": [
       "https://www.youm7.com/6072839"
-    ]
+    ],
+    "photo": {
+      "url": "/people/youssef-samir.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=fPsKVizmRwU"
+    }
   },
   {
     "id": "heba-mohamed",
@@ -4051,7 +4071,12 @@
     },
     "sources": [
       "https://www.youm7.com/6480371"
-    ]
+    ],
+    "photo": {
+      "url": "/people/sherif-abdallah.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=EkViGBR_zZA"
+    }
   },
   {
     "id": "norhan-salah",
@@ -5287,8 +5312,14 @@
     },
     "sources": [
       "https://cairoscene.com/Styled/Egyptian-Streetwear-Label-Zonta-Debuts-First-Ever-Arabic-Sneakers",
-      "https://www.instagram.com/p/DGAptqHNy7H/"
-    ]
+      "https://www.instagram.com/p/DGAptqHNy7H/",
+      "https://www.linkedin.com/posts/aelhefny_sneakers-arabic-arabicsneakers-activity-7295075602875727872-Epf5"
+    ],
+    "photo": {
+      "url": "/people/sameh-radwan.jpg",
+      "credit": "Sam Radwan · LinkedIn",
+      "creditUrl": "https://www.linkedin.com/in/samehradwan/"
+    }
   },
   {
     "id": "mohamed-attya",
@@ -5469,7 +5500,12 @@
     },
     "sources": [
       "https://www.youtube.com/watch?v=cXPw8IH4yGw"
-    ]
+    ],
+    "photo": {
+      "url": "/people/mohamed-el-boraie.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=cXPw8IH4yGw&t=3s"
+    }
   },
   {
     "id": "mostafa-el-ghandour",
@@ -5489,7 +5525,12 @@
     "sources": [
       "https://www.youtube.com/watch?v=sI-_wDaWOhk",
       "https://play.google.com/store/apps/details?id=com.polygonev"
-    ]
+    ],
+    "photo": {
+      "url": "/people/mostafa-el-ghandour.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=sI-_wDaWOhk&t=2s"
+    }
   },
   {
     "id": "ahmed-kadah",
@@ -5509,7 +5550,12 @@
     "sources": [
       "https://www.youtube.com/watch?v=gWJARShwOng",
       "https://apps.apple.com/app/id6446203522"
-    ]
+    ],
+    "photo": {
+      "url": "/people/ahmed-kadah.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.youtube.com/watch?v=gWJARShwOng&t=400s"
+    }
   },
   {
     "id": "bassem-okasha",
@@ -5529,6 +5575,59 @@
     "sources": [
       "https://www.youtube.com/watch?v=gWJARShwOng",
       "https://invest-gate.me/news/tatweer-misr-concludes-7th-innovation-competition-honouring-egypts-next-generation-of-entrepreneurs/"
-    ]
+    ],
+    "photo": {
+      "url": "/people/bassem-okasha.jpg",
+      "credit": "PUM",
+      "creditUrl": "https://www.pum.nl/project/turning-waste-into-value-in-egypt/"
+    }
+  },
+  {
+    "id": "khalid-gamal",
+    "kind": "founder",
+    "name": {
+      "en": "Khalid Gamal",
+      "ar": "خالد جمال"
+    },
+    "sources": [
+      "https://venduo.net/about"
+    ],
+    "photo": {
+      "url": "/people/khalid-gamal.jpg",
+      "credit": "Venduo",
+      "creditUrl": "https://venduo.net/about"
+    }
+  },
+  {
+    "id": "mohamed-mokhles",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Mokhles",
+      "ar": "محمد مخلص"
+    },
+    "sources": [
+      "https://venduo.net/about"
+    ],
+    "photo": {
+      "url": "/people/mohamed-mokhles.jpg",
+      "credit": "Venduo",
+      "creditUrl": "https://venduo.net/about"
+    }
+  },
+  {
+    "id": "ahmed-zidan",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Zidan",
+      "ar": "أحمد زيدان"
+    },
+    "sources": [
+      "https://venduo.net/about"
+    ],
+    "photo": {
+      "url": "/people/ahmed-zidan.jpg",
+      "credit": "Venduo",
+      "creditUrl": "https://venduo.net/about"
+    }
   }
 ]
