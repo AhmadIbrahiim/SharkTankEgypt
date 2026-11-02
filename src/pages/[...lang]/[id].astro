@@ -21,7 +21,8 @@ const commentsOn = giscus.repoId && giscus.categoryId;
 const otherName = x.name[lang === 'ar' ? 'en' : 'ar'];
 // Only this page's language is shown; the other name stays in the structured data (alternateName).
 const pageTitle = `${x.name[lang]} – ${seasonLabel(x.season, lang)}`;
-const image = startupImage(x.id) ?? (x.video ? thumb(x.video) : undefined);
+const localImage = startupImage(x.id);
+const image = localImage ?? (x.video ? thumb(x.video) : undefined);
 const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 // Every known profile, so search engines can tie them to this startup.
 const sameAs = [x.website, ...Object.entries(x.links ?? {}).flatMap(([k, v]) => (k === 'other' ? (v as { url: string }[]).map((o) => o.url) : [v as string]))].filter(Boolean);
@@ -59,8 +60,7 @@ const jsonld = {
 };
 const card: Card = { kind: 'startup', title: x.name[lang], sub: x.description[lang].split(/(?<=[.!؟])\s/)[0],
   eyebrow: [where, x.category && category(x.category, lang)].filter(Boolean).join(' · '),
-  // The pitch still reads best full-bleed; og.mjs falls back to hqdefault when YouTube has no maxres frame.
-  shot: x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : image,
+  shot: localImage ?? (x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : undefined),
   stats: [
     ...(x.ask?.amountEGP != null ? [[[money(x.ask.amountEGP, lang), x.ask.equityPct != null && pct(x.ask.equityPct, lang)].filter(Boolean).join(lang === 'ar' ? ' مقابل ' : ' for '), lang === 'ar' ? 'طلب المؤسسين' : 'Asked'] as [string, string]] : []),
     [x.deal?.made === true ? [x.deal.amountEGP != null && money(x.deal.amountEGP, lang), x.deal.equityPct != null && pct(x.deal.equityPct, lang)].filter(Boolean).join(lang === 'ar' ? ' مقابل ' : ' for ') || (lang === 'ar' ? 'تمت' : 'Done')
@@ -82,7 +82,7 @@ const outcome = x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no' :
 const askVal = valuation(x.ask?.amountEGP, x.ask?.equityPct);
 const investors = (x.deal?.made ? x.deal.sharks ?? [] : []).map((n) => sharkByKey.get(n)).filter(Boolean) as any[];
 const lead = digits(x.description[lang].split(/(?<=[.!?؟])\s+/)[0], lang);
-const heroImg = x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : startupImage(x.id) ? `${base}${startupImage(x.id)}` : null;
+const heroImg = localImage ? `${base}${localImage}` : x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : null;
 const heroFallback = x.video ? `this.onerror=null;this.src='${thumb(x.video)}'` : 'this.remove()';
 const faqs = startupFaq(x, lang);
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faqs.map((q) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: q.a } })) };
@@ -90,7 +90,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} card={card} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/${x.id}/`}>
   <header class:list={['stage', !heroImg && 'noimg']}>
-    {heroImg && <img class:list={['bg', !x.video && !x.photo && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror={heroFallback} />}
+    {heroImg && <img class:list={['bg', localImage && !x.photo && 'site']} src={heroImg} alt="" width="1280" height="720" fetchpriority="high" onerror={heroFallback} />}
     <div class="container stage-in">
       <nav class="crumbs" aria-label="breadcrumb">
         <a href={`${base}${pre(lang)}/`}>{s.home}</a><span aria-hidden="true">/</span>

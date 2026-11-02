@@ -284,6 +284,11 @@
     "pitch": {
       "en": "In the first episode of Shark Tank Egypt, Hind El Yamany presented Country's, her line of organic foods sweetened with honey rather than processed sugar. She asked for EGP 500,000 for 10% of the company. She left with a bigger cheque but gave up far more equity: Ayman Abbas and Ahmed El Sewedy joined together on a deal of EGP 700,000 for 50%.",
       "ar": "في الحلقة الأولى من شارك تانك مصر، قدّمت هند اليماني علامة كانتريز، وهي منتجات غذائية عضوية مُحلّاة بالعسل بدلاً من السكر المصنَّع. طلبت 500 ألف جنيه مقابل 10% من الشركة. حصلت في النهاية على مبلغ أكبر لكنها تنازلت عن حصة أكبر بكثير، إذ اتفقت مع أيمن عباس وأحمد السويدي معاً على 700 ألف جنيه مقابل 50%."
+    },
+    "photo": {
+      "url": "/startups/countrys.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=LA_ZseGOHRg"
     }
   },
   {
@@ -583,7 +588,12 @@
       "en": "Founders Ahmed Ashraf and Ali Abdallah brought Cut X to the second episode of Shark Tank Egypt's first season. They presented their Egyptian line of protective and comfort products and their plan to register the products globally. They asked for EGP 6 million for 25% and left without a deal.",
       "ar": "قدّم المؤسسان أحمد أشرف وعلي عبد الله مشروع كات إكس في الحلقة الثانية من الموسم الأول لبرنامج شارك تانك مصر. وعرضا خط منتجات الحماية والراحة المصري الخاص بهما، وخطتهما لتسجيل المنتجات عالميًا. وطلبا 6 ملايين جنيه مقابل 25% من الشركة، وغادرا دون صفقة."
     },
-    "video": "WxiApsJmmVg"
+    "video": "WxiApsJmmVg",
+    "photo": {
+      "url": "/startups/cut-x.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=WxiApsJmmVg&t=45s"
+    }
   },
   {
     "id": "mawared",
@@ -665,6 +675,11 @@
     "pitch": {
       "en": "Hossam El Maraghy pitched MaWard's weekly skincare kits in Season 1, Episode 2, pointing to four years in business and about 20,000 customers. He asked for EGP 2.5 million for 15% of the company. Ayman Abbas offered the full EGP 2.5 million for a controlling 51% stake, and Hossam accepted.",
       "ar": "قدّم حسام المراغي أطقم ماورد الأسبوعية للعناية بالبشرة في الحلقة الثانية من الموسم الأول، مستندًا إلى أربع سنوات من العمل ونحو 20 ألف عميل. وطلب 2.5 مليون جنيه مقابل 15% من الشركة. فعرض أيمن عباس المبلغ كاملًا مقابل حصة أغلبية بنسبة 51%، ووافق حسام على الصفقة."
+    },
+    "photo": {
+      "url": "/startups/mawared.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=IPa2ZhTKgt4"
     }
   },
   {
@@ -722,6 +737,11 @@
           "مشاركة في مسار الشركات الناشئة بمسابقة Innovate 2023 بجامعة عين شمس"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/akoub.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=CXB-v_8FIgs"
     }
   },
   {
@@ -817,6 +837,11 @@
           "اتفاق مع عبد الله سلام: مليون جنيه مقابل 30%"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/serket.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=CQWWwLINWi0"
     }
   },
   {
@@ -1061,7 +1086,12 @@
       "linkedin": "https://www.linkedin.com/company/masroofi22/",
       "googlePlay": "https://play.google.com/store/apps/details?id=com.puzzle.masroofi"
     },
-    "video": "6ZCqzJ_IPEI"
+    "video": "6ZCqzJ_IPEI",
+    "photo": {
+      "url": "/startups/masroufi.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6056713"
+    }
   },
   {
     "id": "agrcology",
@@ -1213,6 +1243,11 @@
     },
     "links": {
       "googlePlay": "https://play.google.com/store/apps/details?id=com.codanyon.virclo"
+    },
+    "photo": {
+      "url": "/startups/fairclo.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=3yXjVAe2sug&t=45s"
     }
   },
   {
@@ -1347,6 +1382,11 @@
     "pitch": {
       "en": "In Season 1, Episode 4, Amwal's founders asked the sharks for EGP 10 million in exchange for 5% of the company, valuing it at EGP 200 million. Mohamed Farouk repeatedly pressed them to say exactly who their customers were and lost patience with their answers. The founders left the tank without a deal.",
       "ar": "في الحلقة الرابعة من الموسم الأول، طلب مؤسسو أموال 10 ملايين جنيه مقابل 5% من الشركة، أي بتقييم 200 مليون جنيه. وألحّ محمد فاروق في سؤالهم عن هوية عملائهم بالتحديد، وفقد صبره مع إجاباتهم. وغادر المؤسسون البرنامج دون الحصول على صفقة."
+    },
+    "photo": {
+      "url": "/startups/amwal.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=oz8-LkpoWcA&t=55s"
     }
   },
   {
@@ -1549,6 +1589,11 @@
           "طلبت 1.2 مليون جنيه مقابل 15% (تقييم 8 ملايين)"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/plus-gear.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=Y8N5QUB1eUQ"
     }
   },
   {
@@ -1610,6 +1655,11 @@
           "صفقة 370 ألف جنيه مقابل 15% مع أيمن عباس وعبدالله سلام"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/tap-tag.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=fPsKVizmRwU"
     }
   },
   {
@@ -1869,6 +1919,11 @@
     "pitch": {
       "en": "In Season 1, Episode 6, Bikado's founders pitched their practice-based language app for children, built on a European teaching method. They asked the sharks for EGP 3.5 million in exchange for 8% of the company. They left without a deal.",
       "ar": "في الحلقة السادسة من الموسم الأول، عرض مؤسسو بيكادو تطبيقهم لتعليم الأطفال اللغات بالممارسة وفق منهج أوروبي، وطلبوا من المستثمرين 3.5 مليون جنيه مصري مقابل 8% من الشركة. وغادروا البرنامج دون إتمام صفقة."
+    },
+    "photo": {
+      "url": "/startups/bikado.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=fMCAaM9RFuc"
     }
   },
   {
@@ -2061,6 +2116,11 @@
     "links": {
       "instagram": "https://www.instagram.com/creativeartegypt/",
       "facebook": "https://www.facebook.com/creative.art.alex/"
+    },
+    "photo": {
+      "url": "/startups/creative-art.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=UZ8NIEzgmOI"
     }
   },
   {
@@ -2124,6 +2184,11 @@
     "pitch": {
       "en": "In Season 1, Episode 7 of Shark Tank Egypt, the founders of Chef Me.com pitched their kitchen tools and tableware brand. They asked for EGP 15 million for 5% of the company, which valued it at EGP 300 million. No deal was recorded for this pitch.",
       "ar": "في الحلقة السابعة من الموسم الأول من شارك تانك مصر، عرض مؤسسو شيف مي دوت كوم علامتهم لأدوات المطبخ والمائدة. وطلبوا 15 مليون جنيه مقابل 5% من الشركة، أي بتقييم 300 مليون جنيه. ولم تُسجَّل صفقة لهذا العرض."
+    },
+    "photo": {
+      "url": "/startups/chef-me.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=2JVjk5YRkoU"
     }
   },
   {
@@ -2424,6 +2489,11 @@
           "مليونا جنيه أُنفقت على البحث والتطوير"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/peacock-designs.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=Wuud7Rvls-8"
     }
   },
   {
@@ -2546,6 +2616,11 @@
           "حصلت على صفقة في شارك تانك مصر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/kids-kit.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=OT5cXe3DcR4"
     }
   },
   {
@@ -2718,6 +2793,11 @@
     "video": "VrvjSvulAKQ",
     "links": {
       "instagram": "https://www.instagram.com/chefshousemena/"
+    },
+    "photo": {
+      "url": "/startups/chefs-house.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=VrvjSvulAKQ"
     }
   },
   {
@@ -2839,6 +2919,11 @@
     "video": "RCMvac6hGXw",
     "links": {
       "facebook": "https://www.facebook.com/zeroprime.tech/"
+    },
+    "photo": {
+      "url": "/startups/can-bank.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=RCMvac6hGXw"
     }
   },
   {
@@ -2989,6 +3074,11 @@
           "روبوت إعلاني للترويج للعلامات التجارية"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/portal.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=QvRzN1rN_68&t=45s"
     }
   },
   {
@@ -3055,7 +3145,12 @@
         ]
       }
     },
-    "video": "fa2QUyyzz0A"
+    "video": "fa2QUyyzz0A",
+    "photo": {
+      "url": "/startups/i-ape.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=fa2QUyyzz0A&t=35s"
+    }
   },
   {
     "id": "labtronic",
@@ -3285,6 +3380,11 @@
           "صفقة في شارك تانك: 2.5 مليون جنيه مقابل 30%"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/asfoura.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=vZrF0yBaJAk"
     }
   },
   {
@@ -3351,7 +3451,12 @@
         ]
       }
     },
-    "video": "QXcF8ZfP-Tk"
+    "video": "QXcF8ZfP-Tk",
+    "photo": {
+      "url": "/startups/blooms-egypt.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6352489"
+    }
   },
   {
     "id": "crazy-tuna",
@@ -3412,6 +3517,11 @@
     "pitch": {
       "en": "In the first episode of Season 2, the Crazy Tuna founders asked for EGP 2.5 million in exchange for 20% of the company. They pitched the business as Egypt's largest online tuna distributor with ambitions to make Egypt a player on the global tuna map. They closed a deal with Ahmed El Sewedy and Mohamed Farouk for EGP 2.5 million. The final equity share was not reported.",
       "ar": "في الحلقة الأولى من الموسم الثاني، طلب مؤسسو كريزي تونة 2.5 مليون جنيه مقابل 20% من الشركة. وقدّموا مشروعهم بوصفه أكبر موزّع للتونة عبر الإنترنت في مصر، مع طموح لجعل مصر لاعبًا على خريطة التونة العالمية. وأبرموا صفقة مع أحمد السويدي ومحمد فاروق بقيمة 2.5 مليون جنيه، ولم تُذكر نسبة الحصة النهائية."
+    },
+    "photo": {
+      "url": "/startups/crazy-tuna.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6352514"
     }
   },
   {
@@ -3662,7 +3772,12 @@
         ]
       }
     },
-    "video": "6UXjEpNqJH4"
+    "video": "6UXjEpNqJH4",
+    "photo": {
+      "url": "/startups/not-foods.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6360429"
+    }
   },
   {
     "id": "supply-list",
@@ -3779,6 +3894,11 @@
           "تناولته رويترز ومجلة الجامعة الأمريكية وذا سويتشرز"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/mobikya.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6368392"
     }
   },
   {
@@ -3840,6 +3960,11 @@
           "نكهات مبتكرة مثل فول الباربكيو والفاهيتا"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/fool-tank.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6368393"
     }
   },
   {
@@ -3863,7 +3988,15 @@
       "amountEGP": 1500000,
       "equityPct": 15
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 1500000,
+      "equityPct": 30
+    },
     "sources": [
       "https://www.youm7.com/6376278",
       "https://www.youm7.com/6376335",
@@ -3871,9 +4004,11 @@
       "https://www.youtube.com/watch?v=drlTIu6hW8k",
       "https://www.youtube.com/watch?v=mSlZRt0-fpg",
       "https://www.aljazeera.net/family/2026/8/5/21-يوما-لترسيخ-عادة-القراءة-سوبر-أبلة",
-      "https://www.goethe.de/prj/ruy/ar/kul/26665172.html"
+      "https://www.goethe.de/prj/ruy/ar/kul/26665172.html",
+      "https://followict.news/ga95",
+      "https://www.aldawlanews.com/1231081"
     ],
-    "checked": "2026-10-12",
+    "checked": "2026-11-02",
     "video": "drlTIu6hW8k",
     "links": {
       "facebook": "https://www.facebook.com/Super2bla/"
@@ -3893,6 +4028,15 @@
           "أيمن عباس قدّم عرضاً دون أي سؤال"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/super-abla.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=drlTIu6hW8k&t=15s"
+    },
+    "pitch": {
+      "en": "Israa Saleh asked for EGP 1.5 million for 15% of Super Abla. Ayman Abbas offered the same amount for 30% before asking any questions, and Ahmed Tarek Khalil joined his offer. After discussing it with her partner, Israa accepted the joint investment.",
+      "ar": "طلبت إسراء صالح 1.5 مليون جنيه مقابل 15% من سوبر أبلة. وقدّم أيمن عباس عرضًا بالمبلغ نفسه مقابل 30% قبل أن يطرح أي سؤال، ثم انضم إليه أحمد طارق خليل. وبعد مناقشة العرض مع شريكها، وافقت إسراء على الاستثمار المشترك."
     }
   },
   {
@@ -3917,7 +4061,7 @@
       "equityPct": 10
     },
     "deal": {
-      "made": true,
+      "made": false,
       "sharks": [],
       "amountEGP": null,
       "equityPct": null
@@ -3928,9 +4072,10 @@
       "https://sharktank-egypt.com/en/deals/fashion",
       "https://scoopempire.com/round-up-of-the-coolest-local-egyptian-brands-standing-in-solidarity-with-palestine",
       "https://www.youtube.com/watch?v=y_YsTRv6vxQ",
-      "https://www.instagram.com/lelu_storee/"
+      "https://www.instagram.com/lelu_storee/",
+      "https://followict.news/ga95"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "services": {
       "en": [
         {
@@ -3970,8 +4115,8 @@
       ]
     },
     "pitch": {
-      "en": "Founder Mina Fayez brought Lelu to Shark Tank Egypt in Season 2, Episode 4, pitching it as an unconventional fashion and clothing brand for customers who want something different from mainstream retail. He walked away with a deal. The ask and deal terms, and the shark or sharks who invested, were not available in the sources found.",
-      "ar": "قدّم المؤسس مينا فايز علامة ليلو في الحلقة الرابعة من الموسم الثاني من شارك تانك مصر، بوصفها علامة أزياء وملابس غير تقليدية لمن يبحث عن شيء مختلف عن المعروض في السوق. وخرج من الحلقة بصفقة. لم تتوفر في المصادر قيمة الطلب ولا شروط الصفقة ولا أسماء المستثمرين الذين شاركوا فيها."
+      "en": "Mina Fayez asked for EGP 1.5 million for 10% of Lelu. Ayman Abbas offered the amount for 50%, and Dina Ghabbour joined the offer. Mina declined because the equity stake was too high and chose to continue without an investment, as the official episode clip and FollowICT’s report confirm.",
+      "ar": "طلب مينا فايز 1.5 مليون جنيه مقابل 10% من ليلو. وعرض أيمن عباس المبلغ مقابل 50%، وانضمت دينا غبور إلى العرض. رفض مينا بسبب ارتفاع الحصة المطلوبة وقرر الاستمرار دون استثمار، وهو ما يؤكده المقطع الرسمي وتقرير فولو آي سي تي."
     },
     "about": {
       "founded": 2020,
@@ -3995,6 +4140,11 @@
     "video": "y_YsTRv6vxQ",
     "links": {
       "instagram": "https://www.instagram.com/lelu_storee/"
+    },
+    "photo": {
+      "url": "/startups/lelu.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=y_YsTRv6vxQ&t=55s"
     }
   },
   {
@@ -4023,7 +4173,7 @@
       "sharks": [
         "Ahmed Tarek Khalil"
       ],
-      "amountEGP": null,
+      "amountEGP": 1500000,
       "equityPct": 50
     },
     "sources": [
@@ -4031,9 +4181,10 @@
       "https://www.dostor.org/4551879",
       "https://sharktankarabi.com/1032/",
       "https://sharktank-egypt.com/en/deals/entertainment-and-arts",
-      "https://www.youtube.com/watch?v=q40t7hCLNfE"
+      "https://www.youtube.com/watch?v=q40t7hCLNfE",
+      "https://followict.news/ga95"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-11-02",
     "links": {
       "instagram": "https://www.instagram.com/countryhouse.sh/"
     },
@@ -4052,10 +4203,15 @@
       ]
     },
     "pitch": {
-      "en": "Sara Helal pitched Country House in Season 2, Episode 4 of Shark Tank Egypt, presenting her Egyptian-made chalk-finish paints as a rival to costly imports and citing around EGP 614K in sales in the previous year. The record does not state the ask or a deal outcome.",
-      "ar": "قدّمت سارة هلال مشروع كونتري هاوس في الحلقة الرابعة من الموسم الثاني لبرنامج شارك تانك مصر، وعرضت دهانات الطباشير المصرية الصنع كبديل منافس للمنتجات المستوردة مرتفعة الثمن، مستشهدة بمبيعات بلغت نحو 614 ألف جنيه في العام السابق. لا يذكر السجل قيمة الطلب أو نتيجة الصفقة."
+      "en": "Sara Helal asked for EGP 1.5 million for 20% of Country House. She presented its Egyptian-made furniture paints and workshops, reporting more than EGP 600,000 in sales in the previous year. Ahmed Tarek Khalil offered EGP 1.5 million for 50%, and she accepted.",
+      "ar": "طلبت سارة هلال 1.5 مليون جنيه مقابل 20% من كونتري هاوس. وعرضت دهانات الأثاث المصرية وورش تعليم استخدامها، وذكرت أن المبيعات تجاوزت 600 ألف جنيه في العام السابق. ووافقت على عرض أحمد طارق خليل بقيمة 1.5 مليون جنيه مقابل 50%."
     },
-    "video": "q40t7hCLNfE"
+    "video": "q40t7hCLNfE",
+    "photo": {
+      "url": "/startups/country-house.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=q40t7hCLNfE&t=25s"
+    }
   },
   {
     "id": "simplex",
@@ -4277,6 +4433,11 @@
           "مدرجة على كيدزاب مصر وتقدم ضيافة صحية لأعياد الميلاد"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/dr-joy.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=T-vKEMB29qY"
     }
   },
   {
@@ -4357,6 +4518,11 @@
     "pitch": {
       "en": "Engine's founder brought its DNA-analysis service to the tank in Season 2, Episode 6. Shark Ahmed Tarek acknowledged the startup's competitive edge, but he challenged the founder on how a genetic analysis could actually make reliable predictions, and the two had a lively debate. The record does not show a deal.",
       "ar": "عرض مؤسس إنجين خدمة تحليل الحمض النووي في الحلقة السادسة من الموسم الثاني. أقرّ القرش أحمد طارق بالميزة التنافسية للشركة، لكنه سأل المؤسس كيف يمكن للتحليل الجيني أن يقدّم توقعات موثوقة فعلًا، ودار بينهما نقاش حاد. ولا يذكر السجل أن الحلقة انتهت بصفقة."
+    },
+    "photo": {
+      "url": "/startups/engine.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=UmP6tQp2Alc&t=5s"
     }
   },
   {
@@ -4418,6 +4584,11 @@
           "3.5 مليون جنيه مقابل 51% من السويدي ومنصور وأحمد طارق"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/bar-and-jar.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=n2X5sVh2FKg"
     }
   },
   {
@@ -4476,6 +4647,11 @@
           "شاركت في معرض Seamless Middle East"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/rawmart.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=LGZAws63gH4&t=5s"
     }
   },
   {
@@ -4522,6 +4698,11 @@
     "links": {
       "facebook": "https://www.facebook.com/SoccerHubeg/",
       "instagram": "https://www.instagram.com/soccerhubeg/"
+    },
+    "photo": {
+      "url": "/startups/soccer-hub.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=dGLyN2qnSqc&t=45s"
     }
   },
   {
@@ -4581,6 +4762,11 @@
           "أسسها المعماريان عمر الطوانسي ومازن موسى"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/rnkl.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=DY6QUkrt-0A&t=35s"
     }
   },
   {
@@ -4705,6 +4891,11 @@
           "أكثر من 13 ألف مشروع في أسواقها"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/creative-wrap.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=otvTd_pS0GU&t=35s"
     }
   },
   {
@@ -4800,7 +4991,12 @@
       "en": "Mico Pex appeared in Season 2, Episode 9 to present its solution for water leaks in homes. The size of its ask and the outcome of the pitch are not recorded in available sources.",
       "ar": "ظهرت مايكو بيكس في الحلقة التاسعة من الموسم الثاني لتعرض حلها لمشكلة تسريب المياه في المنازل. ولا تذكر المصادر المتاحة قيمة الطلب أو نتيجة العرض أمام المستثمرين."
     },
-    "video": "Hmy334-lFG4"
+    "video": "Hmy334-lFG4",
+    "photo": {
+      "url": "/startups/myco-pex.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6421887"
+    }
   },
   {
     "id": "the-potcast",
@@ -4865,6 +5061,11 @@
           "خطط للتوسع في السعودية والإمارات"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/the-potcast.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6428980"
     }
   },
   {
@@ -4952,6 +5153,11 @@
           "صافحت المستثمرين على صفقة"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/gammbaz.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=3Y1-4yBEMBo"
     }
   },
   {
@@ -5076,6 +5282,11 @@
     "pitch": {
       "en": "ZEE's founder pitched a fully Egyptian-made footwear brand with the ambition of competing with global labels, highlighting its sneakers with Arabic lettering. The founder asked the sharks for EGP 15 million in exchange for 15% of the company. No public source confirms the outcome yet.",
       "ar": "قدّم مؤسس زي علامة أحذية مصرية الصنع بالكامل تطمح إلى منافسة العلامات العالمية، مسلطاً الضوء على أحذيتها الرياضية التي تحمل حروفاً عربية. وطلب من المستثمرين 15 مليون جنيه مقابل 15% من الشركة. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "photo": {
+      "url": "/startups/zee-shoes.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=ay1JPEuUwrI"
     }
   },
   {
@@ -5287,6 +5498,11 @@
     "links": {
       "instagram": "https://www.instagram.com/zatcare/",
       "facebook": "https://www.facebook.com/zatcare/"
+    },
+    "photo": {
+      "url": "/startups/zat.jpg",
+      "credit": "CairoScene · StartupScene",
+      "creditUrl": "https://cairoscene.com/Business/StartupScene-Madinet-Masr-Present-Tank-Tales-Episode-2-Zat"
     }
   },
   {
@@ -5313,7 +5529,9 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
+      "sharks": [
+        "Ayman Abbas"
+      ],
       "amountEGP": 3000000,
       "equityPct": 20
     },
@@ -5327,9 +5545,10 @@
       "https://cairoscene.com/Eats/Fati-s-Bakery-is-Now-Officially-Open-at-New-Cairo-s-U-Venues",
       "https://cairoscene.com/Eats/The-Most-Dough-licious-Donuts-in-Egypt-A-Scene-Eats-Guide",
       "https://www.slanted.de/fatis/",
-      "https://www.instagram.com/fatis.eg/"
+      "https://www.instagram.com/fatis.eg/",
+      "https://www.youtube.com/watch?v=DQ65rjFpnes&t=1327s"
     ],
-    "checked": "2026-10-12",
+    "checked": "2026-11-02",
     "video": "DQ65rjFpnes",
     "about": {
       "founded": 2021,
@@ -5393,11 +5612,16 @@
       ]
     },
     "pitch": {
-      "en": "Siblings Fatma and Abdelrahman Youssef pitched Fati's in Season 2, asking for EGP 3 million for 10% of the business, which valued it at EGP 30 million. They told the story of a doughnut brand that grew from a home stove to a two-floor facility and 100,000 doughnuts sold in 2023. No public source confirms the outcome yet.",
-      "ar": "قدّم الشقيقان فاطمة وعبد الرحمن يوسف علامة فاتيس في الموسم الثاني، وطلبا 3 ملايين جنيه مقابل 10% من الشركة، أي بتقييم 30 مليون جنيه. وعرضا قصة علامة دونتس بدأت على موقد منزلي حتى وصلت إلى منشأة من طابقين وبيع 100 ألف قطعة في 2023. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+      "en": "Fatma and Abdelrahman Youssef asked for EGP 3 million for 10% of Fati’s. They accepted Ayman Abbas’s offer of EGP 3 million for 20%, with a five-percentage-point reduction in his stake over three years if agreed targets are met. The agreement also included five years of exclusivity with TBS within Egypt, while allowing expansion abroad.",
+      "ar": "طلبت فاطمة وعبد الرحمن يوسف 3 ملايين جنيه مقابل 10% من فاتيس. ووافقا على عرض أيمن عباس بقيمة 3 ملايين جنيه مقابل 20%، مع خفض حصته بخمس نقاط مئوية على مدى ثلاث سنوات عند تحقيق الأهداف المتفق عليها. وشمل الاتفاق حصرية مع تي بي إس لمدة خمس سنوات داخل مصر، مع السماح بالتوسع خارجها."
     },
     "links": {
       "instagram": "https://www.instagram.com/fatis.eg/"
+    },
+    "photo": {
+      "url": "/startups/fatties.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6436042"
     }
   },
   {
@@ -5527,6 +5751,11 @@
           "تساعد المدارس على تحسين تحصيل المصروفات"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/abgad.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=dXGGVaGcz_M"
     }
   },
   {
@@ -5586,6 +5815,11 @@
           "مقهى مصري حائز على جوائز"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/dark-solution.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6443112"
     }
   },
   {
@@ -5788,6 +6022,11 @@
           "طلبت 6 ملايين جنيه مقابل 30% في الموسم الثاني من شارك تانك مصر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/flouxo.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6458158"
     }
   },
   {
@@ -5833,6 +6072,11 @@
     "pitch": {
       "en": "In Season 2, Episode 14, Nourhan Massoud pitched AgriKemet as a way to turn farm waste into a replacement for chemical fertilisers, describing it as a solution to a global waste problem. The idea won over the whole panel, and every shark made her an offer. Our sources do not say which offer, if any, she accepted.",
       "ar": "في الحلقة الرابعة عشرة من الموسم الثاني، عرضت نورهان مسعود مشروع أجري كيميت وسيلةً لتحويل المخلفات الزراعية إلى بديل للأسمدة الكيماوية، وقدّمته حلاً لأزمة عالمية في التعامل مع المخلفات. ونالت الفكرة إعجاب اللجنة كلها، فقدّم لها جميع المستثمرين عروضاً. ولا تذكر مصادرنا أي عرض قبلته، إن كانت قد قبلت أياً منها."
+    },
+    "photo": {
+      "url": "/startups/agrikemet.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6458160"
     }
   },
   {
@@ -5884,6 +6128,11 @@
     "links": {
       "instagram": "https://www.instagram.com/eracare21/",
       "facebook": "https://www.facebook.com/Eracaresohag/"
+    },
+    "photo": {
+      "url": "/startups/era-care.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6465758"
     }
   },
   {
@@ -6094,7 +6343,12 @@
         ]
       }
     },
-    "video": "Qt6DCCFI-lk"
+    "video": "Qt6DCCFI-lk",
+    "photo": {
+      "url": "/startups/super-fanni.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6480371"
+    }
   },
   {
     "id": "cover-spore",
@@ -6153,6 +6407,11 @@
     "pitch": {
       "en": "Sherif Abdallah presented Cover Spore's aluminium rim covers on Shark Tank Egypt, asking for EGP 7 million in exchange for 25% of the company. He described the product as a first in Egypt and said a patent was in progress. The sharks praised the quality of the product, but the episode ended without a deal.",
       "ar": "قدّم شريف عبد الله أغطية جنوط كوفر سبور المصنوعة من الألومنيوم في برنامج شارك تانك مصر، وطلب 7 ملايين جنيه مقابل 25% من الشركة. ووصف المنتج بأنه الأول من نوعه في مصر، وأوضح أنه يعمل على تسجيل براءة اختراع. وأشاد المستثمرون بجودة المنتج، لكن الحلقة انتهت دون إبرام صفقة."
+    },
+    "photo": {
+      "url": "/startups/cover-spore.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=EkViGBR_zZA"
     }
   },
   {
@@ -6235,6 +6494,11 @@
     "links": {
       "facebook": "https://www.facebook.com/Zerosugar.eg/",
       "instagram": "https://www.instagram.com/zerosugar.eg/"
+    },
+    "photo": {
+      "url": "/startups/zero-sugar.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=GEs2mAWUxSQ"
     }
   },
   {
@@ -6299,6 +6563,11 @@
           "مسابقة مواهب مع أوبو لـ600 لاعب"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/the-maker.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=qoWCky_RYfE"
     }
   },
   {
@@ -6353,7 +6622,12 @@
         ]
       }
     },
-    "video": "ev8z2yZS9tc"
+    "video": "ev8z2yZS9tc",
+    "photo": {
+      "url": "/startups/gelato-on-the-wheel.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=ev8z2yZS9tc"
+    }
   },
   {
     "id": "becom",
@@ -6450,7 +6724,12 @@
         ]
       }
     },
-    "video": "puB671rpzNo"
+    "video": "puB671rpzNo",
+    "photo": {
+      "url": "/startups/masafa.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6495137"
+    }
   },
   {
     "id": "naseej",
@@ -6515,6 +6794,11 @@
           "تصميمات عصرية تمزج الزخارف القبلية بالبساطة"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/naseej.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6495135"
     }
   },
   {
@@ -6584,6 +6868,11 @@
     },
     "links": {
       "instagram": "https://www.instagram.com/thebox_egypt/"
+    },
+    "photo": {
+      "url": "/startups/the-box.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=1AuayqlKHQ0"
     }
   },
   {
@@ -6655,8 +6944,8 @@
       "ar": "فارمابيل"
     },
     "description": {
-      "en": "Founded in 2023, a website linking drug warehouses with pharmacies.",
-      "ar": "شركة تأسست عام 2023 وتربط مخازن الأدوية بالصيدليات عبر موقع إلكتروني."
+      "en": "Pharmabill connects medicine warehouses with pharmacies through an online platform. Founded in 2023, it serves pharmacies, distributors and manufacturers in the healthcare sector. It also provides a website through which pharmacies can sell products to customers.",
+      "ar": "تربط فارمابيل مخازن الأدوية بالصيدليات عبر منصة إلكترونية. بدأت الشركة في 2023 لخدمة الصيدليات والموزعين والمصنّعين في قطاع الرعاية الصحية. وتتيح أيضًا للصيدليات بيع منتجاتها للمستهلكين من خلال موقع إلكتروني."
     },
     "category": "Health",
     "founders": [],
@@ -6668,10 +6957,45 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/6502200",
-      "https://www.youtube.com/watch?v=bLtDcK-D6hE"
+      "https://www.youtube.com/watch?v=bLtDcK-D6hE",
+      "https://www.youtube.com/watch?v=Ywqx6BaciVg"
     ],
-    "checked": "2026-10-10",
-    "video": "bLtDcK-D6hE"
+    "checked": "2026-11-02",
+    "video": "bLtDcK-D6hE",
+    "photo": {
+      "url": "/startups/pharmabill.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=bLtDcK-D6hE"
+    },
+    "about": {
+      "founded": 2023
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Pharmacy procurement",
+          "desc": "Links pharmacies with medicine warehouses and distributors."
+        },
+        {
+          "name": "Online pharmacy sales",
+          "desc": "A website through which pharmacies can sell products to customers."
+        }
+      ],
+      "ar": [
+        {
+          "name": "مشتريات الصيدليات",
+          "desc": "ربط الصيدليات بمخازن الأدوية والموزعين."
+        },
+        {
+          "name": "بيع منتجات الصيدليات أونلاين",
+          "desc": "موقع يتيح للصيدليات عرض منتجاتها وبيعها للمستهلكين."
+        }
+      ]
+    },
+    "pitch": {
+      "en": "Pharmabill appeared in Season 2, Episode 20, with a platform connecting pharmacies and medicine suppliers. The available clips do not establish the final outcome, and the investment request remains unconfirmed.",
+      "ar": "ظهرت فارمابيل في الحلقة العشرين من الموسم الثاني بمنصة تربط الصيدليات بمورّدي الأدوية. ولا تحسم المقاطع المتاحة نتيجة العرض، كما لم تتأكد قيمة الاستثمار المطلوب."
+    }
   },
   {
     "id": "bzour",
@@ -6749,7 +7073,12 @@
         ]
       }
     },
-    "video": "Yv-zc1JUJC0"
+    "video": "Yv-zc1JUJC0",
+    "photo": {
+      "url": "/startups/bzour.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=Yv-zc1JUJC0"
+    }
   },
   {
     "id": "yaya",
@@ -6812,6 +7141,11 @@
           "سموذي ووافل وآيس كريم أيضاً"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/yaya.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6502539"
     }
   },
   {
@@ -6985,6 +7319,11 @@
           "تخطط للتوسع في الخليج في 2026"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/duaya.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=P7mX2IJJqIU"
     }
   },
   {
@@ -7139,6 +7478,11 @@
           "طلبت مليوني جنيه مقابل 20% (تقييم ضمني 10 ملايين جنيه)"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/carpetivity.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=p6O51EIhBKA"
     }
   },
   {
@@ -7241,7 +7585,12 @@
       "en": "In Season 3, Episode 2, El Motaheda pitched its Egyptian-made motorcycle brake pads, presenting local manufacturing as an alternative to imported parts. The company asked for EGP 10 million in exchange for 25% equity. No deal is recorded for the company.",
       "ar": "في الحلقة الثانية من الموسم الثالث، عرضت المتحدة تيل فرامل الدراجات النارية الذي تصنّعه في مصر، وقدّمت التصنيع المحلي بديلًا لقطع الغيار المستوردة. وطلبت الشركة 10 ملايين جنيه مصري مقابل 25% من أسهمها. ولا توجد صفقة مسجّلة للشركة."
     },
-    "video": "0E3JodZ_dqs"
+    "video": "0E3JodZ_dqs",
+    "photo": {
+      "url": "/startups/el-motaheda.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/6752357"
+    }
   },
   {
     "id": "fit-and-fresh",
@@ -7321,7 +7670,12 @@
         ]
       }
     },
-    "video": "v0ZbzyxS6Ew"
+    "video": "v0ZbzyxS6Ew",
+    "photo": {
+      "url": "/startups/fit-and-fresh.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=v0ZbzyxS6Ew"
+    }
   },
   {
     "id": "abdelaziz-elmasry",
@@ -7454,6 +7808,11 @@
           "أبرم صفقة في شارك تانك مصر: 5 ملايين جنيه مقابل 50% (الموسم 3)"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/el-fares.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=SUgcuSNWFD4"
     }
   },
   {
@@ -7492,6 +7851,11 @@
     "video": "pScwobM9jYk",
     "links": {
       "facebook": "https://www.facebook.com/metadoc.eg"
+    },
+    "photo": {
+      "url": "/startups/metadoc.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=pScwobM9jYk"
     }
   },
   {
@@ -7532,7 +7896,12 @@
       "en": "The founders of Outdated presented their Egyptian fashion label in season 3, episode 4, asking for EGP 500,000 for 5% of the company, which put its value at EGP 10 million. The founder took an offer on air (\"I took the offer\"), and the appearance brought the brand a wave of social-media attention.",
       "ar": "قدّم مؤسسو أوت ديتد علامتهم المصرية للأزياء في الحلقة الرابعة من الموسم الثالث، وطلبوا 500 ألف جنيه مقابل 5% من الشركة، أي بتقييم 10 ملايين جنيه. وقبل المؤسس عرضاً على الهواء، كما أن الظهور في البرنامج منح العلامة موجة من الاهتمام على وسائل التواصل الاجتماعي."
     },
-    "video": "0v3pHQW6OnM"
+    "video": "0v3pHQW6OnM",
+    "photo": {
+      "url": "/startups/outdated.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=0v3pHQW6OnM"
+    }
   },
   {
     "id": "right-home",
@@ -7629,7 +7998,12 @@
         ]
       }
     },
-    "video": "NOPgqv2vI7U"
+    "video": "NOPgqv2vI7U",
+    "photo": {
+      "url": "/startups/right-home.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=NOPgqv2vI7U"
+    }
   },
   {
     "id": "on-board",
@@ -7725,7 +8099,12 @@
         ]
       }
     },
-    "video": "0MhH64Zj8mE"
+    "video": "0MhH64Zj8mE",
+    "photo": {
+      "url": "/startups/on-board.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=0MhH64Zj8mE"
+    }
   },
   {
     "id": "ostrich-land",
@@ -7736,8 +8115,8 @@
       "ar": "أوستريتش لاند"
     },
     "description": {
-      "en": "An Egyptian ostrich farm that raises its birds on organic feed and sells premium ostrich meat. On the show it closed a deal with Ahmed Tarek Khalil for EGP 9 million for 45%.",
-      "ar": "مزرعة نعام مصرية تربي طيورها على أعلاف عضوية، وتبيع لحم نعام فاخراً. وفي البرنامج أبرمت صفقة مع أحمد طارق بقيمة 9 مليون جنيه مقابل 45%."
+      "en": "Ostrich Land is an Egyptian farm that raises ostriches and sells their meat. It manages the birds’ entire fattening cycle on the farm. The company says it uses fully organic feed without added hormones or artificial supplements.",
+      "ar": "أوستريتش لاند مزرعة مصرية لتربية النعام وبيع لحومه. تتولى المزرعة دورة التسمين بالكامل للتحكم في جودة الإنتاج. وتقول الشركة إنها تستخدم أعلافًا عضوية بالكامل دون إضافة هرمونات أو مكملات صناعية."
     },
     "category": "Agriculture",
     "founders": [],
@@ -7761,12 +8140,21 @@
       "https://sharktank-egypt.com/en/deals/food-and-beverage",
       "https://www.youtube.com/watch?v=-c8O3Tc9uX8"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-11-02",
     "links": {
       "facebook": "https://www.facebook.com/p/Ostrich-land-Egypt-61558782500696/",
       "instagram": "https://www.instagram.com/ostrichland.eg/"
     },
-    "video": "-c8O3Tc9uX8"
+    "video": "-c8O3Tc9uX8",
+    "photo": {
+      "url": "/startups/ostrich-land.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=-c8O3Tc9uX8"
+    },
+    "pitch": {
+      "en": "Ostrich Land presented its ostrich-farming business in Season 3, Episode 5. It agreed an investment of EGP 9 million for 45% with Ahmed Tarek Khalil. The original amount and equity requested remain unconfirmed.",
+      "ar": "عرضت أوستريتش لاند مشروعها لتربية النعام في الحلقة الخامسة من الموسم الثالث. واتفقت مع أحمد طارق خليل على استثمار بقيمة 9 ملايين جنيه مقابل 45%. ولم تتأكد قيمة الطلب الأصلي أو نسبته."
+    }
   },
   {
     "id": "minimelts",
@@ -7824,7 +8212,12 @@
         ]
       }
     },
-    "video": "ifRCHa7nFzs"
+    "video": "ifRCHa7nFzs",
+    "photo": {
+      "url": "/startups/minimelts.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=ifRCHa7nFzs"
+    }
   },
   {
     "id": "halite-egypt",
@@ -7913,6 +8306,11 @@
           "طلبت 75 مليون جنيه مقابل 25% في الموسم الثالث من شارك تانك مصر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/halite-egypt.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=2E4tXi4-bA4"
     }
   },
   {
@@ -7951,6 +8349,11 @@
     "pitch": {
       "en": "The Nuit Fragrances founders asked the sharks for EGP 5 million in exchange for 10% of the company. In a playful touch, they chose a perfume for each shark to match their personality. No public source confirms the outcome yet.",
       "ar": "طلب مؤسسو نوي فراجرانسز من القروش 5 ملايين جنيه مقابل 10% من الشركة. وفي لمسة طريفة، اختاروا لكل قرش عطرًا يناسب شخصيته. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "photo": {
+      "url": "/startups/nuit-fragrances.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=8roJhnnLl6g"
     }
   },
   {
@@ -8860,6 +9263,11 @@
           "صفقة مع أيمن عباس ومحمد منصور"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/euphoria-denims.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=SAfTr28V19g"
     }
   },
   {
@@ -9070,7 +9478,12 @@
       "amountEGP": 7000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 10000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youm7.com/6824424",
       "https://www.youm7.com/6823046",
@@ -9078,9 +9491,10 @@
       "https://enterpriseam.com/logistics/2025/09/11/egypts-ooaaps-eyes-usd-2-5-mn-in-funding-by-1h-2026/",
       "https://www.facebook.com/ooaapssoftware/",
       "https://www.linkedin.com/company/ooaaps/",
-      "https://ooaaps.com/"
+      "https://ooaaps.com/",
+      "https://www.youtube.com/watch?v=_RSqERON5xY&t=1295s"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "video": "_RSqERON5xY",
     "services": {
       "en": [
@@ -9129,8 +9543,8 @@
       ]
     },
     "pitch": {
-      "en": "In Season 3, Episode 11, founder Moamen Ragab presented OOAPS as a way to cut Egypt's complicated import and export procedures down to seven simple steps. He asked the sharks for EGP 7 million in exchange for 20% of the company. No public source confirms the outcome yet.",
-      "ar": "في الحلقة 11 من الموسم الثالث، قدّم المؤسس مؤمن رجب منصة أوبس كحل يختصر إجراءات الاستيراد والتصدير المعقدة في مصر إلى سبع خطوات بسيطة. وطلب من المستثمرين 7 ملايين جنيه مقابل 20% من الشركة. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+      "en": "Moamen Ragab asked for EGP 7 million for 20% of OOAPS. The offers included a mix of cash and technology services, and a competing EGP 10 million offer for 40%. He negotiated the latter down to 35%, which was accepted at the end of the pitch. The investor’s name remains unconfirmed in this record.",
+      "ar": "طلب مؤمن رجب 7 ملايين جنيه مقابل 20% من أوبس. وتلقى عرضًا يجمع بين النقد والخدمات التقنية، وعرضًا آخر بقيمة 10 ملايين جنيه مقابل 40%. فاوض على خفض حصة العرض الأخير إلى 35%، وقُبل طلبه في ختام العرض. ولم يتأكد اسم المستثمر في هذا السجل بعد."
     },
     "about": {
       "founded": 2020,
@@ -9652,6 +10066,11 @@
     "pitch": {
       "en": "Founder Karim Taha pitched Right Temp's power-free temperature-controlled containers in Season 3, Episode 13 of Shark Tank Egypt. He asked for EGP 4 million in exchange for 10% of the company, which values it at EGP 40 million. No public source confirms the outcome yet.",
       "ar": "عرض المؤسس كريم طه حاويات رايت تمب التي تحافظ على درجة الحرارة دون طاقة في الحلقة الثالثة عشرة من الموسم الثالث من شارك تانك مصر. وطلب 4 ملايين جنيه مقابل 10% من الشركة، أي بتقييم 40 مليون جنيه. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "photo": {
+      "url": "/startups/right-temp.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=Uc71DhVFbKM"
     }
   },
   {
@@ -9744,6 +10163,11 @@
           "أتمّت صفقة مع أحمد طارق في الموسم الثالث من شارك تانك مصر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/lakanto.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=hOdv_KVv8Pw"
     }
   },
   {
@@ -9807,6 +10231,11 @@
           "مقرها مدينة نصر منذ 2019"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/robo-desk.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=gC13n-oFBvQ"
     }
   },
   {
@@ -9884,7 +10313,12 @@
         ]
       }
     },
-    "video": "lrgrl6b-fJM"
+    "video": "lrgrl6b-fJM",
+    "photo": {
+      "url": "/startups/anf.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=lrgrl6b-fJM"
+    }
   },
   {
     "id": "zuri",
@@ -9928,6 +10362,11 @@
     "pitch": {
       "en": "ZURI's founder, an engineer who also designs the bags, pitched her light everyday bags made in Egyptian workshops. She asked for EGP 3 million for 15% of the company. The pitch drew five offers from the sharks.",
       "ar": "قدّمت مؤسِّسة زوري، وهي مهندسة تصمم الحقائب بنفسها، حقائبها اليومية الخفيفة المصنوعة في ورش مصرية. طلبت 3 ملايين جنيه مقابل 15% من الشركة. وحصلت خلال العرض على خمسة عروض من المستثمرين."
+    },
+    "photo": {
+      "url": "/startups/zuri.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=AM5_-mijE5M"
     }
   },
   {
@@ -9951,15 +10390,24 @@
       "amountEGP": 10000000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 15000000,
+      "equityPct": 40
+    },
     "sources": [
       "https://www.youm7.com/6856392",
       "https://www.dostor.org/4935430",
       "https://www.youtube.com/watch?v=fqCVdK5RBiU",
       "https://www.srvspaces.com/",
-      "https://www.crunchbase.com/organization/srv"
+      "https://www.crunchbase.com/organization/srv",
+      "https://www.youtube.com/watch?v=fqCVdK5RBiU&t=1624s",
+      "https://riadynews.com/رجل-الأعمال-محمد-فاروق-يستحوذ-على-40-من-srv/"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "video": "fqCVdK5RBiU",
     "links": {
       "linkedin": "https://eg.linkedin.com/company/srvspaces",
@@ -9984,6 +10432,10 @@
           "تخدم أكثر من 100 شركة نشطة بحسب الشركة"
         ]
       }
+    },
+    "pitch": {
+      "en": "Mohamed Ayman asked for EGP 10 million for 20% of SRV. He accepted Mohamed Farouk’s offer of EGP 15 million for 40%, with voting rights split equally between them. The investment and voting arrangement are confirmed in the closing exchange and in Riady’s report on the pitch.",
+      "ar": "طلب محمد أيمن 10 ملايين جنيه مقابل 20% من إس آر في. ووافق على عرض محمد فاروق بقيمة 15 مليون جنيه مقابل 40%، مع تقاسم حقوق التصويت بالتساوي. ويؤكد ختام العرض وتقرير موقع ريادي قيمة الاستثمار وترتيب حقوق التصويت."
     }
   },
   {
@@ -10121,7 +10573,12 @@
         ]
       }
     },
-    "video": "2xXbwyVhMvM"
+    "video": "2xXbwyVhMvM",
+    "photo": {
+      "url": "/startups/hoods.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=2xXbwyVhMvM"
+    }
   },
   {
     "id": "cleo-foods",
@@ -10451,6 +10908,11 @@
     },
     "links": {
       "instagram": "https://www.instagram.com/mandisa_eg/"
+    },
+    "photo": {
+      "url": "/startups/mandisa.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=K6C26xq56fI"
     }
   },
   {
@@ -10519,6 +10981,11 @@
     "pitch": {
       "en": "Estealamy pitched on Shark Tank Egypt Season 3, Episode 17. The team presented an AI-powered way for lenders to verify loan applicants, with approvals in as little as 30 minutes and field-inquiry reports delivered within 24 hours through an app and dashboard. The amount they asked for and the outcome are not recorded.",
       "ar": "قدّمت استعلامي عرضها في الموسم الثالث، الحلقة 17 من برنامج شارك تانك مصر. عرض الفريق حلاً يعتمد على الذكاء الاصطناعي يساعد جهات الإقراض على التحقق من طالبي القروض، مع إمكانية الموافقة خلال 30 دقيقة وتسليم تقارير الاستعلام الميداني خلال 24 ساعة عبر تطبيق ولوحة تحكم. المبلغ الذي طلبه الفريق ونتيجة العرض غير مسجلين."
+    },
+    "photo": {
+      "url": "/startups/estealamy.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=y9b4bFexAf4"
     }
   },
   {
@@ -10625,6 +11092,11 @@
           "إطلاق Drop 1.0 في ختام موسم شارك تانك مصر 2025"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/zonta.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=SBLTRSbGuN8"
     }
   },
   {
@@ -10734,6 +11206,11 @@
     "pitch": {
       "en": "In Season 3, Episode 18 of Shark Tank Egypt, Three Diner pitched its homegrown American comfort-food brand and its Philly cheesesteak, billed as Egypt's most expensive sandwich. The team presented a full expansion plan to take the concept beyond its New Cairo food-truck roots. The ask and the outcome are not recorded.",
       "ar": "في الحلقة الثامنة عشرة من الموسم الثالث لبرنامج شارك تانك مصر، عرض فريق ثري داينر علامته المصرية لأكلات الراحة الأمريكية وساندويتش الفيلي تشيز ستيك الذي يصفه بأنه أغلى ساندويتش في مصر. وقدّم الفريق خطة توسع كاملة لنقل الفكرة إلى ما هو أبعد من بدايتها كعربة طعام في القاهرة الجديدة. لم يُسجَّل المبلغ المطلوب ولا نتيجة العرض."
+    },
+    "photo": {
+      "url": "/startups/three-diner.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=k9Smsla6LXY&t=15s"
     }
   },
   {
@@ -10805,6 +11282,11 @@
           "عرضت أعمالها في أسبوع القاهرة للتصميم"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/upfuse.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=uBjrb9UwWjI"
     }
   },
   {
@@ -10870,6 +11352,11 @@
     "pitch": {
       "en": "Bubble Store pitched its chain of refill stations for eco-friendly cleaning products in Season 3, Episode 19 of Shark Tank Egypt. The founders presented refilling as a way for customers to save about 40% while cutting plastic waste, and the episode summary records a figure of EGP 120 million. The outcome of the pitch is not recorded.",
       "ar": "قدّمت بابل ستور سلسلة محطات تعبئة منتجات التنظيف الصديقة للبيئة في الحلقة 19 من الموسم الثالث من شارك تانك مصر. وعرض المؤسسون إعادة التعبئة وسيلةً لتوفير نحو 40% على العملاء مع تقليل مخلفات البلاستيك، ويذكر ملخص الحلقة رقم 120 مليون جنيه. ولم تُسجَّل نتيجة العرض."
+    },
+    "photo": {
+      "url": "/startups/bubble-store.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=qqmmsOGLZaA"
     }
   },
   {
@@ -10931,6 +11418,11 @@
           "قروض حتى 3000 جنيه تُصرف خلال خمس دقائق"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/raseedi.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=oCXBeyzBRHA"
     }
   },
   {
@@ -10990,6 +11482,11 @@
           "منصة لإطلاق خدمات التنقل الخفيف"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/loop.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=eCKivFRUTR0"
     }
   },
   {
@@ -11128,6 +11625,11 @@
     "pitch": {
       "en": "Founder Mohamed Bakry brought Breathe to Shark Tank Egypt in Season 3 to present its bamboo-fibre bandana, made for women who wear the hijab and find ordinary scarf fabrics hard on their hair. He asked for EGP 20 million in exchange for 10% of the company, which valued Breathe at EGP 200 million. No deal was recorded.",
       "ar": "قدّم المؤسس محمد بكري علامة بريذ في الموسم الثالث من شارك تانك مصر، وعرض باندانا ألياف البامبو المصممة للمحجبات اللواتي يجدن أقمشة الطرح العادية مرهقة لشعرهن. وطلب 20 مليون جنيه مقابل 10% من الشركة، أي بتقييم 200 مليون جنيه، ولم تُسجَّل صفقة."
+    },
+    "photo": {
+      "url": "/startups/breathe.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=eEX0GWXnB14"
     }
   },
   {
@@ -11362,6 +11864,11 @@
     "links": {
       "instagram": "https://www.instagram.com/kha_y_all/",
       "facebook": "https://www.facebook.com/khayallrides/"
+    },
+    "photo": {
+      "url": "/startups/khayai.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=FegzHYHmb1Q"
     }
   },
   {
@@ -11389,7 +11896,12 @@
       "https://www.youtube.com/watch?v=r-8EQkD5JXI"
     ],
     "checked": "2026-10-10",
-    "video": "r-8EQkD5JXI"
+    "video": "r-8EQkD5JXI",
+    "photo": {
+      "url": "/startups/tronsta.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=r-8EQkD5JXI"
+    }
   },
   {
     "id": "helpoo",
@@ -11515,6 +12027,11 @@
     "pitch": {
       "en": "Helpoo's founders asked for EGP 40M for 25% of the company, pitching a licensed, tech-enabled roadside-assistance service with live truck tracking and in-app accident reporting. A heated debate followed, with the sharks calling the model traditional, and the founders left without a deal.",
       "ar": "طلب مؤسسو هيلبو 40 مليون جنيه مقابل 25% من الشركة، وعرضوا خدمة مساعدة على الطريق مرخّصة وقائمة على التكنولوجيا، مع تتبّع مباشر لسيارة الإنقاذ وإبلاغ التأمين بالحادث عبر التطبيق. ودار نقاش حاد وصف فيه المستثمرون النموذج بأنه تقليدي، فغادر المؤسسون دون صفقة."
+    },
+    "photo": {
+      "url": "/startups/helpoo.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=Bkxd84k8fzo"
     }
   },
   {
@@ -11609,6 +12126,11 @@
     "pitch": {
       "en": "Founder Mohamed Ragab brought Mystery Bag to Shark Tank Egypt in Season 4 and asked for EGP 1 million in exchange for 10% equity. He pitched the app as Egypt's first platform against food waste, where businesses sell their surplus as discounted mystery bags. No public source confirms the outcome yet.",
       "ar": "قدّم المؤسس محمد رجب مشروع ميستري باج في الموسم الرابع من شارك تانك مصر، وطلب مليون جنيه مقابل 10% من الشركة. عرض التطبيق كأول منصة في مصر لمكافحة هدر الطعام، تبيع فيها الأنشطة التجارية فائضها في أكياس مفاجأة مخفّضة. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+    },
+    "photo": {
+      "url": "/startups/mystery-bag.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=EyHI7-x-_Ok"
     }
   },
   {
@@ -11717,6 +12239,11 @@
     "links": {
       "instagram": "https://www.instagram.com/beit.el.saad/",
       "facebook": "https://www.facebook.com/beitelsaad/"
+    },
+    "photo": {
+      "url": "/startups/bayt-el-saad.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=5r2c_UTeS-E"
     }
   },
   {
@@ -11786,6 +12313,11 @@
     },
     "links": {
       "facebook": "https://www.facebook.com/Carviseta/"
+    },
+    "photo": {
+      "url": "/startups/carvizita.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=gt_EJdt-1hU"
     }
   },
   {
@@ -11889,6 +12421,11 @@
     },
     "links": {
       "linkedin": "https://eg.linkedin.com/in/drbiboramzy"
+    },
+    "photo": {
+      "url": "/startups/tayar.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=tDbGWmezePQ"
     }
   },
   {
@@ -11930,6 +12467,11 @@
     "pitch": {
       "en": "Game Guru pitched in Season 4, Episode 4 of Shark Tank Egypt with modern acrylic versions of classic old-school games. The founders asked for EGP 1 million to grow the business. After three different offers, the founder chose Mohamed Farouk's.",
       "ar": "قدّمت جيم جورو عرضها في الحلقة الرابعة من الموسم الرابع لبرنامج شارك تانك مصر، بنسخ أكريليك عصرية من الألعاب الكلاسيكية القديمة. وطلب المؤسسون مليون جنيه مصري لتنمية المشروع، وبعد ثلاثة عروض مختلفة، اختارت المؤسسة عرض محمد فاروق."
+    },
+    "photo": {
+      "url": "/startups/game-guru.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=FR07ioda74A"
     }
   },
   {
@@ -11984,6 +12526,11 @@
     "pitch": {
       "en": "Good Steel pitched its garbage-chute systems as an easy, efficient way for residential buildings to deal with waste. The sharks called the idea simple but clever. After a long discussion and a look at the risks, they all withdrew, so the company left without a deal.",
       "ar": "قدّمت جود ستيل أنظمة مزالق النفايات بوصفها حلًا سهلًا وفعالًا للتخلص من القمامة في المباني السكنية. ورأى المستثمرون أن الفكرة بسيطة لكنها ذكية، غير أنهم انسحبوا جميعًا بعد نقاش طويل ومراجعة للمخاطر، فغادرت الشركة دون صفقة."
+    },
+    "photo": {
+      "url": "/startups/good-steel-chute.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=b0iYErmsBmY"
     }
   },
   {
@@ -12049,6 +12596,11 @@
     "pitch": {
       "en": "Kaynuna pitched on Shark Tank Egypt in Season 4, Episode 5, presenting its online platform for choosing and buying indoor plants. The founders asked for EGP 5 million in exchange for 20% of the company, which values the business at EGP 25 million. The record shows no deal closed on air.",
       "ar": "عرضت كينونة مشروعها في الحلقة الخامسة من الموسم الرابع من شارك تانك مصر، وقدّمت منصتها الإلكترونية لاختيار النباتات الداخلية وشرائها. طلب المؤسسون 5 ملايين جنيه مقابل 20% من الشركة، أي بتقييم 25 مليون جنيه. ولا يُظهر السجل إبرام أي صفقة خلال الحلقة."
+    },
+    "photo": {
+      "url": "/startups/kaynuna.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=iVPYEfYV0Bg"
     }
   },
   {
@@ -12200,6 +12752,11 @@
     "pitch": {
       "en": "In Season 4, Episode 5, Goldabikia asked the sharks for EGP 3 million to grow its business of turning old batteries into energy storage. The founders presented it as an out-of-the-box sustainability idea, and the sharks were divided. After weighing the risks, the sharks pulled out and no deal was made.",
       "ar": "في الحلقة الخامسة من الموسم الرابع، طلبت جولدابيكيا من القروش 3 ملايين جنيه لتوسيع نشاطها في تحويل البطاريات القديمة إلى وحدات لتخزين الطاقة. قدّم المؤسسون الفكرة بوصفها مشروعًا غير تقليدي للاستدامة، فانقسمت آراء القروش حولها. وبعد موازنة المخاطر انسحب القروش جميعًا، وانتهى العرض دون اتفاق."
+    },
+    "photo": {
+      "url": "/startups/goldabikia.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=g42NjWz29to"
     }
   },
   {
@@ -12296,6 +12853,11 @@
     },
     "links": {
       "linkedin": "https://www.linkedin.com/company/mavericks-nr/"
+    },
+    "photo": {
+      "url": "/startups/mavericks.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/story/2025/11/12/%D8%B5%D8%A7%D8%AD%D8%A8-Mavericks-%D9%84%D9%80-%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%81%D9%86%D9%8A-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%A5%D8%AD%D9%8A%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%AE%D9%84%D9%81%D8%A7%D8%AA/7195538"
     }
   },
   {
@@ -12307,8 +12869,8 @@
       "ar": "بيبي ستار"
     },
     "description": {
-      "en": "Baby-care products free of fragrances and dyes.",
-      "ar": "منتجات رعاية أطفال خالية من الروائح والعطور والألوان."
+      "en": "Baby Star is an Egyptian brand of baby-care cleaning products, including laundry detergent and a cleaner for feeding bottles and accessories. The company describes its products as free of fragrances and dyes. At its Shark Tank pitch, the team reported selling more than 240,000 bottles and generating over EGP 15 million in sales across four years, with distribution through major pharmacies and retailers.",
+      "ar": "بيبي ستار علامة مصرية لمنتجات تنظيف مستلزمات الأطفال، منها منظف الملابس وغسول زجاجات الرضاعة وملحقاتها. وتقول الشركة إن منتجاتها خالية من العطور والألوان. وخلال عرضها في شارك تانك، ذكر الفريق أنه باع أكثر من 240 ألف عبوة وحقق مبيعات تجاوزت 15 مليون جنيه خلال أربع سنوات، عبر صيدليات كبرى ومتاجر في مصر."
     },
     "category": "Beauty",
     "founders": [],
@@ -12320,14 +12882,42 @@
     "deal": null,
     "sources": [
       "https://www.youm7.com/7195516",
-      "https://www.aldawlanews.com/1309673"
+      "https://www.aldawlanews.com/1309673",
+      "https://babystareg.com/",
+      "https://www.youtube.com/watch?v=AJCRNSNBWj0"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "links": {
       "facebook": "https://www.facebook.com/BabyStarEgypt",
       "instagram": "https://www.instagram.com/babystaregypt/",
       "whatsapp": "https://wa.me/201104295017/",
       "tiktok": "https://www.tiktok.com/@babystaregypt/"
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Laundry detergent",
+          "desc": "Detergent for baby clothes, sold through the brand’s online store."
+        },
+        {
+          "name": "Bottle and accessory cleaner",
+          "desc": "A wash for feeding bottles, teats and breast-pump parts."
+        }
+      ],
+      "ar": [
+        {
+          "name": "منظف ملابس الأطفال",
+          "desc": "منظف لملابس الأطفال متاح في متجر العلامة الإلكتروني."
+        },
+        {
+          "name": "غسول زجاجات الرضاعة وملحقاتها",
+          "desc": "غسول لتنظيف زجاجات الرضاعة والحلمات وأجزاء مضخات الحليب."
+        }
+      ]
+    },
+    "pitch": {
+      "en": "Baby Star asked for EGP 3 million for 15% and outlined plans to reach international markets. The available negotiation clip shows offers and a counteroffer, but ends before a final agreement or refusal. Its deal outcome remains unconfirmed.",
+      "ar": "طلب فريق بيبي ستار 3 ملايين جنيه مقابل 15%، وتحدث عن خطته لدخول أسواق خارج مصر. ويعرض مقطع التفاوض المتاح عروضًا وردًا من المؤسسين، لكنه ينتهي قبل اتفاق أو رفض نهائي. لذلك تظل نتيجة العرض غير مؤكدة."
     }
   },
   {
@@ -12435,7 +13025,12 @@
       "amountEGP": 1000000,
       "equityPct": 10
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [],
+      "amountEGP": 1000000,
+      "equityPct": 20
+    },
     "sources": [
       "https://www.youm7.com/7203897",
       "https://www.youm7.com/7202688",
@@ -12443,9 +13038,10 @@
       "https://www.youtube.com/watch?v=64CEKfSzhSE",
       "https://www.youtube.com/watch?v=xBT8lmWdJyk",
       "https://www.youtube.com/shorts/ptQ1u-4K9DM",
-      "https://apps.apple.com/us/app/id6451365492"
+      "https://apps.apple.com/us/app/id6451365492",
+      "https://www.youtube.com/watch?v=64CEKfSzhSE&t=1230s"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "video": "64CEKfSzhSE",
     "links": {
       "facebook": "https://www.facebook.com/p/Yalla-Hagz-61550789285332/",
@@ -12518,8 +13114,13 @@
       ]
     },
     "pitch": {
-      "en": "The five young founders of Yalla Hagz, aged 17 to 22, asked for EGP 1 million for 10% of the company, valuing it at EGP 10 million. They pitched their pitch-booking app and their goal of 500 booked hours a day. The sharks gave them blunt feedback on the pitch. No public source confirms the outcome yet.",
-      "ar": "طلب مؤسسو يلا حجز الخمسة، وأعمارهم بين 17 و22 عاماً، مليون جنيه مقابل 10% من الشركة، أي بتقييم 10 ملايين جنيه. وعرضوا تطبيقهم لحجز الملاعب وهدفهم الوصول إلى 500 ساعة محجوزة يومياً. وقدّم لهم المستثمرون ملاحظات صريحة على طريقة العرض. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+      "en": "Yalla Hagz’s five founders asked for EGP 1 million for 10% to grow their sports-booking app. The sharks questioned how the team divided its management responsibilities. The founders accepted EGP 1 million for 20% at the end of the pitch; the investor’s name remains unconfirmed in this record.",
+      "ar": "طلب مؤسسو يلا حجز الخمسة مليون جنيه مقابل 10% لتوسيع تطبيق حجز الملاعب. وناقشهم المستثمرون في توزيع مسؤوليات الإدارة بين أعضاء الفريق. وفي ختام العرض وافق المؤسسون على مليون جنيه مقابل 20%، ولم يتأكد اسم المستثمر في هذا السجل بعد."
+    },
+    "photo": {
+      "url": "/startups/yalla-hagz.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=64CEKfSzhSE"
     }
   },
   {
@@ -12541,7 +13142,15 @@
       "amountEGP": 5000000,
       "equityPct": 12.5
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Aya Abdel Raouf",
+        "Mounaz Abdel Raouf"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": null
+    },
     "sources": [
       "https://www.youm7.com/7203942",
       "https://www.youm7.com/7202688",
@@ -12551,9 +13160,10 @@
       "https://sceneeats.com/Spots/This-Sheikh-Zayed-Restaurant-Is-Reviving-the-Egyptian-Deli-Concept",
       "https://enterpriseam.com/egypt-ar/2024/12/18/فينو-على-الفطار-والغداء-والعشاء/",
       "https://enterpriseam.com/egypt/2024/12/18/fino-for-breakfast-lunch-or-dinner/",
-      "https://curlytales.com/middle-east/food/egyptian-deli-fino-lands-in-new-cairo-at-c-park-mall-with-sandwiches-pastrami-more/amp/"
+      "https://curlytales.com/middle-east/food/egyptian-deli-fino-lands-in-new-cairo-at-c-park-mall-with-sandwiches-pastrami-more/amp/",
+      "https://www.youtube.com/watch?v=YcP6pAO9D-g&t=1340s"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "video": "YcP6pAO9D-g",
     "about": {
       "city": {
@@ -12614,8 +13224,13 @@
       ]
     },
     "pitch": {
-      "en": "Fino pitched in Season 4 of Shark Tank Egypt and asked for EGP 5 million. The founders presented it as a nostalgic Egyptian deli built on fresh fino bread and a fully local menu. No public source confirms the outcome yet.",
-      "ar": "قدّم فينو عرضه في الموسم الرابع من شارك تانك مصر وطلب استثمارًا بقيمة 5 ملايين جنيه. وقدّمه المؤسسون كمحل سندوتشات مصري يستحضر الحنين إلى الماضي، يعتمد على خبز الفينو الطازج وقائمة محلية بالكامل. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
+      "en": "Fino asked for EGP 5 million for 12.5% of the business. Aya and Mounaz Abdel Raouf, the founders of Okhtein, offered EGP 5 million for 17.5%. Fino’s team negotiated the percentage and accepted an investment from the sisters. The final equity percentage has not been confirmed.",
+      "ar": "طلب فريق فينو 5 ملايين جنيه مقابل 12.5% من الشركة. وعرضت آية ومناز عبد الرؤوف، مؤسستا أختين، المبلغ نفسه مقابل 17.5%. فاوضهما الفريق على النسبة ثم وافق على الاستثمار معهما. ولم تتأكد نسبة الحصة النهائية."
+    },
+    "photo": {
+      "url": "/startups/fino.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=YcP6pAO9D-g"
     }
   },
   {
@@ -12702,7 +13317,12 @@
       "en": "Ketolicious pitched its keto food brand in Season 4, presenting itself as the region's first company dedicated to keto products. The sharks were divided over the idea. No public source confirms the outcome yet.",
       "ar": "قدّمت كيتوليشس علامتها لأغذية الكيتو في الموسم الرابع، بوصفها أول شركة في المنطقة متخصصة في منتجات الكيتو. وانقسمت آراء المستثمرين حول الفكرة. ولا يوجد مصدر علني يؤكد نتيجة العرض حتى الآن."
     },
-    "video": "FRbX_n8LpdM"
+    "video": "FRbX_n8LpdM",
+    "photo": {
+      "url": "/startups/ketolicious.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=FRbX_n8LpdM"
+    }
   },
   {
     "id": "somaia-aboelezz",
@@ -12807,6 +13427,11 @@
     "pitch": {
       "en": "Somaia Aboelezz brought her wearable-art label to Shark Tank Egypt in Season 4, pitching fashion that turns ancient Egyptian heritage into modern, eco-conscious clothing with a social mission. She walked away with a deal, though the amount, equity and investing shark were not reported in the sources found.",
       "ar": "قدّمت سمية أبو العز علامتها للفن القابل للارتداء في الموسم الرابع من شارك تانك مصر، وعرضت أزياء تحوّل التراث المصري القديم إلى ملابس عصرية صديقة للبيئة ذات رسالة اجتماعية. وخرجت من البرنامج بصفقة، وإن لم تذكر المصادر المتاحة قيمتها أو نسبتها أو اسم المستثمر."
+    },
+    "photo": {
+      "url": "/startups/somaia-aboelezz.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=cWScmDWwSu0"
     }
   },
   {
@@ -13010,6 +13635,11 @@
     "video": "MdQfe17r3jg",
     "links": {
       "instagram": "https://www.instagram.com/kicknutritionegypt/"
+    },
+    "photo": {
+      "url": "/startups/kick-snacks.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=MdQfe17r3jg"
     }
   },
   {
@@ -13116,6 +13746,11 @@
     "links": {
       "instagram": "https://www.instagram.com/thinktree_chess/",
       "linkedin": "https://www.linkedin.com/company/thinktree146/"
+    },
+    "photo": {
+      "url": "/startups/think-tree.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=dkh90lT6zII"
     }
   },
   {
@@ -13181,6 +13816,11 @@
     "pitch": {
       "en": "Ahmed El-Dabbash came to Shark Tank Egypt Season 4 with an origin story the sharks noticed: a former delivery courier turned founder. He pitched Runners as an app that secures payments between couriers and merchants. He left with a deal from Abdallah Sallam, who invested EGP 500K for 20%.",
       "ar": "جاء أحمد الدباش إلى الموسم الرابع من شارك تانك مصر بقصة لفتت انتباه المستثمرين، فهو مندوب شحن سابق تحوّل إلى رائد أعمال. وعرض رانرز بوصفه تطبيقًا يؤمّن عمليات الدفع بين المندوب والتاجر. وخرج بصفقة مع عبد الله سلام الذي استثمر 500 ألف جنيه مقابل 20%."
+    },
+    "photo": {
+      "url": "/startups/runners-delivery.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=UG_eaJzIu_4"
     }
   },
   {
@@ -13305,6 +13945,11 @@
     "pitch": {
       "en": "Raymond Kamal asked the sharks for EGP 40M in exchange for 10% of EISAC Automation. He pitched Egyptian industrial-automation expertise that costs factories about a third of what a foreign expert does. EISAC left the tank without an investment, but it was later featured among the projects that proved themselves after the show.",
       "ar": "طلب ريمون كمال من المستثمرين 40 مليون جنيه مقابل 10% من إيزاك أوتوميشن. وعرض خبرة مصرية في الأتمتة الصناعية تكلّف المصانع نحو ثلث تكلفة الخبير الأجنبي. وخرجت الشركة من البرنامج دون استثمار، لكنها ظهرت لاحقًا ضمن المشاريع التي أثبتت نفسها بعد العرض."
+    },
+    "photo": {
+      "url": "/startups/eisac-automation.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/7229893"
     }
   },
   {
@@ -13411,6 +14056,11 @@
     "pitch": {
       "en": "In Season 4, Episode 10, the founder of Camli Beauty let the product speak for itself, and the sharks were impressed by its quality. The brand received strong offers in the tank and closed a deal with Abdallah Sallam. Public sources do not give the exact amount or equity.",
       "ar": "في الحلقة العاشرة من الموسم الرابع، تركت مؤسسة كاملي بيوتي المنتج يتحدث عن نفسه، وأُعجب المستثمرون بجودته. تلقّت العلامة عروضًا قوية داخل البرنامج وأتمّت صفقة مع عبد الله سلام، ولم تكشف المصادر المتاحة عن قيمة الاستثمار أو نسبة الحصة."
+    },
+    "photo": {
+      "url": "/startups/camli-beauty.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=BVq4HkY0kTQ"
     }
   },
   {
@@ -13434,9 +14084,11 @@
     },
     "deal": {
       "made": true,
-      "sharks": [],
-      "amountEGP": null,
-      "equityPct": null
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 40000000,
+      "equityPct": 40
     },
     "sources": [
       "https://www.youm7.com/7246022",
@@ -13445,9 +14097,10 @@
       "https://sharktankarabi.com/3556/",
       "https://www.youtube.com/watch?v=z7aN8DQyKxg",
       "https://misrconnect.com/en/news/egypt-news/nutrifits-on-shark-tank-egypt-4-products-and-investment-offers-up-to-40-million-egp-amid-debate-on-brand-strategy",
-      "https://www.tiktok.com/@sharktank.egypt/video/7587784443490848008"
+      "https://www.tiktok.com/@sharktank.egypt/video/7587784443490848008",
+      "https://www.youtube.com/watch?v=z7aN8DQyKxg&t=1208s"
     ],
-    "checked": "2026-10-11",
+    "checked": "2026-11-02",
     "video": "z7aN8DQyKxg",
     "links": {
       "instagram": "https://www.instagram.com/nutrifitseg/",
@@ -13508,8 +14161,8 @@
       ]
     },
     "pitch": {
-      "en": "On Season 4 of Shark Tank Egypt, Nutrifits asked for EGP 15M for 10% and pitched itself as a local factory that could replace imported health foods. Mohamed Farouk offered EGP 15M for 30%. Ahmed Tarek then offered EGP 40M for 40%, which was billed as his highest offer of the season. The sharks debated whether one strong brand would do better than a four-product line.",
-      "ar": "في الموسم الرابع من شارك تانك مصر، طلبت نيوتري فيتس 15 مليون جنيه مقابل 10%، وقدّمت نفسها مصنعًا محليًا قادرًا على أن يحلّ محل الأغذية الصحية المستوردة. عرض محمد فاروق 15 مليون جنيه مقابل 30%. ثم عرض أحمد طارق 40 مليون جنيه مقابل 40%، وهو ما وُصف بأنه أعلى عروضه في الموسم. ودار نقاش بين المستثمرين حول ما إذا كانت علامة واحدة قوية أفضل من خط من أربعة منتجات."
+      "en": "Nutrifits asked for EGP 15 million for 10%. Mohamed Farouk offered EGP 15 million for 30%, while Ahmed Tarek offered EGP 40 million for 40%. The founders chose Ahmed Tarek. Their request to raise his offer to EGP 50 million was declined, and they agreed to the original EGP 40 million deal.",
+      "ar": "طلبت نيوتري فيتس 15 مليون جنيه مقابل 10%. وعرض محمد فاروق 15 مليون جنيه مقابل 30%، بينما عرض أحمد طارق 40 مليون جنيه مقابل 40%. اختار المؤسسون أحمد طارق وحاولوا رفع المبلغ إلى 50 مليون جنيه، لكنه رفض الزيادة، فوافقوا على عرضه الأصلي بقيمة 40 مليون جنيه."
     }
   },
   {
@@ -13602,6 +14255,11 @@
           "تمتلك المؤسستان خبرة نحو 10 سنوات في التنسيق الداخلي"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/nno-home.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=RLq3zPsgENs"
     }
   },
   {
@@ -13713,6 +14371,11 @@
     "pitch": {
       "en": "Architects Ahmed El-Bably and Dina Soliman pitched Re-Blocks on Shark Tank Egypt Season 4, asking for EGP 1M for 10% of the company. They presented their recycled-plastic building blocks as a reusable alternative to throwaway event booths, backed by more than 170 builds in two years. Mohamed Farouk put several investment options to them.",
       "ar": "قدّم المعماريان أحمد البابلي ودينا سليمان مشروع ري بلوكس في الموسم الرابع من شارك تانك مصر، وطلبا مليون جنيه مقابل 10% من الشركة. عرضا مكعبات البناء المصنوعة من البلاستيك المعاد تدويره بديلاً قابلاً لإعادة الاستخدام لأجنحة الفعاليات التي تُرمى بعد انتهائها، مدعومين بأكثر من 170 مشروعاً خلال عامين. وطرح عليهما محمد فاروق عدة خيارات للاستثمار."
+    },
+    "photo": {
+      "url": "/startups/re-blocks.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/7246018"
     }
   },
   {
@@ -13852,7 +14515,12 @@
       "https://www.youtube.com/watch?v=UuAakh3uGjk"
     ],
     "checked": "2026-10-10",
-    "video": "UuAakh3uGjk"
+    "video": "UuAakh3uGjk",
+    "photo": {
+      "url": "/startups/chug-up.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=UuAakh3uGjk"
+    }
   },
   {
     "id": "plume",
@@ -13994,7 +14662,12 @@
       "https://www.tiktok.com/@sharktank.egypt/video/7604465741903056146"
     ],
     "checked": "2026-10-12",
-    "video": "6Iypwc-vS9s"
+    "video": "6Iypwc-vS9s",
+    "photo": {
+      "url": "/startups/lil-kitchen.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=6Iypwc-vS9s"
+    }
   },
   {
     "id": "the-nines",
@@ -14065,6 +14738,11 @@
           "عرضت مشروعها في الموسم الرابع من شارك تانك مصر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/the-nines.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=HtNe0hgjDqw"
     }
   },
   {
@@ -14163,6 +14841,11 @@
     "pitch": {
       "en": "On Season 4, the Wrap and Roll founders told the sharks they wanted strategic support and room to grow, not just money. Long negotiations with several sharks followed. In the end the founders accepted Bishoy Azmy's investment and closed a deal with him.",
       "ar": "في الموسم الرابع، أكد مؤسسو راب آند رول للمستثمرين أنهم يبحثون عن دعم استراتيجي وفرصة للنمو، لا عن المال فقط. وتبعت ذلك مفاوضات طويلة مع عدد من المستثمرين، وفي النهاية قبل المؤسسون استثمار بيشوي عزمي وأتموا الصفقة معه."
+    },
+    "photo": {
+      "url": "/startups/wrap-and-roll.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=7WRbxDZktJ0"
     }
   },
   {
@@ -14204,6 +14887,11 @@
     "pitch": {
       "en": "Lamarckii pitched its smart-apiary business in Season 4, Episode 18. The show's official recap confirms an on-air agreement with Ahmed Tarek Khalil and Ayman Abbas for EGP 5 million in exchange for 35% equity. The original ask is not established by the reviewed sources.",
       "ar": "عرضت لاماركي مشروع المناحل الذكية في الحلقة 18 من الموسم الرابع. وتؤكد بطاقة الملخص الرسمية للبرنامج اتفاقًا على الهواء مع أحمد طارق خليل وأيمن عباس على 5 ملايين جنيه مقابل 35% من الشركة. ولا تثبت المصادر التي جرت مراجعتها قيمة الطلب الأصلي."
+    },
+    "photo": {
+      "url": "/startups/lamarckii.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=IXuwYQNsF8M"
     }
   },
   {
@@ -14304,6 +14992,11 @@
           "صفقة مشتركة مع أحمد طارق خليل وأيمن عباس"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/callista.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=SszSyqiQJNc"
     }
   },
   {
@@ -14410,6 +15103,11 @@
           "تشكيلة تضم بسكويت الفاكهة والمعمول المحشو ولفائف الويفر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/didos-snacks.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=e1huH9yeMyo"
     }
   },
   {
@@ -14471,12 +15169,17 @@
           "صفقة مع محمد فاروق وأحمد طارق خليل"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/frupops.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=NX5b0YnauvY"
     }
   },
   {
     "id": "sphinx-safety",
     "season": 4,
-    "episode": null,
+    "episode": 15,
     "name": {
       "en": "Sphinx",
       "ar": "سفنكس"
@@ -14489,25 +15192,36 @@
     "founders": [],
     "website": "https://sphinx-safety.com/",
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 10000000,
+      "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Ahmed Tarek Khalil",
+        "Bishoy Azmy"
+      ],
+      "amountEGP": 10000000,
+      "equityPct": 35
+    },
     "sources": [
       "https://www.youtube.com/watch?v=rH7DTmyTczc",
       "https://www.tiktok.com/@cbcegypt/video/7595302389981121813",
       "https://sharktankarabi.com/3738/",
       "https://www.youtube.com/shorts/Z5Krn4w37cA",
-      "https://www.youtube.com/watch?v=KXVMX6wsNw8"
+      "https://www.youtube.com/watch?v=KXVMX6wsNw8",
+      "https://www.youtube.com/watch?v=KXVMX6wsNw8&t=1357s",
+      "https://www.tiktok.com/@sharktank.egypt/video/7595249636399385863"
     ],
-    "checked": "2026-10-10",
-    "video": "Z5Krn4w37cA",
+    "checked": "2026-11-02",
+    "video": "KXVMX6wsNw8",
     "links": {
       "facebook": "https://www.facebook.com/sphinxsafety/"
     },
     "pitch": {
-      "en": "In Season 4, Sphinx pitched itself as the first Egyptian company to make safety shoes entirely in Egypt, positioning its product as a local rival to imported brands. The pitch sparked competition among several sharks who wanted to invest. The record does not include the exact ask or the final deal terms.",
-      "ar": "في الموسم الرابع، قدّمت سفنكس نفسها على أنها أول شركة مصرية تصنّع أحذية السلامة بالكامل داخل مصر، وطرحت منتجها كمنافس محلي للعلامات المستوردة. وأثار العرض تنافسًا بين عدد من المستثمرين الراغبين في الاستثمار فيها. ولا يتضمن السجل الحالي قيمة الطلب الدقيقة ولا الشروط النهائية للصفقة."
+      "en": "Sphinx asked for EGP 10 million for 25% of its safety-shoe business. After competing offers, the team chose a joint investment from Ayman Abbas, Ahmed Tarek Khalil and Bishoy Azmy: EGP 10 million for 35%. A 2% royalty was discussed during negotiations, but the closing exchange does not establish whether it remained part of the agreement.",
+      "ar": "طلب فريق سفنكس 10 ملايين جنيه مقابل 25% من شركة أحذية السلامة. وبعد عدة عروض، اختار استثمارًا مشتركًا من أيمن عباس وأحمد طارق خليل وبيشوي عزمي بقيمة 10 ملايين جنيه مقابل 35%. وطُرحت إتاوة بنسبة 2% أثناء التفاوض، لكن الحديث الختامي لا يحسم إن كانت ضمن الاتفاق النهائي."
     },
     "photo": {
       "url": "/startups/sphinx-safety.jpg",
@@ -14651,6 +15365,11 @@
           "شاركت في الموسم الرابع من شارك تانك مصر"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/jouzoor.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=eAk2iuJ57mA"
     }
   },
   {
@@ -14839,7 +15558,12 @@
       "en": "Bokaah Home pitched in Season 4, Episode 19 as a clothing brand that blurs the line between homewear and going-out wear. It was presented together with Callista as one of two projects representing 2026 fashion trends. The show's official recap confirms an on-air agreement with Mohamed Farouk and Hend Sabry for EGP 4 million in exchange for 40% equity. The original ask is not established by the reviewed sources.",
       "ar": "قدّمت بوكا هوم عرضها في الحلقة 19 من الموسم الرابع بوصفها علامة ملابس تجمع بين ملابس البيت وملابس الخروج. وعُرضت إلى جانب كاليستا كأحد مشروعين يمثلان صيحات الموضة لعام 2026. وتؤكد بطاقة الملخص الرسمية للبرنامج اتفاقًا على الهواء مع محمد فاروق وهند صبري على 4 ملايين جنيه مقابل 40% من الشركة. ولا تثبت المصادر التي جرت مراجعتها قيمة الطلب الأصلي."
     },
-    "video": "m8o-D7LTlQ4"
+    "video": "m8o-D7LTlQ4",
+    "photo": {
+      "url": "/startups/boka-home.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=m8o-D7LTlQ4"
+    }
   },
   {
     "id": "og-bees",
@@ -15017,6 +15741,11 @@
           "متوفر على أمازون مصر وتضاعفت مبيعاته وفق التقارير"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/iron-mist.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=OyAcwe7uYW8"
     }
   },
   {
@@ -15114,6 +15843,11 @@
           "ضمن قائمة إنتربرايز لعلامات الأثاث المحلية"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/bohome.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=jdDiZBDdz-E"
     }
   },
   {
@@ -15205,19 +15939,24 @@
           "بيع مباشر للمستهلكين عبر الإنترنت وإنستغرام"
         ]
       }
+    },
+    "photo": {
+      "url": "/startups/drip-yourself.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=o3dtI3l9Nks"
     }
   },
   {
     "id": "amis-bakery",
     "season": 4,
-    "episode": null,
+    "episode": 13,
     "name": {
       "en": "Ami's Bakery",
       "ar": "إيميز بيكري"
     },
     "description": {
-      "en": "Ami's Bakery is a Cairo bakery that bills itself as Egypt's first cookie-cake brand. Sisters Amira and Soha Abaza started it in their home kitchen and pitched it to the sharks in Season 4.",
-      "ar": "إيميز بيكري مخبز في القاهرة يقدّم نفسه كأول علامة لكعكة الكوكيز في مصر. بدأته الأختان أميرة وسها أباظة من مطبخ البيت، وعرضتاه على الشاركس في الموسم الرابع."
+      "en": "Ami’s Bakery makes large cookie cakes for sharing, a format sisters Amira and Soha Abaza developed after starting with online cookie orders from their home kitchen. By its Shark Tank appearance, the Cairo bakery was preparing dough in a central kitchen and finishing products in its store. During its Season 4 pitch, the team reported EGP 5 million in sales over ten months.",
+      "ar": "تقدّم إيميز بيكري كعكات كوكيز كبيرة للمشاركة، طوّرتها الأختان أميرة وسها أباظة بعد البداية بطلبات كوكيز أونلاين من مطبخ البيت. ويجهّز المخبز القاهري العجين في مطبخ مركزي، ثم يستكمل تحضير المنتجات في متجره. وخلال عرضه في الموسم الرابع، ذكر الفريق أنه حقق مبيعات بقيمة 5 ملايين جنيه في عشرة أشهر."
     },
     "category": "Food",
     "founders": [
@@ -15226,21 +15965,32 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 2000000,
+      "equityPct": 15
     },
     "deal": null,
     "sources": [
       "https://sharktankarabi.com/3632/",
       "https://www.youtube.com/watch?v=W-O4_C9Qzgo",
       "https://www.instagram.com/amisbakery_/",
-      "https://www.facebook.com/Amisbakery.eg/"
+      "https://www.facebook.com/Amisbakery.eg/",
+      "https://www.tiktok.com/@sharktank.egypt/video/7590484043221781778",
+      "https://www.tiktok.com/@sharktank.egypt/video/7590487372274339079"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-02",
     "video": "W-O4_C9Qzgo",
     "links": {
       "instagram": "https://www.instagram.com/amisbakery_/",
       "facebook": "https://www.facebook.com/Amisbakery.eg/"
+    },
+    "photo": {
+      "url": "/startups/amis-bakery.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=W-O4_C9Qzgo"
+    },
+    "pitch": {
+      "en": "Amira and Soha Abaza asked for EGP 2 million for 15% in Season 4, Episode 13. They wanted to expand their kitchen’s production capacity so they could take more catering and business orders and supply retailers. The available sources do not confirm the final deal outcome.",
+      "ar": "طلبت أميرة وسها أباظة مليوني جنيه مقابل 15% في الحلقة الثالثة عشرة من الموسم الرابع. وأرادتا زيادة الطاقة الإنتاجية للمطبخ لتلبية مزيد من طلبات المناسبات والشركات والتوريد للمتاجر. ولا تؤكد المصادر المتاحة النتيجة النهائية للعرض."
     }
   },
   {
@@ -15277,7 +16027,12 @@
       "https://www.youtube.com/watch?v=qXRV_FmNWQk"
     ],
     "checked": "2026-10-11",
-    "video": "qXRV_FmNWQk"
+    "video": "qXRV_FmNWQk",
+    "photo": {
+      "url": "/startups/naydin.jpg",
+      "credit": "CBC · Shark Tank Egypt",
+      "creditUrl": "https://www.youtube.com/watch?v=qXRV_FmNWQk"
+    }
   },
   {
     "id": "aftah-topic",
@@ -15325,7 +16080,12 @@
       "en": "In Season 5, Episode 1, brothers Ali and Hassan Ayman pitched Aftah Topic, a homegrown party-game brand that had grown from one game to six. They asked for EGP 2,000,000 in exchange for 15% equity, which values the company at about EGP 13.3 million. The show's official recap confirms an on-air agreement with Mohamed Farouk and Abdallah Sallam for EGP 2 million at 25% equity, falling to 20% if the agreed targets are met, plus a 2% usage fee. The card does not specify the targets or the fee calculation base.",
       "ar": "في الحلقة الأولى من الموسم الخامس، قدّم الأخوان علي وحسن أيمن «افتح توبك»، وهي علامة مصرية لألعاب الحفلات نمت من لعبة واحدة إلى ست ألعاب. طلبا مليوني جنيه مقابل 15% من الشركة، أي بتقييم يقارب 13.3 مليون جنيه. وتؤكد بطاقة الملخص الرسمية للبرنامج اتفاقًا على الهواء مع محمد فاروق وعبد الله سلام على مليوني جنيه مقابل 25%، تنخفض إلى 20% عند تحقيق الأرقام المتفق عليها، بالإضافة إلى رسوم استخدام بنسبة 2%. ولا تحدد البطاقة تلك الأرقام أو أساس احتساب الرسوم."
     },
-    "video": "HzpB9MINqnc"
+    "video": "HzpB9MINqnc",
+    "photo": {
+      "url": "/startups/aftah-topic.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/7571670"
+    }
   },
   {
     "id": "connecto",
@@ -15458,6 +16218,11 @@
     "links": {
       "instagram": "https://www.instagram.com/olympic.sports.eg/",
       "facebook": "https://www.facebook.com/profile.php?id=61565885369216"
+    },
+    "photo": {
+      "url": "/startups/olympic-sports.jpg",
+      "credit": "CBC · Youm7",
+      "creditUrl": "https://www.youm7.com/story/2026/10/7/%D8%B4%D8%A7%D8%B1%D9%83-%D8%AA%D8%A7%D9%86%D9%83-%D8%B2%D9%8A%D8%A7%D8%AF-%D8%A7%D9%84%D8%A8%D8%B3%D9%8A%D9%88%D9%86%D9%8A-%C2%AB%D8%A3%D9%88%D9%84%D9%85%D8%A8%D9%8A%D9%83-%D8%B3%D8%A8%D9%88%D8%B1%D8%AA%D8%B3%C2%BB-%D8%AE%D8%AF%D9%85%D8%AA-%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-250/7571708"
     }
   },
   {

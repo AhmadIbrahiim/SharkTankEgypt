@@ -31,6 +31,28 @@ await test('home lists startups, 24 per page, show more adds more', async () => 
   assert.equal((await visibleNames(p)).length, 24);
   await p.click('#more'); assert.ok((await visibleNames(p)).length > 24);
 });
+await test('local startup images appear on cards, heroes and share cards, with a video fallback', async () => {
+  for (const prefix of ['en/', '']) {
+    const p = await page();
+    for (const [id, name, image] of [['countrys', "Country's", '/startups/countrys.jpg'], ['nutrifits', 'Nutrifits', '/screenshots/nutrifits.jpg']]) {
+      await p.goto(`${U}/${prefix}?q=${encodeURIComponent(name)}`);
+      assert.equal(await p.locator(`#grid a[href="${BASE}/${prefix}${id}/"] img.shot`).getAttribute('src'), `${BASE}${image}`);
+      await p.goto(`${U}/${prefix}${id}/`);
+      assert.equal(await p.locator('.stage img.bg').getAttribute('src'), `${BASE}${image}`);
+      assert.ok(await p.locator('.stage img.bg').evaluate((img) => img.complete && img.naturalWidth > 0));
+      assert.equal(JSON.parse(await p.locator('#og-card').textContent()).shot, image);
+    }
+    await p.goto(`${U}/${prefix}founders/sameh-radwan/`);
+    assert.equal(await p.locator('.stage img.bg').getAttribute('src'), `${BASE}/startups/zonta.jpg`);
+    await p.route('https://i.ytimg.com/**', (r) => r.fulfill({ contentType: 'image/jpeg', body: readFileSync('public/startups/countrys.jpg') }));
+    await p.route('**/startups/countrys.jpg', (r) => r.abort());
+    await p.goto(`${U}/${prefix}?q=Country%27s`);
+    await p.waitForFunction(() => document.querySelector('#grid a[href$="/countrys/"] img.shot')?.src.startsWith('https://i.ytimg.com/'));
+    await p.goto(`${U}/${prefix}countrys/`);
+    await p.waitForFunction(() => document.querySelector('.stage img.bg')?.src.startsWith('https://i.ytimg.com/'));
+    await p.close();
+  }
+});
 await test('announced startups have searchable bilingual profiles without unverified deals', async () => {
   const previews = JSON.parse(readFileSync('src/data/episode-previews.json', 'utf8'));
   const aired = JSON.parse(readFileSync('src/data/startups.json', 'utf8'));
