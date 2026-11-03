@@ -16741,14 +16741,24 @@
       "amountEGP": 15000000,
       "equityPct": 25
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 30
+    },
     "sources": [
       "https://www.youtube.com/watch?v=gWJARShwOng",
       "https://www.tiktok.com/@sharktank.egypt/video/7701786870635597063",
       "https://apps.apple.com/app/id6446203522",
-      "https://www.youm7.com/7597631"
+      "https://www.youm7.com/7597631",
+      "https://www.youtube.com/watch?v=rTcdQSMWqJw",
+      "https://sharktankarabi.com/5494/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-4-broadcast-2026-10-28.md"
     ],
-    "checked": "2026-10-29",
+    "checked": "2026-11-04",
     "links": {
       "appStore": "https://apps.apple.com/app/id6446203522"
     },
@@ -16806,8 +16816,8 @@
       ]
     },
     "pitch": {
-      "en": "In Season 5, Episode 4, Ahmed Kadah asked for EGP 15 million for 25%, which values Lolo at EGP 60 million. He said he started the app about three years ago after noticing that the videos his two daughters watched online were random and full of ads, and that he could not find enough safe content in Arabic. He put sales at EGP 4.5 million so far this year and EGP 3 million last year, quoted a 60% net margin, and said he expects to close 2026 at EGP 15 million once school contracts come in. Most content is in Modern Standard Arabic, about half the users are outside Egypt, and he wants the money for a production studio. The sharks liked the content, and Hala El-Kasem and Mohamed Farouk suggested content for children with ADHD, but Ayman Abbas called the valuation far too high. The official summary ends before the offers are settled, so the outcome is not yet recorded.",
-      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب أحمد قداح 15 مليون جنيه مقابل 25%، أي بتقييم 60 مليون جنيه للولو. قال إنه بدأ التطبيق قبل نحو ثلاث سنوات، بعد أن لاحظ أن ما تشاهده بنتاه على الإنترنت محتوى عشوائي مليء بالإعلانات، ولم يجد ما يكفي من محتوى عربي آمن. ذكر مبيعات 4.5 مليون جنيه حتى الآن هذا العام و3 ملايين العام الماضي وصافي ربح 60%، وتوقع أن يقفل 2026 عند 15 مليونًا مع عقود المدارس. معظم المحتوى بالفصحى، ونحو نصف المستخدمين خارج مصر، ويريد الاستثمار لبناء استوديو إنتاج. أعجب الشاركس بالمحتوى، واقترحت هالة القاسم ومحمد فاروق محتوى مخصصًا للأطفال المصابين بفرط الحركة وتشتت الانتباه، لكن أيمن عباس رأى التقييم مبالغًا فيه. ينتهي الملخص الرسمي قبل حسم العروض، فالنتيجة لم تُسجَّل بعد."
+      "en": "In Season 5, Episode 4, Ahmed Kadah asked for EGP 15 million for 25%, which values Lolo at EGP 60 million. He said he started the app about three years ago after noticing that the videos his two daughters watched online were random and full of ads, and that he could not find enough safe content in Arabic. He put sales at EGP 4.5 million so far this year and EGP 3 million last year, quoted a 60% net margin, and said he expects to close 2026 at EGP 15 million once school contracts come in. Most content is in Modern Standard Arabic, about half the users are outside Egypt, and he wants the money for a production studio. The sharks liked the content, and Hala El-Kasem and Mohamed Farouk suggested content for children with ADHD, but Ayman Abbas called the valuation far too high. Ahmed Tarek Khalil initially offered EGP 3 million for 30%, with three years of studio support. The negotiation raised the cash investment to EGP 5 million, alongside EGP 10 million in studio and production support over three years, for 30%. The equity could fall to 25% if agreed performance targets are met. Ahmed confirmed after the pitch that he had secured a deal. The recorded investment amount is the EGP 5 million cash portion; the production support is additional.",
+      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب أحمد قداح 15 مليون جنيه مقابل 25%، أي بتقييم 60 مليون جنيه للولو. قال إنه بدأ التطبيق قبل نحو ثلاث سنوات، بعد أن لاحظ أن ما تشاهده بنتاه على الإنترنت محتوى عشوائي مليء بالإعلانات، ولم يجد ما يكفي من محتوى عربي آمن. ذكر مبيعات 4.5 مليون جنيه حتى الآن هذا العام و3 ملايين العام الماضي وصافي ربح 60%، وتوقع أن يقفل 2026 عند 15 مليونًا مع عقود المدارس. معظم المحتوى بالفصحى، ونحو نصف المستخدمين خارج مصر، ويريد الاستثمار لبناء استوديو إنتاج. أعجب الشاركس بالمحتوى، واقترحت هالة القاسم ومحمد فاروق محتوى مخصصًا للأطفال المصابين بفرط الحركة وتشتت الانتباه، لكن أيمن عباس رأى التقييم مبالغًا فيه. عرض أحمد طارق خليل في البداية 3 ملايين جنيه مقابل 30%، مع دعم استوديو لمدة ثلاث سنوات. وبعد التفاوض، ارتفع الاستثمار النقدي إلى 5 ملايين جنيه، إلى جانب دعم للاستوديو والإنتاج بقيمة 10 ملايين جنيه على مدى ثلاث سنوات، مقابل 30%. ويمكن أن تنخفض الحصة إلى 25% عند تحقيق أهداف أداء يتفق عليها الطرفان. وأكد أحمد بعد العرض أنه حصل على صفقة. المبلغ المسجّل هو الاستثمار النقدي البالغ 5 ملايين جنيه، ودعم الإنتاج يُضاف إليه."
     },
     "photo": {
       "url": "/startups/lolo-kids.jpg",
@@ -16845,9 +16855,12 @@
       "https://www.linkedin.com/company/venduo-fashion",
       "https://venduo.net/about",
       "https://techafricanews.com/2026/08/10/venduo-processes-egp-40m-in-transactions-as-digital-b2b-fashion-marketplace-expands/",
-      "https://www.youm7.com/7597659"
+      "https://www.youm7.com/7597659",
+      "https://www.youtube.com/watch?v=tHbF7YiD0R8",
+      "https://sharktankarabi.com/5520/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-4-broadcast-2026-10-28.md"
     ],
-    "checked": "2026-10-29",
+    "checked": "2026-11-04",
     "links": {
       "instagram": "https://www.instagram.com/venduo_fashion",
       "linkedin": "https://www.linkedin.com/company/venduo-fashion",
@@ -16904,8 +16917,8 @@
       ]
     },
     "pitch": {
-      "en": "In Season 5, Episode 4, co-founder and CEO Khaled asked for EGP 5 million for 10%, which values Venduo at EGP 50 million. He said Egypt's garment sector has more than 100,000 factories, workshops and fabric traders, but fewer than 3% have any data online, so brands spend weeks or months looking for the right supplier. Venduo says it has about 12,000 brands and factories and more than EGP 50 million in transactions, without spending on marketing. Revenue comes from factory subscriptions, about EGP 650,000, plus a cost-estimating tool for brands, released days before filming, which brought the total to about EGP 800,000 over two months. He plans to hold payments in escrow until a factory delivers. Khaled said the idea came from his mother's clothing brand, which failed over supply problems, and from his own work in sourcing and ERP. Hala El-Kasem made an offer, after which Abdallah Sallam stepped back, saying Venduo’s interest lay with her, and Ayman Abbas came in with a competing offer. Youm7 reported that Khaled was offered EGP 10 million for 20%, without naming the shark or saying whether he accepted, and the show's clips stop before he chooses, so the outcome is not yet recorded.",
-      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب خالد، الشريك المؤسس والرئيس التنفيذي، 5 ملايين جنيه مقابل 10%، أي بتقييم 50 مليون جنيه لفاندو. قال إن صناعة الملابس في مصر فيها أكثر من 100 ألف مصنع وورشة وتاجر قماش، لكن أقل من 3% منهم لهم بيانات على الإنترنت، فيقضي البراند أسابيع أو شهورًا في البحث عن المورد المناسب. تقول فاندو إن عليها نحو 12 ألف براند ومصنع وتعاملات تتجاوز 50 مليون جنيه، من غير إنفاق على التسويق. يأتي الدخل من اشتراكات المصانع، نحو 650 ألف جنيه، ومن أداة لتقدير التكلفة للبراندات أُطلقت قبل التصوير بأيام، فوصل الإجمالي إلى نحو 800 ألف جنيه في شهرين. ويخطط لأن تحتفظ المنصة بالمدفوعات حتى يسلّم المصنع البضاعة. قال خالد إن الفكرة جاءت من تجربة والدته التي فشلت علامتها للملابس بسبب مشاكل التوريد، ومن عمله في التوريد وأنظمة ERP. قدمت هالة القاسم عرضًا، فانسحب عبد الله سلام لأنه رأى أن مصلحة فاندو معها، ثم قدّم أيمن عباس عرضًا منافسًا. وذكر اليوم السابع أن خالد تلقّى عرضًا بـ10 ملايين جنيه مقابل 20%، من غير أن يسمّي الشارك أو يذكر هل قبل العرض، وتتوقف مقاطع البرنامج قبل أن يختار، فالنتيجة لم تُسجَّل بعد."
+      "en": "In Season 5, Episode 4, co-founder and CEO Khaled asked for EGP 5 million for 10%, which values Venduo at EGP 50 million. He said Egypt's garment sector has more than 100,000 factories, workshops and fabric traders, but fewer than 3% have any data online, so brands spend weeks or months looking for the right supplier. Venduo says it has about 12,000 brands and factories and more than EGP 50 million in transactions, without spending on marketing. Revenue comes from factory subscriptions, about EGP 650,000, plus a cost-estimating tool for brands, released days before filming, which brought the total to about EGP 800,000 over two months. He plans to hold payments in escrow until a factory delivers. Khaled said the idea came from his mother's clothing brand, which failed over supply problems, and from his own work in sourcing and ERP. An earlier offer matched the EGP 5 million ask for 30%. Hala El-Kasem then offered the requested EGP 5 million for 10%, and Abdallah Sallam stepped back in her favour. Ayman Abbas offered EGP 10 million for 30%; Khaled countered with EGP 10 million for 20%. Youm7 described the 10-million-for-20% terms as an offer, but the full-episode transcript ends this discussion after Khaled’s counterproposal and does not establish which offer, if any, he accepted. The outcome remains unconfirmed.",
+      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب خالد، الشريك المؤسس والرئيس التنفيذي، 5 ملايين جنيه مقابل 10%، أي بتقييم 50 مليون جنيه لفاندو. قال إن صناعة الملابس في مصر فيها أكثر من 100 ألف مصنع وورشة وتاجر قماش، لكن أقل من 3% منهم لهم بيانات على الإنترنت، فيقضي البراند أسابيع أو شهورًا في البحث عن المورد المناسب. تقول فاندو إن عليها نحو 12 ألف براند ومصنع وتعاملات تتجاوز 50 مليون جنيه، من غير إنفاق على التسويق. يأتي الدخل من اشتراكات المصانع، نحو 650 ألف جنيه، ومن أداة لتقدير التكلفة للبراندات أُطلقت قبل التصوير بأيام، فوصل الإجمالي إلى نحو 800 ألف جنيه في شهرين. ويخطط لأن تحتفظ المنصة بالمدفوعات حتى يسلّم المصنع البضاعة. قال خالد إن الفكرة جاءت من تجربة والدته التي فشلت علامتها للملابس بسبب مشاكل التوريد، ومن عمله في التوريد وأنظمة ERP. طُرح أولًا عرض بالمبلغ المطلوب، 5 ملايين جنيه، مقابل 30%. ثم عرضت هالة القاسم 5 ملايين جنيه مقابل 10% كما طلب خالد، وانسحب عبد الله سلام لأنه رأى أن مصلحة المشروع معها. وعرض أيمن عباس 10 ملايين جنيه مقابل 30%، فاقترح خالد المبلغ نفسه مقابل 20%. وصف اليوم السابع شروط الـ10 ملايين مقابل 20% بأنها عرض استثماري، لكن تفريغ الحلقة الكاملة يتوقف عند اقتراح خالد ولا يوضح أي عرض قبله، إن كان قد قبل عرضًا. لذلك تبقى النتيجة غير مؤكدة."
     }
   },
   {
@@ -16934,9 +16947,14 @@
       "https://www.youtube.com/watch?v=gWJARShwOng",
       "https://www.tiktok.com/@sharktank.egypt/video/7701800092860304658",
       "https://invest-gate.me/news/tatweer-misr-concludes-7th-innovation-competition-honouring-egypts-next-generation-of-entrepreneurs/",
-      "https://www.youm7.com/7597687"
+      "https://www.youm7.com/7597687",
+      "https://www.youtube.com/watch?v=CjyFyXjxIjM",
+      "https://www.youtube.com/watch?v=Mxh8PHBvvdA",
+      "https://sharktankarabi.com/5536/",
+      "https://sharktankarabi.com/5558/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-4-broadcast-2026-10-28.md"
     ],
-    "checked": "2026-10-29",
+    "checked": "2026-11-04",
     "about": {
       "highlights": {
         "en": [
@@ -16974,8 +16992,8 @@
       ]
     },
     "pitch": {
-      "en": "In Season 5, Episode 4, Bassem Okasha asked for EGP 2 million for 25%, which values ProTile at EGP 8 million. He said the Shaq El-Thoban stone district produces about 2 million tonnes of solid waste a year, and that fewer than 5% of Egyptian buildings are insulated. After 24 years in marble and granite, 14 of them abroad, he built a prototype two years ago, joined a UNDP programme and won the Tatweer Misr competition in June. ProTile launched in May and has sold EGP 1.2 million; he is aiming for EGP 7 million in 2026 and EGP 80 million a year by 2027–28. He prices it at EGP 2,000 to 3,000 per square metre installed, against at least EGP 4,500 for a natural stone facade on a steel frame, with net margins of 20–25%. The sharks spent a long stretch working through installation costs, and one shark said developers in Egypt need to rethink facade materials because of maintenance costs. The official summary ends before any offers, so the outcome is not yet recorded.",
-      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب باسم عكاشة مليوني جنيه مقابل 25%، أي بتقييم 8 ملايين جنيه لبروتايل. قال إن منطقة شق الثعبان تخلّف نحو مليوني طن من المخلفات الصلبة كل سنة، وإن أقل من 5% من المباني في مصر معزولة. بعد 24 سنة في صناعة الرخام والجرانيت، منها 14 سنة خارج مصر، صنع نموذجًا أوليًا قبل سنتين، ودخل برنامجًا مع UNDP، وفاز بمسابقة تطوير مصر في يونيو. أطلق المنتج في مايو وباع بـ1.2 مليون جنيه، ويستهدف 7 ملايين في 2026 و80 مليونًا سنويًا بحلول 2027–2028. يبيع المتر بين 2000 و3000 جنيه شامل التركيب، مقابل 4500 جنيه على الأقل لواجهة حجر طبيعي على شاسيه حديد، بصافي ربح 20–25%. قضى الشاركس وقتًا طويلًا في حساب تكلفة التركيب، وقال أحد الشاركس إن المطورين في مصر يحتاجون إلى مراجعة خامات الواجهات بسبب تكلفة الصيانة. ينتهي الملخص الرسمي قبل أي عروض، فالنتيجة لم تُسجَّل بعد."
+      "en": "In Season 5, Episode 4, Bassem Okasha asked for EGP 2 million for 25%, which values ProTile at EGP 8 million. He said the Shaq El-Thoban stone district produces about 2 million tonnes of solid waste a year, and that fewer than 5% of Egyptian buildings are insulated. After 24 years in marble and granite, 14 of them abroad, he built a prototype two years ago, joined a UNDP programme and won the Tatweer Misr competition in June. ProTile launched in May and has sold EGP 1.2 million; he is aiming for EGP 7 million in 2026 and EGP 80 million a year by 2027–28. He prices it at EGP 2,000 to 3,000 per square metre installed, against at least EGP 4,500 for a natural stone facade on a steel frame, with net margins of 20–25%. The sharks spent a long stretch working through installation costs, and one shark said developers in Egypt need to rethink facade materials because of maintenance costs. Mohamed Farouk offered an investment for 40% equity plus a 2% royalty, along with a production line at his stone factory and help reaching consultants. The transcript does not capture the investment amount. A five-year royalty period was discussed, followed by a proposal to shorten it to two and a half years. Abdallah Sallam offered to trial the product in a project, while saying he could not commit to an equity investment yet. The closing exchange suggests Bassem intended to proceed with Farouk, but does not clearly establish acceptance or the final terms, so the outcome remains unconfirmed.",
+      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب باسم عكاشة مليوني جنيه مقابل 25%، أي بتقييم 8 ملايين جنيه لبروتايل. قال إن منطقة شق الثعبان تخلّف نحو مليوني طن من المخلفات الصلبة كل سنة، وإن أقل من 5% من المباني في مصر معزولة. بعد 24 سنة في صناعة الرخام والجرانيت، منها 14 سنة خارج مصر، صنع نموذجًا أوليًا قبل سنتين، ودخل برنامجًا مع UNDP، وفاز بمسابقة تطوير مصر في يونيو. أطلق المنتج في مايو وباع بـ1.2 مليون جنيه، ويستهدف 7 ملايين في 2026 و80 مليونًا سنويًا بحلول 2027–2028. يبيع المتر بين 2000 و3000 جنيه شامل التركيب، مقابل 4500 جنيه على الأقل لواجهة حجر طبيعي على شاسيه حديد، بصافي ربح 20–25%. قضى الشاركس وقتًا طويلًا في حساب تكلفة التركيب، وقال أحد الشاركس إن المطورين في مصر يحتاجون إلى مراجعة خامات الواجهات بسبب تكلفة الصيانة. عرض محمد فاروق استثمارًا مقابل 40% من الشركة وإتاوة بنسبة 2%، مع تجهيز خط إنتاج في مصنعه للحجر والمساعدة في الوصول إلى الاستشاريين. لا يلتقط التفريغ مبلغ الاستثمار. وناقش الطرفان إلغاء الإتاوة بعد خمس سنوات، ثم طُرح تقصير المدة إلى سنتين ونصف. وعرض عبد الله سلام تجربة المنتج في أحد المشروعات، مع توضيحه أنه لا يستطيع الالتزام باستثمار مقابل حصة في الشركة وقتها. يوحي الحديث الختامي بأن باسم كان ينوي العمل مع فاروق، لكنه لا يحسم قبول العرض أو شروطه النهائية، لذلك تبقى النتيجة غير مؤكدة."
     },
     "photo": {
       "url": "/startups/protile.jpg",
@@ -17002,14 +17020,24 @@
       "amountEGP": 400000,
       "equityPct": 20
     },
-    "deal": null,
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Hala El-Kasem"
+      ],
+      "amountEGP": 500000,
+      "equityPct": 40
+    },
     "sources": [
       "https://www.youtube.com/watch?v=gWJARShwOng",
       "https://www.tiktok.com/@sharktank.egypt/video/7701802838992719112",
       "https://www.tiktok.com/@sharktank.egypt/video/7701806579900779783",
-      "https://www.youm7.com/7597712"
+      "https://www.youm7.com/7597712",
+      "https://www.youtube.com/watch?v=lbhHxRIaC8Y",
+      "https://sharktankarabi.com/5512/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-4-broadcast-2026-10-28.md"
     ],
-    "checked": "2026-10-29",
+    "checked": "2026-11-04",
     "about": {
       "founded": 2024,
       "highlights": {
@@ -17056,8 +17084,8 @@
       ]
     },
     "pitch": {
-      "en": "In Season 5, Episode 4, Karim, a 17-year-old who gave only his first name on air, asked for EGP 400,000 for 20%, which values Scentora at EGP 2 million. He started the brand in 2024 after noticing that home fragrance in Egypt was either expensive imports or local products with little to set them apart, and built it around handmade Egyptian pottery. He said he has sold about 1,200 units for EGP 600,000 in total, with a 61% gross margin and a 38% net margin, and that buying raw materials in small batches keeps costs high. He runs the business from home on weekends around school, with help from his siblings and friends, and wants the money to scale production and rent a workspace. The sharks praised his presentation; one who had backed a scented-candle brand in Season 1 warned that candles alone are a limited market and suggested other home products made in the same pottery workshops. The official summary ends as an offer begins. Youm7 reported an offer of EGP 500,000 for 40%, without naming the shark or saying whether Karim accepted, so the outcome is not yet recorded.",
-      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب كريم، وعمره 17 سنة ولم يذكر سوى اسمه الأول على الهواء، 400 ألف جنيه مقابل 20%، أي بتقييم مليوني جنيه لسنتورا. بدأ العلامة في 2024 بعد أن لاحظ أن الروائح المنزلية في مصر إما مستوردة بأسعار عالية وإما محلية لا يميزها شيء، وبناها حول الفخار المصري اليدوي. قال إنه باع نحو 1200 قطعة بإجمالي 600 ألف جنيه، بهامش ربح إجمالي 61% وصافٍ 38%، وإن شراء الخامات بكميات صغيرة يرفع التكلفة. يدير المشروع من البيت في عطلات نهاية الأسبوع إلى جانب المدرسة، بمساعدة إخوته وأصحابه، ويريد الاستثمار لزيادة الإنتاج واستئجار مكان للعمل. أشاد الشاركس بعرضه، ونبّهه أحدهم، وكان قد استثمر في علامة شموع معطرة في الموسم الأول، إلى أن سوق الشموع وحدها محدود، واقترح منتجات منزلية أخرى من ورش الفخار نفسها. ينتهي الملخص الرسمي مع بداية أحد العروض. وذكر اليوم السابع عرضًا بـ500 ألف جنيه مقابل 40%، من غير أن يسمّي الشارك أو يذكر هل قبله كريم، فالنتيجة لم تُسجَّل بعد."
+      "en": "In Season 5, Episode 4, Karim, a 17-year-old who gave only his first name on air, asked for EGP 400,000 for 20%, which values Scentora at EGP 2 million. He started the brand in 2024 after noticing that home fragrance in Egypt was either expensive imports or local products with little to set them apart, and built it around handmade Egyptian pottery. He said he has sold about 1,200 units for EGP 600,000 in total, with a 61% gross margin and a 38% net margin, and that buying raw materials in small batches keeps costs high. He runs the business from home on weekends around school, with help from his siblings and friends, and wants the money to scale production and rent a workspace. The sharks praised his presentation; one who had backed a scented-candle brand in Season 1 warned that candles alone are a limited market and suggested other home products made in the same pottery workshops. Karim accepted Hala El-Kasem’s offer of EGP 500,000 for 40%, with help selling through her stores so he could focus on school and product development. Mohamed Farouk separately offered to supply wax with payment deferred until the products were sold. Karim confirmed after the pitch that he chose Hala’s deal because it addressed his costs and expansion plans.",
+      "ar": "في الحلقة الرابعة من الموسم الخامس، طلب كريم، وعمره 17 سنة ولم يذكر سوى اسمه الأول على الهواء، 400 ألف جنيه مقابل 20%، أي بتقييم مليوني جنيه لسنتورا. بدأ العلامة في 2024 بعد أن لاحظ أن الروائح المنزلية في مصر إما مستوردة بأسعار عالية وإما محلية لا يميزها شيء، وبناها حول الفخار المصري اليدوي. قال إنه باع نحو 1200 قطعة بإجمالي 600 ألف جنيه، بهامش ربح إجمالي 61% وصافٍ 38%، وإن شراء الخامات بكميات صغيرة يرفع التكلفة. يدير المشروع من البيت في عطلات نهاية الأسبوع إلى جانب المدرسة، بمساعدة إخوته وأصحابه، ويريد الاستثمار لزيادة الإنتاج واستئجار مكان للعمل. أشاد الشاركس بعرضه، ونبّهه أحدهم، وكان قد استثمر في علامة شموع معطرة في الموسم الأول، إلى أن سوق الشموع وحدها محدود، واقترح منتجات منزلية أخرى من ورش الفخار نفسها. قبل كريم عرض هالة القاسم بقيمة 500 ألف جنيه مقابل 40%، مع مساعدته في البيع من خلال محلاتها حتى يتفرغ للدراسة وتطوير المنتجات. وعرض محمد فاروق، بشكل منفصل، توريد الشمع على أن يُسدَّد ثمنه بعد بيع المنتجات. وأكد كريم بعد العرض أنه اختار صفقة هالة لأنها تساعده في خفض التكلفة والتوسع."
     },
     "photo": {
       "url": "/startups/scentora.jpg",
