@@ -1,0 +1,268 @@
+- region "Notifications (F8)" [ref=e1]:
+  - region "Notifications alt+T" [ref=e2]
+  - banner:
+    - link "E-stebdal - Returns Management Software" [ref=e3]:
+      - /url: https://www.e-stebdal.com
+    - button "Open menu" [ref=e4]
+  - main:
+    - text: Trusted by 200+ businesses
+    - heading "Turn Every Return Into Revenue, Not Loss" [ref=e5] [level=1]
+    - paragraph: Stop losing money on returns. E-stebdal transforms your returns process into a profit engine — pick the plan that scales with you.
+    - button "See Pricing" [ref=e6]
+    - link "Book A Demo" [ref=e7]:
+      - /url: https://calendar.app.google/T6e8cEvvpRQTvhyNA
+    - text: With E-stebdal
+    - button "← See the problem" [ref=e8]
+    - text: E-stebdal helps you recover EGP 28,500 through exchanges, upsells & automated processing Revenue recovered 60% 60% of return revenue recovered < 60 sec average processing time 92% customer retention rate
+    - button "Bundles" [ref=e9]
+    - button "Usage Based" [ref=e10]
+    - button "Monthly" [ref=e11]
+    - button "Yearly -20%" [ref=e12]
+    - text: Usage-based plans are billed monthly — pay only for what you use
+    - heading "Starter" [ref=e13] [level=3]
+    - paragraph: Perfect for small brands getting started
+    - text: Free
+    - paragraph: What's included
+      - listitem: Ready-to-use returns portal
+      - listitem: Single refund option for customers
+      - listitem: Single user access
+    - heading "Grow" [ref=e14] [level=3]
+    - paragraph: Ideal for growing brands that need automation and more flexibility.
+    - text: 999 EGP /month
+    - button "+ per return cost" [ref=e15]
+    - paragraph: All in Starter plus
+    - paragraph: What's included
+      - listitem: Customize your returns portal to match your brand
+      - listitem: Connect 1 sales or logistics tool
+      - listitem: Offer more refund options to customers
+      - listitem: Automated return rules
+      - listitem: Set different return fees by location
+      - listitem:
+        - text: Allow customers to exchange with variants
+        - button "More info" [ref=e16]
+      - listitem: Overview analytics to track performance
+    - text: Most Popular
+    - heading "Pro" [ref=e17] [level=3]
+    - paragraph: Built for established brands handling higher return volumes
+    - text: 2,499 EGP /month
+    - button "+ per return cost" [ref=e18] [nth=1]
+    - paragraph: All in Grow plus
+    - paragraph: What's included
+      - listitem: Connect 2 sales or logistics tools
+      - listitem: Convert refunds into store credit & gift cards
+      - listitem:
+        - text: Allow customers to exchange with new products
+        - button "More info" [ref=e19] [nth=1]
+      - listitem:
+        - text: Collect photos to approve returns faster
+        - button "More info" [ref=e20] [nth=2]
+      - listitem: Add up to 2 team members
+      - listitem: Detailed insights on returned products & reasons
+      - listitem: Dedicated success manager
+    - heading "Scale" [ref=e21] [level=3]
+    - paragraph: Designed for very high-volume merchants who need full efficiency.
+    - text: 3,999 EGP /month
+    - button "+ per return cost" [ref=e22] [nth=2]
+    - paragraph: All in Pro plus
+    - paragraph: What's included
+      - listitem: Connect 3 sales or logistics tools
+      - listitem: Advanced multi-location return control
+      - listitem: Fully customizable return policies by product
+      - listitem: Let customers shop during returns (built-in upselling)
+      - listitem:
+        - text: Custom return portal link for brand identity
+        - button "More info" [ref=e23] [nth=3]
+      - listitem: Add 4+ team members
+      - listitem: Custom email templates for customer communication
+    - paragraph: Trusted by leading brands
+    - heading "Compare all features" [ref=e24] [level=2]
+    - paragraph: See which plan is right for you with our detailed feature comparison
+    - heading "Starter" [ref=e25] [nth=1] [level=3]
+    - heading "Returns Management" [ref=e26] [level=4]
+      - listitem: Monthly Returns 10
+      - listitem: Returns Portal Basic
+      - listitem: Variant Exchange
+    - heading "Revenue Retention & Upselling" [ref=e27] [level=4]
+    - heading "Automation & Rules" [ref=e28] [level=4]
+      - listitem: Refund Methods 1
+      - listitem: Automated Policies 1
+      - listitem: Multi-location Fee Control 1
+      - listitem: Customized Return Window
+      - listitem: Customer Email Notifications
+    - heading "Integrations" [ref=e29] [level=4]
+      - listitem: Third-party Integrations 0
+    - heading "Analytics & Reporting" [ref=e30] [level=4]
+      - listitem: Export Data
+    - heading "Team & Collaboration" [ref=e31] [level=4]
+      - listitem: Team Members 1
+      - listitem: Member Permissions
+    - heading "Success & Support" [ref=e32] [level=4]
+      - listitem: Email Support
+      - listitem: E-stebdal Help Center
+    - heading "Grow" [ref=e33] [nth=1] [level=3]
+    - heading "Returns Management" [ref=e34] [nth=1] [level=4]
+      - listitem: Monthly Returns 100
+      - listitem: Returns Portal Customizable
+      - listitem: Variant Exchange
+    - heading "Revenue Retention & Upselling" [ref=e35] [nth=1] [level=4]
+    - heading "Automation & Rules" [ref=e36] [nth=1] [level=4]
+      - listitem: Refund Methods 3
+      - listitem: Automated Policies 2
+      - listitem: Multi-location Fee Control 4
+      - listitem: Customized Return Window
+      - listitem: Customer Email Notifications
+    - heading "Integrations" [ref=e37] [nth=1] [level=4]
+      - listitem: Third-party Integrations 1
+    - heading "Analytics & Reporting" [ref=e38] [nth=1] [level=4]
+      - listitem: Overview Analytics
+      - listitem: Export Data
+    - heading "Team & Collaboration" [ref=e39] [nth=1] [level=4]
+      - listitem: Team Members 1
+      - listitem: Member Permissions
+    - heading "Success & Support" [ref=e40] [nth=1] [level=4]
+      - listitem: Email Support
+      - listitem: E-stebdal Help Center
+    - heading "ProMost Popular" [ref=e41] [level=3]
+    - heading "Returns Management" [ref=e42] [nth=2] [level=4]
+      - listitem: Monthly Returns 500
+      - listitem: Returns Portal Customizable
+      - listitem: Product Exchange
+      - listitem: Variant Exchange
+    - heading "Revenue Retention & Upselling" [ref=e43] [nth=2] [level=4]
+      - listitem: Store Credit
+      - listitem: Gift Card
+    - heading "Automation & Rules" [ref=e44] [nth=2] [level=4]
+      - listitem: Refund Methods 4
+      - listitem: Automated Policies 5
+      - listitem: Multi-location Fee Control 6
+      - listitem: Customized Return Window
+      - listitem: Photo Submissions
+      - listitem: Customer Email Notifications
+    - heading "Integrations" [ref=e45] [nth=2] [level=4]
+      - listitem: Third-party Integrations 2
+    - heading "Analytics & Reporting" [ref=e46] [nth=2] [level=4]
+      - listitem: Overview Analytics
+      - listitem: Advanced Analytics
+      - listitem: Product Analytics
+      - listitem: Reasons Analytics
+      - listitem: Export Data
+    - heading "Team & Collaboration" [ref=e47] [nth=2] [level=4]
+      - listitem: Team Members 2
+      - listitem: Member Permissions
+    - heading "Success & Support" [ref=e48] [nth=2] [level=4]
+      - listitem: Email Support
+      - listitem: Dedicated Success Manager
+      - listitem: E-stebdal Help Center
+      - listitem: E-stebdal Academy
+    - heading "Scale" [ref=e49] [nth=1] [level=3]
+    - heading "Returns Management" [ref=e50] [nth=3] [level=4]
+      - listitem: Monthly Returns 2,000
+      - listitem: Returns Portal Customizable + Custom URL
+      - listitem: Product Exchange
+      - listitem: Variant Exchange
+    - heading "Revenue Retention & Upselling" [ref=e51] [nth=3] [level=4]
+      - listitem: Store Credit
+      - listitem: Gift Card
+      - listitem: Shop Now Upsell
+    - heading "Automation & Rules" [ref=e52] [nth=3] [level=4]
+      - listitem: Refund Methods 5
+      - listitem: Automated Policies Unlimited
+      - listitem: Multi-location Fee Control Unlimited
+      - listitem: Customized Return Window
+      - listitem: Photo Submissions
+      - listitem: Customer Email Notifications
+    - heading "Integrations" [ref=e53] [nth=3] [level=4]
+      - listitem: Third-party Integrations 3
+      - listitem: Email Templates
+    - heading "Analytics & Reporting" [ref=e54] [nth=3] [level=4]
+      - listitem: Overview Analytics
+      - listitem: Advanced Analytics
+      - listitem: Product Analytics
+      - listitem: Reasons Analytics
+      - listitem: Export Data
+    - heading "Team & Collaboration" [ref=e55] [nth=3] [level=4]
+      - listitem: Team Members 4+
+      - listitem: Member Permissions
+    - heading "Success & Support" [ref=e56] [nth=3] [level=4]
+      - listitem: Email Support
+      - listitem: Dedicated Success Manager
+      - listitem: E-stebdal Help Center
+      - listitem: E-stebdal Academy
+    - text: FAQ
+    - heading "Frequently asked questions" [ref=e57] [level=2]
+    - paragraph: Can't find the answer you're looking for? Reach out to our support team.
+    - heading "01 How do I know which plan is right for my business?" [ref=e58] [level=3]:
+      - button "01 How do I know which plan is right for my business?" [ref=e59]
+    - heading "02 What is the difference between Return Bundles and Usage Based plans?" [ref=e60] [level=3]:
+      - button "02 What is the difference between Return Bundles and Usage Based plans?" [ref=e61]
+    - heading "03 Can I switch between plans at any time?" [ref=e62] [level=3]:
+      - button "03 Can I switch between plans at any time?" [ref=e63]
+    - heading "04 Do you offer a free trial?" [ref=e64] [level=3]:
+      - button "04 Do you offer a free trial?" [ref=e65]
+    - heading "05 Do I need to enter a credit card to start the free trial?" [ref=e66] [level=3]:
+      - button "05 Do I need to enter a credit card to start the free trial?" [ref=e67]
+    - heading "06 What counts as a \" [ref=e68]return\"?" [level=3]:
+      - button "06 What counts as a \" [ref=e69]return\"?"
+    - heading "07 What happens if I exceed my monthly return limit?" [ref=e70] [level=3]:
+      - button "07 What happens if I exceed my monthly return limit?" [ref=e71]
+    - heading "08 Are the prices per store or per brand?" [ref=e72] [level=3]:
+      - button "08 Are the prices per store or per brand?" [ref=e73]
+    - heading "09 What payment methods do you support?" [ref=e74] [level=3]:
+      - button "09 What payment methods do you support?" [ref=e75]
+    - heading "10 Do I need a developer to set up E-stebdal?" [ref=e76] [level=3]:
+      - button "10 Do I need a developer to set up E-stebdal?" [ref=e77]
+    - heading "11 Do you offer discounts for annual billing?" [ref=e78] [level=3]:
+      - button "11 Do you offer discounts for annual billing?" [ref=e79]
+    - paragraph: Seamless Integrations
+    - paragraph: Connect with the tools you already use
+    - text: Value Calculator
+    - heading "See What E-stebdal Brings Back to Your Business" [ref=e80] [level=2]
+    - paragraph: Enter your numbers and watch the revenue you’re currently leaving on the table.
+    - heading "Your Business Details" [ref=e81] [level=3]
+    - text: Live Monthly Order Volume
+    - button "More info about monthly order volume" [ref=e82]
+    - spinbutton "Monthly Order Volume" [ref=e83]: "1500"
+    - text: Average Order Value (EGP)
+    - button "More info about average order value" [ref=e84]
+    - spinbutton "Average Order Value (EGP)" [ref=e85]: "700"
+    - text: Return Rate
+    - button "More info about return rate" [ref=e86]
+    - text: 10%
+    - slider [ref=e87]
+    - text: 1% 40%
+    - paragraph: At your current numbers
+    - paragraph: Returns / month
+    - paragraph: "150"
+    - paragraph: Recovery rate
+    - paragraph: 66%
+    - text: Total Monthly Savings
+    - button "More info" [ref=e88] [nth=4]
+    - paragraph: 68.8K EGP
+    - paragraph: That’s about 825.3K EGP brought back to your business every year.
+    - text: Refunds Recovered
+    - button "More info" [ref=e89] [nth=5]
+    - paragraph: 63K EGP
+    - text: Upselling Revenue
+    - button "More info" [ref=e90] [nth=6]
+    - paragraph: 5,775 EGP
+    - button "More info" [ref=e91] [nth=7]
+    - paragraph: Total Sales
+    - paragraph: 1.1M EGP
+    - button "More info" [ref=e92] [nth=8]
+    - paragraph: Total Returns
+    - paragraph: 105K EGP
+    - link "See E-stebdal in Action – Start Free Trial" [ref=e93]:
+      - /url: https://www.e-stebdal.com/contact
+  - contentinfo:
+    - navigation "Legal" [ref=e94]:
+      - link "Refund Policy" [ref=e95]:
+        - /url: https://www.e-stebdal.com/refund-policy
+      - link "Privacy Policy" [ref=e96]:
+        - /url: https://www.e-stebdal.com/privacy-policy
+      - link "Terms & Conditions" [ref=e97]:
+        - /url: https://www.e-stebdal.com/terms-conditions
+    - link "LinkedIn" [ref=e98]:
+      - /url: https://www.linkedin.com/company/estebdal/posts/?feedView=all
+    - link "Instagram" [ref=e99]:
+      - /url: https://www.instagram.com/estebdalapp?igsh=MWl4MXd2Y2NxbHJmcg==
+    - paragraph: © 2026 E-Stebdal. All rights reserved.

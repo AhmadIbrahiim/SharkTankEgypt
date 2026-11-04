@@ -17092,5 +17092,265 @@
       "credit": "Shark Tank Egypt · CBC",
       "creditUrl": "https://www.youtube.com/watch?v=gWJARShwOng&t=2600s"
     }
+  },
+  {
+    "id": "e-stebdal",
+    "season": 5,
+    "episode": 5,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "E-stebdal",
+      "ar": "إي استبدال"
+    },
+    "description": {
+      "en": "E-stebdal helps Shopify stores manage returns and exchanges. Customers submit requests through a branded portal, merchants review them, and the software handles approved refunds or exchanges. Stores can offer credit or gift cards and track why products come back.",
+      "ar": "إي استبدال تساعد متاجر Shopify على إدارة المرتجعات والاستبدال. يرسل العميل طلبه عبر بوابة تحمل هوية المتجر، ويراجعه التاجر، ثم ينفذ البرنامج رد المبلغ أو الاستبدال بعد الموافقة. ويمكن للمتجر تقديم رصيد للشراء أو بطاقات هدايا ومتابعة أسباب إرجاع المنتجات."
+    },
+    "category": "Tech",
+    "founders": [
+      "Ahmed Samer"
+    ],
+    "website": "https://www.e-stebdal.com/",
+    "links": {
+      "instagram": "https://www.instagram.com/estebdalapp/",
+      "linkedin": "https://www.linkedin.com/company/estebdal/"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-04",
+    "about": {
+      "founded": 2024,
+      "highlights": {
+        "en": [
+          "The Shopify app launched on 7 March 2025 and lists English and Arabic support.",
+          "Its Shopify listing names Bosta, Fincart, Flexstock, Odoo, Shipblu and Turuq as integrations.",
+          "The company lists New Cairo as its headquarters."
+        ],
+        "ar": [
+          "أُطلق تطبيق Shopify في 7 مارس 2025، وتذكر صفحته دعم الإنجليزية والعربية.",
+          "تضم التكاملات المذكورة في صفحة Shopify شركات Bosta وFincart وFlexstock وOdoo وShipblu وTuruq.",
+          "تذكر الشركة أن مقرها في القاهرة الجديدة."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Returns portal",
+          "desc": "A branded customer portal with return policies, request review, status tracking and email updates."
+        },
+        {
+          "name": "Refunds and exchanges",
+          "desc": "Automated refunds and exchanges, with store credit, gift cards and shop-now incentives available on selected plans."
+        },
+        {
+          "name": "Return reports",
+          "desc": "Reports on requests, refunds, retained revenue, products and return reasons."
+        }
+      ],
+      "ar": [
+        {
+          "name": "بوابة المرتجعات",
+          "desc": "بوابة للعملاء بهوية المتجر، مع سياسات للإرجاع ومراجعة الطلبات ومتابعة حالتها وإشعارات بالبريد الإلكتروني."
+        },
+        {
+          "name": "رد المبالغ والاستبدال",
+          "desc": "تنفيذ آلي لرد المبالغ والاستبدال، مع رصيد للشراء وبطاقات هدايا وحوافز للشراء الفوري في بعض الباقات."
+        },
+        {
+          "name": "تقارير المرتجعات",
+          "desc": "تقارير عن الطلبات والمبالغ المستردة والإيرادات المحتفظ بها والمنتجات وأسباب الإرجاع."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/e-stebdal.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1105971995531244"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/1105976148864162/",
+      "https://www.e-stebdal.com/",
+      "https://www.e-stebdal.com/features",
+      "https://www.e-stebdal.com/faqs",
+      "https://apps.shopify.com/e-stebdal",
+      "https://pricing.e-stebdal.com/",
+      "https://www.linkedin.com/company/estebdal/",
+      "https://eg.linkedin.com/in/ahmed-samer-284996207"
+    ]
+  },
+  {
+    "id": "welltra",
+    "season": 5,
+    "episode": 5,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Welltra",
+      "ar": "ويلترا"
+    },
+    "description": {
+      "en": "Welltra develops software that uses a camera to estimate vital signs from changes in facial skin colour. Its products include a mobile app, the Ru’ya smart mirror and tools for businesses to add the technology to their products. The app is intended for general fitness and wellness. It is not a diagnostic product.",
+      "ar": "ويلترا تطور برامج تستخدم الكاميرا لتقدير المؤشرات الحيوية من تغيرات لون بشرة الوجه. تشمل منتجاتها تطبيقًا للهاتف ومرآة «رؤيا» الذكية وأدوات تتيح للشركات إضافة التقنية إلى منتجاتها. التطبيق مخصص لمتابعة اللياقة والعافية العامة، وليس للتشخيص الطبي."
+    },
+    "category": "Health",
+    "founders": [
+      "Anees Abdullateef",
+      "Omar Abdullateef"
+    ],
+    "website": "https://www.welltra.ai/",
+    "links": {
+      "instagram": "https://www.instagram.com/welltra.ai/",
+      "linkedin": "https://www.linkedin.com/company/welltra-ai/"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-04",
+    "about": {
+      "founded": 2023,
+      "highlights": {
+        "en": [
+          "Available on Google Play and the Apple App Store, published by ABKO GROUP LLC.",
+          "The app uses the device’s front camera and keeps measurement results for viewing trends, according to its listings.",
+          "Egypt’s Healthcare Authority reported an agreement with Welltra on digital health and training in November 2025."
+        ],
+        "ar": [
+          "متاح على Google Play وApp Store، وتنشره شركة ABKO GROUP LLC.",
+          "يستخدم التطبيق الكاميرا الأمامية للجهاز ويحتفظ بنتائج القياسات لمتابعة تغيرها بمرور الوقت، بحسب صفحات التطبيق.",
+          "أعلنت هيئة الرعاية الصحية المصرية اتفاقًا مع ويلترا في الصحة الرقمية والتدريب في نوفمبر 2025."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Wellness app",
+          "desc": "Camera-based estimates of indicators such as heart rate and breathing rate, with measurement history and wellness scores."
+        },
+        {
+          "name": "Ru’ya smart mirror",
+          "desc": "A mirror that incorporates Welltra’s contactless monitoring software."
+        },
+        {
+          "name": "Software integrations",
+          "desc": "Mobile and web development kits for incorporating Welltra’s technology into other products."
+        }
+      ],
+      "ar": [
+        {
+          "name": "تطبيق لمتابعة العافية",
+          "desc": "تقديرات بالكاميرا لمؤشرات مثل معدل ضربات القلب والتنفس، مع سجل للقياسات ودرجات للعافية."
+        },
+        {
+          "name": "مرآة رؤيا الذكية",
+          "desc": "مرآة مدمج بها برنامج ويلترا لمتابعة المؤشرات دون تلامس."
+        },
+        {
+          "name": "تكاملات برمجية",
+          "desc": "أدوات تطوير للهاتف والويب لإضافة تقنية ويلترا إلى منتجات أخرى."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/welltra.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1105972032197907"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/1105976148864162/",
+      "https://www.welltra.ai/",
+      "https://www.welltra.ai/technology",
+      "https://www.linkedin.com/company/welltra-ai/",
+      "https://play.google.com/store/apps/details?id=com.welltra",
+      "https://apps.apple.com/eg/app/welltra-ai-health-tracker-app/id6474238774",
+      "https://www.marshall.usc.edu/posts/usc-entrepreneur-signs-major-deals-to-make-preventative-care-accessible",
+      "https://sis.gov.eg/en/media-center/news/health-authority-signs-9-deals-to-enhance-training-technology/"
+    ]
+  },
+  {
+    "id": "bouga",
+    "season": 5,
+    "episode": 5,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Bouga",
+      "ar": "بوجا"
+    },
+    "description": {
+      "en": "Bouga is an Egyptian bag brand founded by designer Mai Sabri. Its lightweight bags fold into a small pouch and feature prints inspired by Egyptian streets, cities and old banknotes. Bouga also sells matching straps and bag bundles through its online store.",
+      "ar": "بوجا علامة مصرية للحقائب أسستها المصممة مي صبري. حقائبها خفيفة وتُطوى داخل جراب صغير، وتحمل رسومات مستوحاة من الشوارع والمدن المصرية والعملات الورقية القديمة. وتبيع بوجا أيضًا أحزمة برسومات متناسقة ومجموعات من الحقائب عبر متجرها الإلكتروني."
+    },
+    "category": "Fashion",
+    "founders": [
+      "Mai Sabri"
+    ],
+    "website": "https://www.getbouga.com/",
+    "links": {
+      "facebook": "https://facebook.com/getbouga",
+      "instagram": "https://www.instagram.com/getbouga/",
+      "tiktok": "https://www.tiktok.com/@getbouga",
+      "pinterest": "https://uk.pinterest.com/getbouga/"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-04",
+    "about": {
+      "highlights": {
+        "en": [
+          "The company says its standard bags carry up to 20 kg and are machine washable.",
+          "Its online catalogue includes prints based on Alexandria, Luxor, Al-Muizz Street and Egyptian banknotes.",
+          "The store currently ships within Egypt; its returns page allows requests within 14 days of receipt for unused items in their original packaging."
+        ],
+        "ar": [
+          "تذكر الشركة أن حقائبها القياسية تتحمل حتى 20 كيلوجرامًا ويمكن غسلها في الغسالة.",
+          "يتضمن المتجر رسومات مستوحاة من الإسكندرية والأقصر وشارع المعز والعملات الورقية المصرية.",
+          "يشحن المتجر حاليًا داخل مصر، وتتيح صفحة المرتجعات طلب الإرجاع خلال 14 يومًا من الاستلام للقطع غير المستخدمة وفي تغليفها الأصلي."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Foldable bags",
+          "desc": "Reusable bags in cultural and pop prints that fold into their own carrying pouch."
+        },
+        {
+          "name": "Straps and bundles",
+          "desc": "Printed straps for carrying bags across the body, and bundles of selected bag designs."
+        }
+      ],
+      "ar": [
+        {
+          "name": "حقائب قابلة للطي",
+          "desc": "حقائب للاستخدام المتكرر برسومات تراثية ومعاصرة، تُطوى داخل جراب مدمج بها."
+        },
+        {
+          "name": "أحزمة ومجموعات",
+          "desc": "أحزمة مطبوعة لحمل الحقائب عبر الجسم، ومجموعات تضم تصميمات مختارة."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/bouga.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1105972025531241"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/1105976148864162/",
+      "https://www.getbouga.com/",
+      "https://www.getbouga.com/pages/returns-exchanges",
+      "https://www.getbouga.com/pages/care-instructions",
+      "https://www.getbouga.com/pages/shipping",
+      "https://www.scenenow.com/Society/Bouga-is-a-Foldable-Tote-Bag-for-the-Creative-Cairo-Hustler",
+      "https://www.behance.net/maisabrisaad/"
+    ]
   }
 ]

@@ -1,0 +1,462 @@
+{
+  "checked": "2026-11-04",
+  "captureContext": "Public sources captured before the scheduled 21:00 Cairo broadcast; no show outcome verified.",
+  "announcement": {
+    "source": "https://www.facebook.com/SharkTankEgypt/posts/1105976148864162/",
+    "creationTimestamp": 1793804405,
+    "publishedAt": "2026-11-04T17:00:05+02:00",
+    "scheduledAt": "2026-11-04T21:00:00+02:00",
+    "timezone": "Africa/Cairo",
+    "channels": [
+      "CBC Now",
+      "WATCH IT"
+    ],
+    "startups": [
+      "e-stebdal",
+      "welltra",
+      "bouga"
+    ],
+    "ask": null,
+    "deal": null
+  },
+  "sources": [
+    {
+      "id": "announcement",
+      "url": "https://www.facebook.com/SharkTankEgypt/posts/1105976148864162/",
+      "finding": "Official Season 5 Episode 5 lineup and 21:00 Cairo schedule; no investment terms."
+    },
+    {
+      "id": "estebdal-home",
+      "url": "https://www.e-stebdal.com/",
+      "finding": "Merchant returns and exchange software."
+    },
+    {
+      "id": "estebdal-about",
+      "url": "https://www.e-stebdal.com/about-us",
+      "finding": "Older platform description includes WooCommerce; current support is unresolved."
+    },
+    {
+      "id": "estebdal-features",
+      "url": "https://www.e-stebdal.com/features",
+      "finding": "Return review, tracking, exchanges, gift cards, upselling and analytics."
+    },
+    {
+      "id": "estebdal-faq",
+      "url": "https://www.e-stebdal.com/faqs",
+      "finding": "Current Shopify focus; subscription tiers and no setup fee."
+    },
+    {
+      "id": "estebdal-pricing",
+      "url": "https://pricing.e-stebdal.com/",
+      "finding": "Rendered pricing, plan inclusions and monthly billing; dated observation."
+    },
+    {
+      "id": "estebdal-shopify",
+      "url": "https://apps.shopify.com/e-stebdal",
+      "finding": "Launch date, languages, integrations, pricing label, reviews and required store-data access."
+    },
+    {
+      "id": "estebdal-linkedin",
+      "url": "https://www.linkedin.com/company/estebdal/",
+      "finding": "Company lists founded 2024, New Cairo headquarters and 2–10 employees. Named customer updates are company claims."
+    },
+    {
+      "id": "ahmed-samer",
+      "url": "https://eg.linkedin.com/in/ahmed-samer-284996207",
+      "finding": "Named public profile identifies founder and CEO; German University in Cairo affiliation. Exact degree was not visible."
+    },
+    {
+      "id": "estebdal-founder-post",
+      "url": "https://www.linkedin.com/posts/estebdal_hi-linkedin-im-ahmed-and-this-is-estebdal-activity-7355160044054708224-_9Zz",
+      "finding": "Company introduction by Ahmed; used as corroboration."
+    },
+    {
+      "id": "auc-graduates",
+      "url": "https://www.linkedin.com/posts/auc-venture-lab_thats-a-wrap-for-our-fall25-demo-day-activity-7421649483387777025-h5Lp",
+      "finding": "AUC Venture Lab lists E-stebdal among Fall 2025 Cycle 25 graduates."
+    },
+    {
+      "id": "auc-attendee",
+      "url": "https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7422507167284625408/",
+      "finding": "An attendee names Ahmed Samer as E-stebdal founder; own profile is stronger evidence."
+    },
+    {
+      "id": "tiec",
+      "url": "https://tiec.gov.eg/English/Announcements/Pages/StartIT-Winners-1st-phase-crnt-rnd.aspx",
+      "finding": "E-stebdal appears in StartIT round 52 phase-one selection. Selection is not a completed funding round."
+    },
+    {
+      "id": "welltra-home",
+      "url": "https://www.welltra.ai/",
+      "finding": "Camera-based wellness products, mobile app, Ru’ya mirror and SDK."
+    },
+    {
+      "id": "welltra-about",
+      "url": "https://www.welltra.ai/about-us",
+      "finding": "Company description and products."
+    },
+    {
+      "id": "welltra-technology",
+      "url": "https://www.welltra.ai/technology",
+      "finding": "rPPG facial colour analysis; voice biometrics; mobile/web SDK; local and cloud processing options. Claims are not independent validation."
+    },
+    {
+      "id": "welltra-incorporation",
+      "url": "https://www.welltra.ai/blog/welltraai-inception-and-incorporation-2023",
+      "finding": "Company describes its 2023 inception and incorporation."
+    },
+    {
+      "id": "welltra-linkedin",
+      "url": "https://www.linkedin.com/company/welltra-ai/",
+      "finding": "Founded 2023; team lists Anees, Omar and Khaled. A reposted BioTwin announcement identifies CEO and CTO roles."
+    },
+    {
+      "id": "welltra-play",
+      "url": "https://play.google.com/store/apps/details?id=com.welltra",
+      "finding": "App description, wellness limitation, update date, download band and developer disclosures."
+    },
+    {
+      "id": "welltra-apple",
+      "url": "https://apps.apple.com/eg/app/welltra-ai-health-tracker-app/id6474238774",
+      "finding": "Egypt storefront, developer ABKO GROUP LLC, in-app prices, compatibility, privacy disclosures and wellness limitation."
+    },
+    {
+      "id": "anees",
+      "url": "https://www.linkedin.com/in/anees-abdullateef-587963190",
+      "finding": "Named public professional profile states founder and CEO; portrait saved."
+    },
+    {
+      "id": "omar",
+      "url": "https://www.linkedin.com/in/omar-abdullateef-66b347177",
+      "finding": "Company links to this named profile; browser later required sign-in."
+    },
+    {
+      "id": "khaled",
+      "url": "https://www.linkedin.com/in/khaled-anees-md",
+      "finding": "Named public profile and company association confirmed; exact job role was obscured."
+    },
+    {
+      "id": "omar-usc",
+      "url": "https://www.marshall.usc.edu/posts/usc-entrepreneur-signs-major-deals-to-make-preventative-care-accessible",
+      "finding": "USC dated 7 April 2025: Omar’s graduate certificate, master’s degree and Greif programme participation; named signing photo credited to Welltra."
+    },
+    {
+      "id": "omar-cto",
+      "url": "https://www.linkedin.com/posts/kinestex_were-going-live-today-at-3-pm-gmt-for-activity-7482757292296359936-cgSt",
+      "finding": "Partner identifies Omar as co-founder and CTO."
+    },
+    {
+      "id": "egypt-mou",
+      "url": "https://sis.gov.eg/en/media-center/news/health-authority-signs-9-deals-to-enhance-training-technology/",
+      "finding": "Egyptian Healthcare Authority agreement reported 28 November 2025 for digital health, monitoring and training."
+    },
+    {
+      "id": "egypt-mou-ar",
+      "url": "https://sis.gov.eg/ar/المركز-الإعلامي/الفعاليات/الملتقى-السنوي-السادس-للهيئة-العامة-للرعاية-الصحية/",
+      "finding": "Arabic authority report supplies the spelling أنيس عبد اللطيف and CEO role."
+    },
+    {
+      "id": "hhc-mou",
+      "url": "https://www.welltra.ai/blog/mou-signed-with-hhc-health-holding-company-in-ksa-at-ghe-2024",
+      "finding": "Company reports Saudi Health Holding Company MoU at Global Health Exhibition 2024."
+    },
+    {
+      "id": "onehealth-mou",
+      "url": "https://www.welltra.ai/blog/mou-signed-with-onehealth-in-uae-at-arab-health-2025",
+      "finding": "Company reports UAE OneHealth MoU at Arab Health 2025."
+    },
+    {
+      "id": "bouga-home",
+      "url": "https://www.getbouga.com/",
+      "finding": "Product catalogue, prices, folds, 20 kg claim and business social links."
+    },
+    {
+      "id": "bouga-about",
+      "url": "https://www.getbouga.com/pages/about",
+      "finding": "Company heritage and everyday bag positioning."
+    },
+    {
+      "id": "bouga-product",
+      "url": "https://www.getbouga.com/products/standard-bouga-a-half-of-a-pound-%D9%86%D8%B5-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D8%B5%D8%B1%D9%8A",
+      "finding": "Seller dimensions, 20 kg capacity and recycled ripstop polyester specification; description mixes denominations."
+    },
+    {
+      "id": "bouga-materials",
+      "url": "https://www.getbouga.com/pages/materials",
+      "finding": "Claims a single piece of recycled nylon, with its neck used for the pouch; conflicts with product/homepage polyester specification."
+    },
+    {
+      "id": "bouga-care",
+      "url": "https://www.getbouga.com/pages/care-instructions",
+      "finding": "Seller recommends machine washing cold and air drying or low heat."
+    },
+    {
+      "id": "bouga-shipping",
+      "url": "https://www.getbouga.com/pages/shipping",
+      "finding": "Egypt-only shipping, 1–3 business days processing and 2–5 business days delivery; tracking message."
+    },
+    {
+      "id": "bouga-returns",
+      "url": "https://www.getbouga.com/pages/returns-exchanges",
+      "finding": "Return or exchange requests within 14 days of receipt, unused original condition and intact packaging."
+    },
+    {
+      "id": "bouga-faq",
+      "url": "https://www.getbouga.com/pages/faq",
+      "finding": "Daily use, machine washability and international shipping not yet offered."
+    },
+    {
+      "id": "bouga-sustainability",
+      "url": "https://www.getbouga.com/pages/sustainability",
+      "finding": "Company durability/reuse positioning; no independently verified recycled-content certification."
+    },
+    {
+      "id": "mai-interview",
+      "url": "https://www.scenenow.com/Society/Bouga-is-a-Foldable-Tote-Bag-for-the-Creative-Cairo-Hustler",
+      "finding": "Named founder Mai Sabri and design story, 26 March 2026. Initial seven designs and QAAF distribution are historical."
+    },
+    {
+      "id": "mai-portfolio",
+      "url": "https://www.behance.net/maisabrisaad/",
+      "finding": "Named professional portrait, senior designer at PepsiCo Design & Innovation, earlier design employers."
+    },
+    {
+      "id": "mai-linkedin",
+      "url": "https://www.linkedin.com/in/mai-sabri-saad",
+      "finding": "Linked from her portfolio; browser access was limited."
+    },
+    {
+      "id": "mai-bouga-project",
+      "url": "https://www.behance.net/gallery/241720041/Bouga",
+      "finding": "Bouga portfolio project; project co-owner Mostafa Amer is not established as a company co-founder."
+    },
+    {
+      "id": "bouga-pound-press",
+      "url": "https://www.scenenow.com/Society/Bouga-is-Bringing-The-Forgotten-One-Pound-Paper-Note-Back-to-Life",
+      "finding": "29 October 2026 report on banknote-inspired bags."
+    },
+    {
+      "id": "bouga-banknote-press",
+      "url": "https://scoopempire.com/bouga-is-turning-old-egyptian-banknotes-into-bags/",
+      "finding": "2 November 2026 report on the banknote collection."
+    }
+  ],
+  "datedObservations": {
+    "e-stebdal": {
+      "sources": [
+        "estebdal-pricing",
+        "estebdal-shopify",
+        "estebdal-linkedin"
+      ],
+      "founded": 2024,
+      "headquarters": "New Cairo",
+      "companySizeClaim": "2–10",
+      "shopifyLaunched": "2025-03-07",
+      "shopifyRating": 5.0,
+      "shopifyReviewCount": 37,
+      "shopifyPricingLabel": "Free",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "integrations": [
+        "Bosta",
+        "Fincart",
+        "Flexstock",
+        "Odoo",
+        "Shipblu",
+        "Turuq"
+      ],
+      "monthlyDisplayedPlansEGP": {
+        "Starter": 0,
+        "Grow": 999,
+        "Pro": 2499,
+        "Scale": 3999
+      },
+      "pricingQualification": "Paid cards also say per-return cost. Monthly/yearly and Bundles/Usage Based controls exist; all mode combinations and final invoices were not checked. Yearly toggle advertises 20% off.",
+      "selectedPlanFeatures": {
+        "Grow": [
+          "one integration",
+          "automatic rules",
+          "location fees",
+          "overview analytics"
+        ],
+        "Pro": [
+          "two integrations",
+          "store credit and gift cards",
+          "new-product exchanges",
+          "request photos",
+          "two team users",
+          "product/reason analytics"
+        ],
+        "Scale": [
+          "three integrations",
+          "multi-location policies",
+          "shop-now upsell",
+          "custom URL",
+          "four or more team users"
+        ]
+      },
+      "companyCustomerClaims": [
+        "Daniel Hechter / Consolidated Group",
+        "Self",
+        "Embrator",
+        "Mothernaked",
+        "Zentia",
+        "Nothing Personal",
+        "Tribezen",
+        "Denjo",
+        "Y Studios"
+      ],
+      "customerQualification": "Named in company posts; revenue, active contracts and customer totals not independently checked."
+    },
+    "welltra": {
+      "sources": [
+        "welltra-play",
+        "welltra-apple",
+        "welltra-technology"
+      ],
+      "founded": 2023,
+      "publisher": "ABKO GROUP LLC",
+      "publisherCountry": "United States",
+      "googlePlayDownloadBand": "100+",
+      "googlePlayUpdated": "2026-01-08",
+      "appleEgyptRating": 5.0,
+      "appleEgyptRatingCount": 3,
+      "appleVersionDisplayed": "2.61 · 16 Jan",
+      "appleSizeMB": 128.5,
+      "appleMinimumIOS": "12.0",
+      "appleLanguageField": "English",
+      "appleLanguageQualification": "Version history mentions Arabic support in February 2024; current language field lists only English. In-app language support was not tested.",
+      "appleAgeRating": "18+",
+      "appleInAppPricesEGP": {
+        "Yearly": 599.99,
+        "Monthly": 149.99,
+        "Life Time": 4999.99,
+        "Premium": 9999.99
+      },
+      "measurementTimeClaim": "About 50 seconds in app listings; shorter durations appear in other sources.",
+      "technologyClaims": {
+        "cameraFPS": "15–30",
+        "microphoneSampling": "16 kHz or more",
+        "distanceCM": "0–200",
+        "minimumLightLux": "200–300",
+        "SDK": [
+          "iOS",
+          "Android",
+          "JavaScript web"
+        ],
+        "edge": [
+          "TensorFlow Lite",
+          "CoreML"
+        ]
+      },
+      "limitation": "General fitness and wellness. Not established as a diagnostic or medical product; regulatory approval and accuracy are unverified."
+    },
+    "bouga": {
+      "sources": [
+        "bouga-home",
+        "bouga-product",
+        "bouga-care",
+        "bouga-shipping",
+        "bouga-returns"
+      ],
+      "standardBagPriceEGP": 745,
+      "strapPriceEGP": 169,
+      "bundleDisplayedPriceEGP": 2000,
+      "sellerCapacityKG": 20,
+      "sellerOpenDimensionsCM": [
+        39,
+        65,
+        15
+      ],
+      "sellerFoldedDimensionsCM": [
+        13,
+        12
+      ],
+      "sellerMaterialClaim": "Recycled ripstop polyester on product page; recycled nylon on materials page.",
+      "sellerCare": "Machine washable; cold water; air dry or low heat.",
+      "shippingCountry": "Egypt",
+      "processingBusinessDays": "1–3",
+      "deliveryBusinessDays": "2–5",
+      "returnRequestDaysAfterReceipt": 14,
+      "returnConditions": [
+        "unused",
+        "original condition",
+        "intact original packaging"
+      ],
+      "promoCodeDisplayed": "BOUGA10",
+      "freeShippingThresholdConflictEGP": [
+        2400,
+        2500
+      ],
+      "historicalRetailer": "QAAF, Downtown Cairo, in March 2026 interview; current retail availability unconfirmed."
+    }
+  },
+  "teamNotes": [
+    {
+      "id": "khaled-anees",
+      "name": {
+        "en": "Khaled Anees, MD",
+        "ar": "خالد أنيس"
+      },
+      "company": "Welltra",
+      "role": null,
+      "founderStatus": null,
+      "sources": [
+        "welltra-linkedin",
+        "khaled"
+      ],
+      "photo": "images/khaled-anees-linkedin.jpg",
+      "note": "Public company association and named portrait confirmed. Do not add to founders or identify an on-air presenter without role evidence."
+    }
+  ],
+  "unresolved": [
+    {
+      "topic": "On-air identities",
+      "detail": "The two men in Welltra’s appearance card have not been assigned to named people."
+    },
+    {
+      "topic": "Investment outcomes",
+      "detail": "Asks, offers, sales quoted in the pitch, margins, final investors and deals remain unknown."
+    },
+    {
+      "topic": "E-stebdal platform support",
+      "detail": "Current FAQ says Shopify; older about copy mentions WooCommerce."
+    },
+    {
+      "topic": "E-stebdal free pricing",
+      "detail": "Shopify says Free; company pricing includes paid tiers and usage costs."
+    },
+    {
+      "topic": "Welltra privacy",
+      "detail": "Homepage/local-processing statements coexist with cloud API options. Google Play says no data collected; Apple discloses tracking identifiers and linked contact information/user content. Preserve platform attribution."
+    },
+    {
+      "topic": "Welltra regulatory status",
+      "detail": "No independent clearance record or clinical validation reviewed. Avoid repeating approval or disease-screening claims as established capability."
+    },
+    {
+      "topic": "Bouga materials",
+      "detail": "Seller pages disagree between polyester and nylon. No composition or recycled-content certification verified."
+    },
+    {
+      "topic": "Bouga shipping promotion",
+      "detail": "Homepage threshold is 2400 EGP; product text says 2500 EGP."
+    },
+    {
+      "topic": "Bouga product description",
+      "detail": "One-pound page contains half-pound and quarter-pound language. Product title and photographed design are stronger identification."
+    },
+    {
+      "topic": "Image rights",
+      "detail": "Public availability and credit captured; additional reuse licences not established."
+    }
+  ],
+  "notCollected": [
+    "private contact details",
+    "personal account information",
+    "unverified investment terms",
+    "unverified ages or family relationships"
+  ]
+}

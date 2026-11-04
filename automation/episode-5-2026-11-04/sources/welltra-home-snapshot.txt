@@ -1,0 +1,174 @@
+- banner:
+    - link "Welltra" [ref=e1]:
+      - /url: /
+      - listitem:
+        - link "Home" [ref=e2]:
+          - /url: /
+      - listitem:
+        - link "Technology" [ref=e3]:
+          - /url: /technology
+      - listitem:
+        - link "About Us" [ref=e4]:
+          - /url: /about-us
+      - listitem:
+        - link "Blogs" [ref=e5]:
+          - /url: /blog
+      - listitem:
+        - link "Contact us" [ref=e6]:
+          - /url: /contact-us
+  - main:
+    - heading "Digital Health Reimagined." [ref=e7] [level=1]
+    - text: W E L L T R A
+    - paragraph: Welltra is a revolutionary AI first company designed to transform digital health and wellness through advanced affective AI technology. Unlocking personal insights, optimizing health, and elevating health & wellness experiences.
+    - link "Explore Products Explore Products Discover our innovative products that supplement your workflows" [ref=e8]:
+      - /url: /#products
+      - heading "Explore Products" [ref=e9] [level=3]
+      - paragraph: Discover our innovative products that supplement your workflows
+    - heading "DECODING THE BODY, ONE SELFIE AT A TIME." [ref=e10] [level=2]
+    - paragraph: Our contactless vital signs technology is powered by Remote Photoplethysmography (rPPG)—a clinically validated method that uses a standard camera and ambient light to detect subtle changes in facial skin tone caused by blood flow. Through advanced signal processing of RGB (red, green, blue) channels, rPPG extracts accurate, pulsatile data for real-time health monitoring. With two FDA-approved metrics, Welltra delivers reliable, trusted, and compliant insights—anywhere a camera exists.
+    - heading "Heart Rate" [ref=e11] [level=6]
+    - text: FDA Approved
+    - paragraph: No. of heartbeats per minute (B.P.M)
+    - heading "Respiration Rate" [ref=e12] [level=6]
+    - text: FDA Approved
+    - paragraph: Breathing frequency & respiratory activity level.
+    - heading "Pulse Respiration Quotient" [ref=e13] [level=6]
+    - paragraph: Ratio of heart rate to breathing rate.
+    - heading "Equilibrium" [ref=e14] [level=6]
+    - paragraph: Nervous system balance between ANS & PNS
+    - heading "Stress Index" [ref=e15] [level=6]
+    - paragraph: Quantifies physiological stress levels.
+    - heading "Oxygen Saturation" [ref=e16] [level=6]
+    - paragraph: Percentage of oxygenated hemoglobin in the bloodstream
+    - heading "Heart Rate Variability" [ref=e17] [level=6]
+    - paragraph: Measure of autonomic nervous system balance.
+    - heading "Blood Pressure (B.P.)" [ref=e18] [level=6]
+    - paragraph: The force of blood pushing against the artery walls (mm/Hg)
+    - heading "Relaxation" [ref=e19] [level=6]
+    - paragraph: State of calmness or restfulness, linked to parasympathetic activity.
+    - heading "Wellness Score" [ref=e20] [level=6]
+    - paragraph: A composite score summarizing overall health, out of 10.
+    - heading "Shock Index" [ref=e21] [level=6]
+    - paragraph: Ratio of heart rate to systolic BP assessing hemodynamic stability.
+    - heading "CVD Risk" [ref=e22] [level=6]
+    - paragraph: Estimated risk score for cardiovascular disease and cardiac events.
+    - heading "Cardiovascular Age" [ref=e23] [level=6]
+    - paragraph: Estimated biological age of the heart and vascular system.
+    - heading "Cardiovascular BMI" [ref=e24] [level=6]
+    - paragraph: Vascular-derived body mass index and metabolic health indicator.
+    - heading "DECODING THE MIND, ONE VOICE AT A TIME." [ref=e25] [level=2]
+    - paragraph: Our advanced neuro-cognitive screening technology leverages AI-driven behavioral and vocal analysis to deliver non-invasive mental wellness assessments. By evaluating cognitive response patterns, neural reaction times, and emotional indicators in real time, Welltra decodes complex neurological biomarkers—from early cognitive impairment detection to everyday stress and mood tracking. Empowering individuals and clinicians with actionable psychological clarity, anytime, anywhere.
+    - heading "Alzheimer" [ref=e26] [level=6]
+    - paragraph: Early neurological biomarker detection and cognitive pattern tracking.
+    - heading "Stress" [ref=e27] [level=6]
+    - paragraph: Quantifies physiological and neuro-emotional strain in real time.
+    - heading "Mood" [ref=e28] [level=6]
+    - paragraph: Affective state evaluation measuring emotional baseline and valence.
+    - heading "Cognitive Screening" [ref=e29] [level=6]
+    - paragraph: Comprehensive assessment of executive function, memory, and focus.
+    - heading "Anxiety" [ref=e30] [level=6]
+    - paragraph: Psychophysiological markers tracking autonomic tension indicators.
+    - heading "Mild Cognitive Impairment (MCI)" [ref=e31] [level=6]
+    - paragraph: Subtle indicator analysis for early memory and clarity shifts.
+    - heading "Wellness" [ref=e32] [level=6]
+    - paragraph: Holistic mental resilience and psychological well-being index.
+    - heading "Behavioral Screening" [ref=e33] [level=6]
+    - paragraph: Attention consistency, engagement, and micro-behavior patterns.
+    - heading "Energy" [ref=e34] [level=6]
+    - paragraph: Cognitive vitality, mental stamina, and sustained alertness levels.
+    - heading "Real Products, Real Impact. Right Now." [ref=e35] [level=2]
+    - paragraph: All products connect to the Welltra platform via app subscription.
+    - link "View all services" [ref=e36]:
+      - /url: /#services
+    - heading "Mobile App" [ref=e37] [level=3]
+    - link "Mobile App" [ref=e38]:
+      - /url: https://play.google.com/store/apps/details?id=com.welltra&hl=en&gl=US&pli=1
+    - paragraph: Discover our innovative, mobile app that allows you to screen your health and wellness completely contactless!
+    - button "Ru’ya Smart Mirror" [ref=e39]:
+      - heading "Ru’ya Smart Mirror" [ref=e40] [level=3]
+    - button "Open Ru’ya Smart Mirror guide" [ref=e41]:
+    - paragraph: Ru’ya is not just a smart mirror, it serves as a health screening assistant while elegantly blending into the room. All results are connected to your ecosystem!
+    - heading "SDK Integration" [ref=e42] [level=3]
+    - link "SDK Integration" [ref=e43]:
+      - /url: /contact-us
+    - paragraph: Our software development kit designed for integration in less than three hours and operate 100% on edge that means there is no cloud component or no data being uploaded to a server or cloud that’s not yours!
+    - heading "Built for Business" [ref=e44] [level=2]
+    - paragraph: Health and Wellness Solutions Tailored For Every Sector
+    - link "Tele Health & Clinics Tele Health & Clinics" [ref=e45]:
+      - /url: /#tele-health
+      - text: Tele Health & Clinics
+    - link "Corporate Wellness Corporate Wellness" [ref=e46]:
+      - /url: /#corporate-wellness
+      - text: Corporate Wellness
+    - link "Insurance & Underwriting Insurance & Underwriting" [ref=e47]:
+      - /url: /#insurance
+      - text: Insurance & Underwriting
+    - link "Fitness & Well-being Fitness & Well-being" [ref=e48]:
+      - /url: /#fitness
+      - text: Fitness & Well-being
+    - heading "Blogs" [ref=e49] [level=2]
+    - link "View all Blogs" [ref=e50]:
+      - /url: /blog
+    - link "WellTra.Ai inception and incorporation 2023 WellTra.Ai inception and incorporation 2023" [ref=e51]:
+      - /url: /blog/welltraai-inception-and-incorporation-2023
+      - heading "WellTra.Ai inception and incorporation 2023" [ref=e52] [level=3]
+    - text: WHO WE ARE
+    - heading "Our Journey" [ref=e53] [level=4]
+    - paragraph: We are entrepreneurs who want to enable the tracking and understanding of health and wellness without needing to purchase expensive wearables that get outdated every year! We took it upon ourselves to utilize AI to ensure everyone with a smartphone can have access to their vitals and mental state on demand! Anywhere, anytime, anyplace. Our team set a goal to help people become healthier physically and mentally hence we decided to create Welltra.Ai the world's first AI, contactless vital sign and mental health digital screening tool.
+    - paragraph: Our team set a goal to help people become healthier physically and mentally hence why we decided to create Welltra.Ai the world's first AI, contactless vital sign reader. Our algorithm runs locally on your device without the need for us to see any of your info or recordings.
+    - link "MOU Signed With HHC - Health Holding Company In KSA at GHE 2024 MOU Signed With HHC - Health Holding Company In KSA at GHE 2024" [ref=e54]:
+      - /url: /blog/mou-signed-with-hhc-health-holding-company-in-ksa-at-ghe-2024
+      - heading "MOU Signed With HHC - Health Holding Company In KSA at GHE 2024" [ref=e55] [level=3]
+    - link "MOU signed with OneHealth in UAE at Arab Health 2025 MOU signed with OneHealth in UAE at Arab Health 2025" [ref=e56]:
+      - /url: /blog/mou-signed-with-onehealth-in-uae-at-arab-health-2025
+      - heading "MOU signed with OneHealth in UAE at Arab Health 2025" [ref=e57] [level=3]
+    - link "Arab Health January 2024 Arab Health January 2024" [ref=e58]:
+      - /url: /blog/arab-health-january-2024
+      - heading "Arab Health January 2024" [ref=e59] [level=3]
+    - heading "Aligned across the globe" [ref=e60] [level=2]
+    - paragraph: Our technology is already supporting wellness initiatives across the Middle East, with localized trials and real-world deployments making Welltra regionally adaptive and globally scalable.
+    - link "Get in Touch!" [ref=e61]:
+      - /url: /contact-us
+  - link "Try Today, Free!" [ref=e62]:
+    - /url: https://apps.apple.com/us/app/welltra-ai-health-tracker-app/id6474238774
+  - contentinfo:
+    - heading "Ready to bring intelligent health into your environment?" [ref=e63] [level=2]
+    - paragraph: Feel free to send us your questions or request a free consultation.
+    - link "Book A Demo" [ref=e64]:
+      - /url: /contact-us
+    - link "WellTra Logo" [ref=e65]:
+      - /url: /
+    - paragraph: Embrace a Dynamic Wellness Journey
+    - paragraph: Copyright © 2026 Welltra.All rights reserved.
+    - heading "Site" [ref=e66] [level=4]
+      - listitem:
+        - link "Blog" [ref=e67]:
+          - /url: /blog
+      - listitem:
+        - link "About Us" [ref=e68] [nth=1]:
+          - /url: /about-us
+      - listitem:
+        - link "Privacy Policy" [ref=e69]:
+          - /url: /privacy-policy
+      - listitem:
+        - link "Terms & Conditions" [ref=e70]:
+          - /url: /terms-&-conditions
+    - heading "Get In Touch" [ref=e71] [level=4]
+    - link "+1(562)-269-9435" [ref=e72]:
+      - /url: tel:+15622699435
+    - link "Chat on WhatsApp" [ref=e73]:
+      - /url: https://wa.me/15622699435?text=Hello%20Welltra%2C%20I%20would%20like%20to%20learn%20more%20about%20your%20services.
+    - link "support@welltra.ai" [ref=e74]:
+      - /url: mailto:support@welltra.ai
+    - paragraph: "Available on:"
+    - link "Google Play" [ref=e75]:
+      - /url: https://play.google.com/store/apps/details?id=com.welltra&hl=en&gl=US&pli=1
+    - link "App Store" [ref=e76]:
+      - /url: https://apps.apple.com/us/app/welltra-ai-health-tracker-app/id6474238774
+    - paragraph: "Follow Us On:"
+    - link "Facebook" [ref=e77]:
+      - /url: https://www.facebook.com/
+    - link [ref=e78]:
+      - /url: https://www.instagram.com/welltra.ai/
+    - link "LinkedIn" [ref=e79]:
+      - /url: https://www.linkedin.com/company/welltra-ai/

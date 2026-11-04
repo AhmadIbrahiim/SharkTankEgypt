@@ -1,0 +1,146 @@
+[
+  {
+    "id": "ahmed-samer",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Samer",
+      "ar": "أحمد سامر"
+    },
+    "title": {
+      "en": "Founder and CEO, E-stebdal",
+      "ar": "مؤسس إي استبدال ورئيسها التنفيذي"
+    },
+    "bio": {
+      "en": "Ahmed Samer is the founder and CEO of E-stebdal, which develops software for online stores to manage returns and exchanges. His public professional profile lists the German University in Cairo, and E-stebdal is listed among AUC Venture Lab’s Fall 2025 graduates.",
+      "ar": "أحمد سامر مؤسس إي استبدال ورئيسها التنفيذي. تطور الشركة برامج تساعد المتاجر الإلكترونية على إدارة المرتجعات والاستبدال. يذكر ملفه المهني الجامعة الألمانية بالقاهرة، وترد إي استبدال ضمن خريجي دورة خريف 2025 من حاضنة أعمال الجامعة الأمريكية بالقاهرة."
+    },
+    "companies": [
+      {
+        "name": "E-stebdal",
+        "role": "Founder & CEO",
+        "url": "https://www.e-stebdal.com/"
+      }
+    ],
+    "links": {
+      "linkedin": "https://eg.linkedin.com/in/ahmed-samer-284996207"
+    },
+    "photo": {
+      "url": "/people/ahmed-samer.jpg",
+      "credit": "Ahmed Samer · LinkedIn",
+      "creditUrl": "https://eg.linkedin.com/in/ahmed-samer-284996207"
+    },
+    "sources": [
+      "https://eg.linkedin.com/in/ahmed-samer-284996207",
+      "https://www.linkedin.com/company/estebdal/",
+      "https://www.linkedin.com/posts/auc-venture-lab_thats-a-wrap-for-our-fall25-demo-day-activity-7421649483387777025-h5Lp"
+    ]
+  },
+  {
+    "id": "anees-abdullateef",
+    "kind": "founder",
+    "name": {
+      "en": "Anees Abdullateef",
+      "ar": "أنيس عبد اللطيف"
+    },
+    "title": {
+      "en": "Founder and CEO, Welltra",
+      "ar": "مؤسس ويلترا ورئيسها التنفيذي"
+    },
+    "bio": {
+      "en": "Anees Abdullateef is the founder and CEO of Welltra, which develops camera-based wellness monitoring software. Egypt’s Healthcare Authority named him as the company’s chief executive when announcing a digital health and training agreement in November 2025.",
+      "ar": "أنيس عبد اللطيف مؤسس ويلترا ورئيسها التنفيذي. تطور الشركة برامج لمتابعة مؤشرات العافية بالكاميرا. وذكرته هيئة الرعاية الصحية المصرية بصفته الرئيس التنفيذي للشركة عند إعلان اتفاق في الصحة الرقمية والتدريب في نوفمبر 2025."
+    },
+    "companies": [
+      {
+        "name": "Welltra",
+        "role": "Founder & CEO",
+        "url": "https://www.welltra.ai/"
+      }
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/anees-abdullateef-587963190"
+    },
+    "photo": {
+      "url": "/people/anees-abdullateef.jpg",
+      "credit": "Anees Abdullateef · LinkedIn",
+      "creditUrl": "https://www.linkedin.com/in/anees-abdullateef-587963190"
+    },
+    "sources": [
+      "https://www.linkedin.com/in/anees-abdullateef-587963190",
+      "https://www.linkedin.com/company/welltra-ai/",
+      "https://sis.gov.eg/ar/المركز-الإعلامي/الفعاليات/الملتقى-السنوي-السادس-للهيئة-العامة-للرعاية-الصحية/"
+    ]
+  },
+  {
+    "id": "omar-abdullateef",
+    "kind": "founder",
+    "name": {
+      "en": "Omar Abdullateef",
+      "ar": "عمر عبد اللطيف"
+    },
+    "title": {
+      "en": "Co-founder and CTO, Welltra",
+      "ar": "شريك مؤسس لويلترا ومديرها التقني"
+    },
+    "bio": {
+      "en": "Omar Abdullateef is Welltra’s co-founder and chief technology officer. He holds a graduate certificate in technology commercialization and innovation from USC Marshall and a master’s in engineering and industrial management from USC Viterbi. USC reported that he took part in its Greif Incubator and New Venture Seed Competition while developing Welltra.",
+      "ar": "عمر عبد اللطيف شريك مؤسس لويلترا ومديرها التقني. حصل على شهادة دراسات عليا في تحويل التكنولوجيا إلى منتجات تجارية والابتكار من كلية مارشال بجامعة جنوب كاليفورنيا، وماجستير في إدارة الهندسة والصناعة من كلية فيتربي بالجامعة نفسها. وذكرت الجامعة أنه شارك في حاضنة Greif ومسابقة New Venture Seed أثناء تطوير ويلترا."
+    },
+    "companies": [
+      {
+        "name": "Welltra",
+        "role": "Co-founder & CTO",
+        "url": "https://www.welltra.ai/"
+      }
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/omar-abdullateef-66b347177"
+    },
+    "photo": {
+      "url": "/people/omar-abdullateef.jpg",
+      "credit": "Welltra · USC Marshall",
+      "creditUrl": "https://www.marshall.usc.edu/posts/usc-entrepreneur-signs-major-deals-to-make-preventative-care-accessible"
+    },
+    "sources": [
+      "https://www.marshall.usc.edu/posts/usc-entrepreneur-signs-major-deals-to-make-preventative-care-accessible",
+      "https://www.linkedin.com/company/welltra-ai/",
+      "https://www.linkedin.com/posts/kinestex_were-going-live-today-at-3-pm-gmt-for-activity-7482757292296359936-cgSt"
+    ]
+  },
+  {
+    "id": "mai-sabri",
+    "kind": "founder",
+    "name": {
+      "en": "Mai Sabri",
+      "ar": "مي صبري"
+    },
+    "title": {
+      "en": "Founder, Bouga",
+      "ar": "مؤسسة بوجا"
+    },
+    "bio": {
+      "en": "Mai Sabri is a brand designer and the founder of Bouga, an Egyptian brand of foldable bags. Her public portfolio lists her as a senior brand designer at PepsiCo Design & Innovation, with earlier work at The Brand Company and CreativeHub Egypt. A March 2026 interview describes how she built Bouga around everyday practicality and prints inspired by Egyptian life.",
+      "ar": "مي صبري مصممة هويات تجارية ومؤسسة بوجا، العلامة المصرية للحقائب القابلة للطي. يذكر ملف أعمالها أنها تعمل مصممة أولى للعلامات التجارية في PepsiCo Design & Innovation، وأنها عملت سابقًا في The Brand Company وCreativeHub Egypt. وفي مقابلة نُشرت في مارس 2026 تحدثت عن بناء بوجا حول الاستخدام اليومي ورسومات مستوحاة من الحياة المصرية."
+    },
+    "companies": [
+      {
+        "name": "Bouga",
+        "role": "Founder",
+        "url": "https://www.getbouga.com/"
+      }
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/mai-sabri-saad",
+      "behance": "https://www.behance.net/maisabrisaad/"
+    },
+    "photo": {
+      "url": "/people/mai-sabri.jpg",
+      "credit": "Mai Sabri · Behance",
+      "creditUrl": "https://www.behance.net/maisabrisaad/"
+    },
+    "sources": [
+      "https://www.behance.net/maisabrisaad/",
+      "https://www.scenenow.com/Society/Bouga-is-a-Foldable-Tote-Bag-for-the-Creative-Cairo-Hustler"
+    ]
+  }
+]

@@ -112,7 +112,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   <div class="container">
     {/* The result first: asked → outcome → final. */}
     {scheduled ? <section class="scheduled sec" aria-labelledby="scheduled-title">
-      <h2 id="scheduled-title">{ar ? 'موعد العرض الجديد' : 'Rescheduled broadcast'}</h2>
+      <h2 id="scheduled-title">{ar ? 'موعد العرض المعلن' : 'Announced broadcast'}</h2>
       <p><time datetime={scheduled.scheduledAt}>{new Intl.DateTimeFormat(ar ? 'ar-EG' : 'en-GB', { timeZone: 'Africa/Cairo', dateStyle: 'full', timeStyle: 'short' }).format(new Date(scheduled.scheduledAt))}</time> · {ar ? 'بتوقيت القاهرة' : 'Cairo time'}</p>
       <p>{scheduled.scheduleNote[lang]} <a href={scheduled.scheduleSource}>{ar ? 'الإعلان الرسمي' : 'Official announcement'}</a></p>
     </section> : <section class:list={['score', outcome]} aria-label={ar ? 'نتيجة العرض' : 'Pitch result'}>

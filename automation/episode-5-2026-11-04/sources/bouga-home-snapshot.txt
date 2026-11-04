@@ -1,0 +1,454 @@
+- link "Skip to content" [ref=e1]:
+    - /url: "#MainContent"
+  - complementary:
+    - button "Previous slide" [ref=e2]:
+    - button "Next slide" [ref=e3]:
+    - paragraph: Free Shipping orders above 2400
+    - link "Free Shipping orders above 2400" [ref=e4]:
+      - /url: /collections/all
+  - banner:
+    - heading "BOUGA" [ref=e5] [level=1]
+    - navigation:
+        - link "SHOP" [ref=e6]:
+          - /url: /
+        - link "INFO" [ref=e7]:
+          - /url: /pages/info
+    - link [ref=e8]:
+      - /url: /
+    - button "Account" [ref=e9]
+    - button "Cart" [ref=e10]:
+      - status: "Total items in cart: 0"
+  - main:
+      - strong: Carry everything. Fold it in seconds.
+    - link "GET YOUR BOUGA" [ref=e11]:
+      - /url: /collections/all
+      - strong: Foldable Bag
+      - strong: 10% off
+    - paragraph: FOR YOU & YOUR FRIENDS
+      - strong: Foldable Bag
+      - strong: 10% off
+    - paragraph: FOR YOU & YOUR FRIENDS
+      - strong: Foldable Bag
+      - strong: 10% off
+    - paragraph: FOR YOU & YOUR FRIENDS
+    - heading "Bouga's Collections" [ref=e12] [level=3]:
+        - strong: Bouga's Collections
+    - link "View all" [ref=e13]:
+      - /url: /collections/all-bouga
+    - link "Standard Bouga Alexandria City - مدينة الاسكندرية" [ref=e14]:
+      - /url: /products/standard-bouga-al-muizz-street-%D8%A7%D9%84%D9%85%D8%B9%D8%B2-copy?variant=67874570338498
+    - link "Standard Bouga Alexandria City - مدينة الاسكندرية" [ref=e15] [nth=1]:
+      - /url: /products/standard-bouga-al-muizz-street-%D8%A7%D9%84%D9%85%D8%B9%D8%B2-copy?variant=67874570338498
+    - button "Add" [ref=e16]
+    - heading "Standard Bouga Alexandria City - مدينة الاسكندرية" [ref=e17] [level=3]:
+        - strong: Standard Bouga Alexandria City - مدينة الاسكندرية
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e18]
+    - link "Standard Bouga Half a Pound - نص جنيه" [ref=e19]:
+      - /url: /products/standard-bouga-half-a-pound-%D9%86%D8%B5-%D8%AC%D9%86%D9%8A%D9%87?variant=67874548875458
+    - link "Standard Bouga Half a Pound - نص جنيه" [ref=e20] [nth=1]:
+      - /url: /products/standard-bouga-half-a-pound-%D9%86%D8%B5-%D8%AC%D9%86%D9%8A%D9%87?variant=67874548875458
+    - button "Add" [ref=e21] [nth=1]
+    - heading "Standard Bouga Half a Pound - نص جنيه" [ref=e22] [level=3]:
+        - strong: Standard Bouga Half a Pound - نص جنيه
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e23] [nth=1]
+    - link "Standard Bouga AL-Muizz Street - المعز" [ref=e24]:
+      - /url: /products/standard-bouga-al-muizz-street-%D8%A7%D9%84%D9%85%D8%B9%D8%B2?variant=67851515199682
+    - link "Standard Bouga AL-Muizz Street - المعز" [ref=e25] [nth=1]:
+      - /url: /products/standard-bouga-al-muizz-street-%D8%A7%D9%84%D9%85%D8%B9%D8%B2?variant=67851515199682
+    - button "Add" [ref=e26] [nth=2]
+    - heading "Standard Bouga AL-Muizz Street - المعز" [ref=e27] [level=3]:
+        - strong: Standard Bouga AL-Muizz Street - المعز
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e28] [nth=2]
+    - link "Standard Bouga Luxor City - الأقصر" [ref=e29]:
+      - /url: /products/standard-bouga-luxor-city-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D8%B1?variant=67851486593218
+    - link "Standard Bouga Luxor City - الأقصر" [ref=e30] [nth=1]:
+      - /url: /products/standard-bouga-luxor-city-%D8%A7%D9%84%D8%A3%D9%82%D8%B5%D8%B1?variant=67851486593218
+    - button "Add" [ref=e31] [nth=3]
+    - heading "Standard Bouga Luxor City - الأقصر" [ref=e32] [level=3]:
+        - strong: Standard Bouga Luxor City - الأقصر
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e33] [nth=3]
+    - link "Standard Bouga 75 PIASTRES - خمسه وسبعون قرشاً" [ref=e34]:
+      - /url: /products/standard-bouga-75-piastres-%D8%AE%D9%85%D8%B3%D9%87-%D9%88%D8%B3%D8%A8%D8%B9%D9%88%D9%86-%D9%82%D8%B1%D8%B4%D8%A7%D9%8B?variant=67851435311298
+    - link "Standard Bouga 75 PIASTRES - خمسه وسبعون قرشاً" [ref=e35] [nth=1]:
+      - /url: /products/standard-bouga-75-piastres-%D8%AE%D9%85%D8%B3%D9%87-%D9%88%D8%B3%D8%A8%D8%B9%D9%88%D9%86-%D9%82%D8%B1%D8%B4%D8%A7%D9%8B?variant=67851435311298
+    - button "Add" [ref=e36] [nth=4]
+    - heading "Standard Bouga 75 PIASTRES - خمسه وسبعون قرشاً" [ref=e37] [level=3]:
+        - strong: Standard Bouga 75 PIASTRES - خمسه وسبعون قرشاً
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e38] [nth=4]
+    - link "Standard Bouga A Pound - جنيه مصري" [ref=e39]:
+      - /url: /products/standard-bouga-a-half-of-a-pound-%D9%86%D8%B5-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D8%B5%D8%B1%D9%8A?variant=67851349491906
+    - link "Standard Bouga A Pound - جنيه مصري" [ref=e40] [nth=1]:
+      - /url: /products/standard-bouga-a-half-of-a-pound-%D9%86%D8%B5-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D8%B5%D8%B1%D9%8A?variant=67851349491906
+    - button "Add" [ref=e41] [nth=5]
+    - heading "Standard Bouga A Pound - جنيه مصري" [ref=e42] [level=3]:
+        - strong: Standard Bouga A Pound - جنيه مصري
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e43] [nth=5]
+    - link "Standard Bouga A Quarter of a Pound - ربع جنيه مصري" [ref=e44]:
+      - /url: /products/standard-bouga-a-quarter-of-a-pound-%D8%B1%D8%A8%D8%B9-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D8%B5%D8%B1%D9%8A?variant=67851335598274
+    - link "Standard Bouga A Quarter of a Pound - ربع جنيه مصري" [ref=e45] [nth=1]:
+      - /url: /products/standard-bouga-a-quarter-of-a-pound-%D8%B1%D8%A8%D8%B9-%D8%AC%D9%86%D9%8A%D9%87-%D9%85%D8%B5%D8%B1%D9%8A?variant=67851335598274
+    - button "Add" [ref=e46] [nth=6]
+    - heading "Standard Bouga A Quarter of a Pound - ربع جنيه مصري" [ref=e47] [level=3]:
+        - strong: Standard Bouga A Quarter of a Pound - ربع جنيه مصري
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e48] [nth=6]
+    - link "Standard Bouga 50 PIASTRES - خمسون قرشاً" [ref=e49]:
+      - /url: /products/standard-bouga-75-piastres-%D8%AE%D9%85%D8%B3%D8%A9-%D9%88%D8%B3%D8%A8%D8%B9%D9%88%D9%86-%D9%82%D8%B1%D8%B4%D8%A7%D9%8B-copy?variant=67851300405442
+    - link "Standard Bouga 50 PIASTRES - خمسون قرشاً" [ref=e50] [nth=1]:
+      - /url: /products/standard-bouga-75-piastres-%D8%AE%D9%85%D8%B3%D8%A9-%D9%88%D8%B3%D8%A8%D8%B9%D9%88%D9%86-%D9%82%D8%B1%D8%B4%D8%A7%D9%8B-copy?variant=67851300405442
+    - button "Add" [ref=e51] [nth=7]
+    - heading "Standard Bouga 50 PIASTRES - خمسون قرشاً" [ref=e52] [level=3]:
+        - strong: Standard Bouga 50 PIASTRES - خمسون قرشاً
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e53] [nth=7]
+    - link "Standard Bouga News Paper - اقرا الحادثة" [ref=e54]:
+      - /url: /products/standard-bouga-news-paper-%D8%A7%D9%82%D8%B1%D8%A7-%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9?variant=48453475467458
+    - link "Standard Bouga News Paper - اقرا الحادثة" [ref=e55] [nth=1]:
+      - /url: /products/standard-bouga-news-paper-%D8%A7%D9%82%D8%B1%D8%A7-%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9?variant=48453475467458
+    - button "Add" [ref=e56] [nth=8]
+    - heading "Standard Bouga News Paper - اقرا الحادثة" [ref=e57] [level=3]:
+        - strong: Standard Bouga News Paper - اقرا الحادثة
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e58] [nth=8]
+    - link "Standard Bouga Fish In Sea - في البحر سمكة" [ref=e59]:
+      - /url: /products/standard-bouga-fish-in-sea-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%B3%D9%85%D9%83%D8%A9?variant=48453450694850
+    - link "Standard Bouga Fish In Sea - في البحر سمكة" [ref=e60] [nth=1]:
+      - /url: /products/standard-bouga-fish-in-sea-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%B3%D9%85%D9%83%D8%A9?variant=48453450694850
+    - button "Add" [ref=e61] [nth=9]
+    - heading "Standard Bouga Fish In Sea - في البحر سمكة" [ref=e62] [level=3]:
+        - strong: Standard Bouga Fish In Sea - في البحر سمكة
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e63] [nth=9]
+    - link "Standard Bouga Spread Love - روح للناس الحب" [ref=e64]:
+      - /url: /products/standard-bouga-spread-love-%D8%B1%D9%88%D8%AD-%D9%84%D9%84%D9%86%D8%A7%D8%B3-%D8%A7%D9%84%D8%AD%D8%A8?variant=48453440667842
+    - link "Standard Bouga Spread Love - روح للناس الحب" [ref=e65] [nth=1]:
+      - /url: /products/standard-bouga-spread-love-%D8%B1%D9%88%D8%AD-%D9%84%D9%84%D9%86%D8%A7%D8%B3-%D8%A7%D9%84%D8%AD%D8%A8?variant=48453440667842
+    - button "Add" [ref=e66] [nth=10]
+    - heading "Standard Bouga Spread Love - روح للناس الحب" [ref=e67] [level=3]:
+        - strong: Standard Bouga Spread Love - روح للناس الحب
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e68] [nth=10]
+    - link "Standard Bouga Grandma's Tagine - طاجن ستي" [ref=e69]:
+      - /url: /products/standard-bouga-grandmas-tagine-%D8%B7%D8%A7%D8%AC%D9%86-%D8%B3%D8%AA%D9%8A?variant=48453422940354
+    - link "Standard Bouga Grandma's Tagine - طاجن ستي" [ref=e70] [nth=1]:
+      - /url: /products/standard-bouga-grandmas-tagine-%D8%B7%D8%A7%D8%AC%D9%86-%D8%B3%D8%AA%D9%8A?variant=48453422940354
+    - button "Add" [ref=e71] [nth=11]
+    - heading "Standard Bouga Grandma's Tagine - طاجن ستي" [ref=e72] [level=3]:
+        - strong: Standard Bouga Grandma's Tagine - طاجن ستي
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e73] [nth=11]
+    - link "Standard Bouga Kiosk Hossam’s Mother - كشك أم حســـام" [ref=e74]:
+      - /url: /products/kiosk-hossam-s-mother-%D9%83%D8%B4%D9%83-%D8%A3%D9%85-%D8%AD%D8%B3%D9%80%D9%80%D9%80%D8%A7%D9%85?variant=48453414355138
+    - link "Standard Bouga Kiosk Hossam’s Mother - كشك أم حســـام" [ref=e75] [nth=1]:
+      - /url: /products/kiosk-hossam-s-mother-%D9%83%D8%B4%D9%83-%D8%A3%D9%85-%D8%AD%D8%B3%D9%80%D9%80%D9%80%D8%A7%D9%85?variant=48453414355138
+    - button "Add" [ref=e76] [nth=12]
+    - heading "Standard Bouga Kiosk Hossam’s Mother - كشك أم حســـام" [ref=e77] [level=3]:
+        - strong: Standard Bouga Kiosk Hossam’s Mother - كشك أم حســـام
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e78] [nth=12]
+    - link "Standard Bouga FOUR MILLIEMES - أربعة مليمات" [ref=e79]:
+      - /url: /products/standard-bouga-four-milliemes-%D8%A3%D8%B1%D8%A8%D8%B9%D8%A9-%D9%85%D9%84%D9%8A%D9%85%D8%A7%D8%AA?variant=47348470251714
+    - link "Standard Bouga FOUR MILLIEMES - أربعة مليمات" [ref=e80] [nth=1]:
+      - /url: /products/standard-bouga-four-milliemes-%D8%A3%D8%B1%D8%A8%D8%B9%D8%A9-%D9%85%D9%84%D9%8A%D9%85%D8%A7%D8%AA?variant=47348470251714
+    - button "Add" [ref=e81] [nth=13]
+    - heading "Standard Bouga FOUR MILLIEMES - أربعة مليمات" [ref=e82] [level=3]:
+        - strong: Standard Bouga FOUR MILLIEMES - أربعة مليمات
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e83] [nth=13]
+    - link "Standard Bouga Cedar Trees - شجر الأرز" [ref=e84]:
+      - /url: /products/standard-bouga-cedar-trees-%D8%B4%D8%AC%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%B2?variant=47348469432514
+    - link "Standard Bouga Cedar Trees - شجر الأرز" [ref=e85] [nth=1]:
+      - /url: /products/standard-bouga-cedar-trees-%D8%B4%D8%AC%D8%B1-%D8%A7%D9%84%D8%A3%D8%B1%D8%B2?variant=47348469432514
+    - button "Add" [ref=e86] [nth=14]
+    - heading "Standard Bouga Cedar Trees - شجر الأرز" [ref=e87] [level=3]:
+        - strong: Standard Bouga Cedar Trees - شجر الأرز
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e88] [nth=14]
+    - link "Standard Bouga Dendera Sky - سماء دندرة" [ref=e89]:
+      - /url: /products/standard-bouga-dendera-sky-%D8%B3%D9%85%D8%A7%D8%A1-%D8%AF%D9%86%D8%AF%D8%B1%D8%A9?variant=47348451442882
+    - link "Standard Bouga Dendera Sky - سماء دندرة" [ref=e90] [nth=1]:
+      - /url: /products/standard-bouga-dendera-sky-%D8%B3%D9%85%D8%A7%D8%A1-%D8%AF%D9%86%D8%AF%D8%B1%D8%A9?variant=47348451442882
+    - button "Add" [ref=e91] [nth=15]
+    - heading "Standard Bouga Dendera Sky - سماء دندرة" [ref=e92] [level=3]:
+        - strong: Standard Bouga Dendera Sky - سماء دندرة
+    - text: LE 745.00 EGP
+    - button "Add to cart" [ref=e93] [nth=15]
+      - strong: SUMMER SALE
+    - paragraph: Choose what you love.
+      - strong: 50% OFF
+    - paragraph: FOR YOU & YOUR FRIENDS
+      - strong: SUMMER SALE
+    - paragraph: Choose what you love.
+      - strong: 50% OFF
+    - paragraph: FOR YOU & YOUR FRIENDS
+    - heading "Bouga's Bundles" [ref=e94] [level=3]:
+        - strong: Bouga's Bundles
+    - heading "For you and your friends!" [ref=e95] [level=3]:
+      - emphasis: For you and your friends!
+    - link "Nineties Bundle - مجموعة تسعينات" [ref=e96]:
+      - /url: /products/nineties-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%AA%D8%B3%D8%B9%D9%8A%D9%86%D8%A7%D8%AA?variant=48454109266114
+    - link "Nineties Bundle - مجموعة تسعينات" [ref=e97] [nth=1]:
+      - /url: /products/nineties-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%AA%D8%B3%D8%B9%D9%8A%D9%86%D8%A7%D8%AA?variant=48454109266114
+    - button "Add" [ref=e98] [nth=16]
+    - link "Nineties Bundle - مجموعة تسعينات" [ref=e99] [nth=2]:
+      - /url: /products/nineties-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%AA%D8%B3%D8%B9%D9%8A%D9%86%D8%A7%D8%AA?variant=48454109266114
+      - paragraph: Nineties Bundle - مجموعة تسعينات
+    - text: LE 2,000.00 EGP
+      - strong: SAVE 200 EGP
+    - button "Add to cart" [ref=e100] [nth=16]
+    - link "Signature Bundle - مجـــــــموعة مميـــــــزة" [ref=e101]:
+      - /url: /products/signature-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2?variant=47360127369410
+    - link "Signature Bundle - مجـــــــموعة مميـــــــزة" [ref=e102] [nth=1]:
+      - /url: /products/signature-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2?variant=47360127369410
+    - text: Sold out
+    - link "Signature Bundle - مجـــــــموعة مميـــــــزة" [ref=e103] [nth=2]:
+      - /url: /products/signature-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D9%8A%D8%B2?variant=47360127369410
+      - paragraph: Signature Bundle - مجـــــــموعة مميـــــــزة
+    - text: LE 2,000.00 EGP
+      - strong: SAVE 200 EGP
+    - button "Sold out" [ref=e104] [disabled]
+    - link "Egyptian Bundle - مجموعة المصريات" [ref=e105]:
+      - /url: /products/egyptian-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A7%D8%AA?variant=47359930859714
+    - link "Egyptian Bundle - مجموعة المصريات" [ref=e106] [nth=1]:
+      - /url: /products/egyptian-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A7%D8%AA?variant=47359930859714
+    - button "Add" [ref=e107] [nth=17]
+    - link "Egyptian Bundle - مجموعة المصريات" [ref=e108] [nth=2]:
+      - /url: /products/egyptian-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A7%D8%AA?variant=47359930859714
+      - paragraph: Egyptian Bundle - مجموعة المصريات
+    - text: LE 2,000.00 EGP
+      - strong: SAVE 200 EGP
+    - button "Add to cart" [ref=e109] [nth=17]
+    - link "Daily Bundle - مجـــــــموعة يومـــــــية" [ref=e110]:
+      - /url: /products/daily-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%8A%D9%88%D9%85%D9%8A%D8%A9?variant=47359947112642
+    - link "Daily Bundle - مجـــــــموعة يومـــــــية" [ref=e111] [nth=1]:
+      - /url: /products/daily-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%8A%D9%88%D9%85%D9%8A%D8%A9?variant=47359947112642
+    - button "Add" [ref=e112] [nth=18]
+    - link "Daily Bundle - مجـــــــموعة يومـــــــية" [ref=e113] [nth=2]:
+      - /url: /products/daily-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%8A%D9%88%D9%85%D9%8A%D8%A9?variant=47359947112642
+      - paragraph: Daily Bundle - مجـــــــموعة يومـــــــية
+    - text: LE 2,000.00 EGP
+      - strong: SAVE 200 EGP
+    - button "Add to cart" [ref=e114] [nth=18]
+    - link "Beach Bundle - مجـــــــموعة مصـــــــايف" [ref=e115]:
+      - /url: /products/beach-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%85%D8%B5%D8%A7%D9%8A%D9%81?variant=47359972278466
+    - link "Beach Bundle - مجـــــــموعة مصـــــــايف" [ref=e116] [nth=1]:
+      - /url: /products/beach-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%85%D8%B5%D8%A7%D9%8A%D9%81?variant=47359972278466
+    - text: Sold out
+    - link "Beach Bundle - مجـــــــموعة مصـــــــايف" [ref=e117] [nth=2]:
+      - /url: /products/beach-bundle-%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D9%85%D8%B5%D8%A7%D9%8A%D9%81?variant=47359972278466
+      - paragraph: Beach Bundle - مجـــــــموعة مصـــــــايف
+    - text: LE 2,000.00 EGP
+      - strong: SAVE 200 EGP
+    - button "Sold out" [ref=e118] [nth=1] [disabled]
+    - paragraph: WHY YOU NEED BOUGA
+    - paragraph: The bag you’ll always find useful. Lightweight, foldable, and ready whenever life surprises you, groceries, books, beach days, or sudden plans.
+    - paragraph: THE EGYPTIAN IDEA
+    - paragraph: Inspired by the simple cloth bags Egyptians have trusted for decades. Bouga takes that familiar idea and redesigns it for modern everyday life.
+    - paragraph: CARRY MORE. WORRY LESS.
+    - paragraph: Strong enough for your daily essentials, yet folds flat when you’re done. Carry what you need, then tuck Bouga away until the next moment you need it.
+      - strong: SAVE MORE THAN 200 EGP
+    - paragraph: Choose what you love.
+      - strong: GET YOUR BUNDLE NOW
+    - paragraph: FOR YOU & YOUR FRIENDS
+      - strong: SAVE MORE THAN 200 EGP
+    - paragraph: Choose what you love.
+      - strong: GET YOUR BUNDLE NOW
+    - paragraph: FOR YOU & YOUR FRIENDS
+    - heading "Bouga's STRAPS" [ref=e119] [level=3]:
+        - strong: Bouga's STRAPS
+    - link "Strap For Cross Bouga - سماء دندرة" [ref=e120]:
+      - /url: /products/strap-for-cross-bouga-%D8%B3%D9%85%D8%A7%D8%A1-%D8%AF%D9%86%D8%AF%D8%B1%D8%A9?variant=67873938374850
+    - link "Strap For Cross Bouga - سماء دندرة" [ref=e121] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D8%B3%D9%85%D8%A7%D8%A1-%D8%AF%D9%86%D8%AF%D8%B1%D8%A9?variant=67873938374850
+    - button "Add" [ref=e122] [nth=19]
+    - heading "Strap For Cross Bouga - سماء دندرة" [ref=e123] [level=3]:
+        - strong: Strap For Cross Bouga - سماء دندرة
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e124] [nth=19]
+    - link "Strap For Cross Bouga - نسيج وطن" [ref=e125]:
+      - /url: /products/strap-for-cross-bouga-%D9%86%D8%B3%D9%8A%D8%AC-%D9%88%D8%B7%D9%86?variant=67873958396098
+    - link "Strap For Cross Bouga - نسيج وطن" [ref=e126] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%86%D8%B3%D9%8A%D8%AC-%D9%88%D8%B7%D9%86?variant=67873958396098
+    - button "Add" [ref=e127] [nth=20]
+    - heading "Strap For Cross Bouga - نسيج وطن" [ref=e128] [level=3]:
+        - strong: Strap For Cross Bouga - نسيج وطن
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e129] [nth=20]
+    - link "Strap For Cross Bouga - في البحر سمكة" [ref=e130]:
+      - /url: /products/strap-for-cross-bouga-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%B3%D9%85%D9%83%D8%A9?variant=67873960198338
+    - link "Strap For Cross Bouga - في البحر سمكة" [ref=e131] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%B3%D9%85%D9%83%D8%A9?variant=67873960198338
+    - button "Add" [ref=e132] [nth=21]
+    - heading "Strap For Cross Bouga - في البحر سمكة" [ref=e133] [level=3]:
+        - strong: Strap For Cross Bouga - في البحر سمكة
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e134] [nth=21]
+    - link "Strap For Cross Bouga - بوسي كات" [ref=e135]:
+      - /url: /products/strap-for-cross-bouga-%D8%A8%D9%88%D8%B3%D9%8A-%D9%83%D8%A7%D8%AA?variant=67873957150914
+    - link "Strap For Cross Bouga - بوسي كات" [ref=e136] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D8%A8%D9%88%D8%B3%D9%8A-%D9%83%D8%A7%D8%AA?variant=67873957150914
+    - button "Add" [ref=e137] [nth=22]
+    - heading "Strap For Cross Bouga - بوسي كات" [ref=e138] [level=3]:
+        - strong: Strap For Cross Bouga - بوسي كات
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e139] [nth=22]
+    - link "Strap For Cross Bouga - اقرا الحادثة" [ref=e140]:
+      - /url: /products/strap-for-cross-bouga-%D8%A7%D9%82%D8%B1%D8%A7-%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9?variant=67873955938498
+    - link "Strap For Cross Bouga - اقرا الحادثة" [ref=e141] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D8%A7%D9%82%D8%B1%D8%A7-%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D8%AB%D8%A9?variant=67873955938498
+    - button "Add" [ref=e142] [nth=23]
+    - heading "Strap For Cross Bouga - اقرا الحادثة" [ref=e143] [level=3]:
+        - strong: Strap For Cross Bouga - اقرا الحادثة
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e144] [nth=23]
+    - link "Strap For Cross Bouga - نص المومياء" [ref=e145]:
+      - /url: /products/strap-for-cross-bouga-%D9%86%D8%B5-%D8%A7%D9%84%D9%85%D9%88%D9%85%D9%8A%D8%A7%D8%A1?variant=67873955479746
+    - link "Strap For Cross Bouga - نص المومياء" [ref=e146] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%86%D8%B5-%D8%A7%D9%84%D9%85%D9%88%D9%85%D9%8A%D8%A7%D8%A1?variant=67873955479746
+    - button "Add" [ref=e147] [nth=24]
+    - heading "Strap For Cross Bouga - نص المومياء" [ref=e148] [level=3]:
+        - strong: Strap For Cross Bouga - نص المومياء
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e149] [nth=24]
+    - link "Strap For Cross Bouga - شجر الآرز" [ref=e150]:
+      - /url: /products/strap-for-cross-bouga-%D8%B4%D8%AC%D8%B1-%D8%A7%D9%84%D8%A2%D8%B1%D8%B2?variant=67873953022146
+    - link "Strap For Cross Bouga - شجر الآرز" [ref=e151] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D8%B4%D8%AC%D8%B1-%D8%A7%D9%84%D8%A2%D8%B1%D8%B2?variant=67873953022146
+    - button "Add" [ref=e152] [nth=25]
+    - heading "Strap For Cross Bouga - شجر الآرز" [ref=e153] [level=3]:
+        - strong: Strap For Cross Bouga - شجر الآرز
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e154] [nth=25]
+    - link "Strap For Cross Bouga - ٤ مليمات" [ref=e155]:
+      - /url: /products/strap-for-cross-bouga-%D9%A4-%D9%85%D9%84%D9%8A%D9%85%D8%A7%D8%AA?variant=67873952465090
+    - link "Strap For Cross Bouga - ٤ مليمات" [ref=e156] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%A4-%D9%85%D9%84%D9%8A%D9%85%D8%A7%D8%AA?variant=67873952465090
+    - button "Add" [ref=e157] [nth=26]
+    - heading "Strap For Cross Bouga - ٤ مليمات" [ref=e158] [level=3]:
+        - strong: Strap For Cross Bouga - ٤ مليمات
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e159] [nth=26]
+    - link "Strap For Cross Bouga - طاجن ستي" [ref=e160]:
+      - /url: /products/strap-for-cross-bouga-%D8%B7%D8%A7%D8%AC%D9%86-%D8%B3%D8%AA%D9%8A?variant=67873951809730
+    - link "Strap For Cross Bouga - طاجن ستي" [ref=e161] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D8%B7%D8%A7%D8%AC%D9%86-%D8%B3%D8%AA%D9%8A?variant=67873951809730
+    - button "Add" [ref=e162] [nth=27]
+    - heading "Strap For Cross Bouga - طاجن ستي" [ref=e163] [level=3]:
+        - strong: Strap For Cross Bouga - طاجن ستي
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e164] [nth=27]
+    - link "Strap For Cross Bouga - مجنونه يا قوطه" [ref=e165]:
+      - /url: /products/strap-for-cross-bouga-%D9%85%D8%AC%D9%86%D9%88%D9%86%D9%87-%D9%8A%D8%A7-%D9%82%D9%88%D8%B7%D9%87?variant=67873949057218
+    - link "Strap For Cross Bouga - مجنونه يا قوطه" [ref=e166] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%85%D8%AC%D9%86%D9%88%D9%86%D9%87-%D9%8A%D8%A7-%D9%82%D9%88%D8%B7%D9%87?variant=67873949057218
+    - button "Add" [ref=e167] [nth=28]
+    - heading "Strap For Cross Bouga - مجنونه يا قوطه" [ref=e168] [level=3]:
+        - strong: Strap For Cross Bouga - مجنونه يا قوطه
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e169] [nth=28]
+    - link "Strap For Cross Bouga - ٥٠ قرشا" [ref=e170]:
+      - /url: /products/strap-for-cross-bouga-%D9%A5%D9%A0-%D9%82%D8%B1%D8%B4%D8%A7-1?variant=67873946370242
+    - link "Strap For Cross Bouga - ٥٠ قرشا" [ref=e171] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%A5%D9%A0-%D9%82%D8%B1%D8%B4%D8%A7-1?variant=67873946370242
+    - button "Add" [ref=e172] [nth=29]
+    - heading "Strap For Cross Bouga - ٥٠ قرشا" [ref=e173] [level=3]:
+        - strong: Strap For Cross Bouga - ٥٠ قرشا
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e174] [nth=29]
+    - link "Strap For Cross Bouga - ٧٥ قرشا" [ref=e175]:
+      - /url: /products/strap-for-cross-bouga-%D9%A5%D9%A0-%D9%82%D8%B1%D8%B4%D8%A7?variant=67873941553346
+    - link "Strap For Cross Bouga - ٧٥ قرشا" [ref=e176] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%A5%D9%A0-%D9%82%D8%B1%D8%B4%D8%A7?variant=67873941553346
+    - button "Add" [ref=e177] [nth=30]
+    - heading "Strap For Cross Bouga - ٧٥ قرشا" [ref=e178] [level=3]:
+        - strong: Strap For Cross Bouga - ٧٥ قرشا
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e179] [nth=30]
+    - link "Strap For Cross Bouga - كشك ام حسام" [ref=e180]:
+      - /url: /products/strap-for-cross-bouga-%D9%83%D8%B4%D9%83-%D8%A7%D9%85-%D8%AD%D8%B3%D8%A7%D9%85?variant=67873940373698
+    - link "Strap For Cross Bouga - كشك ام حسام" [ref=e181] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D9%83%D8%B4%D9%83-%D8%A7%D9%85-%D8%AD%D8%B3%D8%A7%D9%85?variant=67873940373698
+    - button "Add" [ref=e182] [nth=31]
+    - heading "Strap For Cross Bouga - كشك ام حسام" [ref=e183] [level=3]:
+        - strong: Strap For Cross Bouga - كشك ام حسام
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e184] [nth=31]
+    - link "Strap For Cross Bouga - جنيه" [ref=e185]:
+      - /url: /products/strap-for-cross-bouga-%D8%AC%D9%86%D9%8A%D9%87?variant=67873939849410
+    - link "Strap For Cross Bouga - جنيه" [ref=e186] [nth=1]:
+      - /url: /products/strap-for-cross-bouga-%D8%AC%D9%86%D9%8A%D9%87?variant=67873939849410
+    - button "Add" [ref=e187] [nth=32]
+    - heading "Strap For Cross Bouga - جنيه" [ref=e188] [level=3]:
+        - strong: Strap For Cross Bouga - جنيه
+    - text: LE 169.00 EGP
+    - button "Add to cart" [ref=e189] [nth=32]
+    - paragraph: Bouga In Use - in our real life
+    - button "Next slide" [ref=e190] [nth=1]:
+    - button "Next slide" [ref=e191] [nth=2]:
+      - strong: CARRIES UP TO 20 KG
+    - paragraph: Strong but lightweight.
+      - strong: FOLDS INTO YOUR POCKET
+    - paragraph: Machine washable and always ready.
+      - strong: LOVED BY 500+ PEOPLE
+    - paragraph: Already making everyday life easier.
+    - heading "Frequently asked questions" [ref=e192] [level=3]
+      - text: What's this Bouga?
+      - text: What's the material?
+      - text: What's your return/exchange policy?
+      - text: Where are your products manufactured?
+  - contentinfo:
+    - link "Facebook" [ref=e193]:
+      - /url: https://facebook.com/getbouga
+    - link "Instagram" [ref=e194]:
+      - /url: https://www.instagram.com/getbouga/
+    - link "Tiktok" [ref=e195]:
+      - /url: https://www.tiktok.com/@getbouga
+    - link "Pinterest" [ref=e196]:
+      - /url: https://uk.pinterest.com/getbouga/
+      - text: Some INFO
+        - listitem:
+          - link "Policies" [ref=e197]:
+            - /url: /policies/privacy-policy
+        - listitem:
+          - link "Refund" [ref=e198]:
+            - /url: /pages/returns-exchanges
+        - listitem:
+          - link "Instructions" [ref=e199]:
+            - /url: /pages/care-instructions
+        - listitem:
+          - link "Terms & Conditions" [ref=e200]:
+            - /url: https://www.getbouga.com/pages/terms-conditions
+        - listitem:
+          - link "Privacy Policy" [ref=e201]:
+            - /url: /pages/privacy-policy-page
+      - text: Some ASks
+        - listitem:
+          - link "FAQ" [ref=e202]:
+            - /url: /pages/faq
+        - listitem:
+          - link "Sustainability" [ref=e203]:
+            - /url: /pages/sustainability
+        - listitem:
+          - link "Contact Us" [ref=e204]:
+            - /url: /pages/contact-us
+      - text: Some Facts
+        - listitem:
+          - link "About Bouga" [ref=e205]:
+            - /url: /pages/about
+        - listitem:
+          - link "Materials" [ref=e206]:
+            - /url: /pages/materials
+        - listitem:
+          - link "Shipping" [ref=e207]:
+            - /url: /pages/shipping
+  - text: ×
+  - heading "Welcome to BOUGA" [ref=e208] [level=3]
+  - paragraph: Get 10% off your order
+  - text: BOUGA10
+  - button "Copy Code" [ref=e209]
