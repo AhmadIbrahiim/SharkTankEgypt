@@ -43,3 +43,17 @@ Both languages received a Humanizer pass: promotional claims were removed, the b
 - Run the data checks, unit tests, build, SEO audit and existing browser tests, including the announcement tests in both languages.
 
 The contributor approved applying and pushing the prepared profiles. Records, assets and the schedule preview have been applied through the existing site structure. No ask, offer, deal, broadcast confirmation or closing status was inferred from the announcement.
+
+## Contributor correction, 5 November 2026
+
+The maintainer watched the episode and supplied the following asks and outcomes as a firsthand account:
+
+| Business | Ask | Outcome |
+|---|---|---|
+| E-stebdal | EGP 7 million for 10% | No deal |
+| Welltra | EGP 25 million for 50% | Accepted Ahmed Tarek Khalil's offer of EGP 25 million for 50%, plus a 5% stake in the US holding company spread over four years |
+| Bouga | EGP 500,000 for 15% | Confirmed deal with Mohamed Farouk for EGP 500,000 for 15% |
+
+All three records now contain their pitch terms and outcomes, and the episode preview has been removed. Welltra's 5% holding-company stake is described in the bilingual pitch; it is separate from the recorded 50% stake. No equal annual split or other conditions were supplied, so none are inferred. E-stebdal and Bouga use the existing pitch summary generated from their data.
+
+The source for these corrections is the maintainer's firsthand viewing. The episode was not independently rewatched. The edited copy and generated summaries received a Humanizer pass in both languages.

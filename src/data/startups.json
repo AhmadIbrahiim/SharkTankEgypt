@@ -17097,7 +17097,6 @@
     "id": "e-stebdal",
     "season": 5,
     "episode": 5,
-    "appearanceStatus": "announced",
     "name": {
       "en": "E-stebdal",
       "ar": "إي استبدال"
@@ -17116,11 +17115,13 @@
       "linkedin": "https://www.linkedin.com/company/estebdal/"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 7000000,
+      "equityPct": 10
     },
-    "deal": null,
-    "checked": "2026-11-04",
+    "deal": {
+      "made": false
+    },
+    "checked": "2026-11-05",
     "about": {
       "founded": 2024,
       "highlights": {
@@ -17179,14 +17180,14 @@
       "https://apps.shopify.com/e-stebdal",
       "https://pricing.e-stebdal.com/",
       "https://www.linkedin.com/company/estebdal/",
-      "https://eg.linkedin.com/in/ahmed-samer-284996207"
+      "https://eg.linkedin.com/in/ahmed-samer-284996207",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-5-preview-2026-11-04.md"
     ]
   },
   {
     "id": "welltra",
     "season": 5,
     "episode": 5,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Welltra",
       "ar": "ويلترا"
@@ -17206,11 +17207,22 @@
       "linkedin": "https://www.linkedin.com/company/welltra-ai/"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 25000000,
+      "equityPct": 50
     },
-    "deal": null,
-    "checked": "2026-11-04",
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 25000000,
+      "equityPct": 50
+    },
+    "checked": "2026-11-05",
+    "pitch": {
+      "en": "In Season 5, Episode 5, Welltra asked for EGP 25 million for 50%. The team accepted Ahmed Tarek Khalil's offer of EGP 25 million for 50%. The agreement also includes a 5% stake in the US holding company, spread over four years.",
+      "ar": "في الحلقة الخامسة من الموسم الخامس، طلب فريق ويلترا 25 مليون جنيه مقابل 50%. وقبل الفريق عرض أحمد طارق خليل بنفس المبلغ والحصة. ويشمل الاتفاق أيضًا حصة قدرها 5% في الشركة القابضة في الولايات المتحدة، موزعة على أربع سنوات."
+    },
     "about": {
       "founded": 2023,
       "highlights": {
@@ -17269,14 +17281,14 @@
       "https://play.google.com/store/apps/details?id=com.welltra",
       "https://apps.apple.com/eg/app/welltra-ai-health-tracker-app/id6474238774",
       "https://www.marshall.usc.edu/posts/usc-entrepreneur-signs-major-deals-to-make-preventative-care-accessible",
-      "https://sis.gov.eg/en/media-center/news/health-authority-signs-9-deals-to-enhance-training-technology/"
+      "https://sis.gov.eg/en/media-center/news/health-authority-signs-9-deals-to-enhance-training-technology/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-5-preview-2026-11-04.md"
     ]
   },
   {
     "id": "bouga",
     "season": 5,
     "episode": 5,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Bouga",
       "ar": "بوجا"
@@ -17297,11 +17309,18 @@
       "pinterest": "https://uk.pinterest.com/getbouga/"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 500000,
+      "equityPct": 15
     },
-    "deal": null,
-    "checked": "2026-11-04",
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 500000,
+      "equityPct": 15
+    },
+    "checked": "2026-11-05",
     "about": {
       "highlights": {
         "en": [
@@ -17350,7 +17369,8 @@
       "https://www.getbouga.com/pages/care-instructions",
       "https://www.getbouga.com/pages/shipping",
       "https://www.scenenow.com/Society/Bouga-is-a-Foldable-Tote-Bag-for-the-Creative-Cairo-Hustler",
-      "https://www.behance.net/maisabrisaad/"
+      "https://www.behance.net/maisabrisaad/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-5-preview-2026-11-04.md"
     ]
   }
 ]
