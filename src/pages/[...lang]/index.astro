@@ -214,6 +214,13 @@ const jsonld = {
         ))}
       </ul>
     </section>
+    <aside class="missing" aria-labelledby="other-project">
+      <div>
+        <h2 id="other-project">{ar ? 'من مشروعات أحمد إبراهيم' : 'Another project by Ahmed Ibrahim'}</h2>
+        <p>{ar ? 'لقطة بيعرض منتجات وأسعار مسجّلة من محلات في مصر. أحمد إبراهيم بيعمل على لقطة وعلى الدليل ده.' : 'Lowqta lists products and recorded prices from stores in Egypt. Ahmed Ibrahim works on both Lowqta and this directory.'}</p>
+      </div>
+      <a class="btn btn-ghost" href={`https://www.lowqta.com/${lang}`}>{ar ? 'شوف لقطة' : 'Visit Lowqta'}</a>
+    </aside>
   </div>
 </Base>
 
