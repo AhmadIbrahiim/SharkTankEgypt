@@ -73,9 +73,9 @@ node scripts/og.mjs  # share images
 
 تقارير المراجعة: [AUDIT_REPORT.md](AUDIT_REPORT.md) · [SEO_AUDIT.md](SEO_AUDIT.md) · [PERFORMANCE_REPORT.md](PERFORMANCE_REPORT.md) · [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
 
-## من مشروعات أحمد إبراهيم
+## لقطة
 
-[لقطة](https://www.lowqta.com/ar) يعرض منتجات وأسعارًا مسجّلة من محلات في مصر. هو مشروع تسوق منفصل يعمل عليه القائم على هذا الدليل.
+[لقطة](https://www.lowqta.com/ar) يعرض منتجات وأسعارًا مسجّلة من محلات في مصر.
 
 ## الترخيص
 

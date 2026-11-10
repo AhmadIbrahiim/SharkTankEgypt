@@ -67,9 +67,9 @@ The site address lives in one place, `homepage` in `package.json`.
 
 Audit reports: [AUDIT_REPORT.md](AUDIT_REPORT.md) · [SEO_AUDIT.md](SEO_AUDIT.md) · [PERFORMANCE_REPORT.md](PERFORMANCE_REPORT.md) · [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
 
-## Another project by Ahmed Ibrahim
+## Lowqta
 
-[Lowqta / لقطة](https://www.lowqta.com/en) lists products and recorded prices from stores in Egypt. It is a separate shopping project by the directory's maintainer.
+[Lowqta / لقطة](https://www.lowqta.com/en) lists products and recorded prices from stores in Egypt.
 
 ## License
 
