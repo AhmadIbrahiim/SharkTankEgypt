@@ -27,7 +27,7 @@ const site = new URL(import.meta.env.BASE_URL, Astro.site).href;
 // Every known profile, so search engines can tie them to this startup.
 const sameAs = [x.website, ...Object.entries(x.links ?? {}).flatMap(([k, v]) => (k === 'other' ? (v as { url: string }[]).map((o) => o.url) : [v as string]))].filter(Boolean);
 // GitHub issue forms prefill fields from query params named after their ids.
-const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}`)}&name_en=${encodeURIComponent(x.name.en)}&name_ar=${encodeURIComponent(x.name.ar)}${x.episode != null ? `&episode=${x.episode}` : ''}`;
+const helpUrl = `${suggestUrl}&title=${encodeURIComponent(`[Update] ${x.name.en}`)}&name_en=${encodeURIComponent(x.name[lang])}&website=${encodeURIComponent(`${site}${dir(lang)}${x.id}/`)}`;
 const services = (x as any).services as { en: { name: string; desc: string }[]; ar: { name: string; desc: string }[] } | undefined;
 const pitchText = (x as any).pitch as { en: string; ar: string } | undefined;
 const team = (x.founders ?? []).map((n) => allFounders.find((f) => f.id === founderId(n)) ?? { id: founderId(n), name: { en: n, ar: n } } as any);

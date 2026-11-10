@@ -57,3 +57,9 @@ The maintainer watched the episode and supplied the following asks and outcomes 
 All three records now contain their pitch terms and outcomes, and the episode preview has been removed. Welltra's 5% holding-company stake is described in the bilingual pitch; it is separate from the recorded 50% stake. No equal annual split or other conditions were supplied, so none are inferred. E-stebdal and Bouga use the existing pitch summary generated from their data.
 
 The source for these corrections is the maintainer's firsthand viewing. The episode was not independently rewatched. The edited copy and generated summaries received a Humanizer pass in both languages.
+
+## Welltra ownership clarification, 10 November 2026
+
+[Issue #2](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/2) clarifies that Ahmed Tarek receives 5% of Welltra's parent company. Welltra and Ahmed will establish a new company in Egypt, with each owning 50%. The recorded 50% deal equity refers to that Egyptian company. The EGP 25 million investment and four-year schedule for the parent-company stake remain as supplied in the maintainer's earlier account.
+
+Welltra's English and Arabic pitch now explain the two stakes separately. The issue is cited in the profile's sources, and its review date is 10 November 2026. Both passages received a Humanizer pass. The correction follows the contributor's account; the episode has not been independently rewatched.
