@@ -17208,7 +17208,7 @@
     },
     "ask": {
       "amountEGP": 25000000,
-      "equityPct": 50
+      "equityPct": 5
     },
     "deal": {
       "made": true,
@@ -17216,12 +17216,12 @@
         "Ahmed Tarek Khalil"
       ],
       "amountEGP": 25000000,
-      "equityPct": 50
+      "equityPct": 5
     },
-    "checked": "2026-11-10",
+    "checked": "2026-11-11",
     "pitch": {
-      "en": "In Season 5, Episode 5, Welltra asked for EGP 25 million for 50%. The team agreed to set up a new company in Egypt, owned equally by Welltra and Ahmed Tarek Khalil, with an EGP 25 million investment from Ahmed. He also receives a 5% stake in Welltra's US parent company, spread over four years.",
-      "ar": "في الحلقة الخامسة من الموسم الخامس، طلب فريق ويلترا 25 مليون جنيه مقابل 50%. واتفق الفريق مع أحمد طارق خليل على تأسيس شركة جديدة في مصر، يملك كل طرف 50% منها، باستثمار قدره 25 مليون جنيه من أحمد. ويحصل أحمد أيضًا على حصة قدرها 5% في الشركة الأم لويلترا في الولايات المتحدة، موزعة على أربع سنوات."
+      "en": "In Season 5, Episode 5, Welltra asked for EGP 25 million for 5% of its US parent company, valuing it at EGP 500 million. The team accepted Ahmed Tarek Khalil's investment on those terms, with the 5% stake spread over four years. The agreement also includes a new company in Egypt, owned equally by Welltra and Ahmed.",
+      "ar": "في الحلقة الخامسة من الموسم الخامس، طلب فريق ويلترا 25 مليون جنيه مقابل 5% في الشركة الأم بالولايات المتحدة، بتقييم 500 مليون جنيه. وقبل الفريق استثمار أحمد طارق خليل بهذه الشروط، مع توزيع الحصة البالغة 5% على أربع سنوات. ويشمل الاتفاق أيضًا تأسيس شركة جديدة في مصر، يملك كل من ويلترا وأحمد 50% منها."
     },
     "about": {
       "founded": 2023,
@@ -17283,7 +17283,8 @@
       "https://www.marshall.usc.edu/posts/usc-entrepreneur-signs-major-deals-to-make-preventative-care-accessible",
       "https://sis.gov.eg/en/media-center/news/health-authority-signs-9-deals-to-enhance-training-technology/",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-5-preview-2026-11-04.md",
-      "https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/2"
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/2",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/2#issuecomment-6788873374"
     ]
   },
   {

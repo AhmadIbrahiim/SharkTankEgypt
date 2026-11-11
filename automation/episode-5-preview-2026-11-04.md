@@ -63,3 +63,11 @@ The source for these corrections is the maintainer's firsthand viewing. The epis
 [Issue #2](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/2) clarifies that Ahmed Tarek receives 5% of Welltra's parent company. Welltra and Ahmed will establish a new company in Egypt, with each owning 50%. The recorded 50% deal equity refers to that Egyptian company. The EGP 25 million investment and four-year schedule for the parent-company stake remain as supplied in the maintainer's earlier account.
 
 Welltra's English and Arabic pitch now explain the two stakes separately. The issue is cited in the profile's sources, and its review date is 10 November 2026. Both passages received a Humanizer pass. The correction follows the contributor's account; the episode has not been independently rewatched.
+
+## Welltra investment and valuation correction, 11 November 2026
+
+[The contributor's follow-up](https://github.com/AhmadIbrahiim/SharkTankEgypt/issues/2#issuecomment-6788873374) states that Welltra's valuation is EGP 500 million and that the investment applies to the US company. This corrects the earlier interpretation that assigned the EGP 25 million investment to the Egyptian entity.
+
+The ask and deal now record EGP 25 million for 5% of the US parent company, implying an EGP 500 million valuation. The new Egyptian company, owned equally by Welltra and Ahmed Tarek, is an additional part of the agreement. The four-year schedule for the parent-company stake remains as supplied in the maintainer's earlier account.
+
+The English and Arabic pitch received a Humanizer pass. The follow-up comment is cited directly, and the review date is 11 November 2026. This correction supersedes the financial interpretation in the earlier notes; the episode has not been independently rewatched.
