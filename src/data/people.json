@@ -5773,5 +5773,161 @@
       "https://www.behance.net/maisabrisaad/",
       "https://www.scenenow.com/Society/Bouga-is-a-Foldable-Tote-Bag-for-the-Creative-Cairo-Hustler"
     ]
+  },
+  {
+    "id": "mohamed-amr",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Amr",
+      "ar": "محمد عمرو"
+    },
+    "title": {
+      "en": "Founder and CEO, Wady Le3b",
+      "ar": "مؤسس وادي لعب ورئيسه التنفيذي"
+    },
+    "bio": {
+      "en": "Mohamed Amr is the founder and CEO of Wady Le3b, a Cairo app for booking places in organised amateur football matches. He said on Shark Tank Egypt that the idea came while he was studying in Spain, and that he spent about nine months preparing before launch. He is listed as the app’s developer on the App Store.",
+      "ar": "محمد عمرو مؤسس وادي لعب ورئيسه التنفيذي. التطبيق يتيح حجز أماكن في مباريات كرة قدم منظمة للهواة في القاهرة. قال في شارك تانك مصر إن الفكرة جاءته وهو يدرس في إسبانيا، وإنه قضى نحو تسعة أشهر في التحضير قبل الإطلاق. ويرد اسمه مطوّرًا للتطبيق على App Store."
+    },
+    "companies": [
+      {
+        "name": "Wady Le3b",
+        "role": "Founder & CEO",
+        "url": "https://wadyle3b.com/"
+      }
+    ],
+    "photo": {
+      "url": "/people/mohamed-amr.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1113502031444907"
+    },
+    "sources": [
+      "https://www.youm7.com/7615243",
+      "https://www.youm7.com/7615245",
+      "https://apps.apple.com/eg/app/wady-le3b/id6749703524",
+      "https://www.youtube.com/watch?v=idJ-tuHYMLA"
+    ]
+  },
+  {
+    "id": "nashwa-emad",
+    "kind": "founder",
+    "name": {
+      "en": "Nashwa Emad",
+      "ar": "نشوى عماد"
+    },
+    "title": {
+      "en": "Co-founder, DTX",
+      "ar": "شريكة مؤسسة في DTX"
+    },
+    "bio": {
+      "en": "Nashwa Emad is a co-founder of DTX, a digital textile printing company in New Cairo. She owns half of the company and runs it with her husband, Mohamed Abdel Azim. Before DTX, the couple ran a children’s clothing brand for about seven years.",
+      "ar": "نشوى عماد شريكة مؤسسة في DTX، شركة للطباعة الرقمية على الأقمشة في القاهرة الجديدة. تملك نصف الشركة وتديرها مع زوجها محمد عبد العظيم. وقبل DTX أدار الزوجان علامة لملابس الأطفال نحو سبع سنوات."
+    },
+    "companies": [
+      {
+        "name": "DTX",
+        "role": "Co-founder",
+        "url": "https://www.dtxprinting.com/"
+      }
+    ],
+    "links": {
+      "linkedin": "https://eg.linkedin.com/in/dtxprinting"
+    },
+    "photo": {
+      "url": "/people/nashwa-emad.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1113502028111574"
+    },
+    "sources": [
+      "https://www.youm7.com/7615248",
+      "https://www.youm7.com/7615249",
+      "https://www.linkedin.com/company/dtx-printing"
+    ]
+  },
+  {
+    "id": "mohamed-abdel-azim",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed Abdel Azim",
+      "ar": "محمد عبد العظيم"
+    },
+    "title": {
+      "en": "Co-founder, DTX",
+      "ar": "شريك مؤسس في DTX"
+    },
+    "bio": {
+      "en": "Mohamed Abdel Azim co-founded DTX with his wife, Nashwa Emad, and the two own it equally. On Shark Tank Egypt he said they started the fabric printing business about five years ago, with synthetic fabrics first and natural ones later.",
+      "ar": "أسس محمد عبد العظيم DTX مع زوجته نشوى عماد، ويملكانها مناصفة. قال في شارك تانك مصر إنهما بدآ طباعة الأقمشة قبل نحو خمس سنوات، بالخامات الصناعية أولًا ثم الطبيعية."
+    },
+    "companies": [
+      {
+        "name": "DTX",
+        "role": "Co-founder",
+        "url": "https://www.dtxprinting.com/"
+      }
+    ],
+    "photo": {
+      "url": "/people/mohamed-abdel-azim.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1113502028111574"
+    },
+    "sources": [
+      "https://www.youm7.com/7615248",
+      "https://www.youm7.com/7615249"
+    ]
+  },
+  {
+    "id": "youssef-wael",
+    "kind": "founder",
+    "name": {
+      "en": "Youssef Wael",
+      "ar": "يوسف وائل"
+    },
+    "title": {
+      "en": "Co-founder, Go Fresh",
+      "ar": "شريك مؤسس في جو فريش"
+    },
+    "bio": {
+      "en": "Youssef Wael is a co-founder of Go Fresh, which makes single-use toothbrushes that work without water. He pitched the company on Shark Tank Egypt with Riad El-Helw. The two said they spent about eight months developing the design.",
+      "ar": "يوسف وائل شريك مؤسس في جو فريش، التي تنتج فرشاة أسنان للاستخدام مرة واحدة دون ماء. عرض الشركة في شارك تانك مصر مع رياض الحلو. وقال الاثنان إن تطوير التصميم استغرق نحو ثمانية أشهر."
+    },
+    "companies": [
+      {
+        "name": "Go Fresh",
+        "role": "Co-founder",
+        "url": "https://gofresheg.com/"
+      }
+    ],
+    "sources": [
+      "https://www.youm7.com/7615213",
+      "https://www.youm7.com/7615215"
+    ]
+  },
+  {
+    "id": "riad-el-helw",
+    "kind": "founder",
+    "name": {
+      "en": "Riad El-Helw",
+      "ar": "رياض الحلو"
+    },
+    "title": {
+      "en": "Co-founder, Go Fresh",
+      "ar": "شريك مؤسس في جو فريش"
+    },
+    "bio": {
+      "en": "Riad El-Helw started Go Fresh with Youssef Wael. Its first product is a single-use toothbrush that works without water, and the two told the sharks on Shark Tank Egypt that more hygiene products for use on the go will follow.",
+      "ar": "بدأ رياض الحلو جو فريش مع يوسف وائل. أول منتجاتها فرشاة أسنان للاستخدام مرة واحدة دون ماء، وقال الاثنان للمستثمرين في شارك تانك مصر إن منتجات أخرى للنظافة الشخصية خارج المنزل ستتبعها."
+    },
+    "companies": [
+      {
+        "name": "Go Fresh",
+        "role": "Co-founder",
+        "url": "https://gofresheg.com/"
+      }
+    ],
+    "sources": [
+      "https://www.youm7.com/7615213",
+      "https://www.youm7.com/7615215"
+    ]
   }
 ]

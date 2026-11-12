@@ -17374,5 +17374,307 @@
       "https://www.behance.net/maisabrisaad/",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-5-preview-2026-11-04.md"
     ]
+  },
+  {
+    "id": "wady-le3b",
+    "season": 5,
+    "episode": 6,
+    "name": {
+      "en": "Wady Le3b",
+      "ar": "وادي لعب"
+    },
+    "description": {
+      "en": "Wady Le3b is a Cairo football app that sells individual places in organised amateur matches. Players book a spot without assembling a team or finding a pitch, and a referee at each game records goals and assists. Those numbers feed public player profiles and leaderboards, and the app also runs tournaments with cash prizes.",
+      "ar": "وادي لعب تطبيق لكرة القدم في القاهرة يبيع أماكن فردية في مباريات منظمة للهواة. يحجز اللاعب مكانه دون أن يجمع فريقًا أو يبحث عن ملعب، ويسجل حكم في كل مباراة الأهداف والتمريرات الحاسمة. تظهر هذه الأرقام في ملفات اللاعبين وقوائم الترتيب، وينظم التطبيق أيضًا بطولات بجوائز مالية."
+    },
+    "category": "Sports",
+    "founders": [
+      "Mohamed Amr"
+    ],
+    "website": "https://wadyle3b.com/",
+    "ask": {
+      "amountEGP": 3000000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": false
+    },
+    "checked": "2026-11-12",
+    "video": "idJ-tuHYMLA",
+    "pitch": {
+      "en": "In Season 5, Episode 6, founder and CEO Mohamed Amr asked for EGP 3 million for 10% of Wady Le3b, valuing it at EGP 30 million. He wanted the money to expand across Cairo and then into other governorates. The idea came while he was studying in Spain and watching friends back home struggle to find enough players for a game. He said he spoke to more than 5,000 people at pitches, clubs and cafés without getting a single booking. Then a video telling the project’s story reached about 500,000 views and brought in thousands of downloads. He reported gross margins of 45% to 70% after pitch and referee costs, and forecast sales of about EGP 2 million this year and EGP 7.5 million next year. He left without a deal.",
+      "ar": "في الحلقة السادسة من الموسم الخامس، طلب محمد عمرو، مؤسس وادي لعب ورئيسه التنفيذي، 3 ملايين جنيه مقابل 10% من الشركة، أي بتقييم 30 مليون جنيه. أراد التمويل للتوسع في القاهرة ثم في محافظات أخرى. قال إن الفكرة جاءته وهو يدرس في إسبانيا، حين رأى أصحابه في مصر يتعبون في تجميع عدد كافٍ من اللاعبين للمباراة. وذكر أنه تحدث مع أكثر من 5 آلاف شخص في الملاعب والنوادي والمقاهي دون أن يحصل على حجز واحد. ثم نشر فيديو يحكي قصة المشروع، فوصل إلى نحو 500 ألف مشاهدة وجاء بآلاف التحميلات. وقال إن هامش الربح الإجمالي بين 45% و70% بعد تكلفة الملعب والحكم، وتوقع مبيعات بنحو مليوني جنيه هذا العام و7.5 مليون جنيه العام المقبل. وخرج من الحلقة دون صفقة."
+    },
+    "about": {
+      "founded": 2025,
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "highlights": {
+        "en": [
+          "More than 15,000 downloads on the App Store, where it reached first place among sports apps, according to the pitch.",
+          "Monthly sales rose from EGP 25,000 in January to EGP 200,000 in August, the founder said on the show.",
+          "Matches are five-, seven- or eight-a-side. Some are filmed in full by a camera that tracks the ball.",
+          "The team has 15 people, 12 of them referees paid per match, according to Youm7’s report on the pitch."
+        ],
+        "ar": [
+          "أكثر من 15 ألف تحميل على App Store، حيث وصل إلى المركز الأول بين التطبيقات الرياضية، بحسب العرض.",
+          "ارتفعت المبيعات الشهرية من 25 ألف جنيه في يناير إلى 200 ألف جنيه في أغسطس، كما قال المؤسس في الحلقة.",
+          "تُلعب المباريات بنظام الخماسي أو السباعي أو الثماني، وبعضها يُصوَّر كاملًا بكاميرا تتتبع الكرة.",
+          "يضم الفريق 15 شخصًا، منهم 12 حكمًا يتقاضون أجرهم عن كل مباراة، بحسب ما نقله اليوم السابع عن العرض."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Match booking",
+          "desc": "Individual places in scheduled matches, with the pitch and referee arranged by Wady Le3b."
+        },
+        {
+          "name": "Filmed matches",
+          "desc": "Games recorded in full by a ball-tracking camera, with videos shown on player profiles."
+        },
+        {
+          "name": "Player profiles and stats",
+          "desc": "Goals, assists and appearances for each player, with monthly and all-time leaderboards."
+        },
+        {
+          "name": "Tournaments",
+          "desc": "Organised competitions with cash prizes."
+        }
+      ],
+      "ar": [
+        {
+          "name": "حجز المباريات",
+          "desc": "أماكن فردية في مباريات مجدولة، ويتولى وادي لعب حجز الملعب وتوفير الحكم."
+        },
+        {
+          "name": "مباريات مصورة",
+          "desc": "مباريات تُسجَّل كاملة بكاميرا تتتبع الكرة، وتظهر مقاطعها في ملفات اللاعبين."
+        },
+        {
+          "name": "ملفات اللاعبين والإحصاءات",
+          "desc": "أهداف كل لاعب وتمريراته الحاسمة ومشاركاته، مع قوائم ترتيب شهرية وأخرى لكل الأوقات."
+        },
+        {
+          "name": "البطولات",
+          "desc": "مسابقات منظمة بجوائز مالية."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/wady-le3b.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1113502031444907"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02pwbPvnPayfKW9A5bgpfhhAjuLLXisX3BKW4o22VCrQEEz8q47X3ysoEyyd2mj9rvl",
+      "https://www.youtube.com/watch?v=idJ-tuHYMLA",
+      "https://www.youm7.com/7615243",
+      "https://www.youm7.com/7615245",
+      "https://wadyle3b.com/",
+      "https://apps.apple.com/eg/app/wady-le3b/id6749703524",
+      "https://play.google.com/store/apps/details?id=com.wadyle3b.app",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-6-2026-11-11/README.md"
+    ]
+  },
+  {
+    "id": "dtx",
+    "season": 5,
+    "episode": 6,
+    "name": {
+      "en": "DTX",
+      "ar": "دي تي إكس"
+    },
+    "description": {
+      "en": "DTX is a digital textile printing company in New Cairo run by Nashwa Emad and Mohamed Abdel Azim. It prints customers’ designs on synthetic and natural fabrics, using material they bring or buy from DTX. The couple started it after their own children’s clothing brand was asked to order 1,000 to 3,000 metres per design.",
+      "ar": "دي تي إكس (DTX) شركة للطباعة الرقمية على الأقمشة في القاهرة الجديدة، يديرها نشوى عماد ومحمد عبد العظيم. تطبع تصميمات العملاء على خامات صناعية وطبيعية، سواء أحضر العميل القماش أو اشتراه منها. بدأ الزوجان الشركة بعدما طُلب من علامتهما لملابس الأطفال ألا تقل الطلبية عن ألف إلى ثلاثة آلاف متر للتصميم الواحد."
+    },
+    "category": "Manufacturing",
+    "founders": [
+      "Nashwa Emad",
+      "Mohamed Abdel Azim"
+    ],
+    "website": "https://www.dtxprinting.com/",
+    "links": {
+      "instagram": "https://www.instagram.com/dtx.printing/",
+      "tiktok": "https://www.tiktok.com/@dtx_printing"
+    },
+    "ask": {
+      "amountEGP": 10000000,
+      "equityPct": 20
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Hala El-Kasem",
+        "Ayman Abbas"
+      ],
+      "amountEGP": 5000000,
+      "equityPct": 30
+    },
+    "checked": "2026-11-12",
+    "pitch": {
+      "en": "In Season 5, Episode 6, Nashwa Emad and Mohamed Abdel Azim asked for EGP 10 million for 20% of DTX. They based the EGP 50 million valuation on an EBITDA multiple plus the net value of the factory’s assets. Before DTX they ran a children’s clothing brand for about seven years and could not get custom prints without ordering 1,000 to 3,000 metres per design. The money was for more capacity and for stocking the fabrics customers reorder most. One machine currently handles two production stages, and splitting those across specialised machines would cut preparation time by about 30%, they said. An online portal is also planned, where a customer uploads a design, sees the price and tracks the order. Hala El-Kasem and Ayman Abbas offered EGP 5 million for 30%, and the founders accepted.",
+      "ar": "في الحلقة السادسة من الموسم الخامس، طلب نشوى عماد ومحمد عبد العظيم 10 ملايين جنيه مقابل 20% من DTX. بنيا تقييم الـ50 مليون جنيه على مضاعف للأرباح قبل الفوائد والضرائب والإهلاك، مع صافي قيمة أصول المصنع. قبل DTX أدارا علامة لملابس الأطفال نحو سبع سنوات، ولم يجدا من يطبع لهما تصميمات خاصة بأقل من ألف إلى ثلاثة آلاف متر للتصميم الواحد. التمويل المطلوب لزيادة الطاقة الإنتاجية وتخزين الأقمشة التي يكرر العملاء طلبها. تنفذ ماكينة واحدة حاليًا مرحلتين من الإنتاج، وتوزيعهما على ماكينات متخصصة يختصر وقت التجهيز بنحو 30% بحسب قولهما. وفي الخطة أيضًا واجهة إلكترونية يرفع العميل تصميمه عليها ويعرف التكلفة ويتابع طلبه. عرضت هالة القاسم وأيمن عباس 5 ملايين جنيه مقابل 30%، وقبل المؤسسان العرض."
+    },
+    "about": {
+      "city": {
+        "en": "New Cairo",
+        "ar": "القاهرة الجديدة"
+      },
+      "highlights": {
+        "en": [
+          "The founders are married and each owns half of the company, Youm7 reported.",
+          "They said they started about five years ago with synthetic fabrics and added natural fabrics in the past year.",
+          "Digital print orders take five days to two weeks and polyester printing three to five days, according to the pitch.",
+          "They are aiming for EGP 100 million in sales by 2030."
+        ],
+        "ar": [
+          "المؤسسان زوجان، ويملك كل منهما نصف الشركة، بحسب اليوم السابع.",
+          "قالا إنهما بدآ قبل نحو خمس سنوات بالطباعة على الخامات الصناعية، وأضافا الخامات الطبيعية خلال العام الماضي.",
+          "يستغرق طلب الطباعة الرقمية من خمسة أيام إلى أسبوعين، والطباعة على البوليستر من ثلاثة إلى خمسة أيام، بحسب العرض.",
+          "يستهدفان مبيعات بقيمة 100 مليون جنيه بحلول 2030."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Custom fabric printing",
+          "desc": "Digital printing of a customer’s own design, or one chosen from DTX’s ready-to-print designs."
+        },
+        {
+          "name": "Fabric supply",
+          "desc": "Customers can bring their own fabric or buy from a range of synthetic and natural fabrics."
+        },
+        {
+          "name": "Sample prints",
+          "desc": "Test prints to check quality before placing a larger order."
+        }
+      ],
+      "ar": [
+        {
+          "name": "طباعة الأقمشة حسب الطلب",
+          "desc": "طباعة رقمية لتصميم العميل، أو لتصميم يختاره من التصميمات الجاهزة لدى DTX."
+        },
+        {
+          "name": "توريد الأقمشة",
+          "desc": "يمكن للعميل إحضار قماشه أو الشراء من مجموعة خامات صناعية وطبيعية."
+        },
+        {
+          "name": "عينات مطبوعة",
+          "desc": "عينات لاختبار الجودة قبل تنفيذ طلبية أكبر."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/dtx.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1113502028111574"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02pwbPvnPayfKW9A5bgpfhhAjuLLXisX3BKW4o22VCrQEEz8q47X3ysoEyyd2mj9rvl",
+      "https://www.youm7.com/7615248",
+      "https://www.youm7.com/7615249",
+      "https://www.dtxprinting.com/",
+      "https://www.dtxprinting.com/about",
+      "https://www.dtxprinting.com/services",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-6-2026-11-11/README.md"
+    ]
+  },
+  {
+    "id": "go-fresh",
+    "season": 5,
+    "episode": 6,
+    "name": {
+      "en": "Go Fresh",
+      "ar": "جو فريش"
+    },
+    "description": {
+      "en": "Go Fresh makes Go Fresh Minis, single-use toothbrushes that need no water or toothpaste. Each finger-sized brush comes individually wrapped, with a mint bead, a pick at one end and a tongue scraper on the back. The company sells them in packs of 6, 12 and 24 through its online store and from vending machines in malls.",
+      "ar": "جو فريش تنتج «جو فريش مينيز»، فرشاة أسنان للاستخدام مرة واحدة لا تحتاج إلى ماء أو معجون. الفرشاة بحجم الإصبع ومغلفة منفردة، وفيها حبة بنكهة النعناع وخلّة في طرفها ومنظف للسان في ظهرها. تبيعها الشركة في عبوات من 6 و12 و24 قطعة عبر متجرها الإلكتروني وماكينات بيع في المراكز التجارية."
+    },
+    "category": "Health",
+    "founders": [
+      "Youssef Wael",
+      "Riad El-Helw"
+    ],
+    "website": "https://gofresheg.com/",
+    "links": {
+      "instagram": "https://www.instagram.com/getgofresh/"
+    },
+    "ask": {
+      "amountEGP": 1000000,
+      "equityPct": 10
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Abdallah Sallam"
+      ],
+      "amountEGP": 1000000,
+      "equityPct": 15
+    },
+    "checked": "2026-11-12",
+    "pitch": {
+      "en": "In Season 5, Episode 6, Youssef Wael and Riad El-Helw asked for EGP 1 million for 10% of Go Fresh, valuing it at EGP 10 million. They said the idea came at a wedding, when they wanted to brush after eating and had no water, toothpaste or bathroom nearby. The design took about eight months to develop, and they said they hold an Egyptian patent for it. A brush sells for EGP 29 to 31 on average, depending on the pack, at a gross margin of 69% and a net margin of 44%. More hygiene products for use on the go are planned, along with sales to restaurants, hotels, universities and airlines. Abdallah Sallam offered EGP 1 million for 15%, and they accepted.",
+      "ar": "في الحلقة السادسة من الموسم الخامس، طلب يوسف وائل ورياض الحلو مليون جنيه مقابل 10% من جو فريش، أي بتقييم 10 ملايين جنيه. قالا إن الفكرة جاءتهما في فرح، حين أرادا تنظيف أسنانهما بعد الأكل ولم يجدا ماءً ولا معجونًا ولا حمامًا قريبًا. استغرق تطوير التصميم نحو ثمانية أشهر، وذكرا أنهما حصلا على براءة اختراع له في مصر. يتراوح متوسط سعر الفرشاة بين 29 و31 جنيهًا حسب العبوة، بهامش ربح إجمالي 69% وصافٍ 44%. وفي الخطة منتجات أخرى للنظافة الشخصية خارج المنزل، والبيع للمطاعم والفنادق والجامعات وشركات الطيران. عرض عبد الله سلام مليون جنيه مقابل 15%، وقبلا العرض."
+    },
+    "about": {
+      "highlights": {
+        "en": [
+          "Packs cost EGP 275 for 6, EGP 375 for 12 and EGP 700 for 24 on the company’s store, checked on 12 November 2026.",
+          "The company says the brushes carry Halal certification and are approved by the Egyptian Drug Authority.",
+          "The brushes are imported for now. The founders said they own the design and plan to manufacture in Egypt within three months.",
+          "The company’s FAQ says Minis are for freshening up between regular brushing and do not replace it."
+        ],
+        "ar": [
+          "سعر العبوة في متجر الشركة 275 جنيهًا لست قطع، و375 جنيهًا لـ12 قطعة، و700 جنيه لـ24 قطعة، بحسب مراجعة يوم 12 نوفمبر 2026.",
+          "تقول الشركة إن الفرشاة حاصلة على شهادة حلال ومعتمدة من هيئة الدواء المصرية.",
+          "تُستورد الفرشاة حاليًا. وقال المؤسسان إنهما يملكان التصميم ويخططان للتصنيع في مصر خلال ثلاثة أشهر.",
+          "تذكر صفحة الأسئلة الشائعة أن «مينيز» للانتعاش بين مرات الغسيل المعتادة ولا تغني عنها."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Go Fresh Minis",
+          "desc": "Individually wrapped single-use toothbrushes with a mint bead, a pick and a tongue scraper."
+        },
+        {
+          "name": "Bulk and business orders",
+          "desc": "Wholesale supply for retailers, hotels, pharmacies and companies, arranged directly with Go Fresh."
+        }
+      ],
+      "ar": [
+        {
+          "name": "جو فريش مينيز",
+          "desc": "فرشاة أسنان للاستخدام مرة واحدة، مغلفة منفردة، بحبة نعناع وخلّة ومنظف للسان."
+        },
+        {
+          "name": "طلبات الجملة والشركات",
+          "desc": "توريد بالجملة للمتاجر والفنادق والصيدليات والشركات، بالاتفاق المباشر مع جو فريش."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/go-fresh.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1113502024778241"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02pwbPvnPayfKW9A5bgpfhhAjuLLXisX3BKW4o22VCrQEEz8q47X3ysoEyyd2mj9rvl",
+      "https://www.youm7.com/7615213",
+      "https://www.youm7.com/7615215",
+      "https://gofresheg.com/",
+      "https://gofresheg.com/pages/about",
+      "https://gofresheg.com/pages/faq",
+      "https://gofresheg.com/pages/contact",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-6-2026-11-11/README.md"
+    ]
   }
 ]

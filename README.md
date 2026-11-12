@@ -18,7 +18,7 @@
 
 ---
 
-An unofficial, community-run directory of *Shark Tank Egypt* (شارك تانك مصر): 230 startup profiles, 138 recorded deals, 17 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
+An unofficial, community-run directory of *Shark Tank Egypt* (شارك تانك مصر): 233 startup profiles, 140 recorded deals, 17 sharks and 5 seasons plus the specials. Every page is available in Arabic and English, and the whole thing runs on GitHub: data in JSON, a static site on Pages and automation in Actions.
 
 ## What's inside
 
