@@ -1,0 +1,57 @@
+/* giscus theme in the site's palette: giscus's light theme with our colours, font and corners on top.
+   Loaded by the comments iframe from data-theme on startup pages. */
+@import url('https://giscus.app/themes/light.css');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300..600&display=swap');
+
+main {
+  --color-fg-default: #2a1a14;
+  --color-fg-muted: #6b5b4f;
+  --color-fg-subtle: #6b5b4f;
+  --color-canvas-default: #fbf8f2;
+  --color-canvas-overlay: #fbf8f2;
+  --color-canvas-inset: #f4efe6;
+  --color-canvas-subtle: #f4efe6;
+  --color-border-default: #e3d7c3;
+  --color-border-muted: #ece4d6;
+  --color-neutral-muted: rgb(227 215 195 / 45%);
+  --color-accent-fg: #8e1b1b;
+  --color-accent-emphasis: #8e1b1b;
+  --color-accent-muted: rgb(142 27 27 / 35%);
+  --color-accent-subtle: #f6e7e2;
+  --color-success-fg: #2f6b3a;
+  --color-attention-fg: #6e4f0f;
+  --color-danger-fg: #8e1b1b;
+  --color-btn-text: #2a1a14;
+  --color-btn-bg: #fbf8f2;
+  --color-btn-border: #e3d7c3;
+  --color-btn-shadow: none;
+  --color-btn-inset-shadow: none;
+  --color-btn-hover-bg: #ece4d6;
+  --color-btn-hover-border: #e3d7c3;
+  --color-btn-active-bg: #ece4d6;
+  --color-btn-selected-bg: #ece4d6;
+  --color-btn-primary-text: #fff;
+  --color-btn-primary-bg: #8e1b1b;
+  --color-btn-primary-border: #8e1b1b;
+  --color-btn-primary-shadow: none;
+  --color-btn-primary-inset-shadow: none;
+  --color-btn-primary-hover-bg: #741515;
+  --color-btn-primary-hover-border: #741515;
+  --color-btn-primary-selected-bg: #741515;
+  --color-btn-primary-disabled-text: rgb(255 255 255 / 85%);
+  --color-btn-primary-disabled-bg: #c48a7f;
+  --color-btn-primary-disabled-border: #c48a7f;
+  --color-segmented-control-bg: #ece4d6;
+  --color-segmented-control-button-bg: #fbf8f2;
+  --color-social-reaction-bg-hover: #ece4d6;
+  --color-social-reaction-bg-reacted-hover: #f6e7e2;
+  --color-scale-gray-1: #ece4d6;
+  --color-scale-blue-1: #f6e7e2;
+  font-family: 'Readex Pro', system-ui, sans-serif;
+}
+
+/* Square-ish corners like the rest of the site, and no GitHub shadows. */
+main .gsc-comment-box, main .gsc-comment, main .gsc-reply-box, main .color-bg-primary,
+main .gsc-comment-box-textarea, main .btn, main .gsc-social-reaction-summary-item { border-radius: 6px; box-shadow: none; }
+main .gsc-reactions-count, main .gsc-comments-count { font-weight: 600; }
+main .gsc-direct-reaction-button-emoji, main .gsc-social-reaction-summary-item.has-reacted { border-color: #8e1b1b; }
