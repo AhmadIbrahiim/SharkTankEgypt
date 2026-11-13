@@ -105,6 +105,11 @@ for (const u of sm) if (!existsSync(fileFor(u))) errors.push(`sitemap lists miss
 for (const [, u] of readFileSync('dist/sitemap.xml', 'utf8').matchAll(/<xhtml:link [^>]*href="([^"]+)"/g))
   if (!existsSync(fileFor(u)) || stubs.has(u)) errors.push(`sitemap hreflang points to a redirect or missing page ${u}`);
 const smSet = new Set(sm);
+// Text exports must point to canonical pages, not old language redirects.
+for (const [, u] of readFileSync('dist/llms-full.txt', 'utf8').matchAll(/(?:URL:|Arabic:) (https?:\/\/\S+)/g)) {
+  const f = fileFor(u);
+  if (!f || !existsSync(f) || stubs.has(u)) errors.push(`text export links to a missing page or redirect: ${u}`);
+}
 const unlisted = pages.map(urlOf).filter((u) => !smSet.has(u) && !stubs.has(u));
 for (const u of unlisted) warns.push(`page not in sitemap: ${u}`);
 const robots = readFileSync('dist/robots.txt', 'utf8');

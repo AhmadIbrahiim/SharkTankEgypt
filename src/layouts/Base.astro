@@ -1,5 +1,5 @@
 ---
-import { t, goatcounter, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, dataModified, type Lang, type Card, pre } from '../config';
+import { t, goatcounter, googleVerification, categories, catSlug, category, seasons, seasonLabel, startups, sharks, founders, num, dataUpdated, type Lang, type Card, pre } from '../config';
 import { siteNodes, ownImage, ID } from '../schema';
 // Self-hosted variable font (Arabic + Latin subsets load on demand): no render-blocking third-party CSS.
 import '@fontsource-variable/readex-pro/wght.css';
@@ -51,9 +51,10 @@ const isPage = pageTypes.includes(entity['@type']);
 const isPerson = entity['@type'] === 'Person';
 // Keep Google's image signals aligned; text-heavy share cards remain available to Twitter.
 const primaryImage = isPerson && entity.image ? entity.image : { ...ownImage, '@type': 'ImageObject', url: abs(ogPath), contentUrl: abs(ogPath), width: 1200, height: 630 };
+// A dataset-wide update does not establish when this page changed.
 const page = {
   '@type': isPage ? entity['@type'] : isPerson ? 'ProfilePage' : !segs.length ? 'CollectionPage' : 'WebPage',
-  '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site }, dateModified: dataModified,
+  '@id': `${url}#webpage`, url, name: fullTitle, description: desc, inLanguage: lang, isPartOf: { '@id': ID.site },
   primaryImageOfPage: primaryImage,
   ...(crumbs.length > 1 && { breadcrumb: { '@id': `${url}#breadcrumb` } }),
   ...(isPage ? (({ '@type': _t, ...rest }) => rest)(entity) : jsonld ? { mainEntity: { '@id': entity['@id'] ?? `${url}#main` } } : {}),

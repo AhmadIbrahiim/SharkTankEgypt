@@ -172,6 +172,12 @@ const jsonld = {
     </aside>
   </section>
 
+  <section class="container method" aria-labelledby="method-title">
+    <h2 id="method-title">{ar ? 'ما الذي يسجّله الدليل؟' : 'What does the directory record?'}</h2>
+    <p>{ar ? `يضم الدليل ${num(startups.length, lang)} شركة من مواسم شارك تانك مصر، بما فيها الحلقات الخاصة. صفحات الشركات تجمع وصف المشروع والمؤسسين والعرض وروابط المصادر المتاحة. نضيف الشركات والتفاصيل الناقصة مع توثيقها.` : `The directory contains ${num(startups.length, lang)} companies from Shark Tank Egypt seasons, including the specials. Company pages bring together the business, founders, pitch and available source links. We add missing companies and details as we verify them.`}</p>
+    <p>{ar ? 'الصفقة هنا تعني اتفاقًا أُعلن في البرنامج، ولا تؤكد اكتمال الاستثمار بعد التصوير. المبالغ غير المعروفة لا تدخل في مجموع الاستثمارات المعلنة.' : 'A recorded deal means an agreement announced on the show; it does not confirm that the investment completed after filming. Unknown amounts are left out of the disclosed investment total.'} <a href={`${base}${pre(lang)}/deals/#method`}>{ar ? 'كيف نحسب الأرقام' : 'How we calculate the figures'}</a>. {ar ? 'الدليل غير تابع للبرنامج.' : 'The directory is independent of the show.'} <a href={suggestUrl}>{ar ? 'اقترح إضافة أو تصحيحًا' : 'Suggest an addition or correction'}</a>.</p>
+  </section>
+
   <div class="container">
     <section class="panel" aria-labelledby="buying">
       <div class="sechead"><h2 id="buying">{ar ? 'مين بيستثمر؟' : "Who's buying?"}</h2><a href={`${base}${pre(lang)}/sharks/`}>{ar ? 'كل المستثمرين' : 'All sharks'}</a></div>
@@ -352,7 +358,7 @@ const jsonld = {
   .lowqta-banner picture, .lowqta-banner img { display: block; width: 100%; height: auto; }
   .stage { background: var(--navy); color: var(--on-dark); --focus: var(--focus-inverse); }
   .stage-in { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 24px; padding-block: 24px 32px; }
-  .stage h1 { color: var(--on-dark); font-family: var(--serif); font-weight: 700; font-style: normal; font-size: clamp(2.75rem, 5.8vw, 5.25rem); line-height: 1.02; }
+  .stage h1 { color: var(--on-dark); font-family: var(--serif); font-weight: 700; font-style: normal; font-size: clamp(2rem, 5.8vw, 5.25rem); line-height: 1.02; }
   .stage h1 span { display: block; }
   .stage h1 span + span { color: var(--gold-light); }
   :global([dir='rtl']) .stage h1 { line-height: 1.3; }
@@ -456,6 +462,9 @@ const jsonld = {
   .pic i.ok { background: var(--ok); } .pic i.unk { background: var(--gold); color: var(--ink); }
 
   #all { scroll-margin-top: 80px; }
+  .method { margin-top: 24px; }
+  .method h2 { font-size: 1.2rem; }
+  .method p { max-width: 85ch; color: var(--ink-2); margin-top: 10px; }
   section[aria-labelledby='all'] { margin-top: var(--gap-sec); }
   .episode-notice:has(:global(.episode-preview)) + section[aria-labelledby='all'] { margin-top: 8px; }
   .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 10px; }
