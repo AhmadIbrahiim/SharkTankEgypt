@@ -79,6 +79,7 @@ const jsonld = {
         <section class="sec">
           <h2>{ar ? 'نبذة' : 'About'}</h2>
           {p.bio ? <p>{digits(p.bio[lang], lang)}</p> : <p class="ask-help">{s.profileThin} <a href={suggestUrl} target="_blank" rel="noopener">{s.helpBtn}</a></p>}
+          {p.bio && p.sources?.length > 0 && <p class="bio-sources">{ar ? 'مصادر النبذة:' : 'Biography sources:'} {p.sources.map((url) => <a href={url} target="_blank" rel="noopener nofollow" dir="ltr">{new URL(url).hostname.replace(/^www\./, '')}{' '}</a>)}</p>}
         </section>
         <section class="sec">
           <h2>{s.theirStartups}</h2>

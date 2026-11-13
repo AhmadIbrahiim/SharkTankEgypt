@@ -4,11 +4,12 @@ import { ID, seasonRef, sharkRef, startupRef } from '../../../../../schema';
 import Listing from '../../../../../components/Listing.astro';
 import Faq from '../../../../../components/Faq.astro';
 import Chips from '../../../../../components/Chips.astro';
-import { scheduledAppearance, langs, seg, pre, seasons, listCard, seasonLabel, num, type Lang } from '../../../../../config';
+import { scheduledAppearance, langs, seg, pre, seasons, listCard, seasonLabel, num, money, pct, shark, t, type Lang } from '../../../../../config';
 import { episodes, episodeItems, episodeFaq, list } from '../../../../../faq';
 
 export const getStaticPaths = () => langs.flatMap((lang) => episodes.map(([n, e]) => ({ params: { lang: seg(lang), n: String(n), e: String(e) } })));
 const lang = (Astro.params.lang ?? 'ar') as Lang;
+const ar = lang === 'ar', s = t[lang];
 const n = Number(Astro.params.n), e = Number(Astro.params.e);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const items = episodeItems(n, e);
@@ -22,9 +23,41 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'TVEpisode', '@id': 
 const other = episodes.filter(([k]) => k === n).map(([, x]) => ({ href: `${base}${pre(lang)}/season/${n}/episode/${x}/`, label: lang === 'ar' ? `الحلقة ${num(x, lang)}` : `Episode ${x}` })).filter((l) => !l.href.endsWith(`/episode/${e}/`));
 ---
 <Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, ep)} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/season/${n}/episode/${e}/`}>
-  <Listing lang={lang} title={title} intro={intro} items={items} />
+  <Listing lang={lang} title={title} intro={intro} items={items}>
+    {!scheduled && <section class="pitch-results" aria-labelledby="results-title">
+      <h2 id="results-title">{ar ? 'طلبات الاستثمار ونتائج العروض' : 'Investment asks and pitch results'}</h2>
+      <p>{ar ? 'هذه الاتفاقات أُعلنت في البرنامج؛ لا نؤكد اكتمال الاستثمار بعده. الطلب والنتيجة يعرضان ما تذكره المصادر المتاحة، والتفاصيل الناقصة تبقى غير مؤكدة.' : 'These agreements were announced on the show; we do not confirm that the investments completed afterwards. Asks and results reflect the available sources, with missing details left unconfirmed.'}</p>
+      <div class="scroll" role="region" aria-labelledby="results-title" tabindex="0"><table>
+        <thead><tr><th scope="col">{ar ? 'الشركة' : 'Company'}</th><th scope="col">{s.ask}</th><th scope="col">{ar ? 'النتيجة في البرنامج' : 'On-air result'}</th><th scope="col">{s.sources}</th></tr></thead>
+        <tbody>{items.map((x) => <tr>
+          <th scope="row"><a href={`${base}${pre(lang)}/${x.id}/`}>{x.name[lang]}</a></th>
+          <td>{x.ask?.amountEGP != null ? money(x.ask.amountEGP, lang) : (ar ? 'المبلغ غير مؤكد' : 'Amount unconfirmed')}<small>{x.ask?.equityPct != null ? `${s.forEquity} ${pct(x.ask.equityPct, lang)}` : (ar ? 'الحصة غير مؤكدة' : 'Equity unconfirmed')}</small></td>
+          <td>{x.deal?.made === false ? s.noDeal : x.deal?.made == null ? s.unknownOutcome : <>
+            {x.deal.amountEGP != null ? money(x.deal.amountEGP, lang) : (ar ? 'اتفاق بمبلغ غير مؤكد' : 'Agreement; amount unconfirmed')}
+            <small>{x.deal.equityPct != null ? `${s.forEquity} ${pct(x.deal.equityPct, lang)}` : (ar ? 'الحصة غير مؤكدة' : 'Equity unconfirmed')}</small>
+            <small>{x.deal.sharks?.length ? list(x.deal.sharks.map((name) => shark(name, lang)), lang) : (ar ? 'المستثمر غير مؤكد' : 'Investor unconfirmed')}</small>
+          </>}</td>
+          <td>{x.video && <a href={`https://www.youtube.com/watch?v=${x.video}`} target="_blank" rel="noopener">{s.watch}</a>}
+            {x.sources?.length > 0 ? <details><summary>{s.sources} ({num(x.sources.length, lang)})</summary><ul>{x.sources.map((url) => <li><a href={url} target="_blank" rel="noopener nofollow" dir="ltr">{new URL(url).hostname.replace(/^www\./, '')}</a></li>)}</ul></details> : <small>{ar ? 'لا يوجد مصدر بعد' : 'No source yet'}</small>}
+          </td>
+        </tr>)}</tbody>
+      </table></div>
+    </section>}
+  </Listing>
   <div class="container">
     <Faq lang={lang} items={episodeFaq(n, e, lang)} />
     <Chips title={lang === 'ar' ? `حلقات أخرى من ${seasonLabel(n, lang)}` : `More ${seasonLabel(n, lang)} episodes`} links={other} />
   </div>
 </Base>
+<style>
+  .pitch-results { margin-block: 24px; }
+  .pitch-results h2 { font-size: 1.3rem; }
+  .pitch-results p { color: var(--ink-2); max-width: 80ch; margin-block: 10px 16px; }
+  .scroll { overflow-x: auto; border-block: 2px solid var(--ink); }
+  table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: .9rem; }
+  th, td { text-align: start; vertical-align: top; padding: 12px; border-bottom: 1px solid var(--line); }
+  small { display: block; color: var(--ink-2); margin-top: 4px; }
+  details { margin-top: 6px; }
+  summary { cursor: pointer; }
+  ul { padding-inline-start: 20px; }
+</style>

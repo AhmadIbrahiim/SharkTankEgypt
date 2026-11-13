@@ -1,12 +1,12 @@
 // llms-full.txt: the whole directory as plain text, one entry per startup, so an assistant can answer and cite from one fetch.
-import { startups, dataUpdated } from '../config';
+import { startups, dataUpdated, dir } from '../config';
 import { summary } from '../faq';
 import { ROOT } from '../schema';
 
 export function GET() {
   const entries = startups.map((x) => [
     `## ${x.name.en} (${x.name.ar})`,
-    `URL: ${ROOT}en/${x.id}/ | Arabic: ${ROOT}ar/${x.id}/`,
+    `URL: ${ROOT}${dir('en')}${x.id}/ | Arabic: ${ROOT}${dir('ar')}${x.id}/`,
     x.category && `Sector: ${x.category}`,
     x.founders?.length && `Founders: ${x.founders.join(', ')}`,
     `Outcome: ${x.deal?.made === true ? 'deal' : x.deal?.made === false ? 'no deal' : 'unconfirmed'}`,

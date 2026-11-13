@@ -49,6 +49,10 @@ const jsonld = {
         {p.title && <p class="title">{digits(p.title[lang], lang)}</p>}
         <p class="seasons">{s.appearedIn}: {p.seasons.map((n) => <a href={`${base}${pre(lang)}/season/${n}/`}>{seasonLabel(n, lang)}</a>)}</p>
         {p.bio ? <p class="bio">{digits(p.bio[lang], lang)}</p> : <p class="bio muted">{s.profileThin} <a href={suggestUrl}>{s.helpBtn}</a></p>}
+        {p.sources?.length > 0 && <div class="bio-sources">
+          <h2>{lang === 'ar' ? 'مصادر النبذة' : 'Biography sources'}</h2>
+          <ul>{p.sources.map((url) => <li><a href={url} target="_blank" rel="noopener nofollow" dir="ltr">{url.replace(/^https?:\/\/(www\.)?/, '')}</a></li>)}</ul>
+        </div>}
         <Links website={website} links={{ ...social, other }} lang={lang} label={s.online} />
       </div>
     </article>
@@ -59,6 +63,7 @@ const jsonld = {
       <div><b>{avgEq != null ? pct(Math.round(avgEq), lang) : '—'}</b><span>{s.avgEquity}</span></div>
       <div><b>{num(p.seasons.length, lang)}</b><span>{s.appearedIn}</span></div>
     </section>
+    <p class="muted">{lang === 'ar' ? 'الأرقام تخص الاتفاقات المسجلة في البرنامج، ولا تؤكد اكتمال الاستثمار لاحقًا. الصفقات المشتركة تُحسب بقيمتها الكاملة، والمبالغ غير المعروفة لا تدخل في المجموع.' : 'These figures cover recorded on-air agreements and do not confirm completed investments. Joint deals count at their full value; unknown amounts are left out of the total.'} <a href={`${base}${pre(lang)}/deals/#method`}>{lang === 'ar' ? 'طريقة الحساب' : 'Calculation method'}</a>.</p>
 
     {(sectors.length > 0 || partners.length > 0) && (
       <section class="insights">
@@ -124,6 +129,10 @@ const jsonld = {
   .seasons { margin: 8px 0 0; color: var(--ink-2); font-size: .92rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; align-items: center; }
   .seasons a { padding: 2px 10px; border-radius: 999px; background: var(--surface-2); color: var(--ink); text-decoration: none; font-size: .82rem; }
   .bio { font-size: 1.05rem; margin: 16px 0 0; max-width: 70ch; }
+  .bio-sources { max-width: 70ch; margin: 16px auto; font-size: .85rem; }
+  .bio-sources h2 { font-size: 1rem; }
+  .bio-sources ul { padding-inline-start: 20px; text-align: start; }
+  .bio-sources a { overflow-wrap: anywhere; }
   .muted { color: var(--ink-2); }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
   .stats div { padding: 14px 18px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); display: flex; flex-direction: column; }

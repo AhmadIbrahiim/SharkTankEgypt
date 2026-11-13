@@ -31,6 +31,52 @@ await test('home lists startups, 24 per page, show more adds more', async () => 
   assert.equal((await visibleNames(p)).length, 24);
   await p.click('#more'); assert.ok((await visibleNames(p)).length > 24);
 });
+await test('episode comparisons separate asks, agreements, missing terms and no-deal outcomes', async () => {
+  for (const prefix of ['en/', '']) {
+    const ar = !prefix;
+    const p = await page({ viewport: { width: 375, height: 812 } });
+    await p.goto(`${U}/${prefix}season/5/episode/3/`);
+    const row = (id) => p.locator(`.pitch-results tbody tr:has(a[href="${BASE}/${prefix}${id}/"])`);
+    assert.equal(await p.locator('.pitch-results tbody tr').count(), 3);
+    assert.equal(await row('gutty').locator('td').nth(1).innerText(), ar ? 'بدون صفقة' : 'No deal');
+    const digits = (s) => s.replace(/[٠-٩]/g, (d) => d.charCodeAt(0) - 0x660);
+    assert.match(digits(await row('sahahly').locator('td').nth(0).innerText()), /10[%٪]/);
+    assert.match(digits(await row('sahahly').locator('td').nth(1).innerText()), /30[%٪]/);
+    assert.equal(await row('gutty').locator('a[href="https://www.youtube.com/watch?v=cXPw8IH4yGw"]').count(), 2);
+    await row('gutty').locator('summary').click();
+    assert.ok(await row('gutty').locator('details ul').isVisible());
+    assert.ok(await p.locator('.pitch-results .scroll').evaluate((el) => el.scrollWidth > el.clientWidth && el.getBoundingClientRect().right <= innerWidth), 'comparison scrolls within the phone');
+    assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'episode fits the phone');
+    await p.goto(`${U}/${prefix}season/0/episode/1/`);
+    assert.equal(await row('life-snacks').locator('td').nth(1).innerText(), ar ? 'النتيجة غير مؤكدة' : 'Outcome unconfirmed');
+    await p.goto(`${U}/${prefix}season/1/episode/3/`);
+    assert.match(await row('masroufi').locator('td').nth(0).innerText(), ar ? /المبلغ غير مؤكد/ : /Amount unconfirmed/);
+    await p.goto(`${U}/${prefix}season/1/episode/10/`);
+    const partial = await row('portal').locator('td').nth(1).innerText();
+    assert.match(partial, ar ? /الحصة غير مؤكدة/ : /Equity unconfirmed/);
+    assert.match(partial, ar ? /المستثمر غير مؤكد/ : /Investor unconfirmed/);
+    await p.close();
+  }
+});
+await test('priority pages expose sources and current Arabic text-export links', async () => {
+  const digest = readFileSync('dist/llms-full.txt', 'utf8');
+  const root = new URL(JSON.parse(readFileSync('package.json', 'utf8')).homepage).href;
+  assert.ok(digest.includes(`Arabic: ${root}gutty/`));
+  assert.ok(!digest.includes(`Arabic: ${root}ar/`));
+  for (const prefix of ['en/', '']) {
+    const p = await page({ viewport: { width: 375, height: 812 } });
+    await p.goto(`${U}/${prefix}`);
+    assert.match(await p.locator('h1').innerText(), prefix ? /Shark Tank Egypt/ : /شارك تانك مصر/);
+    await p.locator('.method a[href$="/deals/#method"]').click();
+    assert.ok(await p.locator('#method').isVisible());
+    await p.goto(`${U}/${prefix}sharks/hala-el-kasem/`);
+    assert.ok(await p.locator('.bio-sources a[href="https://misrconnect.com/en/profiles/4018"]').isVisible());
+    assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'source URLs fit the phone');
+    await p.goto(`${U}/${prefix}founders/ahmed-mahfouz/`);
+    assert.ok(await p.locator('.bio-sources a[href="https://www.elwatannews.com/news/details/6471194"]').isVisible());
+    await p.close();
+  }
+});
 await test('local startup images appear on cards, heroes and share cards, with a video fallback', async () => {
   for (const prefix of ['en/', '']) {
     const p = await page();
@@ -99,6 +145,7 @@ await test('announced startups have searchable bilingual profiles without unveri
       }
       await p.goto(`${U}/${prefix}season/${preview.season}/episode/${preview.episode}/`);
       assert.equal(await p.locator('.mini').count(), preview.startups.length);
+      assert.equal(await p.locator('.pitch-results').count(), 0, 'announced episode does not imply verified pitches');
       await p.goto(`${U}/${prefix}`);
     }
     await p.goto(`${U}/${prefix}season/1/`);
@@ -224,7 +271,7 @@ await test('mobile directory puts results first and keeps navigation labels on o
         }).map((e) => e.textContent),
       };
     });
-    assert.ok(layout.gridTop < 1100, `results start too far down at ${width}px: ${layout.gridTop}`);
+    assert.ok(layout.gridTop < 1100, `results start too far down at ${prefix || "ar"} ${width}px: ${layout.gridTop}`);
     assert.ok(layout.headerHeight <= 100, `header gained an extra row at ${width}px`);
     assert.ok(layout.gridTop < layout.panelTop, 'startup results precede investor discovery');
     assert.deepEqual(layout.wrapped, [], `wrapped navigation at ${width}px`);
