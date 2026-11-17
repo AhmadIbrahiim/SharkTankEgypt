@@ -43,7 +43,6 @@
 | البيانات | `src/data/*.json`: الشركات، والأشخاص (المستثمرون والمؤسسون)، والمواسم، والأسماء العربية. يُتحقق منها بـ `npm run check-data` وتُراجع بـ `npm run audit-data` (انظر [DATA_QUALITY_REPORT.md](DATA_QUALITY_REPORT.md)) مع كل نشر. |
 | الموقع | موقع ثابت مبني بـ [Astro](https://astro.build) (حوالي 1,480 صفحة)، يُنشر على فرع `gh-pages` عبر `.github/workflows/deploy.yml`. |
 | صور المشاركة | `scripts/og.mjs` يرسم بطاقة 1200×630 لكل صفحة باستخدام Playwright بعد كل بناء. |
-| صور المواقع | `.github/workflows/screenshots.yml` يلتقط صورة لموقع كل شركة أسبوعيًا وكلما تغيّرت البيانات. |
 | أدوات البحث | مهام `harvest` و`photos` و`enrich` تجمع المواد الخام في `automation/`. لا يصل شيء منها إلى الموقع قبل أن يراجعه شخص. |
 | الفحوصات | اختبارات الوحدات (`npm test`)، وفحص SEO والروابط (`npm run audit-seo`)، واختبارات المتصفح بـ Playwright (`npm run e2e`)، ولا يتم النشر إلا إذا نجحت كلها. |
 | التعليقات والتفاعلات | [giscus](https://giscus.app): نقاش واحد على GitHub Discussions لكل شركة، مشترك بين اللغتين. |

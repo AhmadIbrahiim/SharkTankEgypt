@@ -41,7 +41,6 @@ An unofficial, community-run directory of *Shark Tank Egypt* (شارك تانك 
 | Data | `src/data/*.json`: startups, people (sharks and founders), seasons, Arabic names. Validated by `npm run check-data` and audited by `npm run audit-data` (see [DATA_QUALITY_REPORT.md](DATA_QUALITY_REPORT.md)) on every deploy. |
 | Site | [Astro](https://astro.build) static build (about 1,480 pages), published to the `gh-pages` branch by `.github/workflows/deploy.yml`. |
 | Share images | `scripts/og.mjs` renders a 1200×630 card per page with Playwright after each build. |
-| Screenshots | `.github/workflows/screenshots.yml` captures each startup's website weekly and whenever the data changes. |
 | Research helpers | The `harvest`, `photos` and `enrich` workflows collect raw material into `automation/`. Nothing there reaches the site until a person reviews it. |
 | Checks | Unit tests (`npm test`), an SEO and link audit (`npm run audit-seo`) and Playwright end-to-end tests (`npm run e2e`) gate every deploy. |
 | Comments and reactions | [giscus](https://giscus.app): one GitHub Discussion per startup, shared by both languages. |
