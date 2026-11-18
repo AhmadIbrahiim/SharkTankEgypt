@@ -5941,5 +5941,73 @@
       "https://www.youm7.com/7615215",
       "https://www.youtube.com/watch?v=ji68ULTOmTM"
     ]
+  },
+  {
+    "id": "mahmoud-hegab",
+    "kind": "founder",
+    "name": {
+      "en": "Mahmoud Hegab",
+      "ar": "محمود حجاب"
+    },
+    "title": {
+      "en": "Co-founder and CEO, Makkook AI",
+      "ar": "شريك مؤسس والرئيس التنفيذي لمكوك للذكاء الاصطناعي"
+    },
+    "bio": {
+      "en": "Mahmoud Hegab is co-founder and chief executive of Makkook AI, a Cairo company that builds planning software for factories, retailers and logistics firms. An August 2026 profile in Gulf Prime Magazine also lists him as a board member at HOC Ventures.",
+      "ar": "محمود حجاب شريك مؤسس والرئيس التنفيذي لشركة مكوك للذكاء الاصطناعي في القاهرة، التي تطور برامج تخطيط للمصانع وشركات التجزئة والنقل. ويذكر ملف نشرته مجلة Gulf Prime في أغسطس 2026 أنه عضو في مجلس إدارة HOC Ventures."
+    },
+    "companies": [
+      {
+        "name": "Makkook AI",
+        "role": "Co-founder and CEO",
+        "url": "https://www.makkook.ai/"
+      }
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/hegab-makkook/"
+    },
+    "photo": {
+      "url": "/people/mahmoud-hegab.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1120337367428040"
+    },
+    "sources": [
+      "https://www.gulfprimemagazine.com/mahmoud-hegab-enterprise-ai-business-gro/",
+      "https://www.linkedin.com/in/hegab-makkook/",
+      "https://www.facebook.com/photo.php?fbid=1120337367428040"
+    ]
+  },
+  {
+    "id": "youssef-adel",
+    "kind": "founder",
+    "name": {
+      "en": "Youssef Adel",
+      "ar": "يوسف عادل"
+    },
+    "title": {
+      "en": "Founder, Pickles",
+      "ar": "مؤسس بيكلز"
+    },
+    "bio": {
+      "en": "Youssef Adel founded Pickles, the consumer brand of a family olive business that has exported olives, pickles and oil since 1995. In 2026 he launched its range of jarred olives, pickles and olive oils for Egyptian shoppers.",
+      "ar": "يوسف عادل مؤسس بيكلز، العلامة الاستهلاكية لمشروع عائلي يصدّر الزيتون والمخللات والزيت منذ 1995. وفي 2026 أطلق تشكيلتها من الزيتون والمخللات وزيوت الزيتون للمستهلك في مصر."
+    },
+    "companies": [
+      {
+        "name": "Pickles",
+        "role": "Founder",
+        "url": "https://pickleeg.com/"
+      }
+    ],
+    "photo": {
+      "url": "/people/youssef-adel.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1120337334094710"
+    },
+    "sources": [
+      "https://sceneeats.com/Fresh/Leftovers-got-you-in-a-pickle-This-Egyptian-Family-Has-the-Fix",
+      "https://www.facebook.com/photo.php?fbid=1120337334094710"
+    ]
   }
 ]

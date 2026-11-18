@@ -17678,5 +17678,256 @@
       "https://gofresheg.com/pages/contact",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-6-2026-11-11/README.md"
     ]
+  },
+  {
+    "id": "makkook-ai",
+    "season": 5,
+    "episode": 7,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Makkook AI",
+      "ar": "مكوك للذكاء الاصطناعي"
+    },
+    "description": {
+      "en": "Makkook AI builds DIOS, software that helps factories, retailers and logistics companies plan their daily operations. It connects to systems such as ERP and SCADA, takes a company's goals and limits, and works out production schedules, stock levels, delivery routes and staffing. The company has offices in Cairo and Manama, Bahrain.",
+      "ar": "مكوك للذكاء الاصطناعي تطور DIOS، وهو برنامج يساعد المصانع وشركات التجزئة والنقل على تخطيط عملياتها اليومية. يتصل البرنامج بأنظمة مثل ERP وSCADA، ويأخذ أهداف الشركة وقيودها، ثم يحدد جداول الإنتاج ومستويات المخزون ومسارات التوصيل وتوزيع العمالة. للشركة مكاتب في القاهرة والمنامة بالبحرين."
+    },
+    "category": "Tech",
+    "founders": [
+      "Mahmoud Hegab"
+    ],
+    "website": "https://www.makkook.ai/",
+    "links": {
+      "facebook": "https://www.facebook.com/MakkookAI",
+      "linkedin": "https://www.linkedin.com/company/makkook-ai"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-18",
+    "about": {
+      "city": {
+        "en": "Cairo",
+        "ar": "القاهرة"
+      },
+      "highlights": {
+        "en": [
+          "Offices in Cairo and Manama. Clutch lists 10–49 staff, most of them in Cairo.",
+          "DIOS is sold as an annual licence per engine plus a one-time setup fee. The company says it can go live in about three months.",
+          "Published case studies cover hypermarket stock planning, production planning for a glass maker and predicting logistics delays.",
+          "A founding member of the ManuTech Alliance, an industrial technology group, according to Gulf Prime Magazine."
+        ],
+        "ar": [
+          "مكاتب في القاهرة والمنامة. ويذكر موقع Clutch أن عدد الموظفين بين 10 و49، أغلبهم في القاهرة.",
+          "يُباع DIOS بترخيص سنوي لكل محرك، إضافة إلى رسوم إعداد تُدفع مرة واحدة. وتقول الشركة إن التشغيل قد يبدأ خلال نحو ثلاثة أشهر.",
+          "تتناول دراسات الحالة المنشورة تخطيط المخزون لسلسلة هايبر ماركت، وتخطيط الإنتاج لمصنع زجاج، وتوقع تأخيرات النقل.",
+          "عضو مؤسس في تحالف ManuTech للتكنولوجيا الصناعية، بحسب مجلة Gulf Prime."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "DIOS platform",
+          "desc": "Decision software that connects to a company's ERP, MES, WMS and SCADA systems and recalculates plans when conditions change."
+        },
+        {
+          "name": "Industry suites",
+          "desc": "Versions of DIOS set up for manufacturing, supply chain, logistics and retail."
+        }
+      ],
+      "ar": [
+        {
+          "name": "منصة DIOS",
+          "desc": "برنامج لاتخاذ القرار يتصل بأنظمة الشركة مثل ERP وMES وWMS وSCADA، ويعيد حساب الخطط عندما تتغير الظروف."
+        },
+        {
+          "name": "حلول القطاعات",
+          "desc": "نسخ من DIOS مُعدة للتصنيع وسلاسل الإمداد والنقل وتجارة التجزئة."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/makkook-ai.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1120337367428040"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid0YFERYqAwGmBYPmb9Z24Gm6dpQZYmw5yJ2rnon3FdwabD51SqEcnDHSSrtc27hvuil",
+      "https://www.facebook.com/photo.php?fbid=1120337367428040",
+      "https://www.makkook.ai/",
+      "https://www.makkook.ai/dios/",
+      "https://www.facebook.com/MakkookAI",
+      "https://www.gulfprimemagazine.com/mahmoud-hegab-enterprise-ai-business-gro/",
+      "https://clutch.co/profile/makkook-ai",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
+    ]
+  },
+  {
+    "id": "hawk",
+    "season": 5,
+    "episode": 7,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Hawk",
+      "ar": "هوك"
+    },
+    "description": {
+      "en": "Hawk is an Egyptian sock brand from Prime M Cotton, a sock maker founded in 2010 with a factory in Obour City's industrial zone. It sells everyday, sports, tennis and cushioned socks for men, women and children through its online store.",
+      "ar": "هوك علامة مصرية للجوارب تابعة لشركة Prime M Cotton، وهي مصنع جوارب تأسس عام 2010 في المنطقة الصناعية بمدينة العبور. تبيع جوارب للاستخدام اليومي والرياضة والتنس وأخرى مبطنة، للرجال والسيدات والأطفال، عبر متجرها الإلكتروني."
+    },
+    "category": "Fashion",
+    "founders": [],
+    "website": "https://hawk-pc.com/",
+    "links": {
+      "facebook": "https://www.facebook.com/people/Hawkpc15/61577251265479/",
+      "instagram": "https://www.instagram.com/hawk_premium_cotton/",
+      "tiktok": "https://www.tiktok.com/@hawk_premium_cotton"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-18",
+    "about": {
+      "city": {
+        "en": "Obour City",
+        "ar": "مدينة العبور"
+      },
+      "highlights": {
+        "en": [
+          "Prime M Cotton was set up in 2010 as a sock manufacturer and says it has made socks for local and international brands for about 15 years.",
+          "The factory is in the First Industrial Zone of Obour City.",
+          "On 18 November 2026 the online store listed single pairs from about EGP 150 and sets of three from about EGP 220."
+        ],
+        "ar": [
+          "تأسست Prime M Cotton عام 2010 لتصنيع الجوارب، وتقول إنها تصنع جوارب لعلامات محلية وعالمية منذ نحو 15 عامًا.",
+          "يقع المصنع في المنطقة الصناعية الأولى بمدينة العبور.",
+          "في 18 نوفمبر 2026 عرض المتجر الإلكتروني الزوج الواحد من نحو 150 جنيهًا، ومجموعات الثلاثة أزواج من نحو 220 جنيهًا."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Adult socks",
+          "desc": "Classic, half-crew, ankle, low-cut, invisible and knee-high styles, plus training, sports, tennis and cushioned lines."
+        },
+        {
+          "name": "Kids' socks",
+          "desc": "Ankle, half-crew, printed and knee-high socks for boys and girls, often sold in sets of three."
+        }
+      ],
+      "ar": [
+        {
+          "name": "جوارب للكبار",
+          "desc": "موديلات كلاسيكية ومتوسطة وقصيرة وخفية وطويلة حتى الركبة، إلى جانب خطوط للتمرين والرياضة والتنس وجوارب مبطنة."
+        },
+        {
+          "name": "جوارب للأطفال",
+          "desc": "جوارب قصيرة ومتوسطة ومطبوعة وطويلة للأولاد والبنات، تُباع غالبًا في مجموعات من ثلاثة أزواج."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/hawk.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1120337387428038"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid0YFERYqAwGmBYPmb9Z24Gm6dpQZYmw5yJ2rnon3FdwabD51SqEcnDHSSrtc27hvuil",
+      "https://www.facebook.com/photo.php?fbid=1120337387428038",
+      "https://hawk-pc.com/",
+      "https://hawk-pc.com/pages/about-us",
+      "https://www.facebook.com/people/Hawkpc15/61577251265479/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
+    ]
+  },
+  {
+    "id": "pickles",
+    "season": 5,
+    "episode": 7,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Pickles",
+      "ar": "بيكلز"
+    },
+    "description": {
+      "en": "Pickles is a family olive business that has pressed oil and cured olives since 1995, mostly for export. Founder Youssef Adel has turned it toward Egyptian shoppers with jarred olives, pickles and two olive oils: Sizzle for cooking and Drizzle for finishing dishes.",
+      "ar": "بيكلز مشروع عائلي يعصر زيت الزيتون ويخلل الزيتون منذ 1995، وكان أغلب إنتاجه يذهب للتصدير. ووجهه المؤسس يوسف عادل إلى المستهلك المصري، فطرح زيتونًا ومخللات في برطمانات ونوعين من زيت الزيتون: Sizzle للطهي وDrizzle لإضافته على الأطباق الجاهزة."
+    },
+    "category": "Food",
+    "founders": [
+      "Youssef Adel"
+    ],
+    "website": "https://pickleeg.com/",
+    "links": {
+      "facebook": "https://www.facebook.com/people/Pickles-%D8%A8%D9%8A%D9%83%D9%84%D8%B2/61585270276939/",
+      "instagram": "https://www.instagram.com/pickleseg/"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-18",
+    "about": {
+      "founded": 1995,
+      "city": {
+        "en": "New Cairo",
+        "ar": "القاهرة الجديدة"
+      },
+      "highlights": {
+        "en": [
+          "For years most of the family's olives and oil went abroad, to markets including Spain, Greece, Brazil and India, according to its website.",
+          "The consumer range launched in winter 2026, SceneEats reported.",
+          "The oils come in plastic squeeze bottles instead of glass, so cooks can control how much they pour.",
+          "On 18 November 2026 jars cost EGP 200–280 and the oils EGP 480–520 on its store."
+        ],
+        "ar": [
+          "ظل أغلب زيتون العائلة وزيتها يذهب للخارج لسنوات، إلى أسواق منها إسبانيا واليونان والبرازيل والهند، بحسب موقعها.",
+          "أُطلقت التشكيلة الموجهة للمستهلك في شتاء 2026، بحسب SceneEats.",
+          "يأتي الزيت في عبوات بلاستيكية تُضغط بدل الزجاج، ليتحكم من يطبخ في الكمية التي يصبها.",
+          "في 18 نوفمبر 2026 كان سعر البرطمان بين 200 و280 جنيهًا، والزيت بين 480 و520 جنيهًا على متجرها."
+        ]
+      }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Olive oil",
+          "desc": "Sizzle extra virgin oil for cooking and Drizzle early-harvest oil for finishing, sold in squeeze bottles."
+        },
+        {
+          "name": "Olives and pickles",
+          "desc": "Spicy pickles, dill pickles, pitted green olives, black olives and small olives in oil, plus bundles."
+        }
+      ],
+      "ar": [
+        {
+          "name": "زيت الزيتون",
+          "desc": "زيت Sizzle البكر الممتاز للطهي، وزيت Drizzle من الحصاد المبكر لإضافته على الأطباق، في عبوات يسهل التحكم في صبها."
+        },
+        {
+          "name": "الزيتون والمخللات",
+          "desc": "مخلل حار ومخلل بالشبت وزيتون أخضر منزوع النوى وزيتون أسود وزيتون صغير في الزيت، إلى جانب مجموعات مجمعة."
+        }
+      ]
+    },
+    "photo": {
+      "url": "/startups/pickles.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1120337334094710"
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid0YFERYqAwGmBYPmb9Z24Gm6dpQZYmw5yJ2rnon3FdwabD51SqEcnDHSSrtc27hvuil",
+      "https://www.facebook.com/photo.php?fbid=1120337334094710",
+      "https://pickleeg.com/",
+      "https://sceneeats.com/Fresh/Leftovers-got-you-in-a-pickle-This-Egyptian-Family-Has-the-Fix",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
+    ]
   }
 ]

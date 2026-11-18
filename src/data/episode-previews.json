@@ -1,1 +1,55 @@
-[]
+[
+  {
+    "season": 5,
+    "episode": 7,
+    "scheduledAt": "2026-11-18T21:00:00+02:00",
+    "checked": "2026-11-18",
+    "announcement": "https://www.facebook.com/SharkTankEgypt/posts/pfbid0YFERYqAwGmBYPmb9Z24Gm6dpQZYmw5yJ2rnon3FdwabD51SqEcnDHSSrtc27hvuil",
+    "scheduleSource": "https://www.facebook.com/SharkTankEgypt/posts/pfbid0YFERYqAwGmBYPmb9Z24Gm6dpQZYmw5yJ2rnon3FdwabD51SqEcnDHSSrtc27hvuil",
+    "scheduleNote": {
+      "en": "The show announced Episode 7 for Wednesday, 18 November 2026 at 9 PM Cairo time on CBC Now and WATCH IT. Investment asks and deal outcomes have not been verified.",
+      "ar": "أعلن البرنامج عرض الحلقة السابعة يوم الأربعاء 18 نوفمبر 2026، الساعة التاسعة مساءً بتوقيت القاهرة، على CBC Now وWATCH IT. طلبات الاستثمار ونتائج الصفقات لم تُوثَّق بعد."
+    },
+    "startups": [
+      {
+        "id": "makkook-ai",
+        "name": {
+          "en": "Makkook AI",
+          "ar": "مكوك للذكاء الاصطناعي"
+        },
+        "description": {
+          "en": "Makkook AI builds DIOS, software that helps factories, retailers and logistics companies plan their daily operations. It connects to systems such as ERP and SCADA, takes a company's goals and limits, and works out production schedules, stock levels, delivery routes and staffing. The company has offices in Cairo and Manama, Bahrain.",
+          "ar": "مكوك للذكاء الاصطناعي تطور DIOS، وهو برنامج يساعد المصانع وشركات التجزئة والنقل على تخطيط عملياتها اليومية. يتصل البرنامج بأنظمة مثل ERP وSCADA، ويأخذ أهداف الشركة وقيودها، ثم يحدد جداول الإنتاج ومستويات المخزون ومسارات التوصيل وتوزيع العمالة. للشركة مكاتب في القاهرة والمنامة بالبحرين."
+        },
+        "url": "https://www.makkook.ai/",
+        "source": "https://www.facebook.com/photo.php?fbid=1120337367428040"
+      },
+      {
+        "id": "hawk",
+        "name": {
+          "en": "Hawk",
+          "ar": "هوك"
+        },
+        "description": {
+          "en": "Hawk is an Egyptian sock brand from Prime M Cotton, a sock maker founded in 2010 with a factory in Obour City's industrial zone. It sells everyday, sports, tennis and cushioned socks for men, women and children through its online store.",
+          "ar": "هوك علامة مصرية للجوارب تابعة لشركة Prime M Cotton، وهي مصنع جوارب تأسس عام 2010 في المنطقة الصناعية بمدينة العبور. تبيع جوارب للاستخدام اليومي والرياضة والتنس وأخرى مبطنة، للرجال والسيدات والأطفال، عبر متجرها الإلكتروني."
+        },
+        "url": "https://hawk-pc.com/",
+        "source": "https://www.facebook.com/photo.php?fbid=1120337387428038"
+      },
+      {
+        "id": "pickles",
+        "name": {
+          "en": "Pickles",
+          "ar": "بيكلز"
+        },
+        "description": {
+          "en": "Pickles is a family olive business that has pressed oil and cured olives since 1995, mostly for export. Founder Youssef Adel has turned it toward Egyptian shoppers with jarred olives, pickles and two olive oils: Sizzle for cooking and Drizzle for finishing dishes.",
+          "ar": "بيكلز مشروع عائلي يعصر زيت الزيتون ويخلل الزيتون منذ 1995، وكان أغلب إنتاجه يذهب للتصدير. ووجهه المؤسس يوسف عادل إلى المستهلك المصري، فطرح زيتونًا ومخللات في برطمانات ونوعين من زيت الزيتون: Sizzle للطهي وDrizzle لإضافته على الأطباق الجاهزة."
+        },
+        "url": "https://pickleeg.com/",
+        "source": "https://www.facebook.com/photo.php?fbid=1120337334094710"
+      }
+    ]
+  }
+]
