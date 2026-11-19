@@ -28,3 +28,31 @@ The three attached cards say “الحلقة السابعة” and show MAKKOOK,
 - Directory count in both READMEs: 233 → 236.
 
 Both languages received a Humanizer pass. After the broadcast, record asks and outcomes, remove the appearance status and preview, and add Hawk's founder once the pitch names him.
+
+## Broadcast, 18 November 2026
+
+The episode aired as announced. Youm7 published one article per pitch that night: [Makkook](https://www.youm7.com/7624110), [Hawk](https://www.youm7.com/7624127) and [Pickles](https://www.youm7.com/7624131). They give the asks, the founders and the pitch figures, but stop before the offers, so no outcome is reported.
+
+| Business | Ask | Presenter |
+|---|---|---|
+| Makkook AI | EGP 35 million for 5% (EGP 700 million valuation) | Mahmoud, co-founder and CEO; matches Mahmoud Hegab |
+| Hawk | EGP 15 million for 20% | Hisham Abdel Maksoud, CEO of Prime Cotton |
+| Pickles | EGP 1 million for 10% | Youssef Adel |
+
+The official channel posted the [Makkook pitch](https://www.youtube.com/watch?v=0B5ArxRIZBA) (28:01) and an [Episode 7 summary](https://www.youtube.com/watch?v=fem2rUc3CsM) (44:07); neither has captions and neither was transcribed. CBC's clips cover [Makkook](https://www.youtube.com/watch?v=ymcFOg56Pa0), [Pickles](https://www.youtube.com/watch?v=A_TOWjQL5rk) and [Hawk](https://www.youtube.com/watch?v=rizGlrXeazU); the Makkook clip title says Ahmed Tarek defended the idea.
+
+The three profiles are now aired records with their asks and pitch summaries, `deal: null` and `checked: 2026-11-19`; the episode preview is removed. Hawk's founder is Hisham Abdel Maksoud, per Youm7, and his portrait is a crop of the Hawk card, on which he is the only person. Youm7 calls Makkook's product “Nayos”; that reads as a mishearing of DIOS and is not recorded. Pitch figures (revenue, assets, outlets, exports, reorder rate) are the founders' on-air statements. Both languages received a Humanizer pass.
+
+## Makkook outcome, 19 November 2026
+
+The maintainer supplied a frame of the broadcast whose on-screen caption reads: “عرض أيمن وطارق النهائي: 35 مليون جنيه مقابل 7% حصة من الشركة بالإضافة لـ 13% أسهم استشارية تخفض لـ 8% عند تقييم 20 مليون دولار”, and confirmed that Mahmoud Hegab accepted it on air. The record now shows a deal with Ayman Abbas and Ahmed Tarek Khalil for EGP 35 million and 7%; the advisory shares are described in the pitch, not in the deal's equity. 
+
+## Hawk outcome, 19 November 2026
+
+A second broadcast frame supplied by the maintainer reads: “عرض أحمد طارق النهائي: 15 مليون جنيه مقابل 50% حصة من الشركة”. The maintainer confirmed that Hisham Abdel Maksoud accepted. The record shows a deal with Ahmed Tarek Khalil for EGP 15 million and 50%, an EGP 30 million valuation against the EGP 75 million asked.
+
+## Pickles outcome, 19 November 2026
+
+A third broadcast frame supplied by the maintainer reads: “عرض محمد فاروق الجديد: مليون و 600 ألف جنيه مقابل 25%”. The maintainer confirmed that Youssef Adel accepted this offer. The record shows a deal with Mohamed Farouk for EGP 1.6 million and 25%, an EGP 6.4 million valuation against the EGP 10 million asked. The show's WATCH IT clip says several sharks made offers; the others were not supplied and are not recorded.
+
+All three Episode 7 outcomes are now recorded from captioned broadcast frames and the maintainer's confirmation. The episode was not independently rewatched.

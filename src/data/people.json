@@ -5974,6 +5974,7 @@
     },
     "sources": [
       "https://www.gulfprimemagazine.com/mahmoud-hegab-enterprise-ai-business-gro/",
+      "https://www.youm7.com/7624110",
       "https://www.linkedin.com/in/hegab-makkook/",
       "https://www.facebook.com/photo.php?fbid=1120337367428040"
     ]
@@ -5990,8 +5991,8 @@
       "ar": "مؤسس بيكلز"
     },
     "bio": {
-      "en": "Youssef Adel founded Pickles, the consumer brand of a family olive business that has exported olives, pickles and oil since 1995. In 2026 he launched its range of jarred olives, pickles and olive oils for Egyptian shoppers.",
-      "ar": "يوسف عادل مؤسس بيكلز، العلامة الاستهلاكية لمشروع عائلي يصدّر الزيتون والمخللات والزيت منذ 1995. وفي 2026 أطلق تشكيلتها من الزيتون والمخللات وزيوت الزيتون للمستهلك في مصر."
+      "en": "Youssef Adel founded Pickles, the consumer brand of a family olive business that has exported olives, pickles and oil since 1995. He studied mechanical engineering at Coventry University. He launched the range of jarred olives, pickles and olive oils for Egyptian shoppers in 2026 and pitched it on Shark Tank Egypt that November.",
+      "ar": "يوسف عادل مؤسس بيكلز، العلامة الاستهلاكية لمشروع عائلي يصدّر الزيتون والمخللات والزيت منذ 1995. درس الهندسة الميكانيكية في جامعة كوفنتري. أطلق في 2026 تشكيلة الزيتون والمخللات وزيوت الزيتون للمستهلك في مصر، وعرضها في شارك تانك مصر في نوفمبر من العام نفسه."
     },
     "companies": [
       {
@@ -6007,7 +6008,40 @@
     },
     "sources": [
       "https://sceneeats.com/Fresh/Leftovers-got-you-in-a-pickle-This-Egyptian-Family-Has-the-Fix",
+      "https://www.youm7.com/7624131",
       "https://www.facebook.com/photo.php?fbid=1120337334094710"
+    ]
+  },
+  {
+    "id": "hisham-abdel-maksoud",
+    "kind": "founder",
+    "name": {
+      "en": "Hisham Abdel Maksoud",
+      "ar": "هشام عبد المقصود"
+    },
+    "title": {
+      "en": "CEO, Prime Cotton (Hawk)",
+      "ar": "الرئيس التنفيذي لبرايم كوتون (هوك)"
+    },
+    "bio": {
+      "en": "Hisham Abdel Maksoud runs Prime Cotton, the Obour City sock maker behind the Hawk brand. On Shark Tank Egypt he described how the factory his partners bought was sealed shut soon after the deal, and how they rebuilt the business to EGP 45 million in revenue over a year and a half.",
+      "ar": "هشام عبد المقصود يدير برايم كوتون، مصنع الجوارب في مدينة العبور وصاحب علامة هوك. حكى في شارك تانك مصر كيف صدر قرار بتشميع المصنع الذي اشتراه مع شركائه بعد الصفقة بقليل، وكيف أعادوا بناء الشركة حتى وصلت إيراداتها إلى 45 مليون جنيه في سنة ونصف."
+    },
+    "companies": [
+      {
+        "name": "Hawk",
+        "role": "CEO, Prime Cotton",
+        "url": "https://hawk-pc.com/"
+      }
+    ],
+    "photo": {
+      "url": "/people/hisham-abdel-maksoud.jpg",
+      "credit": "Shark Tank Egypt · CBC",
+      "creditUrl": "https://www.facebook.com/photo.php?fbid=1120337387428038"
+    },
+    "sources": [
+      "https://www.youm7.com/7624127",
+      "https://www.facebook.com/photo.php?fbid=1120337387428038"
     ]
   }
 ]

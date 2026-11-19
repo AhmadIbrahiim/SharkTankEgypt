@@ -17683,7 +17683,6 @@
     "id": "makkook-ai",
     "season": 5,
     "episode": 7,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Makkook AI",
       "ar": "مكوك للذكاء الاصطناعي"
@@ -17702,11 +17701,24 @@
       "linkedin": "https://www.linkedin.com/company/makkook-ai"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 35000000,
+      "equityPct": 5
     },
-    "deal": null,
-    "checked": "2026-11-18",
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ayman Abbas",
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 35000000,
+      "equityPct": 7
+    },
+    "checked": "2026-11-19",
+    "video": "0B5ArxRIZBA",
+    "pitch": {
+      "en": "In Season 5, Episode 7, co-founder and CEO Mahmoud Hegab asked for EGP 35 million for 5% of Makkook AI, valuing it at EGP 700 million. He described a food factory handling about 100 orders a week, where production, warehousing, purchasing, finance and sales all pull in different directions, and said DIOS turns the whole company into one mathematical model to find the best plan. The valuation drew pushback. One shark argued that general AI tools such as Copilot and Claude could already do this kind of work. Hegab answered that language models give approximate answers, while factories and supply chains need exact ones, and that client data stays on the client's own servers. Ahmed Tarek defended the approach. Hegab named Kinaxis and o9 Solutions among about five global competitors and said Makkook has none in the Middle East. Ayman Abbas and Ahmed Tarek's final offer was EGP 35 million for 7%, valuing Makkook at EGP 500 million, plus a further 13% in advisory shares that falls to 8% once the company reaches a $20 million valuation. He accepted.",
+      "ar": "في الحلقة السابعة من الموسم الخامس، طلب محمود حجاب، الشريك المؤسس والرئيس التنفيذي لمكوك، 35 مليون جنيه مقابل 5% من الشركة، أي بتقييم 700 مليون جنيه. ضرب مثلًا بمصنع أغذية يتعامل مع نحو 100 طلب في الأسبوع، يريد فيه قسم الإنتاج شيئًا والمخازن والمشتريات والمالية والمبيعات أشياء أخرى، وقال إن DIOS يحوّل الشركة كلها إلى نموذج رياضي واحد ليصل إلى أفضل خطة. التقييم لم يقنع الجميع، ورأى أحد المستثمرين أن أدوات الذكاء الاصطناعي العامة مثل Copilot وClaude صارت قادرة على هذا النوع من العمل. ورد حجاب بأن النماذج اللغوية تعطي إجابات تقريبية، بينما تحتاج المصانع وسلاسل الإمداد إلى إجابات دقيقة، وأن بيانات العميل تبقى على خوادمه. ودافع أحمد طارق عن الفكرة. وذكر حجاب أن لمكوك نحو خمسة منافسين عالميين منهم Kinaxis وo9 Solutions، ولا منافس لها في الشرق الأوسط. وكان العرض النهائي من أيمن عباس وأحمد طارق 35 مليون جنيه مقابل 7%، أي بتقييم 500 مليون جنيه، إضافة إلى 13% أسهمًا استشارية تنخفض إلى 8% عندما يصل تقييم الشركة إلى 20 مليون دولار. ووافق حجاب على العرض."
+    },
     "about": {
       "city": {
         "en": "Cairo",
@@ -17762,6 +17774,10 @@
       "https://www.facebook.com/MakkookAI",
       "https://www.gulfprimemagazine.com/mahmoud-hegab-enterprise-ai-business-gro/",
       "https://clutch.co/profile/makkook-ai",
+      "https://www.youm7.com/7624110",
+      "https://www.youtube.com/watch?v=0B5ArxRIZBA",
+      "https://www.youtube.com/watch?v=ymcFOg56Pa0",
+      "https://www.youtube.com/watch?v=fem2rUc3CsM",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
     ]
   },
@@ -17769,7 +17785,6 @@
     "id": "hawk",
     "season": 5,
     "episode": 7,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Hawk",
       "ar": "هوك"
@@ -17779,7 +17794,9 @@
       "ar": "هوك علامة مصرية للجوارب تابعة لشركة Prime M Cotton، وهي مصنع جوارب تأسس عام 2010 في المنطقة الصناعية بمدينة العبور. تبيع جوارب للاستخدام اليومي والرياضة والتنس وأخرى مبطنة، للرجال والسيدات والأطفال، عبر متجرها الإلكتروني."
     },
     "category": "Fashion",
-    "founders": [],
+    "founders": [
+      "Hisham Abdel Maksoud"
+    ],
     "website": "https://hawk-pc.com/",
     "links": {
       "facebook": "https://www.facebook.com/people/Hawkpc15/61577251265479/",
@@ -17787,11 +17804,22 @@
       "tiktok": "https://www.tiktok.com/@hawk_premium_cotton"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 15000000,
+      "equityPct": 20
     },
-    "deal": null,
-    "checked": "2026-11-18",
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 15000000,
+      "equityPct": 50
+    },
+    "checked": "2026-11-19",
+    "pitch": {
+      "en": "In Season 5, Episode 7, Hisham Abdel Maksoud, CEO of Prime Cotton, the company behind Hawk socks, asked for EGP 15 million for 20%, valuing it at EGP 75 million. He said the partners bought an existing factory with 10 production lines, and soon after the contracts were signed it was sealed shut over the previous management's failings. They stayed on, learned the machines and the yarns, and sold in person rather than relying on online marketing. He reported EGP 45 million in revenue over a year and a half and EGP 14 million in assets. Prime Cotton makes socks for more than 25 Egyptian clothing brands, sells Hawk in more than 300 shops and exports to Greece, Saudi Arabia and the UAE. The sharks told him to cut the range from more than 300 products to about 150. He wanted the money for cheaper imported raw materials, a line of men's boxers, an ERP system and sales app, and working capital. Ahmed Tarek's final offer was EGP 15 million for 50%, valuing the company at EGP 30 million, and Hisham accepted.",
+      "ar": "في الحلقة السابعة من الموسم الخامس، طلب هشام عبد المقصود، الرئيس التنفيذي لشركة برايم كوتون صاحبة جوارب هوك، 15 مليون جنيه مقابل 20%، أي بتقييم 75 مليون جنيه. حكى أن الشركاء اشتروا مصنعًا قائمًا فيه 10 خطوط إنتاج، وبعد توقيع العقود بقليل صدر قرار بتشميعه بسبب أخطاء الإدارة السابقة. لكنهم استمروا، وتعلموا الماكينات وأنواع الغزل، واعتمدوا على البيع المباشر في السوق بدل التسويق الرقمي وحده. وقال إن الإيرادات بلغت 45 مليون جنيه في سنة ونصف، وإن الأصول 14 مليون جنيه. تصنّع برايم كوتون جوارب لأكثر من 25 علامة ملابس مصرية، وتُباع هوك في أكثر من 300 منفذ، وتصدّر الشركة إلى اليونان والسعودية والإمارات. ونصحه المستثمرون بتقليل المنتجات من أكثر من 300 إلى نحو 150. وأراد التمويل لاستيراد الخامات بتكلفة أقل، وإطلاق بوكسرات رجالي، وبناء نظام ERP وتطبيق للمبيعات، ولرأس المال العامل. وكان العرض النهائي من أحمد طارق 15 مليون جنيه مقابل 50%، أي بتقييم 30 مليون جنيه، ووافق هشام."
+    },
     "about": {
       "city": {
         "en": "Obour City",
@@ -17843,6 +17871,9 @@
       "https://hawk-pc.com/",
       "https://hawk-pc.com/pages/about-us",
       "https://www.facebook.com/people/Hawkpc15/61577251265479/",
+      "https://www.youm7.com/7624127",
+      "https://www.youtube.com/watch?v=rizGlrXeazU",
+      "https://www.youtube.com/watch?v=fem2rUc3CsM",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
     ]
   },
@@ -17850,7 +17881,6 @@
     "id": "pickles",
     "season": 5,
     "episode": 7,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Pickles",
       "ar": "بيكلز"
@@ -17869,11 +17899,22 @@
       "instagram": "https://www.instagram.com/pickleseg/"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 1000000,
+      "equityPct": 10
     },
-    "deal": null,
-    "checked": "2026-11-18",
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 1600000,
+      "equityPct": 25
+    },
+    "checked": "2026-11-19",
+    "pitch": {
+      "en": "In Season 5, Episode 7, Youssef Adel asked for EGP 1 million for 10% of Pickles, valuing it at EGP 10 million. A mechanical engineering graduate of Coventry University, he said pickle quality in Egypt swings from good to far too salty, and he used research and reverse engineering to make it consistent. In five months the brand had reached more than 1,000 homes and sold about EGP 1 million, with 30% of customers ordering again every 60 days. Sales grew 75% in the last month after it entered five new channels, including online platforms and supermarkets in New Cairo and 6th of October, and he was talking to about 20 more supermarkets. Production runs two days a month in rented space at the family factory in Sadat City. The sharks loved the food at the tasting. He forecast at least EGP 5 million in sales next year and aimed for EGP 12 million. He accepted Mohamed Farouk's revised offer of EGP 1.6 million for 25%, which valued Pickles at EGP 6.4 million.",
+      "ar": "في الحلقة السابعة من الموسم الخامس، طلب يوسف عادل مليون جنيه مقابل 10% من بيكلز، أي بتقييم 10 ملايين جنيه. يوسف خريج هندسة ميكانيكية من جامعة كوفنتري، وقال إن جودة المخلل في مصر متقلبة، فقد يكون طعمه جيدًا وقد يكون مالحًا جدًا، فاعتمد على البحث والهندسة العكسية ليصل إلى جودة ثابتة. وفي خمسة أشهر وصلت منتجاته إلى أكثر من ألف بيت، وبلغت المبيعات نحو مليون جنيه، ويعود 30% من العملاء للشراء كل 60 يومًا. ونمت المبيعات 75% في الشهر الأخير بعد دخول خمس قنوات بيع جديدة، منها منصات إلكترونية وسوبر ماركت في التجمع وأكتوبر، وقال إنه يتفاوض مع نحو 20 سوبر ماركت آخر. يتم الإنتاج يومين في الشهر في مساحة مستأجرة داخل مصنع العائلة بمدينة السادات. وأشاد المستثمرون بالطعم في التذوق. وتوقع مبيعات لا تقل عن 5 ملايين جنيه العام المقبل، وطموحه 12 مليونًا. وقبل يوسف العرض المعدّل من محمد فاروق: مليون و600 ألف جنيه مقابل 25%، أي بتقييم 6.4 مليون جنيه."
+    },
     "about": {
       "founded": 1995,
       "city": {
@@ -17927,6 +17968,9 @@
       "https://www.facebook.com/photo.php?fbid=1120337334094710",
       "https://pickleeg.com/",
       "https://sceneeats.com/Fresh/Leftovers-got-you-in-a-pickle-This-Egyptian-Family-Has-the-Fix",
+      "https://www.youm7.com/7624131",
+      "https://www.youtube.com/watch?v=A_TOWjQL5rk",
+      "https://www.youtube.com/watch?v=fem2rUc3CsM",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
     ]
   }
