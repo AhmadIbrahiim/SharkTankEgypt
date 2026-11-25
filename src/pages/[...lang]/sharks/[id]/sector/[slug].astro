@@ -16,7 +16,7 @@ const intro = lang === 'ar' ? `كل شركات قطاع ${cat} التي استث
 const links = [{ href: `${base}${pre(lang)}/sharks/${p.id}/`, label: nm }, { href: `${base}${pre(lang)}/category/${catSlug(c)}/`, label: lang === 'ar' ? `كل شركات ${cat}` : `All ${cat} startups` },
   ...sharkSectors.filter((x) => x.p.id === p.id && x.c !== c).map((x) => ({ href: `${base}${pre(lang)}/sharks/${p.id}/sector/${catSlug(x.c)}/`, label: category(x.c, lang) }))];
 ---
-<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, cat)} image={p.photo?.url} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/${p.id}/sector/${catSlug(c)}/`}>
+<Base noindex lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, cat)} image={p.photo?.url} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/${p.id}/sector/${catSlug(c)}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} />
   <div class="container">
     <Faq lang={lang} items={sharkSectorFaq(p, c, lang)} />

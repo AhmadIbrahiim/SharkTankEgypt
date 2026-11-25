@@ -392,6 +392,9 @@ export const founders = (() => {
   }).sort((a, b) => a.name.en.localeCompare(b.name.en));
 })();
 
+/** Founder pages worth a search result of their own: the profile has links or other companies beyond the pitch. */
+export const founderIndexable = (p: Person) => !!(p.links || p.companies);
+
 export const sharkByKey = new Map(sharks.map((s) => [s.key, s]));
 export const founderId = (name: string) => slug(name);
 

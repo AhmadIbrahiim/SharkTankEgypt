@@ -15,9 +15,7 @@ export const list = (xs: string[], lang: Lang) =>
 const count = <T,>(xs: T[]) => [...xs.reduce((m, k) => m.set(k, (m.get(k) ?? 0) + 1), new Map<T, number>())].sort((a, b) => b[1] - a[1]);
 const where = (x: Startup, lang: Lang) =>
   `${seasonLabel(x.season, lang)}${x.episode != null ? L(lang, `, episode ${x.episode}`, `، الحلقة ${num(x.episode, lang)}`) : ''}`;
-const year = (n: number) => seasons.find((s) => s.season === n)?.year;
 const sharkName = (n: string, lang: Lang) => sharkByKey.get(n)?.name[lang] ?? shark(n, lang);
-const founderName = (n: string, lang: Lang) => founders.find((f) => f.id === founderId(n))?.name[lang] ?? n;
 /** "EGP 1M for 20%" */
 const terms = (amount: number | null | undefined, equity: number | null | undefined, lang: Lang) =>
   [amount != null && money(amount, lang), equity != null && L(lang, `for ${pct(equity, lang)}`, `مقابل ${pct(equity, lang)}`)].filter(Boolean).join(' ');
@@ -28,7 +26,6 @@ const dealLine = (x: Startup, lang: Lang) =>
 const nAr = (n: number, one: string, two: string, few: string) =>
   n === 1 ? `${one} واحدة` : n === 2 ? two : n <= 10 ? `${num(n, 'ar')} ${few}` : `${num(n, 'ar')} ${one}`;
 const dealsAr = (n: number) => nAr(n, 'صفقة', 'صفقتين', 'صفقات'); // oblique dual: most uses follow a preposition (عبر، في)
-const PLATFORM: Record<string, string> = { linkedin: 'LinkedIn', youtube: 'YouTube', tiktok: 'TikTok', x: 'X', twitter: 'X', whatsapp: 'WhatsApp', appStore: 'App Store', googlePlay: 'Google Play', linktree: 'Linktree' };
 const median = (xs: number[]) => { if (!xs.length) return null; const a = [...xs].sort((p, q) => p - q), m = a.length >> 1; return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2; };
 const dealValuation = (x: Startup) => valuation(x.deal?.amountEGP, x.deal?.equityPct);
 const byDealValuation = (xs: Startup[]) => xs.filter((x) => x.deal?.made && dealValuation(x)).sort((a, b) => dealValuation(b)! - dealValuation(a)!);
@@ -104,94 +101,78 @@ export const sharkFaq = (p: Shark, lang: Lang): QA[] => {
     { q: L(lang, `Is ${n} in the latest season of ${ST.en}?`, `هل ${n} ضمن مستثمري أحدث مواسم ${ST.ar}؟`),
       a: p.seasons.includes(lastSeason) ? L(lang, `Yes, ${n} is on the panel of ${seasonLabel(lastSeason, lang)}.`, `نعم، ${n} ضمن لجنة ${seasonLabel(lastSeason, lang)}.`)
         : L(lang, `No. ${n} last appeared in ${seasonLabel(Math.max(...p.seasons), lang)}.`, `لا، كان آخر ظهور ${n} في ${seasonLabel(Math.max(...p.seasons), lang)}.`), href: `season/${lastSeason}/` },
-    // Egyptian-dialect phrasing: how people actually type it in Arabic search.
-    lang === 'ar' && deals.length > 0 && { q: `صفقات ${n} في شارك تانك إيه؟`, a: `${list(deals.map((x) => x.name.ar), lang)}.` },
-    lang === 'ar' && withAmount.length > 0 && { q: `استثمارات ${n} في شارك تانك مصر بكام؟`, a: `حوالي ${money(total, lang)} في ${dealsAr(withAmount.length)} معلنة القيمة. ${NOTE.ar}` },
   ];
   return qa.filter(Boolean) as QA[];
 };
 
 export const startupFaq = (x: Startup, lang: Lang): QA[] => {
-  const n = x.name[lang], d = x.deal, scheduled = scheduledAppearance(x);
-  const fs = (x.founders ?? []).map((f) => founderName(f, lang));
-  const askV = valuation(x.ask?.amountEGP, x.ask?.equityPct), dealV = valuation(d?.amountEGP, d?.equityPct);
-  const ds = list((d?.sharks ?? []).map((k) => sharkName(k, lang)), lang);
-  const svc = ((x as any).services?.[lang] ?? []) as { name: string }[];
-  const about = (x as any).about as { founded?: number; city?: { en: string; ar: string } } | undefined;
-  const platforms = Object.keys(x.links ?? {}).filter((k) => k !== 'other').map((k) => PLATFORM[k] ?? k[0].toUpperCase() + k.slice(1));
+  const n = x.name[lang], scheduled = scheduledAppearance(x);
   const same = x.category ? startups.filter((y) => y.category === x.category).length - 1 : 0;
-  const y = year(x.season);
-  const mates = x.episode != null ? startups.filter((o) => o !== x && o.season === x.season && o.episode === x.episode) : [];
   const seasonInfo = seasons.find((s) => s.season === x.season);
   const qa: (QA | false)[] = [
-    { q: L(lang, `What is ${n}?`, `ما هي ${n}؟`), a: x.description[lang] },
-    fs.length > 0 && { q: L(lang, `Who founded ${n}?`, `من مؤسس ${n}؟`),
-      a: L(lang, `${n} was founded by ${list(fs, lang)}.`, `أسس ${n} ${list(fs, lang)}.`) },
-    { q: L(lang, scheduled ? `When is ${n} scheduled on ${ST.en}?` : `When did ${n} appear on ${ST.en}?`, scheduled ? `متى موعد مشاركة ${n} في ${ST.ar}؟` : `متى ظهرت ${n} في ${ST.ar}؟`),
-      a: scheduled ? summary(x, lang) : L(lang, `In ${where(x, lang)}${y ? ` (${y})` : ''}.`, `في ${where(x, lang)}${y ? ` (${y})` : ''}.`) },
-    x.ask?.amountEGP != null && { q: L(lang, `How much did ${n} ask for on ${ST.en}?`, `كم طلبت ${n} في ${ST.ar}؟`),
-      a: L(lang, `${terms(x.ask.amountEGP, x.ask.equityPct, lang)}${askV ? `, valuing the company at ${money(askV, lang)}` : ''}.`, `${terms(x.ask.amountEGP, x.ask.equityPct, lang)}${askV ? `، أي بتقييم ${money(askV, lang)}` : ''}.`) },
-    { q: L(lang, `Did ${n} get a deal on ${ST.en}?`, `هل حصلت ${n} على صفقة في ${ST.ar}؟`),
-      a: scheduled ? scheduled.scheduleNote[lang] : d?.made === true ? L(lang, `Yes${ds ? `, with ${ds}` : ''}${terms(d.amountEGP, d.equityPct, lang) ? `: ${terms(d.amountEGP, d.equityPct, lang)}` : ''}.`, `نعم${ds ? `، مع ${ds}` : ''}${terms(d.amountEGP, d.equityPct, lang) ? `: ${terms(d.amountEGP, d.equityPct, lang)}` : ''}.`)
-        : d?.made === false ? L(lang, `No. ${n} left the tank without a deal.`, `لا، غادرت ${n} البرنامج دون صفقة.`)
-        : L(lang, `The outcome of the pitch isn't recorded in this directory yet.`, `لم تُسجَّل نتيجة العرض في هذا الدليل بعد.`) },
-    d?.made === true && !!ds && { q: L(lang, `Which shark invested in ${n}?`, `من المستثمر الذي استثمر في ${n}؟`),
-      a: L(lang, `${ds}.`, `${ds}.`), href: d.sharks!.length === 1 ? `sharks/${sharkByKey.get(d.sharks![0])?.id}/` : undefined },
-    d?.made === true && dealV != null && { q: L(lang, `What is ${n}'s valuation on ${ST.en}?`, `كم تقييم ${n} في ${ST.ar}؟`),
-      a: L(lang, `The final deal valued ${n} at ${money(dealV, lang)}${askV ? `, against ${money(askV, lang)} in the founders' ask` : ''}.`, `قيّمت الصفقة النهائية ${n} بـ${money(dealV, lang)}${askV ? `، مقابل ${money(askV, lang)} في طلب المؤسسين` : ''}.`) },
-    svc.length > 0 && { q: L(lang, `What does ${n} offer?`, `ما الخدمات التي تقدمها ${n}؟`), a: list(svc.map((s) => s.name), lang) + '.' },
-    !!(about?.city || about?.founded) && { q: L(lang, `Where is ${n} based and when was it founded?`, `أين يقع مقر ${n} ومتى تأسست؟`),
-      a: [about?.city && L(lang, `${n} is based in ${about.city.en}, Egypt.`, `مقر ${n} في ${about.city.ar}، مصر.`), about?.founded && L(lang, `Founded in ${about.founded}.`, `تأسست عام ${num(about.founded, lang).replace(/٬|,/g, '')}.`)].filter(Boolean).join(' ') },
-    (!!x.website || platforms.length > 0) && { q: L(lang, `What is ${n}'s website and social media?`, `ما موقع ${n} الإلكتروني وحساباتها على مواقع التواصل؟`),
-      a: [x.website && L(lang, `Website: ${x.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}.`, `الموقع: ${x.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}.`),
-        platforms.length > 0 && L(lang, `On ${list(platforms, lang)}; links are on this page.`, `على ${list(platforms, lang)}، والروابط في هذه الصفحة.`)].filter(Boolean).join(' ') },
-    !!x.video && { q: L(lang, `Where can I watch ${n}'s pitch?`, `أين أشاهد عرض ${n}؟`),
-      a: L(lang, `The pitch from ${where(x, lang)} is on YouTube: youtube.com/watch?v=${x.video}`, `عرض ${where(x, lang)} متاح على يوتيوب: youtube.com/watch?v=${x.video}`) },
-    d?.made === true && d.equityPct != null && { q: L(lang, `How much equity did ${n} give up on ${ST.en}?`, `كم نسبة الحصة التي تنازلت عنها ${n} في ${ST.ar}؟`),
-      a: L(lang, `${pct(d.equityPct, lang)}${x.ask?.equityPct != null ? `, against the ${pct(x.ask.equityPct, lang)} offered in the pitch` : ''}.`, `${pct(d.equityPct, lang)}${x.ask?.equityPct != null ? `، مقابل ${pct(x.ask.equityPct, lang)} عُرضت في البداية` : ''}.`) },
-    d?.made === true && d.amountEGP != null && x.ask?.amountEGP != null && { q: L(lang, `Did ${n} get what it asked for on ${ST.en}?`, `هل حصلت ${n} على المبلغ الذي طلبته؟`),
-      a: d.amountEGP === x.ask.amountEGP && d.equityPct === x.ask.equityPct ? L(lang, `Yes, the deal closed on the original terms: ${terms(d.amountEGP, d.equityPct, lang)}.`, `نعم، أُغلقت الصفقة بالشروط الأصلية: ${terms(d.amountEGP, d.equityPct, lang)}.`)
-        : L(lang, `It asked for ${terms(x.ask.amountEGP, x.ask.equityPct, lang)} and closed at ${terms(d.amountEGP, d.equityPct, lang)}${askV && dealV ? `, so the valuation went from ${money(askV, lang)} to ${money(dealV, lang)}` : ''}.`,
-            `طلبت ${terms(x.ask.amountEGP, x.ask.equityPct, lang)} وأُغلقت الصفقة على ${terms(d.amountEGP, d.equityPct, lang)}${askV && dealV ? `، فتغيّر التقييم من ${money(askV, lang)} إلى ${money(dealV, lang)}` : ''}.`) },
-    !scheduled && x.episode != null && { q: L(lang, `Which episode of ${ST.en} was ${n} in?`, `في أي حلقة من ${ST.ar} ظهرت ${n}؟`),
-      a: L(lang, `${where(x, lang)}.${mates.length ? ` Also in that episode: ${list(mates.map((y) => y.name.en), lang)}.` : ''}`, `${where(x, lang)}.${mates.length ? ` وفي الحلقة نفسها: ${list(mates.map((y) => y.name.ar), lang)}.` : ''}`), href: `season/${x.season}/episode/${x.episode}/` },
     !scheduled && !!seasonInfo && { q: L(lang, `Which sharks did ${n} pitch to?`, `أمام أي مستثمرين عرضت ${n} مشروعها؟`),
       a: L(lang, `The ${seasonLabel(x.season, lang)} panel: ${list(seasonInfo.sharks.map((k) => sharkName(k, lang)), lang)}.`, `لجنة ${seasonLabel(x.season, lang)}: ${list(seasonInfo.sharks.map((k) => sharkName(k, lang)), lang)}.`) },
-    !scheduled && lang === 'ar' && { q: `${n} خدت كام من شارك تانك؟`,
-      a: d?.made === true ? (terms(d.amountEGP, d.equityPct, lang) ? `${terms(d.amountEGP, d.equityPct, lang)}${ds ? ` من ${ds}` : ''}.` : `أبرمت صفقة${ds ? ` مع ${ds}` : ''} لكن الشروط غير معلنة.`) : d?.made === false ? 'لم تحصل على صفقة.' : 'لم تُسجَّل النتيجة بعد.' },
     !!x.category && { q: L(lang, `What sector is ${n} in?`, `في أي قطاع تعمل ${n}؟`),
       a: L(lang, `${category(x.category, lang)}. ${same} other ${category(x.category, lang)} startup${same === 1 ? '' : 's'} in this directory.`, `${category(x.category, lang)}. ${same ? `يضم الدليل ${nAr(same, 'شركة', 'شركتين', 'شركات')} أخرى من القطاع نفسه.` : ''}`), href: `category/${x.category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}/` },
   ];
   return qa.filter(Boolean) as QA[];
 };
 
-export const founderFaq = (p: Founder, lang: Lang): QA[] => {
-  const n = p.name[lang], xs = p.startups;
-  const names = list(xs.map((x) => x.name[lang]), lang);
-  const co = [...new Set(xs.flatMap((x) => x.founders ?? []))].filter((k) => founderId(k) !== p.id).map((k) => founderName(k, lang));
-  const won = xs.filter((x) => x.deal?.made);
-  const qa: (QA | false)[] = [
-    { q: L(lang, `Who is ${n}?`, `من ${n}؟`),
-      a: p.bio?.[lang] ?? L(lang, `${n} is the founder of ${names}, which pitched on ${ST.en} in ${list(xs.map((x) => where(x, lang)), lang)}.`, `${n} من مؤسسي ${names}، التي عُرضت في ${ST.ar} في ${list(xs.map((x) => where(x, lang)), lang)}.`) },
-    { q: L(lang, `What company did ${n} pitch on ${ST.en}?`, `ما شركة ${n} في ${ST.ar}؟`),
-      a: xs.map((x) => `${x.name[lang]}: ${x.description[lang].split(/(?<=[.!؟])\s/)[0]}`).join(' ') },
-    { q: L(lang, `Did ${n} get a deal on ${ST.en}?`, `هل حصل مشروع ${n} على صفقة في ${ST.ar}؟`),
-      a: xs.map((x) => x.deal?.made === true
-        ? L(lang, `Yes, ${x.name.en} closed a deal with ${list((x.deal.sharks ?? []).map((k) => sharkName(k, lang)), lang) || 'the sharks'}${terms(x.deal.amountEGP, x.deal.equityPct, lang) ? `: ${terms(x.deal.amountEGP, x.deal.equityPct, lang)}` : ''}.`,
-            `نعم، أبرمت ${x.name.ar} صفقة مع ${list((x.deal.sharks ?? []).map((k) => sharkName(k, lang)), lang) || 'المستثمرين'}${terms(x.deal.amountEGP, x.deal.equityPct, lang) ? `: ${terms(x.deal.amountEGP, x.deal.equityPct, lang)}` : ''}.`)
-        : x.deal?.made === false ? L(lang, `No, ${x.name.en} left without a deal.`, `لا، غادرت ${x.name.ar} دون صفقة.`)
-        : L(lang, `The outcome for ${x.name.en} isn't recorded yet.`, `لم تُسجَّل نتيجة ${x.name.ar} بعد.`)).join(' ') },
-    won.length > 0 && { q: L(lang, `Which shark invested in ${n}'s company?`, `من المستثمر الذي استثمر في شركة ${n}؟`),
-      a: list([...new Set(won.flatMap((x) => x.deal!.sharks ?? []))].map((k) => sharkName(k, lang)), lang) + '.' },
-    xs.some((x) => x.ask?.amountEGP != null) && { q: L(lang, `How much did ${n} ask for on ${ST.en}?`, `كم كان طلب ${n} في ${ST.ar}؟`),
-      a: xs.filter((x) => x.ask?.amountEGP != null).map((x) => `${x.name[lang]}: ${terms(x.ask!.amountEGP, x.ask!.equityPct, lang)}.`).join(' ') },
-    co.length > 0 && { q: L(lang, `Who are ${n}'s co-founders?`, `من هم شركاء ${n} في التأسيس؟`), a: list(co, lang) + '.' },
-    { q: L(lang, `When was ${n} on ${ST.en}?`, `متى ظهر مشروع ${n} في ${ST.ar}؟`),
-      a: xs.map((x) => `${x.name[lang]}: ${where(x, lang)}${year(x.season) ? ` (${year(x.season)})` : ''}.`).join(' '), href: xs[0].episode != null ? `season/${xs[0].season}/episode/${xs[0].episode}/` : `season/${xs[0].season}/` },
-    lang === 'ar' && { q: `مشروع ${n} خد كام من شارك تانك؟`,
-      a: xs.map((x) => x.deal?.made ? `${x.name.ar}: ${terms(x.deal.amountEGP, x.deal.equityPct, lang) || 'صفقة بشروط غير معلنة'}.` : x.deal?.made === false ? `${x.name.ar}: بدون صفقة.` : `${x.name.ar}: النتيجة غير مسجلة.`).join(' ') },
-  ];
-  return qa.filter(Boolean) as QA[];
+// ---------- How one pitch compares with the rest of the data ----------
+const askValuation = (x: Startup) => valuation(x.ask?.amountEGP, x.ask?.equityPct);
+/** Valuation cut between ask and deal, in percent; 0 = the founders' terms held. */
+const cutOf = (x: Startup) => { const a = askValuation(x), d = dealValuation(x); return x.deal?.made && a && d ? (1 - d / a) * 100 : null; };
+const allCuts = startups.map(cutOf).filter((v): v is number => v != null);
+const allAskVals = startups.map(askValuation).filter((v): v is number => v != null);
+const closed = (xs: Startup[]) => { const known = xs.filter((y) => y.deal?.made === true || y.deal?.made === false); return { won: known.filter((y) => y.deal!.made).length, known: known.length }; };
+/** Arabic counted noun for pitches with its adjective: ٣–١٠ عروض معلنة الطلب، ١١+ عرضاً معلن الطلب (never fewer than three). */
+const pitchesAr = (n: number, adj: string) => `${num(n, 'ar')} ${n <= 10 ? `عروض ${adj.replace(' ', 'ة ')}` : `عرضاً ${adj}`}`;
+/** Sentences that place this pitch against its sector, the whole show and its shark's record. Each needs enough
+ *  comparable records to mean something; otherwise it is left out. */
+export const insights = (x: Startup, lang: Lang): string[] => {
+  if (scheduledAppearance(x)) return [];
+  const out: string[] = [], d = x.deal, cat = x.category ? category(x.category, lang) : '';
+  const peers = x.category ? startups.filter((y) => y.category === x.category) : [];
+  const asks = peers.map((y) => y.ask?.amountEGP).filter((v): v is number => v != null), med = median(asks);
+  if (x.ask?.amountEGP != null && med && asks.length >= 4) {
+    const r = x.ask.amountEGP / med, k = Math.round(r), ask = money(x.ask.amountEGP, lang), m = money(med, lang);
+    const size = r >= 1.95 ? L(lang, `about ${k} times`, k === 2 ? 'نحو ضعف' : k <= 10 ? `نحو ${num(k, lang)} أضعاف` : `نحو ${num(k, lang)} ضعفاً`)
+      : r >= 1.1 ? L(lang, `${pct(Math.round((r - 1) * 100), lang)} above`, `أعلى بنسبة ${pct(Math.round((r - 1) * 100), lang)} من`)
+      : r < 0.1 ? L(lang, 'less than a tenth of', 'أقل من عُشر')
+      : r <= 0.9 ? L(lang, `${pct(Math.round((1 - r) * 100), lang)} below`, `أقل بنسبة ${pct(Math.round((1 - r) * 100), lang)} من`)
+      : L(lang, 'close to', 'قريب من');
+    out.push(L(lang, `The ${ask} ask is ${size} the median ${cat} ask of ${m}, taken over ${asks.length} pitches with a known ask.`,
+      `طلب التمويل (${ask}) ${size} وسيط طلبات قطاع ${cat} البالغ ${m}، محسوباً على ${pitchesAr(asks.length, 'معلن الطلب')}.`));
+  }
+  const askV = askValuation(x), dealV = dealValuation(x);
+  if (askV && allAskVals.length >= 4) {
+    const total = allAskVals.length, below = allAskVals.filter((v) => v < askV).length, top = allAskVals.every((v) => v <= askV), v = money(askV, lang);
+    out.push(top ? L(lang, `Its ${v} asking valuation is the highest of the ${total} pitches with a known one.`, `التقييم المطلوب (${v}) هو الأعلى بين ${pitchesAr(total, 'معلن التقييم')}.`)
+      : below === 0 ? L(lang, `Its ${v} asking valuation is the lowest of the ${total} pitches with a known one.`, `التقييم المطلوب (${v}) هو الأدنى بين ${pitchesAr(total, 'معلن التقييم')}.`)
+      : L(lang, `Its ${v} asking valuation is higher than ${below} of the ${total} pitches with a known one.`, `التقييم المطلوب (${v}) أعلى من ${num(below, lang)} من أصل ${pitchesAr(total, 'معلن التقييم')}.`));
+  }
+  const cut = cutOf(x), medCut = median(allCuts);
+  if (cut != null && askV && dealV && allCuts.length >= 4) {
+    const held = allCuts.filter((c) => Math.abs(c) < 0.5).length;
+    out.push(Math.abs(cut) < 0.5 ? L(lang, `The deal kept the founders' valuation, as ${held} of the ${allCuts.length} deals with known terms on both sides did.`, `أُبرمت الصفقة بالتقييم الذي طلبه المؤسسون، وهو ما حدث في ${num(held, lang)} من أصل ${dealsAr(allCuts.length)} معلنة الشروط.`)
+      : cut < 0 ? L(lang, `The deal valued the company above the ask: ${money(dealV, lang)} against ${money(askV, lang)}.`, `قيّمت الصفقة الشركة بأعلى مما طلبه المؤسسون: ${money(dealV, lang)} مقابل ${money(askV, lang)}.`)
+      : L(lang, `The sharks cut the valuation by ${pct(Math.round(cut), lang)}, from ${money(askV, lang)} to ${money(dealV, lang)}. The median cut across ${allCuts.length} deals with known terms is ${pct(Math.round(medCut!), lang)}.`,
+          `خفّض المستثمرون التقييم بنسبة ${pct(Math.round(cut), lang)}، من ${money(askV, lang)} إلى ${money(dealV, lang)}. ووسيط التخفيض في ${dealsAr(allCuts.length)} معلنة الشروط ${pct(Math.round(medCut!), lang)}.`));
+  }
+  if (d?.made && d.equityPct != null) for (const key of (d.sharks ?? []).slice(0, 2)) {
+    const eqs = (sharkByKey.get(key)?.deals ?? []).filter((y) => y !== x).map((y) => y.deal?.equityPct).filter((v): v is number => v != null);
+    if (eqs.length < 3) continue;
+    const avg = pct(Math.round(eqs.reduce((a, b) => a + b, 0) / eqs.length), lang), who = sharkName(key, lang);
+    out.push(L(lang, `The ${pct(d.equityPct, lang)} stake compares with an average of ${avg} across ${who}'s ${eqs.length} other deals with disclosed equity.`,
+      `حصة الصفقة ${pct(d.equityPct, lang)}، ومتوسط الحصص في ${dealsAr(eqs.length)} أخرى معلنة الحصة في محفظة ${who} هو ${avg}.`));
+  }
+  const sec = closed(peers), all = closed(startups);
+  if (sec.known >= 5 && all.known) {
+    const rate = (c: { won: number; known: number }) => pct(Math.round((c.won / c.known) * 100), lang);
+    out.push(L(lang, `${sec.won} of the ${sec.known} ${cat} pitches with a recorded outcome got a deal (${rate(sec)}), against ${rate(all)} across all sectors.`,
+      `حصل ${num(sec.won, lang)} من أصل ${pitchesAr(sec.known, 'مسجل النتيجة')} في قطاع ${cat} على صفقة (${rate(sec)})، مقابل ${rate(all)} في كل القطاعات.`));
+  }
+  return out;
 };
 
 export const seasonFaq = (n: number, lang: Lang): QA[] => {
@@ -335,7 +316,6 @@ export const episodeFaq = (n: number, e: number, lang: Lang): QA[] => {
     asks.length > 0 && { q: L(lang, `What was the biggest ask in ${label}?`, `ما أكبر طلب تمويل في ${label}؟`), a: `${asks[0].name[lang]}: ${terms(asks[0].ask!.amountEGP, asks[0].ask!.equityPct, lang)}.`, href: `${asks[0].id}/` },
     { q: L(lang, `Where can I watch ${ST.en} ${label}?`, `أين أشاهد ${ST.ar} ${label}؟`),
       a: L(lang, `On CBC and WATCH IT.${xs.some((x) => x.video) ? ` Pitches from this episode are also on YouTube, linked from each startup page.` : ''}`, `على CBC وWATCH IT.${xs.some((x) => x.video) ? ' وعروض هذه الحلقة متاحة أيضاً على يوتيوب وروابطها في صفحة كل شركة.' : ''}`) },
-    lang === 'ar' && { q: `شارك تانك مصر ${seasonLabel(n, lang)} الحلقة ${num(e, lang)} مين خد صفقة؟`, a: won.length ? list(won.map((x) => x.name.ar), lang) + '.' : 'مفيش صفقات مسجلة في الحلقة دي.' },
   ];
   return qa.filter(Boolean) as QA[];
 };

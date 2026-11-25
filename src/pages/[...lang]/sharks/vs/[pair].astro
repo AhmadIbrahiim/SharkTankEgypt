@@ -33,7 +33,7 @@ const rows: [string, (x: typeof L) => string, (x: typeof L) => number][] = [
 const title = lang === 'ar' ? `${A} أم ${B}: مقارنة صفقات شارك تانك مصر` : `${A} vs ${B}: Shark Tank Egypt deals compared`;
 const intro = lang === 'ar' ? `مقارنة بين ${A} و${B} في شارك تانك مصر: عدد الصفقات، وحجم الاستثمارات، والحصص، والقطاعات، والصفقات المشتركة.` : `${A} vs ${B} on Shark Tank Egypt: number of deals, money invested, equity taken, sectors and the deals they did together.`;
 ---
-<Base lang={lang} title={title} description={intro} card={{ kind: 'vs', title, eyebrow: lang === 'ar' ? 'مقارنة مستثمري شارك تانك مصر' : 'Shark Tank Egypt · Shark vs Shark',
+<Base noindex lang={lang} title={title} description={intro} card={{ kind: 'vs', title, eyebrow: lang === 'ar' ? 'مقارنة مستثمري شارك تانك مصر' : 'Shark Tank Egypt · Shark vs Shark',
   vs: [a, b].map((p) => { const v = p.deals.reduce((t, x) => t + (x.deal?.amountEGP ?? 0), 0); return { name: p.name[lang], photo: p.photo?.url, stats: [`${num(p.deals.length, lang)} ${lang === 'ar' ? 'صفقة' : 'deals'}`, ...(v ? [money(v, lang)!] : [])] }; }) }} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/vs/${a.id}-vs-${b.id}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} hideTop>
     <section class="vs" aria-label={title}>
