@@ -18017,6 +18017,36 @@
         ]
       }
     },
+    "services": {
+      "en": [
+        {
+          "name": "Adhesives and additives",
+          "desc": "Adhesives and concrete additives, listed as separate product groups on the company's website."
+        },
+        {
+          "name": "Epoxy coatings",
+          "desc": "Epoxy coating products for construction work."
+        },
+        {
+          "name": "Insulation",
+          "desc": "Acrylic and bituminous insulation products."
+        }
+      ],
+      "ar": [
+        {
+          "name": "المواد اللاصقة والإضافات",
+          "desc": "مواد لاصقة وإضافات للخرسانة، يعرضها موقع الشركة في مجموعتين منفصلتين."
+        },
+        {
+          "name": "دهانات الإيبوكسي",
+          "desc": "منتجات الطلاء بالإيبوكسي لأعمال البناء."
+        },
+        {
+          "name": "مواد العزل",
+          "desc": "منتجات العزل الأكريليكي والبيتوميني."
+        }
+      ]
+    },
     "photo": {
       "url": "/startups/qmc.jpg",
       "credit": "Shark Tank Egypt · CBC",
@@ -18072,6 +18102,28 @@
         ]
       }
     },
+    "services": {
+      "en": [
+        {
+          "name": "Protein cookies",
+          "desc": "Freshly baked protein cookies, ordered by Instagram message or through the online store."
+        },
+        {
+          "name": "Event catering",
+          "desc": "Cookies supplied for events, as listed on the brand's Instagram profile."
+        }
+      ],
+      "ar": [
+        {
+          "name": "كوكيز بالبروتين",
+          "desc": "كوكيز بروتين طازجة تُطلب عبر رسائل إنستجرام أو من المتجر الإلكتروني."
+        },
+        {
+          "name": "ضيافة الفعاليات",
+          "desc": "توريد الكوكيز للفعاليات، كما يذكر حساب العلامة على إنستجرام."
+        }
+      ]
+    },
     "photo": {
       "url": "/startups/fit-crumble.jpg",
       "credit": "Shark Tank Egypt · CBC",
@@ -18120,6 +18172,28 @@
           "وفي التاريخ نفسه كانت إعادة تعبئة العبوة المرتجعة بسعر 250 جنيهًا."
         ]
       }
+    },
+    "services": {
+      "en": [
+        {
+          "name": "Oxygen bottles",
+          "desc": "Portable bottles of 99% pure oxygen, sold singly or in packs of two and three."
+        },
+        {
+          "name": "Bottle refills",
+          "desc": "Customers can return an empty bottle and have it refilled for a lower price."
+        }
+      ],
+      "ar": [
+        {
+          "name": "عبوات الأكسجين",
+          "desc": "عبوات محمولة من الأكسجين بنقاء 99%، تُباع مفردة أو في مجموعات من عبوتين وثلاث."
+        },
+        {
+          "name": "إعادة التعبئة",
+          "desc": "يمكن للعميل إرجاع العبوة الفارغة وإعادة تعبئتها بسعر أقل."
+        }
+      ]
     },
     "photo": {
       "url": "/startups/o2-volta.jpg",
