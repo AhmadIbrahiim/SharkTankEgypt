@@ -5,7 +5,7 @@ import Links from '../../components/Links.astro';
 import Avatar from '../../components/Avatar.astro';
 import Faq from '../../components/Faq.astro';
 import MiniCard from '../../components/MiniCard.astro';
-import { startupFaq, summary } from '../../faq';
+import { startupFaq, insights, summary } from '../../faq';
 import { scheduledAppearance, verification, langs, seg, pre, startups, giscus, t, num, money, pct, valuation, startupImage, thumb, category, suggestUrl, founderId, founders as allFounders, catSlug, seasonLabel, shark, sharkByKey, type Lang, type Startup, type Card, digits, dir } from '../../config';
 
 export const getStaticPaths = () =>
@@ -85,6 +85,7 @@ const lead = digits(x.description[lang].split(/(?<=[.!?؟])\s+/)[0], lang);
 const heroImg = localImage ? `${base}${localImage}` : x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : null;
 const heroFallback = x.video ? `this.onerror=null;this.src='${thumb(x.video)}'` : 'this.remove()';
 const faqs = startupFaq(x, lang);
+const compare = insights(x, lang);
 const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '→' : '←');
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} card={card} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/${x.id}/`}>
@@ -163,6 +164,12 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
             </div>
           )}
           {pitchText?.[lang] && <p>{digits(pitchText[lang], lang)}</p>}
+        </section>}
+
+        {compare.length > 0 && <section id="compare" class="sec">
+          <h2>{ar ? 'مقارنة بباقي العروض' : 'How this pitch compares'}</h2>
+          <ul>{compare.map((line) => <li>{line}</li>)}</ul>
+          <p>{ar ? 'الأرقام محسوبة من العروض والصفقات المسجلة في هذا الدليل.' : 'Worked out from the pitches and deals recorded in this directory.'}</p>
         </section>}
 
         {services?.[lang]?.length > 0 && (
