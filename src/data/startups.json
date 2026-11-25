@@ -17973,5 +17973,151 @@
       "https://www.youtube.com/watch?v=fem2rUc3CsM",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-7-preview-2026-11-18.md"
     ]
+  },
+  {
+    "id": "qmc",
+    "season": 5,
+    "episode": 8,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "QMC",
+      "ar": "كيو إم سي"
+    },
+    "description": {
+      "en": "QMC, short for Q-Masters Chemicals, makes building and construction chemicals in Sadat City's new industrial zone. Its catalogue covers adhesives, concrete additives, epoxy coatings, and acrylic and bituminous insulation, and it also sells through its own online store.",
+      "ar": "كيو إم سي، واسمها الكامل Q-Masters Chemicals، تصنع كيماويات البناء والتشييد في المنطقة الصناعية الجديدة بمدينة السادات. تشمل منتجاتها المواد اللاصقة وإضافات الخرسانة ودهانات الإيبوكسي ومواد العزل الأكريليكي والبيتوميني، وتبيع كذلك عبر متجرها الإلكتروني."
+    },
+    "category": "Manufacturing",
+    "founders": [],
+    "website": "https://www.qmc.group/",
+    "links": {
+      "facebook": "https://www.facebook.com/qmc.eg"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-25",
+    "about": {
+      "city": {
+        "en": "Sadat City",
+        "ar": "مدينة السادات"
+      },
+      "highlights": {
+        "en": [
+          "The company's Facebook page gives its address as the new industrial zone in Sadat City and describes it as a building and construction chemicals maker.",
+          "Its website groups products into adhesives, additives, epoxy coatings, and acrylic and bituminous insulation.",
+          "The website's copyright notice dates the brand from 2019."
+        ],
+        "ar": [
+          "تذكر صفحة الشركة على فيسبوك أن مقرها في المنطقة الصناعية الجديدة بمدينة السادات، وتصفها بأنها شركة لكيماويات البناء والتشييد.",
+          "يقسم موقعها المنتجات إلى مواد لاصقة وإضافات ودهانات إيبوكسي ومواد عزل أكريليكي وبيتوميني.",
+          "يشير إشعار حقوق النشر على الموقع إلى أن العلامة قائمة منذ 2019."
+        ]
+      }
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02rAUhmdwnxttG52KZCpU9WkQx2DwNgsr3MaXtnAundo3podUa9HH1w1xVFWDhT9vkl",
+      "https://www.facebook.com/photo.php?fbid=1127641603364283",
+      "https://www.qmc.group/",
+      "https://www.qmc.group/en-EG/about",
+      "https://www.facebook.com/qmc.eg",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-8-preview-2026-11-25.md"
+    ]
+  },
+  {
+    "id": "fit-crumble",
+    "season": 5,
+    "episode": 8,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "Fit Crumble",
+      "ar": "فيت كرامبل"
+    },
+    "description": {
+      "en": "Fit Crumble bakes protein cookies in New Cairo. It describes itself as the first freshly baked protein cookie in the region, takes orders through Instagram and an online store, and caters events.",
+      "ar": "فيت كرامبل تخبز كوكيز بالبروتين في القاهرة الجديدة. تصف نفسها بأنها أول كوكيز بروتين طازجة في المنطقة، وتستقبل الطلبات عبر إنستجرام ومتجر إلكتروني، وتقدم خدمات الضيافة للفعاليات."
+    },
+    "category": "Food",
+    "founders": [],
+    "website": "https://fitcrumble-eg.myshopify.com/",
+    "links": {
+      "instagram": "https://www.instagram.com/fitcrumble.eg/"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-25",
+    "about": {
+      "city": {
+        "en": "New Cairo",
+        "ar": "القاهرة الجديدة"
+      },
+      "highlights": {
+        "en": [
+          "Its Instagram profile lists New Cairo, orders by direct message and event catering.",
+          "The profile had about 2,900 followers on 25 November 2026."
+        ],
+        "ar": [
+          "يذكر حسابها على إنستجرام أنها في القاهرة الجديدة، وأنها تستقبل الطلبات عبر الرسائل وتقدم ضيافة الفعاليات.",
+          "بلغ عدد متابعي الحساب نحو 2,900 في 25 نوفمبر 2026."
+        ]
+      }
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02rAUhmdwnxttG52KZCpU9WkQx2DwNgsr3MaXtnAundo3podUa9HH1w1xVFWDhT9vkl",
+      "https://www.facebook.com/photo.php?fbid=1127641616697615",
+      "https://www.instagram.com/fitcrumble.eg/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-8-preview-2026-11-25.md"
+    ]
+  },
+  {
+    "id": "o2-volta",
+    "season": 5,
+    "episode": 8,
+    "appearanceStatus": "announced",
+    "name": {
+      "en": "O2 Volta",
+      "ar": "أو تو فولتا"
+    },
+    "description": {
+      "en": "O2 Volta sells portable bottles of 99% pure oxygen, aimed at athletes and anyone after a lift in energy and focus. The brand, run under the name VOLTA Supplements, describes itself as the first recreational oxygen supplement in Egypt and the Middle East. It sells single bottles and multi-packs online and refills returned bottles.",
+      "ar": "أو تو فولتا تبيع عبوات محمولة من الأكسجين بنقاء 99%، موجهة للرياضيين ولمن يريد دفعة في الطاقة والتركيز. العلامة تعمل تحت اسم VOLTA Supplements، وتصف نفسها بأنها أول مكمل أكسجين ترفيهي في مصر والشرق الأوسط. تبيع العبوات مفردة وفي مجموعات عبر موقعها، وتعيد تعبئة العبوات المرتجعة."
+    },
+    "category": "Health",
+    "founders": [],
+    "website": "https://o2volta.com/",
+    "links": {
+      "facebook": "https://www.facebook.com/people/VOLTA-Supplements/61577968060465/"
+    },
+    "ask": {
+      "amountEGP": null,
+      "equityPct": null
+    },
+    "deal": null,
+    "checked": "2026-11-25",
+    "about": {
+      "highlights": {
+        "en": [
+          "On 25 November 2026 the online store listed one bottle at EGP 495, two at EGP 890 and three at EGP 1,275.",
+          "A returned bottle could be refilled for EGP 250 on the same date."
+        ],
+        "ar": [
+          "في 25 نوفمبر 2026 عرض المتجر الإلكتروني العبوة الواحدة بسعر 495 جنيهًا، والعبوتين بسعر 890 جنيهًا، والثلاث بسعر 1,275 جنيهًا.",
+          "وفي التاريخ نفسه كانت إعادة تعبئة العبوة المرتجعة بسعر 250 جنيهًا."
+        ]
+      }
+    },
+    "sources": [
+      "https://www.facebook.com/SharkTankEgypt/posts/pfbid02rAUhmdwnxttG52KZCpU9WkQx2DwNgsr3MaXtnAundo3podUa9HH1w1xVFWDhT9vkl",
+      "https://www.facebook.com/photo.php?fbid=1127641626697614",
+      "https://o2volta.com/",
+      "https://o2volta.com/about-us/",
+      "https://www.facebook.com/people/VOLTA-Supplements/61577968060465/",
+      "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-8-preview-2026-11-25.md"
+    ]
   }
 ]
