@@ -2,7 +2,7 @@
 
 The [official Facebook post](https://www.facebook.com/SharkTankEgypt/posts/pfbid02rAUhmdwnxttG52KZCpU9WkQx2DwNgsr3MaXtnAundo3podUa9HH1w1xVFWDhT9vkl) went up on Wednesday 25 November 2026 at 17:00 Cairo time. It announces Episode 8 of Season 5 for 9 PM that night on CBC Now and WATCH IT, and tags VOLTA Supplements and QMC. The other tags (InstaPay Egypt, Bosta, Paymob, National Bank of Egypt) are the show's sponsors.
 
-The three attached cards say “الحلقة الثامنة” and show QMC, FIT CRUMBLE and O2 VOLTA. Fit Crumble is named on its card but not tagged in the post. The cards were viewed, not downloaded: the profiles have no startup photo yet. People on the cards were not identified.
+The three attached cards say “الحلقة الثامنة” and show QMC, FIT CRUMBLE and O2 VOLTA. Fit Crumble is named on its card but not tagged in the post. They were captured from the 1080 × 1440 originals at 952 × 1269 and saved in [images](episode-8-2026-11-25/images/). Each profile uses its card, resized to 720 × 960 and credited to the show, as its startup photo. People on the cards were not identified, and no founder was named in any reviewed source, so there are no founder profiles or portrait crops.
 
 | Business / ID | Official card | Reviewed sources |
 |---|---|---|
@@ -24,5 +24,6 @@ The three attached cards say “الحلقة الثامنة” and show QMC, FIT
 - An Episode 8 preview scheduled for `2026-11-25T21:00:00+02:00`.
 - Two or three sourced highlights per profile. Prices are dated 25 November 2026.
 - Directory count in both READMEs: 236 → 239.
+- Credited startup photos from the official cards.
 
-Not done: startup photos from the official cards, founder names and founder profiles. After the broadcast, record asks and outcomes, remove the appearance status and preview, and add founders once the pitch or a named source settles them.
+Not done: founder names and founder profiles. After the broadcast, record asks and outcomes, remove the appearance status and preview, and add founders once the pitch or a named source settles them.
