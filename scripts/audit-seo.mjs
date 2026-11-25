@@ -28,7 +28,7 @@ const images = (node) => {
   return [...(node['@type'] === 'ImageObject' ? [node] : []), ...Object.values(node).flatMap(images)];
 };
 let links = 0;
-const stubs = new Set();
+const stubs = new Set(), noindex = new Set();
 for (const f of pages) {
   const html = readFileSync(f, 'utf8'), url = urlOf(f);
   const to = pick(html, /<meta http-equiv="refresh" content="\d+;url=([^"]+)"/);
@@ -39,7 +39,7 @@ for (const f of pages) {
   if (!title) errors.push(`${url}: no <title>`); else { (titles.get(title) ?? titles.set(title, []).get(title)).push(url); if (title.length > 70) warns.push(`${url}: title ${title.length} chars (>70): "${title}"`); }
   if (!desc) errors.push(`${url}: no meta description`); else { (descs.get(desc) ?? descs.set(desc, []).get(desc)).push(url); if (desc.length < 50 || desc.length > 170) warns.push(`${url}: description ${desc.length} chars`); }
   if (canon !== url) errors.push(`${url}: canonical is ${canon}`);
-  if (/<meta name="robots" content="[^"]*noindex/.test(html)) warns.push(`${url}: noindex`);
+  if (/<meta name="robots" content="[^"]*noindex/.test(html)) noindex.add(url);
   for (const l of ['ar', 'en', 'x-default']) if (!alt[l]) errors.push(`${url}: missing hreflang ${l}`);
   for (const [l, u] of Object.entries(alt)) {
     const t = fileFor(u);
@@ -110,13 +110,15 @@ for (const [, u] of readFileSync('dist/llms-full.txt', 'utf8').matchAll(/(?:URL:
   const f = fileFor(u);
   if (!f || !existsSync(f) || stubs.has(u)) errors.push(`text export links to a missing page or redirect: ${u}`);
 }
-const unlisted = pages.map(urlOf).filter((u) => !smSet.has(u) && !stubs.has(u));
+// A noindex page in the sitemap sends Google two answers.
+for (const u of sm) if (noindex.has(u)) errors.push(`sitemap lists noindex page ${u}`);
+const unlisted = pages.map(urlOf).filter((u) => !smSet.has(u) && !stubs.has(u) && !noindex.has(u));
 for (const u of unlisted) warns.push(`page not in sitemap: ${u}`);
 const robots = readFileSync('dist/robots.txt', 'utf8');
 if (/Disallow:\s*\/\s*$/m.test(robots)) errors.push('robots.txt disallows everything');
 
 const dedupe = (xs) => { const m = new Map(); for (const x of xs) { const k = x.replace(/^\S+: /, ''); m.set(k, (m.get(k) ?? 0) + 1); } return [...m].map(([k, n]) => (n > 1 ? `${k}  ×${n}` : k)); };
-console.log(`seo: ${pages.length} pages, ${sm.length} sitemap URLs, ${links} internal links checked; ${errors.length} errors, ${warns.length} warnings`);
+console.log(`seo: ${pages.length} pages, ${noindex.size} noindex, ${sm.length} sitemap URLs, ${links} internal links checked; ${errors.length} errors, ${warns.length} warnings`);
 for (const e of dedupe(errors).slice(0, 40)) console.log('  ERROR', e);
 const kinds = {}; for (const w of warns) { const k = w.replace(/^\S+: /, '').replace(/\d+ chars.*/, 'N chars').replace(/"[^"]*"/g, '"…"').slice(0, 60); kinds[k] = (kinds[k] ?? 0) + 1; }
 console.log('  warnings by kind:', kinds);

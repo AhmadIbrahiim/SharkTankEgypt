@@ -85,7 +85,6 @@ const lead = digits(x.description[lang].split(/(?<=[.!?؟])\s+/)[0], lang);
 const heroImg = localImage ? `${base}${localImage}` : x.video ? `https://i.ytimg.com/vi/${x.video}/maxresdefault.jpg` : null;
 const heroFallback = x.video ? `this.onerror=null;this.src='${thumb(x.video)}'` : 'this.remove()';
 const faqs = startupFaq(x, lang);
-const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faqs.map((q) => ({ '@type': 'Question', name: q.q, acceptedAnswer: { '@type': 'Answer', text: q.a } })) };
 const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '→' : '←');
 ---
 <Base lang={lang} title={pageTitle} description={x.description[lang]} card={card} jsonld={jsonld} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/${x.id}/`}>
@@ -222,15 +221,7 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
       </aside>
     </div>
 
-    {/* Five questions open to view; the rest folded. Search engines get all of them in one FAQPage. */}
-    <Faq lang={lang} items={faqs.slice(0, 5)} ld={false} />
-    {faqs.length > 5 && (
-      <details class="morefaq">
-        <summary>{ar ? `أسئلة أخرى (${num(faqs.length - 5, lang)})` : `More questions (${faqs.length - 5})`}</summary>
-        <Faq lang={lang} items={faqs.slice(5)} ld={false} title="" id="faq-more" />
-      </details>
-    )}
-    <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+    <Faq lang={lang} items={faqs} />
 
     {commentsOn && (
       <section id="comments" class="comments">
@@ -356,9 +347,6 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .sources ul { margin: 6px 0 0; padding-inline-start: 18px; }
   .sources a { overflow-wrap: anywhere; color: var(--nile); }
 
-  .morefaq { margin-top: 6px; }
-  .morefaq > summary { cursor: pointer; padding: 10px 0; color: var(--crimson); font-weight: 700; }
-  .morefaq :global(.faq) { margin-top: 0; }
   .comments { margin-top: var(--gap-sec); padding-top: 20px; border-top: 2px solid var(--ink); scroll-margin-top: 80px; }
   .comments h2 { font-size: 1.35rem; }
   .hint { color: var(--ink-2); margin: 8px 0 20px; }

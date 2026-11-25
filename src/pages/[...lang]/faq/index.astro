@@ -31,13 +31,13 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
 
     <div id="rankings"><Chips title={lang === 'ar' ? 'القوائم والترتيب' : 'Rankings'} links={rankings.map((r) => ({ href: `${base}${pre(lang)}/top/${r.id}/`, label: r.title[lang] }))} /></div>
 
-    <Faq lang={lang} items={f.general} title={s.faqGeneral} id="general" ld={false} />
+    <Faq lang={lang} items={f.general} title={s.faqGeneral} id="general" />
 
     <h2 class="group" id="sharks">{s.navSharks}</h2>
     {f.sharks.map(({ p, qa }) => (
       <div class="block">
         <a class="who" href={`${base}${pre(lang)}/sharks/${p.id}/`}><Avatar name={p.name.en} seed={p.id} photo={p.photo} size={40} /><span>{p.name[lang]}</span></a>
-        <Faq lang={lang} items={qa} title="" id={`shark-${p.id}`} ld={false} />
+        <Faq lang={lang} items={qa} title="" id={`shark-${p.id}`} />
       </div>
     ))}
 
@@ -48,7 +48,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
     {f.seasons.map(({ n, qa }) => (
       <div class="block">
         <a class="who" href={`${base}${pre(lang)}/season/${n}/`}><span>{seasonLabel(n, lang)}</span></a>
-        <Faq lang={lang} items={qa} title="" id={`season-${n}`} ld={false} />
+        <Faq lang={lang} items={qa} title="" id={`season-${n}`} />
       </div>
     ))}
 
@@ -56,7 +56,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
     {f.categories.map(({ c, qa }) => (
       <div class="block">
         <a class="who" href={`${base}${pre(lang)}/category/${catSlug(c)}/`}><span>{category(c, lang)}</span></a>
-        <Faq lang={lang} items={qa} title="" id={`sector-${catSlug(c)}`} ld={false} />
+        <Faq lang={lang} items={qa} title="" id={`sector-${catSlug(c)}`} />
       </div>
     ))}
   </div>

@@ -15,7 +15,7 @@ const title = lang === 'ar' ? `صفقات ${nm} في شارك تانك مصر ${
 const intro = lang === 'ar' ? `كل الشركات التي استثمر فيها ${nm} في ${label} من شارك تانك مصر، مع قيمة كل صفقة والحصة.` : `Every startup ${nm} (${p.name.ar}) invested in during Shark Tank Egypt ${label}, with the amount and equity of each deal.`;
 const others = sharkSeasons.filter((x) => x.p.id === p.id && x.n !== n).map((x) => ({ href: `${base}${pre(lang)}/sharks/${p.id}/season/${x.n}/`, label: seasonLabel(x.n, lang) }));
 ---
-<Base lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, label)} image={p.photo?.url} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/${p.id}/season/${n}/`}>
+<Base noindex lang={lang} title={title} description={intro} card={listCard(title, intro, items, lang, label)} image={p.photo?.url} altPath={`${pre(lang === 'ar' ? 'en' : 'ar')}/sharks/${p.id}/season/${n}/`}>
   <Listing lang={lang} title={title} intro={intro} items={items} />
   <div class="container">
     <Faq lang={lang} items={sharkSeasonFaq(p, n, lang)} />

@@ -1,12 +1,10 @@
 ---
-// FAQ accordion + its FAQPage structured data. `ld={false}` when the page emits one combined FAQPage itself.
+// FAQ accordion. No FAQPage markup: only the FAQ hub is an FAQ page.
 import { t, type Lang, pre } from '../config';
 import type { QA } from '../faq';
-interface Props { lang: Lang; items: QA[]; title?: string; id?: string; ld?: boolean }
-const { lang, items, title = t[lang].faqTitle, id = 'faq', ld = true } = Astro.props;
+interface Props { lang: Lang; items: QA[]; title?: string; id?: string }
+const { lang, items, title = t[lang].faqTitle, id = 'faq' } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang,
-  mainEntity: items.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) };
 ---
 {items.length > 0 && (
   <section class="faq" id={id}>
@@ -17,7 +15,6 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguag
         <p>{x.a}{x.href != null && <> <a href={`${base}${pre(lang)}/${x.href}`}>{t[lang].faqMore}</a></>}</p>
       </details>
     ))}
-    {ld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   </section>
 )}
 <style>

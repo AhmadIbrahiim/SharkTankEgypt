@@ -9,8 +9,8 @@ import fontAr from '@fontsource-variable/readex-pro/files/readex-pro-arabic-wght
 import fontLatin from '@fontsource-variable/readex-pro/files/readex-pro-latin-wght-normal.woff2?url';
 import serifAr from '@fontsource-variable/noto-naskh-arabic/files/noto-naskh-arabic-arabic-wght-normal.woff2?url';
 import serifLatin from '@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2?url';
-interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card }
-const { lang, title, description, altPath, image, jsonld, card } = Astro.props;
+interface Props { lang: Lang; title?: string; description?: string; altPath: string; image?: string; jsonld?: object; card?: Card; noindex?: boolean }
+const { lang, title, description, altPath, image, jsonld, card, noindex } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const s = t[lang];
 const other: Lang = lang === 'ar' ? 'en' : 'ar';
@@ -79,6 +79,8 @@ const section = /\/(sharks|founders|faq|deals|image-usage)\//.exec(Astro.url.pat
     <title>{fullTitle}</title>
     <meta name="description" content={metaDesc} />
     <link rel="canonical" href={url} />
+    {/* Kept for visitors, out of search: the page re-lists records that have their own pages. */}
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="alternate" hreflang="ar" href={arUrl} />
     <link rel="alternate" hreflang="en" href={enUrl} />
     <link rel="alternate" hreflang="x-default" href={arUrl} />
