@@ -214,16 +214,10 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
         </div>
         {hasLinks && <div class="box"><Links website={x.website} links={x.links} lang={lang} label={ar ? 'أين تجدهم' : 'Where to find them'} /></div>}
         <div class="box">
-          <h3>{s.sources}</h3>
+          <h3>{ar ? 'التحقق' : 'Verification'}</h3>
           {x.photo && <p class="small">{ar ? 'الصورة:' : 'Photo:'} <a href={x.photo.creditUrl}>{x.photo.credit}</a></p>}
           <p class:list={['verify', verification(x)]}>{s.verify[verification(x)]}</p>
           {x.checked && <p class="small">{s.checked} <time datetime={x.checked}>{x.checked}</time> · <a href={helpUrl} target="_blank" rel="noopener">{ar ? 'أبلغ عن خطأ' : 'Report an error'}</a></p>}
-          {x.sources?.length > 0 && (
-            <details class="sources">
-              <summary>{s.sources} ({num(x.sources.length, lang)})</summary>
-              <ul>{x.sources.map((u) => <li><a href={u} target="_blank" rel="noopener nofollow" dir="ltr">{u.replace(/^https?:\/\/(www\.)?/, '')}</a></li>)}</ul>
-            </details>
-          )}
         </div>
       </aside>
     </div>
@@ -349,10 +343,6 @@ const arrow = (dir: 'back' | 'fwd') => ((dir === 'back') === (lang === 'ar') ? '
   .verify.verified { color: var(--ok); }
   .small { margin: 4px 0 0; font-size: .8rem; color: var(--ink-2); }
   .small a { color: var(--crimson); }
-  .sources { margin-top: 8px; font-size: .85rem; color: var(--ink-2); }
-  .sources summary { cursor: pointer; }
-  .sources ul { margin: 6px 0 0; padding-inline-start: 18px; }
-  .sources a { overflow-wrap: anywhere; color: var(--nile); }
 
   .comments { margin-top: var(--gap-sec); padding-top: 20px; border-top: 2px solid var(--ink); scroll-margin-top: 80px; }
   .comments h2 { font-size: 1.35rem; }

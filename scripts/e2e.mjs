@@ -42,9 +42,8 @@ await test('episode comparisons separate asks, agreements, missing terms and no-
     const digits = (s) => s.replace(/[٠-٩]/g, (d) => d.charCodeAt(0) - 0x660);
     assert.match(digits(await row('sahahly').locator('td').nth(0).innerText()), /10[%٪]/);
     assert.match(digits(await row('sahahly').locator('td').nth(1).innerText()), /30[%٪]/);
-    assert.equal(await row('gutty').locator('a[href="https://www.youtube.com/watch?v=cXPw8IH4yGw"]').count(), 2);
-    await row('gutty').locator('summary').click();
-    assert.ok(await row('gutty').locator('details ul').isVisible());
+    assert.equal(await row('gutty').locator('a[href="https://www.youtube.com/watch?v=cXPw8IH4yGw"]').count(), 1);
+    assert.equal(await row('gutty').locator('details').count(), 0);
     assert.ok(await p.locator('.pitch-results .scroll').evaluate((el) => el.scrollWidth > el.clientWidth && el.getBoundingClientRect().right <= innerWidth), 'comparison scrolls within the phone');
     assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'episode fits the phone');
     await p.goto(`${U}/${prefix}season/0/episode/1/`);
@@ -58,7 +57,7 @@ await test('episode comparisons separate asks, agreements, missing terms and no-
     await p.close();
   }
 });
-await test('priority pages expose sources and current Arabic text-export links', async () => {
+await test('priority pages fit the phone and have current Arabic text-export links', async () => {
   const digest = readFileSync('dist/llms-full.txt', 'utf8');
   const root = new URL(JSON.parse(readFileSync('package.json', 'utf8')).homepage).href;
   assert.ok(digest.includes(`Arabic: ${root}gutty/`));
@@ -70,10 +69,8 @@ await test('priority pages expose sources and current Arabic text-export links',
     await p.locator('.method a[href$="/deals/#method"]').click();
     assert.ok(await p.locator('#method').isVisible());
     await p.goto(`${U}/${prefix}sharks/hala-el-kasem/`);
-    assert.ok(await p.locator('.bio-sources a[href="https://misrconnect.com/en/profiles/4018"]').isVisible());
-    assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'source URLs fit the phone');
-    await p.goto(`${U}/${prefix}founders/ahmed-mahfouz/`);
-    assert.ok(await p.locator('.bio-sources a[href="https://www.elwatannews.com/news/details/6471194"]').isVisible());
+    assert.ok(await p.locator('body').evaluate((el) => el.scrollWidth <= innerWidth), 'shark page fits the phone');
+    assert.equal(await p.locator('.bio-sources').count(), 0);
     await p.close();
   }
 });
@@ -313,11 +310,11 @@ await test('financial figures use equal-width digits and aligned columns in both
     await p.close();
   }
 });
-await test('startup page shows summary, verification and sources', async () => {
+await test('startup page shows summary and verification, no source list', async () => {
   const p = await page(); await p.goto(`${U}/en/bar-and-jar/`);
   assert.match(await p.textContent('.answer'), /deal with Ahmed El Sewedy/);
   assert.match(await p.textContent('.verify'), /Verified/);
-  assert.ok(await p.isVisible('details.sources'));
+  assert.equal(await p.locator('details.sources').count(), 0);
   // The pitch video loads on click and must keep the thumbnail's size (it once fell back to 300×150).
   const size = (s) => p.$eval(s, (e) => Math.round(e.getBoundingClientRect().width));
   const w = await size('.player button'); await p.click('.player button');

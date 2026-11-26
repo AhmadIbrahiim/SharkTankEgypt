@@ -28,7 +28,7 @@ const other = episodes.filter(([k]) => k === n).map(([, x]) => ({ href: `${base}
       <h2 id="results-title">{ar ? 'طلبات الاستثمار ونتائج العروض' : 'Investment asks and pitch results'}</h2>
       <p>{ar ? 'هذه الاتفاقات أُعلنت في البرنامج؛ لا نؤكد اكتمال الاستثمار بعده. الطلب والنتيجة يعرضان ما تذكره المصادر المتاحة، والتفاصيل الناقصة تبقى غير مؤكدة.' : 'These agreements were announced on the show; we do not confirm that the investments completed afterwards. Asks and results reflect the available sources, with missing details left unconfirmed.'}</p>
       <div class="scroll" role="region" aria-labelledby="results-title" tabindex="0"><table>
-        <thead><tr><th scope="col">{ar ? 'الشركة' : 'Company'}</th><th scope="col">{s.ask}</th><th scope="col">{ar ? 'النتيجة في البرنامج' : 'On-air result'}</th><th scope="col">{s.sources}</th></tr></thead>
+        <thead><tr><th scope="col">{ar ? 'الشركة' : 'Company'}</th><th scope="col">{s.ask}</th><th scope="col">{ar ? 'النتيجة في البرنامج' : 'On-air result'}</th><th scope="col">{ar ? 'الفيديو' : 'Video'}</th></tr></thead>
         <tbody>{items.map((x) => <tr>
           <th scope="row"><a href={`${base}${pre(lang)}/${x.id}/`}>{x.name[lang]}</a></th>
           <td>{x.ask?.amountEGP != null ? money(x.ask.amountEGP, lang) : (ar ? 'المبلغ غير مؤكد' : 'Amount unconfirmed')}<small>{x.ask?.equityPct != null ? `${s.forEquity} ${pct(x.ask.equityPct, lang)}` : (ar ? 'الحصة غير مؤكدة' : 'Equity unconfirmed')}</small></td>
@@ -38,7 +38,6 @@ const other = episodes.filter(([k]) => k === n).map(([, x]) => ({ href: `${base}
             <small>{x.deal.sharks?.length ? list(x.deal.sharks.map((name) => shark(name, lang)), lang) : (ar ? 'المستثمر غير مؤكد' : 'Investor unconfirmed')}</small>
           </>}</td>
           <td>{x.video && <a href={`https://www.youtube.com/watch?v=${x.video}`} target="_blank" rel="noopener">{s.watch}</a>}
-            {x.sources?.length > 0 ? <details><summary>{s.sources} ({num(x.sources.length, lang)})</summary><ul>{x.sources.map((url) => <li><a href={url} target="_blank" rel="noopener nofollow" dir="ltr">{new URL(url).hostname.replace(/^www\./, '')}</a></li>)}</ul></details> : <small>{ar ? 'لا يوجد مصدر بعد' : 'No source yet'}</small>}
           </td>
         </tr>)}</tbody>
       </table></div>
