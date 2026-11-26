@@ -392,8 +392,9 @@ export const founders = (() => {
   }).sort((a, b) => a.name.en.localeCompare(b.name.en));
 })();
 
-/** Founder pages worth a search result of their own: the profile has links or other companies beyond the pitch. */
-export const founderIndexable = (p: Person) => !!(p.links || p.companies);
+/** Founder pages worth a search result of their own: a real biography (80+ words) plus links or other companies.
+    A one-line bio leaves the page thin, so it stays out of the index until the bio grows. */
+export const founderIndexable = (p: Person) => (p.bio?.en.split(/\s+/).length ?? 0) >= 80 && !!(p.links || p.companies);
 
 export const sharkByKey = new Map(sharks.map((s) => [s.key, s]));
 export const founderId = (name: string) => slug(name);
