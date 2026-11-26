@@ -17978,7 +17978,6 @@
     "id": "qmc",
     "season": 5,
     "episode": 8,
-    "appearanceStatus": "announced",
     "name": {
       "en": "QMC",
       "ar": "كيو إم سي"
@@ -17988,17 +17987,30 @@
       "ar": "كيو إم سي، واسمها الكامل Q-Masters Chemicals، تصنع كيماويات البناء والتشييد في المنطقة الصناعية الجديدة بمدينة السادات. تشمل منتجاتها المواد اللاصقة وإضافات الخرسانة ودهانات الإيبوكسي ومواد العزل الأكريليكي والبيتوميني، وتبيع كذلك عبر متجرها الإلكتروني."
     },
     "category": "Manufacturing",
-    "founders": [],
+    "founders": [
+      "Ahmed Saleh"
+    ],
     "website": "https://www.qmc.group/",
     "links": {
       "facebook": "https://www.facebook.com/qmc.eg"
     },
     "ask": {
-      "amountEGP": null,
+      "amountEGP": 35000000,
+      "equityPct": 25
+    },
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Ahmed Tarek Khalil"
+      ],
+      "amountEGP": 25000000,
       "equityPct": null
     },
-    "deal": null,
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
+    "pitch": {
+      "en": "In Season 5, Episode 8, founder Ahmed Saleh asked for EGP 35 million for 25% of QMC, valuing it at EGP 140 million. He said sales rose from EGP 3 million in 2020 to more than EGP 136 million in 2026, and that exports passed EGP 150 million over the last three years, reaching more than 15 countries. He described QMC as the only Egyptian plant that makes both waterproofing membrane and construction chemicals under one roof. The weak spot was working capital. The factory sells for cash and buys its raw materials for cash, with no credit from suppliers, and it turns away export orders on letters of credit because it cannot cover them. Several sharks competed for the company, with offers reaching EGP 35 million for 40%. Saleh chose Ahmed Tarek's offer instead: EGP 25 million with no interest. The equity attached to it is not recorded here.",
+      "ar": "في الحلقة الثامنة من الموسم الخامس، طلب أحمد صالح، مؤسس QMC، 35 مليون جنيه مقابل 25% من الشركة، أي بتقييم 140 مليون جنيه. قال إن المبيعات ارتفعت من 3 ملايين جنيه في 2020 إلى أكثر من 136 مليون جنيه في 2026، وإن الصادرات تجاوزت 150 مليون جنيه في آخر ثلاث سنوات ووصلت إلى أكثر من 15 دولة. ووصف QMC بأنه المصنع المصري الوحيد الذي يجمع صناعة الممبرين وكيماويات البناء في مكان واحد. نقطة الضعف كانت رأس المال العامل: المصنع يبيع نقدًا ويشتري خاماته نقدًا دون تسهيلات من الموردين، ويرفض طلبات التصدير بخطابات الاعتماد لأنه لا يملك تغطيتها. تنافس أكثر من مستثمر على الشركة، ووصلت العروض إلى 35 مليون جنيه مقابل 40%. لكن صالح اختار عرض أحمد طارق: 25 مليون جنيه بدون فوائد. أما الحصة المرتبطة بهذا العرض فغير مسجلة هنا."
+    },
     "about": {
       "city": {
         "en": "Sadat City",
@@ -18058,6 +18070,10 @@
       "https://www.qmc.group/",
       "https://www.qmc.group/en-EG/about",
       "https://www.facebook.com/qmc.eg",
+      "https://www.youm7.com/7632694",
+      "https://www.youm7.com/7632693",
+      "https://www.facebook.com/WatchiTMENA/videos/1705382984281922/",
+      "https://www.youtube.com/watch?v=DqHbQtCCcEE",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-8-preview-2026-11-25.md"
     ]
   },
@@ -18065,7 +18081,6 @@
     "id": "fit-crumble",
     "season": 5,
     "episode": 8,
-    "appearanceStatus": "announced",
     "name": {
       "en": "Fit Crumble",
       "ar": "فيت كرامبل"
@@ -18075,17 +18090,26 @@
       "ar": "فيت كرامبل تخبز كوكيز بالبروتين في القاهرة الجديدة. تصف نفسها بأنها أول كوكيز بروتين طازجة في المنطقة، وتستقبل الطلبات عبر إنستجرام ومتجر إلكتروني، وتقدم خدمات الضيافة للفعاليات."
     },
     "category": "Food",
-    "founders": [],
+    "founders": [
+      "Farah Zeidan",
+      "Sawsan Abdel Samie"
+    ],
     "website": "https://fitcrumble-eg.myshopify.com/",
     "links": {
       "instagram": "https://www.instagram.com/fitcrumble.eg/"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 3000000,
+      "equityPct": 20
     },
-    "deal": null,
-    "checked": "2026-11-25",
+    "deal": {
+      "made": false
+    },
+    "checked": "2026-11-26",
+    "pitch": {
+      "en": "In Season 5, Episode 8, Farah Zeidan, co-founder and CEO, and Sawsan Abdel Samie, co-founder and executive chef, asked for EGP 3 million for 20% of Fit Crumble, valuing it at EGP 15 million. The idea goes back five years, to a protein cookie Sawsan baked for Farah, who found protein bars hard to chew and digest. Their first attempt at selling lost money because the recipe was unstable and the packaging let them down, so they stopped and spent a year and a half on development. Each cookie now has 15 g of protein, 220 to 225 calories and less than 5 g of sugar, and keeps for 20 days without preservatives. They reported EGP 5 million in sales since April at a 50% margin, with nothing spent on marketing. The kitchen makes 700 to 800 cookies a day by hand and sells to cafés, gyms and schools. The money was meant for a bigger kitchen and new products in 2027. The sharks, Ahmed Tarek among them, objected to the packaging and to parts of the operation, and the founders left without an investment.",
+      "ar": "في الحلقة الثامنة من الموسم الخامس، طلبت فرح زيدان، الشريكة المؤسسة والرئيسة التنفيذية، وسوسن عبد السميع، الشريكة المؤسسة والشيف التنفيذي، 3 ملايين جنيه مقابل 20% من فيت كرامبل، أي بتقييم 15 مليون جنيه. بدأت الفكرة قبل خمس سنوات بكوكيز بروتين خبزتها سوسن لفرح، التي كانت تجد ألواح البروتين صعبة المضغ والهضم. أول تجربة بيع انتهت بخسارة لأن الوصفة لم تكن مستقرة والتغليف لم ينجح، فتوقفتا وقضتا عامًا ونصفًا في التطوير. تحتوي الكوكيز الآن على 15 جرامًا من البروتين و220 إلى 225 سعرًا حراريًا وأقل من 5 جرامات سكر، وتصلح 20 يومًا دون مواد حافظة. وأعلنتا مبيعات بقيمة 5 ملايين جنيه منذ أبريل بهامش ربح 50% ودون إنفاق على التسويق. ينتج المطبخ 700 إلى 800 قطعة يوميًا بالعمل اليدوي، ويبيع للكافيهات والجيمات والمدارس. كان المبلغ مطلوبًا لتوسعة المطبخ وطرح منتجات جديدة في 2027. اعترض المستثمرون، ومنهم أحمد طارق، على التغليف وعلى بعض تفاصيل التشغيل، وغادرت المؤسستان دون استثمار."
+    },
     "about": {
       "city": {
         "en": "New Cairo",
@@ -18133,6 +18157,9 @@
       "https://www.facebook.com/SharkTankEgypt/posts/pfbid02rAUhmdwnxttG52KZCpU9WkQx2DwNgsr3MaXtnAundo3podUa9HH1w1xVFWDhT9vkl",
       "https://www.facebook.com/photo.php?fbid=1127641616697615",
       "https://www.instagram.com/fitcrumble.eg/",
+      "https://www.youm7.com/7632701",
+      "https://www.youm7.com/7632705",
+      "https://www.youtube.com/watch?v=DqHbQtCCcEE",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-8-preview-2026-11-25.md"
     ]
   },
@@ -18140,7 +18167,6 @@
     "id": "o2-volta",
     "season": 5,
     "episode": 8,
-    "appearanceStatus": "announced",
     "name": {
       "en": "O2 Volta",
       "ar": "أو تو فولتا"
@@ -18150,17 +18176,32 @@
       "ar": "أو تو فولتا تبيع عبوات محمولة من الأكسجين بنقاء 99%، موجهة للرياضيين ولمن يريد دفعة في الطاقة والتركيز. العلامة تعمل تحت اسم VOLTA Supplements، وتصف نفسها بأنها أول مكمل أكسجين ترفيهي في مصر والشرق الأوسط. تبيع العبوات مفردة وفي مجموعات عبر موقعها، وتعيد تعبئة العبوات المرتجعة."
     },
     "category": "Health",
-    "founders": [],
+    "founders": [
+      "Mohamed El-Mahdy",
+      "Abdulrahman El-Shobokshy",
+      "Ahmed El-Shobokshy"
+    ],
     "website": "https://o2volta.com/",
     "links": {
       "facebook": "https://www.facebook.com/people/VOLTA-Supplements/61577968060465/"
     },
     "ask": {
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 500000,
+      "equityPct": 10
     },
-    "deal": null,
-    "checked": "2026-11-25",
+    "deal": {
+      "made": true,
+      "sharks": [
+        "Mohamed Farouk"
+      ],
+      "amountEGP": 1000000,
+      "equityPct": 30
+    },
+    "checked": "2026-11-26",
+    "pitch": {
+      "en": "In Season 5, Episode 8, Mohamed El-Mahdy, Abdulrahman El-Shobokshy and Ahmed El-Shobokshy asked for EGP 500,000 for 10% of their company, which the press coverage calls Volta Pharmac, valuing it at EGP 5 million. Their first product, O2 Volta, is a bottle holding 12 litres of 99% pure oxygen that sells for EGP 495. They said it helps with recovery and focus and is not a medical treatment. They reported EGP 1.58 million in revenue in seven months, helped by a campaign built on the line “we sold air in a bottle”, with a 55% gross margin, a 35% net margin and 10% to 15% of customers buying again. The product sells online, through a supplement chain with 90 branches and in pharmacies. They aim for at least EGP 2 million by the end of 2026 and EGP 10 million in 2027, and showed a second product, Volta Flow, a nasal inhaler. One shark offered the EGP 500,000 for 10% they had asked for. Mohamed Farouk offered EGP 1 million for 30%, which the show called his fastest offer ever, and that is the one recorded here.",
+      "ar": "في الحلقة الثامنة من الموسم الخامس، طلب محمد المهدي وعبد الرحمن الشوبكشي وأحمد الشوبكشي 500 ألف جنيه مقابل 10% من شركتهم، التي تسميها التغطية الصحفية «فولتا فارماك»، أي بتقييم 5 ملايين جنيه. أول منتجاتهم «أو تو فولتا»، عبوة فيها 12 لترًا من الأكسجين بنقاء 99% وسعرها 495 جنيهًا. قالوا إنها تساعد على التعافي والتركيز وليست علاجًا طبيًا. وأعلنوا إيرادات بقيمة مليون و580 ألف جنيه في سبعة أشهر، ساعدت عليها حملة قامت على عبارة «بعنا الهوا في إزازة»، بهامش ربح إجمالي 55% وصافٍ 35%، ويعود 10% إلى 15% من العملاء للشراء. يُباع المنتج عبر الإنترنت وفي سلسلة مكملات غذائية لها 90 فرعًا وفي صيدليات. يستهدفون مليوني جنيه على الأقل بنهاية 2026 و10 ملايين جنيه في 2027، وعرضوا منتجًا ثانيًا هو «فولتا فلو»، جهاز استنشاق للأنف. قدّم أحد المستثمرين المبلغ المطلوب نفسه: 500 ألف جنيه مقابل 10%. وقدّم محمد فاروق مليون جنيه مقابل 30%، ووصفه البرنامج بأنه أسرع عرض في تاريخه، وهو العرض المسجل هنا."
+    },
     "about": {
       "highlights": {
         "en": [
@@ -18206,6 +18247,11 @@
       "https://o2volta.com/",
       "https://o2volta.com/about-us/",
       "https://www.facebook.com/people/VOLTA-Supplements/61577968060465/",
+      "https://www.youm7.com/7632713",
+      "https://www.youm7.com/7632716",
+      "https://www.facebook.com/SharkTankEgypt/videos/1458579066454882/",
+      "https://www.facebook.com/WatchiTMENA/videos/1191723336626829/",
+      "https://www.youtube.com/watch?v=DqHbQtCCcEE",
       "https://github.com/AhmadIbrahiim/SharkTankEgypt/blob/main/automation/episode-8-preview-2026-11-25.md"
     ]
   }

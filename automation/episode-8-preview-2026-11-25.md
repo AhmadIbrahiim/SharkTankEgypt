@@ -27,3 +27,19 @@ The three attached cards say “الحلقة الثامنة” and show QMC, FIT
 - Credited startup photos from the official cards.
 
 Not done: founder names and founder profiles. After the broadcast, record asks and outcomes, remove the appearance status and preview, and add founders once the pitch or a named source settles them.
+
+## After the broadcast, 26 November 2026
+
+Asks, founder names and pitch details come from Youm7's coverage of the episode: QMC ([7632694](https://www.youm7.com/7632694), [7632693](https://www.youm7.com/7632693)), Fit Crumble ([7632701](https://www.youm7.com/7632701), [7632705](https://www.youm7.com/7632705)) and O2 Volta ([7632713](https://www.youm7.com/7632713), [7632716](https://www.youm7.com/7632716)). Youm7 calls the O2 Volta company “Volta Pharmac”.
+
+Outcomes were supplied by the maintainer on 26 November 2026, citing the show's [episode recap](https://www.youtube.com/watch?v=DqHbQtCCcEE) and official clips, and recorded as given. The recap had no captions and was not transcribed for this update.
+
+| ID | Ask | Recorded outcome |
+|---|---|---|
+| `qmc` | EGP 35M for 25% | Deal with Ahmed Tarek Khalil: EGP 25M with no interest. Equity not recorded. Other offers reached EGP 35M for 40%. |
+| `fit-crumble` | EGP 3M for 20% | No deal. The sharks objected to the packaging and parts of the operation. |
+| `o2-volta` | EGP 500K for 10% | Deal with Mohamed Farouk: EGP 1M for 30%. Another shark offered the ask. |
+
+Still open: the equity or repayment terms of QMC's EGP 25M, which shark matched O2 Volta's ask, and per-pitch video links. Founder profiles have no portraits: nobody was matched to a face on the cards.
+
+Applied: appearance status and preview removed, asks and outcomes recorded, six founder profiles added, deal count in both READMEs 143 → 145.
