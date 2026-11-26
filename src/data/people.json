@@ -6043,5 +6043,125 @@
       "https://www.youm7.com/7624127",
       "https://www.facebook.com/photo.php?fbid=1120337387428038"
     ]
+  },
+  {
+    "id": "ahmed-saleh",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed Saleh",
+      "ar": "أحمد صالح"
+    },
+    "title": {
+      "en": "Founder and owner, QMC",
+      "ar": "مؤسس وصاحب مصنع QMC"
+    },
+    "bio": {
+      "en": "Ahmed Saleh founded and owns QMC, a construction chemicals and insulation factory in Sadat City. On Shark Tank Egypt he said its sales grew from EGP 3 million in 2020 to more than EGP 136 million in 2026, and that the factory still buys and sells for cash.",
+      "ar": "أحمد صالح مؤسس وصاحب مصنع QMC لكيماويات البناء ومواد العزل في مدينة السادات. قال في شارك تانك مصر إن مبيعات المصنع ارتفعت من 3 ملايين جنيه في 2020 إلى أكثر من 136 مليون جنيه في 2026، وإنه ما زال يشتري ويبيع نقدًا."
+    },
+    "sources": [
+      "https://www.youm7.com/7632694",
+      "https://www.youm7.com/7632693"
+    ]
+  },
+  {
+    "id": "farah-zeidan",
+    "kind": "founder",
+    "name": {
+      "en": "Farah Zeidan",
+      "ar": "فرح زيدان"
+    },
+    "title": {
+      "en": "Co-founder and CEO, Fit Crumble",
+      "ar": "الشريكة المؤسسة والرئيسة التنفيذية لفيت كرامبل"
+    },
+    "bio": {
+      "en": "Farah Zeidan is co-founder and chief executive of Fit Crumble, a New Cairo bakery that makes protein cookies. On Shark Tank Egypt she said she researched the market after trying her partner's first cookie and found nothing like it in Egypt or the Middle East.",
+      "ar": "فرح زيدان الشريكة المؤسسة والرئيسة التنفيذية لفيت كرامبل، مخبز في القاهرة الجديدة يصنع كوكيز البروتين. قالت في شارك تانك مصر إنها درست السوق بعد أن جربت أول كوكيز أعدتها شريكتها، ولم تجد منتجًا مشابهًا في مصر أو الشرق الأوسط."
+    },
+    "sources": [
+      "https://www.youm7.com/7632701",
+      "https://www.youm7.com/7632705"
+    ]
+  },
+  {
+    "id": "sawsan-abdel-samie",
+    "kind": "founder",
+    "name": {
+      "en": "Sawsan Abdel Samie",
+      "ar": "سوسن عبد السميع"
+    },
+    "title": {
+      "en": "Co-founder and executive chef, Fit Crumble",
+      "ar": "الشريكة المؤسسة والشيف التنفيذي لفيت كرامبل"
+    },
+    "bio": {
+      "en": "Sawsan Abdel Samie is co-founder and executive chef of Fit Crumble and developed its protein cookie recipe. She told Shark Tank Egypt she worked as a teacher before the project and retrained as a pastry chef after its early losses.",
+      "ar": "سوسن عبد السميع الشريكة المؤسسة والشيف التنفيذي لفيت كرامبل، وهي من طوّرت وصفة كوكيز البروتين. قالت في شارك تانك مصر إنها كانت تعمل مدرّسة قبل المشروع، ثم اتجهت إلى العمل شيف حلويات بعد خسائره الأولى."
+    },
+    "sources": [
+      "https://www.youm7.com/7632701",
+      "https://www.youm7.com/7632705"
+    ]
+  },
+  {
+    "id": "mohamed-el-mahdy",
+    "kind": "founder",
+    "name": {
+      "en": "Mohamed El-Mahdy",
+      "ar": "محمد المهدي"
+    },
+    "title": {
+      "en": "Co-founder, O2 Volta",
+      "ar": "شريك مؤسس في أو تو فولتا"
+    },
+    "bio": {
+      "en": "Mohamed El-Mahdy is one of the three founders of the company behind O2 Volta, a bottled oxygen supplement. He presented it on Shark Tank Egypt in November 2026 with Abdulrahman El-Shobokshy and Ahmed El-Shobokshy, reporting EGP 1.58 million in revenue in seven months.",
+      "ar": "محمد المهدي أحد المؤسسين الثلاثة للشركة صاحبة «أو تو فولتا»، مكمل الأكسجين في عبوات. قدّم المشروع في شارك تانك مصر في نوفمبر 2026 مع عبد الرحمن الشوبكشي وأحمد الشوبكشي، وأعلنوا إيرادات بقيمة مليون و580 ألف جنيه في سبعة أشهر."
+    },
+    "sources": [
+      "https://www.youm7.com/7632713",
+      "https://www.youm7.com/7632716"
+    ]
+  },
+  {
+    "id": "abdulrahman-el-shobokshy",
+    "kind": "founder",
+    "name": {
+      "en": "Abdulrahman El-Shobokshy",
+      "ar": "عبد الرحمن الشوبكشي"
+    },
+    "title": {
+      "en": "Co-founder, O2 Volta",
+      "ar": "شريك مؤسس في أو تو فولتا"
+    },
+    "bio": {
+      "en": "Abdulrahman El-Shobokshy is one of the three founders of the company behind O2 Volta, a bottled oxygen supplement. He presented it on Shark Tank Egypt in November 2026 with Mohamed El-Mahdy and Ahmed El-Shobokshy, reporting EGP 1.58 million in revenue in seven months.",
+      "ar": "عبد الرحمن الشوبكشي أحد المؤسسين الثلاثة للشركة صاحبة «أو تو فولتا»، مكمل الأكسجين في عبوات. قدّم المشروع في شارك تانك مصر في نوفمبر 2026 مع محمد المهدي وأحمد الشوبكشي، وأعلنوا إيرادات بقيمة مليون و580 ألف جنيه في سبعة أشهر."
+    },
+    "sources": [
+      "https://www.youm7.com/7632713",
+      "https://www.youm7.com/7632716"
+    ]
+  },
+  {
+    "id": "ahmed-el-shobokshy",
+    "kind": "founder",
+    "name": {
+      "en": "Ahmed El-Shobokshy",
+      "ar": "أحمد الشوبكشي"
+    },
+    "title": {
+      "en": "Co-founder, O2 Volta",
+      "ar": "شريك مؤسس في أو تو فولتا"
+    },
+    "bio": {
+      "en": "Ahmed El-Shobokshy is one of the three founders of the company behind O2 Volta, a bottled oxygen supplement. He presented it on Shark Tank Egypt in November 2026 with Mohamed El-Mahdy and Abdulrahman El-Shobokshy, reporting EGP 1.58 million in revenue in seven months.",
+      "ar": "أحمد الشوبكشي أحد المؤسسين الثلاثة للشركة صاحبة «أو تو فولتا»، مكمل الأكسجين في عبوات. قدّم المشروع في شارك تانك مصر في نوفمبر 2026 مع محمد المهدي وعبد الرحمن الشوبكشي، وأعلنوا إيرادات بقيمة مليون و580 ألف جنيه في سبعة أشهر."
+    },
+    "sources": [
+      "https://www.youm7.com/7632713",
+      "https://www.youm7.com/7632716"
+    ]
   }
 ]
