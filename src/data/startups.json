@@ -3396,8 +3396,8 @@
       "ar": "بلومز إيجيبت"
     },
     "description": {
-      "en": "Blooms Egypt is a performing-arts and youth-education company that has spent 13 years developing children's personality, culture and skills. It runs performing-arts activities, informal education, international camps abroad and events for young people aged roughly 5 to 18. Its programmes include a summer photography camp for children and teens, led by photographer Khaled Abul Dahab, with beginner and intermediate levels in Sheikh Zayed and the Fifth Settlement. Founder Seif Ramadan closed a deal with Ahmed El Sewedy on Shark Tank Egypt.",
-      "ar": "بلومز إيجيبت شركة للفنون الأدائية وتعليم النشء، تعمل منذ 13 عاماً على تنمية شخصية الأطفال وثقافتهم ومهاراتهم. وتقدم أنشطة الفنون الأدائية والتعليم غير الرسمي والمعسكرات الدولية في الخارج والفعاليات للشباب من نحو 5 إلى 18 عاماً. ومن برامجها معسكر صيفي للتصوير الفوتوغرافي للأطفال والمراهقين يقوده المصور خالد أبو الدهب، بمستويين للمبتدئين والمتوسطين في الشيخ زايد والتجمع الخامس. وأبرم مؤسسها سيف رمضان صفقة مع أحمد السويدي في شارك تانك مصر."
+      "en": "Blooms Egypt is a performing-arts and youth-education company that has spent 13 years developing children's personality, culture and skills. It runs performing-arts activities, informal education, international camps abroad and events for young people aged roughly 5 to 18. Its programmes include a summer photography camp for children and teens, led by photographer Khaled Abul Dahab, with beginner and intermediate levels in Sheikh Zayed and the Fifth Settlement. Founder Seif Ramadan closed a deal with Ahmed El Sewedy and Abdallah Sallam on Shark Tank Egypt.",
+      "ar": "بلومز إيجيبت شركة للفنون الأدائية وتعليم النشء، تعمل منذ 13 عاماً على تنمية شخصية الأطفال وثقافتهم ومهاراتهم. وتقدم أنشطة الفنون الأدائية والتعليم غير الرسمي والمعسكرات الدولية في الخارج والفعاليات للشباب من نحو 5 إلى 18 عاماً. ومن برامجها معسكر صيفي للتصوير الفوتوغرافي للأطفال والمراهقين يقوده المصور خالد أبو الدهب، بمستويين للمبتدئين والمتوسطين في الشيخ زايد والتجمع الخامس. وأبرم مؤسسها سيف رمضان صفقة مع أحمد السويدي وعبد الله سلام في شارك تانك مصر."
     },
     "category": "Education",
     "founders": [
@@ -3405,16 +3405,17 @@
     ],
     "website": null,
     "ask": {
-      "amountEGP": null,
+      "amountEGP": 8000000,
       "equityPct": null
     },
     "deal": {
       "made": true,
       "sharks": [
-        "Ahmed El Sewedy"
+        "Ahmed El Sewedy",
+        "Abdallah Sallam"
       ],
-      "amountEGP": null,
-      "equityPct": null
+      "amountEGP": 8000000,
+      "equityPct": 50
     },
     "sources": [
       "https://www.youm7.com/6352489",
@@ -3426,7 +3427,7 @@
       "https://sharktank-egypt.com/en/deals/entertainment-and-arts",
       "https://www.youtube.com/watch?v=QXcF8ZfP-Tk"
     ],
-    "checked": "2026-10-10",
+    "checked": "2026-11-27",
     "links": {
       "linkedin": "https://www.linkedin.com/company/blooms-egypt",
       "facebook": "https://www.facebook.com/bloomsegypt/",
